@@ -1,0 +1,12 @@
+{
+	"authrequired": true,
+	"biz_id": "tails-ales-tul",
+	"MAIN": {
+		"title": "Howdy y'all!",
+		"body_md": "This is the **main page** of the app."
+	},
+	"error_auth": {
+		"title": "Woops!",
+		"content": "Cain't play if you ain't authenticated!"
+	}
+}
