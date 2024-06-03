@@ -1,0 +1,104 @@
+{
+	"biz_id": "colusa",
+	"check-in": true,
+	"auth_required": true,
+	"error_auth": {
+		"title": "Woops!",
+		"content": "Cain't play if you ain't authenticated!"
+	},
+	
+	"FORM": {
+		"title": "Player Comments",
+		"fields": [
+			{
+				"id": "rating",
+				"label": "How was your overall experience?",
+				"type": "select",
+				"range": ["⭑⭑⭑⭑⭑","⭑⭑⭑⭑","⭑⭑⭑","⭑⭑","⭑"],
+				"required": true
+			},
+			{
+				"id": "suggestions",
+				"label": "Tell us how we could improve your experience",
+				"type": "textarea",
+				"rows": 3,
+				"required": true
+			},
+			{
+				"type": "info",
+				"markdown": "---\nWe'd appreciate any additional thoughts or info you could share with us."
+			},
+			{
+				"id": "return",
+				"label": "How likely are you to visit us again?",
+				"type": "select",
+				"range": ["definitely will be back","likely will be back","unlikely to come back"],
+				"required": false
+			},
+			{
+				"id": "recommend",
+				"label": "How likely are you to recommend us?",
+				"type": "select",
+				"range": ["definitely will recommend","probably won't recommend"],
+				"required": false
+			},
+			{
+				"id": "amenities",
+				"label": "What amenities or other offerings would you like to see?",
+				"type": "textarea",
+				"rows": 3,
+				"required": false
+			},
+			{
+				"id": "team",
+				"label": "Are there any Colusa team members you'd like to recognize for their exceptional service?",
+				"type": "textarea",
+				"rows": 3,
+				"required": false
+			},
+			{
+				"id": "experience",
+				"label": "Tell us how we could improve your experience",
+				"type": "textarea",
+				"rows": 3,
+				"required": false
+			},
+			{
+				"id": "contact",
+				"label": "Please check here if you'd like to be contacted by a manager about your experience",
+				"type": "checkbox",
+				"required": false
+			},
+			{
+				"id": "name",
+				"label": "Your name",
+				"type": "text",
+				"required": false
+			},
+			{
+				"id": "rewards",
+				"label": "Your rewards number",
+				"type": "text",
+				"required": false
+			},
+			{
+				"id": "address",
+				"label": "Your address",
+				"type": "textarea",
+				"rows": 3,
+				"required": false
+			},
+			{
+				"id": "email",
+				"label": "Your email",
+				"type": "email",
+				"required": false
+			}
+		],
+		"submit": "Submit feedback"
+	},
+	"MAIN": {
+		"title": "Thanks!",
+		"body_md": "This is the **main page** of the app."
+	}
+}
