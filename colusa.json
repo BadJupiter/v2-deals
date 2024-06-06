@@ -1,6 +1,6 @@
 {
 	"biz_id": "colusa",
-	"check-in": true,
+	"check_in": true,
 	"auth_required": true,
 	"error_auth": {
 		"title": "Woops!",
