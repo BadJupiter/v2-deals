@@ -98,7 +98,7 @@
 		"submit": "Submit feedback"
 	},
 	"MAIN": {
-		"title": "Thanks!",
-		"body_md": "This is the **main page** of the app."
+		"title": "Player Comments",
+		"body_md": "**Thanks for playing!\n\nThis is the *main page* of the app."
 	}
 }
