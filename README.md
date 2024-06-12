@@ -35,9 +35,10 @@ Optionally there may be a corresponding image file with the same token identifie
 		"biz_id": "colusa",
 		"check_in": true,
 		"auth_required": true,
-		"FORM": { 
+		"FORM": {
+  			"title": "Player Feedback"
      		},
-    		"MAIN": { 
+    		"MAIN": {
 			"title": "Thanks for playing!",
    			"body_md": "See you next time..."
 		}
