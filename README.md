@@ -28,10 +28,22 @@ available for redemption in the form of buttons he can select to redeem. The flo
 
 ##  Deal Templates and Structure
 
-Each deal template is a JSON text document with a name corresponding to a unique deal token 
-(e.g. [colusa.JSON](https://badjupiter.github.io/v2-deals/colusa.json "Colusa Player Feedback")). 
-Optionally there may be a corresponding image file with the same token identifier (in the case 
-of Colusa Casino, [colusa.png](https://badjupiter.github.io/v2-deals/colusa.png).
+Each deal template is a JSON text document with a name corresponding to a unique deal token. 
+Optionally there may be a corresponding image file with the same token identifier.
+
+  {
+	  "biz_id": "colusa",
+	  "check_in": true,
+	  "auth_required": true,
+  }
+
+## EXAMPLE: Colusa Casino Player Feedback
+
+Casino clientele can interact with a digital comment card by scanning a QR and providing some feedback for
+casino staff. This is a check-in deal with an info form that has a couple required fields.
+
+[colusa.json](https://badjupiter.github.io/v2-deals/colusa.json) (deal template)
+[colusa.png](https://badjupiter.github.io/v2-deals/colusa.png) (header image)
 
 ## Markdown Syntax
 
