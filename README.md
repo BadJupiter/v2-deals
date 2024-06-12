@@ -7,7 +7,26 @@ to create and manage interactions with users.
 
 ---
 
-## Deal Templates Structure
+## Deal Flows and Types
+
+For our purposes every **Deal** follows the same simple flow: 
+
+1. a QR scan a link kicks it off
+2. (optionally) it collects some info with a form
+3. if the user is not known, it authenticates him
+4. it shows a main deal page, the deal is "grabbed"
+
+Any complications around grabbing a deal: punch card handling, reward notifications via SMS, etc. are handled
+by the server at grab time. 
+
+There is a special kind of deal, a **check-in deal** which closes the loop for previously-grabbed deals 
+that require in-person redemption. At grab time, a check-in deal will present the user with a list of deals
+available for redemption in the form of buttons he can select to redeem. The flow for this continues from above:
+
+5. the main deal page shows one or more deal buttons that can be redeemed
+6. when the user clicks a button, he's shown a modal confirmation "receipt" and the corresponding deal is done
+
+##  Deal Templates and Structure
 
 Each deal template is a JSON text document with a name corresponding to a unique deal token 
 (e.g. [colusa.JSON](https://badjupiter.github.io/v2-deals/colusa.json "Colusa Player Feedback")). 
