@@ -31,18 +31,20 @@ available for redemption in the form of buttons he can select to redeem. The flo
 Each deal template is a JSON text document with a name corresponding to a unique deal token. 
 Optionally there may be a corresponding image file with the same token identifier.
 
-	{
-		"biz_id": "colusa",
-		"check_in": true,
-		"auth_required": true,
-		"FORM": {
-  			"title": "Player Feedback"
-     		},
-    		"MAIN": {
-			"title": "Thanks for playing!",
-   			"body_md": "See you next time..."
-		}
+```json
+{
+	"biz_id": "colusa",
+	"check_in": true,
+	"auth_required": true,
+	"FORM": {
+		"title": "Player Feedback"
+	},
+	"MAIN": {
+		"title": "Thanks for playing!",
+		"body_md": "See you next time..."
 	}
+}
+```
 
 ## EXAMPLE: Colusa Casino Player Feedback
 
