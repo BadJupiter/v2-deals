@@ -35,7 +35,10 @@ Optionally there may be a corresponding image file with the same token identifie
 		"biz_id": "colusa",
 		"check_in": true,
 		"auth_required": true,
-	}
+
+		"FORM": { ... },
+    		"MAIN": { ... }
+ 	}
 
 ## EXAMPLE: Colusa Casino Player Feedback
 
