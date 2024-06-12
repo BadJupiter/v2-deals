@@ -23,8 +23,8 @@ There is a special kind of deal, a **check-in deal** which closes the loop for p
 that require in-person redemption. At grab time, a check-in deal will present the user with a list of deals
 available for redemption in the form of buttons he can select to redeem. The flow for this continues from above:
 
-5. the main deal page shows one or more deal buttons that can be redeemed
-6. when the user clicks a button, he's shown a modal confirmation "receipt" and the corresponding deal is done
+5. the main deal page shows a button for each deal that can be redeemed
+6. when a button is clicked, a modal confirmation "receipt" is shown and the corresponding deal is done
 
 ##  Deal Templates and Structure
 
