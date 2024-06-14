@@ -10,7 +10,7 @@
 		"fields": [
 			{
 				"type": "info",
-				"markdown": "**Player Comments**"
+				"markdown": "# Player Comments"
 			},
 			{
 				"id": "rating",
