@@ -7,8 +7,11 @@
 		"content": "Cain't play if you ain't authenticated!"
 	},
 	"FORM": {
-		"title": "Player Comments",
 		"fields": [
+			{
+				"type": "info",
+				"markdown": "**Player Comments**"
+			},
 			{
 				"id": "rating",
 				"label": "How was your overall experience?",
