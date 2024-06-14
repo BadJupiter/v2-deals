@@ -1,0 +1,10 @@
+{
+	'punches': [
+		1: {
+			'message': "Welcome to the loyalty thing!"
+		},
+		2: {
+			'message': "Second visit - thanks for coming back!"
+		}
+	]
+}
