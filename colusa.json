@@ -4,7 +4,7 @@
 	"auth_required": true,
 	"error_auth": {
 		"title": "Woops!",
-		"content": "Cain't play if you ain't authenticated!"
+		"content": "Can't play if you ain't authenticated!"
 	},
 	"FORM": {
 		"fields": [
