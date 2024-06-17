@@ -21,14 +21,14 @@
 			},
 			{
 				"id": "suggestions",
-				"label": "Tell us how we could improve your experience",
+				"label": "Tell us how we could improve your experience:",
 				"type": "textarea",
 				"rows": 3,
 				"required": true
 			},
 			{
 				"type": "info",
-				"markdown": "---\nWe'd appreciate any additional thoughts or info you could share with us."
+				"markdown": "---\nWe'd appreciate any additional thoughts or info you could share with us:"
 			},
 			{
 				"id": "return",
@@ -39,7 +39,7 @@
 			},
 			{
 				"id": "recommend",
-				"label": "How likely are you to recommend us?",
+				"label": "How likely are you to recommend us to friends and family?",
 				"type": "select",
 				"range": ["definitely will recommend","probably won't recommend"],
 				"required": false
@@ -53,7 +53,7 @@
 			},
 			{
 				"id": "team",
-				"label": "Are there any Colusa team members you'd like to recognize for their exceptional service?",
+				"label": "Are there any Colusa Casino Resort team members you'd like to recognize for exceptional service?",
 				"type": "textarea",
 				"rows": 3,
 				"required": false
@@ -73,26 +73,26 @@
 			},
 			{
 				"id": "name",
-				"label": "Your name",
+				"label": "name",
 				"type": "text",
 				"required": false
 			},
 			{
 				"id": "rewards",
-				"label": "Your rewards number",
+				"label": "rewards number",
 				"type": "text",
 				"required": false
 			},
 			{
 				"id": "address",
-				"label": "Your address",
+				"label": "address",
 				"type": "textarea",
 				"rows": 3,
 				"required": false
 			},
 			{
 				"id": "email",
-				"label": "Your email",
+				"label": "email",
 				"type": "email",
 				"required": false
 			}
