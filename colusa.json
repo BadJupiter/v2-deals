@@ -10,64 +10,61 @@
 		"fields": [
 			{
 				"type": "info",
-				"markdown": "# YOUR VOICE MATTERS\n\nthank you for visiting colusa casino resort  \nwe hope you enjoyed your time with us  \nplease let us know how we did on your visit"
+				"markdown": "# your voice matters\n\nthank you for visiting colusa casino resort  \nwe hope you enjoyed your time with us  \nplease let us know how we did on your visit"
 			},
 			{
 				"id": "rating",
-				"label": "How was your overall experience?",
+				"label": "how was your overall experience?*",
 				"type": "select",
 				"range": ["⭑⭑⭑⭑⭑","⭑⭑⭑⭑","⭑⭑⭑","⭑⭑","⭑"],
 				"required": true
 			},
 			{
 				"id": "suggestions",
-				"label": "Tell us how we could improve your experience:",
+				"label": "tell us how we could improve your experience:*",
 				"type": "textarea",
 				"rows": 3,
 				"required": true
 			},
 			{
 				"type": "info",
-				"markdown": "---\nWe'd appreciate any additional thoughts or info you could share with us:"
+				"markdown": "---\nwe'd appreciate any additional thoughts or info you could share with us:"
 			},
 			{
 				"id": "return",
-				"label": "How likely are you to visit us again?",
+				"label": "how likely are you to visit again?",
 				"type": "select",
-				"range": ["definitely will be back","likely will be back","unlikely to come back"],
+				"range": ["definitely will","very likely","maybe","not likely","will not"],
 				"required": false
 			},
 			{
 				"id": "recommend",
-				"label": "How likely are you to recommend us to friends and family?",
+				"label": "how likely are you to recommend us to friends and family?",
 				"type": "select",
-				"range": ["definitely will recommend","probably won't recommend"],
+				"range": ["definitely will","very likely","maybe","not likely","will not"],
 				"required": false
 			},
 			{
 				"id": "amenities",
-				"label": "What amenities or other offerings would you like to see?",
+				"label": "what amenities or other offerings would you like to see?",
 				"type": "textarea",
 				"rows": 3,
 				"required": false
 			},
 			{
 				"id": "team",
-				"label": "Are there any Colusa Casino Resort team members you'd like to recognize for exceptional service?",
+				"label": "are there any colusa casino resort team members you would like to recognize for exceptional service?",
 				"type": "textarea",
 				"rows": 3,
 				"required": false
 			},
 			{
-				"id": "experience",
-				"label": "Tell us how we could improve your experience",
-				"type": "textarea",
-				"rows": 3,
-				"required": false
+				"type": "info",
+				"markdown": "---"
 			},
 			{
 				"id": "contact",
-				"label": "Please check here if you'd like to be contacted by a manager about your experience",
+				"label": "please check here if you'd like to be contacted by a manager about your experience",
 				"type": "checkbox",
 				"required": false
 			},
