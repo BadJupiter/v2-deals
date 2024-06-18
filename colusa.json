@@ -94,7 +94,7 @@
 				"required": false
 			}
 		],
-		"submit": "Submit feedback",
+		"submit": "submit feedback",
 		"notify": {
 			"opt-in": "contact",
 			"mobiles": [
