@@ -28,7 +28,7 @@
 			},
 			{
 				"type": "info",
-				"markdown": "---\nwe'd appreciate any additional thoughts or info you could share with us:"
+				"markdown": "---\n## we'd appreciate any additional thoughts or info you could share with us:"
 			},
 			{
 				"id": "return",
