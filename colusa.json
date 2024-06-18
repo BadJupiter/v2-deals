@@ -59,37 +59,37 @@
 				"required": false
 			},
 			{
-				"type": "info",
-				"markdown": "---"
-			},
-			{
 				"id": "contact",
 				"label": "please check here if you'd like to be contacted by a manager about your experience",
 				"type": "checkbox",
 				"required": false
 			},
 			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
 				"id": "name",
-				"label": "name",
+				"label": "name:",
 				"type": "text",
 				"required": false
 			},
 			{
 				"id": "rewards",
-				"label": "rewards number",
+				"label": "rewards number:",
 				"type": "text",
 				"required": false
 			},
 			{
 				"id": "address",
-				"label": "address",
+				"label": "address:",
 				"type": "textarea",
 				"rows": 3,
 				"required": false
 			},
 			{
 				"id": "email",
-				"label": "email",
+				"label": "email:",
 				"type": "email",
 				"required": false
 			}
