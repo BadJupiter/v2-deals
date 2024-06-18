@@ -1,5 +1,4 @@
 {
-	"biz_id": "colusa",
 	"check_in": true,
 	"auth_required": true,
 	"error_auth": {
