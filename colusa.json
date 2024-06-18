@@ -14,7 +14,7 @@
 			},
 			{
 				"id": "rating",
-				"label": "how was your overall experience?*",
+				"label": "**how was your overall experience?***",
 				"type": "select",
 				"range": ["⭑⭑⭑⭑⭑","⭑⭑⭑⭑","⭑⭑⭑","⭑⭑","⭑"],
 				"required": true
@@ -32,7 +32,7 @@
 			},
 			{
 				"id": "return",
-				"label": "how likely are you to visit again?",
+				"label": "**how likely are you to visit again?**",
 				"type": "select",
 				"range": ["definitely will","very likely","maybe","not likely","will not"],
 				"required": false
