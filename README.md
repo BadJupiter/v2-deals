@@ -46,6 +46,18 @@ Optionally there may be a corresponding image file with the same token identifie
 }
 ```
 
+## Supported FORM field types
+
+|Field Type        |Description                                         |
+|------------------|----------------------------------------------------|
+|info              |special non-input "field" that can contain markdown |
+|email             |text field accepting only valid-formatted email     |
+|text              |simple text field                                   |
+|textarea          |bigger text field, can specify number of lines      |
+|select            |pick one from several options                       |
+|checkbox          |check it or don't                                   |
+
+
 ## EXAMPLE: Colusa Casino Player Feedback
 
 Casino clientele can interact with a digital comment card by scanning a QR and providing some feedback for
