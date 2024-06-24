@@ -15,14 +15,14 @@
 			{
 				"id": "games",
 				"label": "What games did you play during your visit? (You can pick more than one)",
-				"type": "select",
+				"type": "multi-select",
 				"range": ["Slot Machines","Table Games","Video Poker","Keno","Bingo"],
 				"required": false
 			},
 			{
 				"id": "dining",
 				"label": "What food outlets did you dine in during your visit? (You can pick more than one)",
-				"type": "select",
+				"type": "multi-select",
 				"range": ["Jack's Place","Cafe Ole","Snack Bar (bingo)"],
 				"required": false
 			},
