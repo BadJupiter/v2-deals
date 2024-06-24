@@ -34,11 +34,12 @@
 				"required": true
 			},
 			{
-				"id": "suggestions",
+				"id": "comments",
 				"label": "Tell us how we could improve your experience:",
 				"type": "textarea",
 				"rows": 3,
-				"required": true
+				"required": true,
+				"notify": true,
 			},
 			{
 				"id": "return",
@@ -82,13 +83,15 @@
 				"id": "name",
 				"label": "name:",
 				"type": "text",
-				"required": false
+				"required": false,
+				"notify": true.
 			},
 			{
 				"id": "rewards",
 				"label": "rewards number:",
 				"type": "text",
-				"required": false
+				"required": false,
+				"notify": true
 			},
 			{
 				"id": "address",
