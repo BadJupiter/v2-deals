@@ -38,8 +38,7 @@
 				"label": "Tell us how we could improve your experience:",
 				"type": "textarea",
 				"rows": 3,
-				"required": true,
-				"notify": true,
+				"required": true
 			},
 			{
 				"id": "return",
@@ -83,8 +82,7 @@
 				"id": "name",
 				"label": "name:",
 				"type": "text",
-				"required": false,
-				"notify": true.
+				"required": false
 			},
 			{
 				"id": "rewards",
@@ -109,7 +107,8 @@
 		],
 		"submit": "submit feedback",
 		"notify": {
-			"opt-in": "contact",
+			"opt_in": "contact",
+			"message": "(from {mob}) {name} requested contact '{comments}'",
 			"mobiles": [
 				"+16462474444",
 				"+15039533423"
