@@ -88,8 +88,7 @@
 				"id": "rewards",
 				"label": "rewards number:",
 				"type": "text",
-				"required": false,
-				"notify": true
+				"required": false
 			},
 			{
 				"id": "address",
@@ -108,7 +107,7 @@
 		"submit": "submit feedback",
 		"notify": {
 			"opt_in": "contact",
-			"message": "(from {mob}) {name} requested contact '{comments}'",
+			"message": "(from {mob}) {name} requested contact: {comments}",
 			"mobiles": [
 				"+16462474444",
 				"+15039533423"
