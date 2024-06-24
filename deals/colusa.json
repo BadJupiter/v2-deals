@@ -107,7 +107,7 @@
 		"submit": "submit feedback",
 		"notify": {
 			"opt_in": "contact",
-			"message": "(from {mob}) {name} requested contact: {comments}",
+			"message": "(from {_mob}) {name} requested contact: {comments}",
 			"mobiles": [
 				"+16462474444",
 				"+15039533423"
