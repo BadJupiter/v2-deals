@@ -86,49 +86,45 @@
 				"required": false
 			},
 			{
-				"type": "fields_group",
-				"bgcolor": "#a0d1fb",
-				"fields": [
-					{
-						"type": "info",
-						"markdown": "Please check the box if you'd like to be contacted by Guest Service staff about your experience:"
-					},
-					{
-						"id": "contact",
-						"label": "Contact me",
-						"type": "checkbox",
-						"required": false
-					}
-				]
+				"id": "contact",
+				"label": "Please check the box if you'd like to be contacted by Guest Service staff about your experience",
+				"type": "checkbox",
+				"required": false
 			},
 			{
 				"type": "info",
 				"markdown": "---"
 			},
 			{
-				"id": "name",
-				"label": "name:",
-				"type": "text",
-				"required": false
-			},
-			{
-				"id": "rewards",
-				"label": "rewards number:",
-				"type": "text",
-				"required": false
-			},
-			{
-				"id": "address",
-				"label": "address:",
-				"type": "textarea",
-				"rows": 3,
-				"required": false
-			},
-			{
-				"id": "email",
-				"label": "email:",
-				"type": "email",
-				"required": false
+				"type": "fields_group",
+				"bgcolor": "#83c6dd",
+				"fields": [
+					{
+						"id": "name",
+						"label": "name:",
+						"type": "text",
+						"required": false
+					},
+					{
+						"id": "rewards",
+						"label": "rewards number:",
+						"type": "text",
+						"required": false
+					},
+					{
+						"id": "address",
+						"label": "address:",
+						"type": "textarea",
+						"rows": 3,
+						"required": false
+					},
+					{
+						"id": "email",
+						"label": "email:",
+						"type": "email",
+						"required": false
+					}
+				]
 			}
 		],
 		"submit": "submit feedback",
