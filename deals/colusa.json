@@ -14,7 +14,8 @@
 				"style": "italic"
 			},
 			"body": {
-				"family": "Raleway"
+				"family": "Raleway",
+				"weight": "normal"
 			},
 			"formlabels": {
 				"family": "Raleway",
