@@ -8,10 +8,17 @@
 	},
 	"styling": {
 		"fonts": {
-			"header": {
+			"headers": {
 				"family": "Raleway",
 				"weight": 700,
 				"style": "italic"
+			},
+			"body": {
+				"family": "Raleway"
+			},
+			"formlabels": {
+				"family": "Raleway",
+				"weight": "bold"
 			}
 		}
 	},
