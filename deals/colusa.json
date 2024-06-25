@@ -10,8 +10,7 @@
 		"fonts": {
 			"header": {
 				"family": "Raleway",
-				"weight": 700,
-				"style": "normal"
+				"style": "italic"
 			}
 		}
 	},
