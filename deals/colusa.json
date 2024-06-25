@@ -85,8 +85,12 @@
 				"required": false
 			},
 			{
+				"type": "info",
+				"markdown": "Please check the box if you'd like to be contacted by Guest Service staff about your experience:"
+			},
+			{
 				"id": "contact",
-				"label": "Please check here if you'd like to be contacted by Guest Service staff about your experience.",
+				"label": "Contact me",
 				"type": "checkbox",
 				"required": false
 			},
