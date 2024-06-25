@@ -6,6 +6,15 @@
 		"title": "Woops!",
 		"content": "Can't play if you ain't authenticated!"
 	},
+	"styling": {
+		"fonts": {
+			"header": {
+				"family": "Raleway",
+				"weight": 700,
+				"style": "normal"
+			}
+		}
+	},
 	"FORM": {
 		"fields": [
 			{
