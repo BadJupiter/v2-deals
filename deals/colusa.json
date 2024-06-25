@@ -85,14 +85,20 @@
 				"required": false
 			},
 			{
-				"type": "info",
-				"markdown": "Please check the box if you'd like to be contacted by Guest Service staff about your experience:"
-			},
-			{
-				"id": "contact",
-				"label": "Contact me",
-				"type": "checkbox",
-				"required": false
+				"type": "fields_group",
+				"bgcolor": "#a0d1fb",
+				"fields": [
+					{
+						"type": "info",
+						"markdown": "Please check the box if you'd like to be contacted by Guest Service staff about your experience:"
+					},
+					{
+						"id": "contact",
+						"label": "Contact me",
+						"type": "checkbox",
+						"required": false
+					}
+				]
 			},
 			{
 				"type": "info",
