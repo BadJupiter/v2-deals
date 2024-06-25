@@ -48,14 +48,14 @@
 				"label": "How was your overall experience?",
 				"type": "select",
 				"range": ["⭑⭑⭑⭑⭑","⭑⭑⭑⭑","⭑⭑⭑","⭑⭑","⭑"],
-				"required": true
+				"required": false
 			},
 			{
 				"id": "comments",
 				"label": "Tell us how we could improve your experience:",
 				"type": "textarea",
 				"rows": 3,
-				"required": true
+				"required": false
 			},
 			{
 				"id": "return",
