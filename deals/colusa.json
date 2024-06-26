@@ -27,7 +27,11 @@
 		"fields": [
 			{
 				"type": "info",
-				"markdown": "# your voice matters\n\nthank you for visiting colusa casino resort! We hope you enjoyed your time with us. Please let us know how we did on your visit."
+				"markdown": "# Your Voice Matters\n\nThank you for visiting Colusa Casino Resort! We hope you enjoyed your time with us. Please let us know how we did on your visit."
+			},
+			{
+				"type": "info",
+				"markdown": "---"
 			},
 			{
 				"id": "games",
@@ -80,7 +84,7 @@
 			},
 			{
 				"id": "team",
-				"label": "Are there any colusa casino resort team members you would like to recognize for exceptional service?",
+				"label": "Are there any Colusa Casino Resort team members you would like to recognize for exceptional service?",
 				"type": "textarea",
 				"rows": 3,
 				"required": false
@@ -101,26 +105,26 @@
 				"fields": [
 					{
 						"id": "name",
-						"label": "name:",
+						"label": "Name:",
 						"type": "text",
 						"required": false
 					},
 					{
 						"id": "rewards",
-						"label": "rewards number:",
+						"label": "Rewards #:",
 						"type": "text",
 						"required": false
 					},
 					{
 						"id": "address",
-						"label": "address:",
+						"label": "Address:",
 						"type": "textarea",
 						"rows": 3,
 						"required": false
 					},
 					{
 						"id": "email",
-						"label": "email:",
+						"label": "Email:",
 						"type": "email",
 						"required": false
 					}
@@ -128,7 +132,7 @@
 			}
 		],
 		"submit": {
-			"label": "submit feedback",
+			"label": "Submit Feedback",
 			"color": "#2c4c5a"
 		},
 		"notify": {
@@ -141,6 +145,6 @@
 		}
 	},
 	"MAIN": {
-		"body_md": "# Thanks for playing!\n\nThis is the **main page** of the app."
+		"body_md": "# Thank You!\n\nWe appreciate your feedback, and thank you for visiting Colusa Casino Resort."
 	}
 }
