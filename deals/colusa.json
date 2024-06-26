@@ -30,6 +30,10 @@
 				"markdown": "# Your Voice Matters\n\nThank you for visiting Colusa Casino Resort! We hope you enjoyed your time with us. Please let us know how we did on your visit."
 			},
 			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
 				"id": "games",
 				"label": "What games did you play during your visit? (You can pick more than one)",
 				"type": "multi-select",
@@ -107,7 +111,7 @@
 					},
 					{
 						"id": "rewards",
-						"label": "Rewards number:",
+						"label": "Rewards #:",
 						"type": "text",
 						"required": false
 					},
