@@ -132,7 +132,7 @@
 			}
 		],
 		"submit": {
-			"label": "Submit a Feedback",
+			"label": "Submit Feedback",
 			"color": "#20363d"
 		},
 		"notify": {
