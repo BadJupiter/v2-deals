@@ -131,7 +131,7 @@
 				]
 			}
 		],
-		"submit": "submit feedback",
+		"submit": "Submit Feedback",
 		"notify": {
 			"opt_in": "contact",
 			"message": "(from {_mob}) {name} requested contact: {comments}",
@@ -142,6 +142,6 @@
 		}
 	},
 	"MAIN": {
-		"body_md": "# Thanks for playing!\n\nWe appreciate your feedback, and thank you for visiting Colusa Casino Resort."
+		"body_md": "# Thank You!\n\nWe appreciate your feedback, and thank you for visiting Colusa Casino Resort."
 	}
 }
