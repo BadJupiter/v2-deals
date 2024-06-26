@@ -27,7 +27,7 @@
 		"fields": [
 			{
 				"type": "info",
-				"markdown": "# your voice matters\n\nThank you for visiting colusa casino resort! We hope you enjoyed your time with us. Please let us know how we did on your visit."
+				"markdown": "# Your Voice Matters\n\nThank you for visiting Colusa Casino Resort! We hope you enjoyed your time with us. Please let us know how we did on your visit."
 			},
 			{
 				"id": "games",
@@ -80,7 +80,7 @@
 			},
 			{
 				"id": "team",
-				"label": "Are there any colusa casino resort team members you would like to recognize for exceptional service?",
+				"label": "Are there any Colusa Casino Resort team members you would like to recognize for exceptional service?",
 				"type": "textarea",
 				"rows": 3,
 				"required": false
@@ -138,6 +138,6 @@
 		}
 	},
 	"MAIN": {
-		"body_md": "# Thanks for playing!\n\nThis is the **main page** of the app."
+		"body_md": "# Thanks for playing!\n\nWe appreciate your feedback, and thank you for visiting Colusa Casino Resort."
 	}
 }
