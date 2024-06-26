@@ -127,7 +127,10 @@
 				]
 			}
 		],
-		"submit": "submit feedback",
+		"submit": {
+			"label": "submit feedback",
+			"color": "#2c4c5a"
+		},
 		"notify": {
 			"opt_in": "contact",
 			"message": "(from {_mob}) {name} requested contact: {comments}",
