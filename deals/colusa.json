@@ -27,7 +27,12 @@
 		"fields": [
 			{
 				"type": "info",
-				"markdown": "# Your Voice Matters\n\nThank you for visiting Colusa Casino Resort! We hope you enjoyed your time with us. Please let us know how we did on your visit."
+				"markdown": "# Your Voice Matters"
+			},
+			{
+				"type": "info",
+				"justify": "center",
+				"markdown": "Thank you for visiting Colusa Casino Resort! Please let us know how we did on your visit."
 			},
 			{
 				"type": "info",
