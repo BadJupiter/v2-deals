@@ -96,7 +96,7 @@
 			},
 			{
 				"id": "contact",
-				"label": "Please check the box if you'd like to be contacted by Guest Services team member",
+				"label": "Please check the box if you'd like to be contacted by a Guest Services team member",
 				"type": "checkbox",
 				"required": false
 			},
