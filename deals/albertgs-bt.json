@@ -1,5 +1,5 @@
 {
-	"biz_id": "colusacasino",
+	"biz_id": "agtulsa",
 	"check_in": true,
 	"auth_required": true,
 	"error_auth": {
@@ -27,130 +27,36 @@
 		"fields": [
 			{
 				"type": "info",
-				"markdown": "# Your Voice Matters"
+				"markdown": "# Welcome"
 			},
 			{
 				"type": "info",
 				"justify": "center",
-				"markdown": "Thank you for visiting Colusa Casino Resort! Please let us know how we did on your visit."
+				"markdown": "Thanks for coming in!"
 			},
 			{
 				"type": "info",
 				"markdown": "---"
 			},
 			{
-				"id": "games",
-				"label": "What games did you play during your visit? (You can pick more than one)",
-				"type": "multi-select",
-				"range": ["Slot Machines","Table Games","Video Poker","Keno","Bingo"],
-				"required": false
-			},
-			{
-				"id": "dining",
-				"label": "What food outlets did you dine in during your visit? (You can pick more than one)",
-				"type": "multi-select",
-				"range": ["Jack's Place","Cafe Ole","Snack Bar (bingo)"],
-				"required": false
-			},
-			{
 				"id": "rating",
-				"label": "How was your overall experience?",
+				"label": "Please let us know how we did today",
 				"type": "select",
 				"range": ["⭑⭑⭑⭑⭑","⭑⭑⭑⭑","⭑⭑⭑","⭑⭑","⭑"],
 				"required": false
 			},
 			{
 				"id": "comments",
-				"label": "Tell us how we could improve your experience:",
+				"label": "Any feedback for us? We love hearing it!",
 				"type": "textarea",
 				"rows": 3,
 				"required": false
 			},
-			{
-				"id": "return",
-				"label": "How likely are you to visit again?",
-				"type": "select",
-				"range": ["definitely will","very likely","maybe","not likely","will not"],
-				"required": false
-			},
-			{
-				"id": "recommend",
-				"label": "How likely are you to recommend us to friends and family?",
-				"type": "select",
-				"range": ["definitely will","very likely","maybe","not likely","will not"],
-				"required": false
-			},
-			{
-				"id": "amenities",
-				"label": "Is there anything we don't currently offer that we should?",
-				"type": "textarea",
-				"rows": 3,
-				"required": false
-			},
-			{
-				"id": "team",
-				"label": "Are there any Colusa Casino Resort team members you would like to recognize for exceptional service?",
-				"type": "textarea",
-				"rows": 3,
-				"required": false
-			},
-			{
-				"id": "contact",
-				"label": "Please check the box if you'd like to be contacted by a Guest Services team member",
-				"type": "checkbox",
-				"required": false
-			},
-			{
-				"type": "info",
-				"markdown": "---"
-			},
-			{
-				"type": "fields_group",
-				"bgcolor": "#c8f0fc",
-				"fields": [
-					{
-						"id": "name",
-						"label": "Name:",
-						"type": "text",
-						"required": false
-					},
-					{
-						"id": "rewards",
-						"label": "Rewards #:",
-						"type": "text",
-						"required": false
-					},
-					{
-						"id": "address",
-						"label": "Address:",
-						"type": "textarea",
-						"rows": 3,
-						"required": false
-					},
-					{
-						"id": "email",
-						"label": "Email:",
-						"type": "email",
-						"required": false
-					}
-				]
-			}
-		],
 		"submit": {
-			"label": "Submit Feedback",
+			"label": "Check me in!",
 			"color": "#20363d"
 		},
-		"notify": {
-			"opt_in": "contact",
-			"message": "(from {_mob}) {name} requested contact: {comments}",
-			"mobiles": [
-				"+16462474444",
-				"+15039533423",
-				"+15308450294"
-			]
-		}
-	},
 	"MAIN": {
-		"body_md": "# Thank You!\n\nWe appreciate your feedback, and thank you for visiting Colusa Casino Resort."
+		"body_md": "# Welcome to the Blue Dome!\n\nWe We hope you're hungry. Don't forget to try the Pickle Bar! And be sure to scan in each time you visit to earn bigger and better rewards. Have you tried our Harvard and Tulsa Hills locations yet?"
 	}
 }
