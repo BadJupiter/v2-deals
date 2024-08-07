@@ -1,0 +1,62 @@
+{
+	"biz_id": "agtulsa",
+	"check_in": true,
+	"auth_required": true,
+	"error_auth": {
+		"title": "Woops!",
+		"content": "Can't play if you ain't authenticated!"
+	},
+	"styling": {
+		"fonts": {
+			"headers": {
+				"family": "Raleway",
+				"weight": 700,
+				"style": "italic"
+			},
+			"body": {
+				"family": "Raleway",
+				"weight": "normal"
+			},
+			"formlabels": {
+				"family": "Raleway",
+				"weight": "bold"
+			}
+		}
+	},
+	"FORM": {
+		"fields": [
+			{
+				"type": "info",
+				"markdown": "# Welcome"
+			},
+			{
+				"type": "info",
+				"justify": "center",
+				"markdown": "Thanks for coming in!"
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"id": "rating",
+				"label": "Please let us know how we did today",
+				"type": "select",
+				"range": ["⭑⭑⭑⭑⭑","⭑⭑⭑⭑","⭑⭑⭑","⭑⭑","⭑"],
+				"required": false
+			},
+			{
+				"id": "comments",
+				"label": "Any feedback for us? We love hearing it!",
+				"type": "textarea",
+				"rows": 3,
+				"required": false
+			},
+		"submit": {
+			"label": "Check me in!",
+			"color": "#20363d"
+		},
+	"MAIN": {
+		"body_md": "# Welcome to the Blue Dome!\n\nWe We hope you're hungry. Don't forget to try the Pickle Bar! And be sure to scan in each time you visit to earn bigger and better rewards. Have you tried our Harvard and Tulsa Hills locations yet?"
+	}
+}

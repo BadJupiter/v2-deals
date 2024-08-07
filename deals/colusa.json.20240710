@@ -95,6 +95,12 @@
 				"required": false
 			},
 			{
+				"id": "contact",
+				"label": "Please check the box if you'd like to be contacted by a Guest Services team member",
+				"type": "checkbox",
+				"required": false
+			},
+			{
 				"type": "info",
 				"markdown": "---"
 			},
@@ -139,7 +145,8 @@
 			"message": "(from {_mob}) {name} requested contact: {comments}",
 			"mobiles": [
 				"+16462474444",
-				"+15039533423"
+				"+15039533423",
+				"+15308450294"
 			]
 		}
 	},
