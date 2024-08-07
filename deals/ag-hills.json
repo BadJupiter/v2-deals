@@ -18,10 +18,19 @@
 				"required": true
 			}
 		],
-		"submit": "Check me in"
+		"submit": {
+			"label": "Check me in"
+		},
 	},
+	
 	"MAIN": {
 		"title": "Player Comments",
 		"body_md": "# Thanks for playing!\n\nThis is the **main page** of the app."
-	}
+	},
+	
+	"PUNCH CARDS": [
+		{
+			"template": "ag_loyalty.json"
+		}
+	]
 }
