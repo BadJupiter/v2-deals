@@ -51,7 +51,7 @@
 		"body_md": "# Thanks for playing!\n\nThis is the **main page** of the app."
 	},
 	
-	"PUNCH CARDS": [
+	"PUNCHCARDS": [
 		{
 			"template": "ag_loyalty.json"
 		}
