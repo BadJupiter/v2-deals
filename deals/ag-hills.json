@@ -6,6 +6,12 @@
 		"title": "Woops!",
 		"content": "Cain't play if you ain't authenticated!"
 	},
+	"limits": [
+		{
+			"type": "day",
+			"value": 1
+		}
+	],
 	"styling": {
 		"fonts": {
 			"headers": {
