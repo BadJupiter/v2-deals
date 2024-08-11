@@ -1,10 +1,115 @@
 {
 	'punches': [
 		1: {
-			'message': "Welcome to the loyalty thing!"
+			"message": "Thanks for coming in! Your first scan reward is coming in a text!",
+			"reward": "ag_comeback.json"
 		},
 		2: {
-			'message': "Second visit - thanks for coming back!"
+			"message": "That was your second scan! Just three more visits and we'd like to buy you dessert!"
+		},
+		3: {
+			"message": "You're more than halfway to a special reward…"
+		},
+		4: {
+			"message": "Next visit it'll be our pleasure to treat you to dessert with your meal!"
+		},
+		5: {
+			"message": "Yay! 5 checkins means you get a free dessert! Check your texts.",
+			"reward": "ag_dessert.json"
+		},
+		6: {
+			"message": "Six scans down, four to go. You're working your way to a 10% discount…"
+		},
+		7: {
+			"message": "Three more visits and we'll treat you to a 10% discount off your order."
+		},
+		8: {
+			"message": "What's your thing? Ribs? Brisket? Two more visits and it's all 10% off!"
+		},
+		9: {
+			"message": "Nice work! Next visit you'll win 10% off an entire order!"
+		},
+		10: {
+			"message": "Thanks for being an Albert G's fan! You've earned 10% off your bill. Check your texts",
+			"reward": "ag_disc10.json"
+		},
+		11: {
+			"message": "Keep coming back, it just keeps getting better! Four more visits and you get a 15% discount!"
+		},
+		12: {
+			"message": "Welcome back! That's 12 visits! Only three more and we'll take 15% off your order!"
+		},
+		13: {
+			"message": "Lucky 13th visit! Only two more…"
+		},
+		14: {
+			"message": "Thanks for coming back! Next time you'll get 15% off your entire check!"
+		},
+		15: {
+			"message": "You are awesome! Check your texts for a deal worth 15% off an entire order!",
+			"reward": "ag_disc15.json"
+		},
+		16: {
+			"message": "You're a BBQ legend! 4 more visits earns you a 20% discount off your entire bill."
+		},
+		17: {
+			"message": "Getting closer...3 more visits and we'll treat you to a 20% discount off your order."
+		},
+		18: {
+			"message": "Oh you're so close.  2 more visits = 20% off!"
+		},
+		19: {
+			"message": "You've almost reached Pitmaster status! Next visit gets you a 20% discount off your bill."
+		},
+		20: {
+			"message": "Wow! This is your 20th visit since we've been counting! Check your texts for a 20% off deal.",
+			"reward": "ag_disc20.json"
+		},
+		21: {
+			"message": "Blackjack! 21 check-ins! Working your way to a 25% discount…"
+		},
+		22: {
+			"message": "Great to see you again! Keep coming back, the biggest reward is coming up!"
+		},
+		23: {
+			"message": "So close! 3 more visits to a 25% discount!"
+		},
+		24: {
+			"message": "Yeehaw! Next visit you're a big winner!"
+		},
+		25: {
+			"message": "You did it! 25 visits means you get 25% off! Check your texts.",
+			"reward": "ag_disc25.json"
+		},
+		26: {
+			"message": "Fantastic! That's 26 visits, and we really appreciate you. Next one, let's start over!"
 		}
 	]
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
