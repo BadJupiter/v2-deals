@@ -1,0 +1,16 @@
+{
+	"notify": {
+		"text": "25% discount off your next bill at Albert G's!"
+	},
+	"redeem_button": {
+		"text": "25% discount!"
+	},
+	"redeem_confirm": {
+		"header": "Confirm",
+		"text": "Are you ready to redeem this reward?"
+	},
+	"reward": {
+		"header": "25% Discount!",
+		"text": "Just show this to your server to redeem your discount!"
+	}
+}
