@@ -34,11 +34,26 @@
 		"title": "How was your visit?",
 		"fields": [
 			{
+				"type": "info",
+				"markdown": "Welcome! Thanks for coming in!"
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
 				"id": "rating",
-				"label": "How was your overall experience?",
+				"label": "Let us know how we did today",
 				"type": "select",
 				"range": ["⭑⭑⭑⭑⭑","⭑⭑⭑⭑","⭑⭑⭑","⭑⭑","⭑"],
 				"required": true
+			},
+			{
+				"id": "comments",
+				"label": "Any feedback for us? We love hearing it.",
+				"type": "textarea",
+				"rows": 3,
+				"required": false
 			}
 		],
 		"submit": {
@@ -48,7 +63,7 @@
 	
 	"MAIN": {
 		"title": "Player Comments",
-		"body_md": "# Thanks for playing!\n\nThis is the **main page** of the app."
+		"body_md": "# Thank you!\n\nWe appreciate your feedback. Come see us again soon!"
 	},
 	
 	"PUNCHCARDS": [
