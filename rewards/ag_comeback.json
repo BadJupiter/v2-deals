@@ -1,3 +1,16 @@
 {
-	"info": "(deal definition template)"
+	"notify": {
+		"text": "Come back soon! We'll treat you to a cup of brisket queso or 6 wings when you scan on your next visit!"
+	},
+	"redeem_button": {
+		"text": "Free queso or wings!"
+	},
+	"redeem_confirm": {
+		"header": "Confirm",
+		"text": "Are you ready to redeem this reward?"
+	},
+	"reward": {
+		"header": "You choose - can't lose!",
+		"text": "We appreciate you! Show this to your server and choose either a cup of brisket queso or 6 wings... on us!"
+	}
 }
