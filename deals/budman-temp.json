@@ -1,9 +1,9 @@
 {
-	"biz_id": "tails-ales-tul",
+	"biz_id": "budman",
 	"auth_required": false,
 	
 	"MAIN": {
-		"title": "Howdy y'all!",
+		"title": "Bud Man VIP Rewards",
 		"body_md": "Please pardon our dust, we are **under construction** at the minute. We'll be back up and better than ever shortly!"
 	}
 }
