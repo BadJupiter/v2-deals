@@ -5,8 +5,7 @@
 		"fonts": {
 			"headers": {
 				"family": "Raleway",
-				"weight": 700,
-				"style": "italic"
+				"weight": 700
 			},
 			"body": {
 				"family": "Raleway",
