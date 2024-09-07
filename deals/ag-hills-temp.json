@@ -2,7 +2,6 @@
 	"biz_id": "albertgs",
 	"auth_required": false,
 	"styling": {
-		"background_color": "#f9f9f4”,  // Off-white background
 		"fonts": {
 			"headers": {
 				"family": "Raleway",
