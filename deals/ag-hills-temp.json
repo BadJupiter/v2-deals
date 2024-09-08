@@ -1,23 +1,6 @@
 {
 	"biz_id": "albertgs",
 	"auth_required": false,
-	"styling": {
-		"background_color": "#f9f9f4",
-		"fonts": {
-			"hero_header": {
-				"family": "Raleway",
-				"weight": 700
-			},
-			"body": {
-				"family": "Slabo 27px",
-				"weight": 400
-			},
-			"formlabels": {
-				"family": "Raleway",
-				"weight": "bold"
-			}
-		}
-	},
 	
 	"MAIN": {
 		"title": "Heads Up BBQ Lovers!",

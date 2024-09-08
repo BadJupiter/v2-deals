@@ -12,23 +12,6 @@
 			"value": 1
 		}
 	],
-	"styling": {
-		"fonts": {
-			"headers": {
-				"family": "Raleway",
-				"weight": 700,
-				"style": "italic"
-			},
-			"body": {
-				"family": "Raleway",
-				"weight": "normal"
-			},
-			"formlabels": {
-				"family": "Raleway",
-				"weight": "bold"
-			}
-		}
-	},
 	
 	"FORM": {
 		"title": "How was your visit?",
