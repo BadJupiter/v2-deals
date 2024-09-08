@@ -1,22 +1,6 @@
 {
 	"biz_id": "albertgs",
 	"auth_required": false,
-	"styling": {
-		"fonts": {
-			"headers": {
-				"family": "Raleway",
-				"weight": 700
-			},
-			"body": {
-				"family": "Raleway",
-				"weight": "normal"
-			},
-			"formlabels": {
-				"family": "Raleway",
-				"weight": "bold"
-			}
-		}
-	},
 	
 	"MAIN": {
 		"title": "Albert G's VIP Loyalty",
