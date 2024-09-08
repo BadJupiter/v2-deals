@@ -2,15 +2,15 @@
 	"biz_id": "albertgs",
 	"auth_required": false,
 	"styling": {
-		"background_color": "#f9f9f4",  // Off-white background
+		"background_color": "#f9f9f4",
 		"fonts": {
 			"headers": {
 				"family": "Raleway",
 				"weight": 700
 			},
 			"body": {
-				"family": "Raleway",
-				"weight": "normal"
+				"family": "Slabo 27px",
+				"weight": 400
 			},
 			"formlabels": {
 				"family": "Raleway",
