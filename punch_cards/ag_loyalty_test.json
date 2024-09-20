@@ -10,12 +10,6 @@
 			"message": "That was your second scan! Just three more visits and we'd like to buy you dessert!"
 		},
 		{
-			"message": "You're more than halfway to a special reward…"
-		},
-		{
-			"message": "Next visit it'll be our pleasure to treat you to dessert with your meal!"
-		},
-		{
 			"message": "Yay! 5 checkins means you get a free dessert! Check your texts.",
 			"reward": "ag_dessert.json"
 		},
@@ -23,61 +17,16 @@
 			"message": "Six scans down, four to go. You're working your way to a 10% discount…"
 		},
 		{
-			"message": "Three more visits and we'll treat you to a 10% discount off your order."
-		},
-		{
-			"message": "What's your thing? Ribs? Brisket? Two more visits and it's all 10% off!"
-		},
-		{
-			"message": "Nice work! Next visit you'll win 10% off an entire order!"
-		},
-		{
 			"message": "Thanks for being an Albert G's fan! You've earned 10% off your bill. Check your texts",
 			"reward": "ag_disc10.json"
-		},
-		{
-			"message": "Keep coming back, it just keeps getting better! Four more visits and you get a 15% discount!"
-		},
-		{
-			"message": "Welcome back! That's 12 visits! Only three more and we'll take 15% off your order!"
-		},
-		{
-			"message": "Lucky 13th visit! Only two more…"
-		},
-		{
-			"message": "Thanks for coming back! Next time you'll get 15% off your entire check!"
 		},
 		{
 			"message": "You are awesome! Check your texts for a deal worth 15% off an entire order!",
 			"reward": "ag_disc15.json"
 		},
 		{
-			"message": "You're a BBQ legend! 4 more visits earns you a 20% discount off your entire bill."
-		},
-		{
-			"message": "Getting closer...3 more visits and we'll treat you to a 20% discount off your order."
-		},
-		{
-			"message": "Oh you're so close.  2 more visits = 20% off!"
-		},
-		{
-			"message": "You've almost reached Pitmaster status! Next visit gets you a 20% discount off your bill."
-		},
-		{
 			"message": "Wow! This is your 20th visit since we've been counting! Check your texts for a 20% off deal.",
 			"reward": "ag_disc20.json"
-		},
-		{
-			"message": "Blackjack! 21 check-ins! Working your way to a 25% discount…"
-		},
-		{
-			"message": "Great to see you again! Keep coming back, the biggest reward is coming up!"
-		},
-		{
-			"message": "So close! 3 more visits to a 25% discount!"
-		},
-		{
-			"message": "Yeehaw! Next visit you're a big winner!"
 		},
 		{
 			"message": "You did it! 25 visits means you get 25% off! Check your texts.",
