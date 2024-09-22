@@ -4,7 +4,7 @@
 	"punches": [
 		{
 			"message": "Thanks for coming in! Your first scan reward is coming in a text!",
-			"reward": "ag_comeback.json"
+			"reward": "jupiter_comeback.json"
 		},
 		{
 			"message": "That was your second scan! Just three more visits and we'd like to buy you dessert!"
