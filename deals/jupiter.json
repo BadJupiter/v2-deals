@@ -1,0 +1,57 @@
+{
+	"biz_id": "jupiter",
+	"check_in": true,
+	"auth_required": true,
+	"error_auth": {
+		"title": "Woops!",
+		"content": "Cain't play if you ain't authenticated!"
+	},
+	"limits": [
+		{
+			"type": "day",
+			"value": 1
+		}
+	],
+	
+	"FORM": {
+		"title": "How was your visit?",
+		"fields": [
+			{
+				"type": "info",
+				"markdown": "Welcome! Thanks for coming in!"
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"id": "rating",
+				"label": "Let us know how we did today",
+				"type": "select",
+				"range": ["⭑⭑⭑⭑⭑","⭑⭑⭑⭑","⭑⭑⭑","⭑⭑","⭑"],
+				"required": true
+			},
+			{
+				"id": "comments",
+				"label": "Any feedback for us? We love hearing it.",
+				"type": "textarea",
+				"rows": 3,
+				"required": false
+			}
+		],
+		"submit": {
+			"label": "Check me in"
+		}
+	},
+	
+	"MAIN": {
+		"title": "Player Comments",
+		"body_md": "# Thank you!\n\nWe appreciate your feedback. Come see us again soon!"
+	},
+	
+	"PUNCHCARDS": [
+		{
+			"template": "jupiter_loyalty.json"
+		}
+	]
+}
