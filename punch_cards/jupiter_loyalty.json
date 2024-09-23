@@ -1,12 +1,10 @@
 {
 	"id": "Jupiter VIP Loyalty TEST",
 	"renews": true,
-	"limits": [
-		{
-			"type": "day",
-			"value": 11
-		}
-	],
+	"limit": {
+		"type": "day",
+		"message": "Only once per day for the VIP Loyalty TEST"
+	},
 	"punches": [
 		{
 			"message": "Thanks for visiting Jupiter! Your first scan reward is coming in a text!",
