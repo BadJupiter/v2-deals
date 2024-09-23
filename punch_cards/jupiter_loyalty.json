@@ -3,7 +3,7 @@
 	"renews": true,
 	"punches": [
 		{
-			"message": "Thanks for coming in! Your first scan reward is coming in a text!",
+			"message": "Thanks for visiting Jupiter! Your first scan reward is coming in a text!",
 			"reward": "jupiter_comeback.json"
 		},
 		{
