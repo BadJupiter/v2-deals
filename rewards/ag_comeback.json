@@ -1,3 +1,5 @@
+#	header for both redeem_config and reward are no longer used
+
 {
 	"notify": {
 		"text": "Come back soon! We'll treat you to a cup of brisket queso or 6 wings when you scan on your next visit!"
@@ -6,11 +8,11 @@
 		"text": "Free queso or wings!"
 	},
 	"redeem_confirm": {
-		"header": "Confirm",
+#		"header": "Confirm",
 		"text": "Are you ready to redeem this reward? (comeback)"
 	},
 	"reward": {
-		"header": "You choose - can't lose!",
+#		"header": "You choose - can't lose!",
 		"text": "We appreciate you! Show this to your server and choose either a cup of brisket queso or 6 wings... on us!"
 #	},
 #	"valid": {
