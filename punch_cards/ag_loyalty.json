@@ -4,11 +4,11 @@
 	
 #	"limit" is an optional section. currently only "day" type is supported.
 #	"message" will get displayed on limit error if present
-	
-	"limit": {
-		"type": "day",
-		"message": "Only once per day for the VIP Loyalty program!"
-	},
+#	
+#	"limit": {
+#		"type": "day",
+#		"message": "Only once per day for the VIP Loyalty program!"
+#	},
 	"punches": [
 		{
 			"message": "Thanks for coming in! Your first scan reward is coming in a text!",
