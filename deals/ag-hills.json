@@ -51,7 +51,7 @@
 	
 	"PUNCHCARDS": [
 		{
-			"template": "ag_loyalty_test.json"
+			"template": "ag_loyalty.json"
 		}
 	]
 }

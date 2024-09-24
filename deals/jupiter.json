@@ -6,12 +6,6 @@
 		"title": "Woops!",
 		"content": "Cain't play if you ain't authenticated!"
 	},
-	"limits": [
-		{
-			"type": "day",
-			"value": 1
-		}
-	],
 	
 	"FORM": {
 		"title": "How was your visit?",
@@ -51,7 +45,7 @@
 	
 	"PUNCHCARDS": [
 		{
-			"template": "jupiter_loyalty.json"
+			"template": "ag_loyalty.json"
 		}
 	]
 }
