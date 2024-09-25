@@ -11,11 +11,11 @@
 #	},
 	"punches": [
 		{
-			"message": "From Albert G's: Thanks for coming in! Your first scan reward is coming in a text!",
+			"message": "Thanks for coming in! Your first scan reward is coming in a text!",
 			"reward": "ag_comeback.json"
 		},
 		{
-			"message": "From Albert G's: That was your second scan! Just three more visits and we'd like to buy you dessert!"
+			"message": "That was your second scan! Just three more visits and we'd like to buy you dessert!"
 		},
 		{
 			"message": "You're more than halfway to a special reward…"
