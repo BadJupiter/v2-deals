@@ -8,11 +8,11 @@
 	},
 	
 	"FORM": {
-		"title": "How was your visit?",
+		"title": "Albert G's - Tulsa Hills",
 		"fields": [
 			{
 				"type": "info",
-				"markdown": "Welcome! Thanks for coming in!"
+				"markdown": "**Welcome! Thanks for coming in!**"
 			},
 			{
 				"type": "info",
@@ -20,27 +20,27 @@
 			},
 			{
 				"id": "rating",
-				"label": "Let us know how we did today",
+				"label": "Please let us know how we did today",
 				"type": "select",
 				"range": ["⭑⭑⭑⭑⭑","⭑⭑⭑⭑","⭑⭑⭑","⭑⭑","⭑"],
 				"required": true
 			},
 			{
 				"id": "comments",
-				"label": "Any feedback for us? We love hearing it.",
+				"label": "Any feedback for us? We love hearing it!",
 				"type": "textarea",
 				"rows": 3,
 				"required": false
 			}
 		],
 		"submit": {
-			"label": "Check me in"
+			"label": "Check me in!"
 		}
 	},
 	
 	"MAIN": {
-		"title": "Albert G's VIP",
-		"body_md": "# Thank you!\n\nWe appreciate your feedback. Come see us again soon!"
+		"title": "Welcome to Tulsa Hills!",
+		"body_md": "# Thank you!\n\nWelcome to our newest location! Be sure to **scan each visit** for credit toward tasty rewards at any of our locations. Visit us in [Midtown](https://albertgs.com/midtown/) and in the [Blue Dome](https://albertgs.com/downtown/) too!"
 	},
 	
 	"PUNCHCARDS": [
