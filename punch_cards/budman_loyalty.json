@@ -1,0 +1,64 @@
+{
+	"id": "Bud Man VIP",
+	"renews": true,
+	
+#	"limit" is an optional section. currently only "day" type is supported.
+#	"message" will get displayed on limit error if present
+#	
+#	"limit": {
+#		"type": "day",
+#		"message": "Only once per day for the Bud Man VIP Loyalty program!"
+#	},
+
+	"punches": [
+		{
+			"message": "Welcome to Bud Man OC! We just dropped a $10 credit into your account. Use Coupon Code NEWVIP on your next order. See you when it's time to re-up your stash!",
+			"reward": "budman_newvip.json"
+		},
+		{
+			"message": "Congrats on your second delivery from Bud Man OC! We hope you're enjoying our sticky treats. On your fifth order, we'll have a 420 surprise for you!"
+		},
+		{
+			"message": "Congrats on your latest order from Bud Man OC! This is getting chronic. You're more than half way to earning a 420 reward."
+		},
+		{
+			"message": "That's your fourth delivery from Bud Man OC! We're so happy to be your favorite dispensary in Orange County. One more order, and we'll give you $10 credit."
+		},
+		{
+			"message": "Couchlock alert! You just earned a reward from Bud Man OC. Here's a $10 credit for your next order. Use Coupon Code 420VIP.",
+			"reward": "budman_420vip.json"
+		},
+		{
+			"message": "Is it dank in here, or is it just us? 4 more deliveries from Bud Man OC gets you a $20 credit."
+		},
+		{
+			"message": "Keep on truckin' Orange County! 3 more deliveries from Bud Man OC, and a $20 coupon is yours!"
+		},
+		{
+			"message": "Safety meeting! 2 more orders from Bud Man OC gets you $20!"
+		},
+		{
+			"message": "Dave's almost here! One more order from Bud Man OC, and you get a $20 credit!"
+		},
+		{
+			"message": "Sesh time! Here's $20 credit for your next bake session. Use Coupon Code VIPSESH when you order online.",
+			"reward": "budman_vipsesh.json"
+		},
+		{
+			"message": "You're getting seriously elevated. 4 more deliveries from Bud Man OC, and a $30 coupon will launch!"
+		},
+		{
+			"message": "Can we be blunt? 3 more orders from Bud Man OC, and a $30 coupon is coming your way."
+		},
+		{
+			"message": "That's a baked dozen! 2 more orders from Bud Man OC gets you $30 to spend on your next bag of goodies."
+		},
+		{
+			"message": "High as an Orange County palm! One more order from Bud Man OC, and you'll be skywalking with a $30 credit."
+		},
+		{
+			"message": "Totally tubular! Time for some ganja love from Bud Man OC. Here's a $30 credit for your next sesh. Use Coupon Code BUDLOVE.",
+			"reward": "budman_budlove.json"
+		}
+	]
+}
