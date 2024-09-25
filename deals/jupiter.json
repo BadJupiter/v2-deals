@@ -22,7 +22,7 @@
 				"id": "rating",
 				"label": "Please let us know how we did today",
 				"type": "select",
-				"range": ["⭑⭑⭑⭑⭑","⭑⭑⭑⭑","⭑⭑⭑","⭑⭑","⭑"],
+				"range": ["⭑⭑⭑⭑⭑ - BBQ Bliss","⭑⭑⭑⭑","3⭑ - Middle of the Rack","2⭑ Off the Mark","Fire's Gone Out"],
 				"required": true
 			},
 			{
