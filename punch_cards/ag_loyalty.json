@@ -18,61 +18,61 @@
 			"message": "Smokin’! Two visits down and you’re heating up. Keep scanning each time you’re in, and we’ll cook up something special soon!"
 		},
 		{
-			"message": "You’re on a roll! Thanks for stopping by—just a couple more visits to earn a sweet reward."
+			"message": "You’re on a roll! Thanks for stopping by — just a couple more visits to earn a sweet reward."
 		},
 		{
-			"message": "Four visits and you’re practically family! One more check-in, and your free dessert is just around the corner."
+			"message": "Four visits and you’re practically family! One more check-in, and a free dessert is just around the corner."
 		},
 		{
-			"message": "Boom! Five visits down, and your free dessert is ready to go. Check your texts, and thanks for being a BBQ Lover!",
+			"message": "Boom! That's five visits, so dessert is on us next time! Check your texts, and thanks for being a BBQ Lover!",
 			"reward": "ag_dessert.json"
 		},
 		{
 			"message": "Six visits means you’re really bringing the heat! Keep it up, and we’ve got bigger, tastier rewards on the way."
 		},
 		{
-			"message": "You’re smokin’ through these check-ins! Visit number seven down, and you’re getting close to another reward. We appreciate your business!"
+			"message": "You’re smokin’ through these check-ins! Visit number seven down, and you’re getting close to another reward!"
 		},
 		{
-			"message": "We can’t thank you enough! Just two more visits, and you’ll earn 10% off your next BBQ feast!"
+			"message": "We can’t thank you enough! Just two more visits, and you’ll earn a "10% off" discount on a BBQ feast!"
 		},
 		{
-			"message": "One more visit, and you’ll be cashing in on a delicious 10% discount. Keep scanning!"
+			"message": "One more visit, and you’ll be cashing in on a delicious "10% off" discount. Keep scanning!"
 		},
 		{
-			"message": "You’ve done it – 10 visits! Your 10% off coupon is heading your way. Check your texts, and thanks for being part of the Free G’s family!",
+			"message": "You’ve done it – 10 visits! A "10% off" coupon is heading your way. Check your texts, and thanks for being part of the Free G’s family!",
 			"reward": "ag_disc10.json"
 		},
 		{
 			"message": "Now that’s dedication! You’re just four away from your next big reward. We can’t wait to see you again!"
 		},
 		{
-			"message": "Twelfth visit in the books! Thanks for your continued business—you’re getting close to that 15% off reward!"
+			"message": "Thanks for your continued business — you’re getting close to a "15% off" reward!"
 		},
 		{
-			"message": "You’re well on your way to BBQ greatness! Just two more visits and you’ll be scoring 15% off your next meal!"
+			"message": "You’re well on your way to BBQ greatness! Just two more visits and you’ll be scoring a "15%" off reward!"
 		},
 		{
-			"message": "Thanks for coming back! Next time you'll get 15% off your entire check!"
+			"message": "Thanks for coming back! Next time you'll earn a "15% off" reward!"
 		},
 		{
-			"message": "Fifteen visits, and we’ve got a treat for you! Enjoy 15% off your next visit—check your texts for all the details.",
+			"message": "Fifteen visits, and we’ve got a treat for you! Enjoy 15% off your next visit — check your texts for details.",
 			"reward": "ag_disc15.json"
 		},
 		{
 			"message": "You’re a BBQ rockstar! Keep scanning, and before you know it, you’ll have 20% off your next meal."
 		},
 		{
-			"message": "You’re searing through those visits! You’re just a few more away from a 20% discount. Thanks for being such a great customer!"
+			"message": "You’re searing through those visits! You’re just a few more to earn a 20% discount. Thanks for being such a great customer!"
 		},
 		{
-			"message": "We’re sooo happy to see you again! Two more check-ins and a 20% off discount is yours."
+			"message": "We’re sooo happy to see you again! Two more check-ins and a "20% off" discount is yours."
 		},
 		{
 			"message": "On fire with 19 visits! Just one more, and you’ll be feasting on BBQ with 20% off. We appreciate you!"
 		},
 		{
-			"message": "Twenty visits—amazing! Your 20% off reward is waiting for you. Check your texts for the details, and thanks for being a BBQ legend!",
+			"message": "Twenty visits—amazing! Your 20% off reward is on the way. Check your texts for the details, and thanks for being a BBQ legend!",
 			"reward": "ag_disc20.json"
 		},
 		{
@@ -82,10 +82,10 @@
 			"message": "Flame-grilled dedication! Only three more to hit that big 25% off milestone."
 		},
 		{
-			"message": "You’re BBQ royalty! Just two more, and that savory 25% discount will be all yours. Thanks for sticking with us!"
+			"message": "You’re BBQ royalty! Just two more, and that savory 25% discount will be all yours. Thanks for sharing some time with us!"
 		},
 		{
-			"message": "Almost there! One more, and you’ll be grabbing 25% off your next visit. We can’t wait to celebrate with you!"
+			"message": "Almost there! One more, and you’ll earn a "25% off" discount. We can’t wait to celebrate with you!"
 		},
 		{
 			"message": "Legendary status achieved! You’ve earned 25% off your next meal, and we couldn’t be more grateful. Check your texts and enjoy!",
