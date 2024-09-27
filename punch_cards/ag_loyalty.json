@@ -34,26 +34,26 @@
 			"message": "You’re smokin’ through these check-ins! Visit number seven down, and you’re getting close to another reward!"
 		},
 		{
-			"message": "We can’t thank you enough! Just two more visits, and you’ll earn a "10% off" discount on a BBQ feast!"
+			"message": "We can’t thank you enough! Just two more visits, and you’ll earn a 10% off discount on a BBQ feast!"
 		},
 		{
-			"message": "One more visit, and you’ll be cashing in on a delicious "10% off" discount. Keep scanning!"
+			"message": "One more visit, and you’ll be cashing in on a delicious 10% off discount. Keep scanning!"
 		},
 		{
-			"message": "You’ve done it – 10 visits! A "10% off" coupon is heading your way. Check your texts, and thanks for being part of the Free G’s family!",
+			"message": "You’ve done it – 10 visits! A 10% off coupon is heading your way. Check your texts, and thanks for being part of the Free G’s family!",
 			"reward": "ag_disc10.json"
 		},
 		{
 			"message": "Now that’s dedication! You’re just four away from your next big reward. We can’t wait to see you again!"
 		},
 		{
-			"message": "Thanks for your continued business — you’re getting close to a "15% off" reward!"
+			"message": "Thanks for your continued business — you’re getting close to a 15% off reward!"
 		},
 		{
-			"message": "You’re well on your way to BBQ greatness! Just two more visits and you’ll be scoring a "15%" off reward!"
+			"message": "You’re well on your way to BBQ greatness! Just two more visits and you’ll be scoring a 15% off reward!"
 		},
 		{
-			"message": "Thanks for coming back! Next time you'll earn a "15% off" reward!"
+			"message": "Thanks for coming back! Next time you'll earn a 15% off reward!"
 		},
 		{
 			"message": "Fifteen visits, and we’ve got a treat for you! Enjoy 15% off your next visit — check your texts for details.",
@@ -66,7 +66,7 @@
 			"message": "You’re searing through those visits! You’re just a few more to earn a 20% discount. Thanks for being such a great customer!"
 		},
 		{
-			"message": "We’re sooo happy to see you again! Two more check-ins and a "20% off" discount is yours."
+			"message": "We’re sooo happy to see you again! Two more check-ins and a 20% off discount is yours."
 		},
 		{
 			"message": "On fire with 19 visits! Just one more, and you’ll be feasting on BBQ with 20% off. We appreciate you!"
@@ -85,7 +85,7 @@
 			"message": "You’re BBQ royalty! Just two more, and that savory 25% discount will be all yours. Thanks for sharing some time with us!"
 		},
 		{
-			"message": "Almost there! One more, and you’ll earn a "25% off" discount. We can’t wait to celebrate with you!"
+			"message": "Almost there! One more, and you’ll earn a 25% off discount. We can’t wait to celebrate with you!"
 		},
 		{
 			"message": "Legendary status achieved! You’ve earned 25% off your next meal, and we couldn’t be more grateful. Check your texts and enjoy!",
