@@ -11,7 +11,7 @@
 	},
 	"reward": {
 		"header": "Free dessert!",
-		"text": "Just show this to your server to redeem your special treat!"
+		"text": "Just show this to your server to redeem your **Free Dessert!**"
 #	},
 #	"valid": {
 #		"start_offset": 1 # next day
