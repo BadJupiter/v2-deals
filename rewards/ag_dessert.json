@@ -7,7 +7,7 @@
 	},
 	"redeem_confirm": {
 		"header": "Confirm",
-		"text": "Are you ready to redeem this reward? (dessert)"
+		"text": "Are you ready to redeem your **Free Dessert** reward?"
 	},
 	"reward": {
 		"header": "Free dessert!",
