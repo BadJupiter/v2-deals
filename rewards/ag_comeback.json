@@ -9,11 +9,11 @@
 	},
 	"redeem_confirm": {
 		"header": "Confirm",
-		"text": "Are you ready to snag your **Brisket Queso or Wings**?"
+		"text": "Are you ready to snag your Brisket Queso or Wings?"
 	},
 	"reward": {
 		"header": "You choose - can't lose!",
-		"text": "We appreciate you! Show this to your server and choose either a cup of **Brisket Queso or 6 Wings**... on us!"
+		"text": "We appreciate you! Show this to your server and choose either a cup of Brisket Queso or 6 Wings... on us!"
 #	},
 #	"valid": {
 #		"start_offset": 1
