@@ -14,8 +14,8 @@
 	"reward": {
 		"header": "You choose - can't lose!",
 		"text": "We appreciate you! Show this to your server and choose either a cup of Brisket Queso or 6 Wings... on us!"
-#	},
-#	"valid": {
-#		"start_offset": 1
+	},
+	"valid": {
+		"start_offset": 1
 	}
 }
