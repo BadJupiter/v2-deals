@@ -7,13 +7,13 @@
 	},
 	"redeem_confirm": {
 		"header": "Confirm",
-		"text": "Are you ready to redeem this reward? (20%)"
+		"text": "Are you ready to redeem your **20% Discount** reward?"
 	},
 	"reward": {
 		"header": "20% Discount!",
-		"text": "Just show this to your server to redeem your discount!"
-	},
-	"valid": {
-		"start_offset": 1 # next day
+		"text": "Just show this to your server to redeem your **20% Discount!**"
+#	},
+#	"valid": {
+#		"start_offset": 1 # next day
 	}
 }
