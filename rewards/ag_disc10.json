@@ -11,9 +11,9 @@
 	},
 	"reward": {
 		"header": "10% Discount!",
-		"text": "Just show this to your server to redeem your discount!"
-	},
-	"valid": {
-		"start_offset": 1 # next day
+		"text": "Just show this to your server to redeem your **10% discount!**"
+#	},
+#	"valid": {
+#		"start_offset": 1 # next day
 	}
 }
