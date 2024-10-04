@@ -7,11 +7,11 @@
 	},
 	"redeem_confirm": {
 		"header": "Confirm",
-		"text": "Are you ready to redeem your **Free Dessert** reward?"
+		"text": "Are you ready to redeem your Free Dessert reward?"
 	},
 	"reward": {
 		"header": "Free dessert!",
-		"text": "We appreciate you! Just show this to your server to redeem your **Free Dessert!**"
+		"text": "We appreciate you! Just show this to your server to redeem your Free Dessert!"
 #	},
 #	"valid": {
 #		"start_offset": 1 # next day
