@@ -4,11 +4,11 @@
 	
 #	"limit" is an optional section. currently only "day" type is supported.
 #	"message" will get displayed on limit error if present
-#	
-#	"limit": {
-#		"type": "day",
-#		"message": "You're all set for today! Make sure you check-in again next time you're in!"
-#	},
+	
+	"limit": {
+		"type": "day",
+		"message": "You're all set for today! Make sure you check-in again next time you're in!"
+	},
 	"punches": [
 		{
 			"message": "Thanks for coming in and welcome to Free G's Rewards! Just scan the QR each time you visit and we'll pile on with bigger, better and tastier rewards! Your first on is already on the way, check your texts!",
