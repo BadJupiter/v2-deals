@@ -27,7 +27,7 @@
 				"label": "Email:",
 				"type": "email",
 				"required": true,
-				"persist": true
+				"sticky": true
 			}
 		],
 		"submit": {
