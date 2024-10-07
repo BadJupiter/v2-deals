@@ -7,7 +7,7 @@
 		"content": "Cain't play if you ain't authenticated!"
 	},
 
-#	the 'persist' parameter is optional. 
+#	the 'sticky' parameter is optional. 
 #	If present and true, the field will be saved on the User object associated with the Business
 #	and can be referenced in the future by other deals, rewards, etc.
 	
