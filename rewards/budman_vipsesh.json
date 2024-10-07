@@ -1,0 +1,16 @@
+{
+	"notify": {
+		"text": "Wow! A $30 credit just landed in your Bud Man OC account! Use code BUDLOVE"
+	},
+	"reward": {
+		"text": "You're a true VIP! We just dropped a $30 credit in your account for your next online order. See you soon!",
+		"integration": {
+			"service": "WooCommerce"
+		
+		#	TODO:
+		#	figure out how to identify coupon and any parameters (email?) somehow
+		#	so they can get passed to the integration service
+		
+		}
+	}
+}

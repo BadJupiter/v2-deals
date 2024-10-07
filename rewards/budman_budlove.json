@@ -5,7 +5,7 @@
 	"reward": {
 		"text": "Hey VIP! We just dropped a $20 credit in your account for your next online order. See you soon!",
 		"integration": {
-			"service": "WooCommerce",
+			"service": "WooCommerce"
 		
 		#	TODO:
 		#	figure out how to identify coupon and any parameters (email?) somehow
