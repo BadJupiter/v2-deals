@@ -24,10 +24,10 @@
 			},
 			{
 				"id": "email",
+				"label": "Email:",
 				"type": "email",
 				"required": true,
-				"sticky": true,
-				"placeholder": "enter email"
+				"sticky": true
 			},
 			{
 				"type": "info",
