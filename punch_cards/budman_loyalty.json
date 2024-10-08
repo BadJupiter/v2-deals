@@ -16,13 +16,16 @@
 			"reward": "budman_newvip.json"
 		},
 		{
-			"message": "Congrats on your second delivery from Bud Man OC! We hope you're enjoying our sticky treats. On your fifth order, we'll have a 420 surprise for you!"
+			"message": "Congrats on your second delivery from Bud Man OC! We hope you're enjoying our sticky treats. On your fifth order, we'll have a 420 surprise for you!",
+			"reward": "budman_newvip.json"
 		},
 		{
-			"message": "Congrats on your latest order from Bud Man OC! This is getting chronic. You're more than half way to earning a 420 reward."
+			"message": "Congrats on your latest order from Bud Man OC! This is getting chronic. You're more than half way to earning a 420 reward.",
+			"reward": "budman_newvip.json"
 		},
 		{
-			"message": "That's your fourth delivery from Bud Man OC! We're so happy to be your favorite dispensary in Orange County. One more order, and we'll give you $10 credit."
+			"message": "That's your fourth delivery from Bud Man OC! We're so happy to be your favorite dispensary in Orange County. One more order, and we'll give you $10 credit.",
+			"reward": "budman_newvip.json"
 		},
 		{
 			"message": "Couchlock alert! You just earned a reward from Bud Man OC. Here's a $10 credit for your next order. Use Coupon Code 420VIP.",
