@@ -12,7 +12,7 @@
 
 	"punches": [
 		{
-			"message": "Welcome to Bud Man OC! We just dropped a $10 credit into your account. Use Coupon Code NEWVIP on your next order. See you when it's time to re-up your stash!",
+			"message": "Welcome to Bud Man OC! 🍍 We just dropped a $10 credit into your account. Use Coupon Code NEWVIP on your next order. See you when it's time to re-up your stash!",
 			"reward": "budman_newvip.json"
 		},
 		{
@@ -41,7 +41,7 @@
 			"message": "Safety meeting! 2 more orders from Bud Man OC gets you $20!"
 		},
 		{
-			"message": "Dave's almost here! One more order from Bud Man OC, and you get a $20 credit!"
+			"message": "Dave's almost here! 🍍 One more order from Bud Man OC, and you get a $20 credit!"
 		},
 		{
 			"message": "Sesh time! Here's $20 credit for your next bake session. Use Coupon Code VIPSESH when you order online.",
