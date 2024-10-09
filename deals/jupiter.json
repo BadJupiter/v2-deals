@@ -27,7 +27,8 @@
 				"label": "Email:",
 				"type": "email",
 				"required": true,
-				"sticky": true
+				"sticky": true,
+				"placeholder": "enter email"
 			},
 			{
 				"type": "info",
