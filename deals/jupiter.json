@@ -24,7 +24,6 @@
 			},
 			{
 				"id": "email",
-				"label": "Email:",
 				"type": "email",
 				"required": true,
 				"sticky": true,
