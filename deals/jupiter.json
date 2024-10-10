@@ -12,22 +12,22 @@
 #	and can be referenced in the future by other deals, rewards, etc.
 	
 	"FORM": {
-		"title": "BUD MONEY!",
+		"title": "WANT SOME BUD MONEY?",
 		"fields": [
 			{
 				"type": "info",
-				"markdown": "Unleash the power of Bud Man OC **Electronic Punch Card**  \nProvide your email and brace for a monetary infusion!"
-			},
-			{
-				"type": "info",
-				"markdown": "---"
+				"markdown": "Unleash the power of the Bud Man OC **Electronic Punch Card!**  \n\nProvide your email and brace for a monetary infusion!"
 			},
 			{
 				"id": "email",
-				"label": "Email:",
 				"type": "email",
 				"required": true,
-				"sticky": true
+				"sticky": true,
+				"placeholder": "enter email"
+			},
+			{
+				"type": "info",
+				"markdown": "We deliver cannabis products to any location in Orange County, California. \n**10am - 10pm, 365 Days a Year!**"
 			}
 		],
 		"submit": {
