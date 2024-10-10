@@ -5,12 +5,10 @@
 	"reward": {
 		"text": "We appreciate you! We just dropped a $10 credit in your account for your next online order. See you soon!",
 		"integration": {
-			"service": "WooCommerce"
-		
-		#	TODO:
-		#	figure out how to identify coupon and any parameters (email?) somehow
-		#	so they can get passed to the integration service
-		
+			"service_name": "WooCommerce",
+			"service_url": "https://budmanoc.com/shop/"
+			"coupon_code": "NEWVIP",
+			"value": 10		
 		}
 	}
 }
