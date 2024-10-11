@@ -7,8 +7,10 @@
 		"integration": {
 			"service_name": "WooCommerce",
 			"service_url": "https://budmanoc.com/shop/",
-			"coupon_code": "NEWVIP",
-			"value": 10		
+			"coupon_code": "NEWVIP"
+			
+#			coupons are created in WooCommerce console and assigned values there
+#			if a nonexistent coupon is referenced here, things will fail
 		}
 	}
 }
