@@ -1,9 +1,9 @@
 {
 	"notify": {
-		"text": "Very cool! A $20 credit just hit your Bud Man OC account! Use code BUDLOVE"
+		"text": "Very cool! A $30 credit just hit your Bud Man OC account! Use code BUDLOVE"
 	},
 	"reward": {
-		"text": "Hey VIP! We just dropped a $20 credit in your account for your next online order. See you soon!",
+		"text": "Hey VIP! We just dropped a $30 credit in your account for your next online order. See you soon!",
 		"integration": {
 			"service_name": "WooCommerce",
 			"service_url": "https://budmanoc.com/",
