@@ -5,13 +5,12 @@
 	"reward": {
 		"text": "Thanks for being a loyal customer! We just dropped a $10 credit in your account for your next online order. See you soon!",
 		"integration": {
-					"service_name": "WooCommerce",
-					"service_url": "https://budmanoc.com/",
-					"coupon_code": "420VIP"
+			"service_name": "WooCommerce",
+			"service_url": "https://budmanoc.com/",
+			"coupon_code": "420VIP"
 					
-		#			coupons are created in WP/WooCommerce console and assigned values there
-		#			if a nonexistent coupon is referenced here, things will fail
-		
+#			coupons are created in WP/WooCommerce console and assigned values there
+#			if a nonexistent coupon is referenced here, things will fail
 		}
 	}
 }

@@ -1,9 +1,0 @@
-{
-	"biz_id": "tails-ales-tul",
-	"auth_required": false,
-	
-	"MAIN": {
-		"title": "Howdy y'all!",
-		"body_md": "This is a little bit **under construction** at the minute."
-	}
-}
