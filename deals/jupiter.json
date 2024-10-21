@@ -16,18 +16,18 @@
 		"fields": [
 			{
 				"type": "info",
-				"markdown": "You and a guest are cordially invited to a special dinner with renowned Tulsa Chef Justin Thompson from the Phryme Steakhouse! \n\nSaturday, December 14, 2024 \n\n7:00 pm \n\n Norman Grill"
+				"markdown": "You and a guest are cordially invited to a VIP dinner with renowned **Tulsa Chef Justin Thompson** from the Phryme Steakhouse! \n\nWhen: Saturday, December 14, 2024 @ 7:00 pm \n\nWhere: Norman Grill \n\nPlease reply by December 1, 2024"
 			},
 			{
 				"id": "reply",
-				"label": "Please let us know if you'll be able to attend",
+				"label": "Will you be attending",
 				"type": "select",
 				"range": ["I will be there","I'm unable to make it"],
 				"required": true
 			},
 			{
 				"id": "guest",
-				"label": "Will you bwe bringing a guest?",
+				"label": "Will you be bringing a guest?",
 				"type": "select",
 				"range": ["Yes","No"],
 				"required": false
