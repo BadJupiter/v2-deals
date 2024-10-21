@@ -19,11 +19,18 @@
 				"markdown": "You and a guest are cordially invited to a special dinner with renowned Tulsa Chef Justin Thompson from the Phryme Steakhouse!"
 			},
 			{
-				"id": "email",
-				"type": "email",
-				"required": true,
-				"sticky": true,
-				"placeholder": "enter email"
+				"id": "reply",
+				"label": "Please let us know if you'll be able to attend",
+				"type": "multi-select",
+				"range": ["I will be there","I'm unable to make it"],
+				"required": true
+			},
+			{
+				"id": "guest",
+				"label": "Will you bwe bringing a guest?",
+				"type": "multi-select",
+				"range": ["Yes","No"],
+				"required": false
 			},
 			{
 				"type": "info",
