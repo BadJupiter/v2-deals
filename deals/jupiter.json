@@ -21,14 +21,14 @@
 			{
 				"id": "reply",
 				"label": "Please let us know if you'll be able to attend",
-				"type": "multi-select",
+				"type": "select",
 				"range": ["I will be there","I'm unable to make it"],
 				"required": true
 			},
 			{
 				"id": "guest",
 				"label": "Will you bwe bringing a guest?",
-				"type": "multi-select",
+				"type": "select",
 				"range": ["Yes","No"],
 				"required": false
 			},
