@@ -16,7 +16,7 @@
 		"fields": [
 			{
 				"type": "info",
-				"markdown": "You and a guest are cordially invited to join us at the Tunderbird Casino for a special dinner with renowned Tulsa Chef Justin Thompson from the Phryme Steakhouse!"
+				"markdown": "You and a guest are cordially invited to a special dinner with renowned Tulsa Chef Justin Thompson from the Phryme Steakhouse!"
 			},
 			{
 				"id": "email",
@@ -31,7 +31,7 @@
 			}
 		],
 		"submit": {
-			"label": "I'm in!"
+			"label": "Send my RSVP"
 		}
 	},
 	
