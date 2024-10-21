@@ -12,11 +12,11 @@
 #	and can be referenced in the future by other deals, rewards, etc.
 	
 	"FORM": {
-		"title": "WANT SOME BUD MONEY?",
+		"title": "",
 		"fields": [
 			{
 				"type": "info",
-				"markdown": "Unleash the power of the Bud Man OC **Electronic Punch Card!**  \n\nProvide your email and brace for a monetary infusion!"
+				"markdown": "We hope you can make it \nYou and a guest are cordially invited to join us at the Tunderbird Casino for a special dinner with renowned Tulsa Chef Justin Thompson from the Phryme Steakhouse"
 			},
 			{
 				"id": "email",
