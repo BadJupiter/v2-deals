@@ -6,46 +6,46 @@
 		"title": "Woops!",
 		"content": "Cain't play if you ain't authenticated!"
 	},
-
-#	the 'sticky' parameter is optional. 
-#	If present and true, the field will be saved on the User object associated with the Business
-#	and can be referenced in the future by other deals, rewards, etc.
 	
 	"FORM": {
-		"title": "",
+		"title": "Jupiter G's - Tulsa Hills",
 		"fields": [
 			{
 				"type": "info",
-				"markdown": "You and a guest are cordially invited to a VIP dinner with renowned **Tulsa Chef Justin Thompson** from the Phryme Steakhouse! \n\nWhen: Saturday, December 14, 2024 @ 7:00 pm \n\nWhere: Norman Grill \n\nPlease reply by December 1, 2024"
+				"markdown": "# **Thanks for coming in!**"
 			},
 			{
-				"id": "reply",
-				"label": "Will you be attending",
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"id": "rating",
+				"label": "Please let us know how we did today",
 				"type": "select",
-				"range": ["I will be there","I'm unable to make it"],
+				"range": ["1. BBQ at it's Best!","2. Oh So Good","3. Middle o' the Rack","4. Off the Mark","5. Fire's Gone Out!"],
 				"required": true
 			},
 			{
-				"id": "guest",
-				"label": "Will you be bringing a guest?",
-				"type": "select",
-				"range": ["Yes","No"],
+				"id": "comments",
+				"label": "Any feedback for us? We love hearing it!",
+				"type": "textarea",
+				"rows": 3,
 				"required": false
 			}
 		],
 		"submit": {
-			"label": "Send my RSVP"
+			"label": "Check me in!"
 		}
 	},
 	
 	"MAIN": {
-		"title": "Thank you!",
-		"body_md": "We appreciate you beyond measure! Keep coming back and we'll keep showing you the love!"
+		"title": "Welcome to Tulsa Hills!",
+		"body_md": "# Thank you!\n\nWelcome to our newest location! Be sure to **scan each visit** for credit toward tasty rewards at any of our locations. Visit us in [Midtown](https://albertgs.com/midtown/) and in the [Blue Dome](https://albertgs.com/downtown/) too!"
 	},
 	
 	"PUNCHCARDS": [
 		{
-			"template": "budman_loyalty.json"
+			"template": "ag_loyalty.json"
 		}
 	]
 }
