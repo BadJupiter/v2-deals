@@ -45,7 +45,7 @@
 	
 	"PUNCHCARDS": [
 		{
-			"template": "ag_loyalty.json"
+			"template": "jupiter_loyalty.json"
 		}
 	]
 }
