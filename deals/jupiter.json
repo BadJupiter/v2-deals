@@ -1,6 +1,10 @@
 {
 	"biz_id": "jupiter",
-	"check_in": true,
+	
+#	instead of check_in t/f I think we'll do a deal_type:
+#	checkin, rsvp, survey, etc.
+
+	"check_in": false,
 	"auth_required": true,
 	"error_auth": {
 		"title": "Woops!",
