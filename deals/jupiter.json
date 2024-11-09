@@ -10,43 +10,46 @@
 		"title": "Woops!",
 		"content": "Cain't play if you ain't authenticated!"
 	},
-
-#	the 'sticky' parameter is optional. 
-#	If present and true, the field will be saved on the User object associated with the Business
-#	and can be referenced in the future by other deals, rewards, etc.
 	
 	"FORM": {
-		"title": "WANT SOME BUD MONEY?",
+		"title": "Jupiter G's - Tulsa Hills",
 		"fields": [
 			{
 				"type": "info",
-				"markdown": "Unleash the power of the Bud Man OC **Electronic Punch Card!**  \n\nProvide your email and brace for a monetary infusion!"
-			},
-			{
-				"id": "email",
-				"type": "email",
-				"required": true,
-				"sticky": true,
-				"placeholder": "enter email"
+				"markdown": "# **Thanks for coming in!**"
 			},
 			{
 				"type": "info",
-				"markdown": "We deliver cannabis products to any location in Orange County, California. \n**10am - 10pm, 365 Days a Year!**"
+				"markdown": "---"
+			},
+			{
+				"id": "rating",
+				"label": "Please let us know how we did today",
+				"type": "select",
+				"range": ["1. BBQ at it's Best!","2. Oh So Good","3. Middle o' the Rack","4. Off the Mark","5. Fire's Gone Out!"],
+				"required": true
+			},
+			{
+				"id": "comments",
+				"label": "Any feedback for us? We love hearing it!",
+				"type": "textarea",
+				"rows": 3,
+				"required": false
 			}
 		],
 		"submit": {
-			"label": "I'm in!"
+			"label": "Check me in!"
 		}
 	},
 	
 	"MAIN": {
-		"title": "Thank you!",
-		"body_md": "We appreciate you beyond measure! Keep coming back and we'll keep showing you the love!"
+		"title": "Welcome to Tulsa Hills!",
+		"body_md": "# Thank you!\n\nWelcome to our newest location! Be sure to **scan each visit** for credit toward tasty rewards at any of our locations. Visit us in [Midtown](https://albertgs.com/midtown/) and in the [Blue Dome](https://albertgs.com/downtown/) too!"
 	},
 	
 	"PUNCHCARDS": [
 		{
-			"template": "budman_loyalty.json"
+			"template": "jupiter_loyalty.json"
 		}
 	]
 }
