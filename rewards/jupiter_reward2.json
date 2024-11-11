@@ -3,15 +3,15 @@
 		"text": "From the home office: 2! "
 	},
 	"redeem_button": {
-		"text": "Free one"
+		"text": "Free two"
 	},
 	"redeem_confirm": {
 		"header": "Confirm",
-		"text": "Are you ready for one?"
+		"text": "Are you ready for two?"
 	},
 	"reward": {
-		"header": "One",
-		"text": "Show this, we'll give you one."
+		"header": "Two",
+		"text": "Show this, we'll give you two."
 	},
 	"valid": {
 		"start_offset": 0
