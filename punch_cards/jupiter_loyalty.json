@@ -11,15 +11,15 @@
 #	},
 	"punches": [
 		{
-			"message": "Thanks for coming in and welcome to Free G's Rewards! Just scan the QR each time you visit and we'll pile on with bigger, better and tastier rewards! Your first on is already on the way, check your texts!",
+			"message": "First one",
 			"reward": "jupiter_reward1.json"
 		},
 		{
-			"message": "Boom! That's five visits, so dessert is on us next time! Check your texts, and thanks for being a BBQ Lover!",
+			"message": "Second one",
 			"reward": "jupiter_reward2.json"
 		},
 		{
-			"message": "You’ve done it – 10 visits! A 10% off coupon is heading your way. Check your texts, and thanks for being part of the Free G’s family!",
+			"message": "Third one",
 			"reward": "jupiter_reward3.json"
 		},
 		{
