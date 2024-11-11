@@ -1,0 +1,19 @@
+{
+	"notify": {
+		"text": "From the home office: This is your first reward. Rejoice.”
+	},
+	"redeem_button": {
+		"text": “First reward”
+	},
+	"redeem_confirm": {
+		"header": "Confirm",
+		"text": "Are you ready to redeem the first one?”
+	},
+	"reward": {
+		"header": “First reward redemption proof”,
+		"text": “Show this to someone in power!”
+	},
+	"valid": {
+		"start_offset": 0
+	}
+}
