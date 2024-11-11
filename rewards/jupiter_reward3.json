@@ -1,0 +1,19 @@
+{
+	"notify": {
+		"text": "From the home office: This is your third reward. Rejoice.”
+	},
+	"redeem_button": {
+		"text": “Third reward”
+	},
+	"redeem_confirm": {
+		"header": "Confirm",
+		"text": "Are you ready to redeem the third one?”
+	},
+	"reward": {
+		"header": “Third reward redemption proof”,
+		"text": “Show this to someone in power!”
+	},
+	"valid": {
+		"start_offset": 0
+	}
+}
