@@ -31,7 +31,7 @@
 			},
 			{
 				"id": "comments",
-				"label": "Tell us about your hopes and dreams:",
+				"label": "Tell us your hopes and dreams:",
 				"type": "textarea",
 				"rows": 2,
 				"required": false
