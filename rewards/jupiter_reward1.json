@@ -1,19 +1,19 @@
 {
 	"notify": {
-		"text": "From Albert G's: Congrats on joining Free G’s! You’ve just earned a free brisket queso or 6 wings. On your next visit just scan the QR at your table and check-in to claim your reward!"
+		"text": "From the home office: Congrats on joining Free G’s! You’ve just earned a free brisket queso or 6 wings. On your next visit just scan the QR at your table and check-in to claim your reward!"
 	},
 	"redeem_button": {
-		"text": “First reward”
+		"text": "Free brisket queso or wings!"
 	},
 	"redeem_confirm": {
 		"header": "Confirm",
-		"text": "Are you ready to redeem the first one?”
+		"text": "Are you ready to snag your Brisket Queso or Wings?"
 	},
 	"reward": {
-		"header": “First reward redemption proof”,
-		"text": “Show this to someone in power!”
+		"header": "You choose - can't lose!",
+		"text": "We appreciate you! Show this to your server and choose either a cup of Brisket Queso or 6 Wings... on us!"
 	},
 	"valid": {
-		"start_offset": 0
+		"start_offset": 1 # next day
 	}
 }
