@@ -1,0 +1,19 @@
+{
+	"notify": {
+		"text": "From the home office: This is your second reward. Slainte.”
+	},
+	"redeem_button": {
+		"text": “Second reward”
+	},
+	"redeem_confirm": {
+		"header": "Confirm",
+		"text": "Are you ready to redeem the second one?”
+	},
+	"reward": {
+		"header": “Second reward redemption proof”,
+		"text": “Show this to someone in power!”
+	},
+	"valid": {
+		"start_offset": 0
+	}
+}
