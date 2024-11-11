@@ -14,6 +14,6 @@
 		"text": "We appreciate you! Show this to your server and choose either a cup of Brisket Queso or 6 Wings... on us!"
 	},
 	"valid": {
-		"start_offset": 1 # next day
+		"start_offset": 1
 	}
 }
