@@ -12,7 +12,7 @@
 	},
 	
 	"FORM": {
-		"title": "Jupiter G's - Tulsa Hills",
+		"title": "Jupiter Test Deal",
 		"fields": [
 			{
 				"type": "info",
@@ -24,27 +24,27 @@
 			},
 			{
 				"id": "rating",
-				"label": "Please let us know how we did today",
+				"label": "How are you feeling today",
 				"type": "select",
-				"range": ["1. BBQ at it's Best!","2. Oh So Good","3. Middle o' the Rack","4. Off the Mark","5. Fire's Gone Out!"],
+				"range": ["😊","😐","☹️","😠","🤯"],
 				"required": true
 			},
 			{
 				"id": "comments",
-				"label": "Any feedback for us? We love hearing it!",
+				"label": "Tell us about your hopes and dreams:",
 				"type": "textarea",
-				"rows": 3,
+				"rows": 2,
 				"required": false
 			}
 		],
 		"submit": {
-			"label": "Check me in!"
+			"label": "Submit it I guess"
 		}
 	},
 	
 	"MAIN": {
-		"title": "Welcome to Tulsa Hills!",
-		"body_md": "# Thank you!\n\nWelcome to our newest location! Be sure to **scan each visit** for credit toward tasty rewards at any of our locations. Visit us in [Midtown](https://albertgs.com/midtown/) and in the [Blue Dome](https://albertgs.com/downtown/) too!"
+		"title": "Good for you!",
+		"body_md": "# Nice work!\n\nYou did such a good job sharing. You're welcome here anytime."
 	},
 	
 	"PUNCHCARDS": [
