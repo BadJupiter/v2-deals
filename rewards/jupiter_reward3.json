@@ -1,17 +1,17 @@
 {
 	"notify": {
-		"text": "From the home office: This is your third reward. Rejoice.”
+		"text": "From the home office: 3! "
 	},
 	"redeem_button": {
-		"text": “Third reward”
+		"text": "Free three"
 	},
 	"redeem_confirm": {
 		"header": "Confirm",
-		"text": "Are you ready to redeem the third one?”
+		"text": "Are you ready for three?"
 	},
 	"reward": {
-		"header": “Third reward redemption proof”,
-		"text": “Show this to someone in power!”
+		"header": "Three",
+		"text": "Show this, we'll give you three."
 	},
 	"valid": {
 		"start_offset": 0
