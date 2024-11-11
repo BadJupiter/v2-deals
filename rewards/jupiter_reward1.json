@@ -1,19 +1,19 @@
 {
 	"notify": {
-		"text": "From the home office: Congrats on joining Free G’s! You’ve just earned a free brisket queso or 6 wings. On your next visit just scan the QR at your table and check-in to claim your reward!"
+		"text": "From the home office: 1! "
 	},
 	"redeem_button": {
-		"text": "Free brisket queso or wings!"
+		"text": "Free one"
 	},
 	"redeem_confirm": {
 		"header": "Confirm",
-		"text": "Are you ready to snag your Brisket Queso or Wings?"
+		"text": "Are you ready for one?"
 	},
 	"reward": {
-		"header": "You choose - can't lose!",
-		"text": "We appreciate you! Show this to your server and choose either a cup of Brisket Queso or 6 Wings... on us!"
+		"header": "One",
+		"text": "Show this, we'll give you one."
 	},
 	"valid": {
-		"start_offset": 1
+		"start_offset": 0
 	}
 }
