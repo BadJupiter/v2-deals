@@ -1,0 +1,16 @@
+{
+	"notify": {
+		"text": "Wow! A $30 credit just landed in your Bud Man OC account! Use code VIPMJ"
+	},
+	"reward": {
+		"text": "You're a true VIP! We just dropped a $30 credit in your account for your next online order. See you soon!",
+		"integration": {
+			"service_name": "WooCommerce",
+			"service_url": "https://budmanoc.com/",
+			"coupon_code": "VIPMJ"
+					
+#			coupons are created in WP/WooCommerce console and assigned values there
+#			if a nonexistent coupon is referenced here, things will fail
+		}
+	}
+}
