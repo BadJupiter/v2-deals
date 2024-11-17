@@ -12,11 +12,7 @@
 		"fields": [
 			{
 				"type": "info",
-				"markdown": "# **Heads Up**"
-			},
-			{
-				"type": "info",
-				"markdown": "Snap or upload a photo, if possible, and be sure to provide a short description of anyting you see related to this area or equipment that you think might pose a safety risk. We thank you for it!"
+				"markdown": "Snap or upload a photo (if possible) and be sure to provide a short description of **anyting** you see related to **this area or equipment** that you think might pose a **safety risk**. We thank you for the heads up!"
 			},
 			{
 				"type": "info",
@@ -24,7 +20,7 @@
 			},
 			{
 				"id": "image",
-				"label": "Snap or upload a photo if possible",
+				"label": "Snap or upload a photo",
 				"type": "image",
 				"required": false
 			},
@@ -33,7 +29,7 @@
 				"label": "Provide a short description of the issue",
 				"type": "textarea",
 				"rows": 3,
-				"required": false
+				"required": true
 			}
 		],
 		"submit": {
