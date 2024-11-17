@@ -26,7 +26,7 @@
 				"id": "image",
 				"label": "Snap or upload a photo if possible",
 				"type": "image",
-				"required": false;
+				"required": false
 			},
 			{
 				"id": "comments",
