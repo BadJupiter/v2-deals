@@ -20,7 +20,6 @@
 			},
 			{
 				"id": "image",
-				"label": "Snap or upload a photo",
 				"type": "image",
 				"required": false
 			},
