@@ -32,7 +32,7 @@
 			},
 			{
 				"id": "comments",
-				"label": "Please tell us a little (or a lot) about what you're interested in",
+				"label": "Please tell us a little (or a lot) about what's on your mind:",
 				"type": "textarea",
 				"rows": 3,
 				"required": true
