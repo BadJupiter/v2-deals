@@ -8,11 +8,11 @@
 	},
 	
 	"FORM": {
-		"title": "Let's Talk",
+		"title": "Question? Idea?",
 		"fields": [
 			{
 				"type": "info",
-				"markdown": "Have a question or an idea? We'd love to connect - just let us know how to get in touch!"
+				"markdown": "We'd love to connect - just let us know how to get in touch!"
 			},
 			{
 				"type": "info",
