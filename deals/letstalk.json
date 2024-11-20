@@ -12,7 +12,7 @@
 		"fields": [
 			{
 				"type": "info",
-				"markdown": "Say a little something pleasant!"
+				"markdown": "Have a question or an idea? We'd love to connect - just let us know how to get in touch!"
 			},
 			{
 				"type": "info",
@@ -32,7 +32,7 @@
 			},
 			{
 				"id": "comments",
-				"label": "Provide a short description of the issue",
+				"label": "Please tell us a little (or a lot) about what you're interested in",
 				"type": "textarea",
 				"rows": 3,
 				"required": true
