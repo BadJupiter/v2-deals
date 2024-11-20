@@ -1,0 +1,50 @@
+{
+	"biz_id": "jupiter",
+	"check_in": true,
+	"auth_required": true,
+	"error_auth": {
+		"title": "Woops!",
+		"content": "Cain't play if you ain't authenticated!"
+	},
+	
+	"FORM": {
+		"title": "Let's Talk",
+		"fields": [
+			{
+				"type": "info",
+				"markdown": "Say a little something pleasant!"
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"id": "name",
+				"label": "Name:",
+				"type": "text",
+				"required": false
+			},
+			{
+				"id": "email",
+				"label": "Email:",
+				"type": "email",
+				"required": false
+			},
+			{
+				"id": "comments",
+				"label": "Provide a short description of the issue",
+				"type": "textarea",
+				"rows": 3,
+				"required": true
+			}
+		],
+		"submit": {
+			"label": "Submit"
+		}
+	},
+	
+	"MAIN": {
+		"title": "HMT Heads Up",
+		"body_md": "# Thank you!\n\nWe appreciate it!"
+	}
+}
