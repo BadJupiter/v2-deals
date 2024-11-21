@@ -22,7 +22,7 @@
 				"id": "name",
 				"label": "Name:",
 				"type": "text",
-				"required": false
+				"required": true
 			},
 			{
 				"id": "email",
@@ -34,7 +34,7 @@
 				"id": "rating",
 				"label": "Your favorite Oklahoma distillery:",
 				"type": "select",
-				"range": ["Red Fork Distillery","Castle Spirits","WanderFolk Spirits","Territory Distilling","Hochatown Distilling Co.","Woodworks Distilling"],
+				"range": ["Red Fork Distillery","Castle Spirits","WanderFolk Spirits","Territory Distilling","Hochatown Distilling Co.","Woodworks Distilling","Too soon to tell"],
 				"required": true
 			},
 			{
