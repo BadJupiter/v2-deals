@@ -40,7 +40,7 @@
 			},
 						{
 				"id": "rating",
-				"label": "Favorite Oklahoma distillery:",
+				"label": "Favorite Oklahoma Distillery:",
 				"type": "select",
 				"range": ["Red Fork Distillery","Castle Spirits","WanderFolk Spirits","Territory Distilling","Hochatown Distilling Co.","Woodworks Distilling","Too Hard to Choose"],
 				"required": false
