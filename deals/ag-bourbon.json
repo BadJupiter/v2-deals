@@ -59,7 +59,7 @@
 	},
 	
 	"MAIN": {
-		"title": "You're in!",
-		"body_md": "# Thank you!\n\nStay tuned, you can expect some bourbon news shortly"
+		"title": "Thank You!",
+		"body_md": "# You're in!\n\nStay tuned, you can expect some bourbon news shortly"
 	}
 }
