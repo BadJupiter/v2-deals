@@ -35,14 +35,14 @@
 				"label": "Your favorite Oklahoma distillery:",
 				"type": "select",
 				"range": ["Red Fork Distillery","Castle Spirits","WanderFolk Spirits","Territory Distilling","Hochatown Distilling Co.","Woodworks Distilling","Too soon to tell"],
-				"required": true
+				"required": false
 			},
 			{
 				"id": "comments",
-				"label": "Please tell us a little (or a lot) about what's on your mind:",
+				"label": "Please share any ideas for events, tastings, promotions, etc. that we can steal and repackage as our own:",
 				"type": "textarea",
 				"rows": 3,
-				"required": true
+				"required": false
 			}
 		],
 		"submit": {
