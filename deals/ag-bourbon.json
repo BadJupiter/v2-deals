@@ -12,7 +12,11 @@
 		"fields": [
 			{
 				"type": "info",
-				"markdown": "We're putting the band back together and WE WANT YOU!\n\nGive us your contact info and we'll let you know about upcoming Bourbon Club events, special offers and some other (for now) super secret stuff!"
+				"markdown": "# **Back by popular demand!**"
+			},
+			{
+				"type": "info",
+				"markdown": "Give us your contact info and we'll let you know about upcoming Bourbon Club events, special offers and some other (for now) super secret stuff!"
 			},
 			{
 				"type": "info",
@@ -51,7 +55,7 @@
 	},
 	
 	"MAIN": {
-		"title": "HMT Heads Up",
-		"body_md": "# Thank you!\n\nWe appreciate it!"
+		"title": "You're in!",
+		"body_md": "# Thank you!\n\nStay tuned, you can expect some bourbon news shortly"
 	}
 }
