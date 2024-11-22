@@ -8,15 +8,11 @@
 	},
 	
 	"FORM": {
-		"title": "Albert G's",
+		"title": "G's Bourbon Club",
 		"fields": [
 			{
 				"type": "info",
-				"markdown": "# **Bourbon Club**"
-			},
-			{
-				"type": "info",
-				"markdown": "# **Is Ready to Pour!**"
+				"markdown": "# **Ready to Pour!**"
 			},
 			{
 				"type": "info",
