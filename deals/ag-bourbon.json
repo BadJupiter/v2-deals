@@ -12,7 +12,11 @@
 		"fields": [
 			{
 				"type": "info",
-				"markdown": "# **Bourbon Club** \n**Is Ready to Pour!**"
+				"markdown": "# **Bourbon Club**"
+			},
+			{
+				"type": "info",
+				"markdown": "# **Is Ready to Pour!**"
 			},
 			{
 				"type": "info",
