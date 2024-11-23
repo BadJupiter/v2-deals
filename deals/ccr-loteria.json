@@ -40,7 +40,7 @@
 			{
 				"type": "info",
 				"justify": "center",
-				"markdown": "You and a guest are invited to the VIP Loteria Event at Colusa Casino! /n/nThe favor of your reply is requested by **December 17th** to confirm your attendance."
+				"markdown": "You and a guest are invited to the VIP Loteria Event at Colusa Casino! \n\nThe favor of your reply is requested by **December 17th** to confirm your attendance."
 			},
 			{
 				"type": "info",
@@ -110,6 +110,6 @@
 		}
 	},
 	"MAIN": {
-		"body_md": "# Thank you for your response! If you have any questions or need to make changes to your RSVP, please don't hesitate to get in touch.\n\nWe hope to see you soon at Colusa Casino Resort."
+		"body_md": "# Thank you for your response! \n\nIf you have any questions or need to make changes to your RSVP, please don't hesitate to get in touch.\n\nWe hope to see you soon at Colusa Casino Resort."
 	}
 }
