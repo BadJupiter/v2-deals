@@ -32,7 +32,7 @@
 			{
 				"type": "info",
 				"justify": "center",
-				"markdown": "You and a guest are invited to the VIP Loteria Event at Colusa Casino! The favor of your reply is requested by **December 17th** to confirm your attendance."
+				"markdown": "You and a guest are invited to the VIP Loteria Event at Colusa Casino! /n/nThe favor of your reply is requested by **December 17th** to confirm your attendance."
 			},
 			{
 				"type": "info",
@@ -40,7 +40,7 @@
 			},
 			{
 				"id": "attend",
-				"label": "Are you able to make the VIP LOTERIA EVENT on December 30, 2024?",
+				"label": "Are you able to attend?",
 				"type": "select",
 				"range": ["YES. I will be there","NO. Please keep me in mind for next time."],
 				"required": true
