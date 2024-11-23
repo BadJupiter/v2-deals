@@ -19,7 +19,7 @@
 			},
 			{
 				"type": "info",
-				"markdown": "### Time: X:00 PM"
+				"markdown": "### Time: X:00 pm"
 			},
 			{
 				"type": "info",
@@ -60,8 +60,14 @@
 				"bgcolor": "#c8f0fc",
 				"fields": [
 					{
-						"id": "name",
-						"label": "Name:",
+						"id": "firstname",
+						"label": "First Name:",
+						"type": "text",
+						"required": false
+					},
+					{
+						"id": "lastname",
+						"label": "Last Name:",
 						"type": "text",
 						"required": false
 					},
