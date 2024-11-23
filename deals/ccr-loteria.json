@@ -80,13 +80,6 @@
 						"required": false
 					},
 					{
-						"id": "address",
-						"label": "Address:",
-						"type": "textarea",
-						"rows": 3,
-						"required": false
-					},
-					{
 						"id": "email",
 						"label": "Email:",
 						"type": "email",
