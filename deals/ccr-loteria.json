@@ -11,7 +11,7 @@
 			"headers": {
 				"family": "Raleway",
 				"weight": 700,
-				"style": "italic"
+				"style": "normal"
 			},
 			"body": {
 				"family": "Raleway",
@@ -27,12 +27,12 @@
 		"fields": [
 			{
 				"type": "info",
-				"markdown": "# Lotería VIP Event RSVP"
+				"markdown": "# Lotería VIP Event RSVP\n\nDecember 30, 2024"
 			},
 			{
 				"type": "info",
 				"justify": "center",
-				"markdown": "You and a guest are invited to the VIP Loteria Event at Colusa Casino! The favor of your reply is requested by **December 17th to confirm your attendance."
+				"markdown": "You and a guest are invited to the VIP Loteria Event at Colusa Casino! The favor of your reply is requested by **December 17th** to confirm your attendance."
 			},
 			{
 				"type": "info",
