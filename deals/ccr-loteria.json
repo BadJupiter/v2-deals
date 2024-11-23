@@ -27,7 +27,15 @@
 		"fields": [
 			{
 				"type": "info",
-				"markdown": "# Lotería VIP Event RSVP\n\nDecember 30, 2024"
+				"markdown": "# Lotería VIP Event RSVP"
+			},
+			{
+				"type": "info",
+				"markdown": "# Date: December 30, 2024"
+			},
+			{
+				"type": "info",
+				"markdown": "# Time: X:00 PM"
 			},
 			{
 				"type": "info",
