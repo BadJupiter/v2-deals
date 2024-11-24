@@ -60,21 +60,21 @@
 				"bgcolor": "#c8f0fc",
 				"fields": [
 					{
-						"id": "firstname",
+						"id": "z_FIRSTNAME",
 						"label": "First Name:",
 						"type": "text",
 						"sticky": true,
 						"required": false
 					},
 					{
-						"id": "lastname",
+						"id": "z_LASTNAME",
 						"label": "Last Name:",
 						"type": "text",
 						"sticky": true,
 						"required": false
 					},
 					{
-						"id": "rewards",
+						"id": "PlayerID",
 						"label": "Rewards #:",
 						"type": "text",
 						"sticky": true,
