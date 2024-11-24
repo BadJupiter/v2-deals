@@ -63,24 +63,28 @@
 						"id": "firstname",
 						"label": "First Name:",
 						"type": "text",
+						"sticky": true,
 						"required": false
 					},
 					{
 						"id": "lastname",
 						"label": "Last Name:",
 						"type": "text",
+						"sticky": true,
 						"required": false
 					},
 					{
 						"id": "rewards",
 						"label": "Rewards #:",
 						"type": "text",
+						"sticky": true,
 						"required": false
 					},
 					{
 						"id": "email",
 						"label": "Email:",
 						"type": "email",
+						"sticky": true,
 						"required": false
 					}
 				]
