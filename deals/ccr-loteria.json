@@ -42,14 +42,22 @@
 				"label": "I am confirming for:",
 				"type": "select",
 				"range": ["Myself","Me and a guest"],
-				"required": false
+				"required": true,
+				"conditional": {
+					"field": "attend",
+					"value": "YES. I will be there"
+				}
 			},
 			{
 				"id": "room",
 				"label": "If rooms are available, would you like someone to contact you regarding reservations?",
 				"type": "select",
 				"range": ["Yes","No"],
-				"required": false
+				"required": true,
+				"conditional": {
+					"field": "attend",
+					"value": "YES. I will be there"
+				}
 			},
 			{
 				"type": "info",
