@@ -64,28 +64,21 @@
 						"label": "First Name:",
 						"type": "text",
 						"sticky": true,
-						"required": false
+						"disabled": true
 					},
 					{
 						"id": "z_LASTNAME",
 						"label": "Last Name:",
 						"type": "text",
 						"sticky": true,
-						"required": false
+						"disabled": true
 					},
 					{
 						"id": "PlayerID",
 						"label": "Rewards #:",
 						"type": "text",
 						"sticky": true,
-						"required": false
-					},
-					{
-						"id": "email",
-						"label": "Email:",
-						"type": "email",
-						"sticky": true,
-						"required": false
+						"disabled": true
 					}
 				]
 			}
