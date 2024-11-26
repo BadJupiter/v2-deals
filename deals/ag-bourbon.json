@@ -30,13 +30,15 @@
 				"id": "name",
 				"label": "Name:",
 				"type": "text",
-				"required": true
+				"required": true,
+				"sticky": true
 			},
 			{
 				"id": "email",
 				"label": "Email:",
 				"type": "email",
-				"required": false
+				"required": false,
+				"sticky": true
 			},
 						{
 				"id": "rating",
