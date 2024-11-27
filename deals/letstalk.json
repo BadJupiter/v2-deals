@@ -28,7 +28,7 @@
 				"id": "email",
 				"type": "email",
 				"required": false,
-				"placeholder": "enter name"
+				"placeholder": "email"
 			},
 			{
 				"id": "comments",
