@@ -29,6 +29,37 @@
 				"markdown": "---"
 			},
 			{
+				"type": "fields_group",
+				"bgcolor": "#c8f0fc",
+				"fields": [
+					{
+						"id": "name",
+						"label": "Name:",
+						"type": "text",
+						"required": true
+					},
+					{
+						"id": "email",
+						"label": "Email:",
+						"type": "email",
+						"required": false
+					},
+					{
+						"id": "comments",
+						"label": "Please tell us a little (or a lot) about what's on your mind:",
+						"type": "textarea",
+						"rows": 3,
+						"required": false
+					}
+				]
+			}
+	
+			
+			
+			
+			
+			
+			{
 				"id": "name",
 				"label": "We'd love to connect - just let us know how to get in touch!",
 				"type": "text",
