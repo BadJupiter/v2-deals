@@ -22,13 +22,13 @@
 				"id": "name",
 				"type": "text",
 				"required": false,
-				"placeholder": "name"
+				"placeholder": "enter name"
 			},
 			{
 				"id": "email",
-				"label": "Email:",
 				"type": "email",
-				"required": false
+				"required": false,
+				"placeholder": "enter name"
 			},
 			{
 				"id": "comments",
