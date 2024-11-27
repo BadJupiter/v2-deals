@@ -26,7 +26,6 @@
 			},
 			{
 				"id": "demo2",
-				"label": "Here are a few demos you can check out. Pick any that look interesting and I'll text you a link:",
 				"type": "multi-select",
 				"range": ["Feedback & Loyalty"],
 				"required": false
