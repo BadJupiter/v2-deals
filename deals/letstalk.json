@@ -15,11 +15,11 @@
 			},			
 			{
 				"type": "info",
-				"markdown": "We'd love to connect - just let us know how to get in touch!"
+				"markdown": "---"
 			},
 			{
 				"type": "info",
-				"markdown": "---"
+				"markdown": "We'd love to connect - just let us know how to get in touch!"
 			},
 			{
 				"id": "name",
