@@ -25,7 +25,7 @@
 				"id": "name",
 				"type": "text",
 				"required": false,
-				"placeholder": "enter name"
+				"placeholder": "name"
 			},
 			{
 				"id": "email",
