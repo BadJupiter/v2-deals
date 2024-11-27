@@ -52,13 +52,7 @@
 						"required": false
 					}
 				]
-			}
-	
-			
-			
-			
-			
-			
+			},
 			{
 				"id": "name",
 				"label": "We'd love to connect - just let us know how to get in touch!",
