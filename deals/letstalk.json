@@ -25,12 +25,8 @@
 				"required": false
 			},
 			{
-				"type": "info",
-				"markdown": "**We'd love to connect - just let us know how to get in touch!**"
-			},
-			{
 				"id": "name",
-				"label": "Please tell us a little (or a lot) about what's on your mind:",
+				"label": "We'd love to connect - just let us know how to get in touch!",
 				"type": "text",
 				"required": true,
 				"placeholder": "name"
