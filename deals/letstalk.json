@@ -18,10 +18,17 @@
 				"markdown": "---"
 			},
 			{
-				"id": "demos",
+				"id": "demo1",
 				"label": "Here are a few demos you can check out. Pick any that look interesting and I'll text you a link:",
 				"type": "multi-select",
-				"range": ["Guest Feedback","B2C Loyalty","Feedback & Loyalty","Gather RSVPs"],
+				"range": ["Guest Feedback"],
+				"required": false
+			},
+			{
+				"id": "demo2",
+				"label": "Here are a few demos you can check out. Pick any that look interesting and I'll text you a link:",
+				"type": "multi-select",
+				"range": ["Feedback & Loyalty"],
 				"required": false
 			},
 			{
