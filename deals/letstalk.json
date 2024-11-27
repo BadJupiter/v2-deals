@@ -25,6 +25,10 @@
 				"required": false
 			},
 			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
 				"id": "name",
 				"label": "We'd love to connect - just let us know how to get in touch!",
 				"type": "text",
