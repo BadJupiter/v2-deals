@@ -11,11 +11,18 @@
 		"fields": [
 			{
 				"type": "info",
-				"markdown": "# **Have a question? Idea?**"
+				"markdown": "# **Want to see a little more?**"
 			},			
 			{
 				"type": "info",
 				"markdown": "---"
+			},
+			{
+				"id": "demos",
+				"label": "Here are a few demos you can check out (You can pick more than one)",
+				"type": "multi-select",
+				"range": ["Guest Feedback","B2C Loyalty","Feedback & Loyalty","Gather RSVPs"],
+				"required": false
 			},
 			{
 				"type": "info",
@@ -48,6 +55,6 @@
 	
 	"MAIN": {
 		"title": "HMT Heads Up",
-		"body_md": "# Thank you!\n\nWe appreciate it!"
+		"body_md": "# Thank you!\n\nYou'll get a text with links to the demo(s) you picked. Once you've had a look just holler if you'd like to talk more."
 	}
 }
