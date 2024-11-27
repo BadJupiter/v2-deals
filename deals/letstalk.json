@@ -20,9 +20,9 @@
 			},
 			{
 				"id": "name",
-				"label": "Name:",
 				"type": "text",
-				"required": false
+				"required": false,
+				"placeholder": "name"
 			},
 			{
 				"id": "email",
