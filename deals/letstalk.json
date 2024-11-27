@@ -8,8 +8,11 @@
 	},
 	
 	"FORM": {
-		"title": "Question? Idea?",
 		"fields": [
+			{
+				"type": "info",
+				"markdown": "# **Have a question? Idea?**"
+			},			
 			{
 				"type": "info",
 				"markdown": "We'd love to connect - just let us know how to get in touch!"
