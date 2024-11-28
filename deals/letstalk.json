@@ -19,7 +19,7 @@
 			},
 			{
 				"id": "demo1",
-				"label": "Select a catgory that best matches your interest and we'll text you a link to see our platform in action:",
+				"label": "Select a catgory that best matches your interest. We'll text you a link to see our platform in action:",
 				"type": "select",
 				"range": ["Guest Feedback","Loyalty & Feedback","Collect RSVPs","Retail Loyalty","Club Sign-up","Site Safety"],
 				"required": false
@@ -55,6 +55,6 @@
 	
 	"MAIN": {
 		"title": "Thank You!",
-		"body_md": "# We appreciate your interest!\n\nYou'll get a text with links to the demo(s) you picked. Once you've had a look just holler if you'd like to talk more."
+		"body_md": "# We appreciate your interest!\n\nCheck your texts. You'll get a message with a link to a demo you picked. Once you've had a look just holler if you'd like to talk more."
 	}
 }
