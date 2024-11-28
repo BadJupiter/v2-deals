@@ -1,7 +1,7 @@
 {
 	"biz_id": "colusacasino",
 	"deal_tokens": [ "ccr-loteria" ],
-	"results": "RECENT", # RECENT / ALL
+	"most_recent_only": true, # omit or set to false for all rows
 	"COLUMNS": [
 		{
 			"attrib": "PlayerID",
