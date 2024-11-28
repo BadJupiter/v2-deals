@@ -19,8 +19,8 @@
 			},
 			{
 				"id": "demo1",
-				"label": "Here are a few demos you can check out. Pick any that look interesting and I'll text you a link to each one:",
-				"type": "multi-select",
+				"label": "Select a catgory that best matches your interest and we'll text you a link to see our platform in action:",
+				"type": "select",
 				"range": ["Guest Feedback","Loyalty & Feedback","Collect RSVPs","Retail Loyalty","Club Sign-up","Site Safety"],
 				"required": false
 			},
@@ -37,12 +37,6 @@
 						"label": "Name:",
 						"type": "text",
 						"required": true
-					},
-					{
-						"id": "email",
-						"label": "Email:",
-						"type": "email",
-						"required": false
 					},
 					{
 						"id": "comments",
