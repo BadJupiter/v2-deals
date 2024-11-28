@@ -40,7 +40,7 @@
 					},
 					{
 						"id": "comments",
-						"label": "Please tell us a little (or a lot) about what's on your mind:",
+						"label": "Any other thoughts, questions, or ideas - let us know:",
 						"type": "textarea",
 						"rows": 3,
 						"required": false
