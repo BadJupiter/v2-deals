@@ -1,0 +1,23 @@
+{
+	"biz_id": "colusacasino",
+	"deal_tokens": [ "ccr-loteria" ],
+	"results": "RECENT", # RECENT / ALL
+	"COLUMNS": [
+		{
+			"attrib": "PlayerID",
+			"column_name": "Player ID"
+		},
+		{
+			"attrib": "attend",
+			"column_name": "Attending"
+		},
+		{
+			"attrib": "z_LASTNAME",
+			"column_name": "Last Name"
+		},
+		{
+			"attrib": "z_FIRSTNAME",
+			"column_name": "First Name"
+		}
+	]
+}
