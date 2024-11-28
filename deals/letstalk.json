@@ -8,34 +8,50 @@
 	},
 	
 	"FORM": {
-		"title": "Question? Idea?",
 		"fields": [
 			{
 				"type": "info",
-				"markdown": "We'd love to connect - just let us know how to get in touch!"
+				"markdown": "# **Want to see a little more?**"
+			},			
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"id": "demo1",
+				"label": "Here are a few demos you can check out. Pick any that look interesting and I'll text you a link to each one:",
+				"type": "multi-select",
+				"range": ["Guest Feedback","Loyalty & Feedback","Collect RSVPs","Retail Loyalty","Club Sign-up","Site Safety"],
+				"required": false
 			},
 			{
 				"type": "info",
 				"markdown": "---"
 			},
 			{
-				"id": "name",
-				"label": "Name:",
-				"type": "text",
-				"required": false
-			},
-			{
-				"id": "email",
-				"label": "Email:",
-				"type": "email",
-				"required": false
-			},
-			{
-				"id": "comments",
-				"label": "Please tell us a little (or a lot) about what's on your mind:",
-				"type": "textarea",
-				"rows": 3,
-				"required": true
+				"type": "fields_group",
+				"bgcolor": "#FFF4CC",
+				"fields": [
+					{
+						"id": "name",
+						"label": "Name:",
+						"type": "text",
+						"required": true
+					},
+					{
+						"id": "email",
+						"label": "Email:",
+						"type": "email",
+						"required": false
+					},
+					{
+						"id": "comments",
+						"label": "Please tell us a little (or a lot) about what's on your mind:",
+						"type": "textarea",
+						"rows": 3,
+						"required": false
+					}
+				]
 			}
 		],
 		"submit": {
@@ -44,7 +60,7 @@
 	},
 	
 	"MAIN": {
-		"title": "HMT Heads Up",
-		"body_md": "# Thank you!\n\nWe appreciate it!"
+		"title": "Thank You!",
+		"body_md": "# We appreciate your interest!\n\nYou'll get a text with links to the demo(s) you picked. Once you've had a look just holler if you'd like to talk more."
 	}
 }
