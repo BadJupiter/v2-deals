@@ -4,20 +4,32 @@
 	"most_recent_only": true, # omit or set to false for all rows
 	"COLUMNS": [
 		{
-			"attrib": "PlayerID",
-			"column_name": "Player ID"
+			"column_name": "Timestamp",
+			"attrib": "_when"
 		},
 		{
-			"attrib": "attend",
-			"column_name": "Attending"
+			"column_name": "Mobile",
+			"attrib": "_mobile"
 		},
 		{
-			"attrib": "z_LASTNAME",
-			"column_name": "Last Name"
+			"column_name": "Deal ID",
+			"attrib": "_deal"
 		},
 		{
-			"attrib": "z_FIRSTNAME",
-			"column_name": "First Name"
+			"column_name": "Player ID",
+			"attrib": "PlayerID"
+		},
+		{
+			"column_name": "Attending",
+			"attrib": "attend"
+		},
+		{
+			"column_name": "Last Name",
+			"attrib": "z_LASTNAME"
+		},
+		{
+			"column_name": "First Name",
+			"attrib": "z_FIRSTNAME"
 		}
 	]
 }
