@@ -2,6 +2,13 @@
 	"biz_id": "colusacasino",
 	"deal_tokens": [ "ccr-loteria" ],
 	"most_recent_only": true, # omit or set to false for all rows
+
+#	The following column values are always available (attrib):
+#	
+#	_when		grab timestamp (Unix -- for now)
+#	_mobile		User mobile number
+#	_deal		Deal token
+
 	"COLUMNS": [
 		{
 			"column_name": "Timestamp",
