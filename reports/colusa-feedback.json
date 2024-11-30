@@ -26,7 +26,7 @@
 			"column_name": "Slots",
 			"attrib": "games-Slot Machines"
 		},
-				{
+		{
 			"column_name": "Table Games",
 			"attrib": "games-Table Games"
 		},		
@@ -40,11 +40,19 @@
 		},		
 		{
 			"column_name": "Bingo",
-			"attrib": "games-Bongo"
+			"attrib": "games-Bingo"
 		},
 		{
-			"column_name": "Dining",
-			"attrib": "dining"
+			"column_name": "Jack's Place",
+			"attrib": "dining-Jack's Place"
+		},
+		{
+			"column_name": "Cafe Ole",
+			"attrib": "dining-Cafe Ole"
+		},
+		{
+			"column_name": "Snack Bar (bingo)",
+			"attrib": "dining-Snack Bar (bingo)"
 		},
 		{
 			"column_name": "Rating",
