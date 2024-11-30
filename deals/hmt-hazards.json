@@ -1,0 +1,51 @@
+{
+	"biz_id": "hmt",
+	
+	"type": "app",
+	"auth_required": true,
+
+	"error_auth": {
+		"title": "Oops!",
+		"content": "Need to authenticate your device first"
+	},
+
+#	No SIGNUP section for this one
+	
+	"APP": {
+		"title": "Identify Hazards",
+		
+		"action": {
+			"position": "top",
+			"label": "Capture / Upload Image",
+			"fields": [
+				{
+					"id": "image",
+					"type": "image",
+					"required": true
+				},
+			
+			#	Need a new type of control here which is an icon-picker
+			#	for the "energy wheel" types...
+			
+				{
+					"id": "notes",
+					"label": "Location, notes",
+					"type": "textarea",
+					"rows": 3,
+					"required": true
+				}
+			],
+			"submit": {
+				"label": "Capture Image"
+			}
+		},
+		"screens": [
+			"Home": {
+
+			#	Background / default image here can be the "energy wheel" ...?
+			#	Otherwise it is a list of today's hazards to review with the team
+						
+			}
+		]
+	}
+}

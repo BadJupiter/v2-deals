@@ -1,0 +1,116 @@
+{
+	"biz_id": "albertgs",
+
+	"type": "app",
+#	"check_in": true,  <--- OLD STYLE; REPLACED BY type
+	"auth_required": true,
+
+	"error_auth": {
+		"title": "Woops!",
+		"content": "Cain't play if you ain't authenticated!"
+	},
+	
+	"SIGNUP": {
+		"title": "G's Bourbon Club",
+		"fields": [
+			{
+				"type": "info",
+				"markdown": "# **Ready to Pour!**"
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "info",
+				"markdown": "Share your contact info and you're in! You'll get the scoop on upcoming members-only events and special offers!"
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"id": "name",
+				"label": "Name:",
+				"type": "text",
+				"required": true
+			},
+			{
+				"id": "email",
+				"label": "Email:",
+				"type": "email",
+				"required": false
+			},
+						{
+				"id": "rating",
+				"label": "Favorite Oklahoma Distillery:",
+				"type": "select",
+				"range": ["Red Fork Distillery","Castle Spirits","WanderFolk Spirits","Territory Distilling","Hochatown Distilling Co.","Woodworks Distilling","Too Hard to Choose"],
+				"required": false
+			},
+			{
+				"id": "comments",
+				"label": "Ideas for events, tastings, special guests, or anything else we can steal and repackage as our own:",
+				"type": "textarea",
+				"rows": 3,
+				"required": false
+			}
+		],
+		"submit": {
+			"label": "Sign me up!"
+		}
+	},
+	
+	"APP": {
+		
+		"title": "G's Bourbon Club",
+		
+	#	If the app has an action, we render an action button at the top of the page
+	
+		"action": {
+			"position": "top",
+			"label": "Scan Your Receipt",
+			
+		#	If an action form is described below, it will render as a modal 
+		#	when the action button is clicked.
+		
+			"fields": [
+				{
+					"type": "info",
+					"markdown": "Snap a photo of your receipt including the Albert G's header and the drinks you'd like to record so we can add them to your list!"
+				},
+				{
+					"type": "info",
+					"markdown": "---"
+				},
+				{
+					"id": "image",
+					"type": "image",
+					"required": true
+				}
+			],
+			"submit": {
+				"label": "Capture Image"
+			}
+		},
+		
+	#	If only one page, use all the space below the top action (if it exists);
+	#	If more than one, create a 'tabs' menu across the top
+	#
+	#	I think we'll eventually want to be able to support pages as their own JSON
+	#	templates and reference them from here, but for now let's try to get it all done
+	#	in this one template file
+	
+		"pages": [
+			"Home": {
+				
+			},
+			"Leaders": {
+				
+			},
+			"Events": {
+				
+			}
+		]
+	}
+}
