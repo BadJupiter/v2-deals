@@ -23,10 +23,26 @@
 			"attrib": "_deal"
 		},
 		{
-			"column_name": "Games",
-			"attrib": "games"
+			"column_name": "Slots",
+			"attrib": "games-Slot Machines"
 		},
-{
+				{
+			"column_name": "Table Games",
+			"attrib": "games-Table Games"
+		},		
+		{
+			"column_name": "Video Poker",
+			"attrib": "games-Video Poker"
+		},		
+		{
+			"column_name": "Keno",
+			"attrib": "games-Keno"
+		},		
+		{
+			"column_name": "Bingo",
+			"attrib": "games-Bongo"
+		},
+		{
 			"column_name": "Dining",
 			"attrib": "dining"
 		},
@@ -34,7 +50,7 @@
 			"column_name": "Rating",
 			"attrib": "rating"
 		},
-{
+		{
 			"column_name": "Comments",
 			"attrib": "comments"
 		},
@@ -46,7 +62,7 @@
 			"column_name": "Recommend",
 			"attrib": "recommend"
 		},
-{
+		{
 			"column_name": "Amenities",
 			"attrib": "amenities"
 		},
@@ -58,7 +74,7 @@
 			"column_name": "Name",
 			"attrib": "name"
 		},
-{
+		{
 			"column_name": "Player ID",
 			"attrib": "rewards"
 		},
