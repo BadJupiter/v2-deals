@@ -20,8 +20,8 @@ body, html, .multi-select-label {
 	background-color: #f9f9f4;
 }
 .multi-select-label {
-	justify-content: left;
-	align-items: left;
+	display: block; /* or inline-block */
+	text-align: left; /* Ensure left alignment */
 }
 h1 {
 	font-family: 'Raleway', sans-serif;
