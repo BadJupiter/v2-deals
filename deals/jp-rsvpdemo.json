@@ -46,9 +46,9 @@
 			},
 			{
 				"id": "room",
-				"label": "If rooms are available, would you like someone to contact you regarding reservations?",
+				"label": "Need a room to count your treasures overnight?",
 				"type": "select",
-				"range": ["Yes","No"],
+				"range": ["Yes, have someone contact me about a reservation","No thanks"],
 				"required": false,
 				"conditional": {
 					"field": "attend",
