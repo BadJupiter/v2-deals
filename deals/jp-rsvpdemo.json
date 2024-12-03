@@ -89,7 +89,7 @@
 		],
 		"submit": {
 			"label": "Submit RSVP",
-			"color": "#20363d"
+			"color": "#f2f2f2"
 		},
 		"notify": {
 			"opt_in": "contact",
