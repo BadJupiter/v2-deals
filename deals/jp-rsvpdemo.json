@@ -68,21 +68,21 @@
 						"label": "First Name:",
 						"type": "text",
 						"sticky": true,
-						"disabled": true
+						"disabled": false
 					},
 					{
 						"id": "z_LASTNAME",
 						"label": "Last Name:",
 						"type": "text",
 						"sticky": true,
-						"disabled": true
+						"disabled": false
 					},
 					{
 						"id": "PlayerID",
 						"label": "Rewards #:",
 						"type": "text",
 						"sticky": true,
-						"disabled": true
+						"disabled": false
 					}
 				]
 			}
