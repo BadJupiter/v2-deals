@@ -1,5 +1,5 @@
 .hero-header {
-	font-family: "Graduate", sans-serif;
+	font-family: "Graduate", serif;
 	font-optical-sizing: auto;
 	font-weight: 600;
 	font-style: normal;
@@ -10,7 +10,7 @@ body, html {
 	margin: 0;
 	padding: 0;
 
-	font-family: "Raleway", sans-serif;
+	font-family: "Graduate", serif;
 	font-weight: 400;
 	font-style: normal;
 	
@@ -20,7 +20,7 @@ body, html {
 	background-color: #000000;
 }
 h1 {
-	font-family: 'Graduate', sans-serif;
+	font-family: 'Graduate', serif;
 	text-align: center;
 	margin-bottom: 15px;
 }
