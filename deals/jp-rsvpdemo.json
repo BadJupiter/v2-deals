@@ -41,7 +41,7 @@
 				"required": false,
 				"conditional": {
 					"field": "attend",
-					"value": "YES. I will be there"
+					"value": "Absolutely - looking forward to staking my claim!"
 				}
 			},
 			{
@@ -52,7 +52,7 @@
 				"required": false,
 				"conditional": {
 					"field": "attend",
-					"value": "Yes, I'm bringing another prospector!"
+					"value": "Absolutely - looking forward to staking my claim!"
 				}
 			},
 			{
