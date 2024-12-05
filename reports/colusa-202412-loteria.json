@@ -31,6 +31,14 @@
 			"attrib": "attend"
 		},
 		{
+			"column_name": "Guests",
+			"attrib": "guests"
+		},
+		{
+			"column_name": "Room",
+			"attrib": "room"
+		},
+		{
 			"column_name": "Last Name",
 			"attrib": "z_LASTNAME"
 		},
