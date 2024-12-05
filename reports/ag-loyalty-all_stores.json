@@ -12,7 +12,7 @@
 	"COLUMNS": [
 		{
 			"column_name": "(row id)",
-			"attrib": "_id"
+			"attrib": "_rowid"
 		},
 		{
 			"column_name": "Timestamp",
