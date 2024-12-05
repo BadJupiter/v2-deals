@@ -1,7 +1,7 @@
 {
 	"biz_id": "colusacasino",
 	"deal_tokens": [ "ccr-loteria" ],
-	"most_recent_only": true, # omit or set to false for all rows
+	"most_recent_only": false, # omit or set to false for all rows
 
 #	The following column values are always available (attrib):
 #	
@@ -29,6 +29,14 @@
 		{
 			"column_name": "Attending",
 			"attrib": "attend"
+		},
+		{
+			"column_name": "Guests",
+			"attrib": "guests"
+		},
+		{
+			"column_name": "Room",
+			"attrib": "room"
 		},
 		{
 			"column_name": "Last Name",

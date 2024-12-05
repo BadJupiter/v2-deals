@@ -1,0 +1,26 @@
+.hero-header {
+	font-family: "Graduate", serif;
+	font-optical-sizing: auto;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 2rem;
+}
+body, html {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+
+	font-family: "Roboto Slab", serif;
+	font-weight: 400;
+	font-style: normal;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #000000;
+}
+h1 {
+	font-family: 'Roboto Slab', serif;
+	text-align: center;
+	margin-bottom: 15px;
+}

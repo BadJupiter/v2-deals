@@ -1,0 +1,106 @@
+{
+	"biz_id": "jupiter",
+	"check_in": true,
+	"auth_required": true,
+	"error_auth": {
+		"title": "Woops!",
+		"content": "Can't play if you ain't authenticated!"
+	},
+
+	"FORM": {
+		"fields": [
+						{
+				"type": "info",
+				"markdown": "# **December 30, 2025**"
+			},
+			{
+				"type": "info",
+				"markdown": "# **8:00 pm**"
+			},
+			{
+				"type": "info",
+				"justify": "center",
+				"markdown": "You’re invited to our exclusive Gold Rush Giveaway, where you’ll have the chance to dig up golden rewards, enjoy delicious food, and experience the thrill of winning big."
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"id": "attend",
+				"label": "Will you join us to strike gold?",
+				"type": "select",
+				"range": ["Absolutely - looking forward to staking my claim!","Not this time"],
+				"required": true
+			},
+			{
+				"id": "guests",
+				"label": "Will you bring a guest to share the riches?",
+				"type": "select",
+				"range": ["Yes, I'm bringing another prospector!","No guest this time - more gold for me!"],
+				"required": false,
+				"conditional": {
+					"field": "attend",
+					"value": "Absolutely - looking forward to staking my claim!"
+				}
+			},
+			{
+				"id": "room",
+				"label": "Need a room to count your treasures overnight?",
+				"type": "select",
+				"range": ["Yes, have someone contact me about a reservation","No thanks"],
+				"required": false,
+				"conditional": {
+					"field": "attend",
+					"value": "Absolutely - looking forward to staking my claim!"
+				}
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "fields_group",
+				"bgcolor": "#f7f7f7",
+				"fields": [
+					{
+						"id": "z_FIRSTNAME",
+						"label": "First Name:",
+						"type": "text",
+						"sticky": true,
+						"disabled": false
+					},
+					{
+						"id": "z_LASTNAME",
+						"label": "Last Name:",
+						"type": "text",
+						"sticky": true,
+						"disabled": false
+					},
+					{
+						"id": "PlayerID",
+						"label": "Rewards #:",
+						"type": "text",
+						"sticky": true,
+						"disabled": false
+					}
+				]
+			}
+		],
+		"submit": {
+			"label": "Submit RSVP",
+			"color": "#f2f2f2"
+		},
+		"notify": {
+			"opt_in": "contact",
+			"message": "(from {_mob}) {name} requested contact: {comments}",
+			"mobiles": [
+				"+16462474444",
+				"+15039533423"
+			]
+		}
+	},
+	"MAIN": {
+		"body_md": "# Thank you for your response! \n\nIf you have any questions or need to make changes to your RSVP, please don't hesitate to get in touch. We hope to see you soon at **Colusa Casino Resort**."
+	}
+}
