@@ -11,6 +11,10 @@
 
 	"COLUMNS": [
 		{
+			"column_name": "(row id)",
+			"attrib": "_id"
+		},
+		{
 			"column_name": "Timestamp",
 			"attrib": "_when"
 		},
