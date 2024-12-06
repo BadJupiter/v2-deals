@@ -28,7 +28,7 @@
 		},
 		{
 			"column_name": "Name",
-			"attrib": "rating"
+			"attrib": "name"
 		}
 	]
 }
