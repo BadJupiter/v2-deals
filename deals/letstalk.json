@@ -56,7 +56,7 @@
 				"fields": [
 				{
 						"type": "info",
-						"markdown": "Tell us a bit about yourself, and let's explore how we can help!""
+						"markdown": "Tell us a bit about yourself, and let's explore how we can help!"
 					},
 					{
 						"id": "name",
