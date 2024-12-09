@@ -34,7 +34,7 @@
 			{
 				"id": "Other",
 				"type": "text",
-				"required": true
+				"required": true,
 				"placeholder": "something else?"
 			},
 			{
