@@ -18,10 +18,6 @@
 				"markdown": "---"
 			},
 			{
-				"type": "info",
-				"markdown": "This form and all it's elements are powered by Juipter. This is just a sample of what you can do. \n\nThe platform is a canvas, ready to be tailored to your unique needs."
-			},
-			{
 				"id": "solution",
 				"label": "What sort of solution are you looking for?",
 				"type": "multi-select",
