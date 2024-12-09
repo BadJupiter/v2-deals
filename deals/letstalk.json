@@ -25,17 +25,28 @@
 				"required": false
 			},
 			{
-				"id": "demo1",
-				"label": "Select a catgory that best matches your interest. We'll text you a link to see our platform in action:",
-				"type": "select",
-				"range": ["Guest Feedback","Loyalty & Feedback","Collect RSVPs","Retail Loyalty","Club Sign-up","Site Safety"],
-				"required": false
-			},
-			{
 				"id": "other",
 				"type": "text",
 				"required": false,
 				"placeholder": "something else?"
+			},
+			{
+				"id": "demo",
+				"label": "Would you like to see a demo?",
+				"type": "select",
+				"range": ["Yes, I would","Not just yet, thanks"],
+				"required": true
+			},
+			{
+				"id": "contact",
+				"label": "How shall we get in touch?",
+				"type": "select",
+				"range": ["Email","Text"],
+				"required": true,
+				"conditional": {
+					"field": "demo",
+					"value": "Yes, I would"
+				}
 			},
 			{
 				"type": "info",
