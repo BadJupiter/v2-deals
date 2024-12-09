@@ -36,7 +36,7 @@
 				"required": true,
 				"conditional": {
 					"field": "demo",
-					"value": "Yes, I would"
+					"value": "Yes, please do"
 				}
 			},
 			{
