@@ -32,9 +32,9 @@
 				"required": false
 			},
 			{
-				"id": "Other",
+				"id": "other",
 				"type": "text",
-				"required": true,
+				"required": false,
 				"placeholder": "something else?"
 			},
 			{
