@@ -30,7 +30,7 @@
 			},
 			{
 				"id": "contact",
-				"label": "How shall we get in touch?",
+				"label": "How should we get in touch?",
 				"type": "select",
 				"range": ["Email","Text"],
 				"required": true,
