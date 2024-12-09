@@ -11,17 +11,21 @@
 		"fields": [
 			{
 				"type": "info",
-				"markdown": "# **Want to see a little more?**"
+				"markdown": "# **Imagine > Create > Deliver**"
 			},			
 			{
 				"type": "info",
 				"markdown": "---"
 			},
+			{	
+				"type": "info",
+				"markdown": "Everything you see here is built with and run on the Jupiter platform—customizable to create unique customer interactions, with your brand front and center."
+			},
 			{
 				"id": "demo",
-				"label": "Would you like to see a demo?",
+				"label": "Can we send you a demo?",
 				"type": "select",
-				"range": ["Yes, I would","Not just yet, thanks"],
+				"range": ["Yes, please do","Not just yet, thanks"],
 				"required": true
 			},
 			{
@@ -36,6 +40,13 @@
 				}
 			},
 			{
+				"id": "comments",
+				"label": "Any other thoughts, questions, or ideas - let us know:",
+				"type": "textarea",
+				"rows": 3,
+				"required": false
+			},
+			{
 				"type": "info",
 				"markdown": "---"
 			},
@@ -43,6 +54,10 @@
 				"type": "fields_group",
 				"bgcolor": "#FFF4CC",
 				"fields": [
+				{
+						"type": "info",
+						"markdown": "Tell us a bit about yourself, and let's explore how we can help!""
+					},
 					{
 						"id": "name",
 						"label": "Name:",
@@ -54,14 +69,8 @@
 						"label": "Email:",
 						"type": "email",
 						"required": false
-					},
-					{
-						"id": "comments",
-						"label": "Any other thoughts, questions, or ideas - let us know:",
-						"type": "textarea",
-						"rows": 3,
-						"required": false
 					}
+
 				]
 			}
 		],
