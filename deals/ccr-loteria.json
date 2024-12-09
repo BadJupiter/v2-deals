@@ -19,16 +19,21 @@
 			},
 			{
 				"type": "info",
-				"markdown": "## **X:00 pm**"
+				"markdown": "## **8:00 pm**"
+			},
+			{
+				"type": "info",
+				"justify": "center",
+				"markdown": "ONSITE CHECK-IN BEGINS AT 4:00 PM"
+			},
+			{
+				"type": "info",
+				"markdown": "---"
 			},
 			{
 				"type": "info",
 				"justify": "center",
 				"markdown": "You and a guest are invited to the VIP Loteria Event at Colusa Casino!"
-			},
-			{
-				"type": "info",
-				"markdown": "---"
 			},
 			{
 				"id": "attend",
