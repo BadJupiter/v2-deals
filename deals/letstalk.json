@@ -18,19 +18,6 @@
 				"markdown": "---"
 			},
 			{
-				"id": "solution",
-				"label": "What sort of solution are you looking for?",
-				"type": "multi-select",
-				"range": ["Loyalty","Feedback","RSVPs","Check-ins"],
-				"required": false
-			},
-			{
-				"id": "other",
-				"type": "text",
-				"required": false,
-				"placeholder": "something else?"
-			},
-			{
 				"id": "demo",
 				"label": "Would you like to see a demo?",
 				"type": "select",
