@@ -18,11 +18,28 @@
 				"markdown": "---"
 			},
 			{
+				"type": "info",
+				"markdown": "This form and all it's elements are powered by Juipter. This is just a sample of what you can do. \n\nThe platform is a canvas, ready to be tailored to your unique needs."
+			},
+			{
+				"id": "solution",
+				"label": "What sort of solution are you looking for?",
+				"type": "multi-select",
+				"range": ["Loyalty","Feedback","RSVPs","Check-ins"],
+				"required": false
+			},
+			{
 				"id": "demo1",
 				"label": "Select a catgory that best matches your interest. We'll text you a link to see our platform in action:",
 				"type": "select",
 				"range": ["Guest Feedback","Loyalty & Feedback","Collect RSVPs","Retail Loyalty","Club Sign-up","Site Safety"],
 				"required": false
+			},
+			{
+				"id": "Other",
+				"type": "text",
+				"required": true
+				"placeholder": "something else?"
 			},
 			{
 				"type": "info",
@@ -37,6 +54,12 @@
 						"label": "Name:",
 						"type": "text",
 						"required": true
+					},
+					{
+						"id": "email",
+						"label": "Email:",
+						"type": "email",
+						"required": false
 					},
 					{
 						"id": "comments",
