@@ -8,6 +8,7 @@
 #	_when		grab timestamp (Unix -- for now)
 #	_mobile		User mobile number
 #	_deal		Deal token
+#	_rowid		unique row (grab) identifier
 
 	"COLUMNS": [
 		{
