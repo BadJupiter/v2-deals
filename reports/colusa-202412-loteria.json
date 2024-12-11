@@ -3,7 +3,7 @@
 	"deal_tokens": [ "ccr-loteria" ],
 	"most_recent_only": false, # omit or set to false for all rows
 	
-	"as_xlsx": true, # omit or set to false for default (CSV)
+	"as_xlsx": false, # omit or set to false for default (CSV)
 
 #	The following column values are always available (attrib):
 #	
