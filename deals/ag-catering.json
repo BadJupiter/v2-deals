@@ -62,7 +62,7 @@
 			}
 		],
 		"submit": {
-			"label": "Yep, yep, yep!"
+			"label": "Text me the coupon!"
 		},
 		"notify": {
 			"opt_in": "contact",
