@@ -8,11 +8,11 @@
 	},
 	
 	"FORM": {
-		"title": "G's Bourbon Club",
+		"title": "Holiday Party Catering",
 		"fields": [
 			{
 				"type": "info",
-				"markdown": "# **Ready to Pour!**"
+				"markdown": "# **'Tis The Season For BBQ!**"
 			},
 			{
 				"type": "info",
@@ -20,7 +20,7 @@
 			},
 			{
 				"type": "info",
-				"markdown": "Share your contact info and you're in! You'll get the scoop on upcoming members-only events and special offers!"
+				"markdown": "Ther"
 			},
 			{
 				"type": "info",
@@ -41,10 +41,10 @@
 				"sticky": true
 			},
 						{
-				"id": "rating",
-				"label": "Favorite Oklahoma Distillery:",
+				"id": "party",
+				"label": "How many people are you feeding?",
 				"type": "select",
-				"range": ["Red Fork Distillery","Castle Spirits","WanderFolk Spirits","Territory Distilling","Hochatown Distilling Co.","Woodworks Distilling","Too Hard to Choose"],
+				"range": ["5-10 people","10-20 people","20-50 people","50+ people"],
 				"required": false
 			},
 			{
