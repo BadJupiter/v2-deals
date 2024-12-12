@@ -8,11 +8,11 @@
 	},
 	
 	"FORM": {
-		"title": "Holiday Party Catering",
+		"title": "'Tis The Season For BBQ!",
 		"fields": [
 			{
 				"type": "info",
-				"markdown": "# **'Tis The Season For BBQ!**"
+				"markdown": "# **Holiday Party Catering**"
 			},
 			{
 				"type": "info",
@@ -57,6 +57,14 @@
 		],
 		"submit": {
 			"label": "Sign me up!"
+		},
+		"notify": {
+			"opt_in": "contact",
+			"message": "(from {_mob}) {name} requested contact. Catering for: {party}",
+			"mobiles": [
+				"+16462474444",
+				"+15039533423"
+			]
 		}
 	},
 	
