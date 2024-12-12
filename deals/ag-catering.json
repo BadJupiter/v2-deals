@@ -20,27 +20,13 @@
 			},
 			{
 				"type": "info",
-				"markdown": "Make your holiday party unforgettable with our BBQ catering. We'll take $20 off orders of $250 or more. Hurry, befure Chuck changes him mind!"
+				"markdown": "Make your holiday party unforgettable with our BBQ catering. We'll take $20 off orders of $250 or more. Get your order in before Chuck changes him mind!"
 			},
 			{
 				"type": "info",
 				"markdown": "---"
 			},
 			{
-				"id": "name",
-				"label": "Name:",
-				"type": "text",
-				"required": true,
-				"sticky": true
-			},
-			{
-				"id": "email",
-				"label": "Email:",
-				"type": "email",
-				"required": false,
-				"sticky": true
-			},
-						{
 				"id": "party",
 				"label": "How many people are you feeding?",
 				"type": "select",
@@ -59,6 +45,20 @@
 				"label": "Click here if you'd like us to give you a call",
 				"type": "checkbox",
 				"required": false
+			},
+			{
+				"id": "name",
+				"label": "Name:",
+				"type": "text",
+				"required": true,
+				"sticky": true
+			},
+			{
+				"id": "email",
+				"label": "Email:",
+				"type": "email",
+				"required": false,
+				"sticky": true
 			}
 		],
 		"submit": {
