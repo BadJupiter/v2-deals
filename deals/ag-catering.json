@@ -53,10 +53,16 @@
 				"type": "textarea",
 				"rows": 3,
 				"required": false
+			},
+			{
+				"id": "contact",
+				"label": "Click here if you'd like us to give you a call",
+				"type": "checkbox",
+				"required": false
 			}
 		],
 		"submit": {
-			"label": "Sign me up!"
+			"label": "Yep, yep, yep!"
 		},
 		"notify": {
 			"opt_in": "contact",
