@@ -1,0 +1,67 @@
+{
+	"biz_id": "albertgs",
+	"check_in": true,
+	"auth_required": true,
+	"error_auth": {
+		"title": "Woops!",
+		"content": "Cain't play if you ain't authenticated!"
+	},
+	
+	"FORM": {
+		"title": "G's Bourbon Club",
+		"fields": [
+			{
+				"type": "info",
+				"markdown": "# **Ready to Pour!**"
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "info",
+				"markdown": "Share your contact info and you're in! You'll get the scoop on upcoming members-only events and special offers!"
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"id": "name",
+				"label": "Name:",
+				"type": "text",
+				"required": true,
+				"sticky": true
+			},
+			{
+				"id": "email",
+				"label": "Email:",
+				"type": "email",
+				"required": false,
+				"sticky": true
+			},
+						{
+				"id": "rating",
+				"label": "Favorite Oklahoma Distillery:",
+				"type": "select",
+				"range": ["Red Fork Distillery","Castle Spirits","WanderFolk Spirits","Territory Distilling","Hochatown Distilling Co.","Woodworks Distilling","Too Hard to Choose"],
+				"required": false
+			},
+			{
+				"id": "comments",
+				"label": "Ideas for events, tastings, special guests, or anything else we can steal and repackage as our own:",
+				"type": "textarea",
+				"rows": 3,
+				"required": false
+			}
+		],
+		"submit": {
+			"label": "Sign me up!"
+		}
+	},
+	
+	"MAIN": {
+		"title": "Thank You!",
+		"body_md": "# **You're in!**\n\nStay tuned, you can expect some inspiring bourbon news shortly"
+	}
+}
