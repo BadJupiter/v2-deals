@@ -42,25 +42,32 @@
 				"type": "info",
 				"markdown": "**Tulsa Hills:** [918-921-8080](tel:+19189218080)"
 			},
+			
 			{
-				"id": "contact",
-				"label": "Click here if you'd like us to give you a call",
-				"type": "checkbox",
-				"required": false
-			},
-			{
-				"id": "party",
-				"label": "How many people are you feeding?",
-				"type": "select",
-				"range": ["5-10 people","10-20 people","20-50 people","50+ people"],
-				"required": false
-			},
-			{
-				"id": "name",
-				"label": "Name:",
-				"type": "text",
-				"required": true,
-				"sticky": true
+				"type": "fields_group",
+				"bgcolor": "#e8e8e8",
+				"fields": [
+					
+					{
+						"id": "contact",
+						"label": "Click here if you'd like us to give you a call",
+						"type": "checkbox",
+						"required": false
+					},
+					{
+						"id": "party",
+						"label": "How many people are you feeding?",
+						"type": "select",
+						"range": ["5-10 people","10-20 people","20-50 people","50+ people"],
+						"required": false
+					},
+					{
+						"id": "name",
+						"label": "Name:",
+						"type": "text",
+						"required": false
+					}
+				]
 			}
 		],
 		"submit": {
