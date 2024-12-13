@@ -2,20 +2,20 @@
 
 {
 	"notify": {
-		"text": "From Albert G's: Congrats on joining Free G’s! You’ve just earned a free brisket queso or 6 wings. On your next visit just scan the QR at your table and check-in to claim your reward!"
+		"text": "From Albert G's: You're one step closer to hosting a legendary holiday party! "
 	},
 	"redeem_button": {
-		"text": "Free brisket queso or wings!"
+		"text": "$20 off catering $250+!"
 	},
 	"redeem_confirm": {
 		"header": "Confirm",
-		"text": "Are you ready to snag your Brisket Queso or Wings?"
+		"text": "Are you ready to snag your catering offer?"
 	},
 	"reward": {
-		"header": "You choose - can't lose!",
-		"text": "We appreciate you! Show this to your server and choose either a cup of Brisket Queso or 6 Wings... on us!"
+		"header": "'Tis the Season!",
+		"text": "We appreciate you! Mention this coupon to the person taking your order and they'll apply the discount to your holiday party catering!"
 	},
 	"valid": {
-		"start_offset": 1 # next day
+		"start_offset": 0 # next day
 	}
 }
