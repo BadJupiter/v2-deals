@@ -84,8 +84,8 @@
 	},
 	
 	"MAIN": {
-		"title": "Thank You!",
-		"body_md": "# **You're in!**\n\nYour catering coupon is on the way-check your texts. \n\nIf you requested a call back, we'll be in touch shortly.\n\nMerry Christmas from all of us at Albert G's!"
+		"title": "",
+		"body_md": "# **Thank You!**\n\nIf you requested a call back, we'll be in touch shortly.\n\n**Merry Christmas from all of us at Albert G's!**"
 	},
 	"PUNCHCARDS": [
 		{
