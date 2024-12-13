@@ -65,6 +65,7 @@
 						"id": "name",
 						"label": "Name:",
 						"type": "text",
+						"sticky": true,
 						"required": false
 					}
 				]
