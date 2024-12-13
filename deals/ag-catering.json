@@ -20,11 +20,19 @@
 			},
 			{
 				"type": "info",
-				"markdown": "Make your holiday party unforgettable with our BBQ catering. And to sweeten the deal we'll take **$20 off orders** of $250 or more. Get your order in quick before Chuck changes him mind!"
+				"markdown": "Make your holiday party next-level with our BBQ catering. And to sweeten the deal we'll take **$20 off orders** of $250 or more. Get your order in quick before Chuck changes him mind!"
 			},
 			{
 				"type": "info",
 				"markdown": "---"
+			},
+			{
+				"type": "info",
+				"markdown": "If you're ready to order now, just call the location closest to you and we'll fix you up."
+			},
+			{
+				"type": "info",
+				"markdown": "Harvard: 918-747-4799"
 			},
 			{
 				"id": "party",
@@ -68,7 +76,6 @@
 			"opt_in": "contact",
 			"message": "(from {_mob}) {name} requested contact. Catering for: {party}",
 			"mobiles": [
-				"+16462474444",
 				"+15039533423"
 			]
 		}
