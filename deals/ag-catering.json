@@ -47,10 +47,13 @@
 				"type": "fields_group",
 				"bgcolor": "#D1E8EF",
 				"fields": [
-					
+					{
+					"type": "info",
+					"markdown": "Or if you prefer we'll call you to set it up!"
+					},
 					{
 						"id": "contact",
-						"label": "Or click here if you'd like a call back",
+						"label": "Call me please",
 						"type": "checkbox",
 						"required": false
 					},
