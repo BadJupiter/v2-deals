@@ -81,7 +81,8 @@
 			"opt_in": "contact",
 			"message": "(from {_mob}) {name} requested contact. Catering for: {party}",
 			"mobiles": [
-				"+15039533423"
+				"+15039533423",
+				"+16462474444"
 			]
 		}
 	},
