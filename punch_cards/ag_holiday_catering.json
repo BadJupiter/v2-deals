@@ -11,7 +11,7 @@
 	},
 	"punches": [
 		{
-			"message": "We just sent your Holiday Party Catering Coupon to you, check your texts!",
+			"message": "Your Holiday Party Catering Coupon is on its way!  Check your texts for $20 off and serve up a BBQ spread smoked low-and-slow for your holiday feast!!",
 			"reward": "ag_catering_20off.json"
 		}
 	]
