@@ -60,7 +60,7 @@
 				"label": "Let us know a good time to call:",
 				"type": "textarea",
 				"rows": 2,
-				"required": false
+				"required": false,
 				"conditional": {
 					"field": "contact",
 					"value": "true"
