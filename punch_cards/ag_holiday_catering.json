@@ -11,7 +11,7 @@
 	},
 	"punches": [
 		{
-			"message": "Merry Christmas from all of us at Albert G's! We just sent your Holiday Party Catering Coupon to you, check your texts!",
+			"message": "We just sent your Holiday Party Catering Coupon to you, check your texts!",
 			"reward": "ag_catering_20off.json"
 		}
 	]
