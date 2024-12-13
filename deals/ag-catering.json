@@ -86,18 +86,10 @@
 	"MAIN": {
 		"title": "Thank You!",
 		"body_md": "# **You're in!**\n\nYour catering coupon is on the way-check your texts. \n\nIf you requested a call back, we'll be in touch shortly.\n\nMerry Christmas from all of us at Albert G's!"
-	}
-}
-
-
-	"MAIN": {
-		"title": "Thank you!",
-		"body_md": "We appreciate you beyond measure! Keep coming back and we'll keep showing you the love!"
 	},
-	
 	"PUNCHCARDS": [
 		{
-			"template": "ag-.json"
+			"template": "ag_holiday_catering.json"
 		}
 	]
 }
