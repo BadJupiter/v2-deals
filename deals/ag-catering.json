@@ -50,7 +50,7 @@
 					
 					{
 						"id": "contact",
-						"label": "Click here if you'd like us to give you a call",
+						"label": "Or click here if you'd like a call back",
 						"type": "checkbox",
 						"required": false
 					},
