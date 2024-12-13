@@ -32,8 +32,9 @@
 			},
 			{
 				"type": "info",
-				"markdown": "Harvard: 918-747-4799"
-			},
+				"markdown": "[Harvard: 918-747-4799](tel:+19187474799)"
+			}
+
 			{
 				"id": "party",
 				"label": "How many people are you feeding?",
