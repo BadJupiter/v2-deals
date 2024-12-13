@@ -8,11 +8,11 @@
 	},
 	
 	"FORM": {
-		"title": "'Tis The Season For BBQ!",
+		"title": "'Tis The Season For...",
 		"fields": [
 			{
 				"type": "info",
-				"markdown": "# **Holiday Catering Special!**"
+				"markdown": "# **Holiday Parties & BBQ!**"
 			},
 			{
 				"type": "info",
