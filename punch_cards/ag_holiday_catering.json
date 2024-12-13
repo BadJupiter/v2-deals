@@ -1,5 +1,5 @@
 {
-	"id": "VIP Loyalty",
+	"id": "Holiday Catering",
 	"renews": true,
 	
 #	"limit" is an optional section. currently only "day" type is supported.
@@ -7,11 +7,11 @@
 	
 	"limit": {
 		"type": "day",
-		"message": "You're all set for today! Make sure you check-in again next time you're in!"
+		"message": "You're all set for today!"
 	},
 	"punches": [
 		{
-			"message": "Thanks for coming in and welcome to Free G's Rewards! Just scan the QR each time you visit and we'll pile on with bigger, better and tastier rewards! Your first on is already on the way, check your texts!",
+			"message": "Merry Christmas from all of us at Albert G's! We just sent your Holiday Party Catering Coupon to you, check your texts!",
 			"reward": "ag_catering_20off.json"
 		}
 	]
