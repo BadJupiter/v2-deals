@@ -31,6 +31,17 @@
 				"markdown": "If you're ready to order now, just call the location closest to you and we'll fix you up."
 			},
 			{
+				"id": "calltime",
+				"label": "Let us know a good time to call:",
+				"type": "text",
+				"range": ["Myself","Me and a guest"],
+				"required": true,
+				"conditional": {
+					"field": "attend",
+					"value": "YES. I will be there"
+				}
+			},
+						{
 				"type": "info",
 				"markdown": "[Harvard: 918-747-4799](tel:+19187474799)"
 			},
