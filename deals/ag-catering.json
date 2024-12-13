@@ -33,27 +33,20 @@
 			{
 				"type": "info",
 				"markdown": "[Harvard: 918-747-4799](tel:+19187474799)"
-			}
-{
+			},
+			{
 				"type": "info",
 				"markdown": "[Downtown: 918-728-3650](tel:+19187283650)"
-			}
+			},
 			{
 				"type": "info",
 				"markdown": "[Tulsa Hills: 918-921-8080](tel:+19189218080)"
-			}
+			},
 			{
 				"id": "party",
 				"label": "How many people are you feeding?",
 				"type": "select",
 				"range": ["5-10 people","10-20 people","20-50 people","50+ people"],
-				"required": false
-			},
-			{
-				"id": "comments",
-				"label": "Ideas for events, tastings, special guests, or anything else we can steal and repackage as our own:",
-				"type": "textarea",
-				"rows": 3,
 				"required": false
 			},
 			{
@@ -67,13 +60,6 @@
 				"label": "Name:",
 				"type": "text",
 				"required": true,
-				"sticky": true
-			},
-			{
-				"id": "email",
-				"label": "Email:",
-				"type": "email",
-				"required": false,
 				"sticky": true
 			}
 		],
