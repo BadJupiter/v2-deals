@@ -31,24 +31,6 @@
 				"markdown": "If you're ready to order now, just call the location closest to you and we'll fix you up."
 			},
 			{
-				"id": "comments",
-				"label": "Tell us how we could improve your experience:",
-				"type": "textarea",
-				"rows": 3,
-				"required": false
-			},
-				
-				"id": "calltime",
-				"label": "Let us know a good time to call:",
-				"type": "textarea",
-				"rows": 2,
-				"required": false
-				"conditional": {
-					"field": "contact",
-					"value": "true"
-				}
-			},
-						{
 				"type": "info",
 				"markdown": "[Harvard: 918-747-4799](tel:+19187474799)"
 			},
@@ -73,6 +55,17 @@
 				"type": "checkbox",
 				"required": false
 			},
+			{
+				"id": "calltime",
+				"label": "Let us know a good time to call:",
+				"type": "textarea",
+				"rows": 2,
+				"required": false
+				"conditional": {
+					"field": "contact",
+					"value": "true"
+				}
+			},	
 			{
 				"id": "name",
 				"label": "Name:",
