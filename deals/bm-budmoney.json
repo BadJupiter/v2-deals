@@ -42,10 +42,7 @@
 	
 	"PUNCHCARDS": [
 		{
-			"template": [
-					"budman_v2-launch.json"
-					
-			]
+			"template": "budman_v2-launch.json"
 		}
 	]
 }
