@@ -29,6 +29,14 @@
 		{
 			"column_name": "Name",
 			"attrib": "name"
+		},
+		{
+			"column_name": "Party",
+			"attrib": "party"
+		},
+		{
+			"column_name": "Contact",
+			"attrib": "contact"
 		}
 	]
 }
