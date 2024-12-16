@@ -1,6 +1,6 @@
 {
 	"biz_id": "albertgs",
-	"deal_tokens": [ "ag-bourbon" ],
+	"deal_tokens": [ "ag-catering" ],
 	"most_recent_only": false, # omit or set to false for all rows
 
 #	The following column values are always available (attrib):
