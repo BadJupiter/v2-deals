@@ -7,7 +7,7 @@
 	
 	"limit": {
 		"type": "day",
-		"message": "Only one scan per day for the BUD MONEY VIP program!"
+#		"message": "Only one scan per day for the BUD MONEY VIP program!"
 	},
 
 	"punches": [
