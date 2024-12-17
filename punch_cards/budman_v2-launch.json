@@ -1,6 +1,6 @@
 {
 	"id": "Bud Man V2 Launch",
-	"renews": true,
+	"renews": false,
 	
 #	"limit" is an optional section. currently only "day" type is supported.
 #	"message" will get displayed on limit error if present
