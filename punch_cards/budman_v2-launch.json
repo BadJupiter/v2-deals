@@ -6,7 +6,7 @@
 #	"message" will get displayed on limit error if present
 	
 	"limit": {
-		"type": "day",
+		"type": "day"
 #		"message": "Only one scan per day for the BUD MONEY VIP program!"
 	},
 
