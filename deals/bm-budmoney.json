@@ -8,7 +8,7 @@
 	},
 	"limit": {
 		"type": "onetime",
-		"message": "**Only once for this very special deal!**"
+		"message": "Only once for this very special deal!"
 	},
 
 #	the 'sticky' parameter is optional. 
