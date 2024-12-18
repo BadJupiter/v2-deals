@@ -8,7 +8,7 @@
 	},
 	"limit": {
 		"type": "onetime",
-		"message": "From now on, be sure to scan the QR on your receipt with each delivery to keep stacking punches on your card. Thanks for being part of BUD MONEY!"
+		"message": "From now on, be sure to scan the QR on your receipt with each delivery to keep stacking punches on your card. Thanks for being part of **BUD MONEY!**"
 	},
 
 #	the 'sticky' parameter is optional. 
