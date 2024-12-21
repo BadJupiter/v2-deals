@@ -5,10 +5,10 @@
 #	"limit" is an optional section. currently only "day" type is supported.
 #	"message" will get displayed on limit error if present
 	
-#	"limit": {
-#		"type": "day",
-#		"message": "Only once per day for the Bud Man VIP Loyalty program!"
-#	},
+	"limit": {
+		"type": "day",
+		"message": "Only once per day for the Bud Man VIP Loyalty program!"
+	},
 
 	"punches": [
 		{
