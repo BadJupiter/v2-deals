@@ -7,7 +7,7 @@
 	
 	"limit": {
 		"type": "day",
-		"message": "Only one scan per day for the Bud Money VIP Loyalty program!"
+		"message": "Only one scan per day for the Bud Money VIP program!"
 	},
 
 	"punches": [
