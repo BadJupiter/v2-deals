@@ -1,5 +1,5 @@
 {
-	"biz_id": "albertgs",
+	"biz_id": "jupiter",
 	"check_in": true,
 	"auth_required": true,
 	"error_auth": {
@@ -8,60 +8,79 @@
 	},
 	
 	"FORM": {
-		"title": "G's Bourbon Club",
 		"fields": [
 			{
 				"type": "info",
-				"markdown": "# **Ready to Pour!**"
-			},
+				"markdown": "# **Imagine > Create > Deliver**"
+			},			
 			{
 				"type": "info",
 				"markdown": "---"
 			},
-			{
+			{	
 				"type": "info",
-				"markdown": "Share your contact info and you're in! You'll get the scoop on upcoming members-only events and special offers!"
+				"markdown": "Everything you see here is built with and running on the Jupiter platform—all customizable to create unique customer interactions, with your brand front and center."
 			},
 			{
-				"type": "info",
-				"markdown": "---"
-			},
-			{
-				"id": "name",
-				"label": "Name:",
-				"type": "text",
-				"required": true,
-				"sticky": true
-			},
-			{
-				"id": "email",
-				"label": "Email:",
-				"type": "email",
-				"required": false,
-				"sticky": true
-			},
-						{
-				"id": "rating",
-				"label": "Favorite Oklahoma Distillery:",
+				"id": "demo",
+				"label": "Can we send you a demo?",
 				"type": "select",
-				"range": ["Red Fork Distillery","Castle Spirits","WanderFolk Spirits","Territory Distilling","Hochatown Distilling Co.","Woodworks Distilling","Too Hard to Choose"],
-				"required": false
+				"range": ["Yes, please do","Not just yet, thanks"],
+				"required": true
+			},
+			{
+				"id": "contact",
+				"label": "How should we get in touch?",
+				"type": "select",
+				"range": ["Email","Text"],
+				"required": true,
+				"conditional": {
+					"field": "demo",
+					"value": "Yes, please do"
+				}
 			},
 			{
 				"id": "comments",
-				"label": "Ideas for events, tastings, special guests, or anything else we can steal and repackage as our own:",
+				"label": "Any other thoughts, questions, or ideas - let us know:",
 				"type": "textarea",
 				"rows": 3,
 				"required": false
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "fields_group",
+				"bgcolor": "#FFF4CC",
+				"fields": [
+				{
+						"type": "info",
+						"markdown": "Tell us a bit about yourself, and let's explore how we can help!"
+					},
+					{
+						"id": "name",
+						"label": "Name:",
+						"type": "text",
+						"required": true
+					},
+					{
+						"id": "email",
+						"label": "Email:",
+						"type": "email",
+						"required": true
+					}
+
+				]
 			}
 		],
 		"submit": {
-			"label": "Sign me up!"
+			"label": "Submit"
 		}
 	},
 	
 	"MAIN": {
 		"title": "Thank You!",
-		"body_md": "# **You're in!**\n\nStay tuned, you can expect some inspiring bourbon news shortly"
+		"body_md": "# We appreciate your interest!\n\nCheck your texts. You'll get a message with a link to a demo you picked. Once you've had a look just holler if you'd like to talk more."
 	}
 }
