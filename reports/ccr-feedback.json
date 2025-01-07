@@ -1,6 +1,6 @@
 {
 	"biz_id": "colusacasino",
-	"deal_tokens": [ "ccr-loteria" ],
+	"deal_tokens": [ "colusa" ],
 	"most_recent_only": false, # omit or set to false for all rows
 	
 	"as_xlsx": false, # omit or set to false for default (CSV)
@@ -30,28 +30,44 @@
 			"attrib": "_deal"
 		},
 		{
-			"column_name": "Player ID",
-			"attrib": "PlayerID"
+			"column_name": "Rating",
+			"attrib": "rating"
 		},
 		{
-			"column_name": "Attending",
-			"attrib": "attend"
+			"column_name": "Comments",
+			"attrib": "comments"
 		},
 		{
-			"column_name": "Guests",
-			"attrib": "guests"
+			"column_name": "Return",
+			"attrib": "return"
 		},
 		{
-			"column_name": "Room",
-			"attrib": "room"
+			"column_name": "Recommend",
+			"attrib": "recommend"
 		},
 		{
-			"column_name": "Last Name",
-			"attrib": "z_LASTNAME"
+			"column_name": "Amenities",
+			"attrib": "amenities"
 		},
 		{
-			"column_name": "First Name",
-			"attrib": "z_FIRSTNAME"
+			"column_name": "Team",
+			"attrib": "team"
+		},
+		{
+			"column_name": "Name",
+			"attrib": "name"
+		},
+		{
+			"column_name": "Rewards",
+			"attrib": "rewards"
+		},
+		{
+			"column_name": "Address",
+			"attrib": "address"
+		},
+		{
+			"column_name": "Email",
+			"attrib": "email"
 		}
 	]
 }
