@@ -15,11 +15,7 @@
 			},
 			{
 				"type": "info",
-				"markdown": "## **February 7th - Noon-8:00 PM**"
-			},
-			{
-				"type": "info",
-				"markdown": "## **Februaary 8th, Noon-6:00 PM**"
+				"markdown": "## **February 7th & 8th**"
 			},
 			{
 				"type": "info",
@@ -31,6 +27,17 @@
 				"type": "select",
 				"range": ["Yes","No"],
 				"required": true
+			},
+			{
+				"id": "day",
+				"label": "I am confirming for:",
+				"type": "select",
+				"range": ["Saturday, February 7th | 2pm - 8pm","Sunday, February 8th | 12pm - 6pm"],
+				"required": true,
+				"conditional": {
+					"field": "attend",
+					"value": "Yes"
+				}
 			},
 			{
 				"type": "info",
