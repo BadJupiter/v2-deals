@@ -11,58 +11,26 @@
 		"fields": [
 			{
 				"type": "info",
-				"markdown": "# VIP Fragrance Event RSVP"
+				"markdown": "# Fragrance Event RSVP"
 			},
 			{
 				"type": "info",
-				"markdown": "## **February 30, 2024**"
+				"markdown": "## **February 7th - Noon-8:00 PM**"
 			},
 			{
 				"type": "info",
-				"markdown": "## **8:00 PM**"
-			},
-			{
-				"type": "info",
-				"justify": "center",
-				"markdown": "ONSITE CHECK-IN BEGINS AT 6:00 PM"
+				"markdown": "## **Februaary 8th, Noon-6:00 PM**"
 			},
 			{
 				"type": "info",
 				"markdown": "---"
 			},
 			{
-				"type": "info",
-				"justify": "center",
-				"markdown": " \n\nYou and a guest are invited to the VIP Loteria Event at Colusa Casino!"
-			},
-			{
 				"id": "attend",
 				"label": "Are you able to attend?",
 				"type": "select",
-				"range": ["YES. I will be there","NO. Please keep me in mind for next time."],
-				"required": true
-			},
-			{
-				"id": "guests",
-				"label": "I am confirming for:",
-				"type": "select",
-				"range": ["Myself","Me and a guest"],
-				"required": true,
-				"conditional": {
-					"field": "attend",
-					"value": "YES. I will be there"
-				}
-			},
-			{
-				"id": "room",
-				"label": "If rooms are available, would you like someone to contact you regarding reservations?",
-				"type": "select",
 				"range": ["Yes","No"],
-				"required": true,
-				"conditional": {
-					"field": "attend",
-					"value": "YES. I will be there"
-				}
+				"required": true
 			},
 			{
 				"type": "info",
@@ -100,14 +68,6 @@
 			"label": "Submit RSVP",
 			"color": "#20363d"
 		},
-		"notify": {
-			"opt_in": "contact",
-			"message": "(from {_mob}) {name} requested contact: {comments}",
-			"mobiles": [
-				"+16462474444",
-				"+15039533423"
-			]
-		}
 	},
 	"MAIN": {
 		"body_md": "# Thank you for your response! \n\nIf you have any questions or need to make changes to your RSVP, please don't hesitate to get in touch. We hope to see you soon at **Colusa Casino Resort**."
