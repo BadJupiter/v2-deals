@@ -22,6 +22,11 @@
 				"markdown": "---"
 			},
 			{
+				"type": "info",
+				"justify": "center",
+				"markdown": " \n\nYou are invited to the Fragrance VIP Event at Colusa Casino!"
+			},
+						{
 				"id": "attend",
 				"label": "Are you able to attend?",
 				"type": "select",
