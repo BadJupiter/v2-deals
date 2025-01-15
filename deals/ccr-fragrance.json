@@ -32,7 +32,7 @@
 				"id": "day",
 				"label": "I am confirming for:",
 				"type": "select",
-				"range": ["Saturday, February 7th | 2pm - 8pm","Sunday, February 8th | 12pm - 6pm"],
+				"range": ["Friday, February 7th | 2pm - 8pm","Saturday, February 8th | 12pm - 6pm"],
 				"required": true,
 				"conditional": {
 					"field": "attend",
