@@ -73,15 +73,15 @@
 						"id": "name",
 						"label": "Requested By:",
 						"type": "text",
-						"required": true
-						"sticky": true,
+						"required": true,
+						"sticky": true
 					},
 					{
 						"id": "emp_id",
 						"label": "Employee ID:",
 						"type": "text",
-						"required": true
-						"sticky": true,
+						"required": true,
+						"sticky": true
 					},
 					{
 						"id": "department",
