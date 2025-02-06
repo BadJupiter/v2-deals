@@ -54,7 +54,7 @@
 			},
 			{
 				"type": "info",
-				"markdown": "Snap or upload a photo (if possible) and be sure to provide a short description of **anyting** you see related to **this area or equipment** that you think might pose a **safety risk**. We thank you for the heads up!"
+				"markdown": "Snap or upload a photo (if possible):"
 			},
 			{
 				"type": "info",
@@ -74,12 +74,14 @@
 						"label": "Requested By:",
 						"type": "text",
 						"required": true
+						"sticky": true,
 					},
 					{
 						"id": "emp_id",
 						"label": "Employee ID:",
 						"type": "text",
 						"required": true
+						"sticky": true,
 					},
 					{
 						"id": "department",
