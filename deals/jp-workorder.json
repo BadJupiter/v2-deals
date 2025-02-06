@@ -84,7 +84,7 @@
 				"range": ["Housekeeping","Front Desk","Guest Services","Security","Floor","Food & Beverage"],
 				"required": true
 			},
-			
+			{
 				"id": "comments",
 				"label": "Provide a short description of the issue",
 				"type": "textarea",
