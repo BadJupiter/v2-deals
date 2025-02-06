@@ -1,5 +1,5 @@
 {
-	"biz_id": "hmt",
+	"biz_id": "jupiter",
 	"check_in": true,
 	"auth_required": true,
 	"error_auth": {
@@ -8,8 +8,50 @@
 	},
 	
 	"FORM": {
-		"title": "REPORT A CONCERN",
+		"title": "REPORT AN ISSUE",
 		"fields": [
+			{
+				"id": "title",
+				"label": "Work Order Title",
+				"type": "text",
+				"required": true,
+				"placeholder": "Short description of the issue"
+			},
+			{
+				"id": "description",
+				"label": "Detailed Description:",
+				"type": "textarea",
+				"rows": 3,
+				"required": false
+			},
+			{
+				"id": "category",
+				"label": "Type of work required: (Select all that apply)",
+				"type": "multi-select",
+				"range": ["Drywall","Electrical","Mechanical","Lighting","Paint","Plumbing","Other"],
+				"required": true
+			},
+			{
+				"id": "area",
+				"label": "Building/Area:",
+				"type": "select",
+				"range": ["Casino","Hotel","Dining/Bar","Back of House","Admin Offices","RV Park"],
+				"required": true
+			},
+			{
+				"id": "location",
+				"label": "Specific Room/Location:",
+				"type": "text",
+				"required": true,
+				"placeholder": "e.g. Room 144, men's restroom #3, Sports Book, etc."
+			},
+			{
+				"id": "priority",
+				"label": "Priority:",
+				"type": "select",
+				"range": ["Emergency","High","Medium","Low"],
+				"required": true
+			},
 			{
 				"type": "info",
 				"markdown": "Snap or upload a photo (if possible) and be sure to provide a short description of **anyting** you see related to **this area or equipment** that you think might pose a **safety risk**. We thank you for the heads up!"
@@ -24,6 +66,24 @@
 				"required": false
 			},
 			{
+				"id": "name",
+				"label": "Requested By:",
+				"type": "text",
+				"required": true
+			},
+			{
+				"id": "emp_id",
+				"label": "Employee ID:",
+				"type": "text",
+				"required": true
+			},
+			{
+				"id": "department",
+				"label": "Department",
+				"type": "select",
+				"range": ["Housekeeping","Front Desk","Guest Services","Security","Floor","Food & Beverage"],
+				"required": ture
+			},{
 				"id": "comments",
 				"label": "Provide a short description of the issue",
 				"type": "textarea",
