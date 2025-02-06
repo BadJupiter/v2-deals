@@ -82,8 +82,9 @@
 				"label": "Department",
 				"type": "select",
 				"range": ["Housekeeping","Front Desk","Guest Services","Security","Floor","Food & Beverage"],
-				"required": ture
-			},{
+				"required": true
+			},
+			
 				"id": "comments",
 				"label": "Provide a short description of the issue",
 				"type": "textarea",
