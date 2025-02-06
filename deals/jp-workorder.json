@@ -66,30 +66,30 @@
 				"required": false
 			},
 			{
-				"id": "name",
-				"label": "Requested By:",
-				"type": "text",
-				"required": true
-			},
-			{
-				"id": "emp_id",
-				"label": "Employee ID:",
-				"type": "text",
-				"required": true
-			},
-			{
-				"id": "department",
-				"label": "Department",
-				"type": "select",
-				"range": ["Housekeeping","Front Desk","Guest Services","Security","Floor","Food & Beverage"],
-				"required": true
-			},
-			{
-				"id": "comments",
-				"label": "Provide a short description of the issue",
-				"type": "textarea",
-				"rows": 3,
-				"required": true
+				"type": "fields_group",
+				"bgcolor": "#F5F5F5",
+				"fields": [
+					{
+						"id": "name",
+						"label": "Requested By:",
+						"type": "text",
+						"required": true
+					},
+					{
+						"id": "emp_id",
+						"label": "Employee ID:",
+						"type": "text",
+						"required": true
+					},
+					{
+						"id": "department",
+						"label": "Department",
+						"type": "select",
+						"range": ["Housekeeping","Front Desk","Guest Services","Security","Floor","Food & Beverage"],
+						"required": true
+
+					}
+				]
 			}
 		],
 		"submit": {
