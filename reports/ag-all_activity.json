@@ -1,0 +1,42 @@
+{
+	"biz_id": "albertgs",
+	"deal_tokens": [ "ag-catering" ],
+	"most_recent_only": false, # omit or set to false for all rows
+
+#	The following column values are always available (attrib):
+#	
+#	_when		grab timestamp (Unix -- for now)
+#	_mobile		User mobile number
+#	_deal		Deal token
+
+	"COLUMNS": [
+		{
+			"column_name": "(row id)",
+			"attrib": "_rowid"
+		},
+		{
+			"column_name": "Timestamp",
+			"attrib": "_when"
+		},
+		{
+			"column_name": "Mobile",
+			"attrib": "_mobile"
+		},
+		{
+			"column_name": "Deal ID",
+			"attrib": "_deal"
+		},
+		{
+			"column_name": "Name",
+			"attrib": "name"
+		},
+		{
+			"column_name": "Party",
+			"attrib": "party"
+		},
+		{
+			"column_name": "Contact",
+			"attrib": "contact"
+		}
+	]
+}
