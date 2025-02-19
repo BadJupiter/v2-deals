@@ -38,7 +38,7 @@
 				"id": "initials",
 				"label": "Customized monogram (up to 3 letters):",
 				"type": "text",
-				"required": true,
+				"required": true
 			},
 			{
 				"type": "info",
