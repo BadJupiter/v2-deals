@@ -11,13 +11,9 @@
 		"fields": [
 			{
 				"type": "info",
-				"markdown": "# Party Rock Bingo RSVP"
+				"markdown": "# Clayton & Crume Leather Gift"
 			},
-			{
-				"type": "info",
-				"markdown": "## **February 21, 2025**"
-			},
-			{
+						{
 				"type": "info",
 				"justify": "center",
 				"markdown": "ONSITE CHECK-IN BEGINS AT 6:00 PM"
@@ -32,22 +28,17 @@
 				"markdown": " \n\nYou and a guest are invited to the Party Rock Bingo Event at Colusa Casino!"
 			},
 			{
-				"id": "attend",
-				"label": "Are you able to attend?",
+				"id": "gift",
+				"label": "Which gift would you prefer?",
 				"type": "select",
-				"range": ["Yes","No"],
+				"range": ["Daybook","Padfolio"],
 				"required": true
 			},
 			{
-				"id": "guests",
-				"label": "I am confirming for:",
-				"type": "select",
-				"range": ["Myself","Me and a guest"],
+				"id": "initials",
+				"label": "Customized monogram (up to 3 letters):",
+				"type": "text",
 				"required": true,
-				"conditional": {
-					"field": "attend",
-					"value": "Yes"
-				}
 			},
 			{
 				"type": "info",
@@ -82,7 +73,7 @@
 			}
 		],
 		"submit": {
-			"label": "Submit RSVP",
+			"label": "Submit Your Order",
 			"color": "#20363d"
 		
 		}
