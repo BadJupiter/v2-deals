@@ -85,7 +85,7 @@
 				"label": "Address:",
 				"type": "textarea",
 				"rows": 3,
-				"required": true
+				"required": true,
 				"conditional": {
 					"field": "attend",
 					"value": "Yes"
