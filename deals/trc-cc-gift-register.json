@@ -93,17 +93,6 @@
 			},
 			{
 				"type": "info",
-				"justify": "left",
-				"markdown": " \n\nAs a valued Three Rivers Casino VIP, we're thrilled to offer you a beautiful, handcrafted leather gift from **Clayton & Crume**."
-				"rows": 3,
-				"required": true,
-				"conditional": {
-					"field": "attend",
-					"value": "No"
-				}
-			},
-			{
-				"type": "info",
 				"markdown": "---"
 			},
 			{
