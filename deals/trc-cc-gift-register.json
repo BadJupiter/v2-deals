@@ -48,7 +48,7 @@
 			},
 			{
 				"type": "info",
-				"justify": "left",
+				"justify": "center",
 				"markdown": " \n\nYou are also invited to the on-site Clayton & Crume VIP Event!"
 			},
 			{
@@ -79,6 +79,11 @@
 					"field": "attend",
 					"value": "Yes"
 				}
+			},
+			{
+				"type": "info",
+				"justify": "center",
+				"markdown": " \n\nSorry you can't make it, we'll ship it instead."
 			},
 			{
 				"id": "address",
