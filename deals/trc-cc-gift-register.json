@@ -89,6 +89,7 @@
 				"conditional": {
 					"field": "attend",
 					"value": "No"
+				}
 			},
 			{
 				"type": "info",
