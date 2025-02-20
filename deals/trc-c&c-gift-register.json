@@ -1,5 +1,5 @@
 {
-	"biz_id": "colusacasino",
+	"biz_id": "threerivers",
 	"check_in": true,
 	"auth_required": true,
 	"error_auth": {
@@ -41,6 +41,51 @@
 				"type": "text",
 				"placeholder": "Enter up to 3 letters",
 				"required": false
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "info",
+				"justify": "center",
+				"markdown": " \n\nYou are also invited to the on-site Clayton & Crume VIP Event!"
+			},
+						{
+				"id": "attend",
+				"label": "Are you able to attend?",
+				"type": "select",
+				"range": ["Yes","No"],
+				"required": true
+			},
+			{
+				"id": "day",
+				"label": "I am confirming for:",
+				"type": "select",
+				"range": ["Friday, April 4th","Saturday, April 5th"],
+				"required": true,
+				"conditional": {
+					"field": "attend",
+					"value": "Yes"
+				}
+			},
+			{
+				"id": "time",
+				"label": "I am confirming for:",
+				"type": "select",
+				"range": ["4:00pm - 5:00pm","5:00pm - 6:00pm","6:00pm - 7:00pm","7:00pm - 8:00pm"],
+				"required": true,
+				"conditional": {
+					"field": "attend",
+					"value": "Yes"
+				}
+			},
+			{
+				"id": "address",
+				"label": "Address:",
+				"type": "textarea",
+				"rows": 3,
+				"required": true
 			},
 			{
 				"type": "info",
