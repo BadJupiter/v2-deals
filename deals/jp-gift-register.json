@@ -13,11 +13,7 @@
 				"type": "info",
 				"markdown": "# Clayton & Crume Leather Gift"
 			},
-						{
-				"type": "info",
-				"justify": "center",
-				"markdown": "ONSITE CHECK-IN BEGINS AT 6:00 PM"
-			},
+				
 			{
 				"type": "info",
 				"markdown": "---"
@@ -25,7 +21,12 @@
 			{
 				"type": "info",
 				"justify": "center",
-				"markdown": " \n\nYou and a guest are invited to the Party Rock Bingo Event at Colusa Casino!"
+				"markdown": " \n\nAs a valued Three Rivers Casino VIP, we're thrilled to offer you a beautiful, handcrafted leather gift from **Clayton & Crume**."
+			},
+			{
+				"type": "info",
+				"justify": "center",
+				"markdown": " \n\nPlease provide your preferences below and we'll take care of the rest--monogramming your gift and delivering it right to your doorstep."
 			},
 			{
 				"id": "gift",
@@ -36,9 +37,10 @@
 			},
 			{
 				"id": "initials",
-				"label": "Customized monogram (up to 3 letters):",
+				"label": "Would you like a custom monogram?",
 				"type": "text",
-				"required": true
+				"placeholder": "Enter up to 3 letters",
+				"required": false
 			},
 			{
 				"type": "info",
