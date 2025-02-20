@@ -71,7 +71,7 @@
 			},
 			{
 				"id": "time",
-				"label": "I am confirming for:",
+				"label": "Save me a spot from:",
 				"type": "select",
 				"range": ["4:00pm - 5:00pm","5:00pm - 6:00pm","6:00pm - 7:00pm","7:00pm - 8:00pm"],
 				"required": true,
@@ -86,7 +86,7 @@
 				"markdown": " \n\nWe're sorry you won't be able to make it, we'd be happy to ship it anywhere you'd like. Please provide your preferred shipping address below.",
 				"conditional": {
 					"field": "attend",
-					"value": "Yes"
+					"value": "No"
 				}
 			},
 			{
