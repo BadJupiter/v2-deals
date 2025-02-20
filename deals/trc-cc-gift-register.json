@@ -13,7 +13,9 @@
 				"type": "info",
 				"markdown": "# Clayton & Crume Leather Gift"
 			},
-				
+			{
+				"type": "info",
+				"markdown": "## **April 4th & 5th**"	
 			{
 				"type": "info",
 				"markdown": "---"
@@ -49,7 +51,7 @@
 			{
 				"type": "info",
 				"justify": "center",
-				"markdown": " ##You are also invited to the on-site Clayton & Crume VIP Event!"
+				"markdown": "##You are also invited to the on-site Clayton & Crume VIP Event!"
 			},
 			{
 				"id": "attend",
@@ -81,6 +83,7 @@
 				}
 			},
 			{
+				"id": "deliver",
 				"type": "info",
 				"justify": "left",
 				"markdown": " \n\nWe're sorry you won't be able to make it, we'd be happy to ship it to you. Please provide your preferred shipping address below.",
