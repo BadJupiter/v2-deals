@@ -83,7 +83,11 @@
 			{
 				"type": "info",
 				"justify": "center",
-				"markdown": " \n\nSorry you can't make it, we'll ship it instead."
+				"markdown": " \n\nWe're sorry you won't be able to make it, we'd be happy to ship it anywhere you'd like. Please provide your preferred shipping address below."
+				"conditional": {
+					"field": "attend",
+					"value": "Yes"
+				}
 			},
 			{
 				"id": "address",
