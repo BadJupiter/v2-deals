@@ -51,7 +51,7 @@
 				"justify": "center",
 				"markdown": " \n\nYou are also invited to the on-site Clayton & Crume VIP Event!"
 			},
-						{
+			{
 				"id": "attend",
 				"label": "Are you able to attend?",
 				"type": "select",
