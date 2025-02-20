@@ -86,6 +86,9 @@
 				"type": "textarea",
 				"rows": 3,
 				"required": true
+				"conditional": {
+					"field": "attend",
+					"value": "Yes"
 			},
 			{
 				"type": "info",
