@@ -46,10 +46,6 @@
 				"required": false
 			},
 			{
-				"type": "info",
-				"markdown": "---"
-			},
-			{
 				"id": "attend",
 				"label": "Are you able to attend the event?",
 				"type": "select",
@@ -80,7 +76,7 @@
 			},
 			{
 				"id": "room",
-				"label": "Would you like someone to contact you regarding a room reservation?",
+				"label": "Would you like to be contacted about a room reservation?",
 				"type": "select",
 				"range": ["Yes","No"],
 				"required": true,
