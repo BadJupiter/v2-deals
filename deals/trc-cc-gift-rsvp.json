@@ -1,0 +1,141 @@
+{
+	"biz_id": "threerivers",
+	"check_in": true,
+	"auth_required": true,
+	"error_auth": {
+		"title": "Woops!",
+		"content": "Can't play if you ain't authenticated!"
+	},
+
+	"FORM": {
+		"title": "Three Rivers Casino",
+		"fields": [
+			{
+				"type": "info",
+				"markdown": "# Clayton & Crume VIP Event"
+			},
+			{
+				"type": "info",
+				"markdown": "## **April 4th & 5th**"	
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "info",
+				"justify": "center",
+				"markdown": " \n\nAs a valued Three Rivers Casino VIP, we're thrilled to offer you a beautiful, handcrafted leather gift from **Clayton & Crume**."
+			},
+			{
+				"type": "info",
+				"justify": "center",
+				"markdown": " \n\nPlease provide your preferences below--we’ll have it custom-made and waiting for you at the event. If you’re unable to attend, we’ll be happy to ship it to you."
+			},
+			{
+				"id": "gift",
+				"label": "Which gift would you prefer?",
+				"type": "select",
+				"range": ["Daybook","Padfolio"],
+				"required": true
+			},
+			{
+				"id": "initials",
+				"label": "Would you like a custom monogram?",
+				"type": "text",
+				"placeholder": "Enter up to 3 letters",
+				"required": false
+			},
+			{
+				"id": "attend",
+				"label": "Are you able to attend the event?",
+				"type": "select",
+				"range": ["Yes","No"],
+				"required": true
+			},
+			{
+				"id": "day",
+				"label": "I am confirming for:",
+				"type": "select",
+				"range": ["Friday, April 4th","Saturday, April 5th"],
+				"required": true,
+				"conditional": {
+					"field": "attend",
+					"value": "Yes"
+				}
+			},
+			{
+				"id": "time",
+				"label": "Save me a spot from:",
+				"type": "select",
+				"range": ["4:00pm - 5:00pm","5:00pm - 6:00pm","6:00pm - 7:00pm","7:00pm - 8:00pm"],
+				"required": true,
+				"conditional": {
+					"field": "attend",
+					"value": "Yes"
+				}
+			},
+			{
+				"id": "room",
+				"label": "Would you like to be contacted about a room reservation?",
+				"type": "select",
+				"range": ["Yes","No"],
+				"required": true,
+				"conditional": {
+					"field": "attend",
+					"value": "Yes"
+				}
+			},
+			{
+				"id": "address",
+				"label": "Please confirm your shipping address:",
+				"type": "textarea",
+				"rows": 3,
+				"required": true,
+				"conditional": {
+					"field": "attend",
+					"value": "No"
+				}
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "fields_group",
+				"bgcolor": "#D2BDA8",
+				"fields": [
+					{
+						"id": "z_FIRSTNAME",
+						"label": "First Name:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					},
+					{
+						"id": "z_LASTNAME",
+						"label": "Last Name:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					},
+					{
+						"id": "PlayerID",
+						"label": "Rewards #:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					}
+				]
+			}
+		],
+		"submit": {
+			"label": "Submit RSVP",
+			"color": "#20363d"
+		
+		}
+	},
+	"MAIN": {
+		"body_md": "# We've received your request \n\nWe’re excited to personalize your handcrafted **Clayton & Crume** leather gift and will have it delivered to you soon."
+	}
+}
