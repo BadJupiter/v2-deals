@@ -79,6 +79,17 @@
 				}
 			},
 			{
+				"id": "room",
+				"label": "Would you like someone to contact you regarding a room reservation?",
+				"type": "select",
+				"range": ["Yes","No"],
+				"required": true,
+				"conditional": {
+					"field": "attend",
+					"value": "Yes"
+				}
+			},
+			{
 				"id": "address",
 				"label": "Please confirm your shipping address:",
 				"type": "textarea",
