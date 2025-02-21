@@ -28,25 +28,6 @@
 				"markdown": " \n\nAs a valued Three Rivers Casino VIP, we're thrilled to offer you a beautiful, handcrafted leather gift from **Clayton & Crume**."
 			},
 			{
-				"type": "info",
-				"justify": "center",
-				"markdown": " \n\nPlease provide your preferences below--we’ll have it custom-made and waiting for you at the event. If you’re unable to attend, we’ll be happy to ship it to you."
-			},
-			{
-				"id": "gift",
-				"label": "Which gift would you prefer?",
-				"type": "select",
-				"range": ["Daybook","Padfolio"],
-				"required": true
-			},
-			{
-				"id": "initials",
-				"label": "Would you like a custom monogram?",
-				"type": "text",
-				"placeholder": "Enter up to 3 letters",
-				"required": false
-			},
-			{
 				"id": "attend",
 				"label": "Are you able to attend the event?",
 				"type": "select",
@@ -73,28 +54,6 @@
 				"conditional": {
 					"field": "attend",
 					"value": "Yes"
-				}
-			},
-			{
-				"id": "room",
-				"label": "Would you like to be contacted about a room reservation?",
-				"type": "select",
-				"range": ["Yes","No"],
-				"required": true,
-				"conditional": {
-					"field": "attend",
-					"value": "Yes"
-				}
-			},
-			{
-				"id": "address",
-				"label": "Please confirm your shipping address:",
-				"type": "textarea",
-				"rows": 3,
-				"required": true,
-				"conditional": {
-					"field": "attend",
-					"value": "No"
 				}
 			},
 			{
