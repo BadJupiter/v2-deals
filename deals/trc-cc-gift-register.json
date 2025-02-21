@@ -8,6 +8,7 @@
 	},
 
 	"FORM": {
+		"title": "Three Rivers Casino",
 		"fields": [
 			{
 				"type": "info",
