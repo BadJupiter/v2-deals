@@ -11,7 +11,7 @@
 		"fields": [
 			{
 				"type": "info",
-				"markdown": "# Clayton & Crume Leather Gift"
+				"markdown": "# Clayton & Crume VIP Event"
 			},
 			{
 				"type": "info",
@@ -29,7 +29,7 @@
 			{
 				"type": "info",
 				"justify": "center",
-				"markdown": " \n\nPlease provide your preferences below and we'll take care of the rest--monogramming your gift and delivering it right to your doorstep."
+				"markdown": " \n\nPlease provide your preferences below--we’ll have it custom-made and waiting for you at the event. If you’re unable to attend, we’ll be happy to ship it to you."
 			},
 			{
 				"id": "gift",
@@ -50,13 +50,8 @@
 				"markdown": "---"
 			},
 			{
-				"type": "info",
-				"justify": "center",
-				"markdown": "##You are also invited to the on-site Clayton & Crume VIP Event!"
-			},
-			{
 				"id": "attend",
-				"label": "Are you able to attend?",
+				"label": "Are you able to attend the event?",
 				"type": "select",
 				"range": ["Yes","No"],
 				"required": true
@@ -84,18 +79,8 @@
 				}
 			},
 			{
-				"id": "deliver",
-				"type": "info",
-				"justify": "left",
-				"markdown": " \n\nWe're sorry you won't be able to make it, we'd be happy to ship it to you. Please provide your preferred shipping address below.",
-				"conditional": {
-					"field": "attend",
-					"value": "No"
-				}
-			},
-			{
 				"id": "address",
-				"label": "Address:",
+				"label": "Please confirm your shipping address:",
 				"type": "textarea",
 				"rows": 3,
 				"required": true,
@@ -137,7 +122,7 @@
 			}
 		],
 		"submit": {
-			"label": "Submit Your Order",
+			"label": "Submit RSVP",
 			"color": "#20363d"
 		
 		}
