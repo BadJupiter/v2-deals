@@ -20,7 +20,7 @@
 			},
 			{
 				"type": "info",
-				"markdown": "## **Casino Event Center - Florence**"	
+				"markdown": "## **Casino Event Center, Florence**"	
 			},
 			{
 				"type": "info",
@@ -93,8 +93,8 @@
 			{
 				"id": "address",
 				"label": "Please enter your preferred shipping address:",
-				"type": "textarea",
-				"rows": 3,
+				"type": "text",
+				"placeholder": "Street",
 				"required": true,
 				"conditional": {
 					"field": "attend",
@@ -103,8 +103,8 @@
 			},
 						{
 				"id": "city",
-				"type": "textarea",
-				"rows": 3,
+				"type": "text",
+				"placeholder": "City",
 				"required": true,
 				"conditional": {
 					"field": "attend",
@@ -113,9 +113,8 @@
 			},
 						{
 				"id": "state",
-				"label": "Please enter your preferred shipping address:",
-				"type": "textarea",
-				"rows": 3,
+				"type": "text",
+				"placeholder": "State",
 				"required": true,
 				"conditional": {
 					"field": "attend",
@@ -124,9 +123,8 @@
 			},
 						{
 				"id": "zip",
-				"label": "Please enter your preferred shipping address:",
-				"type": "textarea",
-				"rows": 3,
+				"type": "text",
+				"placeholder": "ZIP Code",
 				"required": true,
 				"conditional": {
 					"field": "attend",
