@@ -8,15 +8,19 @@
 	},
 
 	"FORM": {
-		"title": "Three Rivers Casino",
+		"title": "Three Rivers Casino Resort",
 		"fields": [
 			{
 				"type": "info",
-				"markdown": "# Clayton & Crume VIP Event"
+				"markdown": "# Clayton & Crume Exclusive Event"
 			},
 			{
 				"type": "info",
 				"markdown": "## **April 4th & 5th**"	
+			},
+			{
+				"type": "info",
+				"markdown": "## **Casino Event Center - Florence**"	
 			},
 			{
 				"type": "info",
@@ -25,7 +29,7 @@
 			{
 				"type": "info",
 				"justify": "center",
-				"markdown": " \n\nAs a valued Three Rivers Casino VIP, we're thrilled to offer you a beautiful, handcrafted leather gift from **Clayton & Crume**."
+				"markdown": " \n\nAs a valued Three Rivers Casino Resort Guest, we're thrilled to offer you a beautiful, handcrafted leather gift from **Clayton & Crume**."
 			},
 			{
 				"type": "info",
@@ -88,7 +92,39 @@
 			},
 			{
 				"id": "address",
-				"label": "Please confirm your shipping address:",
+				"label": "Please enter your preferred shipping address:",
+				"type": "textarea",
+				"rows": 3,
+				"required": true,
+				"conditional": {
+					"field": "attend",
+					"value": "No"
+				}
+			},
+						{
+				"id": "city",
+				"type": "textarea",
+				"rows": 3,
+				"required": true,
+				"conditional": {
+					"field": "attend",
+					"value": "No"
+				}
+			},
+						{
+				"id": "state",
+				"label": "Please enter your preferred shipping address:",
+				"type": "textarea",
+				"rows": 3,
+				"required": true,
+				"conditional": {
+					"field": "attend",
+					"value": "No"
+				}
+			},
+						{
+				"id": "zip",
+				"label": "Please enter your preferred shipping address:",
 				"type": "textarea",
 				"rows": 3,
 				"required": true,
@@ -121,7 +157,7 @@
 					},
 					{
 						"id": "PlayerID",
-						"label": "Rewards #:",
+						"label": "Club #:",
 						"type": "text",
 						"sticky": true,
 						"disabled": true
@@ -136,6 +172,6 @@
 		}
 	},
 	"MAIN": {
-		"body_md": "# We've received your request \n\nIf you need to make any changes to your RSVP just scan your invitation again. If you need any help please get in touch with your host. We hope to see you soon at **Three Rivers Casino - Florence**."
+		"body_md": "# We've received your request \n\nIf you need to make any changes to your RSVP just scan your invitation again. If you need any help please get in touch with your host. We hope to see you soon at **Three Rivers Casino Resort - Florence**."
 	}
 }
