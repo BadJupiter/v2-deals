@@ -67,7 +67,7 @@
 		},
 		{
 			"column_name": "Address",
-			"attrib": "street"
+			"attrib": "address"
 		},
 		{
 			"column_name": "City",
