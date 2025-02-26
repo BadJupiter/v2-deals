@@ -43,23 +43,16 @@
 				"range": ["Daybook","Padfolio"],
 				"required": true
 			},
-#			{
-#				"id": "initials",
-#				"label": "Would you like a custom monogram?",
-#				"type": "text",
-#				"placeholder": "Enter up to 3 letters",
-#				"required": false
-#			},
 			{
 			   "id": "initials",
 			   "type": "characters",
-			   "label": "Would you like a custom monogram?",
+			   "label": "Personalize your gift below by entering a monogram up to three letters",
 			   "count": 3,
-			   "required": false
+			   "required": true
 			},
 			{
 				"id": "attend",
-				"label": "Are you able to attend the event?",
+				"label": "Will you be attending the onsite event?",
 				"type": "select",
 				"range": ["Yes","No"],
 				"required": true
