@@ -8,19 +8,19 @@
 	},
 
 	"FORM": {
-		"title": "Three Rivers Casino Resort",
+		"title": "Park 107",
 		"fields": [
 			{
 				"type": "info",
-				"markdown": "# Clayton & Crume Exclusive Event"
+				"markdown": "# Bark Park Happy Hour"
 			},
 			{
 				"type": "info",
-				"markdown": "## **April 4th & 5th**"	
+				"markdown": "## **Friday, March 14th**"	
 			},
 			{
 				"type": "info",
-				"markdown": "## **Casino Event Center, Florence**"	
+				"markdown": "## **3:00 - 7:00 pm**"	
 			},
 			{
 				"type": "info",
@@ -29,7 +29,7 @@
 			{
 				"type": "info",
 				"justify": "center",
-				"markdown": " \n\nAs a valued Three Rivers Casino Resort Guest, we're thrilled to offer you a beautiful, handcrafted leather gift from **Clayton & Crume**."
+				"markdown": " \n\nBring your humans and  **Clayton & Crume**."
 			},
 			{
 				"type": "info",
