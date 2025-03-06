@@ -15,7 +15,7 @@
 			},
 			{
 				"type": "info",
-				"markdown": "## **December 30, 2024**"
+				"markdown": "## **April 25, 2025**"
 			},
 			{
 				"type": "info",
@@ -39,7 +39,7 @@
 				"id": "attend",
 				"label": "Are you able to attend?",
 				"type": "select",
-				"range": ["YES. I will be there","NO. Please keep me in mind for next time."],
+				"range": ["Yes","No"],
 				"required": true
 			},
 			{
@@ -50,7 +50,7 @@
 				"required": true,
 				"conditional": {
 					"field": "attend",
-					"value": "YES. I will be there"
+					"value": "Yes"
 				}
 			},
 			{
@@ -61,7 +61,7 @@
 				"required": true,
 				"conditional": {
 					"field": "attend",
-					"value": "YES. I will be there"
+					"value": "Yes"
 				}
 			},
 			{
@@ -99,17 +99,9 @@
 		"submit": {
 			"label": "Submit RSVP",
 			"color": "#20363d"
-		},
-		"notify": {
-			"opt_in": "contact",
-			"message": "(from {_mob}) {name} requested contact: {comments}",
-			"mobiles": [
-				"+16462474444",
-				"+15039533423"
-			]
 		}
 	},
 	"MAIN": {
-		"body_md": "# Thank you for your response! \n\nIf you have any questions or need to make changes to your RSVP, please don't hesitate to get in touch. We hope to see you soon at **Colusa Casino Resort**."
+		"body_md": "# Thank you for your response! \n\nIf you need to make any changes to your RSVP just scan your invitation again. If you need any help please get in touch with your host. We hope to see you soon at **Colusa Casino Resort**."
 	}
 }
