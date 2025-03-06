@@ -54,17 +54,6 @@
 				}
 			},
 			{
-				"id": "room",
-				"label": "If rooms are available, would you like someone to contact you regarding reservations?",
-				"type": "select",
-				"range": ["Yes","No"],
-				"required": true,
-				"conditional": {
-					"field": "attend",
-					"value": "Yes"
-				}
-			},
-			{
 				"type": "info",
 				"markdown": "---"
 			},
