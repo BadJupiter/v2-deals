@@ -81,6 +81,10 @@
 		{
 			"column_name": "Zip",
 			"attrib": "zip"
+		},
+		{
+			"column_name": "HotelQ",
+			"attrib": "HotelQ"
 		}
 	]
 }
