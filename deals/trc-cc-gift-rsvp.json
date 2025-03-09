@@ -88,13 +88,6 @@
 						"type": "text",
 						"sticky": true,
 						"disabled": true
-					},
-					{
-						"id": "HotelQ",
-						"label": "HotelQ",
-						"type": "text",
-						"sticky": true,
-						"disabled": true
 					}
 				]
 			}
