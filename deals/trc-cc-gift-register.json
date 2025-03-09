@@ -166,6 +166,7 @@
 						"type": "text",
 						"sticky": true,
 						"disabled": true
+						"hidden": true
 					}
 				]
 			}
