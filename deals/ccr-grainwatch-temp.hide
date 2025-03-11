@@ -1,0 +1,9 @@
+{
+	"biz_id": "colusacasino",
+	"auth_required": false,
+	
+	"MAIN": {
+#		"title": "",
+		"body_md": "Thank you for your interest in our Lotería event at Colusa Casino Resort! Unfortunately, we've reached capacity, and registration is now closed. \n\nFrom all of us at Colusa Casino Resort, we wish you a Happy New Year and hope to see you again soon!"
+	}
+}
