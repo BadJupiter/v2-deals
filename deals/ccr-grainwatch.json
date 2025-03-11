@@ -23,7 +23,7 @@
 			},
 			{
 				"type": "info",
-				"markdown": "## **Hotel Lounge at Colusa Casino Resport**"
+				"markdown": "## **Hotel Lounge at Colusa Casino Report**"
 			},
 			{
 				"type": "info",
@@ -47,7 +47,7 @@
 			},
 			{
 				"type": "fields_group",
-				"bgcolor": "#2E2A24",
+				"bgcolor": "#B0A89E",
 				"fields": [
 					{
 						"id": "z_FIRSTNAME",
@@ -75,7 +75,7 @@
 		],
 		"submit": {
 			"label": "Submit RSVP",
-			"color": "#20363d"
+			"color": "#A67C52"
 		}
 	},
 	"MAIN": {
