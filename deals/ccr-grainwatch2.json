@@ -1,0 +1,84 @@
+{
+	"biz_id": "colusacasino",
+	"check_in": true,
+	"auth_required": true,
+	"error_auth": {
+		"title": "Woops!",
+		"content": "Can't play if you ain't authenticated!"
+	},
+
+	"FORM": {
+		"fields": [
+			{
+				"type": "info",
+				"markdown": "# Original Grain Watch Giveaway"
+			},
+			{
+				"type": "info",
+				"markdown": "## **Sunday, April 13th**"
+			},
+			{
+				"type": "info",
+				"markdown": "## **10am - 4pm**"
+			},
+			{
+				"type": "info",
+				"markdown": "## **Hotel Lounge at Colusa Casino Resort**"
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "info",
+				"justify": "center",
+				"markdown": " \n\nYou are invited to our Original Grain Watch Giveaway!"
+			},
+						{
+				"id": "attend",
+				"label": "Are you able to attend?",
+				"type": "select",
+				"range": ["Yes","No"],
+				"required": true
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "fields_group",
+				"bgcolor": "#B0A89E",
+				"fields": [
+					{
+						"id": "z_FIRSTNAME",
+						"label": "First Name:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					},
+					{
+						"id": "z_LASTNAME",
+						"label": "Last Name:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					},
+					{
+						"id": "PlayerID",
+						"label": "Rewards #:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					}
+				]
+			}
+		],
+		"submit": {
+			"label": "Submit RSVP",
+			"color": "#8C857D"
+		}
+	},
+	"MAIN": {
+		"body_md": "# Thank you for your response! \n\nIf you have any questions or need to make changes to your RSVP, please don't hesitate to get in touch. We hope to see you soon at **Colusa Casino Resort**."
+	}
+}

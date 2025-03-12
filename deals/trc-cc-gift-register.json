@@ -85,10 +85,16 @@
 				"type": "select",
 				"range": ["Yes","No"],
 				"required": true,
-				"conditional": {
-					"field": "attend",
-					"value": "Yes"
-				}
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "HotelQ",
+						"value": "Y"
+					}
+				]
 			},
 			{
 				"id": "address",
@@ -165,7 +171,8 @@
 						"label": "HotelQ",
 						"type": "text",
 						"sticky": true,
-						"disabled": true
+						"disabled": true,
+						"hidden": true
 					}
 				]
 			}
