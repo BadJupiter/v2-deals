@@ -24,14 +24,9 @@
 			{
 				"type": "info",
 				"justify": "center",
-				"markdown": " \n\nAs a valued Three Rivers Casino Resort Guest, we're thrilled to offer you a beautiful, handcrafted leather gift from **Clayton & Crume**."
+				"markdown": " \n\nThe Easter Bunny is stopping by **Three Rivers Casino Resort** with a basket just for you. Respond below to reserve yours today!"
 			},
 			{
-				"type": "info",
-				"justify": "center",
-				"markdown": " \n\nPlease provide your preferences below--we’ll have it custom-made and waiting for you at the event. If you’re unable to attend, we’ll be happy to ship it to you."
-			},
-						{
 				"id": "attend",
 				"label": "Will you be attending the onsite event?",
 				"type": "select",
@@ -55,7 +50,7 @@
 			},
 			{
 				"type": "fields_group",
-				"bgcolor": "#f3e07f",
+				"bgcolor": "#ecc0c9",
 				"fields": [
 					{
 						"id": "z_FIRSTNAME",
