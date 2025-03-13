@@ -42,15 +42,13 @@
 				"id": "day",
 				"label": "I am confirming for:",
 				"type": "select",
-				"range": ["Friday, April 4th","Saturday, April 5th"],
+				"range": ["Friday, April 18th","Saturday, April 19th"],
 				"required": true,
 				"conditional": {
 					"field": "attend",
 					"value": "Yes"
 				}
 			},
-
-			
 			{
 				"type": "info",
 				"markdown": "---"
