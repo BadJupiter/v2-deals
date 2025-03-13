@@ -35,11 +35,26 @@
 				"justify": "center",
 				"markdown": " \n\nYou and a guest are invited to the VIP Loteria Event at Colusa Casino!"
 			},
+#			{
+#				"id": "attend",
+#				"label": "Are you able to attend?",
+#				"type": "select",
+#				"range": ["YES. I will be there","NO. Please keep me in mind for next time."],
+#				"required": true
+#			},
 			{
 				"id": "attend",
 				"label": "Are you able to attend?",
 				"type": "select",
-				"range": ["YES. I will be there","NO. Please keep me in mind for next time."],
+				"range": [
+					{
+						"value": "YES. I will be there",
+						"limit": 500
+					},
+					{
+						"value": "NO. Please keep me in mind for next time."
+					}
+				],
 				"required": true
 			},
 			{
