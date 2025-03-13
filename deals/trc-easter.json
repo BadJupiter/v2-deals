@@ -8,19 +8,14 @@
 	},
 
 	"FORM": {
-		"title": "Three Rivers Casino Resort",
 		"fields": [
 			{
 				"type": "info",
-				"markdown": "# Clayton & Crume Exclusive Event"
+				"markdown": "# April 18th & 19th"
 			},
 			{
 				"type": "info",
-				"markdown": "## **April 4th & 5th**"	
-			},
-			{
-				"type": "info",
-				"markdown": "## **Casino Event Center, Florence**"	
+				"markdown": "## **4pm - 8pm**"	
 			},
 			{
 				"type": "info",
