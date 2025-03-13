@@ -31,21 +31,7 @@
 				"justify": "center",
 				"markdown": " \n\nPlease provide your preferences below--we’ll have it custom-made and waiting for you at the event. If you’re unable to attend, we’ll be happy to ship it to you."
 			},
-			{
-				"id": "gift",
-				"label": "Which gift would you prefer?",
-				"type": "select",
-				"range": ["Daybook","Padfolio"],
-				"required": true
-			},
-			{
-			   "id": "initials",
-			   "type": "characters",
-			   "label": "Personalize your gift below by entering a monogram up to three letters",
-			   "count": 3,
-			   "required": true
-			},
-			{
+						{
 				"id": "attend",
 				"label": "Will you be attending the onsite event?",
 				"type": "select",
@@ -63,82 +49,15 @@
 					"value": "Yes"
 				}
 			},
-			{
-				"id": "time",
-				"label": "Save me a spot from:",
-				"type": "select",
-				"range": ["4:00pm - 5:00pm","5:00pm - 6:00pm","6:00pm - 7:00pm","7:00pm - 8:00pm"],
-				"required": true,
-				"conditional": {
-					"field": "attend",
-					"value": "Yes"
-				}
-			},
-			{
-				"id": "room",
-				"label": "Would you like to be contacted about a room reservation?",
-				"type": "select",
-				"range": ["Yes","No"],
-				"required": true,
-				"conditional": [
-					{
-						"field": "attend",
-						"value": "Yes"
-					},
-					{
-						"field": "HotelQ",
-						"value": "Y"
-					}
-				]
-			},
-			{
-				"id": "address",
-				"label": "Please enter your preferred shipping address:",
-				"type": "text",
-				"placeholder": "Street",
-				"required": true,
-				"conditional": {
-					"field": "attend",
-					"value": "No"
-				}
-			},
-						{
-				"id": "city",
-				"type": "text",
-				"placeholder": "City",
-				"required": true,
-				"conditional": {
-					"field": "attend",
-					"value": "No"
-				}
-			},
-						{
-				"id": "state",
-				"type": "text",
-				"placeholder": "State",
-				"required": true,
-				"conditional": {
-					"field": "attend",
-					"value": "No"
-				}
-			},
-						{
-				"id": "zip",
-				"type": "text",
-				"placeholder": "ZIP Code",
-				"required": true,
-				"conditional": {
-					"field": "attend",
-					"value": "No"
-				}
-			},
+
+			
 			{
 				"type": "info",
 				"markdown": "---"
 			},
 			{
 				"type": "fields_group",
-				"bgcolor": "#D2BDA8",
+				"bgcolor": "#954073",
 				"fields": [
 					{
 						"id": "z_FIRSTNAME",
@@ -160,14 +79,6 @@
 						"type": "text",
 						"sticky": true,
 						"disabled": true
-					},
-					{
-						"id": "HotelQ",
-						"label": "HotelQ",
-						"type": "text",
-						"sticky": true,
-						"disabled": true,
-						"hidden": true
 					}
 				]
 			}
