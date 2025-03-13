@@ -24,18 +24,18 @@
 			{
 				"type": "info",
 				"justify": "center",
-				"markdown": " \n\nThe Easter Bunny is stopping by **Three Rivers Casino Resort** with a basket just for you. Respond below to reserve yours today!"
+				"markdown": " \n\nThe Easter Bunny is stopping by **Three Rivers Casino Resort** with a basket of treats just for you. Respond below to reserve yours today!"
 			},
 			{
 				"id": "attend",
-				"label": "Will you be attending the onsite event?",
+				"label": "Would you like to reserve a basket?",
 				"type": "select",
 				"range": ["Yes","No"],
 				"required": true
 			},
 			{
 				"id": "day",
-				"label": "I am confirming for:",
+				"label": "I will pick it up on:",
 				"type": "select",
 				"range": ["Friday, April 18th","Saturday, April 19th"],
 				"required": true,
