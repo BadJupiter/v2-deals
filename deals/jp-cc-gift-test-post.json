@@ -44,12 +44,12 @@
 					{
 						"value": "Daybook",
 						"limit": 5,
-						"available": 5
+						"claimed": 5
 					},
 					{
 						"value": "Padfolio",
 						"limit": 3,
-						"available": 2
+						"claimed": 2
 					}
 				],
 				"required": true
@@ -87,23 +87,23 @@
 					{
 						"value": "4:00pm - 5:00pm",
 						"limit": 6,
-						"available": 4
+						"claimed": 4
 					},
 					{
 						"value": "5:00pm - 6:00pm (2 ppl)",
 						"count": 2,
 						"limit": 10,
-						"available": 6
+						"claimed": 6
 					},
 					{
 						"value": "6:00pm - 7:00pm",
 						"limit": 8,
-						"available": 8
+						"claimed": 8
 					},
 					{
 						"value": "7:00pm - 8:00pm",
 						"limit": 5,
-						"available": 2
+						"claimed": 2
 					}
 				],
 				"required": true,
