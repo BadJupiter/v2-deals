@@ -9,8 +9,11 @@
 
 	"FORM": {
 		
-		"title": "Three Rivers Casino Resort Easter Basket of Treats",
+		"title": "Easter Basket of Treats",
 		"fields": [
+			{
+				"type": "info",
+				"markdown": "# Three Rivers Casino Resort"
 			{
 				"type": "info",
 				"markdown": "# April 18th & 19th"
