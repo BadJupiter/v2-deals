@@ -1,5 +1,5 @@
 {
-	"biz_id": "threerivers",
+	"biz_id": "park107",
 	"check_in": true,
 	"auth_required": true,
 	"error_auth": {
@@ -34,102 +34,28 @@
 			{
 				"type": "info",
 				"justify": "center",
-				"markdown": " \n\nPlease provide your preferences below--we’ll have it custom-made and waiting for you at the event. If you’re unable to attend, we’ll be happy to ship it to you."
+				"markdown": " \n\nPlease Please let us know a little bit about what you're looking for in your next home."
 			},
 			{
-				"id": "gift",
-				"label": "Which gift would you prefer?",
+				"id": "size",
+				"label": "What size of place are you looking for?",
 				"type": "select",
-				"range": ["Daybook","Padfolio"],
+				"range": ["One Bedroom","Two Bedroom"],
 				"required": true
 			},
 			{
-			   "id": "initials",
-			   "type": "characters",
-			   "label": "Personalize your gift below by entering a monogram up to three letters",
-			   "count": 3,
-			   "required": true
+				"id": "amenities",
+				"label": "Which amenities are important to you?",
+				"type": "multi-select",
+				"range": ["Resort-style Pool","Spin Cycle & Yoga Studio","24-hour Fitness Facility","Dog Park","Poolside Chef's Kitchen & Grills"],
+				"required": false
 			},
 			{
-				"id": "attend",
-				"label": "Will you be attending the onsite event?",
+				"id": "timing",
+				"label": "When are you looking to move?",
 				"type": "select",
-				"range": ["Yes","No"],
+				"range": ["Right away","Next month or two","No specific date"],
 				"required": true
-			},
-			{
-				"id": "day",
-				"label": "I am confirming for:",
-				"type": "select",
-				"range": ["Friday, April 4th","Saturday, April 5th"],
-				"required": true,
-				"conditional": {
-					"field": "attend",
-					"value": "Yes"
-				}
-			},
-			{
-				"id": "time",
-				"label": "Save me a spot from:",
-				"type": "select",
-				"range": ["4:00pm - 5:00pm","5:00pm - 6:00pm","6:00pm - 7:00pm","7:00pm - 8:00pm"],
-				"required": true,
-				"conditional": {
-					"field": "attend",
-					"value": "Yes"
-				}
-			},
-			{
-				"id": "room",
-				"label": "Would you like to be contacted about a room reservation?",
-				"type": "select",
-				"range": ["Yes","No"],
-				"required": true,
-				"conditional": {
-					"field": "attend",
-					"value": "Yes"
-				}
-			},
-			{
-				"id": "address",
-				"label": "Please enter your preferred shipping address:",
-				"type": "text",
-				"placeholder": "Street",
-				"required": true,
-				"conditional": {
-					"field": "attend",
-					"value": "No"
-				}
-			},
-						{
-				"id": "city",
-				"type": "text",
-				"placeholder": "City",
-				"required": true,
-				"conditional": {
-					"field": "attend",
-					"value": "No"
-				}
-			},
-						{
-				"id": "state",
-				"type": "text",
-				"placeholder": "State",
-				"required": true,
-				"conditional": {
-					"field": "attend",
-					"value": "No"
-				}
-			},
-						{
-				"id": "zip",
-				"type": "text",
-				"placeholder": "ZIP Code",
-				"required": true,
-				"conditional": {
-					"field": "attend",
-					"value": "No"
-				}
 			},
 			{
 				"type": "info",
@@ -140,26 +66,19 @@
 				"bgcolor": "#D2BDA8",
 				"fields": [
 					{
-						"id": "z_FIRSTNAME",
-						"label": "First Name:",
+						"id": "name",
+						"label": "Name:",
 						"type": "text",
 						"sticky": true,
-						"disabled": true
+						"required": true
 					},
 					{
-						"id": "z_LASTNAME",
-						"label": "Last Name:",
-						"type": "text",
+						"id": "email",
+						"label": "Email:",
+						"type": "email",
 						"sticky": true,
-						"disabled": true
+						"required": false
 					},
-					{
-						"id": "PlayerID",
-						"label": "Club #:",
-						"type": "text",
-						"sticky": true,
-						"disabled": true
-					}
 				]
 			}
 		],
@@ -170,6 +89,6 @@
 		}
 	},
 	"MAIN": {
-		"body_md": "# We've received your request \n\nIf you need to make any changes to your RSVP just scan your invitation again. If you need any help please get in touch with your host. We hope to see you soon at **Three Rivers Casino Resort - Florence**."
+		"body_md": "# Gotta fix this."
 	}
 }
