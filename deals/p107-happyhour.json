@@ -78,7 +78,7 @@
 						"type": "email",
 						"sticky": true,
 						"required": false
-					},
+					}
 				]
 			}
 		],
