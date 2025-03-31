@@ -1,5 +1,5 @@
 {
-	"biz_id": "albertgs",
+	"biz_id": "jupiter",
 	"check_in": true,
 	"auth_required": true,
 	"error_auth": {
@@ -8,11 +8,11 @@
 	},
 	
 	"FORM": {
-		"title": "Albert G's - Tulsa Hills",
+		"title": "Welcome to the Abbey!",
 		"fields": [
 			{
 				"type": "info",
-				"markdown": "# **Thanks for coming in!**"
+				"markdown": "# **Your journey to barrel-aged sainthood begins...**"
 			},
 			{
 				"type": "info",
@@ -20,32 +20,33 @@
 			},
 			{
 				"id": "rating",
-				"label": "Please let us know how we did today",
+				"label": "Did your beer live up to the Prophecy?",
 				"type": "select",
-				"range": ["1. BBQ at it's Best!","2. Oh So Good","3. Middle o' the Rack","4. Off the Mark","5. Fire's Gone Out!"],
+				"range": ["Divine Pint","Nearing Nirvana","On the Righteous Path","Seeking Salvation","Needs Redemption"],
 				"required": true
 			},
 			{
 				"id": "comments",
-				"label": "Any feedback for us? We love hearing it!",
+				"label": "Send us a signal from the cloister:",
 				"type": "textarea",
 				"rows": 3,
+				"placeholder": "We love good news--and useful critique",
 				"required": false
 			}
 		],
 		"submit": {
-			"label": "Check me in!"
+			"label": "Log This Pilgrimage!"
 		}
 	},
 	
 	"MAIN": {
-		"title": "Welcome to Tulsa Hills!",
-		"body_md": "# Thank you!\n\nWelcome to our newest location! Be sure to **scan each visit** for credit toward tasty rewards at any of our locations. Visit us in [Midtown](https://albertgs.com/midtown/) and in the [Blue Dome](https://albertgs.com/downtown/) too!"
+		"title": "Welcome to Eerie Abbey!",
+		"body_md": "# Pilgrimage logged!\n\nBe sure to scan each visit to move closer to sainthood (and some righteous rewards)."
 	},
 	
 	"PUNCHCARDS": [
 		{
-			"template": "ag_loyalty.json"
+			"template": "ea_loyalty.json"
 		}
 	]
 }
