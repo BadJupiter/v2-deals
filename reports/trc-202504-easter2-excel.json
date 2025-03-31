@@ -1,6 +1,6 @@
 {
 	"biz_id": "threerivers",
-	"deal_tokens": [ "trc-cc-gift-register","trc-cc-gift-rsvp" ],
+	"deal_tokens": [ "trc-easter2" ],
 	"most_recent_only": true, # omit or set to false for all rows
 	"most_recent_key": "Player ID", # needs to be the column_name
 	
@@ -49,46 +49,6 @@
 		{
 			"column_name": "Day",
 			"attrib": "day"
-		},
-		{
-			"column_name": "Fri Time",
-			"attrib": "day1time"
-		},
-		{
-			"column_name": "Sat Time",
-			"attrib": "day2time"
-		},
-		{
-			"column_name": "Gift",
-			"attrib": "gift"
-		},
-		{
-			"column_name": "Initials",
-			"attrib": "initials"
-		},
-		{
-			"column_name": "Room",
-			"attrib": "room"
-		},
-		{
-			"column_name": "Address",
-			"attrib": "address"
-		},
-		{
-			"column_name": "City",
-			"attrib": "city"
-		},
-		{
-			"column_name": "State",
-			"attrib": "state"
-		},
-		{
-			"column_name": "Zip",
-			"attrib": "zip"
-		},
-		{
-			"column_name": "HotelQ",
-			"attrib": "HotelQ"
 		}
 	]
 }
