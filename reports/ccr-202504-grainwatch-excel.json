@@ -45,10 +45,6 @@
 		{
 			"column_name": "Attending",
 			"attrib": "attend"
-		},
-		{
-			"column_name": "Day",
-			"attrib": "day"
 		}
 	]
 }
