@@ -5,13 +5,13 @@
 #	"limit" is an optional section. currently only "day" type is supported.
 #	"message" will get displayed on limit error if present
 	
-	"limit": {
-		"type": "day",
-		"message": "You're all set for today! Make sure you check-in again next time you're in!"
-	},
+#	"limit": {
+#		"type": "day",
+#		"message": "You're all set for today! Make sure you check-in again next time you're in!"
+#	},
 	"punches": [
 		{
-			"message": "Cheers Yeastling, you've joined a devoted circle of the beer faithful! Scan the QR each time you visit, and we'll bless you with even holier, tastier rewawrds! Your first on is already on the way--check your texts!",
+			"message": "Cheers Yeastling, you've joined a devoted circle of the beer faithful! Scan the QR each time you visit, and we'll bless you with even holier, tastier rewards! Your first one is already on the way--check your texts!",
 			"reward": "ea_reward1.json"
 		},
 		{
