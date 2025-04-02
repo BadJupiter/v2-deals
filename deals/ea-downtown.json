@@ -46,7 +46,7 @@
 	
 	"PUNCHCARDS": [
 		{
-			"template": "ea_loyalty.json"
+			"template": "ag_loyalty.json"
 		}
 	]
 }
