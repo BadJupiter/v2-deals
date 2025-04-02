@@ -1,19 +1,19 @@
 {
 	"notify": {
-		"text": "From Eerie Abbey: Welcome Yeastling, so it’s time for something sweet! You’ve earned a free dessert. Be sure to scan the QR at your table during your next visit to check-in and enjoy your treat!"
+		"text": "From Eerie Abbey: You've unlocked two 4oz pours to explore new brews. Show this message in the taproom to redeem!"
 	},
 	"redeem_button": {
-		"text": "Free dessert!"
+		"text": "Two 4oz Pours!"
 	},
 	"redeem_confirm": {
 		"header": "Confirm",
-		"text": "Are you ready to redeem your Free Dessert reward?"
+		"text": "Are you ready to redeem your tasters?"
 	},
 	"reward": {
-		"header": "Free dessert!",
-		"text": "We appreciate you! Just show this to your server to redeem your Free Dessert!"
+		"header": "Two Free 4oz Pours!",
+		"text": "We appreciate you! Just show this to your server to redeem your pours!"
 	},
 	"valid": {
-		"start_offset": 1 # next day
+		"start_offset": 0 # next day
 	}
 }
