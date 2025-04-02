@@ -5,30 +5,21 @@
 #	"limit" is an optional section. currently only "day" type is supported.
 #	"message" will get displayed on limit error if present
 	
-#	"limit": {
-#		"type": "day",
-#		"message": "You're all set for today! Make sure you check-in again next time you're in!"
-#	},
+	"limit": {
+		"type": "day",
+		"message": "You're all set for today! Make sure you check-in again next time you're in!"
+	},
 	"punches": [
 		{
-			"message": "Thanks for coming in and welcome to Free G's Rewards! Just scan the QR each time you visit and we'll pile on with bigger, better and tastier rewards! Your first on is already on the way, check your texts!",
-			"reward": "ag_comeback.json"
+			"message": "Cheers Yeastling, you've joined a devoted circle of the beer faithful! Scan the QR each time you visit, and we'll bless you with even holier, tastier rewawrds! Your first on is already on the way--check your texts!",
+			"reward": "ea_reward1.json"
 		},
 		{
-			"message": "Smokin’! Two visits down and you’re heating up. Keep scanning each time you’re in, and we’ll cook up something special soon!"
+			"message": "That’s visit number two. Keep scanning each time you return—the Abbey rewards the faithful!"
 		},
 		{
-			"message": "You’re on a roll! Thanks for stopping by — just a couple more visits to earn a sweet reward."
-		},
-		{
-			"message": "Four visits and you’re practically family! One more check-in, and a free dessert is just around the corner."
-		},
-		{
-			"message": "Boom! That's five visits, so dessert is on us next time! Check your texts, and thanks for being a BBQ Lover!",
-			"reward": "ag_dessert.json"
-		},
-		{
-			"message": "You’re unstoppable – a true BBQ champion! Next time you scan, you’ll start a fresh rewards cy’s VIP - we’re excited to keep the great deals and even better BBQ coming your way!"
+			"message": "You’ve completed your fifth visit and earned a new favor from the Abbey—check your texts to claim it.",
+			"reward": "ea_reward2.json"
 		}
 	]
 }
