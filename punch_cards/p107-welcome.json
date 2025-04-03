@@ -1,5 +1,5 @@
 {
-	"id": "Abbey Loyalty",
+	"id": "p107_welcome",
 	"renews": true,
 	
 #	"limit" is an optional section. currently only "day" type is supported.
@@ -12,14 +12,7 @@
 	"punches": [
 		{
 			"message": "Cheers Yeastling, you've joined a devoted circle of the beer faithful! Scan the QR each time you visit, and we'll bless you with even holier, tastier rewards! Your first one is already on the way--check your texts!",
-			"reward": "ea_reward1.json"
-		},
-		{
-			"message": "That’s visit number two. Keep scanning each time you return—the Abbey rewards the faithful!"
-		},
-		{
-			"message": "You’ve completed your fifth visit and earned a new favor from the Abbey—check your texts to claim it.",
-			"reward": "ea_reward2.json"
+			"reward": "p107_welcome.json"
 		}
 	]
 }
