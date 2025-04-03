@@ -1,17 +1,17 @@
 {
 	"notify": {
-		"text": "From Eerie Abbey: You've unlocked two 4oz pours to explore new brews. Show this message in the taproom to redeem!"
+		"text": "From Park 107: It was great meeting you! If you have any questions or would like any more inforation, please don't hesiate to get in touch. "
 	},
 	"redeem_button": {
-		"text": "Two 4oz Pours!"
+		"text": "Park 107 Welcome Bonus!"
 	},
 	"redeem_confirm": {
 		"header": "Confirm",
-		"text": "Are you ready to redeem your tasters?"
+		"text": "Are you ready to start a lease?"
 	},
 	"reward": {
-		"header": "Two Free 4oz Pours!",
-		"text": "We appreciate you! Just show this to your server to redeem your pours!"
+		"header": "Park 107 Welcome Bonus!",
+		"text": "We appreciate you! Just show this to your rental agent to claim it!"
 	},
 	"valid": {
 		"start_offset": 0 # next day
