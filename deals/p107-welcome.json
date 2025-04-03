@@ -75,7 +75,15 @@
 		
 		}
 	},
+
 	"MAIN": {
-		"body_md": "# Thanks for your interest! \n\nWe hope you enjoyed touring the property, and seeing all we have to offer. If there's anything we can do, please don't hesitate to get in touch. "
-	}
+		"title": "Live. Shop. Dine. Play.",
+		"body_md": "# Thanks for your interest! \n\nWe hope you enjoyed touring the property, and seeing all we have to offer. If there's anything we can do, please don't hesitate to get in touch. \n\nVisit our [website](http://park107.com) for more information and to see our available floor plans."
+	},
+	
+	"PUNCHCARDS": [
+		{
+			"template": "p107_welcome.json"
+		}
+	]
 }
