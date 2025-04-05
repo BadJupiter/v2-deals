@@ -11,26 +11,28 @@
 		"fields": [
 			{
 				"type": "info",
-				"markdown": "# Party Rock Bingo RSVP"
+				"markdown": "# May Friday Night Dinners - RSVP"
 			},
-			{
-				"type": "info",
-				"markdown": "## **February 21, 2025**"
-			},
-			{
-				"type": "info",
-				"justify": "center",
-				"markdown": "ONSITE CHECK-IN BEGINS AT 6:00 PM"
-			},
-			{
+						{
 				"type": "info",
 				"markdown": "---"
 			},
 			{
 				"type": "info",
 				"justify": "center",
-				"markdown": " \n\nYou and a guest are invited to the Party Rock Bingo Event at Colusa Casino!"
+				"markdown": " \n\nYou and a guest are invited to our legendary Friday Night Dinners throughout the month of May at Colusa Casino Resort!"
 			},
+			{
+				"type": "info",
+				"justify": "center",
+				"markdown": " \n\nRespond for as few or as many as you like. And if you need to change your plans throughout the month, just scan in and update your preferences."
+			},
+			{
+				"type": "info",
+				"justify": "center",
+				"markdown": " \n\nThese dinners fill up quickly, so get your responses in early!"
+			},
+						
 			{
 				"id": "attend",
 				"label": "Are you able to attend?",
