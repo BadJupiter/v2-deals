@@ -36,6 +36,9 @@ Optionally there may be a corresponding image file with the same token identifie
 	"biz_id": "colusa",
 	"check_in": true,
 	"auth_required": true,
+
+	# this is a comment.. how does it render?
+
 	"FORM": {
 		"title": "Player Feedback"
 	},
