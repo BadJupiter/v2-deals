@@ -1,11 +1,28 @@
-# Deal Templates
+# Deal Templates (and others)
 
-This repo (root directlory here) contains all templates for Jupiter 2.0 deals, along with corresponding images.
-This page serves as a basic overview of how deals templates are structured for consumption by the 
+This repo (root directlory here) might be a little mis-named. 
+It contains all templates for Jupiter 2.0 *deals*, *rewards*, *punchcards*, and *reports* along with corresponding images and styling.
+This document provides a basic overview of how all these templates are structured for consumption by the 
 Jupiter mobile serverless HTML app at [https://badjupiter.cloud](https://badjupiter.cloud "Jupiter 2.0") 
 to create and manage interactions with users.
 
 ---
+
+## Deals
+
+A *deal* is an end-to-end interaction with a user. Deals are defined by up to 3 files:
+
+|File                |Description                                 |
+|--------------------|--------------------------------------------|
+|dealtoken.json      |template for the deal (required)            |
+|dealtoken.png       |hero image (other formats are supported)    |
+|dealtoken.css       |deal-specific styling                       |
+|dealtoken-temp.json |placeholder page (overrides deal)           |
+
+
+## Rewards
+## Punch Cards
+## Reports
 
 ## Deal Flows and Types
 
