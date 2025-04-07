@@ -12,7 +12,7 @@ to create and manage interactions with users.
 
 A **deal** is an end-to-end interaction with a user and is defined by up to 4 files:
 
-
+|----------------------|--------------------------------------------|
 |*dealtoken*.json      |template for the deal (required)            |
 |*dealtoken*.png       |hero image (other formats are supported)    |
 |*dealtoken*.css       |deal-specific styling                       |
