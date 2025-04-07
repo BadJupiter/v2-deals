@@ -1,0 +1,52 @@
+{
+	"biz_id": "jupiter",
+	"check_in": true,
+	"auth_required": true,
+	"error_auth": {
+		"title": "Woops!",
+		"content": "Cain't play if you ain't authenticated!"
+	},
+	
+	"FORM": {
+		"title": "Welcome to the Abbey!",
+		"fields": [
+			{
+				"type": "info",
+				"markdown": "# **Your journey to barrel-aged sainthood begins here...**"
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"id": "rating",
+				"label": "Did your beer live up to the Prophecy?",
+				"type": "select",
+				"range": ["Divine Pint","Nearing Nirvana","On the Righteous Path","Seeking Salvation","Needs Redemption"],
+				"required": true
+			},
+			{
+				"id": "comments",
+				"label": "Send us a signal from the cloister:",
+				"type": "textarea",
+				"rows": 3,
+				"placeholder": "We love good news--and useful critique",
+				"required": false
+			}
+		],
+		"submit": {
+			"label": "Log This Pilgrimage!"
+		}
+	},
+	
+	"MAIN": {
+		"title": "Welcome to Eerie Abbey!",
+		"body_md": "# Pilgrimage logged!\n\nBe sure to scan each visit to move closer to sainthood (and some righteous rewards)."
+	},
+	
+	"PUNCHCARDS": [
+		{
+			"template": "ea_loyalty.json"
+		}
+	]
+}

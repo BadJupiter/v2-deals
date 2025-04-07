@@ -1,0 +1,44 @@
+{
+	"id": "p107_welcome",
+	"renews": true,
+	
+#	"limit" is an optional section. currently only "day" type is supported.
+#	"message" will get displayed on limit error if present
+	
+#	"limit": {
+#		"type": "day",
+#		"message": "You're all set for today! Make sure you check-in again next time you're in!"
+#	},
+	"punches": [
+		{
+			"reward": "p107_welcome.json"
+		}
+	]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

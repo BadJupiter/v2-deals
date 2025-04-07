@@ -1,0 +1,19 @@
+{
+	"notify": {
+		"text": "From Park 107: It was great meeting you! We're excited to offer $500 off your first month's rent. Restrictions apply, see office for details. "
+	},
+	"redeem_button": {
+		"text": "Park 107 Welcome Bonus!"
+	},
+	"redeem_confirm": {
+		"header": "Confirm",
+		"text": "Are you ready to start a lease?"
+	},
+	"reward": {
+		"header": "Park 107 Welcome Bonus!",
+		"text": "We appreciate you! Just show this to your rental agent to claim it!"
+	},
+	"valid": {
+		"start_offset": 0 # next day
+	}
+}

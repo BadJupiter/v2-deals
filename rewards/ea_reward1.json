@@ -1,0 +1,19 @@
+{
+	"notify": {
+		"text": "From Eerie Abbey: You've unlocked two 4oz pours to explore new brews. Show this message in the taproom to redeem!"
+	},
+	"redeem_button": {
+		"text": "Two 4oz Pours!"
+	},
+	"redeem_confirm": {
+		"header": "Confirm",
+		"text": "Are you ready to redeem your tasters?"
+	},
+	"reward": {
+		"header": "Two Free 4oz Pours!",
+		"text": "We appreciate you! Just show this to your server to redeem your pours!"
+	},
+	"valid": {
+		"start_offset": 0 # next day
+	}
+}

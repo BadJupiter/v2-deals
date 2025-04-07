@@ -69,14 +69,25 @@
 				}
 			},
 			{
-				"id": "time",
+				"id": "day1time",
+				"label": "Save me a spot from:",
+				"type": "select",
+				"range": ["5:00pm - 6:00pm","6:00pm - 7:00pm","7:00pm - 8:00pm"],
+				"required": true,
+				"conditional": {
+					"field": "day",
+					"value": "Friday, April 4th"
+				}
+			},
+			{
+				"id": "day2time",
 				"label": "Save me a spot from:",
 				"type": "select",
 				"range": ["4:00pm - 5:00pm","5:00pm - 6:00pm","6:00pm - 7:00pm","7:00pm - 8:00pm"],
 				"required": true,
 				"conditional": {
-					"field": "attend",
-					"value": "Yes"
+					"field": "day",
+					"value": "Saturday, April 5th"
 				}
 			},
 			{

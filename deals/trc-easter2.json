@@ -20,6 +20,10 @@
 			},
 			{
 				"type": "info",
+				"markdown": "## **4pm - 8pm**"	
+			},
+			{
+				"type": "info",
 				"markdown": "---"
 			},
 			{
@@ -39,17 +43,6 @@
 				"label": "I will pick it up on:",
 				"type": "select",
 				"range": ["Friday, April 18th","Saturday, April 19th"],
-				
-				"range": [
-					{
-						"value": "Friday, April 18th",
-						"limit": 200
-					},
-					{
-						"value": "Saturday, April 19th",
-						"limit": 200
-					}
-				],				
 				"required": true,
 				"conditional": {
 					"field": "attend",

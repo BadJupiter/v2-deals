@@ -1,5 +1,5 @@
 {
-	"biz_id": "threerivers",
+	"biz_id": "colusacasino",
 	"check_in": true,
 	"auth_required": true,
 	"error_auth": {
@@ -8,48 +8,43 @@
 	},
 
 	"FORM": {
-		"title": "Easter Basket of Treats",
 		"fields": [
 			{
 				"type": "info",
-				"markdown": "# Three Rivers Casino Resort"
+				"markdown": "# May Friday Night Dinners - RSVP"
 			},
-			{
-				"type": "info",
-				"markdown": "## **April 18th & 19th**"
-			},
-			{
+						{
 				"type": "info",
 				"markdown": "---"
 			},
 			{
 				"type": "info",
 				"justify": "center",
-				"markdown": " \n\nThe Easter Bunny is stopping by **Three Rivers Casino Resort** with treats for our most valued guests. Respond below to reserve yours today!"
+				"markdown": " \n\nYou and a guest are invited to our legendary Friday Night Dinners throughout the month of May at Colusa Casino Resort!"
 			},
 			{
+				"type": "info",
+				"justify": "center",
+				"markdown": " \n\nRespond for as few or as many as you like. And if you need to change your plans throughout the month, just scan in and update your preferences."
+			},
+			{
+				"type": "info",
+				"justify": "center",
+				"markdown": " \n\nThese dinners fill up quickly, so get your responses in early!"
+			},
+						
+			{
 				"id": "attend",
-				"label": "Would you like to reserve a basket?",
+				"label": "Are you able to attend?",
 				"type": "select",
 				"range": ["Yes","No"],
 				"required": true
 			},
 			{
-				"id": "day",
-				"label": "I will pick it up on:",
+				"id": "guests",
+				"label": "I am confirming for:",
 				"type": "select",
-				"range": ["Friday, April 18th","Saturday, April 19th"],
-				
-				"range": [
-					{
-						"value": "Friday, April 18th",
-						"limit": 200
-					},
-					{
-						"value": "Saturday, April 19th",
-						"limit": 200
-					}
-				],				
+				"range": ["Myself","Me and a guest"],
 				"required": true,
 				"conditional": {
 					"field": "attend",
@@ -62,7 +57,7 @@
 			},
 			{
 				"type": "fields_group",
-				"bgcolor": "#f1d1d8",
+				"bgcolor": "#c8f0fc",
 				"fields": [
 					{
 						"id": "z_FIRSTNAME",
@@ -80,7 +75,7 @@
 					},
 					{
 						"id": "PlayerID",
-						"label": "Club #:",
+						"label": "Rewards #:",
 						"type": "text",
 						"sticky": true,
 						"disabled": true
@@ -90,11 +85,11 @@
 		],
 		"submit": {
 			"label": "Submit RSVP",
-			"color": "#db8799"
+			"color": "#20363d"
 		
 		}
 	},
 	"MAIN": {
-		"body_md": "# We've received your request \n\nIf you need to make any changes to your RSVP just scan your invitation again. If you need any help please get in touch with your host. We hope to see you soon at **Three Rivers Casino Resort - Florence**."
+		"body_md": "# Thank you for your response! \n\nIf you have any questions or need to make changes to your RSVP, please don't hesitate to get in touch. We hope to see you soon at **Colusa Casino Resort**."
 	}
 }

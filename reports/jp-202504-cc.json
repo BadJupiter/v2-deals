@@ -1,7 +1,7 @@
 {
 	"biz_id": "threerivers",
-	"deal_tokens": [ "trc-cc-gift-register","trc-cc-gift-rsvp" ],
-	"most_recent_only": true, # omit or set to false for all rows
+	"deal_tokens": [ "jp-cc-gift-register","jp-cc-gift-rsvp" ],
+	"most_recent_only": false, # omit or set to false for all rows
 	"most_recent_key": "Player ID", # needs to be the column_name
 	
 	"as_xlsx": false, # omit or set to false for default (CSV)

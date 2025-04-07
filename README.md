@@ -36,8 +36,18 @@ Optionally there may be a corresponding image file with the same token identifie
 	"biz_id": "colusa",
 	"check_in": true,
 	"auth_required": true,
+	"error_auth": {
+		"title": "Woops!",
+		"content": "Can't play if you ain't authenticated!"
+	},
 	"FORM": {
-		"title": "Player Feedback"
+		"title": "Player Feedback",
+		"fields": [ ... ],	
+		"limits": { ... },	# OPTIONAL limits criteria
+		"submit": { 		# OPTIONAL submit button
+			"label": "Submit Feedback",
+			"color": "#20363d"
+		}
 	},
 	"MAIN": {
 		"title": "Thanks for playing!",
@@ -45,8 +55,61 @@ Optionally there may be a corresponding image file with the same token identifie
 	}
 }
 ```
+## Sticky Fields
+## Context Data
+## Conditional Fields
+## Capacity Limits
+
+Optionally, fields which ask for a quantity (e.g. RSVP with or without a guest) can specify a limit.
+This is done inline when the field is declared, like below. If a selected option counts for more than one,
+then a count can be specified also.
+
+```json
+{
+	"id": "gift",
+	"label": "Which gift would you prefer?",
+	"type": "select",
+	"range": [
+		{
+			"value": "Daybook",
+			"limit": 100
+		},
+		{
+			"value": "Padfolio (set of 2)",
+			"count": 2,
+			"limit": 100
+		}
+	],
+	"required": true,
+}
+```
+
+If a FORM contains any field with limits specified, the form is pre-processed and updated with current counts for those fields
+so that the rendering engine can determine which options might still be available. (The template file itself is not modified; 
+this is an internal processing step.) By default, counts are based on ALL grabs of the deal, even if multiple grabs for a single
+user-mobile. In some cases, like RSVPs, that needs to be overridden in an optional limits section following fields:
+
+```json
+"limits": {
+	"most_recent_only": true,
+	"most_recent_key": "PlayerID"
+}
+```
 
 ## Supported FORM field types
+
+### info
+
+This is an information-only field that can contain markdown for the purposes of rendering headers and formatting text.
+***info*** fields do not require an *id* parameter.
+
+```json
+{
+	"type": "info",
+	"justify": "center",	# OPTIONAL
+	"markdown": "\n\nAs a valued customer, we are *thrilled* to offer you this deal."
+}
+```
 
 |Field Type        |Description                                         |
 |------------------|----------------------------------------------------|

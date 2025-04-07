@@ -1,0 +1,19 @@
+{
+	"notify": {
+		"text": "From Eerie Abbey: Your five visits have not gone unnoticed. We'd like to buy you a pint next time you're in. Check your texts to claim it!"
+	},
+	"redeem_button": {
+		"text": "Free Pint!"
+	},
+	"redeem_confirm": {
+		"header": "Confirm",
+		"text": "Are you ready to redeem your Free Pint?"
+	},
+	"reward": {
+		"header": "Free Pint!",
+		"text": "We appreciate you! Just show this in the taproom to claim it!"
+	},
+	"valid": {
+		"start_offset": 0 # next day
+	}
+}
