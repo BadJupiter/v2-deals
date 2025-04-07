@@ -1,35 +1,44 @@
-# Deal Templates
+# Deal Templates (and others)
 
-This repo (root directlory here) contains all templates for Jupiter 2.0 deals, along with corresponding images.
-This page serves as a basic overview of how deals templates are structured for consumption by the 
+This repo (root directlory here) might be a little mis-named. 
+It contains all templates for Jupiter 2.0 **deals**, **rewards**, **punchcards**, and **reports** along with corresponding images and styling.
+This document provides a basic overview of how all these templates are structured for consumption by the 
 Jupiter mobile serverless HTML app at [https://badjupiter.cloud](https://badjupiter.cloud "Jupiter 2.0") 
 to create and manage interactions with users.
 
 ---
 
-## Deal Flows and Types
+## Deals
 
-For our purposes every **Deal** follows the same simple flow: 
+A **deal** is an end-to-end interaction with a *user*. Each **deal** is identified by a unique token and is defined by up to 4 files, below.
+A **deal** is access by a URL structured like **badjupiter.cloud?*dealtoken*** (possibly followed by optional params).
 
-1. a QR scan a link kicks it off
-2. (optionally) it collects some info with a form
-3. if the user is not known, it authenticates him
-4. it shows a main deal page, the deal is "grabbed"
+|File                  |Description                                 |
+|----------------------|--------------------------------------------|
+|*dealtoken*.json      |template for the deal (required)            |
+|*dealtoken*.png       |hero image (other formats are supported)    |
+|*dealtoken*.css       |deal-specific styling                       |
+|*dealtoken*-temp.json |placeholder page (overrides deal)           |
 
-Any complications around grabbing a deal: punch card handling, reward notifications via SMS, etc. are handled
-by the server at grab time. 
+### Flow(s)
 
-There is a special kind of deal, a **check-in deal** which closes the loop for previously-grabbed deals 
-that require in-person redemption. At grab time, a check-in deal will present the user with a list of deals
-available for redemption in the form of buttons he can select to redeem. The flow for this continues from above:
+For our purposes every **deal** follows the same simple flow: 
 
-5. the main deal page shows a button for each deal that can be redeemed
-6. when a button is clicked, a modal confirmation "receipt" is shown and the corresponding deal is done
+1. A QR scan (ot other link) kicks it off;
+2. (optionally) it collects some info with a form;
+3. if the user is not known and auth is required, it authenticates him;
+4. it shows a main "confirm" page and the "grab" is complete.
 
-##  Deal Templates and Structure
+By default, a **deal** presents the *user* with either an info page or a form; the *user* may opt to "grab" the deal if he's interested.
 
-Each deal template is a JSON text document with a name corresponding to a unique deal token. 
-Optionally there may be a corresponding image file with the same token identifier.
+### Check-In
+
+A *check-in* is a special kind of **deal** automatically grabs without any user confirmation. Typical use-case is an  
+in-person QR scan at a business where a followup confirm would be an unnecessary step. 
+
+###  Deal Template Structure
+
+Each **deal** template is a JSON text document with a name corresponding to a unique **deal** *token*. 
 
 ```json
 {
@@ -55,7 +64,53 @@ Optionally there may be a corresponding image file with the same token identifie
 	}
 }
 ```
-## Sticky Fields
+
+|Attribute     |Description                                                         |
+|--------------|--------------------------------------------------------------------|
+|biz_id        |Business - must exist in graph                                      |
+|check_in      |if present and *true* grab flow kicks off immediately               |
+|auth_required |if present and *true* user will be authenticated prior to grab      |
+|error_auth    |if present and *auth_required*, overrides defaults for error dialog |
+|FORM          |if present defines user interactions prior to grab                  |
+|MAIN          |defined the main confirmation page                                  |
+
+### FORM Fields
+
+The following types of fields are supported in **deal** templates:
+
+|Field Type        |Description                                         |
+|------------------|----------------------------------------------------|
+|*info*            |special non-input "field" that can contain markdown |
+|*email*           |text field accepting only valid-formatted email     |
+|*text*            |simple text field                                   |
+|*textarea*        |bigger text field, can specify number of lines      |
+|*select*          |pick one from several options                       |
+|*checkbox*        |check it or don't                                   |
+
+The following attributes are supported, and some are required, based on field type:
+
+|Attribute  |Required |Field                                             |Description         |
+|-----------|---------|--------------------------------------------------|--------------------|
+|type       |YES      |ALL                                               |                    |
+|id         |YES      |*email*, *text*, *textarea*, *select*, *checkbox* |unique identifier   |
+|label      |NO       |*email*, *text*, *textarea*, *select*, *checkbox* |displayed           |
+|disabled   |NO       |*email*, *text*, *textarea*, *select*, *checkbox* |view-only           |
+|sticky     |NO       |*email*, *text*, *textarea*, *select*, *checkbox* |persists / defaults |
+
+**NOTE:** Sticky fields attach to a Business-level user context and as a result are available across **deals**
+for a Business. So if one **deal* asks for *email* and makes it sticky, all other **deals** from that Business
+with sticky *email* fields will pick up (and possibly modify) the value.
+
+```json
+{
+	"id": "PlayerID",
+	"label": "Rewards #:",
+	"type": "text",
+	"sticky": true,		# (otherwise just omit)
+	"disabled": true
+}
+```
+
 ## Context Data
 ## Conditional Fields
 ## Capacity Limits
@@ -111,14 +166,27 @@ This is an information-only field that can contain markdown for the purposes of 
 }
 ```
 
-|Field Type        |Description                                         |
-|------------------|----------------------------------------------------|
-|info              |special non-input "field" that can contain markdown |
-|email             |text field accepting only valid-formatted email     |
-|text              |simple text field                                   |
-|textarea          |bigger text field, can specify number of lines      |
-|select            |pick one from several options                       |
-|checkbox          |check it or don't                                   |
+
+### Rewards
+
+At grab time, a **deal** confirm will present the user with a list of any **rewards**
+available for redemption in the form of buttons he can click to redeem. The flow for this continues from the
+flow outlined above:
+
+5. The "confirm" page shows a button for each **reward** that can be redeemed;
+6. when a button is clicked, a modal confirmation "receipt" is shown and the corresponding **reward** is done.
+
+
+
+
+
+## Punch Cards
+## Reports
+
+
+
+
+
 
 
 ## EXAMPLE: Colusa Casino Player Feedback
