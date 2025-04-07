@@ -1,0 +1,203 @@
+{
+	"biz_id": "jupiter",	# Jupiter 2 test
+	"check_in": true,
+	"auth_required": true,
+	"error_auth": {
+		"title": "Woops!",
+		"content": "Can't play if you ain't authenticated!"
+	},
+
+	"FORM": {
+		"title": "Jupiter 2 Test Deal",
+		"fields": [
+			{
+				"type": "info",
+				"markdown": "# Hey this is just a test"
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"id": "gift",
+				"label": "Which gift would you prefer?",
+				"type": "select",
+				"range": [
+					{
+						"value": "Daybook",
+						"limit": 5
+					},
+					{
+						"value": "Padfolio (set of 2)",
+						"count": 2,
+						"limit": 5
+					}
+				],
+				"required": true
+			},
+			{
+			   "id": "initials",
+			   "type": "characters",
+			   "label": "Personalize your gift below by entering a monogram up to three letters",
+			   "count": 3,
+			   "required": true
+			},
+			{
+				"id": "attend",
+				"label": "Will you be attending the onsite event?",
+				"type": "select",
+				"range": ["Yes","No"],
+				"required": true
+			},
+			{
+				"id": "day",
+				"label": "I am confirming for:",
+				"type": "select",
+				"range": ["Friday, April 4th","Saturday, April 5th"],
+				"required": true,
+				"conditional": {
+					"field": "attend",
+					"value": "Yes"
+				}
+			},
+			{
+				"id": "time",
+				"label": "Save me a spot from:",
+				"type": "select",
+				"range": [
+					{
+						"value": "4:00pm - 5:00pm",
+						"limit": 6
+					},
+					{
+						"value": "5:00pm - 6:00pm (2 ppl)",
+						"count": 2,
+						"limit": 10
+					},
+					{
+						"value": "6:00pm - 7:00pm",
+						"limit": 8
+					},
+					{
+						"value": "7:00pm - 8:00pm",
+						"limit": 5
+					}
+				],
+				"required": true,
+				"conditional": {
+					"field": "attend",
+					"value": "Yes"
+				}
+			},
+			{
+				"id": "room",
+				"label": "Would you like to be contacted about a room reservation?",
+				"type": "select",
+				"range": ["Yes","No"],
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "HotelQ",
+						"value": "Y"
+					}
+				]
+			},
+			{
+				"id": "address",
+				"label": "Please enter your preferred shipping address:",
+				"type": "text",
+				"placeholder": "Street",
+				"required": true,
+				"conditional": {
+					"field": "attend",
+					"value": "No"
+				}
+			},
+						{
+				"id": "city",
+				"type": "text",
+				"placeholder": "City",
+				"required": true,
+				"conditional": {
+					"field": "attend",
+					"value": "No"
+				}
+			},
+						{
+				"id": "state",
+				"type": "text",
+				"placeholder": "State",
+				"required": true,
+				"conditional": {
+					"field": "attend",
+					"value": "No"
+				}
+			},
+						{
+				"id": "zip",
+				"type": "text",
+				"placeholder": "ZIP Code",
+				"required": true,
+				"conditional": {
+					"field": "attend",
+					"value": "No"
+				}
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "fields_group",
+				"bgcolor": "#D2BDA8",
+				"fields": [
+					{
+						"id": "z_FIRSTNAME",
+						"label": "First Name:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					},
+					{
+						"id": "z_LASTNAME",
+						"label": "Last Name:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					},
+					{
+						"id": "PlayerID",
+						"label": "Club #:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					},
+					{
+						"id": "HotelQ",
+						"label": "HotelQ",
+						"type": "text",
+						"sticky": true,
+						"disabled": true,
+						"hidden": true
+					}
+				]
+			}
+		],
+		"limits": {
+			"most_recent_only": true,
+			"most_recent_key": "PlayerID"
+		},
+		"submit": {
+			"label": "Submit RSVP",
+			"color": "#20363d"
+		
+		}
+	},
+	"MAIN": {
+		"body_md": "# We've received your request \n\nIf you need to make any changes to your RSVP just scan your invitation again. If you need any help please get in touch with your host. We hope to see you soon at **Three Rivers Casino Resort - Florence**."
+	}
+}
