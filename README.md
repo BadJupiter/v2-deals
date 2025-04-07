@@ -19,26 +19,28 @@ A **deal** is an end-to-end interaction with a user and is defined by up to 4 fi
 |*dealtoken*.css       |deal-specific styling                       |
 |*dealtoken*-temp.json |placeholder page (overrides deal)           |
 
-### Deal flows
+### Deal Flows
 
 For our purposes every **deal** follows the same simple flow: 
 
-1. a QR scan a link kicks it off
-2. (optionally) it collects some info with a form
-3. if the user is not known, it authenticates him
-4. it shows a main deal page, the deal is "grabbed"
+1. A QR scan (ot other link) kicks it off;
+2. (optionally) it collects some info with a form;
+3. if the user is not known and auth is required, it authenticates him;
+4. it shows a main "confirm" page and the "grab" is complete.
 
 Any complications around grabbing a **deal**: **punchcard** handling, **reward** notifications via SMS, etc. are handled
 by the server at grab time. 
 
+### Check-In
+
 There is a special kind of **deal**, a *check-in* which closes the loop for previously-grabbed deals 
-that require in-person redemption. At grab time, a *check-in* **deal** will present the user with a list of **rewards**
-available for redemption in the form of buttons he can select to redeem. The flow for this continues from above:
+that require in-person redemption. At grab time, a *check-in* **deal** will present the user with a list of any **rewards**
+available for redemption in the form of buttons he can click to redeem. The flow for this continues from above:
 
-5. the main **deal** page shows a button for each **reward** that can be redeemed
-6. when a button is clicked, a modal confirmation "receipt" is shown and the corresponding **reward** is done
+5. the "confirm" page shows a button for each **reward** that can be redeemed;
+6. when a button is clicked, a modal confirmation "receipt" is shown and the corresponding **reward** is done.
 
-###  Deal Templates and Structure
+###  Deal Template Structure
 
 Each **deal** template is a JSON text document with a name corresponding to a unique **deal** *token*. 
 
@@ -66,7 +68,34 @@ Each **deal** template is a JSON text document with a name corresponding to a un
 	}
 }
 ```
-## Sticky Fields
+
+|Attribute     |Description                                                         |
+|--------------|--------------------------------------------------------------------|
+|biz_id        |Business - must exist in graph                                      |
+|check_in      |if present and *true* grab flow kicks off immediately               |
+|auth_required |if present and *true* user will be authenticated prior to grab      |
+|error_auth    |if present and *auth_required*, overrides defaults for error dialog |
+|FORM          |if present defines user interactions prior to grab                  |
+|MAIN          |defined the main confirmation page                                  |
+
+### FORM Fields
+
+#### Sticky-ness
+
+If a field is defined as *sticky* then its value is persisted and will default for the user the next time
+he visits the **deal**. Sticky fields attached to a Business-specific user context, so they can be included 
+across **deals**.
+
+```json
+{
+	"id": "PlayerID",
+	"label": "Rewards #:",
+	"type": "text",
+	"sticky": true,		# (otherwise just omit)
+	"disabled": true
+}
+```
+
 ## Context Data
 ## Conditional Fields
 ## Capacity Limits
