@@ -36,15 +36,18 @@ Optionally there may be a corresponding image file with the same token identifie
 	"biz_id": "colusa",
 	"check_in": true,
 	"auth_required": true,
-
-	# this is a comment.. how does it render?
-
-	"FORM": {
-		"title": "Player Feedback"
+	"error_auth": {
+		"title": "Woops!",
+		"content": "Can't play if you ain't authenticated!"
 	},
-	"limits": {
-		"most_recent_only": true,
-		"most_recent_key": "PlayerID"
+	"FORM": {
+		"title": "Player Feedback",
+		"fields": [ ... ],	
+		"limits": { ... },	# OPTIONAL limits criteria
+		"submit": { 		# OPTIONAL submit button
+			"label": "Submit Feedback",
+			"color": "#20363d"
+		}
 	},
 	"MAIN": {
 		"title": "Thanks for playing!",
