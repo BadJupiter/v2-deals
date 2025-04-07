@@ -98,6 +98,19 @@ user-mobile. In some cases, like RSVPs, that needs to be overridden in an option
 
 ## Supported FORM field types
 
+### info
+
+This is an information-only field that can contain markdown for the purposes of rendering headers and formatting text.
+***info*** fields do not require an *id* parameter.
+
+```json
+{
+	"type": "info",
+	"justify": "center",	# OPTIONAL
+	"markdown": "\n\nAs a valued customer, we are *thrilled* to offer you this deal."
+}
+```
+
 |Field Type        |Description                                         |
 |------------------|----------------------------------------------------|
 |info              |special non-input "field" that can contain markdown |
