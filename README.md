@@ -78,6 +78,18 @@ then a count can be specified also.
 }
 ```
 
+If a FORM contains any field with limits specified, the form is pre-processed and updated with current counts for those fields
+so that the rendering engine can determine which options might still be available. (The template file itself is not modified; 
+this is an internal processing step.) By default, counts are based on ALL grabs of the deal, even if multiple grabs for a single
+user-mobile. In some cases, like RSVPs, that needs to be overridden in an optional limits section following fields:
+
+```json
+"limits": {
+	"most_recent_only": true,
+	"most_recent_key": "PlayerID"
+}
+```
+
 ## Supported FORM field types
 
 |Field Type        |Description                                         |
