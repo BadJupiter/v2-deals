@@ -39,10 +39,42 @@ Optionally there may be a corresponding image file with the same token identifie
 	"FORM": {
 		"title": "Player Feedback"
 	},
+	"limits": {
+		"most_recent_only": true,
+		"most_recent_key": "PlayerID"
+	},
 	"MAIN": {
 		"title": "Thanks for playing!",
 		"body_md": "See you next time..."
 	}
+}
+```
+## Sticky Fields
+## Context Data
+## Conditional Fields
+## Capacity Limits
+
+Optionally, fields which ask for a quantity (e.g. RSVP with or without a guest) can specify a limit.
+This is done inline when the field is declared, like below. If a selected option counts for more than one,
+then a count can be specified also.
+
+```json
+{
+	"id": "gift",
+	"label": "Which gift would you prefer?",
+	"type": "select",
+	"range": [
+		{
+			"value": "Daybook",
+			"limit": 100
+		},
+		{
+			"value": "Padfolio (set of 2)",
+			"count": 2,
+			"limit": 100
+		}
+	],
+	"required": true,
 }
 ```
 
