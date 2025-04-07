@@ -80,28 +80,26 @@ The following types of fields are supported in **deal** templates:
 
 |Field Type        |Description                                         |
 |------------------|----------------------------------------------------|
-|info              |special non-input "field" that can contain markdown |
-|email             |text field accepting only valid-formatted email     |
-|text              |simple text field                                   |
-|textarea          |bigger text field, can specify number of lines      |
-|select            |pick one from several options                       |
-|checkbox          |check it or don't                                   |
+|*info*            |special non-input "field" that can contain markdown |
+|*email*           |text field accepting only valid-formatted email     |
+|*text*            |simple text field                                   |
+|*textarea*        |bigger text field, can specify number of lines      |
+|*select*          |pick one from several options                       |
+|*checkbox*        |check it or don't                                   |
 
 The following attributes are supported, and some are required, based on field type:
 
-|Attribute  |Field     |Decription                                                  |
-|-----------|----------|------------------------------------------------------------|
-|type       |ALL       |                                                            |
-|id         |*email*, *text*, *textarea*, *select*, *checkbox* |unique identifier   |
-|label      |*email*, *text*, *textarea*, *select*, *checkbox* |displayed           |
-|disabled   |*email*, *text*, *textarea*, *select*, *checkbox* |view-only           |
-|sticky     |*email*, *text*, *textarea*, *select*, *checkbox* |persists / defaults |
+|Attribute  |Required |Field                                             |Description         |
+|-----------|---------|--------------------------------------------------|--------------------|
+|type       |YES      |ALL                                               |                    |
+|id         |YES      |*email*, *text*, *textarea*, *select*, *checkbox* |unique identifier   |
+|label      |NO       |*email*, *text*, *textarea*, *select*, *checkbox* |displayed           |
+|disabled   |NO       |*email*, *text*, *textarea*, *select*, *checkbox* |view-only           |
+|sticky     |NO       |*email*, *text*, *textarea*, *select*, *checkbox* |persists / defaults |
 
-#### Sticky Fields
-
-If a field is defined as *sticky* then its value is persisted and will default for the user the next time
-he visits the **deal**. Sticky fields attached to a Business-specific user context, so they can be included 
-across **deals**.
+**NOTE:** Sticky fields attach to a Business-level user context and as a result are available across **deals**
+for a Business. So if one **deal* asks for *email* and makes it sticky, all other **deals** from that Business
+with sticky *email* fields will pick up (and possibly modify) the value.
 
 ```json
 {
