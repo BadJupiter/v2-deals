@@ -26,7 +26,7 @@
 				"type": "info",
 				"justify": "center",
 				"markdown": "=== FRIDAY, May 9 ==="
-			
+			},			
 			{
 				"id": "attendday1",
 				"label": "Friday, May 9",
@@ -157,7 +157,11 @@
 				]				
 			},
 		
-			
+			{
+				"type": "info",
+				"justify": "center",
+				"markdown": "=== FRIDAY, May 16 ==="
+			},					
 			{
 				"type": "info",
 				"markdown": "---"
