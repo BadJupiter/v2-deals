@@ -78,14 +78,17 @@ Each **deal** template is a JSON text document with a name corresponding to a un
 
 The following types of fields are supported in **deal** templates:
 
-|Field Type        |Description                                         |
-|------------------|----------------------------------------------------|
-|*info*            |special non-input "field" that can contain markdown |
-|*email*           |text field accepting only valid-formatted email     |
-|*text*            |simple text field                                   |
-|*textarea*        |bigger text field, can specify number of lines      |
-|*select*          |pick one from several options                       |
-|*checkbox*        |check it or don't                                   |
+|Field Type        |Description                                                           |
+|------------------|----------------------------------------------------------------------|
+|*info*            |special non-input "field" for descriptive text - can contain markdown |
+|*email*           |text field accepting only valid-formatted email                       |
+|*text*            |simple text field                                                     |
+|*textarea*        |bigger text field, can specify number of lines                        |
+|*checkbox*        |check it or don't                                                     |
+|*select*          |pick one from several options                                         |
+|*multi-select*    |pick one or more from several options                                 |
+|*characters*      |individual character inputs with back-forth nav                       |
+|*image*           |take a photo or upload an image                                       |
 
 The following attributes are supported, and some are required, based on field type:
 
