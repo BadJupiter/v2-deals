@@ -85,8 +85,8 @@
 						"values": ["Yes - solo","Yes - plus one"]	# match one of
 					},
 					{
-						"field": "PlayerID",
-						"value": "JUPITER"
+						"field": "gift",
+						"value": "neither thanks"
 					}
 				]
 			},
