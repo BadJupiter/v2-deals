@@ -13,7 +13,7 @@
 				"type": "info",
 				"markdown": "# May Friday Night Dinners - RSVP"
 			},
-						{
+			{
 				"type": "info",
 				"markdown": "---"
 			},
@@ -24,12 +24,16 @@
 			},
 			{
 				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "info",
 				"justify": "center",
-				"markdown": "=== FRIDAY, May 9 ==="
+				"markdown": "**=== FRIDAY, May 9 ===**"
 			},			
 			{
 				"id": "attendday1",
-				"label": "Friday, May 9",
+				"label": "Attending Friday, May 9?",
 				"type": "select",
 				"range": ["Yes","No"],
 				"required": false
@@ -156,11 +160,14 @@
 					}
 				]				
 			},
-		
+			{
+				"type": "info",
+				"markdown": "---"
+			},
 			{
 				"type": "info",
 				"justify": "center",
-				"markdown": "=== FRIDAY, May 16 ==="
+				"markdown": "**=== FRIDAY, May 16 ===**"
 			},					
 			{
 				"type": "info",
