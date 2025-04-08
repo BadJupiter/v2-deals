@@ -22,6 +22,7 @@
 				"id": "gift",
 				"label": "Which gift would you prefer?",
 				"type": "select",
+				"limit": 8,
 				"range": [
 					{
 						"value": "Daybook",
