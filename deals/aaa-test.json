@@ -64,7 +64,7 @@
 					},
 					{
 						"value": "Yes - plus one",
-						"value": 2
+						"count": 2
 					}
 				],
 				"required": true
