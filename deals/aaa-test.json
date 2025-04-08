@@ -79,11 +79,12 @@
 					{
 						"field": "attend",
 						"values": ["Yes - solo","Yes - plus one"]	# match one of
-					},
-					{
-						"field": "HotelQ",
-						"value": "Y"
 					}
+			#		,
+			#		{
+			#			"field": "HotelQ",
+			#			"value": "Y"
+			#		}
 				]
 			},
 			{
@@ -155,14 +156,6 @@
 						"type": "text",
 						"sticky": true,
 						"disabled": false
-					},
-					{
-						"id": "HotelQ",
-						"label": "HotelQ",
-						"type": "text",
-						"sticky": true,
-						"disabled": true,
-						"hidden": true
 					}
 				]
 			}
