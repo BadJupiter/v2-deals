@@ -204,6 +204,10 @@
 				]
 			}
 		],
+		"limits": {
+			"most_recent_only": true,
+			"most_recent_key": "PlayerID",
+		},
 		"submit": {
 			"label": "Submit RSVP",
 			"color": "#20363d"
