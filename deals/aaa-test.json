@@ -41,54 +41,33 @@
 			   "type": "characters",
 			   "label": "Personalize your gift below by entering a monogram up to three letters",
 			   "count": 3,
-			   "required": true
+			   "required": true,
+			   "conditional": [
+				   {
+					   "field": "gift",
+					   "values": ["Daybook","Padfolio (set of 2)"] # match one of
+				   }
+			   ]
 			},
 			{
 				"id": "attend",
 				"label": "Will you be attending the onsite event?",
 				"type": "select",
-				"range": ["Yes","No"],
-				"required": true
-			},
-			{
-				"id": "day",
-				"label": "I am confirming for:",
-				"type": "select",
-				"range": ["Friday, April 4th","Saturday, April 5th"],
-				"required": true,
-				"conditional": {
-					"field": "attend",
-					"value": "Yes"
-				}
-			},
-			{
-				"id": "time",
-				"label": "Save me a spot from:",
-				"type": "select",
+				"limit": 21,
 				"range": [
 					{
-						"value": "4:00pm - 5:00pm",
-						"limit": 6
+						"value": "No",
+						"count": 0
 					},
 					{
-						"value": "5:00pm - 6:00pm (2 ppl)",
-						"count": 2,
-						"limit": 10
+						"value": "Yes - solo",
 					},
 					{
-						"value": "6:00pm - 7:00pm",
-						"limit": 8
-					},
-					{
-						"value": "7:00pm - 8:00pm",
-						"limit": 5
+						"value": "Yes - plus one",
+						"value": 2
 					}
 				],
-				"required": true,
-				"conditional": {
-					"field": "attend",
-					"value": "Yes"
-				}
+				"required": true
 			},
 			{
 				"id": "room",
@@ -99,7 +78,7 @@
 				"conditional": [
 					{
 						"field": "attend",
-						"value": "Yes"
+						"values": ["Yes - solo","Yes - plus one"]	# match one of
 					},
 					{
 						"field": "HotelQ",
