@@ -25,13 +25,16 @@
 				"limit": 15,
 				"range": [
 					{
+						"value": "neither thanks",
+						"count": 0
+					},
+					{
 						"value": "Daybook",
-						"limit": 5
 					},
 					{
 						"value": "Padfolio (set of 2)",
 						"count": 2,
-						"limit": 2
+						"limit": 10
 					}
 				],
 				"required": true
@@ -41,7 +44,7 @@
 			   "type": "characters",
 			   "label": "Personalize your gift below by entering a monogram up to three letters",
 			   "count": 3,
-			   "required": true,
+			   "required": false,
 			   "conditional": [
 				   {
 					   "field": "gift",
@@ -79,12 +82,11 @@
 					{
 						"field": "attend",
 						"values": ["Yes - solo","Yes - plus one"]	# match one of
+					},
+					{
+						"field": "PlayerID",
+						"value": "JUPITER"
 					}
-			#		,
-			#		{
-			#			"field": "HotelQ",
-			#			"value": "Y"
-			#		}
 				]
 			},
 			{
