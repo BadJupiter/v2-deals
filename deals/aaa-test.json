@@ -29,7 +29,8 @@
 						"count": 0
 					},
 					{
-						"value": "Daybook"
+						"value": "Daybook",
+						"limit": 10
 					},
 					{
 						"value": "Padfolio (set of 2)",
