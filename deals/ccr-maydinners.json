@@ -23,11 +23,6 @@
 				"markdown": " \n\nRespond for as few or as many as you like. Update throughout the month as needed."
 			},
 			{
-				"type": "info",
-				"justify": "center",
-				"markdown": " \n\nFriday, May 9"
-			},
-			{
 				"id": "attendday1",
 				"label": "Friday, May 9",
 				"type": "select",
@@ -61,10 +56,17 @@
 					}
 				],
 				"required": false,
-				"conditional": {
-					"field": "day1time",
-					"value": "5pm"
-				}
+				"conditional": [
+					{
+						"field": "attendday1",
+						"value": "Yes"
+					},
+					{
+						"field": "day1time",
+						"value": "5pm"
+					}
+				]				
+
 			},
 			{
 				"id": "day1time2count",
@@ -82,10 +84,17 @@
 					}
 				],
 				"required": true,
-				"conditional": {
-					"field": "day1time",
-					"value": "6pm"
-				}
+				"conditional": [
+					{
+						"field": "attendday1",
+						"value": "Yes"
+					},
+					{
+						"field": "day1time",
+						"value": "6pm"
+					}
+				]				
+
 			},
 			{
 				"id": "day1time3count",
@@ -103,10 +112,17 @@
 					}
 				],
 				"required": false,
-				"conditional": {
-					"field": "day1time",
-					"value": "7pm"
-				}
+				"conditional": [
+					{
+						"field": "attendday1",
+						"value": "Yes"
+					},
+					{
+						"field": "day1time",
+						"value": "7pm"
+					}
+				]				
+
 			},
 			{
 				"id": "day1time4count",
@@ -124,22 +140,19 @@
 					}
 				],
 				"required": true,
-				"conditional": {
-					"field": "day1time",
-					"value": "8pm"
-				}
+				"conditional": [
+					{
+						"field": "attendday1",
+						"value": "Yes"
+					},
+					{
+						"field": "day1time",
+						"value": "8pm"
+					}
+				]				
 			},
-				
-				
-				
-				
-				
-			{
-				"type": "info",
-				"justify": "center",
-				"markdown": " \n\nFriday, May 16"
-			},
-				
+		
+			
 			{
 				"type": "info",
 				"markdown": "---"
