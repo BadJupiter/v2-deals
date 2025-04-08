@@ -20,8 +20,13 @@
 			{
 				"type": "info",
 				"justify": "center",
-				"markdown": " \n\nHost & Ambassador Instructions: \n\nRespond for as few or as many weeks as you like. Update throughout the month as needed."
+				"markdown": "## Host & Ambassador Instructions: \n\nRespond for as few or as many weeks as you like. Update throughout the month as needed."
 			},
+			{
+				"type": "info",
+				"justify": "center",
+				"markdown": "=== FRIDAY, May 9 ==="
+			
 			{
 				"id": "attendday1",
 				"label": "Friday, May 9",
