@@ -85,6 +85,7 @@
 				"conditional": {
 					"field": "day1time",
 					"value": "6pm"
+				}
 			},
 			{
 				"id": "day1time3count",
@@ -126,6 +127,7 @@
 				"conditional": {
 					"field": "day1time",
 					"value": "8pm"
+				}
 			},
 				
 				
