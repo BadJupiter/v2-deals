@@ -56,7 +56,7 @@
 						"count": 1
 					},
 					{
-						"value": "I'm attending plus a guest"
+						"value": "I'm attending plus a guest",
 						"count": 2
 					}
 				],
@@ -77,13 +77,13 @@
 						"count": 1
 					},
 					{
-						"value": "I'm attending plus a guest"
+						"value": "I'm attending plus a guest",
 						"count": 2
 					}
 				],
 				"required": true,
 				"conditional": {
-					"field": "day1time1",
+					"field": "day1time",
 					"value": "6pm"
 			},
 			{
@@ -97,7 +97,7 @@
 						"count": 1
 					},
 					{
-						"value": "I'm attending plus a guest"
+						"value": "I'm attending plus a guest",
 						"count": 2
 					}
 				],
@@ -118,13 +118,13 @@
 						"count": 1
 					},
 					{
-						"value": "I'm attending plus a guest"
+						"value": "I'm attending plus a guest",
 						"count": 2
 					}
 				],
 				"required": true,
 				"conditional": {
-					"field": "day1time1",
+					"field": "day1time",
 					"value": "8pm"
 			},
 				
