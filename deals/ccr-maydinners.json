@@ -92,7 +92,7 @@
 						"count": 2
 					}
 				],
-				"required": true,
+				"required": false,
 				"conditional": [
 					{
 						"field": "attendday1",
@@ -148,7 +148,7 @@
 						"count": 2
 					}
 				],
-				"required": true,
+				"required": false,
 				"conditional": [
 					{
 						"field": "attendday1",
@@ -230,7 +230,7 @@
 						"count": 2
 					}
 				],
-				"required": true,
+				"required": false,
 				"conditional": [
 					{
 						"field": "attendday2",
@@ -286,7 +286,7 @@
 						"count": 2
 					}
 				],
-				"required": true,
+				"required": false,
 				"conditional": [
 					{
 						"field": "attendday2",
@@ -322,7 +322,7 @@
 				"range": ["5pm","6pm","7pm","8pm"],
 				"required": false,
 				"conditional": {
-					"field": "attendday1",
+					"field": "attendday3",
 					"value": "Yes"
 				}
 			},
@@ -369,7 +369,7 @@
 						"count": 2
 					}
 				],
-				"required": true,
+				"required": false,
 				"conditional": [
 					{
 						"field": "attendday3",
@@ -425,7 +425,7 @@
 						"count": 2
 					}
 				],
-				"required": true,
+				"required": false,
 				"conditional": [
 					{
 						"field": "attendday3",
@@ -507,7 +507,7 @@
 						"count": 2
 					}
 				],
-				"required": true,
+				"required": false,
 				"conditional": [
 					{
 						"field": "attendday4",
@@ -563,7 +563,7 @@
 						"count": 2
 					}
 				],
-				"required": true,
+				"required": false,
 				"conditional": [
 					{
 						"field": "attendday4",
