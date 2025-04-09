@@ -170,6 +170,143 @@
 				"markdown": "**=== FRIDAY, May 16 ===**"
 			},					
 			{
+				"id": "attendday2",
+				"label": "Attending Friday, May 16?",
+				"type": "select",
+				"range": ["Yes","No"],
+				"required": false
+			},
+			{
+				"id": "day2time",
+				"label": "Time:",
+				"type": "select",
+				"range": ["5pm","6pm","7pm","8pm"],
+				"required": false,
+				"conditional": {
+					"field": "attendday2",
+					"value": "Yes"
+				}
+			},
+			{
+				"id": "day2time1count",
+				"label": "How many in the party?",
+				"type": "select",
+				"limit": 150,
+				"range": [
+					{
+						"value": "I'll be attending solo",
+						"count": 1
+					},
+					{
+						"value": "I'm attending plus a guest",
+						"count": 2
+					}
+				],
+				"required": false,
+				"conditional": [
+					{
+						"field": "attendday2",
+						"value": "Yes"
+					},
+					{
+						"field": "day2time",
+						"value": "5pm"
+					}
+				]				
+
+			},
+			{
+				"id": "day2time2count",
+				"label": "How many in the party?",
+				"type": "select",
+				"limit": 150,
+				"range": [
+					{
+						"value": "I'll be attending solo",
+						"count": 1
+					},
+					{
+						"value": "I'm attending plus a guest",
+						"count": 2
+					}
+				],
+				"required": true,
+				"conditional": [
+					{
+						"field": "attendday2",
+						"value": "Yes"
+					},
+					{
+						"field": "day2time",
+						"value": "6pm"
+					}
+				]				
+
+			},
+			{
+				"id": "day2time3count",
+				"label": "How many in the party?",
+				"type": "select",
+				"limit": 150,
+				"range": [
+					{
+						"value": "I'll be attending solo",
+						"count": 1
+					},
+					{
+						"value": "I'm attending plus a guest",
+						"count": 2
+					}
+				],
+				"required": false,
+				"conditional": [
+					{
+						"field": "attendday2",
+						"value": "Yes"
+					},
+					{
+						"field": "day2time",
+						"value": "7pm"
+					}
+				]				
+
+			},
+			{
+				"id": "day2time4count",
+				"label": "How many in the party?",
+				"type": "select",
+				"limit": 150,
+				"range": [
+					{
+						"value": "I'll be attending solo",
+						"count": 1
+					},
+					{
+						"value": "I'm attending plus a guest",
+						"count": 2
+					}
+				],
+				"required": true,
+				"conditional": [
+					{
+						"field": "attendday2",
+						"value": "Yes"
+					},
+					{
+						"field": "day2time",
+						"value": "8pm"
+					}
+				]				
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			
+			
+			
+			
+			{
 				"type": "info",
 				"markdown": "---"
 			},
