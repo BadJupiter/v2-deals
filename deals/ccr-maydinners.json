@@ -460,7 +460,7 @@
 				"range": ["5pm","6pm","7pm","8pm"],
 				"required": false,
 				"conditional": {
-					"field": "attendday2",
+					"field": "attendday4",
 					"value": "Yes"
 				}
 			},
