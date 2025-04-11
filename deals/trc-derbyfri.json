@@ -12,83 +12,22 @@
 		"fields": [
 			{
 				"type": "info",
-				"markdown": "# Clayton & Crume Exclusive Event"
+				"markdown": "# Derby Hat Event"
 			},
 			{
 				"type": "info",
-				"markdown": "## **April 4th & 5th**"	
-			},
-			{
-				"type": "info",
-				"markdown": "## **Casino Event Center, Florence**"	
+				"markdown": "## **Friday, May 2, 2025**"	
 			},
 			{
 				"type": "info",
 				"markdown": "---"
 			},
 			{
-				"type": "info",
-				"justify": "center",
-				"markdown": " \n\nAs a valued Three Rivers Casino Resort Guest, we're thrilled to offer you a beautiful, handcrafted leather gift from **Clayton & Crume**."
-			},
-			{
-				"type": "info",
-				"justify": "center",
-				"markdown": " \n\nPlease provide your preferences below--we’ll have it custom-made and waiting for you at the event. If you’re unable to attend, we’ll be happy to ship it to you."
-			},
-			{
-				"id": "gift",
-				"label": "Which gift would you prefer?",
-				"type": "select",
-				"range": ["Daybook","Padfolio"],
-				"required": true
-			},
-			{
-			   "id": "initials",
-			   "type": "characters",
-			   "label": "Personalize your gift below by entering a monogram up to three letters",
-			   "count": 3,
-			   "required": true
-			},
-			{
 				"id": "attend",
-				"label": "Will you be attending the onsite event?",
+				"label": "Will you attend the Derby Hat Event?",
 				"type": "select",
 				"range": ["Yes","No"],
 				"required": true
-			},
-			{
-				"id": "day",
-				"label": "I am confirming for:",
-				"type": "select",
-				"range": ["Friday, April 4th","Saturday, April 5th"],
-				"required": true,
-				"conditional": {
-					"field": "attend",
-					"value": "Yes"
-				}
-			},
-			{
-				"id": "day1time",
-				"label": "Save me a spot from:",
-				"type": "select",
-				"range": ["5:00pm - 6:00pm","6:00pm - 7:00pm","7:00pm - 8:00pm"],
-				"required": true,
-				"conditional": {
-					"field": "day",
-					"value": "Friday, April 4th"
-				}
-			},
-			{
-				"id": "day2time",
-				"label": "Save me a spot from:",
-				"type": "select",
-				"range": ["4:00pm - 5:00pm","5:00pm - 6:00pm","6:00pm - 7:00pm","7:00pm - 8:00pm"],
-				"required": true,
-				"conditional": {
-					"field": "day",
-					"value": "Saturday, April 5th"
-				}
 			},
 			{
 				"id": "room",
@@ -101,52 +40,7 @@
 						"field": "attend",
 						"value": "Yes"
 					},
-					{
-						"field": "HotelQ",
-						"value": "Y"
-					}
 				]
-			},
-			{
-				"id": "address",
-				"label": "Please enter your preferred shipping address:",
-				"type": "text",
-				"placeholder": "Street",
-				"required": true,
-				"conditional": {
-					"field": "attend",
-					"value": "No"
-				}
-			},
-						{
-				"id": "city",
-				"type": "text",
-				"placeholder": "City",
-				"required": true,
-				"conditional": {
-					"field": "attend",
-					"value": "No"
-				}
-			},
-						{
-				"id": "state",
-				"type": "text",
-				"placeholder": "State",
-				"required": true,
-				"conditional": {
-					"field": "attend",
-					"value": "No"
-				}
-			},
-						{
-				"id": "zip",
-				"type": "text",
-				"placeholder": "ZIP Code",
-				"required": true,
-				"conditional": {
-					"field": "attend",
-					"value": "No"
-				}
 			},
 			{
 				"type": "info",
@@ -177,14 +71,7 @@
 						"sticky": true,
 						"disabled": true
 					},
-					{
-						"id": "HotelQ",
-						"label": "HotelQ",
-						"type": "text",
-						"sticky": true,
-						"disabled": true,
-						"hidden": true
-					}
+
 				]
 			}
 		],
