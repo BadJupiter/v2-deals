@@ -12,15 +12,15 @@
 		"fields": [
 			{
 				"type": "info",
-				"markdown": "# Derby Hat Event"
+				"markdown": "# Derby Party"
 			},
 			{
 				"type": "info",
-				"markdown": "## **Friday, May 2, 2025**"	
+				"markdown": "## **Saturday, May 3, 2025**"	
 			},
 			{
 				"type": "info",
-				"markdown": "## **6:00 - 8:00 PM**"
+				"markdown": "## **Doors -- 2:00pm** \n\n **Hat Contest - 3:00** \n\n **Post Time - 3:57pm**"
 			},
 			{
 				"type": "info",
@@ -28,14 +28,14 @@
 			},
 			{
 				"id": "attend",
-				"label": "Will you attend the Derby Hat Event?",
+				"label": "Will you attend the Derby Party?",
 				"type": "select",
 				"range": ["Yes","No"],
 				"required": true
 			},
 			{
-				"id": "room",
-				"label": "Would you like to be contacted about a room reservation?",
+				"id": "guest",
+				"label": "Will you be bringing a guest?",
 				"type": "select",
 				"range": ["Yes","No"],
 				"required": true,
