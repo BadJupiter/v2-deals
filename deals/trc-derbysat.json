@@ -20,7 +20,19 @@
 			},
 			{
 				"type": "info",
-				"markdown": "## **Doors -- 2:00pm** \n\n **Hat Contest - 3:00** \n\n **Post Time - 3:57pm**"
+				"markdown": "---"
+			},
+			{
+				"type": "info",
+				"markdown": "## **Doors - 2:00pm** \n\n **Hat Contest - 3:00** \n\n **Post Time - 3:57pm**"
+			},
+			{
+				"type": "info",
+				"markdown": "## **Hat Contest - 3:00pm**"
+			},
+			{
+				"type": "info",
+				"markdown": "## **Post Time - 3:57pm**"
 			},
 			{
 				"type": "info",
