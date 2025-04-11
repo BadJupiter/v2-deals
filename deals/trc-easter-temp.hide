@@ -1,0 +1,9 @@
+{
+	"biz_id": "colusacasino",
+	"auth_required": false,
+	
+	"MAIN": {
+#		"title": "",
+		"body_md": "Thank you for your interest in our Lotería event! Unfortunately, we've reached capacity and registration is now closed. \n\nWe hope to see you again soon at Colusa Casino Resort!"
+	}
+}
