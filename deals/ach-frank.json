@@ -38,7 +38,7 @@
 				"label": "Would you like us to reserve you a room? (up to two nights free)",
 				"type": "multi-select",
 				"range": ["Thu - 5/21","Fri - 5/22", "Sat - 5/23"],
-				"required": true,
+				"required": true
 			},
 			{
 				"type": "info",
