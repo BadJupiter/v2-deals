@@ -67,13 +67,6 @@
 						"disabled": true
 					},
 					{
-						"id": "HotelYN",
-						"label": "Hotel:",
-						"type": "text",
-						"sticky": true,
-						"disabled": true
-					},
-					{
 						"id": "PlayerID",
 						"label": "Player #:",
 						"type": "text",
