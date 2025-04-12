@@ -45,7 +45,7 @@
 				"id": "room",
 				"label": "Would you like us to reserve you a room? (up to two nights free)",
 				"type": "select",
-				"range": ["2","1","0"],
+				"range": ["2 nights","1 night","No thanks"],
 				"required": false,
 				"conditional": {
 					"field": "HotelYN",
