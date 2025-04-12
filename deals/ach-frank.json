@@ -33,7 +33,17 @@
 				"range": ["2","1","0"],
 				"required": true
 			},
-		
+		{
+				"id": "room",
+				"label": "Would you like us to reserve you a room? (up to two nights free)",
+				"type": "select",
+				"range": ["Thu - 5/21","Fri - 5/22", "Sat - 5/23"],
+				"required": false,
+				"conditional": {
+					"field": "HotelYN",
+					"value": "Y"
+				}
+			},
 			{
 				"type": "info",
 				"markdown": "---"
