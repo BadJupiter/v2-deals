@@ -39,10 +39,6 @@
 				"type": "multi-select",
 				"range": ["Thu - 5/21","Fri - 5/22", "Sat - 5/23"],
 				"required": false,
-				"conditional": {
-						"field": "z_HOTELYN",
-						"value": "Y"
-					}		
 			},
 			{
 				"type": "info",
