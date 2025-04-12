@@ -10,6 +10,14 @@
 	"FORM": {
 		"fields": [
 			{
+				"id": "HotelYN",
+				"label": "HotelQ",
+				"type": "text",
+				"sticky": true,
+				"disabled": true,
+				"hidden": true
+			},
+			{
 				"type": "info",
 				"markdown": "# Frank Caliendo RSVP"
 			},
