@@ -35,18 +35,18 @@
 				"markdown": " \n\nYou and a guest are invited to see the Frank Caliendo show at Apache Casino Hotel!"
 			},
 			{
-				"id": "tickets",
-				"label": "How many free tickets would you like?",
+				"id": "guests",
+				"label": "I am confirming for:",
 				"type": "select",
-				"range": ["2","1","0"],
+				"range": ["Myself","Me and a Guest"],
 				"required": true
 			},
 			{
 				"id": "room",
-				"label": "Would you like us to reserve you a room? (up to two nights free)",
+				"label": "Would you like to be contacted by one of our anbassadors regarding complimentary hotel lodging for the event?",
 				"type": "select",
-				"range": ["2 nights","1 night","No thanks"],
-				"required": false,
+				"range": ["Yes","No"],
+				"required": true,
 				"conditional": {
 					"field": "HotelYN",
 					"value": "Y"
