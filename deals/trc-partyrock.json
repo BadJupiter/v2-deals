@@ -50,12 +50,25 @@
 				}
 			},
 			{
+				"id": "guest",
+				"label": "Will you be bringing a guest?",
+				"type": "select",
+				"range": ["Yes","No"],
+				"required": true,
+				"conditional": {
+					"field": "attend",
+					"value": "Yes"
+				}
+			},
+			
+			
+			{
 				"type": "info",
 				"markdown": "---"
 			},
 			{
 				"type": "fields_group",
-				"bgcolor": "#D2BDA8",
+				"bgcolor": "#45A9B4",
 				"fields": [
 					{
 						"id": "z_FIRSTNAME",
