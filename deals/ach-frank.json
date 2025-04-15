@@ -43,7 +43,7 @@
 			},
 			{
 				"id": "room",
-				"label": "Would you like to be contacted by one of our anbassadors regarding complimentary hotel lodging for the event?",
+				"label": "Would you like to be contacted by one of our ambassadors regarding complimentary hotel lodging for the event?",
 				"type": "select",
 				"range": ["Yes","No"],
 				"required": true,
