@@ -12,11 +12,11 @@
 		"fields": [
 			{
 				"type": "info",
-				"markdown": "# Clayton & Crume Exclusive Event"
+				"markdown": "# Party Rock Bingo"
 			},
 			{
 				"type": "info",
-				"markdown": "## **April 4th & 5th**"	
+				"markdown": "## **May 16th, 2025**"	
 			},
 			{
 				"type": "info",
@@ -29,7 +29,7 @@
 			{
 				"type": "info",
 				"justify": "center",
-				"markdown": " \n\nAs a valued Three Rivers Casino Resort Guest, we're thrilled to offer you a beautiful, handcrafted leather gift from **Clayton & Crume**."
+				"markdown": " \n\nAs a valued Three Rivers Casino Resort Guest, you and a guest are invited to join us for Party Rock Bingo!"
 			},
 			{
 				"id": "attend",
@@ -39,36 +39,14 @@
 				"required": true
 			},
 			{
-				"id": "day",
-				"label": "I am confirming for:",
+				"id": "time",
+				"label": "Which session would you like to attend?",
 				"type": "select",
-				"range": ["Friday, April 4th","Saturday, April 5th"],
+				"range": ["4:00pm","7:00pm"],
 				"required": true,
 				"conditional": {
 					"field": "attend",
 					"value": "Yes"
-				}
-			},
-			{
-				"id": "day1time",
-				"label": "Save me a spot from:",
-				"type": "select",
-				"range": ["5:00pm - 6:00pm","6:00pm - 7:00pm","7:00pm - 8:00pm"],
-				"required": true,
-				"conditional": {
-					"field": "day",
-					"value": "Friday, April 4th"
-				}
-			},
-			{
-				"id": "day2time",
-				"label": "Save me a spot from:",
-				"type": "select",
-				"range": ["4:00pm - 5:00pm","5:00pm - 6:00pm","6:00pm - 7:00pm","7:00pm - 8:00pm"],
-				"required": true,
-				"conditional": {
-					"field": "day",
-					"value": "Saturday, April 5th"
 				}
 			},
 			{
