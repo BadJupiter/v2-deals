@@ -41,9 +41,16 @@
 				"range": ["Myself","Me and a Guest"],
 				"required": true
 			},
+				{
+				"id": "seating",
+				"label": "Would you like to be contacted by a host regarding special seating requests?",
+				"type": "select",
+				"range": ["Yes","No"],
+				"required": true
+			},
 			{
 				"id": "room",
-				"label": "Would you like to be contacted by one of our ambassadors regarding complimentary hotel lodging for the event?",
+				"label": "Would you like to be contacted by a host regarding complimentary hotel lodging for the event?",
 				"type": "select",
 				"range": ["Yes","No"],
 				"required": true,
@@ -91,6 +98,6 @@
 		}
 	},
 	"MAIN": {
-		"body_md": "# We've received your request \n\nIf you need to make any changes to your RSVP just scan your invitation again. If you need any help, or need to change your hotel reservation, please call the number on your invitation. We hope to see you soon at **Apache Casino Hotel!**"
+		"body_md": "# We've received your request \n\nIf you need to make any changes to your RSVP just scan your invitation again. If you need any help, or need to change your hotel reservation, please contact your host or call the number on your invitation. We hope to see you soon at **Apache Casino Hotel!**"
 	}
 }
