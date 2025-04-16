@@ -1,0 +1,8 @@
+{
+	"biz_id": "apache",
+	"auth_required": false,
+	
+	"MAIN": {
+		"body_md": "# Thanks for your interest! \n\nThis event has reached capacity, and we're no longer accepting RSVPs. \n\n If you'd still like to attend, feel free to reach out to your host or the casino directly--there may be a few extra spots available. \n\n Thank you again for your interest!"
+	}
+}
