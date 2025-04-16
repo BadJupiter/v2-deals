@@ -46,7 +46,7 @@
 				"label": "Would you like to be contacted by a host regarding special seating requests?",
 				"type": "select",
 				"range": ["Yes","No"],
-				"required": true
+				"required": false
 			},
 			{
 				"id": "room",
