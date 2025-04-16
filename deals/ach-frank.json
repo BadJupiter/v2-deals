@@ -41,7 +41,7 @@
 				"range": ["Myself","Me and a Guest"],
 				"required": true
 			},
-				{
+			{
 				"id": "seating",
 				"label": "Would you like to be contacted by a host regarding special seating requests?",
 				"type": "select",
