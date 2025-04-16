@@ -43,14 +43,14 @@
 			},
 			{
 				"id": "seating",
-				"label": "Would you like to be contacted by a host regarding special seating requests?",
+				"label": "Would you like to be contacted by a host regarding any special seating requests?",
 				"type": "select",
 				"range": ["Yes","No"],
 				"required": false
 			},
 			{
 				"id": "room",
-				"label": "Would you like to be contacted by a host regarding complimentary hotel lodging for the event?",
+				"label": "Would you like to be contacted by a host about complimentary hotel lodging for the event (subject to availability)?,
 				"type": "select",
 				"range": ["Yes","No"],
 				"required": true,
