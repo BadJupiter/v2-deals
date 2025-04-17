@@ -1,6 +1,6 @@
 {
-	"biz_id": "colusacasino",
-	"deal_tokens": [ "ccr-loteria2" ],
+	"biz_id": "apache",
+	"deal_tokens": [ "ach-frank" ],
 	"most_recent_only": true, # omit or set to false for all rows
 	"most_recent_key": "Player ID", # needs to be the column_name
 	
@@ -35,12 +35,12 @@
 			"attrib": "PlayerID"
 		},
 		{
-			"column_name": "Attend",
-			"attrib": "attend"
+			"column_name": "Party",
+			"attrib": "guests"
 		},
 		{
-			"column_name": "Guest",
-			"attrib": "guests"
+			"column_name": "Room",
+			"attrib": "room"
 		},
 		{
 			"column_name": "Last Name",
