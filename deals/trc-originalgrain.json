@@ -1,0 +1,115 @@
+{
+	"biz_id": "threerivers",
+	"check_in": true,
+	"auth_required": true,
+	"error_auth": {
+		"title": "Woops!",
+		"content": "Can't play if you ain't authenticated!"
+	},
+
+	"FORM": {
+		"title": "Three Rivers Casino Resort",
+		"fields": [
+			{
+				"type": "info",
+				"markdown": "# Clayton & Crume Exclusive Event"
+			},
+			{
+				"type": "info",
+				"markdown": "## **April 4th & 5th**"	
+			},
+			{
+				"type": "info",
+				"markdown": "## **Casino Event Center, Florence**"	
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "info",
+				"justify": "center",
+				"markdown": " \n\nAs a valued Three Rivers Casino Resort Guest, we're thrilled to offer you a beautiful, handcrafted leather gift from **Clayton & Crume**."
+			},
+			{
+				"id": "attend",
+				"label": "Are you able to attend the event?",
+				"type": "select",
+				"range": ["Yes","No"],
+				"required": true
+			},
+			{
+				"id": "day",
+				"label": "I am confirming for:",
+				"type": "select",
+				"range": ["Friday, April 4th","Saturday, April 5th"],
+				"required": true,
+				"conditional": {
+					"field": "attend",
+					"value": "Yes"
+				}
+			},
+			{
+				"id": "day1time",
+				"label": "Save me a spot from:",
+				"type": "select",
+				"range": ["5:00pm - 6:00pm","6:00pm - 7:00pm","7:00pm - 8:00pm"],
+				"required": true,
+				"conditional": {
+					"field": "day",
+					"value": "Friday, April 4th"
+				}
+			},
+			{
+				"id": "day2time",
+				"label": "Save me a spot from:",
+				"type": "select",
+				"range": ["4:00pm - 5:00pm","5:00pm - 6:00pm","6:00pm - 7:00pm","7:00pm - 8:00pm"],
+				"required": true,
+				"conditional": {
+					"field": "day",
+					"value": "Saturday, April 5th"
+				}
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "fields_group",
+				"bgcolor": "#D2BDA8",
+				"fields": [
+					{
+						"id": "z_FIRSTNAME",
+						"label": "First Name:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					},
+					{
+						"id": "z_LASTNAME",
+						"label": "Last Name:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					},
+					{
+						"id": "PlayerID",
+						"label": "Club #:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					}
+				]
+			}
+		],
+		"submit": {
+			"label": "Submit RSVP",
+			"color": "#20363d"
+		
+		}
+	},
+	"MAIN": {
+		"body_md": "# We've received your request \n\nIf you need to make any changes to your RSVP just scan your invitation again. If you need any help please get in touch with your host. We hope to see you soon at **Three Rivers Casino Resort - Florence**."
+	}
+}
