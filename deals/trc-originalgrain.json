@@ -12,11 +12,11 @@
 		"fields": [
 			{
 				"type": "info",
-				"markdown": "# Clayton & Crume Exclusive Event"
+				"markdown": "# Original Grain Boutique"
 			},
 			{
 				"type": "info",
-				"markdown": "## **April 4th & 5th**"	
+				"markdown": "## **May 30th & 31st**"	
 			},
 			{
 				"type": "info",
@@ -29,20 +29,20 @@
 			{
 				"type": "info",
 				"justify": "center",
-				"markdown": " \n\nAs a valued Three Rivers Casino Resort Guest, we're thrilled to offer you a beautiful, handcrafted leather gift from **Clayton & Crume**."
+				"markdown": " \n\nIt’s our pleasure to offer our valued Three Rivers guests a unique, handcrafted watch from the artisans at **Original Grain**."
 			},
 			{
 				"id": "attend",
-				"label": "Are you able to attend the event?",
+				"label": "Will you attend the Original Grain Boutique?",
 				"type": "select",
 				"range": ["Yes","No"],
 				"required": true
 			},
 			{
 				"id": "day",
-				"label": "I am confirming for:",
+				"label": "Which day would you like to attend?",
 				"type": "select",
-				"range": ["Friday, April 4th","Saturday, April 5th"],
+				"range": ["Friday, May 30th","Saturday, May 31st"],
 				"required": true,
 				"conditional": {
 					"field": "attend",
@@ -53,22 +53,22 @@
 				"id": "day1time",
 				"label": "Save me a spot from:",
 				"type": "select",
-				"range": ["5:00pm - 6:00pm","6:00pm - 7:00pm","7:00pm - 8:00pm"],
+				"range": ["4pm","5pm","6pm","7pm"],
 				"required": true,
 				"conditional": {
 					"field": "day",
-					"value": "Friday, April 4th"
+					"value": "Friday, May 30th"
 				}
 			},
 			{
 				"id": "day2time",
 				"label": "Save me a spot from:",
 				"type": "select",
-				"range": ["4:00pm - 5:00pm","5:00pm - 6:00pm","6:00pm - 7:00pm","7:00pm - 8:00pm"],
+				"range": ["Noon","1pm","2pm","3pm"],
 				"required": true,
 				"conditional": {
 					"field": "day",
-					"value": "Saturday, April 5th"
+					"value": "Saturday, May 31st"
 				}
 			},
 			{
@@ -77,7 +77,7 @@
 			},
 			{
 				"type": "fields_group",
-				"bgcolor": "#D2BDA8",
+				"bgcolor": "#2F548C",
 				"fields": [
 					{
 						"id": "z_FIRSTNAME",
@@ -110,6 +110,6 @@
 		}
 	},
 	"MAIN": {
-		"body_md": "# We've received your request \n\nIf you need to make any changes to your RSVP just scan your invitation again. If you need any help please get in touch with your host. We hope to see you soon at **Three Rivers Casino Resort - Florence**."
+		"body_md": "# We've received your request \n\nIf you need to make any changes to your RSVP just scan your invitation again. If you need any help please get in touch. We hope to see you soon at **Three Rivers Casino Resort - Florence**."
 	}
 }
