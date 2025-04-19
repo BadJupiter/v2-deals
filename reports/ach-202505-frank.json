@@ -39,6 +39,10 @@
 			"attrib": "guests"
 		},
 		{
+			"column_name": "Seating",
+			"attrib": "seating"
+		},	
+		{
 			"column_name": "Room",
 			"attrib": "room"
 		},
