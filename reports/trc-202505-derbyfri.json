@@ -47,16 +47,8 @@
 			"attrib": "attend"
 		},
 		{
-			"column_name": "Day",
-			"attrib": "day"
-		},
-		{
-			"column_name": "Fri Time",
-			"attrib": "day1time"
-		},
-		{
-			"column_name": "Sat Time",
-			"attrib": "day2time"
+			"column_name": "Room",
+			"attrib": "room"
 		}
 	]
 }
