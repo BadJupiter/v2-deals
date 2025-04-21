@@ -19,7 +19,7 @@
 			},
 			{
 				"type": "info",
-				"markdown": "# Frank Caliendo RSVP"
+				"markdown": "# T-Shirt Reveal RSVP"
 			},
 			{
 				"type": "info",
@@ -32,7 +32,7 @@
 			{
 				"type": "info",
 				"justify": "center",
-				"markdown": " \n\nYou and a guest are invited to see the Frank Caliendo show at Apache Casino Hotel!"
+				"markdown": " \n\nPlaceholder to test links. Will be updated once event content is defined."
 			},
 			{
 				"id": "guests",
@@ -40,24 +40,6 @@
 				"type": "select",
 				"range": ["Myself","Me and a Guest"],
 				"required": true
-			},
-			{
-				"id": "seating",
-				"label": "Do you have a disability and would like a representative to contact you regarding special seating?",
-				"type": "select",
-				"range": ["Yes","No"],
-				"required": false
-			},
-			{
-				"id": "room",
-				"label": "Would you like to be contacted by a host about complimentary hotel lodging for the event (subject to availability)?",
-				"type": "select",
-				"range": ["Yes","No"],
-				"required": true,
-				"conditional": {
-					"field": "HotelYN",
-					"value": "Y"
-				}
 			},
 			{
 				"type": "info",
