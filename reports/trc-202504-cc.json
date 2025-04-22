@@ -1,7 +1,7 @@
 {
-	"biz_id": "threerivers",
-	"deal_tokens": [ "trc-cc-gift-register","trc-cc-gift-rsvp" ],
-	"most_recent_only": false, # omit or set to false for all rows
+	"biz_id": "colusacasino",
+	"deal_tokens": [ "ccr-maydinners" ],
+	"most_recent_only": true, # omit or set to false for all rows
 	"most_recent_key": "Player ID", # needs to be the column_name
 	
 	"as_xlsx": false, # omit or set to false for default (CSV)
@@ -43,52 +43,100 @@
 			"attrib": "z_FIRSTNAME"
 		},
 		{
-			"column_name": "Attending",
-			"attrib": "attend"
+			"column_name": "Attend 9th",
+			"attrib": "attendday1"
 		},
 		{
-			"column_name": "Day",
-			"attrib": "day"
-		},
-		{
-			"column_name": "Fri Time",
+			"column_name": "9th Time",
 			"attrib": "day1time"
 		},
 		{
-			"column_name": "Sat Time",
+			"column_name": "9th 5pm Count",
+			"attrib": "day1time1count"
+		},
+		{
+			"column_name": "9th 6pm Count",
+			"attrib": "day1time2count"
+		},
+		{
+			"column_name": "9th 7pm Count",
+			"attrib": "day1time3count"
+		},
+		{
+			"column_name": "9th 8pm Count",
+			"attrib": "day1time4count"
+		},
+		{
+			"column_name": "Attend 16th",
+			"attrib": "attendday2"
+		},
+		{
+			"column_name": "16th Time",
 			"attrib": "day2time"
 		},
 		{
-			"column_name": "Gift",
-			"attrib": "gift"
+			"column_name": "16th 5pm Count",
+			"attrib": "day2time1count"
 		},
 		{
-			"column_name": "Initials",
-			"attrib": "initials"
+			"column_name": "16th 6pm Count",
+			"attrib": "day2time2count"
 		},
 		{
-			"column_name": "Room",
-			"attrib": "room"
+			"column_name": "16th 7pm Count",
+			"attrib": "day2time3count"
 		},
 		{
-			"column_name": "Address",
-			"attrib": "address"
+			"column_name": "16th 8pm Count",
+			"attrib": "day2time4count"
 		},
 		{
-			"column_name": "City",
-			"attrib": "city"
+			"column_name": "Attend 23rd",
+			"attrib": "attendday3"
 		},
 		{
-			"column_name": "State",
-			"attrib": "state"
+			"column_name": "23rd Time",
+			"attrib": "day3time"
 		},
 		{
-			"column_name": "Zip",
-			"attrib": "zip"
+			"column_name": "23rd 5pm Count",
+			"attrib": "day3time1count"
 		},
 		{
-			"column_name": "HotelQ",
-			"attrib": "HotelQ"
-		}
+			"column_name": "23rd 6pm Count",
+			"attrib": "day3time2count"
+		},
+		{
+			"column_name": "23rd 7pm Count",
+			"attrib": "day3time3count"
+		},
+		{
+			"column_name": "23rd 8pm Count",
+			"attrib": "day3time4count"
+		},
+		{
+			"column_name": "Attend 30th",
+			"attrib": "attendday4"
+		},
+		{
+			"column_name": "30th Time",
+			"attrib": "day4time"
+		},
+		{
+			"column_name": "30th 5pm Count",
+			"attrib": "day4time1count"
+		},
+		{
+			"column_name": "30th 6pm Count",
+			"attrib": "day4time2count"
+		},
+		{
+			"column_name": "30th 7pm Count",
+			"attrib": "day4time3count"
+		},
+		{
+			"column_name": "30th 8pm Count",
+			"attrib": "day4time4count"
+		}}
 	]
 }
