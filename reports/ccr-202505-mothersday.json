@@ -1,6 +1,6 @@
 {
 	"biz_id": "colusacasino",
-	"deal_tokens": [ "ccr-loteria2" ],
+	"deal_tokens": [ "ccr-mothersday" ],
 	"most_recent_only": true, # omit or set to false for all rows
 	"most_recent_key": "Player ID", # needs to be the column_name
 	
@@ -39,8 +39,24 @@
 			"attrib": "attend"
 		},
 		{
-			"column_name": "Guest",
-			"attrib": "guests"
+			"column_name": "Time",
+			"attrib": "time"
+		},
+		{
+			"column_name": "10am Count",
+			"attrib": "time1count"
+		},
+		{
+			"column_name": "11am Count",
+			"attrib": "time2count"
+		},
+		{
+			"column_name": "Noon Count",
+			"attrib": "time3count"
+		},
+		{
+			"column_name": "1pm Count",
+			"attrib": "time4count"
 		},
 		{
 			"column_name": "Last Name",
