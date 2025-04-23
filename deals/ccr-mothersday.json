@@ -37,7 +37,7 @@
 				"id": "time",
 				"label": "I am confirming for:",
 				"type": "select",
-				"range": ["10am","11am","12pm","1pm"],
+				"range": ["10am","11am","Noon","1pm"],
 				"required": true,
 				"conditional": {
 					"field": "attend",
