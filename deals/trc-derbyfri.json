@@ -54,7 +54,7 @@
 					},
 					{
 						"field": "DIST",
-						"values": ["A 0-19","B 20-39"]	# match one of
+						"values": ["C 40-59","D 60-74","E 75-99","F 100-149","G 150-199","H 200-299","I 300+","K UNKNOWN"]	# match one of
 					}
 				]
 			},
