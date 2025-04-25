@@ -11,6 +11,14 @@
 		"title": "Three Rivers Casino Resort",
 		"fields": [
 			{
+				"id": "DIST",
+				"label": "DIST",
+				"type": "text",
+				"sticky": true,
+				"disabled": true,
+				"hidden": true
+			},
+			{
 				"type": "info",
 				"markdown": "# Derby Hat Event"
 			},
