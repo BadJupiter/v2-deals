@@ -54,7 +54,7 @@
 					},
 					{
 						"field": "DIST",
-						"values": ["Y_A 0-19","Y_B 20-39"]	# match one of
+						"values": ["A 0-19","B 20-39"]	# match one of
 					}
 				]
 			},
