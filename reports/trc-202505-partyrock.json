@@ -53,6 +53,10 @@
 		{
 			"column_name": "First Name",
 			"attrib": "z_FIRSTNAME"
+		},
+		{
+			"column_name": "DIstance",
+			"attrib": "DIST"
 		}
 	]
 }
