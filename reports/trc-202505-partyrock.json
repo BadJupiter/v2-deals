@@ -55,8 +55,12 @@
 			"attrib": "z_FIRSTNAME"
 		},
 		{
-			"column_name": "DIstance",
+			"column_name": "Distance",
 			"attrib": "DIST"
+		}
+		{
+			"column_name": "Room",
+			"attrib": "room"
 		}
 	]
 }
