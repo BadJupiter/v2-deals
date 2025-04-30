@@ -1,0 +1,115 @@
+{
+	"biz_id": "threerivers",
+	"check_in": true,
+	"auth_required": true,
+	"error_auth": {
+		"title": "Woops!",
+		"content": "Can't play if you ain't authenticated!"
+	},
+
+	"FORM": {
+		"title": "Three Rivers Casino Resort",
+		"fields": [
+			{
+				"type": "info",
+				"markdown": "# Original Grain Boutique"
+			},
+			{
+				"type": "info",
+				"markdown": "## **May 30th & 31st**"	
+			},
+			{
+				"type": "info",
+				"markdown": "## **Casino Event Center, Florence**"	
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "info",
+				"justify": "center",
+				"markdown": " \n\nIt’s our pleasure to offer our valued Three Rivers guests a unique, handcrafted watch from the artisans at **Original Grain**."
+			},
+			{
+				"id": "attend",
+				"label": "Will you attend the Original Grain Boutique?",
+				"type": "select",
+				"range": ["Yes","No"],
+				"required": true
+			},
+			{
+				"id": "day",
+				"label": "Which day would you like to attend?",
+				"type": "select",
+				"range": ["Friday, May 30th","Saturday, May 31st"],
+				"required": true,
+				"conditional": {
+					"field": "attend",
+					"value": "Yes"
+				}
+			},
+			{
+				"id": "day1time",
+				"label": "What time would you like to attend?",
+				"type": "select",
+				"range": ["4pm","5pm","6pm","7pm"],
+				"required": true,
+				"conditional": {
+					"field": "day",
+					"value": "Friday, May 30th"
+				}
+			},
+			{
+				"id": "day2time",
+				"label": "What time would you like to attend?",
+				"type": "select",
+				"range": ["Noon","1pm","2pm","3pm"],
+				"required": true,
+				"conditional": {
+					"field": "day",
+					"value": "Saturday, May 31st"
+				}
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "fields_group",
+				"bgcolor": "#B4A06D",
+				"fields": [
+					{
+						"id": "z_FIRSTNAME",
+						"label": "First Name:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					},
+					{
+						"id": "z_LASTNAME",
+						"label": "Last Name:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					},
+					{
+						"id": "PlayerID",
+						"label": "Club #:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					}
+				]
+			}
+		],
+		"submit": {
+			"label": "Submit RSVP",
+			"color": "#20363d"
+		
+		}
+	},
+	"MAIN": {
+		"body_md": "# We've received your request \n\nIf you need to make any changes to your RSVP just scan your invitation again. If you need any help please get in touch. We hope to see you soon at **Three Rivers Casino Resort - Florence**."
+	}
+}
