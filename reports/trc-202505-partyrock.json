@@ -57,7 +57,7 @@
 		{
 			"column_name": "Distance",
 			"attrib": "DIST"
-		}
+		},
 		{
 			"column_name": "Room",
 			"attrib": "room"
