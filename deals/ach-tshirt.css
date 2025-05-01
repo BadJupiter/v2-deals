@@ -17,7 +17,7 @@ body, html, .multi-select-label {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: #000000;
+	background-color: #C84040;
 }
 .multi-select-label {
 	display: block; /* or inline-block */
