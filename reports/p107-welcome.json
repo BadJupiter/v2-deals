@@ -34,12 +34,24 @@
 			"attrib": "size"
 		},
 		{
-			"column_name": "Amenities",
-			"attrib": "amenities"
-		},
-		{
 			"column_name": "Pool",
 			"attrib": "amenities-Resort-style Pool"
+		},
+		{
+			"column_name": "Spin-Yoga",
+			"attrib": "amenities-Spin Cycle & Yoga Studio"
+		},
+		{
+			"column_name": "Fitness",
+			"attrib": "amenities-24-hour Fitness Facility"
+		},
+		{
+			"column_name": "Dog Park",
+			"attrib": "amenities-Dog Park"
+		},
+		{
+			"column_name": "Grills",
+			"attrib": "amenities-Poolside Chef's Kitchen & Grills"
 		},
 		{
 			"column_name": "Timing",
