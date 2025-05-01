@@ -58,21 +58,21 @@
 				"fields": [
 					{
 						"id": "z_FIRSTNAME",
-						"label": "First Name:",
+						"label": "first name:",
 						"type": "text",
 						"sticky": true,
 						"disabled": true
 					},
 					{
 						"id": "z_LASTNAME",
-						"label": "Last Name:",
+						"label": "last name:",
 						"type": "text",
 						"sticky": true,
 						"disabled": true
 					},
 					{
 						"id": "PlayerID",
-						"label": "Player #:",
+						"label": "player #:",
 						"type": "text",
 						"sticky": true,
 						"disabled": true
