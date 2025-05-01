@@ -38,6 +38,10 @@
 			"attrib": "amenities"
 		},
 		{
+			"column_name": "Pool",
+			"attrib": "amenities-Resort-style Pool"
+		},
+		{
 			"column_name": "Timing",
 			"attrib": "timing"
 		},
