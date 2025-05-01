@@ -10,20 +10,16 @@
 	"FORM": {
 		"fields": [
 			{
-				"id": "HotelYN",
-				"label": "HotelQ",
-				"type": "text",
-				"sticky": true,
-				"disabled": true,
-				"hidden": true
-			},
-			{
 				"type": "info",
 				"markdown": "# T-Shirt Reveal RSVP"
 			},
 			{
 				"type": "info",
-				"markdown": "## **May 22, 2025**"
+				"markdown": "## **May 26, 2025**"
+			},
+			{
+				"type": "info",
+				"markdown": "## **10am - 6pm**"
 			},
 			{
 				"type": "info",
@@ -35,11 +31,22 @@
 				"markdown": " \n\nPlaceholder to test links. Will be updated once event content is defined."
 			},
 			{
-				"id": "guests",
-				"label": "I am confirming for:",
+				"id": "attend",
+				"label": "Will you be attending?",
 				"type": "select",
-				"range": ["Myself","Me and a Guest"],
+				"range": ["Yes","No"],
 				"required": true
+			},
+			{
+				"id": "size",
+				"label": "What size wouuld you like for your free t-shirt?",
+				"type": "select",
+				"range": ["S","M","L","XL","XXL","XXXL"],
+				"required": true
+				"conditional": {
+					"field": "attend",
+					"value": "Yes"
+				}
 			},
 			{
 				"type": "info",
