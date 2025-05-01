@@ -41,7 +41,7 @@
 				"id": "size",
 				"label": "what size wouuld you like for your free t-shirt?",
 				"type": "select",
-				"range": ["S","M","L","XL","XXL","XXXL"],
+				"range": ["small","medium","large","x-large","xx-large","xxx-large"],
 				"required": true,
 				"conditional": {
 					"field": "attend",
