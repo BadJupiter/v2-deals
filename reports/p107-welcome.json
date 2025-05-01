@@ -1,6 +1,6 @@
 {
-	"biz_id": "colusacasino",
-	"deal_tokens": [ "ccr-loteria" ],
+	"biz_id": "park107",
+	"deal_tokens": [ "p107-welcome" ],
 	"most_recent_only": false, # omit or set to false for all rows
 	
 	"as_xlsx": false, # omit or set to false for default (CSV)
@@ -30,28 +30,24 @@
 			"attrib": "_deal"
 		},
 		{
-			"column_name": "Player ID",
-			"attrib": "PlayerID"
+			"column_name": "Size",
+			"attrib": "size"
 		},
 		{
-			"column_name": "Attending",
-			"attrib": "attend"
+			"column_name": "Amenities",
+			"attrib": "amenities"
 		},
 		{
-			"column_name": "Guests",
-			"attrib": "guests"
+			"column_name": "Timing",
+			"attrib": "timing"
 		},
 		{
-			"column_name": "Room",
-			"attrib": "room"
+			"column_name": "Name",
+			"attrib": "name"
 		},
 		{
-			"column_name": "Last Name",
-			"attrib": "z_LASTNAME"
-		},
-		{
-			"column_name": "First Name",
-			"attrib": "z_FIRSTNAME"
+			"column_name": "Email",
+			"attrib": "email"
 		}
 	]
 }
