@@ -11,11 +11,11 @@
 		"fields": [
 			{
 				"type": "info",
-				"markdown": "# T-Shirt Reveal RSVP"
+				"markdown": "# t-shirt and free play rsvp"
 			},
 			{
 				"type": "info",
-				"markdown": "## **May 26, 2025**"
+				"markdown": "## **monday, may 26th**"
 			},
 			{
 				"type": "info",
@@ -28,24 +28,24 @@
 			{
 				"type": "info",
 				"justify": "center",
-				"markdown": " \n\nPlaceholder to test links. Will be updated once event content is defined."
+				"markdown": " \n\n receive your t-shirt and $20 free play at player's club"
 			},
 			{
 				"id": "attend",
-				"label": "Will you be attending?",
+				"label": "will you be attending?",
 				"type": "select",
-				"range": ["Yes","No"],
+				"range": ["yes","no"],
 				"required": true
 			},
 			{
 				"id": "size",
-				"label": "What size wouuld you like for your free t-shirt?",
+				"label": "what size wouuld you like for your free t-shirt?",
 				"type": "select",
 				"range": ["S","M","L","XL","XXL","XXXL"],
 				"required": true,
 				"conditional": {
 					"field": "attend",
-					"value": "Yes"
+					"value": "yes"
 				}
 			},
 			{
@@ -81,12 +81,12 @@
 			}
 		],
 		"submit": {
-			"label": "Submit RSVP",
+			"label": "submit rsvp",
 			"color": "#20363d"
 		
 		}
 	},
 	"MAIN": {
-		"body_md": "# We've received your request \n\nIf you need to make any changes to your RSVP just scan your invitation again. If you need any help, or need to change your hotel reservation, please contact your host or call the number on your invitation. We hope to see you soon at **Apache Casino Hotel!**"
+		"body_md": "# we've received your request \n\nif you need to make any changes to your rsvp just scan your invitation again. if you need any help, please contact your host or call the number on your invitation. we hope to see you soon at **Apache Casino Hotel!**"
 	}
 }
