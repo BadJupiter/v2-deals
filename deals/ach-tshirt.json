@@ -50,6 +50,11 @@
 			},
 			{
 				"type": "info",
+				"justify": "center",
+				"markdown": " \n\n *size requests cannot be guaranteed. while supplies last."
+			},
+			{
+				"type": "info",
 				"markdown": "---"
 			},
 			{
