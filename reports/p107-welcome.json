@@ -64,6 +64,10 @@
 		{
 			"column_name": "Email",
 			"attrib": "email"
+		},
+		{
+			"column_name": "Work Suites",
+			"attrib": "amenities-Work from Home Suites"
 		}
 	]
 }
