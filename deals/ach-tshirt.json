@@ -8,10 +8,11 @@
 	},
 
 	"FORM": {
+		"title": "Apache Casino Hotel",
 		"fields": [
 			{
 				"type": "info",
-				"markdown": "# t-shirt and free play rsvp"
+				"markdown": "# free t-shirt, $20 free play and up to $1,000 cash rsvp"
 			},
 			{
 				"type": "info",
@@ -28,7 +29,7 @@
 			{
 				"type": "info",
 				"justify": "center",
-				"markdown": " \n\n receive your t-shirt and $20 free play at player's club"
+				"markdown": " \n\n sizes are limited.  while supplies last."
 			},
 			{
 				"id": "attend",
