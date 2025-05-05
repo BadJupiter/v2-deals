@@ -87,8 +87,8 @@
 				"required": true,
 				"conditional": [
 					{
-						"field": "attend",
-						"value": "Yes"
+						"field": "day",
+						"values": ["Friday, May 30th","Saturday, May 31st"]
 					},
 					{
 						"field": "PlayerID",
