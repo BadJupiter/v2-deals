@@ -6,7 +6,14 @@
 		"title": "Woops!",
 		"content": "Can't play if you ain't authenticated!"
 	},
-
+	
+	"active": {
+		"start": "2025-04-01 10:00AM CDT",
+		  "end": "2025-04-11 06:59PM CDT",m
+		  "pre_md": "Not started yet...",
+		  "post_md": "You missed it! It's over!"
+	},
+	
 	"FORM": {
 		"title": "Jupiter 2 Test Deal",
 		"fields": [
@@ -23,11 +30,12 @@
 				"label": "Which gift would you prefer?",
 				"type": "select",
 				"limit": 15,
+				"nomore_md": "Sorry! All out!",
 				"range": [
-					{
-						"value": "neither thanks",
-						"count": 0
-					},
+		#			{
+		#				"value": "neither thanks",
+		#				"count": 0
+		#			},
 					{
 						"value": "Daybook",
 						"limit": 10
@@ -38,7 +46,7 @@
 						"limit": 10
 					}
 				],
-				"required": true
+		#		"required": true
 			},
 			{
 			   "id": "initials",
