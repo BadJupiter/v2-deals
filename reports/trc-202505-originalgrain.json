@@ -57,6 +57,10 @@
 		{
 			"column_name": "Sat Time",
 			"attrib": "day2time"
+		},
+		{
+			"column_name": "Room",
+			"attrib": "room"
 		}
 	]
 }
