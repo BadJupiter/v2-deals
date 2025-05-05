@@ -63,10 +63,16 @@
 				"type": "select",
 				"range": ["4pm","5pm","6pm","7pm"],
 				"required": true,
-				"conditional": {
-					"field": "day",
-					"value": "Friday, May 30th"
-				}
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "day",
+						"value": "Friday, May 30th"
+					}
+				]
 			},
 			{
 				"id": "day2time",
