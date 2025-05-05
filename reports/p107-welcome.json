@@ -47,7 +47,7 @@
 		},
 		{
 			"column_name": "Dog Park",
-			"attrib": "amenities-Dog Park"
+			"attrib": "amenities-On-site Dog Park"
 		},
 		{
 			"column_name": "Grills",
@@ -64,6 +64,10 @@
 		{
 			"column_name": "Email",
 			"attrib": "email"
+		},
+		{
+			"column_name": "Work Suites",
+			"attrib": "amenities-Work from Home Suites"
 		}
 	]
 }
