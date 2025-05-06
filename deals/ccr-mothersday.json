@@ -78,7 +78,7 @@
 				"id": "time2count",
 				"label": "How many in your party?",
 				"type": "select",
-				"limit": 100,
+				"limit": 104,
 				"range": [
 					{
 						"value": "I'm attending solo",
@@ -106,7 +106,7 @@
 				"id": "time3count",
 				"label": "How many in your party?",
 				"type": "select",
-				"limit": 100,
+				"limit": 102,
 				"range": [
 					{
 						"value": "I'm attending solo",
@@ -133,7 +133,7 @@
 				"id": "time4count",
 				"label": "How many in your party?",
 				"type": "select",
-				"limit": 100,
+				"limit": 102,
 				"range": [
 					{
 						"value": "I'm attending solo",
