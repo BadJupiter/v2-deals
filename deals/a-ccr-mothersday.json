@@ -133,7 +133,8 @@
 				"id": "time4count",
 				"label": "How many in your party?",
 				"type": "select",
-				"limit": 102,
+				"limit": 0,
+				"nomore_md": “This time is fully booked, please choose another”,
 				"range": [
 					{
 						"value": "I'm attending solo",
