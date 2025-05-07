@@ -1,6 +1,6 @@
 {
 	"biz_id": "apache",
-	"deal_tokens": [ "ach-frank" ],
+	"deal_tokens": [ "ach-tshirt" ],
 	"most_recent_only": true, # omit or set to false for all rows
 	"most_recent_key": "Player ID", # needs to be the column_name
 	
@@ -35,17 +35,13 @@
 			"attrib": "PlayerID"
 		},
 		{
-			"column_name": "Party",
-			"attrib": "guests"
+			"column_name": "Attend",
+			"attrib": "attend"
 		},
 		{
-			"column_name": "Seating",
-			"attrib": "seating"
+			"column_name": "Size",
+			"attrib": "size"
 		},	
-		{
-			"column_name": "Room",
-			"attrib": "room"
-		},
 		{
 			"column_name": "Last Name",
 			"attrib": "z_LASTNAME"
