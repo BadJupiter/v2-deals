@@ -133,7 +133,7 @@
 				"id": "time4count",
 				"label": "How many in your party?",
 				"type": "select",
-				"limit": 3,
+				"limit": 5,
 				"nomore_text": "This time is fully booked, please choose another",
 				"range": [
 					{
