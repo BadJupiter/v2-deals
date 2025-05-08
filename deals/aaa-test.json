@@ -30,7 +30,7 @@
 				"label": "Which gift would you prefer?",
 				"type": "select",
 				"limit": 15,
-				"nomore_md": "Sorry! All out!",
+				"nomore_text": "Sorry! All out!",
 				"range": [
 		#			{
 		#				"value": "neither thanks",
