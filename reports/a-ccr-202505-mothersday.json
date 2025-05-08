@@ -1,6 +1,6 @@
 {
 	"biz_id": "colusacasino",
-	"deal_tokens": [ "ccr-mothersday" ],
+	"deal_tokens": [ "a-ccr-mothersday" ],
 	"most_recent_only": false, # omit or set to false for all rows
 	"most_recent_key": "Player ID", # needs to be the column_name
 	
