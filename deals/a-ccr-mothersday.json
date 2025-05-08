@@ -49,7 +49,7 @@
 				"id": "time1count",
 				"label": "How many in your party?",
 				"type": "select",
-				"limit": 100,
+				"limit": 6,
 				"range": [
 					{
 						"value": "I'm attending solo",
@@ -78,7 +78,7 @@
 				"id": "time2count",
 				"label": "How many in your party?",
 				"type": "select",
-				"limit": 104,
+				"limit": 3,
 				"range": [
 					{
 						"value": "I'm attending solo",
@@ -106,7 +106,8 @@
 				"id": "time3count",
 				"label": "How many in your party?",
 				"type": "select",
-				"limit": 102,
+				"limit": 5,
+				"nomore_text": "No spot for you!",
 				"range": [
 					{
 						"value": "I'm attending solo",
