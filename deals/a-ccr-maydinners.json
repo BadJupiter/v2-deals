@@ -37,7 +37,7 @@
 				"type": "select",
 				"range": ["Yes","No"],
 				"required": false,
-				"hidden": true
+				"hidden": false
 			},
 			{
 				"id": "day1time",
