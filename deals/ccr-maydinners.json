@@ -23,20 +23,12 @@
 				"markdown": "## Host & Ambassador Instructions: \n\nRespond for as few or as many weeks as you like. \n\nUpdate throughout the month as needed."
 			},
 			{
-				"type": "info",
-				"markdown": "---"
-			},
-			{
-				"type": "info",
-				"justify": "center",
-				"markdown": "**=== FRIDAY, May 9 ===**"
-			},			
-			{
 				"id": "attendday1",
 				"label": "Attending Friday, May 9?",
 				"type": "select",
 				"range": ["Yes","No"],
-				"required": false
+				"required": false,
+				"hidden": true
 			},
 			{
 				"id": "day1time",
