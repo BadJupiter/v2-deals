@@ -36,7 +36,8 @@
 				"label": "Attending Friday, May 9?",
 				"type": "select",
 				"range": ["Yes","No"],
-				"required": false
+				"required": false,
+				"hidden": false
 			},
 			{
 				"id": "day1time",
