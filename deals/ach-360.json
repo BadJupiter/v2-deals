@@ -108,7 +108,7 @@
 						"label": "Player's Club #:",
 						"type": "text",
 						"sticky": true,
-						"disabled": true,
+						"disabled": false,
 						"required": false
 					},
 					{
