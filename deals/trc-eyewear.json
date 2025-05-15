@@ -11,6 +11,13 @@
 		"title": "Three Rivers Casino Resort",
 		"fields": [
 			{
+				"id": "Hotel",
+				"label": "Hotel",
+				"type": "text",
+				"sticky": true,
+				"disabled": true,
+				"hidden": true
+			},{
 				"type": "info",
 				"markdown": "# Eyewear Boutique"
 			},
@@ -96,7 +103,7 @@
 					},
 					{
 						"field": "day",
-						"values": ["Friday, May 30th","Saturday, May 31st"]
+						"values": ["Friday, June 27th","Saturday, June 28th"]
 					},
 					{
 						"field": "Hotel",
