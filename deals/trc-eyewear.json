@@ -107,7 +107,8 @@
 					},
 					{
 						"field": "Hotel",
-						"values": [“Y”]	# match one of
+						"values": ["Y"] # match one of
+
 					}
 				]
 			},
