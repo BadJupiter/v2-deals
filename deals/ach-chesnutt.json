@@ -1,0 +1,103 @@
+{
+	"biz_id": "apache",
+	"check_in": true,
+	"auth_required": true,
+	"error_auth": {
+		"title": "Woops!",
+		"content": "Can't play if you ain't authenticated!"
+	},
+
+	"FORM": {
+		"fields": [
+			{
+				"id": "HotelYN",
+				"label": "HotelQ",
+				"type": "text",
+				"sticky": true,
+				"disabled": true,
+				"hidden": true
+			},
+			{
+				"type": "info",
+				"markdown": "# Frank Caliendo RSVP"
+			},
+			{
+				"type": "info",
+				"markdown": "## **May 22, 2025**"
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "info",
+				"justify": "center",
+				"markdown": " \n\nYou and a guest are invited to see the Frank Caliendo show at Apache Casino Hotel!"
+			},
+			{
+				"id": "guests",
+				"label": "I am confirming for:",
+				"type": "select",
+				"range": ["Myself","Me and a Guest"],
+				"required": true
+			},
+			{
+				"id": "seating",
+				"label": "Do you have a disability and would like a representative to contact you regarding special seating?",
+				"type": "select",
+				"range": ["Yes","No"],
+				"required": false
+			},
+			{
+				"id": "room",
+				"label": "Would you like to be contacted by a host about complimentary hotel lodging for the event (subject to availability)?",
+				"type": "select",
+				"range": ["Yes","No"],
+				"required": true,
+				"conditional": {
+					"field": "HotelYN",
+					"value": "Y"
+				}
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "fields_group",
+				"bgcolor": "#f78fbf",
+				"fields": [
+					{
+						"id": "z_FIRSTNAME",
+						"label": "First Name:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					},
+					{
+						"id": "z_LASTNAME",
+						"label": "Last Name:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					},
+					{
+						"id": "PlayerID",
+						"label": "Player #:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					}
+				]
+			}
+		],
+		"submit": {
+			"label": "Submit RSVP",
+			"color": "#20363d"
+		
+		}
+	},
+	"MAIN": {
+		"body_md": "# We've received your request \n\nIf you need to make any changes to your RSVP just scan your invitation again. If you need any help, or need to change your hotel reservation, please contact your host or call the number on your invitation. We hope to see you soon at **Apache Casino Hotel!**"
+	}
+}
