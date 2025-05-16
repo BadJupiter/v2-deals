@@ -10,20 +10,12 @@
 	"FORM": {
 		"fields": [
 			{
-				"id": "HotelYN",
-				"label": "HotelQ",
-				"type": "text",
-				"sticky": true,
-				"disabled": true,
-				"hidden": true
+				"type": "info",
+				"markdown": "# mark chesnutt rsvp"
 			},
 			{
 				"type": "info",
-				"markdown": "# Frank Caliendo RSVP"
-			},
-			{
-				"type": "info",
-				"markdown": "## **May 22, 2025**"
+				"markdown": "## **june 19, 2025**"
 			},
 			{
 				"type": "info",
@@ -32,31 +24,31 @@
 			{
 				"type": "info",
 				"justify": "center",
-				"markdown": " \n\nYou and a guest are invited to see the Frank Caliendo show at Apache Casino Hotel!"
+				"markdown": " \n\nyou and a guest are invited to see the mark chessnut show at apache casino hotel!"
 			},
 			{
 				"id": "guests",
-				"label": "I am confirming for:",
+				"label": "i am confirming for:",
 				"type": "select",
-				"range": ["Myself","Me and a Guest"],
+				"range": ["myself","me and a guest"],
 				"required": true
 			},
 			{
 				"id": "seating",
-				"label": "Do you have a disability and would like a representative to contact you regarding special seating?",
+				"label": "do you have a disability and would like a representative to contact you regarding special seating?",
 				"type": "select",
-				"range": ["Yes","No"],
+				"range": ["yes","no"],
 				"required": false
 			},
 			{
 				"id": "room",
-				"label": "Would you like to be contacted by a host about complimentary hotel lodging for the event (subject to availability)?",
+				"label": "would you like to be contacted by a host about complimentary hotel lodging for the event (subject to availability)?",
 				"type": "select",
-				"range": ["Yes","No"],
+				"range": ["yes","no"],
 				"required": true,
 				"conditional": {
-					"field": "HotelYN",
-					"value": "Y"
+					"field": "PlayerID",
+					"values": ["4465","467196"]	# match one of
 				}
 			},
 			{
@@ -69,21 +61,21 @@
 				"fields": [
 					{
 						"id": "z_FIRSTNAME",
-						"label": "First Name:",
+						"label": "first name:",
 						"type": "text",
 						"sticky": true,
 						"disabled": true
 					},
 					{
 						"id": "z_LASTNAME",
-						"label": "Last Name:",
+						"label": "last name:",
 						"type": "text",
 						"sticky": true,
 						"disabled": true
 					},
 					{
 						"id": "PlayerID",
-						"label": "Player #:",
+						"label": "player #:",
 						"type": "text",
 						"sticky": true,
 						"disabled": true
@@ -92,12 +84,12 @@
 			}
 		],
 		"submit": {
-			"label": "Submit RSVP",
+			"label": "submit rsvp",
 			"color": "#20363d"
 		
 		}
 	},
 	"MAIN": {
-		"body_md": "# We've received your request \n\nIf you need to make any changes to your RSVP just scan your invitation again. If you need any help, or need to change your hotel reservation, please contact your host or call the number on your invitation. We hope to see you soon at **Apache Casino Hotel!**"
+		"body_md": "# we've received your request \n\nif you need to make any changes to your rsvp just scan your invitation again. if you need any help, or need to change your hotel reservation, please contact your host or call the number on your invitation. we hope to see you soon at **apache casino hotel!**"
 	}
 }
