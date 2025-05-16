@@ -157,16 +157,12 @@
 				"markdown": "---"
 			},
 			{
-				"type": "info",
-				"justify": "center",
-				"markdown": "**=== FRIDAY, May 16 ===**"
-			},					
-			{
 				"id": "attendday2",
 				"label": "Attending Friday, May 16?",
 				"type": "select",
 				"range": ["Yes","No"],
-				"required": false
+				"required": false,
+				"hidden": true
 			},
 			{
 				"id": "day2time",
@@ -291,11 +287,6 @@
 				]				
 			},
 			{
-				"type": "info",
-				"markdown": "---"
-			},
-			
-				{
 				"type": "info",
 				"justify": "center",
 				"markdown": "**=== FRIDAY, May 23 ===**"
