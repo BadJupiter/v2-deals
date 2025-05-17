@@ -55,7 +55,7 @@
 				"id": "overall",
 				"label": "Please rate your overall experience",
 				"type": "select",
-				"range": ["Very Satisfied", "Satisfied", "Neutral", "Somewhat Disappointed", "Very Disappointed"],
+				"range": ["⭑⭑⭑⭑⭑","⭑⭑⭑⭑","⭑⭑⭑","⭑⭑","⭑"],
 				"required": true
 			},
 			{
