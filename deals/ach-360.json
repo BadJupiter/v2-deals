@@ -34,7 +34,7 @@
 				"id": "qualcomment",
 				"label": "How could your food have been better?",
 				"type": "text",
-				"required": false
+				"required": false,
 				"conditional": [
 					{
 						"field": "quality",
