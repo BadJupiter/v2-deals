@@ -33,7 +33,8 @@
 			{	
 				"id": "qualcomment",
 				"label": "How could your food have been better?",
-				"type": "text",
+				"type": "textarea",
+				"rows": 2,
 				"required": false,
 				"conditional": [
 					{
