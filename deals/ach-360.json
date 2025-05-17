@@ -77,7 +77,7 @@
 				"label": "Help us improve your experience",
 				"type": "textarea",
 				"rows": 3,
-				"required": true
+				"required": false
 			},
 			{
 				"type": "info",
@@ -104,20 +104,12 @@
 						"required": true
 					},
 					{
-						"id": "PlayerID",
-						"label": "Player's Club #:",
-						"type": "text",
-						"sticky": true,
-						"disabled": false,
-						"required": false
-					},
-					{
 						"id": "email",
 						"label": "Email:",
 						"type": "text",
 						"sticky": true,
 						"disabled": false,
-						"required": true
+						"required": false
 					}
 				]
 			}
