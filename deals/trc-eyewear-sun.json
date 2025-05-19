@@ -11,19 +11,12 @@
 		"title": "Three Rivers Casino Resort",
 		"fields": [
 			{
-				"id": "Hotel",
-				"label": "Hotel",
-				"type": "text",
-				"sticky": true,
-				"disabled": true,
-				"hidden": true
-			},{
 				"type": "info",
 				"markdown": "# Eyewear Boutique"
 			},
 			{
 				"type": "info",
-				"markdown": "## **June 27th & 28th**"	
+				"markdown": "## **June 29th, 2025**"	
 			},
 			{
 				"type": "info",
@@ -46,69 +39,15 @@
 				"required": true
 			},
 			{
-				"id": "day",
-				"label": "What day would you like to attend?",
-				"type": "select",
-				"range": ["Friday, June 27th","Saturday, June 28th"],
-				"required": true,
-				"conditional": {
-					"field": "attend",
-					"value": "Yes"
-				}
-			},
-			{
-				"id": "day1time",
+				"id": "day3time",
 				"label": "What time would you like to attend?",
 				"type": "select",
-				"range": ["4pm","5pm","6pm","7pm"],
+				"range": ["1pm","2pm","3pm","4pm"],
 				"required": true,
 				"conditional": [
 					{
 						"field": "attend",
 						"value": "Yes"
-					},
-					{
-						"field": "day",
-						"value": "Friday, June 27th"
-					}
-				]
-			},
-			{
-				"id": "day2time",
-				"label": "What time would you like to attend?",
-				"type": "select",
-				"range": ["Noon","1pm","2pm","3pm"],
-				"required": true,
-				"conditional": [
-					{
-						"field": "attend",
-						"value": "Yes"
-					},
-					{
-					"field": "day",
-					"value": "Saturday, June 28th"
-					}
-				]	
-			},
-			{
-				"id": "room",
-				"label": "Would you like to be contacted about a room reservation?",
-				"type": "select",
-				"range": ["Yes","No"],
-				"required": true,
-				"conditional": [
-					{
-						"field": "attend",
-						"value": "Yes"
-					},
-					{
-						"field": "day",
-						"values": ["Friday, June 27th","Saturday, June 28th"]
-					},
-					{
-						"field": "Hotel",
-						"values": ["Y"] # match one of
-
 					}
 				]
 			},
