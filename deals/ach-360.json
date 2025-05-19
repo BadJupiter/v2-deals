@@ -97,7 +97,7 @@
 			},
 			{
 				"type": "fields_group",
-				"bgcolor": "#F28C28",
+				"bgcolor": "#F8C69C",
 				"fields": [
 					{
 						"id": "firstname",
