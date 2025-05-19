@@ -1,0 +1,156 @@
+{
+	"biz_id": "threerivers",
+	"check_in": true,
+	"auth_required": true,
+	"error_auth": {
+		"title": "Woops!",
+		"content": "Can't play if you ain't authenticated!"
+	},
+
+	"FORM": {
+		"title": "Three Rivers Casino Resort",
+		"fields": [
+			{
+				"id": "Hotel",
+				"label": "Hotel",
+				"type": "text",
+				"sticky": true,
+				"disabled": true,
+				"hidden": true
+			},{
+				"type": "info",
+				"markdown": "# Eyewear Boutique"
+			},
+			{
+				"type": "info",
+				"markdown": "## **June 27th & 28th**"	
+			},
+			{
+				"type": "info",
+				"markdown": "## **Casino Event Center, Florence**"	
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "info",
+				"justify": "center",
+				"markdown": " \n\nIt’s our pleasure to offer our valued Three Rivers guests an invitation to our exclusive **Eyewear Boutique**."
+			},
+			{
+				"id": "attend",
+				"label": "Will you attend the Eyewear Boutique?",
+				"type": "select",
+				"range": ["Yes","No"],
+				"required": true
+			},
+			{
+				"id": "day",
+				"label": "What day would you like to attend?",
+				"type": "select",
+				"range": ["Friday, June 27th","Saturday, June 28th"],
+				"required": true,
+				"conditional": {
+					"field": "attend",
+					"value": "Yes"
+				}
+			},
+			{
+				"id": "day1time",
+				"label": "What time would you like to attend?",
+				"type": "select",
+				"range": ["4pm","5pm","6pm","7pm"],
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "day",
+						"value": "Friday, June 27th"
+					}
+				]
+			},
+			{
+				"id": "day2time",
+				"label": "What time would you like to attend?",
+				"type": "select",
+				"range": ["Noon","1pm","2pm","3pm"],
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+					"field": "day",
+					"value": "Saturday, June 28th"
+					}
+				]	
+			},
+			{
+				"id": "room",
+				"label": "Would you like to be contacted about a room reservation?",
+				"type": "select",
+				"range": ["Yes","No"],
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "day",
+						"values": ["Friday, June 27th","Saturday, June 28th"]
+					},
+					{
+						"field": "Hotel",
+						"values": ["Y"] # match one of
+
+					}
+				]
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "fields_group",
+				"bgcolor": "#B4A06D",
+				"fields": [
+					{
+						"id": "z_FIRSTNAME",
+						"label": "First Name:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					},
+					{
+						"id": "z_LASTNAME",
+						"label": "Last Name:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					},
+					{
+						"id": "PlayerID",
+						"label": "Club #:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					}
+				]
+			}
+		],
+		"submit": {
+			"label": "Submit RSVP",
+			"color": "#20363d"
+		
+		}
+	},
+	"MAIN": {
+		"body_md": "# We've received your request \n\nIf you need to make any changes to your RSVP just scan your invitation again. If you need any help please get in touch. We hope to see you soon at **Three Rivers Casino Resort - Florence**."
+	}
+}
