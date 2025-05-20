@@ -39,7 +39,7 @@
 				"required": true
 			},
 			{
-				"id": "day3time",
+				"id": "time",
 				"label": "What time would you like to attend?",
 				"type": "select",
 				"range": ["1pm","2pm","3pm","4pm"],
