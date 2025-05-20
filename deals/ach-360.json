@@ -29,19 +29,6 @@
 				"range": ["Very Satisfied", "Satisfied", "Neutral", "Somewhat Disappointed", "Very Disappointed"],
 				"required": true
 			},
-			{	
-				"id": "qualcomment",
-				"label": "How could your food have been better?",
-				"type": "textarea",
-				"rows": 2,
-				"required": false,
-				"conditional": [
-					{
-						"field": "quality",
-						"values": ["Somewhat Disappointed", "Very Disappointed"]	# match one of
-					}
-				]
-			},
 			{
 				"id": "temp",
 				"label": "Please rate the temperature of your food",
