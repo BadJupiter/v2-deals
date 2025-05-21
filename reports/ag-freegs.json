@@ -1,8 +1,8 @@
 {
-	"biz_id": "threerivers",
-	"deal_tokens": [ "trc-eyewear" ],
-	"most_recent_only": true, # omit or set to false for all rows
-	"most_recent_key": "Player ID", # needs to be the column_name
+	"biz_id": "albertgs",
+	"deal_tokens": [ "ag-downtown","ag-midtown","ag-hills" ],
+	"most_recent_only": false, # omit or set to false for all rows
+	"most_recent_key": "Mobile", # needs to be the column_name
 	
 	"as_xlsx": false, # omit or set to false for default (CSV)
 
@@ -31,36 +31,12 @@
 			"attrib": "_deal"
 		},
 		{
-			"column_name": "Player ID",
-			"attrib": "PlayerID"
+			"column_name": "Rating",
+			"attrib": "rating"
 		},
 		{
-			"column_name": "Last Name",
-			"attrib": "z_LASTNAME"
-		},
-		{
-			"column_name": "First Name",
-			"attrib": "z_FIRSTNAME"
-		},
-		{
-			"column_name": "Attending",
-			"attrib": "attend"
-		},
-		{
-			"column_name": "Day",
-			"attrib": "day"
-		},
-		{
-			"column_name": "Fri Time",
-			"attrib": "day1time"
-		},
-		{
-			"column_name": "Sat Time",
-			"attrib": "day2time"
-		},
-		{
-			"column_name": "Room",
-			"attrib": "room"
+			"column_name": "Comments",
+			"attrib": "comments"
 		}
 	]
 }
