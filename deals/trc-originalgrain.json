@@ -53,7 +53,7 @@
 				"id": "day1time",
 				"label": "What time would you like to attend?",
 				"type": "select",
-				"range": ["4pm","5pm","6pm","7pm"],
+				"range": ["5pm","6pm","7pm"],
 				"required": true,
 				"conditional": [
 					{
@@ -70,7 +70,7 @@
 				"id": "day2time",
 				"label": "What time would you like to attend?",
 				"type": "select",
-				"range": ["Noon","1pm","2pm","3pm"],
+				"range": ["Noon","1pm","2pm"],
 				"required": true,
 				"conditional": [
 					{
