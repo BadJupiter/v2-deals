@@ -32,7 +32,7 @@
 			{
 				"type": "info",
 				"justify": "center",
-				"markdown": "Thank you for visiting 777 Casino Hotel! Please let us know how we did on your visit."
+				"markdown": "Thank you for visiting 777 Casino & Hotel! Please let us know how we did on your visit."
 			},
 			{
 				"type": "info",
@@ -131,6 +131,6 @@
 		}
 	},
 	"MAIN": {
-		"body_md": "# Thank You!\n\nWe appreciate your feedback, and thank you for visiting 777 Casino Hotel."
+		"body_md": "# Thank You!\n\nWe appreciate your feedback, and thank you for visiting 777 Casino & Hotel."
 	}
 }
