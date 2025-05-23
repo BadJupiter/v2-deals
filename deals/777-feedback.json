@@ -1,5 +1,5 @@
 {
-	"biz_id": "colusacasino",
+	"biz_id": "jupiter",
 	"check_in": true,
 	"auth_required": true,
 	"error_auth": {
@@ -32,7 +32,7 @@
 			{
 				"type": "info",
 				"justify": "center",
-				"markdown": "Thank you for visiting Colusa Casino Resort! Please let us know how we did on your visit."
+				"markdown": "Thank you for visiting 777 Casino Hotel! Please let us know how we did on your visit."
 			},
 			{
 				"type": "info",
@@ -49,7 +49,7 @@
 				"id": "dining",
 				"label": "What food outlets did you dine in during your visit? (You can pick more than one)",
 				"type": "multi-select",
-				"range": ["Jack's Place","Cafe Ole","Snack Bar (bingo)"],
+				"range": ["Jackpot Prime","The Daily Deal","Quick Draw Cafe"],
 				"required": false
 			},
 			{
@@ -89,7 +89,7 @@
 			},
 			{
 				"id": "team",
-				"label": "Are there any Colusa Casino Resort team members you would like to recognize for exceptional service?",
+				"label": "Are there any 777 Casino Hotel team members you would like to recognize for exceptional service?",
 				"type": "textarea",
 				"rows": 3,
 				"required": false
@@ -106,19 +106,6 @@
 						"id": "name",
 						"label": "Name:",
 						"type": "text",
-						"required": false
-					},
-					{
-						"id": "rewards",
-						"label": "Rewards #:",
-						"type": "text",
-						"required": false
-					},
-					{
-						"id": "address",
-						"label": "Address:",
-						"type": "textarea",
-						"rows": 3,
 						"required": false
 					},
 					{
@@ -144,6 +131,6 @@
 		}
 	},
 	"MAIN": {
-		"body_md": "# Thank You!\n\nWe appreciate your feedback, and thank you for visiting Colusa Casino Resort."
+		"body_md": "# Thank You!\n\nWe appreciate your feedback, and thank you for visiting 777 Casino Hotel."
 	}
 }
