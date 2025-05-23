@@ -296,6 +296,7 @@
 				"label": "Attending Friday, May 23?",
 				"type": "select",
 				"range": ["Yes","No"],
+				"hidden": true,
 				"required": false
 			},
 			{
