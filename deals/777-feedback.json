@@ -40,14 +40,14 @@
 			},
 			{
 				"id": "games",
-				"label": "What games did you play during your visit? (You can pick more than one)",
+				"label": "What games did you play during your visit?",
 				"type": "multi-select",
 				"range": ["Slot Machines","Table Games","Video Poker","Keno","Bingo"],
 				"required": false
 			},
 			{
 				"id": "dining",
-				"label": "What food outlets did you dine in during your visit? (You can pick more than one)",
+				"label": "What food outlets did you dine in during your visit?",
 				"type": "multi-select",
 				"range": ["Jackpot Prime","The Daily Deal","Quick Draw Cafe"],
 				"required": false
