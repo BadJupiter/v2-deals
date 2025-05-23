@@ -89,7 +89,7 @@
 			},
 			{
 				"id": "team",
-				"label": "Are there any 777 Casino Hotel team members you would like to recognize for exceptional service?",
+				"label": "Are there any 777 Casino Hotel team members you would like to recognize?",
 				"type": "textarea",
 				"rows": 3,
 				"required": false
