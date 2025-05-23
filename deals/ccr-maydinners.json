@@ -287,11 +287,6 @@
 				]				
 			},
 			{
-				"type": "info",
-				"justify": "center",
-				"markdown": "**=== FRIDAY, May 23 ===**"
-			},			
-			{
 				"id": "attendday3",
 				"label": "Attending Friday, May 23?",
 				"type": "select",
@@ -420,10 +415,6 @@
 						"value": "8pm"
 					}
 				]				
-			},
-			{
-				"type": "info",
-				"markdown": "---"
 			},
 			{
 				"type": "info",
