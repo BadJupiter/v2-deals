@@ -1,0 +1,142 @@
+{
+	"biz_id": "colusacasino",
+	"deal_tokens": [ "ccr-maydinners" ],
+	"most_recent_only": true, # omit or set to false for all rows
+	"most_recent_key": "Player ID", # needs to be the column_name
+	
+	"as_xlsx": false, # omit or set to false for default (CSV)
+
+#	The following column values are always available (attrib):
+#	
+#	_when		grab timestamp (Unix -- for now)
+#	_mobile		User mobile number
+#	_deal		Deal token
+#	_rowid		unique row (grab) identifier
+
+	"COLUMNS": [
+		{
+			"column_name": "Row ID",
+			"attrib": "_rowid"
+		},
+		{
+			"column_name": "Timestamp",
+			"attrib": "_when"
+		},
+		{
+			"column_name": "Mobile",
+			"attrib": "_mobile"
+		},
+		{
+			"column_name": "Deal ID",
+			"attrib": "_deal"
+		},
+		{
+			"column_name": "Player ID",
+			"attrib": "PlayerID"
+		},
+		{
+			"column_name": "Last Name",
+			"attrib": "z_LASTNAME"
+		},
+		{
+			"column_name": "First Name",
+			"attrib": "z_FIRSTNAME"
+		},
+		{
+			"column_name": "Attend 9th",
+			"attrib": "attendday1"
+		},
+		{
+			"column_name": "9th Time",
+			"attrib": "day1time"
+		},
+		{
+			"column_name": "9th 5pm Count",
+			"attrib": "day1time1count"
+		},
+		{
+			"column_name": "9th 6pm Count",
+			"attrib": "day1time2count"
+		},
+		{
+			"column_name": "9th 7pm Count",
+			"attrib": "day1time3count"
+		},
+		{
+			"column_name": "9th 8pm Count",
+			"attrib": "day1time4count"
+		},
+		{
+			"column_name": "Attend 16th",
+			"attrib": "attendday2"
+		},
+		{
+			"column_name": "16th Time",
+			"attrib": "day2time"
+		},
+		{
+			"column_name": "16th 5pm Count",
+			"attrib": "day2time1count"
+		},
+		{
+			"column_name": "16th 6pm Count",
+			"attrib": "day2time2count"
+		},
+		{
+			"column_name": "16th 7pm Count",
+			"attrib": "day2time3count"
+		},
+		{
+			"column_name": "16th 8pm Count",
+			"attrib": "day2time4count"
+		},
+		{
+			"column_name": "Attend 23rd",
+			"attrib": "attendday3"
+		},
+		{
+			"column_name": "23rd Time",
+			"attrib": "day3time"
+		},
+		{
+			"column_name": "23rd 5pm Count",
+			"attrib": "day3time1count"
+		},
+		{
+			"column_name": "23rd 6pm Count",
+			"attrib": "day3time2count"
+		},
+		{
+			"column_name": "23rd 7pm Count",
+			"attrib": "day3time3count"
+		},
+		{
+			"column_name": "23rd 8pm Count",
+			"attrib": "day3time4count"
+		},
+		{
+			"column_name": "Attend 30th",
+			"attrib": "attendday4"
+		},
+		{
+			"column_name": "30th Time",
+			"attrib": "day4time"
+		},
+		{
+			"column_name": "30th 5pm Count",
+			"attrib": "day4time1count"
+		},
+		{
+			"column_name": "30th 6pm Count",
+			"attrib": "day4time2count"
+		},
+		{
+			"column_name": "30th 7pm Count",
+			"attrib": "day4time3count"
+		},
+		{
+			"column_name": "30th 8pm Count",
+			"attrib": "day4time4count"
+		}
+	]
+}
