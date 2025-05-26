@@ -36,7 +36,6 @@
 				"label": "Attending Friday, May 30?",
 				"type": "select",
 				"range": ["Yes","No"],
-				"sticky": true,
 				"required": false
 			},
 			{
@@ -45,7 +44,6 @@
 				"type": "select",
 				"range": ["5pm","6pm","7pm","8pm"],
 				"required": false,
-				"sticky": true,
 				"conditional": {
 					"field": "attendday4",
 					"value": "Yes"
@@ -67,7 +65,6 @@
 					}
 				],
 				"required": false,
-				"sticky": true,
 				"conditional": [
 					{
 						"field": "attendday4",
@@ -96,7 +93,6 @@
 					}
 				],
 				"required": false,
-				"sticky": true,
 				"conditional": [
 					{
 						"field": "attendday4",
@@ -125,7 +121,6 @@
 					}
 				],
 				"required": false,
-				"sticky": true,
 				"conditional": [
 					{
 						"field": "attendday4",
@@ -154,7 +149,6 @@
 					}
 				],
 				"required": false,
-				"sticky": true,
 				"conditional": [
 					{
 						"field": "attendday4",
@@ -183,7 +177,6 @@
 				"type": "select",
 				"range": ["Yes","No"],
 				"required": false,
-				"sticky": true,
 				"hidden": false
 			},
 			{
@@ -192,7 +185,6 @@
 				"type": "select",
 				"range": ["5pm","6pm","7pm","8pm"],
 				"required": false,
-				"sticky": true,
 				"conditional": {
 					"field": "attendday5",
 					"value": "Yes"
@@ -214,7 +206,6 @@
 					}
 				],
 				"required": false,
-				"sticky": true,
 				"conditional": [
 					{
 						"field": "attendday5",
@@ -243,7 +234,6 @@
 					}
 				],
 				"required": false,
-				"sticky": true,
 				"conditional": [
 					{
 						"field": "attendday5",
@@ -272,7 +262,6 @@
 					}
 				],
 				"required": false,
-				"sticky": true,
 				"conditional": [
 					{
 						"field": "attendday5",
@@ -301,7 +290,6 @@
 					}
 				],
 				"required": false,
-				"sticky": true,
 				"conditional": [
 					{
 						"field": "attendday5",
@@ -327,7 +315,6 @@
 				"label": "Attending Saturday, June 14?",
 				"type": "select",
 				"range": ["Yes","No"],
-				"sticky": true,
 				"required": false
 			},
 			{
@@ -336,7 +323,6 @@
 				"type": "select",
 				"range": ["5pm","6pm","7pm","8pm"],
 				"required": false,
-				"sticky": true,
 				"conditional": {
 					"field": "attendday6",
 					"value": "Yes"
@@ -358,7 +344,6 @@
 					}
 				],
 				"required": false,
-				"sticky": true,
 				"conditional": [
 					{
 						"field": "attendday6",
@@ -387,7 +372,6 @@
 					}
 				],
 				"required": false,
-				"sticky": true,
 				"conditional": [
 					{
 						"field": "attendday6",
@@ -416,7 +400,6 @@
 					}
 				],
 				"required": false,
-				"sticky": true,
 				"conditional": [
 					{
 						"field": "attendday6",
@@ -445,7 +428,6 @@
 					}
 				],
 				"required": false,
-				"sticky": true,
 				"conditional": [
 					{
 						"field": "attendday6",
@@ -472,7 +454,6 @@
 				"label": "Attending Saturday, June 21?",
 				"type": "select",
 				"range": ["Yes","No"],
-				"sticky": true,
 				"required": false
 			},
 			{
@@ -481,7 +462,6 @@
 				"type": "select",
 				"range": ["5pm","6pm","7pm","8pm"],
 				"required": false,
-				"sticky": true,
 				"conditional": {
 					"field": "attendday7",
 					"value": "Yes"
@@ -503,7 +483,6 @@
 					}
 				],
 				"required": false,
-				"sticky": true,
 				"conditional": [
 					{
 						"field": "attendday7",
@@ -532,7 +511,6 @@
 					}
 				],
 				"required": false,
-				"sticky": true,
 				"conditional": [
 					{
 						"field": "attendday7",
@@ -561,7 +539,6 @@
 					}
 				],
 				"required": false,
-				"sticky": true,
 				"conditional": [
 					{
 						"field": "attendday7",
@@ -590,7 +567,6 @@
 					}
 				],
 				"required": false,
-				"sticky": true,
 				"conditional": [
 					{
 						"field": "attendday7",
@@ -616,7 +592,6 @@
 				"label": "Attending Saturday, June 28?",
 				"type": "select",
 				"range": ["Yes","No"],
-				"sticky": true,
 				"required": false
 			},
 			{
@@ -625,7 +600,6 @@
 				"type": "select",
 				"range": ["5pm","6pm","7pm","8pm"],
 				"required": false,
-				"sticky": true,
 				"conditional": {
 					"field": "attendday8",
 					"value": "Yes"
@@ -647,7 +621,6 @@
 					}
 				],
 				"required": false,
-				"sticky": true,
 				"conditional": [
 					{
 						"field": "attendday8",
@@ -676,7 +649,6 @@
 					}
 				],
 				"required": false,
-				"sticky": true,
 				"conditional": [
 					{
 						"field": "attendday8",
@@ -705,7 +677,6 @@
 					}
 				],
 				"required": false,
-				"sticky": true,
 				"conditional": [
 					{
 						"field": "attendday8",
@@ -734,7 +705,6 @@
 					}
 				],
 				"required": false,
-				"sticky": true,
 				"conditional": [
 					{
 						"field": "attendday8",
