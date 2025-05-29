@@ -31,24 +31,32 @@
 			"attrib": "_deal"
 		},
 		{
-			"column_name": "Player ID",
-			"attrib": "PlayerID"
+			"column_name": "Quality-Very Satisfied",
+			"attrib": "quality-Very Satisfied"
 		},
 		{
-			"column_name": "Last Name",
-			"attrib": "z_LASTNAME"
+			"column_name": "Recommend",
+			"attrib": "recommend"
 		},
 		{
-			"column_name": "First Name",
-			"attrib": "z_FIRSTNAME"
+			"column_name": "Team",
+			"attrib": "team"
 		},
 		{
-			"column_name": "Attending",
-			"attrib": "attend"
+			"column_name": "Experience",
+			"attrib": "experience"
 		},
 		{
-			"column_name": "Tickets",
-			"attrib": "tickets"
+			"column_name": "FirstName",
+			"attrib": "firstname"
+		},
+		{
+			"column_name": "LastName",
+			"attrib": "lastname"
+		},
+		{
+			"column_name": "Email",
+			"attrib": "email"
 		}
 	]
 }
