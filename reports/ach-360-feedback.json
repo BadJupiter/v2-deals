@@ -1,8 +1,8 @@
 {
-	"biz_id": "colusacasino",
-	"deal_tokens": [ "ccr-trevino" ],
-	"most_recent_only": true, # omit or set to false for all rows
-	"most_recent_key": "Player ID", # needs to be the column_name
+	"biz_id": "apache",
+	"deal_tokens": [ "ach-360-feedback" ],
+	"most_recent_only": false, # omit or set to false for all rows
+#	"most_recent_key": "Player ID", # needs to be the column_name
 	
 	"as_xlsx": false, # omit or set to false for default (CSV)
 
