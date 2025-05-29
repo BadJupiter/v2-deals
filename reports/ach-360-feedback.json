@@ -1,6 +1,6 @@
 {
 	"biz_id": "apache",
-	"deal_tokens": [ "ach-360-feedback" ],
+	"deal_tokens": [ "ach-360" ],
 	"most_recent_only": false, # omit or set to false for all rows
 #	"most_recent_key": "Player ID", # needs to be the column_name
 	
