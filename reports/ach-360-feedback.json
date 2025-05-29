@@ -15,47 +15,63 @@
 
 	"COLUMNS": [
 		{
-			"column_name": "Row ID",
+			"column_name": "rowid",
 			"attrib": "_rowid"
 		},
 		{
-			"column_name": "Timestamp",
+			"column_name": "timestamp",
 			"attrib": "_when"
 		},
 		{
-			"column_name": "Mobile",
+			"column_name": "mobile",
 			"attrib": "_mobile"
 		},
 		{
-			"column_name": "Deal ID",
+			"column_name": "deal",
 			"attrib": "_deal"
 		},
 		{
-			"column_name": "Quality-Very Satisfied",
-			"attrib": "quality-Very Satisfied"
+			"column_name": "quality",
+			"attrib": "quality"
 		},
 		{
-			"column_name": "Recommend",
+			"column_name": "temp",
+			"attrib": "temp"
+		},
+		{
+			"column_name": "server",
+			"attrib": "server"
+		},
+		{
+			"column_name": "clean",
+			"attrib": "clean"
+		},
+		{
+			"column_name": "overall",
+			"attrib": "overall"
+		},
+		{
+			"column_name": "recommend",
 			"attrib": "recommend"
 		},
 		{
-			"column_name": "Team",
+			"column_name": "team",
 			"attrib": "team"
 		},
 		{
-			"column_name": "Experience",
+			"column_name": "experience",
 			"attrib": "experience"
 		},
 		{
-			"column_name": "FirstName",
+			"column_name": "firstname",
 			"attrib": "firstname"
 		},
 		{
-			"column_name": "LastName",
+			"column_name": "lastname",
 			"attrib": "lastname"
 		},
 		{
-			"column_name": "Email",
+			"column_name": "email",
 			"attrib": "email"
 		}
 	]
