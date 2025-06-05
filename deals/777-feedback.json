@@ -27,22 +27,13 @@
 		"fields": [
 			{
 				"type": "info",
-				"markdown": "# Your Voice Matters"
+				"justify": "center",
+				"markdown": "# **Casino QR: Guest feedback, reimagined**"
 			},
 			{
 				"type": "info",
 				"justify": "center",
-				"markdown": "Thank you for visiting 777 Casino & Hotel! Please let us know how we did on your visit."
-			},
-			{
-				"type": "info",
-				"justify": "center",
-				"markdown": "## **Casino QR: Guest feedback, reimagined**"
-			},
-			{
-				"type": "info",
-				"justify": "center",
-				"markdown": "## **Casino QR: Guest feedback, reimagined.**\n\nThis digital comment card is just a glimpse of what we can do.  \n[Talk to Michael Grim](mailto:mgrim@playerperformancegroup.com) to explore options for your casino or hospitality property."
+				"markdown": "## This digital comment card is just a glimpse of what we can do.  \n\n[Talk to Michael Grim](mailto:mgrim@playerperformancegroup.com) to explore options for your casino or hospitality property."
 			},
 			{
 				"type": "info",
