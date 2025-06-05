@@ -36,6 +36,18 @@
 			},
 			{
 				"type": "info",
+				"justify": "center",
+				"markdown": "## **Casino QR: Guest feedback, reimagined**" 
+"
+			},
+			{
+				"type": "info",
+				"justify": "center",
+				"markdown": "## **Casino QR: Guest feedback, reimagined.**\n\nThis digital comment card is just a glimpse of what we can do.  \n[Talk to Michael Grim](mailto:mgrim@playerperformancegroup.com) to explore options for your casino or hospitality property." 
+"
+			},
+			{
+				"type": "info",
 				"markdown": "---"
 			},
 			{
@@ -103,16 +115,22 @@
 				"bgcolor": "#dfe1fa",
 				"fields": [
 					{
-						"id": "name",
-						"label": "Name:",
+						"id": "firstname",
+						"label": "First Name:",
 						"type": "text",
-						"required": false
+						"required": true
+					},
+					{
+						"id": "lastname",
+						"label": "Last Name:",
+						"type": "text",
+						"required": true
 					},
 					{
 						"id": "email",
 						"label": "Email:",
 						"type": "email",
-						"required": false
+						"required": true
 					}
 				]
 			}
