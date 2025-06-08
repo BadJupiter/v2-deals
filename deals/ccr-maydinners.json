@@ -152,24 +152,13 @@
 					}
 				]				
 			},		
-			
-			
-			{
-				"type": "info",
-				"markdown": "---"
-			},
-			{
-				"type": "info",
-				"justify": "center",
-				"markdown": "**=== SATURDAY, June 7 ===**"
-			},			
 			{
 				"id": "attendday5",
 				"label": "Attending Saturday, June 7?",
 				"type": "select",
 				"range": ["Yes","No"],
 				"required": false,
-				"hidden": false
+				"hidden": true
 			},
 			{
 				"id": "day5time",
