@@ -283,19 +283,11 @@
 				]				
 			},
 			{
-				"type": "info",
-				"markdown": "---"
-			},
-			{
-				"type": "info",
-				"justify": "center",
-				"markdown": "**=== SATURDAY, June 14 ===**"
-			},					
-			{
 				"id": "attendday6",
 				"label": "Attending Saturday, June 14?",
 				"type": "select",
 				"range": ["Yes","No"],
+				"hidden": true,
 				"required": false
 			},
 			{
