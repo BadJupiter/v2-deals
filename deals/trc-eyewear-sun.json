@@ -42,7 +42,7 @@
 				"id": "time",
 				"label": "What time would you like to attend?",
 				"type": "select",
-				"range": ["2pm","3pm","4pm","5pm"],
+				"range": ["3pm","5pm"],
 				"required": true,
 				"conditional": [
 					{
