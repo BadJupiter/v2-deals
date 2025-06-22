@@ -411,22 +411,13 @@
 						"value": "8pm"
 					}
 				]				
-			},
-			{
-				"type": "info",
-				"markdown": "---"
-			},
-			
-				{
-				"type": "info",
-				"justify": "center",
-				"markdown": "**=== SATURDAY, June 21 ===**"
-			},			
+			},		
 			{
 				"id": "attendday7",
 				"label": "Attending Saturday, June 21?",
 				"type": "select",
 				"range": ["Yes","No"],
+				"hidden": true
 				"required": false
 			},
 			{
