@@ -417,7 +417,7 @@
 				"label": "Attending Saturday, June 21?",
 				"type": "select",
 				"range": ["Yes","No"],
-				"hidden": true
+				"hidden": true,
 				"required": false
 			},
 			{
