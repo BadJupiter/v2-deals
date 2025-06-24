@@ -1,0 +1,730 @@
+{
+	"biz_id": "colusacasino",
+	"check_in": true,
+	"auth_required": true,
+	"error_auth": {
+		"title": "Woops!",
+		"content": "Can't play if you ain't authenticated!"
+	},
+
+	"FORM": {
+		"fields": [
+			{
+				"type": "info",
+				"markdown": "# Friday/Saturday Night Dinners - RSVP"
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "info",
+				"justify": "center",
+				"markdown": "## Host & Ambassador Instructions: \n\nRespond for as few or as many weeks as you like. \n\nUpdate throughout the month as needed."
+			},
+			{
+				"id": "attendday4",
+				"label": "Attending Friday, May 30?",
+				"type": "select",
+				"range": ["Yes","No"],
+				"hidden": true,
+				"required": false
+			},
+			{
+				"id": "day4time",
+				"label": "Time:",
+				"type": "select",
+				"range": ["5pm","6pm","7pm","8pm"],
+				"required": false,
+				"conditional": {
+					"field": "attendday4",
+					"value": "Yes"
+				}
+			},
+			{
+				"id": "day4time1count",
+				"label": "How many in the party?",
+				"type": "select",
+				"limit": 150,
+				"range": [
+					{
+						"value": "I'll be attending solo",
+						"count": 1
+					},
+					{
+						"value": "I'm attending plus a guest",
+						"count": 2
+					}
+				],
+				"required": false,
+				"conditional": [
+					{
+						"field": "attendday4",
+						"value": "Yes"
+					},
+					{
+						"field": "day4time",
+						"value": "5pm"
+					}
+				]				
+
+			},
+			{
+				"id": "day4time2count",
+				"label": "How many in the party?",
+				"type": "select",
+				"limit": 150,
+				"range": [
+					{
+						"value": "I'll be attending solo",
+						"count": 1
+					},
+					{
+						"value": "I'm attending plus a guest",
+						"count": 2
+					}
+				],
+				"required": false,
+				"conditional": [
+					{
+						"field": "attendday4",
+						"value": "Yes"
+					},
+					{
+						"field": "day4time",
+						"value": "6pm"
+					}
+				]				
+
+			},
+			{
+				"id": "day4time3count",
+				"label": "How many in the party?",
+				"type": "select",
+				"limit": 150,
+				"range": [
+					{
+						"value": "I'll be attending solo",
+						"count": 1
+					},
+					{
+						"value": "I'm attending plus a guest",
+						"count": 2
+					}
+				],
+				"required": false,
+				"conditional": [
+					{
+						"field": "attendday4",
+						"value": "Yes"
+					},
+					{
+						"field": "day4time",
+						"value": "7pm"
+					}
+				]				
+
+			},
+			{
+				"id": "day4time4count",
+				"label": "How many in the party?",
+				"type": "select",
+				"limit": 150,
+				"range": [
+					{
+						"value": "I'll be attending solo",
+						"count": 1
+					},
+					{
+						"value": "I'm attending plus a guest",
+						"count": 2
+					}
+				],
+				"required": false,
+				"conditional": [
+					{
+						"field": "attendday4",
+						"value": "Yes"
+					},
+					{
+						"field": "day4time",
+						"value": "8pm"
+					}
+				]				
+			},		
+			{
+				"id": "attendday5",
+				"label": "Attending Saturday, June 7?",
+				"type": "select",
+				"range": ["Yes","No"],
+				"required": false,
+				"hidden": true
+			},
+			{
+				"id": "day5time",
+				"label": "Time:",
+				"type": "select",
+				"range": ["5pm","6pm","7pm","8pm"],
+				"required": false,
+				"conditional": {
+					"field": "attendday5",
+					"value": "Yes"
+				}
+			},
+			{
+				"id": "day5time1count",
+				"label": "How many in the party?",
+				"type": "select",
+				"limit": 150,
+				"range": [
+					{
+						"value": "I'll be attending solo",
+						"count": 1
+					},
+					{
+						"value": "I'm attending plus a guest",
+						"count": 2
+					}
+				],
+				"required": false,
+				"conditional": [
+					{
+						"field": "attendday5",
+						"value": "Yes"
+					},
+					{
+						"field": "day5time",
+						"value": "5pm"
+					}
+				]				
+
+			},
+			{
+				"id": "day5time2count",
+				"label": "How many in the party?",
+				"type": "select",
+				"limit": 150,
+				"range": [
+					{
+						"value": "I'll be attending solo",
+						"count": 1
+					},
+					{
+						"value": "I'm attending plus a guest",
+						"count": 2
+					}
+				],
+				"required": false,
+				"conditional": [
+					{
+						"field": "attendday5",
+						"value": "Yes"
+					},
+					{
+						"field": "day5time",
+						"value": "6pm"
+					}
+				]				
+
+			},
+			{
+				"id": "day5time3count",
+				"label": "How many in the party?",
+				"type": "select",
+				"limit": 150,
+				"range": [
+					{
+						"value": "I'll be attending solo",
+						"count": 1
+					},
+					{
+						"value": "I'm attending plus a guest",
+						"count": 2
+					}
+				],
+				"required": false,
+				"conditional": [
+					{
+						"field": "attendday5",
+						"value": "Yes"
+					},
+					{
+						"field": "day5time",
+						"value": "7pm"
+					}
+				]				
+
+			},
+			{
+				"id": "day5time4count",
+				"label": "How many in the party?",
+				"type": "select",
+				"limit": 150,
+				"range": [
+					{
+						"value": "I'll be attending solo",
+						"count": 1
+					},
+					{
+						"value": "I'm attending plus a guest",
+						"count": 2
+					}
+				],
+				"required": false,
+				"conditional": [
+					{
+						"field": "attendday5",
+						"value": "Yes"
+					},
+					{
+						"field": "day5time",
+						"value": "8pm"
+					}
+				]				
+			},
+			{
+				"id": "attendday6",
+				"label": "Attending Saturday, June 14?",
+				"type": "select",
+				"range": ["Yes","No"],
+				"hidden": true,
+				"required": false
+			},
+			{
+				"id": "day6time",
+				"label": "Time:",
+				"type": "select",
+				"range": ["5pm","6pm","7pm","8pm"],
+				"required": false,
+				"conditional": {
+					"field": "attendday6",
+					"value": "Yes"
+				}
+			},
+			{
+				"id": "day6time1count",
+				"label": "How many in the party?",
+				"type": "select",
+				"limit": 150,
+				"range": [
+					{
+						"value": "I'll be attending solo",
+						"count": 1
+					},
+					{
+						"value": "I'm attending plus a guest",
+						"count": 2
+					}
+				],
+				"required": false,
+				"conditional": [
+					{
+						"field": "attendday6",
+						"value": "Yes"
+					},
+					{
+						"field": "day6time",
+						"value": "5pm"
+					}
+				]				
+
+			},
+			{
+				"id": "day6time2count",
+				"label": "How many in the party?",
+				"type": "select",
+				"limit": 150,
+				"range": [
+					{
+						"value": "I'll be attending solo",
+						"count": 1
+					},
+					{
+						"value": "I'm attending plus a guest",
+						"count": 2
+					}
+				],
+				"required": false,
+				"conditional": [
+					{
+						"field": "attendday6",
+						"value": "Yes"
+					},
+					{
+						"field": "day6time",
+						"value": "6pm"
+					}
+				]				
+
+			},
+			{
+				"id": "day6time3count",
+				"label": "How many in the party?",
+				"type": "select",
+				"limit": 150,
+				"range": [
+					{
+						"value": "I'll be attending solo",
+						"count": 1
+					},
+					{
+						"value": "I'm attending plus a guest",
+						"count": 2
+					}
+				],
+				"required": false,
+				"conditional": [
+					{
+						"field": "attendday6",
+						"value": "Yes"
+					},
+					{
+						"field": "day6time",
+						"value": "7pm"
+					}
+				]				
+
+			},
+			{
+				"id": "day6time4count",
+				"label": "How many in the party?",
+				"type": "select",
+				"limit": 150,
+				"range": [
+					{
+						"value": "I'll be attending solo",
+						"count": 1
+					},
+					{
+						"value": "I'm attending plus a guest",
+						"count": 2
+					}
+				],
+				"required": false,
+				"conditional": [
+					{
+						"field": "attendday6",
+						"value": "Yes"
+					},
+					{
+						"field": "day6time",
+						"value": "8pm"
+					}
+				]				
+			},		
+			{
+				"id": "attendday7",
+				"label": "Attending Saturday, June 21?",
+				"type": "select",
+				"range": ["Yes","No"],
+				"hidden": true,
+				"required": false
+			},
+			{
+				"id": "day7time",
+				"label": "Time:",
+				"type": "select",
+				"range": ["5pm","6pm","7pm","8pm"],
+				"required": false,
+				"conditional": {
+					"field": "attendday7",
+					"value": "Yes"
+				}
+			},
+			{
+				"id": "day7time1count",
+				"label": "How many in the party?",
+				"type": "select",
+				"limit": 150,
+				"range": [
+					{
+						"value": "I'll be attending solo",
+						"count": 1
+					},
+					{
+						"value": "I'm attending plus a guest",
+						"count": 2
+					}
+				],
+				"required": false,
+				"conditional": [
+					{
+						"field": "attendday7",
+						"value": "Yes"
+					},
+					{
+						"field": "day7time",
+						"value": "5pm"
+					}
+				]				
+
+			},
+			{
+				"id": "day7time2count",
+				"label": "How many in the party?",
+				"type": "select",
+				"limit": 150,
+				"range": [
+					{
+						"value": "I'll be attending solo",
+						"count": 1
+					},
+					{
+						"value": "I'm attending plus a guest",
+						"count": 2
+					}
+				],
+				"required": false,
+				"conditional": [
+					{
+						"field": "attendday7",
+						"value": "Yes"
+					},
+					{
+						"field": "day7time",
+						"value": "6pm"
+					}
+				]				
+
+			},
+			{
+				"id": "day7time3count",
+				"label": "How many in the party?",
+				"type": "select",
+				"limit": 150,
+				"range": [
+					{
+						"value": "I'll be attending solo",
+						"count": 1
+					},
+					{
+						"value": "I'm attending plus a guest",
+						"count": 2
+					}
+				],
+				"required": false,
+				"conditional": [
+					{
+						"field": "attendday7",
+						"value": "Yes"
+					},
+					{
+						"field": "day7time",
+						"value": "7pm"
+					}
+				]				
+
+			},
+			{
+				"id": "day7time4count",
+				"label": "How many in the party?",
+				"type": "select",
+				"limit": 150,
+				"range": [
+					{
+						"value": "I'll be attending solo",
+						"count": 1
+					},
+					{
+						"value": "I'm attending plus a guest",
+						"count": 2
+					}
+				],
+				"required": false,
+				"conditional": [
+					{
+						"field": "attendday7",
+						"value": "Yes"
+					},
+					{
+						"field": "day7time",
+						"value": "8pm"
+					}
+				]				
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "info",
+				"justify": "center",
+				"markdown": "**=== SATURDAY, June 28 ===**"
+			},					
+			{
+				"id": "attendday8",
+				"label": "Attending Saturday, June 28?",
+				"type": "select",
+				"range": ["Yes","No"],
+				"required": false
+			},
+			{
+				"id": "day8time",
+				"label": "Time:",
+				"type": "select",
+				"range": ["5pm","6pm","7pm","8pm"],
+				"required": false,
+				"conditional": {
+					"field": "attendday8",
+					"value": "Yes"
+				}
+			},
+			{
+				"id": "day8time1count",
+				"label": "How many in the party?",
+				"type": "select",
+				"limit": 150,
+				"range": [
+					{
+						"value": "I'll be attending solo",
+						"count": 1
+					},
+					{
+						"value": "I'm attending plus a guest",
+						"count": 2
+					}
+				],
+				"required": false,
+				"conditional": [
+					{
+						"field": "attendday8",
+						"value": "Yes"
+					},
+					{
+						"field": "day8time",
+						"value": "5pm"
+					}
+				]				
+
+			},
+			{
+				"id": "day8time2count",
+				"label": "How many in the party?",
+				"type": "select",
+				"limit": 150,
+				"range": [
+					{
+						"value": "I'll be attending solo",
+						"count": 1
+					},
+					{
+						"value": "I'm attending plus a guest",
+						"count": 2
+					}
+				],
+				"required": false,
+				"conditional": [
+					{
+						"field": "attendday8",
+						"value": "Yes"
+					},
+					{
+						"field": "day8time",
+						"value": "6pm"
+					}
+				]				
+
+			},
+			{
+				"id": "day8time3count",
+				"label": "How many in the party?",
+				"type": "select",
+				"limit": 150,
+				"range": [
+					{
+						"value": "I'll be attending solo",
+						"count": 1
+					},
+					{
+						"value": "I'm attending plus a guest",
+						"count": 2
+					}
+				],
+				"required": false,
+				"conditional": [
+					{
+						"field": "attendday8",
+						"value": "Yes"
+					},
+					{
+						"field": "day8time",
+						"value": "7pm"
+					}
+				]				
+
+			},
+			{
+				"id": "day8time4count",
+				"label": "How many in the party?",
+				"type": "select",
+				"limit": 150,
+				"range": [
+					{
+						"value": "I'll be attending solo",
+						"count": 1
+					},
+					{
+						"value": "I'm attending plus a guest",
+						"count": 2
+					}
+				],
+				"required": false,
+				"conditional": [
+					{
+						"field": "attendday8",
+						"value": "Yes"
+					},
+					{
+						"field": "day8time",
+						"value": "8pm"
+					}
+				]				
+			},		
+			
+			
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "fields_group",
+				"bgcolor": "#c8f0fc",
+				"fields": [
+					{
+						"id": "z_FIRSTNAME",
+						"label": "First Name:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					},
+					{
+						"id": "z_LASTNAME",
+						"label": "Last Name:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					},
+					{
+						"id": "PlayerID",
+						"label": "Rewards #:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					}
+				]
+			}
+		],
+		"limits": {
+			"most_recent_only": true,
+			"most_recent_key": "PlayerID"
+		},
+		"submit": {
+			"label": "Submit RSVP",
+			"color": "#20363d"
+		
+		}
+	},
+	"MAIN": {
+		"body_md": "# Response received! \n\n"
+	}
+}
