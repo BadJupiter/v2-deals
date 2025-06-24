@@ -43,124 +43,84 @@
 			"attrib": "z_FIRSTNAME"
 		},
 		{
-			"column_name": "Attend 30th",
+			"column_name": "Attend 12th",
+			"attrib": "attendday1"
+		},
+		{
+			"column_name": "12th Time",
+			"attrib": "day1time"
+		},
+		{
+			"column_name": "12th 5pm Count",
+			"attrib": "day1time1count"
+		},
+		{
+			"column_name": "12th 6pm Count",
+			"attrib": "day1time2count"
+		},
+		{
+			"column_name": "12th 7pm Count",
+			"attrib": "day1time3count"
+		},
+		{
+			"column_name": "Attend 19th",
+			"attrib": "attendday2"
+		},
+		{
+			"column_name": "19th Time",
+			"attrib": "day2time"
+		},
+		{
+			"column_name": "19th 5pm Count",
+			"attrib": "day2time1count"
+		},
+		{
+			"column_name": "19th 6pm Count",
+			"attrib": "day2time2count"
+		},
+		{
+			"column_name": "19th 7pm Count",
+			"attrib": "day2time3count"
+		},
+		{
+			"column_name": "Attend 26th",
+			"attrib": "attendday3"
+		},
+		{
+			"column_name": "26th Time",
+			"attrib": "day3time"
+		},
+		{
+			"column_name": "26th 5pm Count",
+			"attrib": "day3time1count"
+		},
+		{
+			"column_name": "26th 6pm Count",
+			"attrib": "day3time2count"
+		},
+		{
+			"column_name": "26th 7pm Count",
+			"attrib": "day3time3count"
+		},
+		{
+			"column_name": "Attend 9th",
 			"attrib": "attendday4"
 		},
 		{
-			"column_name": "30th Time",
+			"column_name": "9th Time",
 			"attrib": "day4time"
 		},
 		{
-			"column_name": "30th 5pm Count",
+			"column_name": "9th 5pm Count",
 			"attrib": "day4time1count"
 		},
 		{
-			"column_name": "30th 6pm Count",
+			"column_name": "9th 6pm Count",
 			"attrib": "day4time2count"
 		},
 		{
-			"column_name": "30th 7pm Count",
+			"column_name": "9th 7pm Count",
 			"attrib": "day4time3count"
-		},
-		{
-			"column_name": "30th 8pm Count",
-			"attrib": "day4time4count"
-		},
-		{
-			"column_name": "Attend 7th",
-			"attrib": "attendday5"
-		},
-		{
-			"column_name": "7th Time",
-			"attrib": "day5time"
-		},
-		{
-			"column_name": "7th 5pm Count",
-			"attrib": "day5time1count"
-		},
-		{
-			"column_name": "7th 6pm Count",
-			"attrib": "day5time2count"
-		},
-		{
-			"column_name": "7th 7pm Count",
-			"attrib": "day5time3count"
-		},
-		{
-			"column_name": "7th 8pm Count",
-			"attrib": "day5time4count"
-		},
-		{
-			"column_name": "Attend 14th",
-			"attrib": "attendday6"
-		},
-		{
-			"column_name": "14th Time",
-			"attrib": "day6time"
-		},
-		{
-			"column_name": "14th 5pm Count",
-			"attrib": "day6time1count"
-		},
-		{
-			"column_name": "14th 6pm Count",
-			"attrib": "day6time2count"
-		},
-		{
-			"column_name": "14th 7pm Count",
-			"attrib": "day6time3count"
-		},
-		{
-			"column_name": "14th 8pm Count",
-			"attrib": "day6time4count"
-		},
-		{
-			"column_name": "Attend 21st",
-			"attrib": "attendday7"
-		},
-		{
-			"column_name": "21st Time",
-			"attrib": "day7time"
-		},
-		{
-			"column_name": "21st 5pm Count",
-			"attrib": "day7time1count"
-		},
-		{
-			"column_name": "21st 6pm Count",
-			"attrib": "day7time2count"
-		},
-		{
-			"column_name": "21st 7pm Count",
-			"attrib": "day7time3count"
-		},
-		{
-			"column_name": "21st 8pm Count",
-			"attrib": "day7time4count"
-		},
-		{
-			"column_name": "Attend 28th",
-			"attrib": "attendday8"
-		},
-		{
-			"column_name": "28th Time",
-			"attrib": "day8time"
-		},
-		{
-			"column_name": "28th 5pm Count",
-			"attrib": "day8time1count"
-		},
-		{
-			"column_name": "28th 6pm Count",
-			"attrib": "day8time2count"
-		},
-		{
-			"column_name": "28th 7pm Count",
-			"attrib": "day8time3count"
-		},
-		{
-			"column_name": "28th 8pm Count",
-			"attrib": "day8time4count"
 		}
 	]
 }
