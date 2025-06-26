@@ -1,0 +1,9 @@
+{
+	"biz_id": "roserock",
+	"auth_required": false,
+	
+	"MAIN": {
+#		"title": "Rose Rock Development",
+		"body_md": "#Emily!"
+	}
+}
