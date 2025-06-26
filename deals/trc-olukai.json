@@ -12,11 +12,13 @@
 		"fields": [
 			{
 				"id": "Hotel",
+				"label": "Hotel",
 				"type": "text",
 				"hidden": false
 			},
 			{
 				"id": "MILES",
+				"label": "Miles",
 				"type": "text",
 				"hidden": false
 			},
