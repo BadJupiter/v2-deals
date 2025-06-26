@@ -11,6 +11,11 @@
 		"title": "Three Rivers Casino Resort",
 		"fields": [
 			{
+				"id": "Hotel",
+				"type": "text",
+				"hidden": true
+			},
+			{
 				"type": "info",
 				"markdown": "# OluKai Boutique"
 			},
