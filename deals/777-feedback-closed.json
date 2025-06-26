@@ -27,13 +27,12 @@
 		"fields": [
 			{
 				"type": "info",
-				"justify": "center",
-				"markdown": "# Casino QR: Guest feedback, reimagined"
+				"markdown": "# Your Voice Matters"
 			},
 			{
 				"type": "info",
 				"justify": "center",
-				"markdown": "## This digital comment card is just a glimpse of what we can do.  \n\n[Contact Michael Grim](mailto:Michael%20Grim<mgrim@playerperformancegroup.com>?subject=Casino%20QR%20Inquiry) to explore options for your casino or hospitality property."
+				"markdown": "Thank you for visiting 777 Casino & Hotel! Please let us know how we did on your visit."
 			},
 			{
 				"type": "info",
@@ -104,22 +103,16 @@
 				"bgcolor": "#dfe1fa",
 				"fields": [
 					{
-						"id": "firstname",
-						"label": "First Name:",
+						"id": "name",
+						"label": "Name:",
 						"type": "text",
-						"required": true
-					},
-					{
-						"id": "lastname",
-						"label": "Last Name:",
-						"type": "text",
-						"required": true
+						"required": false
 					},
 					{
 						"id": "email",
 						"label": "Email:",
 						"type": "email",
-						"required": true
+						"required": false
 					}
 				]
 			}

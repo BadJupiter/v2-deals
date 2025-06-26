@@ -12,11 +12,11 @@
 		"fields": [
 			{
 				"type": "info",
-				"markdown": "# Eyewear Boutique"
+				"markdown": "# OluKai Boutique"
 			},
 			{
 				"type": "info",
-				"markdown": "## **June 29th, 2025**"	
+				"markdown": "## **July 25th & 26th**"	
 			},
 			{
 				"type": "info",
@@ -29,25 +29,74 @@
 			{
 				"type": "info",
 				"justify": "center",
-				"markdown": " \n\nIt’s our pleasure to offer our valued Three Rivers guests an invitation to our exclusive **Eyewear Boutique**."
+				"markdown": " \n\nIt’s our pleasure to offer our valued Three Rivers guests a footwear gift inspired by the Hawaiian Islands from **OluKai**."
 			},
 			{
 				"id": "attend",
-				"label": "Will you attend the Eyewear Boutique?",
+				"label": "Will you attend the OluKai Boutique?",
 				"type": "select",
 				"range": ["Yes","No"],
 				"required": true
 			},
 			{
-				"id": "time",
+				"id": "day",
+				"label": "Which day would you like to attend?",
+				"type": "select",
+				"range": ["Friday, July 25th","Saturday, July 26th"],
+				"required": true,
+				"conditional": {
+					"field": "attend",
+					"value": "Yes"
+				}
+			},
+			{
+				"id": "day1time",
 				"label": "What time would you like to attend?",
 				"type": "select",
-				"range": ["5pm"],
+				"range": ["4pm","5pm","6pm","7pm"],
 				"required": true,
 				"conditional": [
 					{
 						"field": "attend",
 						"value": "Yes"
+					},
+					{
+						"field": "day",
+						"value": "Friday, July 25th"
+					}
+				]
+			},
+			{
+				"id": "day2time",
+				"label": "What time would you like to attend?",
+				"type": "select",
+				"range": ["Noon","1pm","2pm","3pm"],
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+					"field": "day",
+					"value": "Saturday, July 26th"
+					}
+				]	
+			},
+			{
+				"id": "room",
+				"label": "Would you like to be contacted about a room reservation?",
+				"type": "select",
+				"range": ["Yes","No"],
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "Hotel",
+						"value": "Y"
 					}
 				]
 			},
@@ -57,7 +106,7 @@
 			},
 			{
 				"type": "fields_group",
-				"bgcolor": "#FCD670",
+				"bgcolor": "#D8EDE1",
 				"fields": [
 					{
 						"id": "z_FIRSTNAME",
@@ -85,7 +134,7 @@
 		],
 		"submit": {
 			"label": "Submit RSVP",
-			"color": "#20363d"
+			"color": "#D8EDE1"
 		
 		}
 	},
