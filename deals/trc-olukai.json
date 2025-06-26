@@ -13,7 +13,7 @@
 			{
 				"id": "Hotel",
 				"type": "text",
-				"hidden": true
+				"hidden": false
 			},
 			{
 				"type": "info",
