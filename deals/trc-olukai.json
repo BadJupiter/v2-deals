@@ -16,6 +16,11 @@
 				"hidden": false
 			},
 			{
+				"id": "MILES",
+				"type": "text",
+				"hidden": false
+			},
+			{
 				"type": "info",
 				"markdown": "# OluKai Boutique"
 			},
