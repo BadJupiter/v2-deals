@@ -15,14 +15,14 @@
 				"label": "Hotel",
 				"type": "text",
 				"sticky": true,
-				"hidden": false
+				"hidden": true
 			},
 			{
 				"id": "MILES",
 				"label": "Miles",
 				"type": "text",
 				"sticky": true,
-				"hidden": false
+				"hidden": true
 			},
 			{
 				"type": "info",
