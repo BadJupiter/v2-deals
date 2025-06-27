@@ -67,7 +67,7 @@
 				"id": "day1time",
 				"label": "What time would you like to attend?",
 				"type": "select",
-				"limit": 3,
+				"limit": 2,
 				"nomore_text": "Friday, July 25th - Sold out",
 				"range": [
 					{
