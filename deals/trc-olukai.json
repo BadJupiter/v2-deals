@@ -112,17 +112,17 @@
 					{
 						"value": "Noon",
 						"count": 1,
-						"limit": 0
+						"limit": 45
 					},
 					{
 						"value": "1pm",
 						"count": 1,
-						"limit": 1
+						"limit": 45
 					},
 					{
 						"value": "2pm",
 						"count": 1,
-						"limit": 2
+						"limit": 45
 					},
 					{
 						"value": "3pm",
