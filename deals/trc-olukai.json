@@ -71,22 +71,22 @@
 				"range": [
 					{
 						"value": "4pm",
-						"count": 1
+						"count": 1,
 						"limit": 0
 					},
 					{
 						"value": "5pm",
-						"count": 1
+						"count": 1,
 						"limit": 1
 					},
 					{
 						"value": "6pm",
-						"count": 1
+						"count": 1,
 						"limit": 2
 					},
 					{
 						"value": "7pm",
-						"count": 1
+						"count": 1,
 						"limit": 45
 					}
 				],	
@@ -110,22 +110,22 @@
 				"range": [
 					{
 						"value": "Noon",
-						"count": 1
+						"count": 1,
 						"limit": 0
 					},
 					{
 						"value": "1pm",
-						"count": 1
+						"count": 1,
 						"limit": 1
 					},
 					{
 						"value": "2pm",
-						"count": 1
+						"count": 1,
 						"limit": 2
 					},
 					{
 						"value": "3pm",
-						"count": 1
+						"count": 1,
 						"limit": 45
 					}
 				],	
