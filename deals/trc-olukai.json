@@ -14,12 +14,14 @@
 				"id": "Hotel",
 				"label": "Hotel",
 				"type": "text",
+				"sticky": true,
 				"hidden": false
 			},
 			{
 				"id": "MILES",
 				"label": "Miles",
 				"type": "text",
+				"sticky": true,
 				"hidden": false
 			},
 			{
