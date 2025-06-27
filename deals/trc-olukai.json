@@ -87,7 +87,7 @@
 					{
 						"value": "7pm",
 						"count": 1,
-						"limit": 45
+						"limit": 0
 					}
 				],	
 				"required": true,
