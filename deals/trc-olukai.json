@@ -67,28 +67,28 @@
 				"id": "day1time",
 				"label": "What time would you like to attend?",
 				"type": "select",
-				"limit": 2,
+				"limit": 180,
 				"nomore_text": "Friday, July 25th - Sold out",
 				"range": [
 					{
 						"value": "4pm",
 						"count": 1,
-						"limit": 0
+						"limit": 45
 					},
 					{
 						"value": "5pm",
 						"count": 1,
-						"limit": 1
+						"limit": 45
 					},
 					{
 						"value": "6pm",
 						"count": 1,
-						"limit": 1
+						"limit": 45
 					},
 					{
 						"value": "7pm",
 						"count": 1,
-						"limit": 0
+						"limit": 45
 					}
 				],	
 				"required": true,
