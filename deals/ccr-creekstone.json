@@ -260,7 +260,7 @@
 				"id": "personalization",
 				"label": "Please enter your personalization:",
 				"type": "text",
-				"required": false
+				"required": false,
 				"conditional": [
 				   {
 					   "field": "gift",
