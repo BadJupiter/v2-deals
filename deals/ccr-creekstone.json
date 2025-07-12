@@ -236,7 +236,7 @@
 			},
 			{
 				"id": "time1meal2",
-				"label": "What would you like for dinner?",
+				"label": "What would your guest like?",
 				"type": "select",
 				"range": ["Prime Creekstone Filet","Prime Creekstone Ribeye","Chilean Seabass"],
 				"required": true,
@@ -258,7 +258,7 @@
 			},
 			{
 				"id": "time2meal2",
-				"label": "What would you like for dinner?",
+				"label": "What would your guest like?",
 				"type": "select",
 				"range": ["Prime Creekstone Filet","Prime Creekstone Ribeye","Chilean Seabass"],
 				"required": true,
@@ -266,7 +266,8 @@
 					"field": "time2count",
 					"value": "Myself plus a Guest"
 				}
-			},{
+			},
+			{
 				"id": "time3meal1",
 				"label": "What would you like for dinner?",
 				"type": "select",
@@ -279,7 +280,7 @@
 			},
 			{
 				"id": "time3meal2",
-				"label": "What would you like for dinner?",
+				"label": "What would your guest like?",
 				"type": "select",
 				"range": ["Prime Creekstone Filet","Prime Creekstone Ribeye","Chilean Seabass"],
 				"required": true,
