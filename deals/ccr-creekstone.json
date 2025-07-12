@@ -26,78 +26,87 @@
 				"justify": "center",
 				"markdown": " \n\nYou are invited to the Creekstone Dinner at Colusa Casino Resort!"
 			},
-						{
+			{
 				"id": "attend",
-				"label": "Are you able to attend?",
+				"label": "Will you be attending the dinner?",
 				"type": "select",
 				"range": ["Yes","No"],
 				"required": true
 			},
 			{
-				"id": "time",
-				"label": "I am confirming for:",
+				"id": "day",
+				"label": "Which date will you be attending?",
 				"type": "select",
-				"range": ["10am","11am","Noon","1pm"],
+				"range": ["Friday, August 29th","Saturday, August 30th"],
 				"required": true,
 				"conditional": {
 					"field": "attend",
 					"value": "Yes"
 				}
 			},
-			
+			{
+				"id": "time",
+				"label": "Preferred dinner time:",
+				"type": "select",
+				"range": ["5:00 PM","6:30 PM","8:00 PM"],
+				"required": true,
+				"conditional": {
+					"field": "attend",
+					"value": "Yes"
+				}
+			},
 			{
 				"id": "time1count",
 				"label": "How many in your party?",
 				"type": "select",
-				"limit": 102,
+				"limit": 100,
 				"range": [
 					{
-						"value": "I'm attending solo",
+						"value": "Myself",
 						"count": 1
 					},
 					{
-						"value": "I'm attending plus a Guest",
+						"value": "Myself plus a Guest",
 						"count": 2
 					}
 				],
 				"required": true,
 				"conditional": [
 					{
-						"field": "attend",
-						"value": "Yes"
+						"field": "day",
+						"value": "Friday, August 29th"
 					},
 					{
 						"field": "time",
-						"value": "10am"
+						"value": "5:00 PM"
 					}
 				]				
 
 			},
-			
 			{
 				"id": "time2count",
 				"label": "How many in your party?",
 				"type": "select",
-				"limit": 104,
+				"limit": 100,
 				"range": [
 					{
-						"value": "I'm attending solo",
+						"value": "Myself",
 						"count": 1
 					},
 					{
-						"value": "I'm attending plus a Guest",
+						"value": "Myself plus a Guest",
 						"count": 2
 					}
 				],
 				"required": true,
 				"conditional": [
 					{
-						"field": "attend",
-						"value": "Yes"
+						"field": "day",
+						"value": "Friday, August 29th"
 					},
 					{
 						"field": "time",
-						"value": "11am"
+						"value": "6:30 PM"
 					}
 				]				
 
@@ -106,61 +115,153 @@
 				"id": "time3count",
 				"label": "How many in your party?",
 				"type": "select",
-				"limit": 102,
+				"limit": 100,
 				"range": [
 					{
-						"value": "I'm attending solo",
+						"value": "Myself",
 						"count": 1
 					},
 					{
-						"value": "I'm attending plus a Guest",
+						"value": "Myself plus a Guest",
 						"count": 2
 					}
 				],
 				"required": true,
 				"conditional": [
 					{
-						"field": "attend",
-						"value": "Yes"
+						"field": "day",
+						"value": "Friday, August 29th"
 					},
 					{
 						"field": "time",
-						"value": "Noon"
+						"value": "8:00 PM"
 					}
 				]				
 
-			},			{
+			},			
+			{
 				"id": "time4count",
 				"label": "How many in your party?",
 				"type": "select",
-				"limit": 106,
+				"limit": 100,
 				"range": [
 					{
-						"value": "I'm attending solo",
+						"value": "Myself",
 						"count": 1
 					},
 					{
-						"value": "I'm attending plus a Guest",
+						"value": "Myself plus a Guest",
 						"count": 2
 					}
 				],
 				"required": true,
 				"conditional": [
 					{
-						"field": "attend",
-						"value": "Yes"
+						"field": "day",
+						"value": "Saturday, August 30th"
 					},
 					{
 						"field": "time",
-						"value": "1pm"
+						"value": "5:00 PM"
 					}
 				]				
 
 			},
-			
-			
-			
-			
+			{
+				"id": "time5count",
+				"label": "How many in your party?",
+				"type": "select",
+				"limit": 100,
+				"range": [
+					{
+						"value": "Myself",
+						"count": 1
+					},
+					{
+						"value": "Myself plus a Guest",
+						"count": 2
+					}
+				],
+				"required": true,
+				"conditional": [
+					{
+						"field": "day",
+						"value": "Saturday, August 30th"
+					},
+					{
+						"field": "time",
+						"value": "6:30 PM"
+					}
+				]				
+
+			},
+			{
+				"id": "time6count",
+				"label": "How many in your party?",
+				"type": "select",
+				"limit": 100,
+				"range": [
+					{
+						"value": "Myself",
+						"count": 1
+					},
+					{
+						"value": "Myself plus a Guest",
+						"count": 2
+					}
+				],
+				"required": true,
+				"conditional": [
+					{
+						"field": "day",
+						"value": "Saturday, August 30th"
+					},
+					{
+						"field": "time",
+						"value": "8:00 PM"
+					}
+				]				
+
+			},
+			{
+				"id": "meal1",
+				"label": "What would you like for dinner?",
+				"type": "select",
+				"range": ["Prime Creekstone Filet","Prime Creekstone Ribeye","Chilean Seabass"],
+				"required": true,
+				"conditional": {
+					"field": "attend",
+					"value": "Yes"
+				}
+			},
+			{
+				"id": "meal2",
+				"label": "What would your guest like?",
+				"type": "select",
+				"range": ["Prime Creekstone Filet","Prime Creekstone Ribeye","Chilean Seabass"],
+				"required": true,
+				"conditional": {
+					"field": "attend",
+					"value": "Yes"
+				}
+			},
+			{
+				"id": "gift",
+				"label": "Choose your persopnalized gift?",
+				"type": "select",
+				"range": ["Petite Carver","Santoku Trimmer"],
+				"required": true,
+				"conditional": {
+					"field": "attend",
+					"value": "Yes"
+				}
+			},
+			{
+				"id": "personalization",
+				"label": "Please enter your personalization:",
+				"type": "text",
+				"required": false
+			},
 			{
 				"type": "info",
 				"markdown": "---"
