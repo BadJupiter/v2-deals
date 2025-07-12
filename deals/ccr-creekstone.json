@@ -261,6 +261,12 @@
 				"label": "Please enter your personalization:",
 				"type": "text",
 				"required": false
+				"conditional": [
+				   {
+					   "field": "gift",
+					   "values": ["Petite Carver","Santoku Trimmer"] # match one of
+				   }
+			   ]
 			},
 			{
 				"type": "info",
