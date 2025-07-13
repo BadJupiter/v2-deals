@@ -73,6 +73,10 @@
 				"required": true,
 				"conditional": [
 					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
 						"field": "day",
 						"value": "Friday, August 29th"
 					},
@@ -100,6 +104,10 @@
 				],
 				"required": true,
 				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
 					{
 						"field": "day",
 						"value": "Friday, August 29th"
@@ -129,6 +137,10 @@
 				"required": true,
 				"conditional": [
 					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
 						"field": "day",
 						"value": "Friday, August 29th"
 					},
@@ -156,6 +168,10 @@
 				],
 				"required": true,
 				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
 					{
 						"field": "day",
 						"value": "Saturday, August 30th"
@@ -185,6 +201,10 @@
 				"required": true,
 				"conditional": [
 					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
 						"field": "day",
 						"value": "Saturday, August 30th"
 					},
@@ -212,7 +232,11 @@
 				],
 				"required": true,
 				"conditional": [
+					
 					{
+						"field": "attend",
+						"value": "Yes"
+					},{
 						"field": "day",
 						"value": "Saturday, August 30th"
 					},
