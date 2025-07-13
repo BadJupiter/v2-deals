@@ -377,7 +377,7 @@
 				"required": true,
 				"conditional": {
 					"field": "attend",
-					"value": "Yes"
+					"value": "No"
 				}
 			},
 			{
