@@ -465,7 +465,7 @@
 				"conditional": [
 				   {
 					   "field": "gift",
-					   "values": ["Petite Carver","Santoku Trimmer"] # match one of
+					   "values": ["Petite Carver","Santoku Trimmer"]
 				   }
 			   ]
 			},
