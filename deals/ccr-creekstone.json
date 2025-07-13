@@ -451,11 +451,7 @@
 				"label": "Choose your personalized gift?",
 				"type": "select",
 				"range": ["Petite Carver","Santoku Trimmer"],
-				"required": true,
-				"conditional": {
-					"field": "attend",
-					"value": "No"
-				}
+				"required": true
 			},
 			{
 				"id": "personalization",
