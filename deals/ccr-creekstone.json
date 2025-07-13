@@ -333,7 +333,7 @@
 				"type": "select",
 				"range": ["Prime Creekstone Filet","Prime Creekstone Ribeye","Chilean Seabass"],
 				"required": true,
-				[
+				"conditional": [
 					{
 						"field": "attend",
 						"value": "Yes"
