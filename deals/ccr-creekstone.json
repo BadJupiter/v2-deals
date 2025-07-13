@@ -85,7 +85,6 @@
 						"value": "5:00 PM"
 					}
 				]				
-
 			},
 			{
 				"id": "time2count",
@@ -149,7 +148,6 @@
 						"value": "8:00 PM"
 					}
 				]				
-
 			},			
 			{
 				"id": "time4count",
@@ -181,7 +179,6 @@
 						"value": "5:00 PM"
 					}
 				]				
-
 			},
 			{
 				"id": "time5count",
@@ -213,7 +210,6 @@
 						"value": "6:30 PM"
 					}
 				]				
-
 			},
 			{
 				"id": "time6count",
@@ -245,7 +241,6 @@
 						"value": "8:00 PM"
 					}
 				]				
-
 			},
 			{
 				"id": "time1meal1",
@@ -254,13 +249,15 @@
 				"range": ["Prime Creekstone Filet","Prime Creekstone Ribeye","Chilean Seabass"],
 				"required": true,
 				"conditional": [
-				   {
-					   "field": "time1count",
-					   "values": ["Myself","Myself plus a Guest"] # match one of
-				   }
-			  	]
-					
-			
+				  	{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+					  	"field": "time1count",
+					  	"values": ["Myself","Myself plus a Guest"]
+				  	 }
+				]		
 			},
 			{
 				"id": "time1meal2",
@@ -268,10 +265,16 @@
 				"type": "select",
 				"range": ["Prime Creekstone Filet","Prime Creekstone Ribeye","Chilean Seabass"],
 				"required": true,
-				"conditional": {
-					"field": "time1count",
-					"value": "Myself plus a Guest"
-				}
+				"conditional": [
+				  	{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+					   	"field": "time1count",
+					  	"values": ["Myself plus a Guest"]
+				  	}
+				]		
 			},
 			{
 				"id": "time2meal1",
@@ -280,10 +283,14 @@
 				"range": ["Prime Creekstone Filet","Prime Creekstone Ribeye","Chilean Seabass"],
 				"required": true,
 				"conditional": [
-				   {
-					   "field": "time2count",
-					   "values": ["Myself","Myself plus a Guest"] # match one of
-				   }
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "time2count",
+						"values": ["Myself","Myself plus a Guest"]
+				   	}
 			  	]
 			},
 			{
@@ -292,10 +299,16 @@
 				"type": "select",
 				"range": ["Prime Creekstone Filet","Prime Creekstone Ribeye","Chilean Seabass"],
 				"required": true,
-				"conditional": {
-					"field": "time2count",
-					"value": "Myself plus a Guest"
-				}
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "time2count",
+						"values": ["Myself plus a Guest"]
+				   	}
+			  	]
 			},
 			{
 				"id": "time3meal1",
@@ -304,10 +317,14 @@
 				"range": ["Prime Creekstone Filet","Prime Creekstone Ribeye","Chilean Seabass"],
 				"required": true,
 				"conditional": [
-				   {
-					   "field": "time3count",
-					   "values": ["Myself","Myself plus a Guest"] # match one of
-				   }
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "time3count",
+						"values": ["Myself","Myself plus a Guest"] # match one of
+				   	}
 			  	]
 			},
 			{
@@ -316,10 +333,16 @@
 				"type": "select",
 				"range": ["Prime Creekstone Filet","Prime Creekstone Ribeye","Chilean Seabass"],
 				"required": true,
-				"conditional": {
-					"field": "time3count",
-					"value": "Myself plus a Guest"
-				}
+				[
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "time3count",
+						"values": ["Myself plus a Guest"] # match one of
+				   	}
+			  	]
 			},
 			{
 				"id": "time4meal1",
@@ -328,10 +351,14 @@
 				"range": ["Prime Creekstone Filet","Prime Creekstone Ribeye","Chilean Seabass"],
 				"required": true,
 				"conditional": [
-				   {
-					   "field": "time4count",
-					   "values": ["Myself","Myself plus a Guest"] # match one of
-				   }
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "time4count",
+						"values": ["Myself","Myself plus a Guest"]
+				   	}
 			  	]
 			},
 			{
@@ -340,10 +367,16 @@
 				"type": "select",
 				"range": ["Prime Creekstone Filet","Prime Creekstone Ribeye","Chilean Seabass"],
 				"required": true,
-				"conditional": {
-					"field": "time4count",
-					"value": "Myself plus a Guest"
-				}
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "time4count",
+						"values": ["Myself plus a Guest"]
+				   	}
+			  	]
 			},
 			{
 				"id": "time5meal1",
@@ -352,10 +385,14 @@
 				"range": ["Prime Creekstone Filet","Prime Creekstone Ribeye","Chilean Seabass"],
 				"required": true,
 				"conditional": [
-				   {
-					   "field": "time5count",
-					   "values": ["Myself","Myself plus a Guest"] # match one of
-				   }
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "time5count",
+						"values": ["Myself","Myself plus a Guest"]
+				   	}
 			  	]
 			},
 			{
@@ -364,10 +401,16 @@
 				"type": "select",
 				"range": ["Prime Creekstone Filet","Prime Creekstone Ribeye","Chilean Seabass"],
 				"required": true,
-				"conditional": {
-					"field": "time5count",
-					"value": "Myself plus a Guest"
-				}
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "time5count",
+						"values": ["Myself plus a Guest"]
+				   	}
+			  	]
 			},
 			{
 				"id": "time6meal1",
@@ -376,10 +419,14 @@
 				"range": ["Prime Creekstone Filet","Prime Creekstone Ribeye","Chilean Seabass"],
 				"required": true,
 				"conditional": [
-				   {
-					   "field": "time6count",
-					   "values": ["Myself","Myself plus a Guest"] # match one of
-				   }
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "time6count",
+						"values": ["Myself","Myself plus a Guest"]
+				   	}
 			  	]
 			},
 			{
@@ -388,10 +435,16 @@
 				"type": "select",
 				"range": ["Prime Creekstone Filet","Prime Creekstone Ribeye","Chilean Seabass"],
 				"required": true,
-				"conditional": {
-					"field": "time6count",
-					"value": "Myself plus a Guest"
-				}
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "time6count",
+						"values": ["Myself plus a Guest"]
+				   	}
+			  	]
 			},
 			{
 				"id": "gift",
