@@ -229,10 +229,14 @@
 				"type": "select",
 				"range": ["Prime Creekstone Filet","Prime Creekstone Ribeye","Chilean Seabass"],
 				"required": true,
-				"conditional": {
-					"field": "time1count",
-					"value": "Myself"
-				}
+				"conditional": [
+				   {
+					   "field": "time1count",
+					   "values": ["Myself","Myself plus a Guest"] # match one of
+				   }
+			  	]
+					
+			
 			},
 			{
 				"id": "time1meal2",
@@ -251,10 +255,12 @@
 				"type": "select",
 				"range": ["Prime Creekstone Filet","Prime Creekstone Ribeye","Chilean Seabass"],
 				"required": true,
-				"conditional": {
-					"field": "time2count",
-					"value": "Myself"
-				}
+				"conditional": [
+				   {
+					   "field": "time2count",
+					   "values": ["Myself","Myself plus a Guest"] # match one of
+				   }
+			  	]
 			},
 			{
 				"id": "time2meal2",
@@ -273,10 +279,12 @@
 				"type": "select",
 				"range": ["Prime Creekstone Filet","Prime Creekstone Ribeye","Chilean Seabass"],
 				"required": true,
-				"conditional": {
-					"field": "time3count",
-					"value": "Myself"
-				}
+				"conditional": [
+				   {
+					   "field": "time3count",
+					   "values": ["Myself","Myself plus a Guest"] # match one of
+				   }
+			  	]
 			},
 			{
 				"id": "time3meal2",
@@ -288,16 +296,19 @@
 					"field": "time3count",
 					"value": "Myself plus a Guest"
 				}
-			},{
+			},
+			{
 				"id": "time4meal1",
 				"label": "What would you like for dinner?",
 				"type": "select",
 				"range": ["Prime Creekstone Filet","Prime Creekstone Ribeye","Chilean Seabass"],
 				"required": true,
-				"conditional": {
-					"field": "time4count",
-					"value": "Myself"
-				}
+				"conditional": [
+				   {
+					   "field": "time4count",
+					   "values": ["Myself","Myself plus a Guest"] # match one of
+				   }
+			  	]
 			},
 			{
 				"id": "time4meal2",
@@ -309,16 +320,19 @@
 					"field": "time4count",
 					"value": "Myself plus a Guest"
 				}
-			},{
+			},
+			{
 				"id": "time5meal1",
 				"label": "What would you like for dinner?",
 				"type": "select",
 				"range": ["Prime Creekstone Filet","Prime Creekstone Ribeye","Chilean Seabass"],
 				"required": true,
-				"conditional": {
-					"field": "time5count",
-					"value": "Myself"
-				}
+				"conditional": [
+				   {
+					   "field": "time5count",
+					   "values": ["Myself","Myself plus a Guest"] # match one of
+				   }
+			  	]
 			},
 			{
 				"id": "time5meal2",
@@ -330,16 +344,19 @@
 					"field": "time5count",
 					"value": "Myself plus a Guest"
 				}
-			},{
+			},
+			{
 				"id": "time6meal1",
 				"label": "What would you like for dinner?",
 				"type": "select",
 				"range": ["Prime Creekstone Filet","Prime Creekstone Ribeye","Chilean Seabass"],
 				"required": true,
-				"conditional": {
-					"field": "time6count",
-					"value": "Myself"
-				}
+				"conditional": [
+				   {
+					   "field": "time6count",
+					   "values": ["Myself","Myself plus a Guest"] # match one of
+				   }
+			  	]
 			},
 			{
 				"id": "time6meal2",
