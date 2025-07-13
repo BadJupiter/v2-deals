@@ -323,7 +323,7 @@
 					},
 					{
 						"field": "time3count",
-						"values": ["Myself","Myself plus a Guest"] # match one of
+						"values": ["Myself","Myself plus a Guest"]
 				   	}
 			  	]
 			},
@@ -340,7 +340,7 @@
 					},
 					{
 						"field": "time3count",
-						"values": ["Myself plus a Guest"] # match one of
+						"values": ["Myself plus a Guest"]
 				   	}
 			  	]
 			},
