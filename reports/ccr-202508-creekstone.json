@@ -1,6 +1,6 @@
 {
 	"biz_id": "colusacasino",
-	"deal_tokens": [ "ccr-julydinners" ],
+	"deal_tokens": [ "ccr-creekstone" ],
 	"most_recent_only": false, # omit or set to false for all rows
 	"most_recent_key": "Player ID", # needs to be the column_name
 	
@@ -43,84 +43,97 @@
 			"attrib": "z_FIRSTNAME"
 		},
 		{
-			"column_name": "Attend 12th",
-			"attrib": "attendday1"
+			"column_name": "Attend",
+			"attrib": "attend"
 		},
 		{
-			"column_name": "12th Time",
-			"attrib": "day1time"
+			"column_name": "Day",
+			"attrib": "day"
 		},
 		{
-			"column_name": "12th 5pm Count",
-			"attrib": "day1time1count"
+			"column_name": "Time",
+			"attrib": "time"
 		},
 		{
-			"column_name": "12th 6pm Count",
-			"attrib": "day1time2count"
+			"column_name": "29th 5:00pm Count",
+			"attrib": "time1count"
 		},
 		{
-			"column_name": "12th 7pm Count",
-			"attrib": "day1time3count"
+			"column_name": "29th 6:30pm Count",
+			"attrib": "time2count"
 		},
 		{
-			"column_name": "Attend 19th",
-			"attrib": "attendday2"
+			"column_name": "29th 8:00pm Count",
+			"attrib": "time3count"
 		},
 		{
-			"column_name": "19th Time",
-			"attrib": "day2time"
+			"column_name": "30th 5:00pm Count",
+			"attrib": "time4count"
 		},
 		{
-			"column_name": "19th 5pm Count",
-			"attrib": "day2time1count"
+			"column_name": "30th 6:30pm Count",
+			"attrib": "time5count"
 		},
 		{
-			"column_name": "19th 6pm Count",
-			"attrib": "day2time2count"
+			"column_name": "30th 8:00pm Count",
+			"attrib": "time6count"
+		},
+				
+		{
+			"column_name": "29th 5:00pm Meal1",
+			"attrib": "time1meal1"
 		},
 		{
-			"column_name": "19th 7pm Count",
-			"attrib": "day2time3count"
+			"column_name": "29th 5:00pm Meal2",
+			"attrib": "time1meal2"
 		},
 		{
-			"column_name": "Attend 26th",
-			"attrib": "attendday3"
+			"column_name": "29th 6:30pm Meal1",
+			"attrib": "time2meal1"
 		},
 		{
-			"column_name": "26th Time",
-			"attrib": "day3time"
+			"column_name": "29th 6:30pm Meal2",
+			"attrib": "time2meal2"
 		},
 		{
-			"column_name": "26th 5pm Count",
-			"attrib": "day3time1count"
+			"column_name": "29th 8:00pm Meal1",
+			"attrib": "time3meal1"
 		},
 		{
-			"column_name": "26th 6pm Count",
-			"attrib": "day3time2count"
+			"column_name": "29th 8:00pm Meal2",
+			"attrib": "time3meal2"
 		},
 		{
-			"column_name": "26th 7pm Count",
-			"attrib": "day3time3count"
+			"column_name": "30th 5:00pm Meal1",
+			"attrib": "time4meal1"
 		},
 		{
-			"column_name": "Attend 9th",
-			"attrib": "attendday4"
+			"column_name": "30th 5:00pm Meal2",
+			"attrib": "time4meal2"
 		},
 		{
-			"column_name": "9th Time",
-			"attrib": "day4time"
+			"column_name": "30th 6:30pm Meal1",
+			"attrib": "time5meal1"
 		},
 		{
-			"column_name": "9th 5pm Count",
-			"attrib": "day4time1count"
+			"column_name": "30th 6:30pm Meal2",
+			"attrib": "time5meal2"
 		},
 		{
-			"column_name": "9th 6pm Count",
-			"attrib": "day4time2count"
+			"column_name": "30th 8:00pm Meal1",
+			"attrib": "time6meal1"
 		},
 		{
-			"column_name": "9th 7pm Count",
-			"attrib": "day4time3count"
+			"column_name": "30th 8:00pm Meal2",
+			"attrib": "time6meal2"
+		},
+		{
+			"column_name": "Gift",
+			"attrib": "gift"
+		},
+		{
+			"column_name": "Personalization",
+			"attrib": "personalization"
 		}
 	]
 }
