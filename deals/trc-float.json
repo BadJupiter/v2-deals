@@ -18,23 +18,16 @@
 				"hidden": true
 			},
 			{
-				"id": "MILES",
-				"label": "Miles",
-				"type": "text",
-				"sticky": true,
-				"hidden": true
+				"type": "info",
+				"markdown": "# Float Reveal"
 			},
 			{
 				"type": "info",
-				"markdown": "# OluKai Boutique"
+				"markdown": "## **August 15th & 16th**"	
 			},
 			{
 				"type": "info",
-				"markdown": "## **July 25th & 26th**"	
-			},
-			{
-				"type": "info",
-				"markdown": "## **Casino Event Center, Florence**"	
+				"markdown": "## **Florence & Coos Bay**"	
 			},
 			{
 				"type": "info",
@@ -47,7 +40,7 @@
 			},
 			{
 				"id": "attend",
-				"label": "Will you attend the OluKai Boutique?",
+				"label": "Will you attend the Float Reveal?",
 				"type": "select",
 				"range": ["Yes","No"],
 				"required": true
@@ -56,95 +49,26 @@
 				"id": "day",
 				"label": "Which day would you like to attend?",
 				"type": "select",
-				"range": ["Friday, July 25th","Saturday, July 26th"],
+				"limit": 800,
+				"range": [
+					{
+						"value": "Friday, August 15th",
+						"count": 1,
+						"limit": 400
+					},
+					{
+						"value": "Saturday, August 16th",
+						"count": 1,
+						"limit": 400
+					}
+				],	
+
+				
 				"required": true,
 				"conditional": {
 					"field": "attend",
 					"value": "Yes"
 				}
-			},
-			{
-				"id": "day1time",
-				"label": "What time would you like to attend?",
-				"type": "select",
-				"limit": 180,
-				"range": [
-					{
-						"value": "4pm",
-						"count": 1,
-						"limit": 45
-					},
-					{
-						"value": "5pm",
-						"count": 1,
-						"limit": 45
-					},
-					{
-						"value": "6pm",
-						"count": 1,
-						"limit": 45
-					},
-					{
-						"value": "7pm",
-						"count": 1,
-						"limit": 45
-					}
-				],	
-				"required": true,
-				"conditional": [
-					{
-						"field": "attend",
-						"value": "Yes"
-					},
-					{
-						"field": "day",
-						"value": "Friday, July 25th"
-					}
-				]
-			},
-			{
-				"id": "day2time",
-				"label": "What time would you like to attend?",
-				"type": "select",
-				"limit": 225,
-				"range": [
-					{
-						"value": "Noon",
-						"count": 1,
-						"limit": 45
-					},
-					{
-						"value": "1pm",
-						"count": 1,
-						"limit": 45
-					},
-					{
-						"value": "2pm",
-						"count": 1,
-						"limit": 45
-					},
-					{
-						"value": "3pm",
-						"count": 1,
-						"limit": 45
-					},
-					{
-						"value": "4pm",
-						"count": 1,
-						"limit": 45
-					}
-				],	
-				"required": true,
-				"conditional": [
-					{
-						"field": "attend",
-						"value": "Yes"
-					},
-					{
-						"field": "day",
-						"value": "Saturday, July 26th"
-					}
-				]	
 			},
 			{
 				"id": "room",
@@ -206,6 +130,6 @@
 		}
 	},
 	"MAIN": {
-		"body_md": "# We've received your request \n\nIf you need to make any changes to your RSVP just scan your invitation again. If you need any help please get in touch. We hope to see you soon at **Three Rivers Casino Resort - Florence**."
+		"body_md": "# We've received your request \n\nIf you need to make any changes to your RSVP just scan your invitation again. If you need any help please get in touch. We hope to see you soon at **Three Rivers Casino Resort**."
 	}
 }
