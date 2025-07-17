@@ -111,7 +111,7 @@
 					{
 						"value": "Noon",
 						"count": 1,
-						"limit": 48
+						"limit": 45
 					},
 					{
 						"value": "1pm",
@@ -121,7 +121,7 @@
 					{
 						"value": "2pm",
 						"count": 1,
-						"limit": 47
+						"limit": 45
 					},
 					{
 						"value": "3pm",
