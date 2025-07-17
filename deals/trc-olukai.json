@@ -67,22 +67,22 @@
 				"id": "day1time",
 				"label": "What time would you like to attend?",
 				"type": "select",
-				"limit": 180,
+				"limit": 185,
 				"range": [
 					{
 						"value": "4pm",
 						"count": 1,
-						"limit": 45
+						"limit": 46
 					},
 					{
 						"value": "5pm",
 						"count": 1,
-						"limit": 45
+						"limit": 48
 					},
 					{
 						"value": "6pm",
 						"count": 1,
-						"limit": 45
+						"limit": 46
 					},
 					{
 						"value": "7pm",
@@ -106,12 +106,12 @@
 				"id": "day2time",
 				"label": "What time would you like to attend?",
 				"type": "select",
-				"limit": 225,
+				"limit": 231,
 				"range": [
 					{
 						"value": "Noon",
 						"count": 1,
-						"limit": 45
+						"limit": 48
 					},
 					{
 						"value": "1pm",
@@ -121,12 +121,12 @@
 					{
 						"value": "2pm",
 						"count": 1,
-						"limit": 45
+						"limit": 47
 					},
 					{
 						"value": "3pm",
 						"count": 1,
-						"limit": 45
+						"limit": 46
 					},
 					{
 						"value": "4pm",
