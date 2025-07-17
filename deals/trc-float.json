@@ -72,7 +72,7 @@
 			},
 			{
 				"id": "room",
-				"label": "Would you like to be contacted about a room reservation?",
+				"label": "Would you like a host to contact you about a room reservation?",
 				"type": "select",
 				"range": ["Yes","No"],
 				"required": true,
