@@ -67,7 +67,7 @@
 				"id": "day1time",
 				"label": "What time would you like to attend?",
 				"type": "select",
-				"limit": 190,
+				"limit": 185,
 				"range": [
 					{
 						"value": "4pm",
