@@ -7,6 +7,11 @@
 		"content": "Can't play if you ain't authenticated!"
 	},
 
+	"active": {
+		"start": "2025-04-01 10:00AM CDT",
+		"end": "2025-04-11 06:59PM CDT",
+	},
+
 	"FORM": {
 		"fields": [
 			{
