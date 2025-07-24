@@ -1,0 +1,9 @@
+{
+	"biz_id": "threerivers",
+	"auth_required": false,
+	
+	"MAIN": {
+#		"title": "",
+		"body_md": "Thank you for your interest in our Easter Basket pickup! Unfortunately, we've reached full capacity and registration is closed. \n\nWe hope to see you again soon at Three Rivers Casino!"
+	}
+}
