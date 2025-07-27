@@ -12,7 +12,7 @@
 		"fields": [
 			{
 				"type": "info",
-				"markdown": "# Thanks for stopping by!"
+				"markdown": "# Hi, I'm Emily! /n/nI'd love to help you find your next home!"
 			},
 			{
 				"type": "info",
@@ -21,7 +21,7 @@
 			{
 				"type": "info",
 				"justify": "center",
-				"markdown": " \n\nPlease let us know a little bit about what you're looking for."
+				"markdown": " \n\nPlease let me know a little bit about what you're looking for."
 			},
 			{
 				"id": "size",
@@ -34,7 +34,7 @@
 				"id": "amenities",
 				"label": "Which amenities are important to you?",
 				"type": "multi-select",
-				"range": ["Panoramic Views","Firness Facility","Secure Parking","Walk to restaurants/bars","Pet Friendly","On-site Dog Park","Lounge Area, Firepits & Grills"],
+				"range": ["High-end Appliances","Fitness Facility","Panoramic Views","Secure Parking","Walk to restaurants/bars","Pet Friendly","Lounge Area, Firepits & Grills"],
 				"required": false
 			},
 			{
