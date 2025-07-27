@@ -16,7 +16,7 @@
 			},
 			{
 				"type": "info",
-				"markdown": "##I'd love to help you find your next home!"
+				"markdown": "## I'd love to help you find your next home!"
 			},
 			{
 				"type": "info",
@@ -25,7 +25,7 @@
 			{
 				"type": "info",
 				"justify": "center",
-				"markdown": " \n\nPlease let me know a little bit about what you're looking for."
+				"markdown": " \n\nPlease tell me a little bit about what you're looking for."
 			},
 			{
 				"id": "size",
