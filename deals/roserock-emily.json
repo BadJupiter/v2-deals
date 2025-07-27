@@ -12,7 +12,11 @@
 		"fields": [
 			{
 				"type": "info",
-				"markdown": "# Hi, I'm Emily! /n/nI'd love to help you find your next home!"
+				"markdown": "# Hi, I'm Emily!"
+			},
+			{
+				"type": "info",
+				"markdown": "##I'd love to help you find your next home!"
 			},
 			{
 				"type": "info",
