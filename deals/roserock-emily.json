@@ -1,5 +1,5 @@
 {
-	"biz_id": "park107",
+	"biz_id": "roserock",
 	"check_in": true,
 	"auth_required": true,
 	"error_auth": {
@@ -8,7 +8,7 @@
 	},
 
 	"FORM": {
-		"title": "Welcome to Park 107",
+		"title": "Welcome!",
 		"fields": [
 			{
 				"type": "info",
@@ -27,14 +27,14 @@
 				"id": "size",
 				"label": "What size of place are you looking for?",
 				"type": "select",
-				"range": ["One Bedroom","Two Bedroom"],
+				"range": ["Studio","One Bedroom","Two Bedroom", "Three Bedroom"],
 				"required": true
 			},
 			{
 				"id": "amenities",
 				"label": "Which amenities are important to you?",
 				"type": "multi-select",
-				"range": ["Work from Home Suites","Resort-style Pool","Spin Cycle & Yoga Studio","24-hour Fitness Facility","On-site Dog Park","Poolside Chef's Kitchen & Grills"],
+				"range": ["Panoramic Views","Firness Facility","Secure Parking","Walk to restaurants/bars","Pet Friendly","On-site Dog Park","Lounge Area, Firepits & Grills"],
 				"required": false
 			},
 			{
@@ -72,18 +72,19 @@
 		"submit": {
 			"label": "Submit",
 			"color": "#20363d"
-		
+		}
+		"notify": {
+			"opt_in": "contact",
+			"message": "(from {_mob}) {name} requested contact. Looking for a {size} - {timing}",
+			"mobiles": [
+				"+15039533423",
+				"+16462474444"
+			]
 		}
 	},
 
 	"MAIN": {
 		"title": "Live. Shop. Dine. Play.",
-		"body_md": "# Thanks for your interest! \n\nWe'll get in touch to schedule your tour. We look forward to showing you all we have to offer. \n\nVisit our [website](http://park107.com) for more information and to see our available floor plans."
+		"body_md": "# Thanks for your interest! \n\nWe'll get in touch to schedule your tour. We look forward to showing you all we have to offer. \n\nVisit our [website](https://www.roserockdev.com/projects) for more information about our buildings and available floor plans."
 	},
-	
-	"PUNCHCARDS": [
-		{
-			"template": "p107_welcome.json"
-		}
-	]
 }
