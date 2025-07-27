@@ -38,7 +38,7 @@
 				"id": "amenities",
 				"label": "Which amenities are important to you?",
 				"type": "multi-select",
-				"range": ["High-end Appliances","Fitness Facility","Panoramic Views","Secure Parking","Walk to restaurants/bars","Pet Friendly","Lounge Area, Firepits & Grills"],
+				"range": ["High-end Appliances","Fitness Facility","Panoramic Views","Secure Parking","Walk to restaurants/bars","Pet Friendly", "Dog Park", "Rooftop Terrace", "Firepits & Grills"],
 				"required": false
 			},
 			{
