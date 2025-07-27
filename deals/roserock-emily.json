@@ -1,0 +1,89 @@
+{
+	"biz_id": "park107",
+	"check_in": true,
+	"auth_required": true,
+	"error_auth": {
+		"title": "Woops!",
+		"content": "Can't play if you ain't authenticated!"
+	},
+
+	"FORM": {
+		"title": "Welcome to Park 107",
+		"fields": [
+			{
+				"type": "info",
+				"markdown": "# Thanks for stopping by!"
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "info",
+				"justify": "center",
+				"markdown": " \n\nPlease let us know a little bit about what you're looking for."
+			},
+			{
+				"id": "size",
+				"label": "What size of place are you looking for?",
+				"type": "select",
+				"range": ["One Bedroom","Two Bedroom"],
+				"required": true
+			},
+			{
+				"id": "amenities",
+				"label": "Which amenities are important to you?",
+				"type": "multi-select",
+				"range": ["Work from Home Suites","Resort-style Pool","Spin Cycle & Yoga Studio","24-hour Fitness Facility","On-site Dog Park","Poolside Chef's Kitchen & Grills"],
+				"required": false
+			},
+			{
+				"id": "timing",
+				"label": "When are you looking to move?",
+				"type": "select",
+				"range": ["Right away","Next month or two","No specific date"],
+				"required": true
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "fields_group",
+				"bgcolor": "#D2BDA8",
+				"fields": [
+					{
+						"id": "name",
+						"label": "Name:",
+						"type": "text",
+						"sticky": true,
+						"required": true
+					},
+					{
+						"id": "email",
+						"label": "Email:",
+						"type": "email",
+						"sticky": true,
+						"required": false
+					}
+				]
+			}
+		],
+		"submit": {
+			"label": "Submit",
+			"color": "#20363d"
+		
+		}
+	},
+
+	"MAIN": {
+		"title": "Live. Shop. Dine. Play.",
+		"body_md": "# Thanks for your interest! \n\nWe'll get in touch to schedule your tour. We look forward to showing you all we have to offer. \n\nVisit our [website](http://park107.com) for more information and to see our available floor plans."
+	},
+	
+	"PUNCHCARDS": [
+		{
+			"template": "p107_welcome.json"
+		}
+	]
+}
