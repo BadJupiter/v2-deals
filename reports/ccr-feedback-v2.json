@@ -1,6 +1,6 @@
 {
-	"biz_id": "jupiter",
-	"deal_tokens": [ "777-feedback-closed" ],
+	"biz_id": "colusa",
+	"deal_tokens": [ "colusa" ],
 	"most_recent_only": false, # omit or set to false for all rows
 	
 	"as_xlsx": false, # omit or set to false for default (CSV)
@@ -14,52 +14,52 @@
 
 	"COLUMNS": [
 		{
-			"column_name": "Row ID",
+			"column_name": "rowid",
 			"attrib": "_rowid"
 		},
 		{
-			"column_name": "Timestamp",
+			"column_name": "timestamp",
 			"attrib": "_when"
 		},
 		{
-			"column_name": "Mobile",
+			"column_name": "mobile",
 			"attrib": "_mobile"
 		},
 		{
-			"column_name": "Deal ID",
+			"column_name": "dealid",
 			"attrib": "_deal"
 		},
 		{
-			"column_name": "Slots",
+			"column_name": "slots",
 			"attrib": "games-Slot Machines"
 		},
 		{
-			"column_name": "Table Games",
+			"column_name": "tableGames",
 			"attrib": "games-Table Games"
 		},
 		{
-			"column_name": "Video Poker",
+			"column_name": "videoPoker",
 			"attrib": "games-Video Poker"
 		},
 		{
-			"column_name": "Keno",
+			"column_name": "keno",
 			"attrib": "games-Keno"
 		},
 		{
-			"column_name": "Bingo",
+			"column_name": "bingo",
 			"attrib": "games-Bingo"
 		},
 		{
-			"column_name": "Jackpot Prime",
-			"attrib": "dining-Jackpot Prime"
+			"column_name": "jacksPlace",
+			"attrib": "dining-Jack's Place"
 		},
 		{
-			"column_name": "The Daily Deal",
-			"attrib": "dining-The Daily Deal"
+			"column_name": "cafeOle",
+			"attrib": "dining-Cafe Ole"
 		},
 		{
-			"column_name": "Quick Draw Cafe",
-			"attrib": "dining-Quick Draw Cafe"
+			"column_name": "snackBar(bingo)",
+			"attrib": "dining-Snack Bar (bingo)"
 		},
 		{
 			"column_name": "rating",
@@ -85,13 +85,20 @@
 			"column_name": "team",
 			"attrib": "team"
 		},
-		
 		{
-			"column_name": "Name",
+			"column_name": "name",
 			"attrib": "name"
 		},
 		{
-			"column_name": "Email",
+			"column_name": "rewards",
+			"attrib": "playerid"
+		},
+		{
+			"column_name": "address",
+			"attrib": "address"
+		},
+		{
+			"column_name": "email",
 			"attrib": "email"
 		}
 	]
