@@ -1,0 +1,94 @@
+{
+	"biz_id": "roserock",
+	"check_in": true,
+	"auth_required": true,
+	"error_auth": {
+		"title": "Woops!",
+		"content": "Can't play if you ain't authenticated!"
+	},
+
+	"FORM": {
+		"title": "Welcome!",
+		"fields": [
+			{
+				"type": "info",
+				"markdown": "# Hi, I'm Emily!"
+			},
+			{
+				"type": "info",
+				"markdown": "## I'd love to help you find your next home!"
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "info",
+				"justify": "center",
+				"markdown": " \n\nPlease tell me a little bit about what you're looking for."
+			},
+			{
+				"id": "size",
+				"label": "What size of place are you looking for?",
+				"type": "select",
+				"range": ["Studio","One Bedroom","Two Bedroom", "Three Bedroom"],
+				"required": true
+			},
+			{
+				"id": "amenities",
+				"label": "Which amenities are important to you?",
+				"type": "multi-select",
+				"range": ["High-end Appliances","Fitness Facility","Panoramic Views","Secure Parking","Walk to Restaurants & Bars","Pet Friendly", "Dog Park", "Rooftop Terrace", "Firepits & Grills"],
+				"required": false
+			},
+			{
+				"id": "timing",
+				"label": "When are you looking to move?",
+				"type": "select",
+				"range": ["Right away","Next month or two","No specific date"],
+				"required": true
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "fields_group",
+				"bgcolor": "#D2BDA8",
+				"fields": [
+					{
+						"id": "name",
+						"label": "Name:",
+						"type": "text",
+						"sticky": true,
+						"required": true
+					},
+					{
+						"id": "email",
+						"label": "Email:",
+						"type": "email",
+						"sticky": true,
+						"required": false
+					}
+				]
+			}
+		],
+		"submit": {
+			"label": "Submit",
+			"color": "#20363d"
+		},
+		"notify": {
+			"opt_in": "name",
+			"message": "(from {_mob}) {name} requested contact. Looking for a {size} - {timing}",
+			"mobiles": [
+				"+15039533423",
+				"+16462474444"
+			]
+		}
+	},
+
+	"MAIN": {
+		"title": "Live. Shop. Dine. Play.",
+		"body_md": "# Thanks for your interest! \n\nWe'll get in touch to schedule your tour. We look forward to showing you all we have to offer. \n\nVisit our [website](https://www.roserockdev.com/projects) for more information about our buildings and available floor plans."
+	}
+}
