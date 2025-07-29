@@ -1,6 +1,6 @@
 {
-	"biz_id": "colusacasino",
-	"deal_tokens": [ "colusa" ],
+	"biz_id": "roserock",
+	"deal_tokens": [ "roserock-emily","roserock-tatum" ],
 	"most_recent_only": false, # omit or set to false for all rows
 	
 	"as_xlsx": false, # omit or set to false for default (CSV)
@@ -30,72 +30,52 @@
 			"attrib": "_deal"
 		},
 		{
-			"column_name": "slots",
-			"attrib": "games-Slot Machines"
+			"column_name": "size",
+			"attrib": "size"
 		},
 		{
-			"column_name": "tableGames",
-			"attrib": "games-Table Games"
+			"column_name": "appliances",
+			"attrib": "amenities-High-end Appliances"
 		},
 		{
-			"column_name": "videoPoker",
-			"attrib": "games-Video Poker"
+			"column_name": "fitness",
+			"attrib": "amenities-Fitness Facility"
 		},
 		{
-			"column_name": "keno",
-			"attrib": "games-Keno"
+			"column_name": "view",
+			"attrib": "amenities-Panoramic Views"
 		},
 		{
-			"column_name": "bingo",
-			"attrib": "games-Bingo"
+			"column_name": "parking",
+			"attrib": "amenities-Secure Parking"
 		},
 		{
-			"column_name": "jacksPlace",
-			"attrib": "dining-Jack's Place"
+			"column_name": "walking",
+			"attrib": "amenities-Walk to Restaurants & Bars"
 		},
 		{
-			"column_name": "cafeOle",
-			"attrib": "dining-Cafe Ole"
+			"column_name": "pets",
+			"attrib": "amenities-Pet Friendly"
 		},
 		{
-			"column_name": "snackBar",
-			"attrib": "dining-Snack Bar (bingo)"
+			"column_name": "dogPark",
+			"attrib": "amenities-Dog Park"
 		},
 		{
-			"column_name": "rating",
-			"attrib": "rating"
+			"column_name": "rooftop",
+			"attrib": "amenities-Rooftop Terrace"
 		},
 		{
-			"column_name": "comments",
+			"column_name": "firepitsGrills",
+			"attrib": "amenities-Firepits & Grills"
+		},
+		{
+			"column_name": "timimg",
 			"attrib": "comments"
-		},
-		{
-			"column_name": "return",
-			"attrib": "return"
-		},
-		{
-			"column_name": "recommend",
-			"attrib": "recommend"
-		},
-		{
-			"column_name": "amenities",
-			"attrib": "amenities"
-		},
-		{
-			"column_name": "team",
-			"attrib": "team"
 		},
 		{
 			"column_name": "name",
 			"attrib": "name"
-		},
-		{
-			"column_name": "rewards",
-			"attrib": "playerid"
-		},
-		{
-			"column_name": "address",
-			"attrib": "address"
 		},
 		{
 			"column_name": "email",
