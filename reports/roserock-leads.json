@@ -1,0 +1,105 @@
+{
+	"biz_id": "colusacasino",
+	"deal_tokens": [ "colusa" ],
+	"most_recent_only": false, # omit or set to false for all rows
+	
+	"as_xlsx": false, # omit or set to false for default (CSV)
+
+#	The following column values are always available (attrib):
+#	
+#	_when		grab timestamp (Unix -- for now)
+#	_mobile		User mobile number
+#	_deal		Deal token
+#	_rowid		unique row (grab) identifier
+
+	"COLUMNS": [
+		{
+			"column_name": "rowid",
+			"attrib": "_rowid"
+		},
+		{
+			"column_name": "timestamp",
+			"attrib": "_when"
+		},
+		{
+			"column_name": "mobile",
+			"attrib": "_mobile"
+		},
+		{
+			"column_name": "dealid",
+			"attrib": "_deal"
+		},
+		{
+			"column_name": "slots",
+			"attrib": "games-Slot Machines"
+		},
+		{
+			"column_name": "tableGames",
+			"attrib": "games-Table Games"
+		},
+		{
+			"column_name": "videoPoker",
+			"attrib": "games-Video Poker"
+		},
+		{
+			"column_name": "keno",
+			"attrib": "games-Keno"
+		},
+		{
+			"column_name": "bingo",
+			"attrib": "games-Bingo"
+		},
+		{
+			"column_name": "jacksPlace",
+			"attrib": "dining-Jack's Place"
+		},
+		{
+			"column_name": "cafeOle",
+			"attrib": "dining-Cafe Ole"
+		},
+		{
+			"column_name": "snackBar",
+			"attrib": "dining-Snack Bar (bingo)"
+		},
+		{
+			"column_name": "rating",
+			"attrib": "rating"
+		},
+		{
+			"column_name": "comments",
+			"attrib": "comments"
+		},
+		{
+			"column_name": "return",
+			"attrib": "return"
+		},
+		{
+			"column_name": "recommend",
+			"attrib": "recommend"
+		},
+		{
+			"column_name": "amenities",
+			"attrib": "amenities"
+		},
+		{
+			"column_name": "team",
+			"attrib": "team"
+		},
+		{
+			"column_name": "name",
+			"attrib": "name"
+		},
+		{
+			"column_name": "rewards",
+			"attrib": "playerid"
+		},
+		{
+			"column_name": "address",
+			"attrib": "address"
+		},
+		{
+			"column_name": "email",
+			"attrib": "email"
+		}
+	]
+}
