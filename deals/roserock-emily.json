@@ -76,7 +76,7 @@
 		"submit": {
 			"label": "Submit",
 			"color": "#20363d"
-		},
+		}
 #		"notify": {
 #			"opt_in": "name",
 #			"message": "(from {_mob}) {name} requested contact. Looking for a {size} - {timing}",
