@@ -71,7 +71,7 @@
 		},
 		{
 			"column_name": "timimg",
-			"attrib": "comments"
+			"attrib": "timing"
 		},
 		{
 			"column_name": "name",
