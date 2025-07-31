@@ -90,8 +90,8 @@
 			"attrib": "name"
 		},
 		{
-			"column_name": "rewards",
-			"attrib": "playerid"
+			"column_name": "playerid",
+			"attrib": "rewards"
 		},
 		{
 			"column_name": "address",
