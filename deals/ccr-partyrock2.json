@@ -42,7 +42,17 @@
 				"id": "guests",
 				"label": "I am confirming for:",
 				"type": "select",
-				"range": ["Myself","Me and a guest"],
+				"limit": 550,
+				"range": [
+					{
+						"value": "Myself",
+						"count": 1
+					},
+					{
+						"value": "Me and a guest",
+						"count": 2
+					}
+				],
 				"required": true,
 				"conditional": {
 					"field": "attend",
