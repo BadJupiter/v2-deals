@@ -42,7 +42,7 @@
 				"id": "guests",
 				"label": "I am confirming for:",
 				"type": "select",
-				"limit": 609,
+				"limit": 550,
 				"range": [
 					{
 						"value": "Myself",
