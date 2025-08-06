@@ -19,25 +19,19 @@
 			},
 			{	
 				"type": "info",
+				"markdown": "## Marketing Boot Camp Special Offer"
+			},
+
+			{	
+				"type": "info",
 				"markdown": "Everything you see here is built with and running on the Jupiter platform—all customizable to create unique customer interactions, with your brand front and center."
 			},
 			{
-				"id": "demo",
-				"label": "Can we send you a demo?",
-				"type": "select",
-				"range": ["Yes, please do","Not just yet, thanks"],
-				"required": true
-			},
-			{
-				"id": "contact",
-				"label": "How should we get in touch?",
-				"type": "select",
-				"range": ["Email","Text"],
-				"required": true,
-				"conditional": {
-					"field": "demo",
-					"value": "Yes, please do"
-				}
+				"id": "application",
+				"label": "What are you interested in learning about?",
+				"type": "multi-select",
+				"range": ["Event Mgmt & RSVPs","Digital Comment Cards","Cashless Tipping","Valet Car Retrieval","Facility Work Orders", "After-hours Purchases","$10M Towels"],
+f				"required": false
 			},
 			{
 				"id": "comments",
@@ -45,6 +39,13 @@
 				"type": "textarea",
 				"rows": 3,
 				"required": false
+			},
+						{
+				"id": "contact",
+				"label": "How should we get in touch?",
+				"type": "select",
+				"range": ["Email","Text"],
+				"required": true
 			},
 			{
 				"type": "info",
@@ -81,6 +82,6 @@
 	
 	"MAIN": {
 		"title": "Thank You!",
-		"body_md": "# We appreciate your interest!\n\nCheck your texts. You'll get a message with a link to a demo you picked. Once you've had a look just holler if you'd like to talk more."
+		"body_md": "# We appreciate your interest!\n\nCheck your texts. We just sent you a special offer for Boot Camp attendees."
 	}
 }
