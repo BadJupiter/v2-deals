@@ -35,7 +35,7 @@
 			},
 			{
 				"id": "comments",
-				"label": "Any other thoughts, questions, or ideas - let us know:",
+				"label": "Thoughts, questions, or ideas?",
 				"type": "textarea",
 				"rows": 3,
 				"required": false
@@ -48,10 +48,6 @@
 				"type": "fields_group",
 				"bgcolor": "#FFF4CC",
 				"fields": [
-				{
-						"type": "info",
-						"markdown": "Tell us a bit about yourself, and let's explore how we can help!"
-					},
 					{
 						"id": "name",
 						"label": "Name:",
