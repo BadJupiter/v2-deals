@@ -1,6 +1,6 @@
 {
-	"biz_id": "colusacasino",
-	"deal_tokens": [ "colusa" ],
+	"biz_id": "jupiter",
+	"deal_tokens": [ "jp-bootcamp" ],
 	"most_recent_only": false, # omit or set to false for all rows
 	
 	"as_xlsx": false, # omit or set to false for default (CSV)
@@ -30,72 +30,28 @@
 			"attrib": "_deal"
 		},
 		{
-			"column_name": "slots",
-			"attrib": "games-Slot Machines"
+			"column_name": "rsvp",
+			"attrib": "application-Event Mgmt & RSVPs"
 		},
 		{
-			"column_name": "tableGames",
-			"attrib": "games-Table Games"
+			"column_name": "commentcard",
+			"attrib": "application-Digital Comment Cards"
 		},
 		{
-			"column_name": "videoPoker",
-			"attrib": "games-Video Poker"
-		},
-		{
-			"column_name": "keno",
-			"attrib": "games-Keno"
-		},
-		{
-			"column_name": "bingo",
-			"attrib": "games-Bingo"
-		},
-		{
-			"column_name": "jacksPlace",
-			"attrib": "dining-Jack's Place"
-		},
-		{
-			"column_name": "cafeOle",
-			"attrib": "dining-Cafe Ole"
-		},
-		{
-			"column_name": "snackBar",
-			"attrib": "dining-Snack Bar (bingo)"
-		},
-		{
-			"column_name": "rating",
-			"attrib": "rating"
+			"column_name": "towels",
+			"attrib": "application-$1 Million Towels"
 		},
 		{
 			"column_name": "comments",
 			"attrib": "comments"
 		},
 		{
-			"column_name": "return",
-			"attrib": "return"
-		},
-		{
-			"column_name": "recommend",
-			"attrib": "recommend"
-		},
-		{
-			"column_name": "amenities",
-			"attrib": "amenities"
-		},
-		{
-			"column_name": "team",
-			"attrib": "team"
-		},
-		{
 			"column_name": "name",
 			"attrib": "name"
 		},
 		{
-			"column_name": "playerid",
-			"attrib": "rewards"
-		},
-		{
-			"column_name": "address",
-			"attrib": "address"
+			"column_name": "casino",
+			"attrib": "casino"
 		},
 		{
 			"column_name": "email",
