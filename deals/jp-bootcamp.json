@@ -40,13 +40,6 @@
 				"rows": 3,
 				"required": false
 			},
-						{
-				"id": "contact",
-				"label": "How should we get in touch?",
-				"type": "select",
-				"range": ["Email","Text"],
-				"required": true
-			},
 			{
 				"type": "info",
 				"markdown": "---"
