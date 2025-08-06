@@ -31,7 +31,7 @@
 				"label": "What are you interested in learning about?",
 				"type": "multi-select",
 				"range": ["Event Mgmt & RSVPs","Digital Comment Cards","Cashless Tipping","Valet Car Retrieval","Facility Work Orders", "After-hours Purchases","$10M Towels"],
-f				"required": false
+				"required": false
 			},
 			{
 				"id": "comments",
