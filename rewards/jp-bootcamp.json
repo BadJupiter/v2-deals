@@ -3,5 +3,19 @@
 {
 	"notify": {
 		"text": "From Jupiter: Greetings Bootcamp Attendee! Put us to work - the first $3000 worth of Event RSVP or Comment Card services is on us. Offer good thru end of 2025."
+	},
+	"redeem_button": {
+		"text": "$3000 off in 2025"
+	},
+	"redeem_confirm": {
+		"header": "Confirm",
+		"text": "Are you ready to snag your services offer?"
+	},
+	"reward": {
+		"header": "'We've lost our minds!",
+		"text": "We appreciate you! Mention this offer to the person taking your order and we'll take your word for it!"
+	},
+	"valid": {
+		"start_offset": 0 # next day
 	}
 }
