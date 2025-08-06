@@ -1,0 +1,18 @@
+{
+	"id": "Bud Man V2 Launch",
+	"renews": false,
+	
+#	"limit" is an optional section. currently only "day" type is supported.
+#	"message" will get displayed on limit error if present
+	
+	"limit": {
+		"type": "day"
+#		"message": "Only one scan per day for the BUD MONEY VIP program!"
+	},
+
+	"punches": [
+		{
+			"message": "Greetings OC! We’re fired up to share our newest best version of the legendary BUD MONEY! With every delivery, scan the QR on your receipt to stack punches on your electronic punch card—the more you scan, the bigger the rewards! And for checking this out today, we’ve added a punch to your card. 💚"
+		}
+	]
+}
