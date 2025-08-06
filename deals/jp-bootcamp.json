@@ -30,7 +30,7 @@
 				"id": "application",
 				"label": "What are you interested in learning about?",
 				"type": "multi-select",
-				"range": ["Event Mgmt & RSVPs","Digital Comment Cards","Cashless Tipping","Valet Car Retrieval","Facility Work Orders", "After-hours Purchases","$10M Towels"],
+				"range": ["Event Mgmt & RSVPs","Digital Comment Cards","$1 Million Towels"],
 				"required": false
 			},
 			{
