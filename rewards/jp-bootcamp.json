@@ -13,7 +13,7 @@
 	},
 	"reward": {
 		"header": "'We've lost our minds!",
-		"text": "We appreciate you! Mention this offer to the person taking your order and we'll take your word for it!"
+		"text": "We appreciate you -- we'll be in touch!"
 	},
 	"valid": {
 		"start_offset": 0 # next day
