@@ -55,6 +55,12 @@
 						"required": true
 					},
 					{
+						"id": "casino",
+						"label": "Casino/Company:",
+						"type": "text",
+						"required": true
+					},
+					{
 						"id": "email",
 						"label": "Email:",
 						"type": "email",
