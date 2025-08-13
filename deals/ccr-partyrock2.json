@@ -11,7 +11,9 @@
 		"start": "2025-08-01 10:00AM CDT",
 		"end": "2025-08-15 11:59PM CDT"
 	},
-	
+
+	"summary_info": "BINGO night!",
+		
 	"FORM": {
 		"fields": [
 			{
