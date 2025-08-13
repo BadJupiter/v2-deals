@@ -7,16 +7,23 @@
 		"content": "Can't play if you ain't authenticated!"
 	},
 
+	"active": {
+		"start": "2025-08-13 10:00AM CDT",
+		"end": "2025-09-05 11:59PM CDT"
+	},
+	
+	"summary_info": "Block Party with Food Trucks",
+	
 	"FORM": {
 		"title": "Three Rivers Casino Resort",
 		"fields": [
 			{
 				"type": "info",
-				"markdown": "# Derby Party"
+				"markdown": "# Coos Bay Block Party"
 			},
 			{
 				"type": "info",
-				"markdown": "## **Saturday, May 3, 2025**"	
+				"markdown": "## **Friday, September 5, 2025**"	
 			},
 			{
 				"type": "info",
@@ -24,15 +31,7 @@
 			},
 			{
 				"type": "info",
-				"markdown": "## Doors - 2:00pm"
-			},
-			{
-				"type": "info",
-				"markdown": "## Hat Contest - 3:00pm"
-			},
-			{
-				"type": "info",
-				"markdown": "## Post Time - 3:57pm"
+				"markdown": "## 5:00 - 8:00pm"
 			},
 			{
 				"type": "info",
@@ -40,7 +39,7 @@
 			},
 			{
 				"id": "attend",
-				"label": "Will you attend the Derby Party?",
+				"label": "Will you attend the Block Party?",
 				"type": "select",
 				"range": ["Yes","No"],
 				"required": true
@@ -98,6 +97,6 @@
 		}
 	},
 	"MAIN": {
-		"body_md": "# We've received your request \n\nIf you need to make any changes to your RSVP just scan your invitation again. If you need any help please get in touch with your host. We hope to see you soon at **Three Rivers Casino Resort - Florence**."
+		"body_md": "# We've received your request \n\nIf you need to make any changes to your RSVP just scan your invitation again. If you need any help please get in touch with your host. We hope to see you soon at **Three Rivers Casino Resort - Coos Bay**."
 	}
 }
