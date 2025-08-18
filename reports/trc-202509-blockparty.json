@@ -39,10 +39,6 @@
 			"attrib": "attend"
 		},
 		{
-			"column_name": "Time",
-			"attrib": "time"
-		},
-		{
 			"column_name": "Guest",
 			"attrib": "guest"
 		},
@@ -53,14 +49,6 @@
 		{
 			"column_name": "First Name",
 			"attrib": "z_FIRSTNAME"
-		},
-		{
-			"column_name": "Distance",
-			"attrib": "DIST"
-		},
-		{
-			"column_name": "Room",
-			"attrib": "room"
 		}
 	]
 }
