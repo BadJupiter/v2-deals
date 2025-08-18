@@ -19,7 +19,7 @@
 				"hidden": true
 			},{
 				"type": "info",
-				"markdown": "# $5K High Stakes Bingo"
+				"markdown": "# $5,000 High Stakes Bingo"
 			},
 			{
 				"type": "info",
@@ -48,11 +48,11 @@
 			{
 				"type": "info",
 				"justify": "center",
-				"markdown": " \n\nIt’s our pleasure to offer our valued Three Rivers guests an invitation to play in our **$5K High Stakes Bingo** event!"
+				"markdown": " \n\nIt’s our pleasure to offer our valued Three Rivers guests an invitation to play in our **$5,000 High Stakes Bingo** event!"
 			},
 			{
 				"id": "attend",
-				"label": "Will you attend $5K High Stakes Bingo?",
+				"label": "Will you attend $5,000 High Stakes Bingo?",
 				"type": "select",
 				"range": ["Yes","No"],
 				"required": true
