@@ -7,16 +7,31 @@
 		"content": "Can't play if you ain't authenticated!"
 	},
 
-	"FORM": {
+"FORM": {
 		"title": "Three Rivers Casino Resort",
 		"fields": [
 			{
+				"id": "Hotel",
+				"label": "Hotel",
+				"type": "text",
+				"sticky": true,
+				"disabled": true,
+				"hidden": true
+			},{
 				"type": "info",
-				"markdown": "# Eyewear Boutique"
+				"markdown": "# $5K High Stakes Bingo"
 			},
 			{
 				"type": "info",
-				"markdown": "## **June 29th, 2025**"	
+				"markdown": "## **September 28th**"	
+			},
+			{
+				"type": "info",
+				"markdown": "## **Doors at 1:00pm**"	
+			},
+			{
+				"type": "info",
+				"markdown": "## **First Game at 2:00pm**"	
 			},
 			{
 				"type": "info",
@@ -29,27 +44,37 @@
 			{
 				"type": "info",
 				"justify": "center",
-				"markdown": " \n\nIt’s our pleasure to offer our valued Three Rivers guests an invitation to our exclusive **Eyewear Boutique**."
+				"markdown": " \n\nIt’s our pleasure to offer our valued Three Rivers guests an invitation to play in our **$5K High Stakes Bingo** event!"
 			},
 			{
 				"id": "attend",
-				"label": "Will you attend the Eyewear Boutique?",
+				"label": "Will you attend $5K High Stakes Bingo?",
 				"type": "select",
 				"range": ["Yes","No"],
 				"required": true
 			},
 			{
-				"id": "time",
-				"label": "What time would you like to attend?",
+				"id": "day1count",
+				"label": "Will you bring a guest?",
 				"type": "select",
-				"range": ["5pm"],
+				"limit": 400,
+				"range": [
+					{
+						"value": "No",
+						"count": 1
+					},
+					{
+						"value": "Yes",
+						"count": 2
+					}
+				],
 				"required": true,
 				"conditional": [
 					{
 						"field": "attend",
 						"value": "Yes"
 					}
-				]
+				]				
 			},
 			{
 				"type": "info",
@@ -83,7 +108,11 @@
 				]
 			}
 		],
-		"submit": {
+	"limits": {
+			"most_recent_only": true,
+			"most_recent_key": "PlayerID"
+		},		
+	"submit": {
 			"label": "Submit RSVP",
 			"color": "#20363d"
 		
