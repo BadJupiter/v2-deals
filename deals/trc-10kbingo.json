@@ -19,11 +19,15 @@
 				"hidden": true
 			},{
 				"type": "info",
-				"markdown": "# Eyewear Boutique"
+				"markdown": "# $10K High Stakes Bingo"
 			},
 			{
 				"type": "info",
-				"markdown": "## **June 27th & 28th**"	
+				"markdown": "## **September 26th & 27th**"	
+			},
+			{
+				"type": "info",
+				"markdown": "## **Doors at 5:00pm** \n\n First Game at 6:00pm"	
 			},
 			{
 				"type": "info",
@@ -36,11 +40,11 @@
 			{
 				"type": "info",
 				"justify": "center",
-				"markdown": " \n\nIt’s our pleasure to offer our valued Three Rivers guests an invitation to our exclusive **Eyewear Boutique**."
+				"markdown": " \n\nIt’s our pleasure to offer our valued Three Rivers guests an invitation to play in our **$10K High Stakes Bingo** event!"
 			},
 			{
 				"id": "attend",
-				"label": "Will you attend the Eyewear Boutique?",
+				"label": "Will you attend $10K High Stakes Bingo?",
 				"type": "select",
 				"range": ["Yes","No"],
 				"required": true
@@ -49,7 +53,7 @@
 				"id": "day",
 				"label": "What day would you like to attend?",
 				"type": "select",
-				"range": ["Friday, June 27th","Saturday, June 28th"],
+				"range": ["Friday at 6:00pm","Saturday at 6:00pm"],
 				"required": true,
 				"conditional": {
 					"field": "attend",
@@ -57,10 +61,20 @@
 				}
 			},
 			{
-				"id": "day1time",
-				"label": "What time would you like to attend?",
+				"id": "day1count",
+				"label": "Will you bring a guest?",
 				"type": "select",
-				"range": ["4pm","5pm","6pm","7pm"],
+				"limit": 400,
+				"range": [
+					{
+						"value": "No",
+						"count": 1
+					},
+					{
+						"value": "Yes",
+						"count": 2
+					}
+				],
 				"required": true,
 				"conditional": [
 					{
@@ -69,15 +83,25 @@
 					},
 					{
 						"field": "day",
-						"value": "Friday, June 27th"
+						"value": "Friday at 6:00pm"
 					}
-				]
+				]				
 			},
 			{
-				"id": "day2time",
-				"label": "What time would you like to attend?",
+				"id": "day2count",
+				"label": "Will you bring a guest?",
 				"type": "select",
-				"range": ["Noon","1pm","2pm","3pm"],
+				"limit": 400,
+				"range": [
+					{
+						"value": "No",
+						"count": 1
+					},
+					{
+						"value": "Yes",
+						"count": 2
+					}
+				],
 				"required": true,
 				"conditional": [
 					{
@@ -85,14 +109,15 @@
 						"value": "Yes"
 					},
 					{
-					"field": "day",
-					"value": "Saturday, June 28th"
+						"field": "day",
+						"value": "Saturday at 6:00pm"
+					},
 					}
-				]	
+				]				
 			},
 			{
 				"id": "room",
-				"label": "Would you like to be contacted about a room reservation?",
+				"label": "Would you like to be contacted for a room reservation?",
 				"type": "select",
 				"range": ["Yes","No"],
 				"required": true,
@@ -103,7 +128,7 @@
 					},
 					{
 						"field": "day",
-						"values": ["Friday, June 27th","Saturday, June 28th"]
+						"values": ["Friday at 6:00pm","Saturday at 6:00pm"]
 					},
 					{
 						"field": "Hotel",
@@ -144,7 +169,11 @@
 				]
 			}
 		],
-		"submit": {
+	"limits": {
+			"most_recent_only": true,
+			"most_recent_key": "PlayerID"
+		},		
+	"submit": {
 			"label": "Submit RSVP",
 			"color": "#20363d"
 		
