@@ -490,21 +490,18 @@
 						"id": "z_FIRSTNAME",
 						"label": "First Name:",
 						"type": "text",
-						"sticky": true,
 						"disabled": false
 					},
 					{
 						"id": "z_LASTNAME",
 						"label": "Last Name:",
 						"type": "text",
-						"sticky": true,
 						"disabled": false
 					},
 					{
 						"id": "PlayerID",
 						"label": "Rewards #:",
 						"type": "text",
-						"sticky": true,
 						"disabled": false
 					}
 				]
