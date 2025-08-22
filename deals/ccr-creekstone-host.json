@@ -1,0 +1,525 @@
+{
+	"biz_id": "colusacasino",
+	"check_in": true,
+	"auth_required": true,
+	"error_auth": {
+		"title": "Woops!",
+		"content": "Can't play if you ain't authenticated!"
+	},
+
+	"active": {
+		"start": "2025-08-01 10:00AM CDT",
+		"end": "2025-08-30 11:59PM CDT"
+	},
+	
+	"summary_info": "Dinner and a personalized gift",
+			
+	"FORM": {
+		"fields": [
+			{
+				"type": "info",
+				"markdown": "# Creekstone Dinner"
+			},
+			{
+				"type": "info",
+				"markdown": "## **August 29th - 30th**"
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "info",
+				"justify": "center",
+				"markdown": " \n\nYou are invited to the Creekstone Dinner at Colusa Casino Resort!"
+			},
+			{
+				"id": "attend",
+				"label": "Will you be attending the dinner?",
+				"type": "select",
+				"range": ["Yes","No"],
+				"required": true
+			},
+			{
+				"id": "day",
+				"label": "Which date will you be attending?",
+				"type": "select",
+				"range": ["Friday, August 29th","Saturday, August 30th"],
+				"required": true,
+				"conditional": {
+					"field": "attend",
+					"value": "Yes"
+				}
+			},
+			{
+				"id": "time",
+				"label": "Preferred dinner time:",
+				"type": "select",
+				"range": ["5:00 PM","6:30 PM","8:00 PM"],
+				"required": true,
+				"conditional": {
+					"field": "attend",
+					"value": "Yes"
+				}
+			},
+			{
+				"id": "time1count",
+				"label": "How many in your party?",
+				"type": "select",
+				"limit": 100,
+				"range": [
+					{
+						"value": "Myself",
+						"count": 1
+					},
+					{
+						"value": "Myself plus a Guest",
+						"count": 2
+					}
+				],
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "day",
+						"value": "Friday, August 29th"
+					},
+					{
+						"field": "time",
+						"value": "5:00 PM"
+					}
+				]				
+			},
+			{
+				"id": "time2count",
+				"label": "How many in your party?",
+				"type": "select",
+				"limit": 100,
+				"range": [
+					{
+						"value": "Myself",
+						"count": 1
+					},
+					{
+						"value": "Myself plus a Guest",
+						"count": 2
+					}
+				],
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "day",
+						"value": "Friday, August 29th"
+					},
+					{
+						"field": "time",
+						"value": "6:30 PM"
+					}
+				]				
+
+			},			
+			{
+				"id": "time3count",
+				"label": "How many in your party?",
+				"type": "select",
+				"limit": 100,
+				"range": [
+					{
+						"value": "Myself",
+						"count": 1
+					},
+					{
+						"value": "Myself plus a Guest",
+						"count": 2
+					}
+				],
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "day",
+						"value": "Friday, August 29th"
+					},
+					{
+						"field": "time",
+						"value": "8:00 PM"
+					}
+				]				
+			},			
+			{
+				"id": "time4count",
+				"label": "How many in your party?",
+				"type": "select",
+				"limit": 100,
+				"range": [
+					{
+						"value": "Myself",
+						"count": 1
+					},
+					{
+						"value": "Myself plus a Guest",
+						"count": 2
+					}
+				],
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "day",
+						"value": "Saturday, August 30th"
+					},
+					{
+						"field": "time",
+						"value": "5:00 PM"
+					}
+				]				
+			},
+			{
+				"id": "time5count",
+				"label": "How many in your party?",
+				"type": "select",
+				"limit": 100,
+				"range": [
+					{
+						"value": "Myself",
+						"count": 1
+					},
+					{
+						"value": "Myself plus a Guest",
+						"count": 2
+					}
+				],
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "day",
+						"value": "Saturday, August 30th"
+					},
+					{
+						"field": "time",
+						"value": "6:30 PM"
+					}
+				]				
+			},
+			{
+				"id": "time6count",
+				"label": "How many in your party?",
+				"type": "select",
+				"limit": 100,
+				"range": [
+					{
+						"value": "Myself",
+						"count": 1
+					},
+					{
+						"value": "Myself plus a Guest",
+						"count": 2
+					}
+				],
+				"required": true,
+				"conditional": [
+					
+					{
+						"field": "attend",
+						"value": "Yes"
+					},{
+						"field": "day",
+						"value": "Saturday, August 30th"
+					},
+					{
+						"field": "time",
+						"value": "8:00 PM"
+					}
+				]				
+			},
+			{
+				"id": "time1meal1",
+				"label": "What would you like for dinner?",
+				"type": "select",
+				"range": ["Prime Creekstone Filet","Prime Creekstone Ribeye","Chilean Seabass"],
+				"required": true,
+				"conditional": [
+				  	{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+					  	"field": "time1count",
+					  	"values": ["Myself","Myself plus a Guest"]
+				  	 }
+				]		
+			},
+			{
+				"id": "time1meal2",
+				"label": "What would your guest like?",
+				"type": "select",
+				"range": ["Prime Creekstone Filet","Prime Creekstone Ribeye","Chilean Seabass"],
+				"required": true,
+				"conditional": [
+				  	{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+					   	"field": "time1count",
+					  	"values": ["Myself plus a Guest"]
+				  	}
+				]		
+			},
+			{
+				"id": "time2meal1",
+				"label": "What would you like for dinner?",
+				"type": "select",
+				"range": ["Prime Creekstone Filet","Prime Creekstone Ribeye","Chilean Seabass"],
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "time2count",
+						"values": ["Myself","Myself plus a Guest"]
+				   	}
+			  	]
+			},
+			{
+				"id": "time2meal2",
+				"label": "What would your guest like?",
+				"type": "select",
+				"range": ["Prime Creekstone Filet","Prime Creekstone Ribeye","Chilean Seabass"],
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "time2count",
+						"values": ["Myself plus a Guest"]
+				   	}
+			  	]
+			},
+			{
+				"id": "time3meal1",
+				"label": "What would you like for dinner?",
+				"type": "select",
+				"range": ["Prime Creekstone Filet","Prime Creekstone Ribeye","Chilean Seabass"],
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "time3count",
+						"values": ["Myself","Myself plus a Guest"]
+				   	}
+			  	]
+			},
+			{
+				"id": "time3meal2",
+				"label": "What would your guest like?",
+				"type": "select",
+				"range": ["Prime Creekstone Filet","Prime Creekstone Ribeye","Chilean Seabass"],
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "time3count",
+						"values": ["Myself plus a Guest"]
+				   	}
+			  	]
+			},
+			{
+				"id": "time4meal1",
+				"label": "What would you like for dinner?",
+				"type": "select",
+				"range": ["Prime Creekstone Filet","Prime Creekstone Ribeye","Chilean Seabass"],
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "time4count",
+						"values": ["Myself","Myself plus a Guest"]
+				   	}
+			  	]
+			},
+			{
+				"id": "time4meal2",
+				"label": "What would your guest like for dinner?",
+				"type": "select",
+				"range": ["Prime Creekstone Filet","Prime Creekstone Ribeye","Chilean Seabass"],
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "time4count",
+						"values": ["Myself plus a Guest"]
+				   	}
+			  	]
+			},
+			{
+				"id": "time5meal1",
+				"label": "What would you like for dinner?",
+				"type": "select",
+				"range": ["Prime Creekstone Filet","Prime Creekstone Ribeye","Chilean Seabass"],
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "time5count",
+						"values": ["Myself","Myself plus a Guest"]
+				   	}
+			  	]
+			},
+			{
+				"id": "time5meal2",
+				"label": "What would your guest like for dinner?",
+				"type": "select",
+				"range": ["Prime Creekstone Filet","Prime Creekstone Ribeye","Chilean Seabass"],
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "time5count",
+						"values": ["Myself plus a Guest"]
+				   	}
+			  	]
+			},
+			{
+				"id": "time6meal1",
+				"label": "What would you like for dinner?",
+				"type": "select",
+				"range": ["Prime Creekstone Filet","Prime Creekstone Ribeye","Chilean Seabass"],
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "time6count",
+						"values": ["Myself","Myself plus a Guest"]
+				   	}
+			  	]
+			},
+			{
+				"id": "time6meal2",
+				"label": "What would your guest like for dinner?",
+				"type": "select",
+				"range": ["Prime Creekstone Filet","Prime Creekstone Ribeye","Chilean Seabass"],
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "time6count",
+						"values": ["Myself plus a Guest"]
+				   	}
+			  	]
+			},
+			{
+				"id": "gift",
+				"label": "Choose your personalized gift?",
+				"type": "select",
+				"range": ["Petite Carver","Santoku Trimmer"],
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"values": ["Yes","No"]
+				   	}
+			  	]
+			},
+			{
+				"id": "personalization",
+				"label": "Please enter your personalization: (Example: “Handcrafted Exclusively for The Miller Family”)",
+				"type": "text",
+				"required": false,
+				"conditional": [
+				   {
+					   "field": "gift",
+					   "values": ["Petite Carver","Santoku Trimmer"]
+				   }
+			   ]
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "fields_group",
+				"bgcolor": "#c8f0fc",
+				"fields": [
+					{
+						"id": "z_FIRSTNAME",
+						"label": "First Name:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					},
+					{
+						"id": "z_LASTNAME",
+						"label": "Last Name:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					},
+					{
+						"id": "PlayerID",
+						"label": "Rewards #:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					}
+				]
+			}
+		],
+		"limits": {
+			"most_recent_only": true,
+			"most_recent_key": "PlayerID"
+		},
+		"submit": {
+			"label": "Submit RSVP",
+			"color": "#20363d"
+		}
+	},
+	"MAIN": {
+		"body_md": "# We've received your request \n\nIf you need to make any changes to your RSVP just scan your invitation again. If you need any help please call the number on your invitation. We hope to see you soon at **Colusa Casino Resort**."
+	}
+}
