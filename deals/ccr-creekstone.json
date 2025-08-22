@@ -491,6 +491,7 @@
 						"label": "First Name:",
 						"type": "text",
 						"sticky": true,
+						"required": true,
 						"disabled": true
 					},
 					{
@@ -498,6 +499,7 @@
 						"label": "Last Name:",
 						"type": "text",
 						"sticky": true,
+						"required": true,
 						"disabled": true
 					},
 					{
@@ -505,6 +507,7 @@
 						"label": "Rewards #:",
 						"type": "text",
 						"sticky": true,
+						"required": true,
 						"disabled": true
 					}
 				]
