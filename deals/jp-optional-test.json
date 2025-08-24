@@ -480,6 +480,13 @@
 			  	]
 			},
 			{
+				"id": "team",
+				"label": "Recognize your 360 Restaurant team",
+				"type": "textarea",
+				"rows": 3,
+				"required": false
+			},
+			{
 				"id": "personalization",
 				"label": "Please enter your personalization: (Example: Handcrafted Exclusively for The Miller Family)",
 				"type": "text",
