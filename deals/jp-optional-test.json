@@ -471,10 +471,10 @@
 				"label": "Please enter your personalization: (Example: Handcrafted Exclusively for The Miller Family)",
 				"type": "text",
 				"conditional": [
-				   {
-					   "field": "gift",
-					   "values": ["Petite Carver","Santoku Trimmer"]
-				   }
+				  {
+						"field": "attend",
+						"values": ["Yes","No"]
+				  }
 			   ]
 			},
 			{
