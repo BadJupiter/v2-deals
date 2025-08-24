@@ -1,5 +1,5 @@
 {
-	"biz_id": "colusacasino",
+	"biz_id": "jupiter",
 	"check_in": true,
 	"auth_required": true,
 	"error_auth": {
@@ -469,6 +469,17 @@
 			{
 				"id": "personalization",
 				"label": "Please enter your personalization: (Example: Handcrafted Exclusively for The Miller Family)",
+				"type": "text",
+				"conditional": [
+				   {
+					   "field": "gift",
+					   "values": ["Petite Carver","Santoku Trimmer"]
+				   }
+			   ]
+			},
+			{
+				"id": "testoptional",
+				"label": "This one is after the misbehaving one",
 				"type": "text",
 				"conditional": [
 				   {
