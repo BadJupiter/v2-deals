@@ -62,6 +62,19 @@
 					"value": "Yes"
 				}
 			},
+
+			{
+				"id": "midformtest",
+				"label": "This should be optional",
+				"type": "text",
+				"conditional": [
+				  {
+						"field": "time",
+						"values": ["5:00 PM","6:30 PM","8:00 PM"]
+				  }
+			   ]
+			},
+			
 			{
 				"id": "time1count",
 				"label": "How many in your party?",
