@@ -469,7 +469,9 @@
 			{
 				"id": "personalization",
 				"label": "Please enter your personalization: (Example: “Handcrafted Exclusively for The Miller Family”)",
-				"type": "text",
+				"type": "textarea",
+				"rows": 1,
+				"required": false,
 				"conditional": [
 				   {
 					   "field": "gift",
