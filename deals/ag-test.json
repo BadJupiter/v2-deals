@@ -7,16 +7,8 @@
 		"content": "Cain't play if you ain't authenticated!"
 	},
 	
-	"location_required": true,
-	"location_info": {
-		"lat": 36.15751,
-		"lng": -95.98666,
-		"max_dist_m": 200,
-		"error_msg": "Gotta be at Albert G's Downtown to check in!"
-	},
-	
 	"FORM": {
-		"title": "Albert G's - Downtown",
+		"title": "Albert G's - Midtown",
 		"fields": [
 			{
 				"type": "info",
@@ -47,8 +39,8 @@
 	},
 	
 	"MAIN": {
-		"title": "Welcome to Downtown!",
-		"body_md": "# Thank you!\n\nWe hope you're hungry. Don't forget to try the **Pickle Bar**. Be sure to **scan each visit** for credit toward tasty rewards at any of our locations. Visit us in [Midtown](https://albertgs.com/midtown/) and in [Tulsa Hills](https://albertgs.com/tulsa-hills/) too!"
+		"title": "Welcome to Midtown!",
+		"body_md": "# Thank you!\n\nWelcome to the original location that started it all! Be sure to **scan each visit** for credit toward tasty rewards at any of our locations. Visit us in [Tulsa Hills](https://albertgs.com/tulsa-hills/) and in the [Blue Dome](https://albertgs.com/downtown/) too!"
 	},
 	
 	"PUNCHCARDS": [
