@@ -97,7 +97,7 @@
 				"id": "time2count",
 				"label": "How many in your party?",
 				"type": "select",
-				"limit": 98,
+				"limit": 100,
 				"range": [
 					{
 						"value": "Myself",
@@ -129,7 +129,7 @@
 				"id": "time3count",
 				"label": "How many in your party?",
 				"type": "select",
-				"limit": 98,
+				"limit": 100,
 				"range": [
 					{
 						"value": "Myself",
