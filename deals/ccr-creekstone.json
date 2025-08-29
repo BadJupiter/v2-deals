@@ -93,38 +93,38 @@
 					}
 				]				
 			},
-#			{
-#				"id": "time2count",
-#				"label": "How many in your party?",
-#				"type": "select",
-#				"limit": 98,
-#				"range": [
-#					{
-#						"value": "Myself",
-#						"count": 1
-#					},
-#					{
-#						"value": "Myself plus a Guest",
-#						"count": 2
-#					}
-#				],
-#				"required": true,
-#				"conditional": [
-#					{
-#						"field": "attend",
-#						"value": "Yes"
-#					},
-#					{
-#						"field": "day",
-#						"value": "Friday, August 29th"
-#					},
-#					{
-#						"field": "time",
-#						"value": "6:30 PM"
-#					}
-#				]				
-#
-#			},			
+			{
+				"id": "time2count",
+				"label": "How many in your party?",
+				"type": "select",
+				"limit": 98,
+				"range": [
+					{
+						"value": "Myself",
+						"count": 1
+					},
+					{
+						"value": "Myself plus a Guest",
+						"count": 2
+					}
+				],
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "day",
+						"value": "Friday, August 29th"
+					},
+					{
+						"field": "time",
+						"value": "6:30 PM"
+					}
+				]				
+
+			},			
 			{
 				"id": "time3count",
 				"label": "How many in your party?",
