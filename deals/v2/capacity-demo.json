@@ -1,0 +1,192 @@
+{
+  "biz_id": "colusacasino",
+  "auth": {
+	"check_in": true,
+	"required": true,
+	"error": { "title": "Woops!", "content": "Can't play if you ain't authenticated!" }
+  },
+
+  "active": { "start": "2025-08-01T10:00:00-05:00", "end": "2025-08-30T23:59:00-05:00" },
+
+  "summary_info": "Dinner and a personalized gift",
+
+  "inventory": {
+	"resources": [
+	  {
+		"id": "slot_fri_1700",
+		"kind": "timeslot",
+		"label": "Friday, Aug 29 — 5:00 PM",
+		"capacity": 100,
+		"server": { "reserved": 0, "remaining": 100 }   // injected by server
+	  },
+	  {
+		"id": "slot_fri_1830",
+		"kind": "timeslot",
+		"label": "Friday, Aug 29 — 6:30 PM",
+		"capacity": 98,
+		"server": { "reserved": 0, "remaining": 98 }
+	  },
+	  {
+		"id": "slot_fri_2000",
+		"kind": "timeslot",
+		"label": "Friday, Aug 29 — 8:00 PM",
+		"capacity": 93,
+		"server": { "reserved": 0, "remaining": 93 }
+	  },
+	  {
+		"id": "slot_sat_1700",
+		"kind": "timeslot",
+		"label": "Saturday, Aug 30 — 5:00 PM",
+		"capacity": 100,
+		"server": { "reserved": 0, "remaining": 100 }
+	  },
+	  {
+		"id": "slot_sat_1830",
+		"kind": "timeslot",
+		"label": "Saturday, Aug 30 — 6:30 PM",
+		"capacity": 100,
+		"server": { "reserved": 0, "remaining": 100 }
+	  },
+	  {
+		"id": "slot_sat_2000",
+		"kind": "timeslot",
+		"label": "Saturday, Aug 30 — 8:00 PM",
+		"capacity": 100,
+		"server": { "reserved": 0, "remaining": 100 }
+	  }
+	],
+
+	"consumption_rules": [
+	  // How many seats does a selection consume?
+	  { "when": "party_size == 1", "consume": 1 },
+	  { "when": "party_size == 2", "consume": 2 }
+	],
+
+	"sold_out_behavior": {
+	  "slot": "disable_option",      // or "hide_option"
+	  "all_slots": "show_message"    // event-level short-circuit
+	},
+
+	"waitlist": {
+	  "enabled": true,
+	  "show_when": "all_slots_full"  // simple flag you can compute client-side
+	}
+  },
+
+  "form": {
+	"panels": [
+	  { "type": "markdown", "content": "# Creekstone Dinner\n\n## **August 29th - 30th**\n---\nYou are invited to the Creekstone Dinner at Colusa Casino Resort!" }
+	],
+
+	"fields": [
+	  {
+		"id": "attend",
+		"label": "Will you be attending the dinner?",
+		"type": "select",
+		"options": [
+		  { "value": "yes", "label": "Yes" },
+		  { "value": "no", "label": "No" }
+		],
+		"required": true
+	  },
+
+	  {
+		"id": "slot_id",
+		"label": "Choose a time",
+		"type": "select",
+		"required": true,
+		"visible_when": "attend == 'yes'",
+		"datasource": {
+		  "type": "inventory.resources",
+		  "filter": "kind == 'timeslot'"
+		},
+		"option_template": {
+		  "value": "{{id}}",
+		  "label": "{{label}}",
+		  "disabled_when": "remaining < consume(party_size)"  // uses consumption rules
+		},
+		"empty_state": {
+		  "when": "all_slots_full",
+		  "message": "Sorry—this event is full. Please join the waitlist below."
+		}
+	  },
+
+	  {
+		"id": "party_size",
+		"label": "How many in your party?",
+		"type": "select",
+		"required": true,
+		"visible_when": "attend == 'yes'",
+		"options": [
+		  { "value": 1, "label": "Myself" },
+		  { "value": 2, "label": "Myself plus a Guest" }
+		]
+	  },
+
+	  {
+		"id": "meal_primary",
+		"label": "What would you like for dinner?",
+		"type": "select",
+		"required": true,
+		"visible_when": "attend == 'yes' && party_size >= 1",
+		"options": [
+		  "Prime Creekstone Filet","Prime Creekstone Ribeye","Chilean Seabass"
+		]
+	  },
+
+	  {
+		"id": "meal_guest",
+		"label": "What would your guest like?",
+		"type": "select",
+		"required_when": "party_size == 2",
+		"visible_when": "party_size == 2",
+		"options": [
+		  "Prime Creekstone Filet","Prime Creekstone Ribeye","Chilean Seabass"
+		]
+	  },
+
+	  {
+		"id": "gift",
+		"label": "Choose your personalized gift",
+		"type": "select",
+		"required": true,
+		"options": ["Petite Carver","Santoku Trimmer"],
+		"visible_when": "attend in ['yes','no']"
+	  },
+
+	  {
+		"id": "personalization",
+		"label": "Please enter your personalization: (Example: Handcrafted Exclusively for The Miller Family)",
+		"type": "text",
+		"visible_when": "gift in ['Petite Carver','Santoku Trimmer']"
+	  },
+
+	  {
+		"type": "fieldset",
+		"label": "Guest Details",
+		"style": { "bgcolor": "#c8f0fc" },
+		"fields": [
+		  { "id": "z_FIRSTNAME", "label": "First Name:", "type": "text", "sticky": true, "required": true, "disabled": true },
+		  { "id": "z_LASTNAME",  "label": "Last Name:",  "type": "text", "sticky": true, "required": true, "disabled": true },
+		  { "id": "PlayerID",    "label": "Rewards #:",  "type": "text", "sticky": true, "required": true, "disabled": true }
+		]
+	  }
+	],
+
+	"submit": { "label": "Submit RSVP", "color": "#20363d" },
+
+	"limits": {
+	  "most_recent_only": true,
+	  "most_recent_key": "PlayerID"
+	}
+  },
+
+  "event_full": {
+	"message_md": "# We've received your request\n\nThis event is currently full. If you need help, please call the number on your invitation.",
+	"show_when": "all_slots_full"
+  },
+
+  "post_submit": {
+	"body_md": "# We've received your request\n\nIf you need to make any changes to your RSVP just scan your invitation again…"
+  }
+}
