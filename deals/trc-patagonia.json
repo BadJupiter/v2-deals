@@ -15,7 +15,7 @@
 	"summary_info": "Patagonia Boutique",
 	
 	"FORM": {
-		"title": "Three Rivers Casino Resort",
+#		"title": "Three Rivers Casino Resort",
 		"fields": [
 			{
 				"id": "Hotel",
