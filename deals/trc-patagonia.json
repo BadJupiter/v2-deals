@@ -37,6 +37,17 @@
 				"type": "info",
 				"markdown": "# Three Rivers Casino Resort"
 			},
+			
+			{
+				"type": "info",
+				"markdown": "# Coos Bay"
+				"conditional": {
+					"field": "Group",
+					"value": "B"
+				}
+			},			
+			
+			
 			{
 				"type": "info",
 				"markdown": "# Patagonia Boutique"
