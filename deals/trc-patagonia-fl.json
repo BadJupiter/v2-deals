@@ -72,7 +72,7 @@
 			},
 			{
 				"id": "attend",
-				"label": "Will you attend the Patagonia Boutique event?",
+				"label": "Will you attend the Patagonia Event?",
 				"type": "select",
 				"range": ["Yes","No"],
 				"required": true
