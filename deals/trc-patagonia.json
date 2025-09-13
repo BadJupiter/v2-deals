@@ -33,7 +33,11 @@
 				"disabled": true,
 				"hidden": true
 			},
-						{
+			{
+				"type": "info",
+				"markdown": "# Three Rivers Casino Resort"
+			},
+			{
 				"type": "info",
 				"markdown": "# Patagonia Boutique"
 			},
