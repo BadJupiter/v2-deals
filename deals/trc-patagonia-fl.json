@@ -31,22 +31,20 @@
 				"type": "text",
 				"sticky": true,
 				"disabled": true,
-				"hidden": false
+				"hidden": true
 			},
 			{
 				"type": "info",
-				"markdown": "# Three Rivers Casino Resort - Skidoo"
+				"markdown": "# Three Rivers Casino Resort"
 			},
-			
 			{
 				"type": "info",
-				"markdown": "# Coos Bay",
-				"conditional": {
-					"field": "Group",
-					"value": "B"
-				}
+				"markdown": "# Florence",
 			},			
-			
+			{
+				"type": "info",
+				"markdown": "---"
+			},	
 			
 			{
 				"type": "info",
@@ -56,7 +54,7 @@
 				"type": "info",
 				"markdown": "## **October 3rd & 4th**"	
 			},
-						{
+			{
 				"type": "info",
 				"markdown": "---"
 			},
@@ -92,7 +90,7 @@
 				}
 			},
 			{
-				"id": "FLday1time",
+				"id": "day1time",
 				"label": "What time would you like to visit the Boutique?",
 				"type": "select",
 				"limit": 200,
@@ -120,10 +118,6 @@
 				],	
 				"required": true,
 				"conditional": [
-					{
-						"field": "Group",
-						"value": "A"
-					},
 					{
 						"field": "attend",
 						"value": "Yes"
@@ -135,7 +129,7 @@
 				]
 			},
 		{
-				"id": "FLday2time",
+				"id": "day2time",
 				"label": "What time would you like to visit the Boutique?",
 				"type": "select",
 				"limit": 200,
@@ -163,96 +157,6 @@
 				],	
 				"required": true,
 				"conditional": [
-					{
-						"field": "Group",
-						"value": "A"
-					},
-					{
-						"field": "attend",
-						"value": "Yes"
-					},
-					{
-						"field": "day",
-						"value": "Saturday, October 4th"
-					}
-				]
-			},
-			{
-				"id": "CBday1time",
-				"label": "What time would you like to visit the Boutique?",
-				"type": "select",
-				"limit": 200,
-				"range": [
-					{
-						"value": "4pm",
-						"count": 1,
-						"limit": 50
-					},
-					{
-						"value": "5pm",
-						"count": 1,
-						"limit": 50
-					},
-					{
-						"value": "6pm",
-						"count": 1,
-						"limit": 50
-					},
-					{
-						"value": "7pm",
-						"count": 1,
-						"limit": 50
-					}
-				],	
-				"required": true,
-				"conditional": [
-					{
-						"field": "Group",
-						"value": "B"
-					},
-					{
-						"field": "attend",
-						"value": "Yes"
-					},
-					{
-						"field": "day",
-						"value": "Friday, October 3rd"
-					}
-				]
-			},
-		{
-				"id": "CBday2time",
-				"label": "What time would you like to visit the Boutique?",
-				"type": "select",
-				"limit": 200,
-				"range": [
-					{
-						"value": "4pm",
-						"count": 1,
-						"limit": 50
-					},
-					{
-						"value": "5pm",
-						"count": 1,
-						"limit": 50
-					},
-					{
-						"value": "6pm",
-						"count": 1,
-						"limit": 50
-					},
-					{
-						"value": "7pm",
-						"count": 1,
-						"limit": 50
-					}
-				],	
-				"required": true,
-				"conditional": [
-					{
-						"field": "Group",
-						"value": "B"
-					},
 					{
 						"field": "attend",
 						"value": "Yes"
