@@ -8,11 +8,11 @@
 	},
 
 	"active": {
-		"start": "2025-08-16 10:00AM CDT",
-		"end": "2025-08-27 11:59PM CDT"
+		"start": "2025-09-13 10:00AM CDT",
+		"end": "2025-10-04 11:59PM CDT"
 	},
 	
-	"summary_info": "$10,000 High Stakes Bingo",
+	"summary_info": "Patagonia Boutique",
 	
 	"FORM": {
 		"title": "Three Rivers Casino Resort",
@@ -24,25 +24,26 @@
 				"sticky": true,
 				"disabled": true,
 				"hidden": true
-			},{
+			},
+			{
+				"id": "Group",
+				"label": "Group",
+				"type": "text",
+				"sticky": true,
+				"disabled": true,
+				"hidden": true
+			},
+						{
 				"type": "info",
-				"markdown": "# $10,000 High Stakes Bingo"
+				"markdown": "# Patagonia Boutique"
 			},
 			{
 				"type": "info",
-				"markdown": "## **September 26th & 27th**"	
+				"markdown": "## **October 3rd & 4th**"	
 			},
 						{
 				"type": "info",
 				"markdown": "---"
-			},
-			{
-				"type": "info",
-				"markdown": "## **Doors at 5:00pm**"	
-			},
-			{
-				"type": "info",
-				"markdown": "## **First Game at 6:00pm**"	
 			},
 			{
 				"type": "info",
@@ -55,11 +56,11 @@
 			{
 				"type": "info",
 				"justify": "center",
-				"markdown": " \n\nIt’s our pleasure to offer our valued Three Rivers guests an invitation to play in our **$10,000 High Stakes Bingo** event!"
+				"markdown": " \n\nIt’s our pleasure to offer our valued Three Rivers guests an invitation to our **Patagonia Boutique** event!"
 			},
 			{
 				"id": "attend",
-				"label": "Will you attend $10,000 High Stakes Bingo?",
+				"label": "Will you attend the Patagonia Boutique event?",
 				"type": "select",
 				"range": ["Yes","No"],
 				"required": true
@@ -68,7 +69,7 @@
 				"id": "day",
 				"label": "What day would you like to attend?",
 				"type": "select",
-				"range": ["Friday at 6:00pm","Saturday at 6:00pm"],
+				"range": ["Friday, October 3rd","Saturday, October 4th"],
 				"required": true,
 				"conditional": {
 					"field": "attend",
@@ -76,62 +77,180 @@
 				}
 			},
 			{
-				"id": "day1count",
-				"label": "Will you bring a guest?",
+				"id": "FLday1time",
+				"label": "What time would you like to visit the Boutique?",
 				"type": "select",
-				"limit": 400,
+				"limit": 200,
 				"range": [
 					{
-						"value": "No",
-						"count": 1
+						"value": "4pm",
+						"count": 1,
+						"limit": 50
 					},
 					{
-						"value": "Yes",
-						"count": 2
+						"value": "5pm",
+						"count": 1,
+						"limit": 50
+					},
+					{
+						"value": "6pm",
+						"count": 1,
+						"limit": 50
+					},
+					{
+						"value": "7pm",
+						"count": 1,
+						"limit": 50
 					}
-				],
+				],	
 				"required": true,
 				"conditional": [
+					{
+						"field": "Group",
+						"value": "A"
+					},
 					{
 						"field": "attend",
 						"value": "Yes"
 					},
 					{
 						"field": "day",
-						"value": "Friday at 6:00pm"
+						"value": "Friday, October 3rd"
 					}
-				]				
+				]
+			},
+		{
+				"id": "FLday2time",
+				"label": "What time would you like to visit the Boutique?",
+				"type": "select",
+				"limit": 200,
+				"range": [
+					{
+						"value": "4pm",
+						"count": 1,
+						"limit": 50
+					},
+					{
+						"value": "5pm",
+						"count": 1,
+						"limit": 50
+					},
+					{
+						"value": "6pm",
+						"count": 1,
+						"limit": 50
+					},
+					{
+						"value": "7pm",
+						"count": 1,
+						"limit": 50
+					}
+				],	
+				"required": true,
+				"conditional": [
+					{
+						"field": "Group",
+						"value": "A"
+					},
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "day",
+						"value": "Saturday, October 4th"
+					}
+				]
 			},
 			{
-				"id": "day2count",
-				"label": "Will you bring a guest?",
+				"id": "CBday1time",
+				"label": "What time would you like to visit the Boutique?",
 				"type": "select",
-				"limit": 400,
+				"limit": 200,
 				"range": [
 					{
-						"value": "No",
-						"count": 1
+						"value": "4pm",
+						"count": 1,
+						"limit": 50
 					},
 					{
-						"value": "Yes",
-						"count": 2
+						"value": "5pm",
+						"count": 1,
+						"limit": 50
+					},
+					{
+						"value": "6pm",
+						"count": 1,
+						"limit": 50
+					},
+					{
+						"value": "7pm",
+						"count": 1,
+						"limit": 50
 					}
-				],
+				],	
 				"required": true,
 				"conditional": [
+					{
+						"field": "Group",
+						"value": "B"
+					},
 					{
 						"field": "attend",
 						"value": "Yes"
 					},
 					{
 						"field": "day",
-						"value": "Saturday at 6:00pm"
+						"value": "Friday, October 3rd"
 					}
-				]				
+				]
+			},
+		{
+				"id": "CBday2time",
+				"label": "What time would you like to visit the Boutique?",
+				"type": "select",
+				"limit": 200,
+				"range": [
+					{
+						"value": "4pm",
+						"count": 1,
+						"limit": 50
+					},
+					{
+						"value": "5pm",
+						"count": 1,
+						"limit": 50
+					},
+					{
+						"value": "6pm",
+						"count": 1,
+						"limit": 50
+					},
+					{
+						"value": "7pm",
+						"count": 1,
+						"limit": 50
+					}
+				],	
+				"required": true,
+				"conditional": [
+					{
+						"field": "Group",
+						"value": "B"
+					},
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "day",
+						"value": "Saturday, October 4th"
+					}
+				]
 			},
 			{
 				"id": "room",
-				"label": "Would you like to be contacted for a room reservation?",
+				"label": "Would you like a host to contact you about hotel accommodations?",
 				"type": "select",
 				"range": ["Yes","No"],
 				"required": true,
@@ -142,11 +261,11 @@
 					},
 					{
 						"field": "day",
-						"values": ["Friday at 6:00pm","Saturday at 6:00pm"]
+						"values": ["Friday, October 3rd","Saturday, October 4th"]
 					},
 					{
 						"field": "Hotel",
-						"values": ["Y"] # match one of
+						"values": ["Y"]
 
 					}
 				]
