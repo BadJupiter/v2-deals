@@ -40,7 +40,7 @@
 			
 			{
 				"type": "info",
-				"markdown": "# Coos Bay"
+				"markdown": "# Coos Bay",
 				"conditional": {
 					"field": "Group",
 					"value": "B"
