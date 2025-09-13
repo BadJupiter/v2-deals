@@ -60,16 +60,12 @@
 			},
 			{
 				"type": "info",
-				"markdown": "---"
-			},
-			{
-				"type": "info",
 				"justify": "center",
 				"markdown": " \n\nIt’s our pleasure to offer our valued Three Rivers guests an invitation to our **Patagonia Boutique** event!"
 			},
 			{
 				"id": "attend",
-				"label": "Will you attend the Patagonia Boutique event?",
+				"label": "Will you attend the Patagonia Event?",
 				"type": "select",
 				"range": ["Yes","No"],
 				"required": true
