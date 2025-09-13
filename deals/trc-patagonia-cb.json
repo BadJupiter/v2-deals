@@ -1,0 +1,237 @@
+{
+	"biz_id": "threerivers",
+	"check_in": true,
+	"auth_required": true,
+	"error_auth": {
+		"title": "Woops!",
+		"content": "Can't play if you ain't authenticated!"
+	},
+
+	"active": {
+		"start": "2025-09-13 10:00AM CDT",
+		"end": "2025-10-04 11:59PM CDT"
+	},
+	
+	"summary_info": "Patagonia Boutique",
+	
+	"FORM": {
+#		"title": "Three Rivers Casino Resort",
+		"fields": [
+			{
+				"id": "Hotel",
+				"label": "Hotel",
+				"type": "text",
+				"sticky": true,
+				"disabled": true,
+				"hidden": true
+			},
+			{
+				"id": "Group",
+				"label": "Group",
+				"type": "text",
+				"sticky": true,
+				"disabled": true,
+				"hidden": true
+			},
+			{
+				"type": "info",
+				"markdown": "# Three Rivers Casino Resort"
+			},
+			{
+				"type": "info",
+				"markdown": "# Florence",
+			},			
+			{
+				"type": "info",
+				"markdown": "---"
+			},	
+			
+			{
+				"type": "info",
+				"markdown": "# Patagonia Boutique"
+			},
+			{
+				"type": "info",
+				"markdown": "## **October 3rd & 4th**"	
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "info",
+				"markdown": "## **Casino Event Center, Florence**"	
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "info",
+				"justify": "center",
+				"markdown": " \n\nIt’s our pleasure to offer our valued Three Rivers guests an invitation to our **Patagonia Boutique** event!"
+			},
+			{
+				"id": "attend",
+				"label": "Will you attend the Patagonia Boutique event?",
+				"type": "select",
+				"range": ["Yes","No"],
+				"required": true
+			},
+			{
+				"id": "day",
+				"label": "What day would you like to attend?",
+				"type": "select",
+				"range": ["Friday, October 3rd","Saturday, October 4th"],
+				"required": true,
+				"conditional": {
+					"field": "attend",
+					"value": "Yes"
+				}
+			},
+			{
+				"id": "day1time",
+				"label": "What time would you like to visit the Boutique?",
+				"type": "select",
+				"limit": 200,
+				"range": [
+					{
+						"value": "4pm",
+						"count": 1,
+						"limit": 50
+					},
+					{
+						"value": "5pm",
+						"count": 1,
+						"limit": 50
+					},
+					{
+						"value": "6pm",
+						"count": 1,
+						"limit": 50
+					},
+					{
+						"value": "7pm",
+						"count": 1,
+						"limit": 50
+					}
+				],	
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "day",
+						"value": "Friday, October 3rd"
+					}
+				]
+			},
+		{
+				"id": "day2time",
+				"label": "What time would you like to visit the Boutique?",
+				"type": "select",
+				"limit": 200,
+				"range": [
+					{
+						"value": "4pm",
+						"count": 1,
+						"limit": 50
+					},
+					{
+						"value": "5pm",
+						"count": 1,
+						"limit": 50
+					},
+					{
+						"value": "6pm",
+						"count": 1,
+						"limit": 50
+					},
+					{
+						"value": "7pm",
+						"count": 1,
+						"limit": 50
+					}
+				],	
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "day",
+						"value": "Saturday, October 4th"
+					}
+				]
+			},
+			{
+				"id": "room",
+				"label": "Would you like a host to contact you about hotel accommodations?",
+				"type": "select",
+				"range": ["Yes","No"],
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "day",
+						"values": ["Friday, October 3rd","Saturday, October 4th"]
+					},
+					{
+						"field": "Hotel",
+						"values": ["Y"]
+
+					}
+				]
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "fields_group",
+				"bgcolor": "#E9EFEA",
+				"fields": [
+					{
+						"id": "z_FIRSTNAME",
+						"label": "First Name:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					},
+					{
+						"id": "z_LASTNAME",
+						"label": "Last Name:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					},
+					{
+						"id": "PlayerID",
+						"label": "Club #:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					}
+				]
+			}
+		],
+	"limits": {
+			"most_recent_only": true,
+			"most_recent_key": "PlayerID"
+		},		
+	"submit": {
+			"label": "Submit RSVP",
+			"color": "#20363d"
+		
+		}
+	},
+	"MAIN": {
+		"body_md": "# We've received your request \n\nIf you need to make any changes to your RSVP just scan your invitation again. If you need any help please get in touch. We hope to see you soon at **Three Rivers Casino Resort - Florence**."
+	}
+}
