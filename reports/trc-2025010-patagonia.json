@@ -1,6 +1,6 @@
 {
 	"biz_id": "threerivers",
-	"deal_tokens": [ "trc-olukai" ],
+	"deal_tokens": [ "trc-patagonia-fl","trc-patagonia-cb" ],
 	"most_recent_only": true, # omit or set to false for all rows
 	"most_recent_key": "Player ID", # needs to be the column_name
 	
@@ -43,7 +43,7 @@
 			"attrib": "z_FIRSTNAME"
 		},
 		{
-			"column_name": "Attending",
+			"column_name": "Attend",
 			"attrib": "attend"
 		},
 		{
