@@ -8,11 +8,11 @@
 	},
 
 	"active": {
-		"start": "2025-09-13 10:00AM CDT",
-		"end": "2025-10-04 11:59PM CDT"
+		"start": "2025-09-16 10:00AM CDT",
+		"end": "2025-10-08 11:59PM CDT"
 	},
 	
-	"summary_info": "Patagonia Boutique",
+	"summary_info": "Ariat Boots Boutique",
 	
 	"FORM": {
 #		"title": "Three Rivers Casino Resort",
@@ -47,11 +47,11 @@
 			},	
 			{
 				"type": "info",
-				"markdown": "# Patagonia Boutique"
+				"markdown": "# Ariat Boots Boutique"
 			},
 			{
 				"type": "info",
-				"markdown": "## **October 3rd & 4th**"	
+				"markdown": "## **October 17th & 18th**"	
 			},
 			{
 				"type": "info",
@@ -68,11 +68,11 @@
 			{
 				"type": "info",
 				"justify": "center",
-				"markdown": " \n\nIt’s our pleasure to offer our valued Three Rivers guests an invitation to our **Patagonia Boutique** event!"
+				"markdown": " \n\nIt’s our pleasure to offer our valued Three Rivers guests an invitation to our **Ariat Boots Boutique** event!"
 			},
 			{
 				"id": "attend",
-				"label": "Will you attend the Patagonia Event?",
+				"label": "Will you attend the Ariat Boots Event?",
 				"type": "select",
 				"range": ["Yes","No"],
 				"required": true
@@ -81,7 +81,7 @@
 				"id": "day",
 				"label": "What day would you like to attend?",
 				"type": "select",
-				"range": ["Friday, October 3rd","Saturday, October 4th"],
+				"range": ["Friday, October 17th","Saturday, October 18th"],
 				"required": true,
 				"conditional": {
 					"field": "attend",
@@ -123,7 +123,7 @@
 					},
 					{
 						"field": "day",
-						"value": "Friday, October 3rd"
+						"value": "Friday, October 17th"
 					}
 				]
 			},
@@ -162,7 +162,7 @@
 					},
 					{
 						"field": "day",
-						"value": "Saturday, October 4th"
+						"value": "Saturday, October 18th"
 					}
 				]
 			},
@@ -179,7 +179,7 @@
 					},
 					{
 						"field": "day",
-						"values": ["Friday, October 3rd","Saturday, October 4th"]
+						"values": ["Friday, October 17th","Saturday, October 18th"]
 					},
 					{
 						"field": "Hotel",
