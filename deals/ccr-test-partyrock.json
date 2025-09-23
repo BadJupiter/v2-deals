@@ -1,0 +1,114 @@
+{
+	"biz_id": "colusacasino",
+	"check_in": true,
+	"auth_required": true,
+	"error_auth": {
+		"title": "Woops!",
+		"content": "Can't play if you ain't authenticated!"
+	},
+
+	"active": {
+		"start": "2025-08-01 10:00AM CDT",
+		"end": "2025-08-15 11:59PM CDT"
+	},
+
+	"summary_info": "BINGO night!",
+		
+	"FORM": {
+		"fields": [
+			{
+				"type": "info",
+				"markdown": "# Party Rock Bingo RSVP"
+			},
+			{
+				"type": "info",
+				"markdown": "## **August 15th**"
+			},
+			{
+				"type": "info",
+				"justify": "center",
+				"markdown": "ONSITE CHECK-IN BEGINS AT 6:00 PM"
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "info",
+				"justify": "center",
+				"markdown": " \n\nYou and a guest are invited to Party Rock Bingo at Colusa Casino!"
+			},
+			{
+				"id": "attend",
+				"label": "Are you able to attend?",
+				"type": "select",
+				"range": ["Yes","No"],
+				"required": true
+			},
+			{
+				"id": "guests",
+				"label": "I am confirming for:",
+				"type": "select",
+				"limit": 550,
+				"range": [
+					{
+						"value": "Myself",
+						"count": 1
+					},
+					{
+						"value": "Me and a guest",
+						"count": 2
+					}
+				],
+				"required": true,
+				"conditional": {
+					"field": "attend",
+					"value": "Yes"
+				}
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "fields_group",
+				"bgcolor": "#c8f0fc",
+				"fields": [
+					{
+						"id": "z_FIRSTNAME",
+						"label": "First Name:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					},
+					{
+						"id": "z_LASTNAME",
+						"label": "Last Name:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					},
+					{
+						"id": "PlayerID",
+						"label": "Rewards #:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					}
+				]
+			}
+		],
+		"limits": {
+			"most_recent_only": true,
+			"most_recent_key": "PlayerID"
+		},
+		"submit": {
+			"label": "Submit RSVP",
+			"color": "#20363d"
+		
+		}
+	},
+	"MAIN": {
+		"body_md": "# Thank you for your response! \n\nIf you need to make changes to your RSVP just scan your invitation again. If you need any help please call the number on your invitation. We hope to see you soon at **Colusa Casino Resort**."
+	}
+}
