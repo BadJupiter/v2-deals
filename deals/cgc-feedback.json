@@ -28,12 +28,12 @@
 			{
 				"type": "info",
 				"justify": "center",
-				"markdown": "# Casino QR: Guest feedback, reimagined"
+				"markdown": "# Your Voice Matters"
 			},
 			{
 				"type": "info",
 				"justify": "center",
-				"markdown": "## This digital comment card is just a glimpse of what we can do.  \n\n[Contact Michael Grim](mailto:Michael%20Grim<mgrim@playerperformancegroup.com>?subject=Casino%20QR%20Inquiry) to explore options for your casino or hospitality property."
+				"markdown": "## Thanks for spending time with us at Celesta Grand Casino & Hotel! We'd love to hear how your visit went."
 			},
 			{
 				"type": "info",
@@ -43,14 +43,14 @@
 				"id": "games",
 				"label": "What games did you play during your visit?",
 				"type": "multi-select",
-				"range": ["Slot Machines","Table Games","Video Poker","Keno","Bingo"],
+				"range": ["Slot Machines","Table Games","Video Poker","Bingo","Keno"],
 				"required": false
 			},
 			{
 				"id": "dining",
 				"label": "What food outlets did you dine in during your visit?",
 				"type": "multi-select",
-				"range": ["Jackpot Prime","The Daily Deal","Quick Draw Cafe"],
+				"range": ["Sterling & Slate","The Terrace Eatery","Pronto Provisions", "Perch & Perk Cafe"],
 				"required": false
 			},
 			{
@@ -62,7 +62,7 @@
 			},
 			{
 				"id": "comments",
-				"label": "Tell us how we could improve your experience:",
+				"label": "What would you like us to know?",
 				"type": "textarea",
 				"rows": 3,
 				"required": false
@@ -74,23 +74,16 @@
 				"range": ["definitely will","very likely","maybe","not likely","will not"],
 				"required": false
 			},
-			{
-				"id": "recommend",
-				"label": "How likely are you to recommend us to friends and family?",
-				"type": "select",
-				"range": ["definitely will","very likely","maybe","not likely","will not"],
-				"required": false
-			},
-			{
+						{
 				"id": "amenities",
-				"label": "Is there anything we don't currently offer that we should?",
+				"label": "Are there amenities we could offer to make your visit more enjoyable?",
 				"type": "textarea",
 				"rows": 3,
 				"required": false
 			},
 			{
 				"id": "team",
-				"label": "Are there any team members you would like to recognize?",
+				"label": "Did anyone on our team provide you with exceptional service?",
 				"type": "textarea",
 				"rows": 3,
 				"required": false
@@ -130,14 +123,13 @@
 		},
 		"notify": {
 			"opt_in": "contact",
-			"message": "(from {_mob}) {name} requested contact: {comments}",
+			"message": "(from {_mob}) {name} submitted a Celesta Grand feedback survey: {comments}",
 			"mobiles": [
-				"+16462474444",
 				"+15039533423"
 			]
 		}
 	},
 	"MAIN": {
-		"body_md": "# Thank You!\n\nWe appreciate your feedback, and thank you for visiting 777 Casino & Hotel."
+		"body_md": "# Thank You!\n\nWe appreciate your feedback, and thank you for visiting Celesta Grand Casino & Hotel."
 	}
 }
