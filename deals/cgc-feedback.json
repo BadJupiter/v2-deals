@@ -57,7 +57,7 @@
 				"id": "comments",
 				"label": "What would you like us to know?",
 				"type": "textarea",
-				"rows": 3,
+				"rows": 2,
 				"required": false
 			},
 			{
@@ -71,14 +71,14 @@
 				"id": "amenities",
 				"label": "Are there any amenities we should offer?",
 				"type": "textarea",
-				"rows": 3,
+				"rows": 2,
 				"required": false
 			},
 			{
 				"id": "team",
 				"label": "Does anyone on our team deserve a shout-out?",
 				"type": "textarea",
-				"rows": 3,
+				"rows": 2,
 				"required": false
 			},
 			{
