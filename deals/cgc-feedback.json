@@ -41,14 +41,14 @@
 			},
 			{
 				"id": "games",
-				"label": "What games did you play during your visit?",
+				"label": "What games did you play?",
 				"type": "multi-select",
 				"range": ["Slot Machines","Table Games","Video Poker","Bingo","Keno"],
 				"required": false
 			},
 			{
 				"id": "dining",
-				"label": "What food outlets did you dine in during your visit?",
+				"label": "Where did you dine?",
 				"type": "multi-select",
 				"range": ["Sterling & Slate","The Terrace Eatery","Pronto Provisions", "Perch & Perk Cafe"],
 				"required": false
@@ -76,14 +76,14 @@
 			},
 						{
 				"id": "amenities",
-				"label": "Are there amenities we could offer to make your visit more enjoyable?",
+				"label": "Are there any amenities we should offer?",
 				"type": "textarea",
 				"rows": 3,
 				"required": false
 			},
 			{
 				"id": "team",
-				"label": "Did anyone on our team provide you with exceptional service?",
+				"label": "Does anyone on our team deserve a shout-out?",
 				"type": "textarea",
 				"rows": 3,
 				"required": false
