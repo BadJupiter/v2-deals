@@ -1,0 +1,143 @@
+{
+	"biz_id": "jupiter",
+	"check_in": true,
+	"auth_required": true,
+	"error_auth": {
+		"title": "Woops!",
+		"content": "Can't play if you ain't authenticated!"
+	},
+	"styling": {
+		"fonts": {
+			"headers": {
+				"family": "Raleway",
+				"weight": 700,
+				"style": "italic"
+			},
+			"body": {
+				"family": "Raleway",
+				"weight": "normal"
+			},
+			"formlabels": {
+				"family": "Raleway",
+				"weight": "bold"
+			}
+		}
+	},
+	"FORM": {
+		"fields": [
+			{
+				"type": "info",
+				"justify": "center",
+				"markdown": "# Casino QR: Guest feedback, reimagined"
+			},
+			{
+				"type": "info",
+				"justify": "center",
+				"markdown": "## This digital comment card is just a glimpse of what we can do.  \n\n[Contact Michael Grim](mailto:Michael%20Grim<mgrim@playerperformancegroup.com>?subject=Casino%20QR%20Inquiry) to explore options for your casino or hospitality property."
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"id": "games",
+				"label": "What games did you play during your visit?",
+				"type": "multi-select",
+				"range": ["Slot Machines","Table Games","Video Poker","Keno","Bingo"],
+				"required": false
+			},
+			{
+				"id": "dining",
+				"label": "What food outlets did you dine in during your visit?",
+				"type": "multi-select",
+				"range": ["Jackpot Prime","The Daily Deal","Quick Draw Cafe"],
+				"required": false
+			},
+			{
+				"id": "rating",
+				"label": "How was your overall experience?",
+				"type": "select",
+				"range": ["⭑⭑⭑⭑⭑","⭑⭑⭑⭑","⭑⭑⭑","⭑⭑","⭑"],
+				"required": false
+			},
+			{
+				"id": "comments",
+				"label": "Tell us how we could improve your experience:",
+				"type": "textarea",
+				"rows": 3,
+				"required": false
+			},
+			{
+				"id": "return",
+				"label": "How likely are you to visit again?",
+				"type": "select",
+				"range": ["definitely will","very likely","maybe","not likely","will not"],
+				"required": false
+			},
+			{
+				"id": "recommend",
+				"label": "How likely are you to recommend us to friends and family?",
+				"type": "select",
+				"range": ["definitely will","very likely","maybe","not likely","will not"],
+				"required": false
+			},
+			{
+				"id": "amenities",
+				"label": "Is there anything we don't currently offer that we should?",
+				"type": "textarea",
+				"rows": 3,
+				"required": false
+			},
+			{
+				"id": "team",
+				"label": "Are there any team members you would like to recognize?",
+				"type": "textarea",
+				"rows": 3,
+				"required": false
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "fields_group",
+				"bgcolor": "#dfe1fa",
+				"fields": [
+					{
+						"id": "firstname",
+						"label": "First Name:",
+						"type": "text",
+						"required": true
+					},
+					{
+						"id": "lastname",
+						"label": "Last Name:",
+						"type": "text",
+						"required": true
+					},
+					{
+						"id": "email",
+						"label": "Email:",
+						"type": "email",
+						"required": true
+					}
+				]
+			}
+		],
+		"submit": {
+			"label": "Submit Feedback",
+			"color": "#20363d"
+		},
+		"notify": {
+			"opt_in": "contact",
+			"message": "(from {_mob}) {name} requested contact: {comments}",
+			"mobiles": [
+				"+16462474444",
+				"+15039533423"
+			]
+		}
+	},
+	"MAIN": {
+		"body_md": "# Thank You!\n\nWe appreciate your feedback, and thank you for visiting 777 Casino & Hotel."
+	}
+}
