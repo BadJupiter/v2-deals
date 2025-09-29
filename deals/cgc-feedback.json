@@ -47,13 +47,6 @@
 				"required": false
 			},
 			{
-				"id": "dining",
-				"label": "Where did you dine?",
-				"type": "multi-select",
-				"range": ["Sterling & Slate","The Terrace Eatery","Pronto Provisions", "Perch & Perk Cafe"],
-				"required": false
-			},
-			{
 				"id": "rating",
 				"label": "How was your overall experience?",
 				"type": "select",
@@ -68,13 +61,13 @@
 				"required": false
 			},
 			{
-				"id": "return",
-				"label": "How likely are you to visit again?",
-				"type": "select",
-				"range": ["definitely will","very likely","maybe","not likely","will not"],
+				"id": "dining",
+				"label": "Where did you dine?",
+				"type": "multi-select",
+				"range": ["Sterling & Slate","The Terrace Eatery","Pronto Provisions", "Perch & Perk Cafe"],
 				"required": false
 			},
-						{
+			{
 				"id": "amenities",
 				"label": "Are there any amenities we should offer?",
 				"type": "textarea",
