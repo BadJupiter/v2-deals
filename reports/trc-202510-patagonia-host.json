@@ -1,0 +1,66 @@
+{
+	"biz_id": "threerivers",
+	"deal_tokens": [ "trc-patagonia-fl","trc-patagonia-cb", "trc-patagonia-fl-host" ],
+	"most_recent_only": true, # omit or set to false for all rows
+	"most_recent_key": "Player ID", # needs to be the column_name
+	
+	"as_xlsx": false, # omit or set to false for default (CSV)
+
+#	The following column values are always available (attrib):
+#	
+#	_when		grab timestamp (Unix -- for now)
+#	_mobile		User mobile number
+#	_deal		Deal token
+#	_rowid		unique row (grab) identifier
+
+	"COLUMNS": [
+		{
+			"column_name": "Row ID",
+			"attrib": "_rowid"
+		},
+		{
+			"column_name": "Timestamp",
+			"attrib": "_when"
+		},
+		{
+			"column_name": "Mobile",
+			"attrib": "_mobile"
+		},
+		{
+			"column_name": "Deal ID",
+			"attrib": "_deal"
+		},
+		{
+			"column_name": "Player ID",
+			"attrib": "PlayerID"
+		},
+		{
+			"column_name": "Last Name",
+			"attrib": "z_LASTNAME"
+		},
+		{
+			"column_name": "First Name",
+			"attrib": "z_FIRSTNAME"
+		},
+		{
+			"column_name": "Attend",
+			"attrib": "attend"
+		},
+		{
+			"column_name": "Day",
+			"attrib": "day"
+		},
+		{
+			"column_name": "Fri Time",
+			"attrib": "day1time"
+		},
+		{
+			"column_name": "Sat Time",
+			"attrib": "day2time"
+		},
+		{
+			"column_name": "Room",
+			"attrib": "room"
+		}
+	]
+}
