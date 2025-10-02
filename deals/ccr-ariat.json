@@ -1,5 +1,5 @@
 {
-	"biz_id": "threerivers",
+	"biz_id": "colusacasino",
 	"check_in": true,
 	"auth_required": true,
 	"error_auth": {
@@ -7,20 +7,22 @@
 		"content": "Can't play if you ain't authenticated!"
 	},
 
+	"active": {
+		"start": "2025-10-01 10:00AM CDT",
+		"end": "2025-11-07 11:59PM CDT"
+	},
+	
+	"summary_info": "Ariat Boot Event",
+	
 	"FORM": {
-		"title": "Three Rivers Casino Resort",
-		"fields": [
+			"fields": [
 			{
 				"type": "info",
-				"markdown": "# 96 Shades"
+				"markdown": "# Ariat Boot Event"
 			},
 			{
 				"type": "info",
-				"markdown": "## **Thursday, July 31st**"	
-			},
-			{
-				"type": "info",
-				"markdown": "## **Casino Event Center, Florence**"	
+				"markdown": "## **Friday, Novemvber 7th**"	
 			},
 			{
 				"type": "info",
@@ -29,40 +31,55 @@
 			{
 				"type": "info",
 				"justify": "center",
-				"markdown": " \n\nIt’s our pleasure to offer our valued Three Rivers guests an invitation to our exclusive **96 Shades Event**."
+				"markdown": " \n\nYou are invited to our exclusive **Ariat Boot Event**."
 			},
 			{
 				"id": "attend",
-				"label": "Will you attend the 96 Shades Event?",
+				"label": "Will you be attending?",
 				"type": "select",
 				"range": ["Yes","No"],
 				"required": true
 			},
 			{
 				"id": "time",
-				"label": "What time would you like to attend?",
+				"label": "Choose your Time to Shop",
 				"type": "select",
-				"limit": 200,
+				"limit": 420,
 				"range": [
+					{
+						"value": "2pm",
+						"count": 1,
+						"limit": 60
+					},
+					{
+						"value": "3pm",
+						"count": 1,
+						"limit": 60
+					},
 					{
 						"value": "4pm",
 						"count": 1,
-						"limit": 50
+						"limit": 60
 					},
-					{
+										{
 						"value": "5pm",
 						"count": 1,
-						"limit": 50
+						"limit": 60
 					},
-					{
+										{
 						"value": "6pm",
 						"count": 1,
-						"limit": 50
+						"limit": 60
 					},
-					{
+										{
 						"value": "7pm",
 						"count": 1,
-						"limit": 50
+						"limit": 60
+					},
+					{
+						"value": "8pm",
+						"count": 1,
+						"limit": 60
 					}
 				],	
 				
@@ -81,7 +98,7 @@
 			},
 			{
 				"type": "fields_group",
-				"bgcolor": "#d6f5e3",
+				"bgcolor": "#E8C97B",
 				"fields": [
 					{
 						"id": "z_FIRSTNAME",
@@ -118,6 +135,6 @@
 		}
 	},
 	"MAIN": {
-		"body_md": "# We've received your request \n\nIf you need to make any changes to your RSVP just scan your invitation again. If you need any help please get in touch. We hope to see you soon at **Three Rivers Casino Resort - Florence**."
+		"body_md": "# We've received your request \n\nIf you need to make any changes to your RSVP just scan your invitation again. If you need any help please get in touch. We hope to see you soon at **Colusa Casino**."
 	}
 }
