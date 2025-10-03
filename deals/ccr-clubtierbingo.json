@@ -9,20 +9,20 @@
 
 	"active": {
 		"start": "2025-10-01 10:00AM CDT",
-		"end": "2025-11-07 11:59PM CDT"
+		"end": "2025-11-21 11:59PM CDT"
 	},
 	
-	"summary_info": "Ariat Boot Event",
+	"summary_info": "Club Tier Bingo",
 	
 	"FORM": {
 			"fields": [
 			{
 				"type": "info",
-				"markdown": "# Ariat Boot Event"
+				"markdown": "# Club Tier Bingo!"
 			},
 			{
 				"type": "info",
-				"markdown": "## **Friday, November 7th**"	
+				"markdown": "## **Friday, November 14th or 21st**"	
 			},
 			{
 				"type": "info",
@@ -31,66 +31,79 @@
 			{
 				"type": "info",
 				"justify": "center",
-				"markdown": " \n\nYou are invited to our exclusive **Ariat Boot Event**."
+				"markdown": " \n\nYou are invited to our **Club Tier Bingo Event**."
 			},
 			{
 				"id": "attend",
-				"label": "Will you be attending?",
+				"label": "Are you able to attend?",
 				"type": "select",
 				"range": ["Yes","No"],
 				"required": true
 			},
 			{
-				"id": "time",
-				"label": "Choose your Time to Shop",
+				"id": "day",
+				"label": "Choose your date:",
 				"type": "select",
-				"limit": 420,
+				"range": ["Friday, November 14th","Friday, November 21st"],
+				"required": true,
+				"conditional": {
+					"field": "attend",
+					"value": "Yes"
+				}
+			},
+			{
+				"id": "day1count",
+				"label": "I am confirming for:",
+				"type": "select",
+				"limit": 600,
 				"range": [
 					{
-						"value": "2pm",
-						"count": 1,
-						"limit": 60
+						"value": "Myself",
+						"count": 1
 					},
 					{
-						"value": "3pm",
-						"count": 1,
-						"limit": 60
-					},
-					{
-						"value": "4pm",
-						"count": 1,
-						"limit": 60
-					},
-										{
-						"value": "5pm",
-						"count": 1,
-						"limit": 60
-					},
-										{
-						"value": "6pm",
-						"count": 1,
-						"limit": 60
-					},
-										{
-						"value": "7pm",
-						"count": 1,
-						"limit": 60
-					},
-					{
-						"value": "8pm",
-						"count": 1,
-						"limit": 60
+						"value": "Me and a guest",
+						"count": 2
 					}
-				],	
-				
-				
+				],
 				"required": true,
 				"conditional": [
 					{
 						"field": "attend",
 						"value": "Yes"
+					},
+					{
+						"field": "day",
+						"value": "Friday, November 14th"
 					}
-				]
+				]				
+			},
+			{
+				"id": "day2count",
+				"label": "I am confirming for:",
+				"type": "select",
+				"limit": 600,
+				"range": [
+					{
+						"value": "Myself",
+						"count": 1
+					},
+					{
+						"value": "Me and a guest",
+						"count": 2
+					}
+				],
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "day",
+						"value": "Friday, November 21st"
+					}
+				]				
 			},
 			{
 				"type": "info",
