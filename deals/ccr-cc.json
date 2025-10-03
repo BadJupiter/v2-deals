@@ -9,16 +9,16 @@
 
 	"active": {
 		"start": "2025-10-01 10:00AM CDT",
-		"end": "2025-11-07 11:59PM CDT"
+		"end": "2025-11-30 11:59PM CDT"
 	},
 	
-	"summary_info": "Ariat Boot Event",
+	"summary_info": "Clayton & Crume Event",
 	
 	"FORM": {
 			"fields": [
 			{
 				"type": "info",
-				"markdown": "# Ariat Boot Event"
+				"markdown": "# Clayton & Crume Event"
 			},
 			{
 				"type": "info",
@@ -31,7 +31,7 @@
 			{
 				"type": "info",
 				"justify": "center",
-				"markdown": " \n\nYou are invited to our exclusive **Ariat Boot Event**."
+				"markdown": " \n\nYou are invited to our exclusive **Clayton & Crume Event**."
 			},
 			{
 				"id": "attend",
