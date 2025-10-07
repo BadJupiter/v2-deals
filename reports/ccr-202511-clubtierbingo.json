@@ -51,8 +51,12 @@
 			"attrib": "day"
 		},
 		{
-			"column_name": "Count",
-			"attrib": "count"
+			"column_name": "14th Count",
+			"attrib": "day1count"
+		},
+		{
+			"column_name": "21st Count",
+			"attrib": "day2count"
 		}
 	]
 }
