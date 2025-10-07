@@ -1,6 +1,6 @@
 {
 	"biz_id": "colusacasino",
-	"deal_tokens": [ "ccr-partyrock2" ],
+	"deal_tokens": [ "ccr-ariat" ],
 	"most_recent_only": true, # omit or set to false for all rows
 	"most_recent_key": "Player ID", # needs to be the column_name
 	
@@ -47,8 +47,8 @@
 			"attrib": "attend"
 		},
 		{
-			"column_name": "Guests",
-			"attrib": "guests"
+			"column_name": "Time",
+			"attrib": "time"
 		}
 	]
 }
