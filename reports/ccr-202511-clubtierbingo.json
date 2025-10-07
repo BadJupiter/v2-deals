@@ -1,0 +1,139 @@
+{
+	"biz_id": "colusacasino",
+	"deal_tokens": [ "ccr-creekstone","ccr-creekstone-host" ],
+	"most_recent_only": true, # omit or set to false for all rows
+	"most_recent_key": "Player ID", # needs to be the column_name
+	
+	"as_xlsx": false, # omit or set to false for default (CSV)
+
+#	The following column values are always available (attrib):
+#	
+#	_when		grab timestamp (Unix -- for now)
+#	_mobile		User mobile number
+#	_deal		Deal token
+#	_rowid		unique row (grab) identifier
+
+	"COLUMNS": [
+		{
+			"column_name": "Row ID",
+			"attrib": "_rowid"
+		},
+		{
+			"column_name": "Timestamp",
+			"attrib": "_when"
+		},
+		{
+			"column_name": "Mobile",
+			"attrib": "_mobile"
+		},
+		{
+			"column_name": "Deal ID",
+			"attrib": "_deal"
+		},
+		{
+			"column_name": "Player ID",
+			"attrib": "PlayerID"
+		},
+		{
+			"column_name": "Last Name",
+			"attrib": "z_LASTNAME"
+		},
+		{
+			"column_name": "First Name",
+			"attrib": "z_FIRSTNAME"
+		},
+		{
+			"column_name": "Attend",
+			"attrib": "attend"
+		},
+		{
+			"column_name": "Day",
+			"attrib": "day"
+		},
+		{
+			"column_name": "Time",
+			"attrib": "time"
+		},
+		{
+			"column_name": "29th 5:00pm Count",
+			"attrib": "time1count"
+		},
+		{
+			"column_name": "29th 6:30pm Count",
+			"attrib": "time2count"
+		},
+		{
+			"column_name": "29th 8:00pm Count",
+			"attrib": "time3count"
+		},
+		{
+			"column_name": "30th 5:00pm Count",
+			"attrib": "time4count"
+		},
+		{
+			"column_name": "30th 6:30pm Count",
+			"attrib": "time5count"
+		},
+		{
+			"column_name": "30th 8:00pm Count",
+			"attrib": "time6count"
+		},
+				
+		{
+			"column_name": "29th 5:00pm Meal1",
+			"attrib": "time1meal1"
+		},
+		{
+			"column_name": "29th 5:00pm Meal2",
+			"attrib": "time1meal2"
+		},
+		{
+			"column_name": "29th 6:30pm Meal1",
+			"attrib": "time2meal1"
+		},
+		{
+			"column_name": "29th 6:30pm Meal2",
+			"attrib": "time2meal2"
+		},
+		{
+			"column_name": "29th 8:00pm Meal1",
+			"attrib": "time3meal1"
+		},
+		{
+			"column_name": "29th 8:00pm Meal2",
+			"attrib": "time3meal2"
+		},
+		{
+			"column_name": "30th 5:00pm Meal1",
+			"attrib": "time4meal1"
+		},
+		{
+			"column_name": "30th 5:00pm Meal2",
+			"attrib": "time4meal2"
+		},
+		{
+			"column_name": "30th 6:30pm Meal1",
+			"attrib": "time5meal1"
+		},
+		{
+			"column_name": "30th 6:30pm Meal2",
+			"attrib": "time5meal2"
+		},
+		{
+			"column_name": "30th 8:00pm Meal1",
+			"attrib": "time6meal1"
+		},
+		{
+			"column_name": "30th 8:00pm Meal2",
+			"attrib": "time6meal2"
+		},
+		{
+			"column_name": "Gift",
+			"attrib": "gift"
+		},
+		{
+			"column_name": "Personalization",
+			"attrib": "personalization"
+		}
+	]
+}
