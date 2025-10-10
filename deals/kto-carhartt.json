@@ -44,7 +44,7 @@
 				"id": "time",
 				"label": "Choose a time:",
 				"type": "select",
-				"limit": 420,
+				"limit": 256,
 				"range": [
 					{
 						"value": "Noon",
