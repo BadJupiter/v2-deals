@@ -1,5 +1,5 @@
 {
-	"biz_id": "colusacasino",
+	"biz_id": "kickapoo",
 	"check_in": true,
 	"auth_required": true,
 	"error_auth": {
@@ -8,21 +8,21 @@
 	},
 
 	"active": {
-		"start": "2025-10-01 10:00AM CDT",
-		"end": "2025-11-07 11:59PM CDT"
+		"start": "2025-10-10 10:00AM CDT",
+		"end": "2025-11-14 11:59PM CDT"
 	},
 	
-	"summary_info": "Ariat Boot Event",
+	"summary_info": "Carhartt Event",
 	
 	"FORM": {
 			"fields": [
 			{
 				"type": "info",
-				"markdown": "# Ariat Boot Event"
+				"markdown": "# Carhartt Event"
 			},
 			{
 				"type": "info",
-				"markdown": "## **Friday, November 7th**"	
+				"markdown": "## **Friday, November 14th**"	
 			},
 			{
 				"type": "info",
@@ -31,7 +31,7 @@
 			{
 				"type": "info",
 				"justify": "center",
-				"markdown": " \n\nYou are invited to our exclusive **Ariat Boot Event**."
+				"markdown": " \n\nYou are invited to our exclusive **Carhartt Event**."
 			},
 			{
 				"id": "attend",
@@ -42,44 +42,49 @@
 			},
 			{
 				"id": "time",
-				"label": "Choose your Time to Shop",
+				"label": "Choose a time:",
 				"type": "select",
 				"limit": 420,
 				"range": [
 					{
+						"value": "Noon",
+						"count": 1,
+						"limit": 32
+					},
+					{
+						"value": "1pm",
+						"count": 1,
+						"limit": 32
+					},
+					{
 						"value": "2pm",
 						"count": 1,
-						"limit": 60
+						"limit": 32
 					},
 					{
 						"value": "3pm",
 						"count": 1,
-						"limit": 60
+						"limit": 32
 					},
 					{
 						"value": "4pm",
 						"count": 1,
-						"limit": 60
+						"limit": 32
 					},
 										{
 						"value": "5pm",
 						"count": 1,
-						"limit": 60
+						"limit": 32
 					},
 										{
 						"value": "6pm",
 						"count": 1,
-						"limit": 60
+						"limit": 32
 					},
 										{
 						"value": "7pm",
 						"count": 1,
-						"limit": 60
-					},
-					{
-						"value": "8pm",
-						"count": 1,
-						"limit": 60
+						"limit": 32
 					}
 				],	
 				
