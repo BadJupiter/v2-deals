@@ -113,6 +113,11 @@
 						"value": "7pm",
 						"count": 1,
 						"limit": 50
+					},
+					{
+						"value": "7:30pm",
+						"count": 1,
+						"limit": 50
 					}
 				],	
 				"required": true,
@@ -152,7 +157,13 @@
 						"value": "7pm",
 						"count": 1,
 						"limit": 51
+					},
+					{
+						"value": "7:30pm",
+						"count": 1,
+						"limit": 50
 					}
+		
 				],	
 				"required": true,
 				"conditional": [
