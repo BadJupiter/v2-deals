@@ -71,17 +71,17 @@
 						"count": 1,
 						"limit": 32
 					},
-										{
+					{
 						"value": "5pm",
 						"count": 1,
 						"limit": 32
 					},
-										{
+					{
 						"value": "6pm",
 						"count": 1,
 						"limit": 32
 					},
-										{
+					{
 						"value": "7pm",
 						"count": 1,
 						"limit": 32
@@ -140,6 +140,6 @@
 		}
 	},
 	"MAIN": {
-		"body_md": "# We've received your request \n\nIf you need to make any changes to your RSVP just scan your invitation again. If you need any help please get in touch. We hope to see you soon at **Colusa Casino**."
+		"body_md": "# We've received your request \n\nIf you need to make any changes to your RSVP just scan your invitation again. If you need any help please get in touch. We hope to see you soon at **Kickapoo Casino**."
 	}
 }
