@@ -19,7 +19,7 @@
 		"fields": [
 			{
 				"type": "info",
-				"markdown": "# Carhartt Event"
+				"markdown": "# Carhartt VIP Event"
 			},
 			{
 				"type": "info",
@@ -32,7 +32,7 @@
 			{
 				"type": "info",
 				"justify": "center",
-				"markdown": " \n\nYou are invited to our exclusive **Carhartt Event**."
+				"markdown": " \n\nYou are invited to our exclusive **Carhartt VIP Event**."
 			},
 			{
 				"id": "attend",
