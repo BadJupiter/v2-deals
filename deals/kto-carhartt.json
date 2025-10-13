@@ -15,7 +15,8 @@
 	"summary_info": "Carhartt Event",
 	
 	"FORM": {
-			"fields": [
+		"title": "Kickapoo Casino",	
+		"fields": [
 			{
 				"type": "info",
 				"markdown": "# Carhartt Event"
