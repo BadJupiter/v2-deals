@@ -160,28 +160,6 @@
 				]
 			},
 			{
-				"id": "room",
-				"label": "Would you like a host to contact you about hotel accommodations?",
-				"type": "select",
-				"range": ["Yes","No"],
-				"required": true,
-				"conditional": [
-					{
-						"field": "attend",
-						"value": "Yes"
-					},
-					{
-						"field": "day",
-						"values": ["Friday, October 17th","Saturday, October 18th"]
-					},
-					{
-						"field": "Hotel",
-						"values": ["Y"]
-
-					}
-				]
-			},
-			{
 				"type": "info",
 				"markdown": "---"
 			},
