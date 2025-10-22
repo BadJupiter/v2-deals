@@ -8,11 +8,11 @@
 	},
 
 	"active": {
-		"start": "2025-08-16 10:00AM CDT",
-		"end": "2025-08-27 11:59PM CDT"
+		"start": "2025-10-21 10:00AM CDT",
+		"end": "2025-11-29 11:59PM CDT"
 	},
 	
-	"summary_info": "$10,000 High Stakes Bingo",
+	"summary_info": "Speakeasy",
 	
 	"FORM": {
 		"title": "Three Rivers Casino Resort",
@@ -26,11 +26,11 @@
 				"hidden": true
 			},{
 				"type": "info",
-				"markdown": "# $10,000 High Stakes Bingo"
+				"markdown": "# Speakeasy"
 			},
 			{
 				"type": "info",
-				"markdown": "## **September 26th & 27th**"	
+				"markdown": "## **November 29th**"	
 			},
 						{
 				"type": "info",
@@ -38,11 +38,11 @@
 			},
 			{
 				"type": "info",
-				"markdown": "## **Doors at 5:00pm**"	
+				"markdown": "## **4:00pm - 9:00pm**"	
 			},
 			{
 				"type": "info",
-				"markdown": "## **First Game at 6:00pm**"	
+				"markdown": "## **Grand Prize Drawings at 9:30pm**"	
 			},
 			{
 				"type": "info",
@@ -55,31 +55,20 @@
 			{
 				"type": "info",
 				"justify": "center",
-				"markdown": " \n\nIt’s our pleasure to offer our valued Three Rivers guests an invitation to play in our **$10,000 High Stakes Bingo** event!"
+				"markdown": " \n\nIt’s our pleasure to offer our valued Three Rivers guests an invitation to our **Speakeasy** event!"
 			},
 			{
 				"id": "attend",
-				"label": "Will you attend $10,000 High Stakes Bingo?",
+				"label": "Will you attend the Speakeasy Event?",
 				"type": "select",
 				"range": ["Yes","No"],
 				"required": true
 			},
 			{
-				"id": "day",
-				"label": "What day would you like to attend?",
+				"id": "guest",
+				"label": "Will you be bringing a guest?",
 				"type": "select",
-				"range": ["Friday at 6:00pm","Saturday at 6:00pm"],
-				"required": true,
-				"conditional": {
-					"field": "attend",
-					"value": "Yes"
-				}
-			},
-			{
-				"id": "day1count",
-				"label": "Will you bring a guest?",
-				"type": "select",
-				"limit": 400,
+				"limit": 2000,
 				"range": [
 					{
 						"value": "No",
@@ -95,43 +84,12 @@
 					{
 						"field": "attend",
 						"value": "Yes"
-					},
-					{
-						"field": "day",
-						"value": "Friday at 6:00pm"
-					}
-				]				
-			},
-			{
-				"id": "day2count",
-				"label": "Will you bring a guest?",
-				"type": "select",
-				"limit": 400,
-				"range": [
-					{
-						"value": "No",
-						"count": 1
-					},
-					{
-						"value": "Yes",
-						"count": 2
-					}
-				],
-				"required": true,
-				"conditional": [
-					{
-						"field": "attend",
-						"value": "Yes"
-					},
-					{
-						"field": "day",
-						"value": "Saturday at 6:00pm"
 					}
 				]				
 			},
 			{
 				"id": "room",
-				"label": "Would you like to be contacted for a room reservation?",
+				"label": "Would you like a host to contact you about hotel accommodations?",
 				"type": "select",
 				"range": ["Yes","No"],
 				"required": true,
@@ -141,12 +99,8 @@
 						"value": "Yes"
 					},
 					{
-						"field": "day",
-						"values": ["Friday at 6:00pm","Saturday at 6:00pm"]
-					},
-					{
 						"field": "Hotel",
-						"values": ["Y"] # match one of
+						"values": ["Y"]
 
 					}
 				]
