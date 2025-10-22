@@ -1,0 +1,199 @@
+{
+	"biz_id": "threerivers",
+	"check_in": true,
+	"auth_required": true,
+	"error_auth": {
+		"title": "Woops!",
+		"content": "Can't play if you ain't authenticated!"
+	},
+
+	"active": {
+		"start": "2025-08-16 10:00AM CDT",
+		"end": "2025-08-27 11:59PM CDT"
+	},
+	
+	"summary_info": "$10,000 High Stakes Bingo",
+	
+	"FORM": {
+		"title": "Three Rivers Casino Resort",
+		"fields": [
+			{
+				"id": "Hotel",
+				"label": "Hotel",
+				"type": "text",
+				"sticky": true,
+				"disabled": true,
+				"hidden": true
+			},{
+				"type": "info",
+				"markdown": "# $10,000 High Stakes Bingo"
+			},
+			{
+				"type": "info",
+				"markdown": "## **September 26th & 27th**"	
+			},
+						{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "info",
+				"markdown": "## **Doors at 5:00pm**"	
+			},
+			{
+				"type": "info",
+				"markdown": "## **First Game at 6:00pm**"	
+			},
+			{
+				"type": "info",
+				"markdown": "## **Casino Event Center, Florence**"	
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "info",
+				"justify": "center",
+				"markdown": " \n\nIt’s our pleasure to offer our valued Three Rivers guests an invitation to play in our **$10,000 High Stakes Bingo** event!"
+			},
+			{
+				"id": "attend",
+				"label": "Will you attend $10,000 High Stakes Bingo?",
+				"type": "select",
+				"range": ["Yes","No"],
+				"required": true
+			},
+			{
+				"id": "day",
+				"label": "What day would you like to attend?",
+				"type": "select",
+				"range": ["Friday at 6:00pm","Saturday at 6:00pm"],
+				"required": true,
+				"conditional": {
+					"field": "attend",
+					"value": "Yes"
+				}
+			},
+			{
+				"id": "day1count",
+				"label": "Will you bring a guest?",
+				"type": "select",
+				"limit": 400,
+				"range": [
+					{
+						"value": "No",
+						"count": 1
+					},
+					{
+						"value": "Yes",
+						"count": 2
+					}
+				],
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "day",
+						"value": "Friday at 6:00pm"
+					}
+				]				
+			},
+			{
+				"id": "day2count",
+				"label": "Will you bring a guest?",
+				"type": "select",
+				"limit": 400,
+				"range": [
+					{
+						"value": "No",
+						"count": 1
+					},
+					{
+						"value": "Yes",
+						"count": 2
+					}
+				],
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "day",
+						"value": "Saturday at 6:00pm"
+					}
+				]				
+			},
+			{
+				"id": "room",
+				"label": "Would you like to be contacted for a room reservation?",
+				"type": "select",
+				"range": ["Yes","No"],
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "day",
+						"values": ["Friday at 6:00pm","Saturday at 6:00pm"]
+					},
+					{
+						"field": "Hotel",
+						"values": ["Y"] # match one of
+
+					}
+				]
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "fields_group",
+				"bgcolor": "#F7C7C2",
+				"fields": [
+					{
+						"id": "z_FIRSTNAME",
+						"label": "First Name:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					},
+					{
+						"id": "z_LASTNAME",
+						"label": "Last Name:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					},
+					{
+						"id": "PlayerID",
+						"label": "Club #:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					}
+				]
+			}
+		],
+	"limits": {
+			"most_recent_only": true,
+			"most_recent_key": "PlayerID"
+		},		
+	"submit": {
+			"label": "Submit RSVP",
+			"color": "#20363d"
+		
+		}
+	},
+	"MAIN": {
+		"body_md": "# We've received your request \n\nIf you need to make any changes to your RSVP just scan your invitation again. If you need any help please get in touch. We hope to see you soon at **Three Rivers Casino Resort - Florence**."
+	}
+}
