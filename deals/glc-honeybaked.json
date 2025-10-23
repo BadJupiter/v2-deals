@@ -54,14 +54,14 @@
 				"fields": [
 					{
 						"id": "PlayerID",
-						"label": "Account:",
+						"label": "Account Number:",
 						"type": "text",
 						"sticky": true,
 						"disabled": true
 					},
 					{
 						"id": "z_NAME",
-						"label": "Last Name:",
+						"label": "Name:",
 						"type": "text",
 						"sticky": true,
 						"disabled": true
