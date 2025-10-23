@@ -9,17 +9,17 @@
 
 	"active": {
 		"start": "2025-10-21 10:00AM CDT",
-		"end": "2025-11-21 11:59PM CDT"
+		"end": "2025-11-22 11:59PM CDT"
 	},
 	
-	"summary_info": "HoneyBaked Ham Event",
+	"summary_info": "Holiday Ham Event",
 	
 	"FORM": {
 		"title": "Grand Lake Casino",
 		"fields": [
 			{
 				"type": "info",
-				"markdown": "# HoneyBaked Ham Event"
+				"markdown": "# Holiday Ham Event"
 			},
 			{
 				"type": "info",
@@ -27,11 +27,11 @@
 			},
 			{
 				"type": "info",
-				"markdown": "## **Friday November 21st**"	
+				"markdown": "## **Saturday November 22nd**"	
 			},
 			{
 				"type": "info",
-				"markdown": "## **Pickup from 3:00pm - 9:00pm**"	
+				"markdown": "## **Pickup from 1:00pm - 7:00pm**"	
 			},
 			{
 				"type": "info",
@@ -39,7 +39,7 @@
 			},
 			{
 				"id": "attend",
-				"label": "Would you like to reserve a HoneyBaked Ham for pickup on Friday, November 21?",
+				"label": "Would you like to reserve a Hormel Cure 81 Ham for pickup on Saturday, November 22?",
 				"type": "select",
 				"range": ["Yes","No"],
 				"required": true
