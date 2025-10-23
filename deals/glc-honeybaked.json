@@ -50,7 +50,7 @@
 			},
 			{
 				"type": "fields_group",
-				"bgcolor": "#A2D4D7",
+				"bgcolor": "#F5E6CC",
 				"fields": [
 					{
 						"id": "PlayerID",
