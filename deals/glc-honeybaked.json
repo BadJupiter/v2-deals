@@ -23,11 +23,11 @@
 			},
 			{
 				"type": "info",
-				"markdown": "## **Friday November 21st**"	
-			},
-						{
-				"type": "info",
 				"markdown": "---"
+			},
+			{
+				"type": "info",
+				"markdown": "## **Friday November 21st**"	
 			},
 			{
 				"type": "info",
@@ -36,11 +36,6 @@
 			{
 				"type": "info",
 				"markdown": "---"
-			},
-			{
-				"type": "info",
-				"justify": "center",
-				"markdown": " \n\nIt’s our pleasure to offer our valued Grand Lake guests an invitation to our **Speakeasy** event!"
 			},
 			{
 				"id": "attend",
