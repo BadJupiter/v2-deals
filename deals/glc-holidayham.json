@@ -1,0 +1,92 @@
+{
+	"biz_id": "grandlake",
+	"check_in": true,
+	"auth_required": true,
+	"error_auth": {
+		"title": "Woops!",
+		"content": "Can't play if you ain't authenticated!"
+	},
+
+	"active": {
+		"start": "2025-10-21 10:00AM CDT",
+		"end": "2025-11-21 11:59PM CDT"
+	},
+	
+	"summary_info": "HoneyBaked Ham Event",
+	
+	"FORM": {
+		"title": "Grand Lake Casino",
+		"fields": [
+			{
+				"type": "info",
+				"markdown": "# HoneyBaked Ham Event"
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "info",
+				"markdown": "## **Friday November 21st**"	
+			},
+			{
+				"type": "info",
+				"markdown": "## **Pickup from 3:00pm - 9:00pm**"	
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"id": "attend",
+				"label": "Would you like to reserve a HoneyBaked Ham for pickup on Friday, November 21?",
+				"type": "select",
+				"range": ["Yes","No"],
+				"required": true
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "fields_group",
+				"bgcolor": "#F5E6CC",
+				"fields": [
+					{
+						"id": "PlayerID",
+						"label": "Account Number:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					},
+					{
+						"id": "z_NAME",
+						"label": "Name:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					},
+					{
+						"id": "z_EMAIL",
+						"label": "Email:",
+						"type": "text",
+						"sticky": true,
+						"disabled": false
+					}
+				]
+			}
+		],
+	"limits": {
+			"most_recent_only": true,
+			"most_recent_key": "PlayerID"
+		},		
+	"submit": {
+			"label": "Submit RSVP",
+			"color": "#20363d"
+		
+		}
+	},
+	"MAIN": {
+		"body_md": "# We've received your request \n\nIf you need to make any changes to your RSVP just scan your invitation again. If you need any help please get in touch. We hope to see you soon at **Grand Lake Casino**."
+	}
+}
