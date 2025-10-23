@@ -1,5 +1,5 @@
 {
-	"biz_id": "threerivers",
+	"biz_id": "grandlake",
 	"check_in": true,
 	"auth_required": true,
 	"error_auth": {
@@ -9,28 +9,21 @@
 
 	"active": {
 		"start": "2025-10-21 10:00AM CDT",
-		"end": "2025-11-29 11:59PM CDT"
+		"end": "2025-11-21 11:59PM CDT"
 	},
 	
-	"summary_info": "Speakeasy",
+	"summary_info": "HoneyBaked Ham Event",
 	
 	"FORM": {
-		"title": "Three Rivers Casino Resort",
+		"title": "Grand Lake Casino",
 		"fields": [
 			{
-				"id": "Hotel",
-				"label": "Hotel",
-				"type": "text",
-				"sticky": true,
-				"disabled": true,
-				"hidden": true
-			},{
 				"type": "info",
-				"markdown": "# Speakeasy"
+				"markdown": "# HoneyBaked Ham Event"
 			},
 			{
 				"type": "info",
-				"markdown": "## **November 29th**"	
+				"markdown": "## **Friday November 21st**"	
 			},
 						{
 				"type": "info",
@@ -38,15 +31,7 @@
 			},
 			{
 				"type": "info",
-				"markdown": "## **4:00pm - 9:00pm**"	
-			},
-			{
-				"type": "info",
-				"markdown": "## **Grand Prize Drawings at 9:30pm**"	
-			},
-			{
-				"type": "info",
-				"markdown": "## **Casino Event Center, Florence**"	
+				"markdown": "## **Pickup from 3:00pm - 9:00pm**"	
 			},
 			{
 				"type": "info",
@@ -55,55 +40,14 @@
 			{
 				"type": "info",
 				"justify": "center",
-				"markdown": " \n\nIt’s our pleasure to offer our valued Three Rivers guests an invitation to our **Speakeasy** event!"
+				"markdown": " \n\nIt’s our pleasure to offer our valued Grand Lake guests an invitation to our **Speakeasy** event!"
 			},
 			{
 				"id": "attend",
-				"label": "Will you attend the Speakeasy Event?",
+				"label": "Would you like to reserve a HoneyBaked Ham for pickup on Friday, November 21?",
 				"type": "select",
 				"range": ["Yes","No"],
 				"required": true
-			},
-			{
-				"id": "guest",
-				"label": "Will you be bringing a guest?",
-				"type": "select",
-				"limit": 2000,
-				"range": [
-					{
-						"value": "No",
-						"count": 1
-					},
-					{
-						"value": "Yes",
-						"count": 2
-					}
-				],
-				"required": true,
-				"conditional": [
-					{
-						"field": "attend",
-						"value": "Yes"
-					}
-				]				
-			},
-			{
-				"id": "room",
-				"label": "Would you like a host to contact you about hotel accommodations?",
-				"type": "select",
-				"range": ["Yes","No"],
-				"required": true,
-				"conditional": [
-					{
-						"field": "attend",
-						"value": "Yes"
-					},
-					{
-						"field": "Hotel",
-						"values": ["Y"]
-
-					}
-				]
 			},
 			{
 				"type": "info",
@@ -114,25 +58,25 @@
 				"bgcolor": "#BFA46F",
 				"fields": [
 					{
-						"id": "z_FIRSTNAME",
-						"label": "First Name:",
+						"id": "PlayerID",
+						"label": "Account:",
 						"type": "text",
 						"sticky": true,
 						"disabled": true
 					},
 					{
-						"id": "z_LASTNAME",
+						"id": "z_NAME",
 						"label": "Last Name:",
 						"type": "text",
 						"sticky": true,
 						"disabled": true
 					},
 					{
-						"id": "PlayerID",
-						"label": "Club #:",
+						"id": "z_EMAIL",
+						"label": "Email:",
 						"type": "text",
 						"sticky": true,
-						"disabled": true
+						"disabled": false
 					}
 				]
 			}
@@ -148,6 +92,6 @@
 		}
 	},
 	"MAIN": {
-		"body_md": "# We've received your request \n\nIf you need to make any changes to your RSVP just scan your invitation again. If you need any help please get in touch. We hope to see you soon at **Three Rivers Casino Resort - Florence**."
+		"body_md": "# We've received your request \n\nIf you need to make any changes to your RSVP just scan your invitation again. If you need any help please get in touch. We hope to see you soon at **Grand Lake Casino**."
 	}
 }
