@@ -1,6 +1,6 @@
 {
 	"biz_id": "threerivers",
-	"deal_tokens": [ "trc-10kbingo" ],
+	"deal_tokens": [ "trc-speakeasy" ],
 	"most_recent_only": true, # omit or set to false for all rows
 	"most_recent_key": "PlayerID", # needs to be the column_name
 	
@@ -47,16 +47,8 @@
 			"attrib": "attend"
 		},
 		{
-			"column_name": "Day",
-			"attrib": "day"
-		},
-		{
-			"column_name": "FriCount",
-			"attrib": "day1count"
-		},
-		{
-			"column_name": "SatCount",
-			"attrib": "day2count"
+			"column_name": "Guest",
+			"attrib": "guest"
 		},
 		{
 			"column_name": "Room",
