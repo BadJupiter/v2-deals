@@ -1,6 +1,6 @@
 {
 	"biz_id": "grandlake",
-	"deal_tokens": [ "glc-honeybaked" ],
+	"deal_tokens": [ "glc-holidayham" ],
 	"most_recent_only": true, # omit or set to false for all rows
 	"most_recent_key": "Player ID", # needs to be the column_name
 	
@@ -15,7 +15,7 @@
 
 	"COLUMNS": [
 		{
-			"column_name": "Row ID",
+			"column_name": "RowID",
 			"attrib": "_rowid"
 		},
 		{
@@ -27,11 +27,11 @@
 			"attrib": "_mobile"
 		},
 		{
-			"column_name": "Deal ID",
+			"column_name": "DealID",
 			"attrib": "_deal"
 		},
 		{
-			"column_name": "Player ID",
+			"column_name": "PlayerID",
 			"attrib": "PlayerID"
 		},
 		{
