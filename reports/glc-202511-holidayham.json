@@ -31,7 +31,7 @@
 			"attrib": "_deal"
 		},
 		{
-			"column_name": "PlayerID",
+			"column_name": "Player ID",
 			"attrib": "PlayerID"
 		},
 		{
