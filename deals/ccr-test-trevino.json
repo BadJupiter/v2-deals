@@ -13,6 +13,12 @@
 	},
 	
 	"summary_info": "Stand-up Comedy",
+
+	"META": {
+		"name": "Steve Trevino Stand-up Comedy!",
+		"description": "America's favorite husband, and a man who knows better than to make his own decisions",
+		"dt": "November 11th, 11pm"
+	},
 	
 	"FORM": {
 		"fields": [
