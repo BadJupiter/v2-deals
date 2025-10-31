@@ -1,6 +1,6 @@
 {
-	"biz_id": "kickapoo",
-	"deal_tokens": [ "kto-carhartt" ],
+	"biz_id": "jupiter",
+	"deal_tokens": [ "cgc-baby" ],
 	"most_recent_only": true, # omit or set to false for all rows
 	"most_recent_key": "Player ID", # needs to be the column_name
 	
@@ -47,8 +47,14 @@
 			"attrib": "attend"
 		},
 		{
-			"column_name": "Time",
-			"attrib": "time"
+			"column_name": "Baby",
+			"attrib": "baby"
+		},
+		{
+			"column_name": "Reminder",
+			"attrib": "reminder"
+		},
+
 		}
 	]
 }
