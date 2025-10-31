@@ -69,7 +69,7 @@
 				"label": "Would you like to receive reminders for this event?",
 				"type": "multi-select",
 				"range": ["SMS","Email"],
-				"required": true,
+				"required": false,
 				"conditional": {
 					"field": "attend",
 					"value": "Yes"
