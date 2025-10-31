@@ -52,7 +52,7 @@
 		},
 		{
 			"column_name": "Reminder",
-			"attrib": "reminder"
+			"attrib": "reminder-Tap here if you'd like a text reminder for this event"
 		}
 	]
 }
