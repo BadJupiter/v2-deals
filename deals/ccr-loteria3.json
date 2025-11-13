@@ -1,0 +1,96 @@
+{
+	"biz_id": "colusacasino",
+	"check_in": true,
+	"auth_required": true,
+	"error_auth": {
+		"title": "Woops!",
+		"content": "Can't play if you ain't authenticated!"
+	},
+
+	"FORM": {
+		"fields": [
+			{
+				"type": "info",
+				"markdown": "# VIP Lotería Event RSVP"
+			},
+			{
+				"type": "info",
+				"markdown": "## **April 25, 2025**"
+			},
+			{
+				"type": "info",
+				"markdown": "## **8:00 PM**"
+			},
+			{
+				"type": "info",
+				"justify": "center",
+				"markdown": "ONSITE CHECK-IN BEGINS AT 6:00 PM"
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "info",
+				"justify": "center",
+				"markdown": " \n\nYou and a guest are invited to the VIP Loteria Event at Colusa Casino!"
+			},
+			{
+				"id": "attend",
+				"label": "Are you able to attend?",
+				"type": "select",
+				"range": ["Yes","No"],
+				"required": true
+			},
+			{
+				"id": "guests",
+				"label": "I am confirming for:",
+				"type": "select",
+				"range": ["Myself","Me and a guest"],
+				"required": true,
+				"conditional": {
+					"field": "attend",
+					"value": "Yes"
+				}
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "fields_group",
+				"bgcolor": "#c8f0fc",
+				"fields": [
+					{
+						"id": "z_FIRSTNAME",
+						"label": "First Name:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					},
+					{
+						"id": "z_LASTNAME",
+						"label": "Last Name:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					},
+					{
+						"id": "PlayerID",
+						"label": "Rewards #:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					}
+				]
+			}
+		],
+		"submit": {
+			"label": "Submit RSVP",
+			"color": "#20363d"
+		}
+	},
+	"MAIN": {
+		"body_md": "# Thank you for your response! \n\nIf you need to make any changes to your RSVP just scan your invitation again. If you need any help please get in touch with your host. We hope to see you soon at **Colusa Casino Resort**."
+	}
+}
