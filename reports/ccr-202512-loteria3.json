@@ -47,10 +47,6 @@
 			"attrib": "attend"
 		},
 		{
-			"column_name": "Day",
-			"attrib": "day"
-		},
-		{
 			"column_name": "Guests",
 			"attrib": "guests"
 		}
