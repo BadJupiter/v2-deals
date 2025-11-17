@@ -42,7 +42,7 @@
 				"label": "Would you like to reserve a HoneyBaked Ham for pickup on Friday, November 21?",
 				"type": "select",
 				"required": true,
-				"limit": 600,
+				"limit": 350,
 				"range": [
 					{
 						"value": "Yes",
