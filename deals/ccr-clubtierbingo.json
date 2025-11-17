@@ -59,7 +59,7 @@
 				"id": "day1count",
 				"label": "I am confirming for:",
 				"type": "select",
-				"limit": 600,
+				"limit": 100,
 				"range": [
 					{
 						"value": "Myself",
