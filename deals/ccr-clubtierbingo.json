@@ -13,6 +13,12 @@
 	},
 	
 	"summary_info": "Club Tier Bingo",
+
+	"META": {
+		"name": "Club Tier Bingo",
+		"description": "Epic BINGO session filled with fun, prizes and excitement!",
+		"dt": "November 14th & 21st"
+	},
 	
 	"FORM": {
 			"fields": [
