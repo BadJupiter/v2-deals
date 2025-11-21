@@ -1,0 +1,324 @@
+{
+	"_comment": "REFERENCE TEMPLATE - Normalized structure with examples of all patterns and edge cases",
+	"_purpose": "This template serves as a reference for understanding the deal template structure and can be used as a guide for refactoring form-building logic",
+	
+	"biz_id": "example_business",
+	
+	"check_in": false,
+	"_check_in_note": "If true, deal is automatically grabbed without user confirmation (typical for in-person QR scans)",
+	
+	"auth_required": true,
+	"_auth_required_note": "If true, user must be authenticated before accessing the deal",
+	
+	"error_auth": {
+		"title": "Authentication Required",
+		"content": "You must be authenticated to access this deal."
+	},
+	"_error_auth_note": "Optional. Overrides default error dialog when auth_required is true",
+	
+	"styling": {
+		"_styling_note": "Optional. Custom fonts for branding",
+		"fonts": {
+			"headers": {
+				"family": "Raleway",
+				"weight": 700,
+				"style": "italic"
+			},
+			"body": {
+				"family": "Raleway",
+				"weight": "normal"
+			},
+			"formlabels": {
+				"family": "Raleway",
+				"weight": "bold"
+			}
+		}
+	},
+	
+	"FORM": {
+		"_form_note": "Optional. If present, displays a form before the main confirmation page",
+		
+		"title": "Form Title",
+		"_title_note": "Optional. Displayed at top of form",
+		
+		"fields": [
+			{
+				"_field_info": "INFO FIELD - Non-input field for markdown content",
+				"type": "info",
+				"justify": "center",
+				"_justify_note": "Optional: 'left', 'center', 'right'",
+				"markdown": "# Header\n\n**Bold text** and *italic text*\n\n---\n\n[Link text](url)"
+			},
+			
+			{
+				"_field_text": "TEXT FIELD - Simple text input",
+				"id": "text_field",
+				"type": "text",
+				"label": "Text Field Label:",
+				"placeholder": "Enter text here",
+				"required": true,
+				"sticky": false,
+				"_sticky_note": "If true, value persists across deals for this business",
+				"disabled": false,
+				"hidden": false
+			},
+			
+			{
+				"_field_email": "EMAIL FIELD - Email validation",
+				"id": "email_field",
+				"type": "email",
+				"label": "Email Address:",
+				"required": true,
+				"sticky": true
+			},
+			
+			{
+				"_field_textarea": "TEXTAREA FIELD - Multi-line text input",
+				"id": "textarea_field",
+				"type": "textarea",
+				"label": "Comments:",
+				"rows": 3,
+				"_rows_note": "Optional. Number of visible rows",
+				"required": false
+			},
+			
+			{
+				"_field_select_simple": "SELECT FIELD - Simple string array",
+				"id": "select_simple",
+				"type": "select",
+				"label": "Choose an option:",
+				"range": ["Option 1", "Option 2", "Option 3"],
+				"required": true
+			},
+			
+			{
+				"_field_select_objects": "SELECT FIELD - Object array with capacity limits",
+				"id": "select_with_capacity",
+				"type": "select",
+				"label": "Choose a time slot:",
+				"limit": 100,
+				"_limit_note": "Field-level capacity limit (total across all options)",
+				"nomore_text": "All slots full",
+				"_nomore_text_note": "Optional. Message when all options are at capacity",
+				"range": [
+					{
+						"value": "5:00 PM",
+						"count": 1,
+						"_count_note": "How many capacity units this option consumes",
+						"limit": 25,
+						"_limit_note": "Option-level capacity limit",
+						"claimed": 0,
+						"_claimed_note": "Populated by server during pre-processing"
+					},
+					{
+						"value": "6:00 PM",
+						"count": 1,
+						"limit": 25
+					},
+					{
+						"value": "7:00 PM",
+						"count": 2,
+						"_count_note": "This option counts as 2 (e.g., party of 2)",
+						"limit": 25
+					}
+				],
+				"required": true
+			},
+			
+			{
+				"_field_multi_select": "MULTI-SELECT FIELD - Multiple selections allowed",
+				"id": "multi_select",
+				"type": "multi-select",
+				"label": "Select all that apply:",
+				"range": ["Option A", "Option B", "Option C", "Option D"],
+				"required": false
+			},
+			
+			{
+				"_field_checkbox": "CHECKBOX FIELD - Boolean selection",
+				"id": "checkbox_field",
+				"type": "checkbox",
+				"label": "I agree to the terms",
+				"required": true
+			},
+			
+			{
+				"_field_characters": "CHARACTERS FIELD - Character-by-character input (e.g., monograms)",
+				"id": "monogram",
+				"type": "characters",
+				"label": "Enter monogram (up to 3 letters):",
+				"count": 3,
+				"_count_note": "Number of character inputs",
+				"required": true
+			},
+			
+			{
+				"_field_image": "IMAGE FIELD - Photo capture or upload",
+				"id": "photo",
+				"type": "image",
+				"required": false
+			},
+			
+			{
+				"_field_conditional_simple": "CONDITIONAL FIELD - Simple single condition",
+				"id": "conditional_field",
+				"type": "text",
+				"label": "This field appears when 'select_simple' equals 'Option 1':",
+				"required": false,
+				"conditional": {
+					"field": "select_simple",
+					"value": "Option 1"
+				}
+			},
+			
+			{
+				"_field_conditional_complex": "CONDITIONAL FIELD - Complex multiple conditions (AND logic)",
+				"id": "conditional_complex",
+				"type": "select",
+				"label": "This field appears when multiple conditions are met:",
+				"range": ["Choice 1", "Choice 2"],
+				"required": false,
+				"conditional": [
+					{
+						"field": "select_simple",
+						"value": "Option 1"
+					},
+					{
+						"field": "checkbox_field",
+						"value": true
+					}
+				]
+			},
+			
+			{
+				"_field_conditional_values": "CONDITIONAL FIELD - Match one of multiple values",
+				"id": "conditional_values",
+				"type": "text",
+				"label": "This field appears when field matches one of several values:",
+				"required": false,
+				"conditional": {
+					"field": "select_simple",
+					"values": ["Option 1", "Option 2"]
+				}
+			},
+			
+			{
+				"_field_hidden": "HIDDEN FIELD - Not visible but value is submitted",
+				"id": "hidden_field",
+				"type": "text",
+				"hidden": true,
+				"sticky": true,
+				"_hidden_note": "Useful for storing context data (e.g., DIST, HotelQ, etc.)"
+			},
+			
+			{
+				"_field_group": "FIELDS GROUP - Container for grouped fields with background color",
+				"type": "fields_group",
+				"bgcolor": "#c8f0fc",
+				"_bgcolor_note": "Optional. Background color for the group",
+				"fields": [
+					{
+						"id": "grouped_name",
+						"type": "text",
+						"label": "Name:",
+						"required": true,
+						"sticky": true
+					},
+					{
+						"id": "grouped_email",
+						"type": "email",
+						"label": "Email:",
+						"required": false,
+						"sticky": true
+					}
+				]
+			},
+			
+			{
+				"_field_sticky_disabled": "STICKY + DISABLED - Pre-filled from user context, read-only",
+				"id": "z_FIRSTNAME",
+				"type": "text",
+				"label": "First Name:",
+				"sticky": true,
+				"disabled": true,
+				"_sticky_disabled_note": "Common pattern for displaying user profile data (z_ prefix indicates system field)"
+			},
+			
+			{
+				"id": "z_LASTNAME",
+				"type": "text",
+				"label": "Last Name:",
+				"sticky": true,
+				"disabled": true
+			},
+			
+			{
+				"id": "PlayerID",
+				"type": "text",
+				"label": "Rewards #:",
+				"sticky": true,
+				"disabled": true
+			}
+		],
+		
+		"limits": {
+			"_limits_note": "Optional. Controls how capacity is calculated",
+			"most_recent_only": true,
+			"_most_recent_only_note": "If true, only count the most recent grab per user (useful for RSVPs)",
+			"most_recent_key": "PlayerID",
+			"_most_recent_key_note": "Field ID to use for identifying unique users (typically PlayerID or similar)"
+		},
+		
+		"submit": {
+			"label": "Submit",
+			"color": "#20363d",
+			"_submit_note": "Optional. Customize submit button appearance"
+		},
+		
+		"notify": {
+			"_notify_note": "Optional. SMS notification when user opts in",
+			"opt_in": "contact",
+			"_opt_in_note": "Field ID that must be checked/selected to trigger notification",
+			"message": "(from {_mob}) {name} requested contact: {comments}",
+			"_message_note": "Message template with field substitutions. {_mob} is automatically the user's mobile number",
+			"mobiles": [
+				"+1234567890",
+				"+0987654321"
+			],
+			"_mobiles_note": "Array of phone numbers to receive SMS notifications"
+		}
+	},
+	
+	"MAIN": {
+		"_main_note": "Required. Main confirmation page shown after form submission (or immediately if no form)",
+		"title": "Thank You!",
+		"_title_note": "Optional. Page title",
+		"body_md": "# Confirmation\n\nThank you for your submission!\n\n**Bold text** and *italic text* are supported.\n\n[Links](https://example.com) work too."
+	},
+	
+	"PUNCHCARDS": [
+		{
+			"_punchcards_note": "Optional. Array of punch card templates to activate",
+			"template": "loyalty_card.json"
+		}
+	],
+	
+	"_punchcards_note": "Punch cards track user interactions and can trigger rewards at milestones",
+	
+	"REWARDS": [
+		{
+			"_rewards_note": "Optional. Array of reward templates available for redemption",
+			"template": "reward1.json"
+		}
+	],
+	
+	"_rewards_note": "Rewards are shown as buttons on the confirmation page for immediate redemption",
+	
+	"limit": {
+		"_limit_note": "Optional. Deal-level limit (different from FORM field limits)",
+		"type": "day",
+		"_type_note": "Currently supports: 'day' (once per day), 'onetime' (once ever)",
+		"message": "You've already claimed this deal today. Check back tomorrow!"
+	}
+}
+

@@ -55,12 +55,6 @@
 						"required": true
 					},
 					{
-						"id": "casino",
-						"label": "Casino/Company:",
-						"type": "text",
-						"required": true
-					},
-					{
 						"id": "email",
 						"label": "Email:",
 						"type": "email",
@@ -77,8 +71,7 @@
 	
 	"MAIN": {
 		"title": "Thank You!",
-		"body_md": "**Thanks for your interest** - we look forward to working with you!"
-
+		"body_md": "# **Thank You!**\n\nIf you asked for a call back, sit tight—we’ll be in touch soon!.\n\n**And Merry Christmas from all of us at Albert G's!**\n\n🎅🎄🎁 ➕ G’s🍗🔥 = ❤️🤤🍽️🎉 "
 	},
 	"PUNCHCARDS": [
 		{
