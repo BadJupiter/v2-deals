@@ -1,8 +1,8 @@
 {
-	"biz_id": "threerivers",
-	"deal_tokens": [ "trc-speakeasy" ],
+	"biz_id": "colusacasino",
+	"deal_tokens": [ "ccr-loteria3" ],
 	"most_recent_only": true, # omit or set to false for all rows
-	"most_recent_key": "PlayerID", # needs to be the column_name
+	"most_recent_key": "Player ID", # needs to be the column_name
 	
 	"as_xlsx": false, # omit or set to false for default (CSV)
 
@@ -15,7 +15,7 @@
 
 	"COLUMNS": [
 		{
-			"column_name": "RowID",
+			"column_name": "Row ID",
 			"attrib": "_rowid"
 		},
 		{
@@ -27,19 +27,19 @@
 			"attrib": "_mobile"
 		},
 		{
-			"column_name": "DealID",
+			"column_name": "Deal ID",
 			"attrib": "_deal"
 		},
 		{
-			"column_name": "PlayerID",
+			"column_name": "Player ID",
 			"attrib": "PlayerID"
 		},
 		{
-			"column_name": "LastName",
+			"column_name": "Last Name",
 			"attrib": "z_LASTNAME"
 		},
 		{
-			"column_name": "FirstName",
+			"column_name": "First Name",
 			"attrib": "z_FIRSTNAME"
 		},
 		{
@@ -47,12 +47,8 @@
 			"attrib": "attend"
 		},
 		{
-			"column_name": "Guest",
-			"attrib": "guest"
-		},
-		{
-			"column_name": "Room",
-			"attrib": "room"
+			"column_name": "Guests",
+			"attrib": "guests"
 		}
 	]
 }

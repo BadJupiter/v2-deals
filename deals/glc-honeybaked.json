@@ -41,8 +41,20 @@
 				"id": "attend",
 				"label": "Would you like to reserve a HoneyBaked Ham for pickup on Friday, November 21?",
 				"type": "select",
-				"range": ["Yes","No"],
-				"required": true
+				"required": true,
+				"limit": 318,
+				"range": [
+					{
+						"value": "Yes",
+						"count": 1,
+						"limit": 318
+					},
+					{
+						"value": "No",
+						"count": 0,
+						"limit": 318
+					}
+				]
 			},
 			{
 				"type": "info",

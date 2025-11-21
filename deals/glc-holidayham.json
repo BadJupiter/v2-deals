@@ -41,8 +41,20 @@
 				"id": "attend",
 				"label": "Would you like to reserve a Hormel Cure 81 Ham for pickup on Saturday, November 22?",
 				"type": "select",
-				"range": ["Yes","No"],
-				"required": true
+				"required": true,
+				"limit": 600,
+				"range": [
+					{
+						"value": "Yes",
+						"count": 1,
+						"limit": 600
+					},
+					{
+						"value": "No",
+						"count": 0,
+						"limit": 600
+					}
+				]
 			},
 			{
 				"type": "info",

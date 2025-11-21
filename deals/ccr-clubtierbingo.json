@@ -11,11 +11,19 @@
 		"start": "2025-10-01 10:00AM CDT",
 		"end": "2025-11-21 11:59PM CDT"
 	},
-	
-	"summary_info": "Club Tier Bingo",
+
+	"META": {
+		"name": "Club Tier Bingo",
+		"description": "Epic BINGO session filled with fun, prizes and excitement!",
+		"dt": "November 14th & 21st"
+	},
 	
 	"FORM": {
 			"fields": [
+			{
+				"type": "info",
+				"markdown": "# Colusa Casino Resort"
+			},
 			{
 				"type": "info",
 				"markdown": "# Club Tier Bingo!"
@@ -55,7 +63,7 @@
 				"id": "day1count",
 				"label": "I am confirming for:",
 				"type": "select",
-				"limit": 600,
+				"limit": 100,
 				"range": [
 					{
 						"value": "Myself",
@@ -111,7 +119,7 @@
 			},
 			{
 				"type": "fields_group",
-				"bgcolor": "#E8C97B",
+				"bgcolor": "#FFEAE0",
 				"fields": [
 					{
 						"id": "z_FIRSTNAME",

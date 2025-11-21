@@ -8,32 +8,32 @@
 	},
 
 	"active": {
-		"start": "2025-08-01 10:00AM CDT",
-		"end": "2025-12-15 11:59PM CDT"
+		"start": "2025-11- 10:00AM CDT",
+		"end": "2025-12-30 11:59PM CDT"
 	},
-	
-	"summary_info": "Stand-up Comedy",
 
 	"META": {
-		"name": "Steve Trevino Stand-up Comedy!",
-		"description": "America's favorite husband, and a man who knows better than to make his own decisions",
-		"dt": "November 11th, 11pm"
+		"name": "Loteria Bingo",
+		"description": "Fun bingo session filed with laughs, excitement and luck!",
+		"dt": "December 30th"
 	},
+
+
 	
 	"FORM": {
 		"fields": [
 			{
 				"type": "info",
-				"markdown": "# Steve Trevino Comedy Show RSVP"
+				"markdown": "# Deal or No Deal RSVP"
 			},
 			{
 				"type": "info",
-				"markdown": "## **July 18th, 2025**"
+				"markdown": "## **December 30, 2025**"
 			},
 			{
 				"type": "info",
 				"justify": "center",
-				"markdown": "## Doors open at 7:00 pm"
+				"markdown": "ONSITE CHECK-IN BEGINS AT 6:00 PM"
 			},
 			{
 				"type": "info",
@@ -42,7 +42,7 @@
 			{
 				"type": "info",
 				"justify": "center",
-				"markdown": " \n\nYou and a guest are invited to the Steven Trevino Comedy Show at Colusa Casino!"
+				"markdown": " \n\nYou and a guest are invited to the Deal or No Deal Event at Colusa Casino!"
 			},
 			{
 				"id": "attend",
@@ -52,10 +52,10 @@
 				"required": true
 			},
 			{
-				"id": "tickets",
+				"id": "guests",
 				"label": "I am confirming for:",
 				"type": "select",
-				"range": ["One General Admission Ticket","Two General Admission Tickets"],
+				"range": ["Myself","Me and a guest"],
 				"required": true,
 				"conditional": {
 					"field": "attend",
@@ -97,10 +97,9 @@
 		"submit": {
 			"label": "Submit RSVP",
 			"color": "#20363d"
-		
 		}
 	},
 	"MAIN": {
-		"body_md": "# We've received your request \n\nIf you need to make any changes to your RSVP just scan your invitation again. If you need any help please call the number on your invitation. We hope to see you soon at **Colusa Casino Resort**."
+		"body_md": "# Thank you for your response! \n\nIf you need to make any changes to your RSVP just scan your invitation again. If you need any help please get in touch. We hope to see you soon at **Colusa Casino Resort**."
 	}
 }

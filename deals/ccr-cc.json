@@ -11,11 +11,20 @@
 		"start": "2025-10-01 10:00AM CDT",
 		"end": "2025-11-30 11:59PM CDT"
 	},
-	
-	"summary_info": "Clayton & Crume Event",
+
+	"META": {
+		"name": "Clayton & Crume Event",
+		"description": "VIP Exclusive -  Leather Giveaway!",
+		"dt": "November 30th"
+	},
+
 	
 	"FORM": {
 			"fields": [
+			{
+				"type": "info",
+				"markdown": "# Colusa Casino Resort"
+			},
 			{
 				"type": "info",
 				"markdown": "# Clayton & Crume Event"
@@ -98,7 +107,7 @@
 			},
 			{
 				"type": "fields_group",
-				"bgcolor": "#E8C97B",
+				"bgcolor": "#EAE7E1",
 				"fields": [
 					{
 						"id": "z_FIRSTNAME",

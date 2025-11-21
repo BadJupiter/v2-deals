@@ -18,6 +18,10 @@
 			"fields": [
 			{
 				"type": "info",
+				"markdown": "# Colusa Casino Resort"
+			},
+			{
+				"type": "info",
 				"markdown": "# Ariat Boot Event"
 			},
 			{

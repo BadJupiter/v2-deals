@@ -15,7 +15,7 @@
 
 	"COLUMNS": [
 		{
-			"column_name": "Row ID",
+			"column_name": "RowID",
 			"attrib": "_rowid"
 		},
 		{
@@ -27,7 +27,7 @@
 			"attrib": "_mobile"
 		},
 		{
-			"column_name": "Deal ID",
+			"column_name": "DealID",
 			"attrib": "_deal"
 		},
 		{
