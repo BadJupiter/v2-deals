@@ -1,5 +1,5 @@
 {
-	"biz_id": "colusacasino",
+	"biz_id": "grandlake",
 	"check_in": true,
 	"auth_required": true,
 	"error_auth": {
@@ -8,14 +8,14 @@
 	},
 
 	"active": {
-		"start": "2025-10-01 10:00AM CDT",
-		"end": "2025-11-30 11:59PM CDT"
+		"start": "2025-11-22 10:00AM CDT",
+		"end": "2025-12-20 11:59PM CDT"
 	},
 
 	"META": {
-		"name": "Clayton & Crume Event",
-		"description": "VIP Exclusive -  Leather Giveaway!",
-		"dt": "November 30th"
+		"name": "Ariat Boot Fitting",
+		"description": "VIP Exclusive -  Boot Fitting!",
+		"dt": "December 20th"
 	},
 
 	
@@ -23,15 +23,15 @@
 			"fields": [
 			{
 				"type": "info",
-				"markdown": "# Colusa Casino Resort"
+				"markdown": "# Grand Lake Casino"
 			},
 			{
 				"type": "info",
-				"markdown": "# Clayton & Crume Event"
+				"markdown": "# Ariat Boot Boutique"
 			},
 			{
 				"type": "info",
-				"markdown": "## **Sunday, November 30th**"	
+				"markdown": "## **Saturday, December 20th**"	
 			},
 			{
 				"type": "info",
@@ -40,55 +40,60 @@
 			{
 				"type": "info",
 				"justify": "center",
-				"markdown": " \n\nYou are invited to our exclusive **Clayton & Crume Event**."
+				"markdown": " \n\nYou are invited to our exclusive **Ariat Boot Boutique**."
 			},
 			{
 				"id": "attend",
-				"label": "Will you be attending?",
+				"label": "Will you be attending the Ariat Boot Boutique?",
 				"type": "select",
 				"range": ["Yes","No"],
 				"required": true
 			},
 			{
 				"id": "time",
-				"label": "Choose your Time to Shop",
+				"label": "Select a fitting appointment time",
 				"type": "select",
-				"limit": 420,
+				"limit": 184,
 				"range": [
 					{
-						"value": "2pm",
+						"value": "12:30pm",
 						"count": 1,
-						"limit": 60
+						"limit": 23
 					},
 					{
-						"value": "3pm",
+						"value": "1:00pm",
 						"count": 1,
-						"limit": 60
+						"limit": 23
 					},
 					{
-						"value": "4pm",
+						"value": "1:30pm",
 						"count": 1,
-						"limit": 60
-					},
-										{
-						"value": "5pm",
-						"count": 1,
-						"limit": 60
-					},
-										{
-						"value": "6pm",
-						"count": 1,
-						"limit": 60
-					},
-										{
-						"value": "7pm",
-						"count": 1,
-						"limit": 60
+						"limit": 23
 					},
 					{
-						"value": "8pm",
+						"value": "2:00pm",
 						"count": 1,
-						"limit": 60
+						"limit": 23
+					},
+										{
+						"value": "2:30pm",
+						"count": 1,
+						"limit": 23
+					},
+										{
+						"value": "3:00pm",
+						"count": 1,
+						"limit": 23
+					},
+										{
+						"value": "3:30pm",
+						"count": 1,
+						"limit": 23
+					},
+					{
+						"value": "4:00pm",
+						"count": 1,
+						"limit": 23
 					}
 				],	
 				
@@ -110,25 +115,25 @@
 				"bgcolor": "#EAE7E1",
 				"fields": [
 					{
-						"id": "z_FIRSTNAME",
-						"label": "First Name:",
-						"type": "text",
-						"sticky": true,
-						"disabled": true
-					},
-					{
-						"id": "z_LASTNAME",
-						"label": "Last Name:",
-						"type": "text",
-						"sticky": true,
-						"disabled": true
-					},
-					{
 						"id": "PlayerID",
-						"label": "Club #:",
+						"label": "Account Number:",
 						"type": "text",
 						"sticky": true,
 						"disabled": true
+					},
+					{
+						"id": "z_NAME",
+						"label": "Name:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					},
+					{
+						"id": "z_EMAIL",
+						"label": "Email:",
+						"type": "text",
+						"sticky": true,
+						"disabled": false
 					}
 				]
 			}
@@ -144,6 +149,6 @@
 		}
 	},
 	"MAIN": {
-		"body_md": "# We've received your request \n\nIf you need to make any changes to your RSVP just scan your invitation again. If you need any help please get in touch. We hope to see you soon at **Colusa Casino**."
+		"body_md": "# We've received your request \n\nIf you need to make any changes to your RSVP just scan your invitation again. If you need any help please get in touch. We hope to see you soon at **Grand Lake Casino**."
 	}
 }
