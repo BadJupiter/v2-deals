@@ -18,35 +18,16 @@
 		"title": "Three Rivers Casino Resort",
 		"fields": [
 			{
-				"id": "Hotel",
-				"label": "Hotel",
-				"type": "text",
-				"sticky": true,
-				"disabled": true,
-				"hidden": true
-			},{
 				"type": "info",
-				"markdown": "# Speakeasy"
+				"markdown": "# New Year's Bash"
 			},
 			{
 				"type": "info",
-				"markdown": "## **November 29th**"	
+				"markdown": "## **December 31st & January 1st**"	
 			},
 						{
 				"type": "info",
 				"markdown": "---"
-			},
-			{
-				"type": "info",
-				"markdown": "## **6:00pm - 9:00pm**"	
-			},
-			{
-				"type": "info",
-				"markdown": "## **Grand Prize Drawings at 9:30pm**"	
-			},
-			{
-				"type": "info",
-				"markdown": "## **Casino Event Center, Florence**"	
 			},
 			{
 				"type": "info",
@@ -55,11 +36,11 @@
 			{
 				"type": "info",
 				"justify": "center",
-				"markdown": " \n\nIt’s our pleasure to offer our valued Three Rivers guests an invitation to our **Speakeasy** event!"
+				"markdown": " \n\nIt’s our pleasure to offer our valued Three Rivers guests an invitation to our **New Year's Celebration!**"
 			},
 			{
 				"id": "attend",
-				"label": "Will you attend the Speakeasy Event?",
+				"label": "Will you attend?",
 				"type": "select",
 				"range": ["Yes","No"],
 				"required": true
@@ -68,17 +49,7 @@
 				"id": "guest",
 				"label": "Will you be bringing a guest?",
 				"type": "select",
-				"limit": 2000,
-				"range": [
-					{
-						"value": "No",
-						"count": 1
-					},
-					{
-						"value": "Yes",
-						"count": 2
-					}
-				],
+				"range": ["Yes","No"],
 				"required": true,
 				"conditional": [
 					{
@@ -88,8 +59,150 @@
 				]				
 			},
 			{
-				"id": "room",
-				"label": "Would you like a host to contact you about hotel accommodations?",
+				"id": "1231venue",
+				"label": "Which dining option would you prefer?",
+				"type": "select",
+				"range": ["Surf & Turf Buffet - Event Center","NYE Special Menu - Blue Bills"],
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					}
+				]
+			},
+			{
+				"id": "buffet_time",
+				"label": "Select a dinner reservation time:",
+				"type": "select",
+				"limit": 999,
+				"range": [
+					{
+						"value": "4:00pm",
+						"count": 1,
+						"limit": 150
+					},
+					{
+						"value": "4:30pm",
+						"count": 1,
+						"limit": 150
+					},
+					{
+						"value": "5:00pm",
+						"count": 1,
+						"limit": 150
+					},
+					{
+						"value": "5:30pm",
+						"count": 1,
+						"limit": 150
+					},
+					{
+						"value": "6:00pm",
+						"count": 1,
+						"limit": 150
+					},
+										{
+						"value": "6:30pm",
+						"count": 1,
+						"limit": 150
+					},
+										{
+						"value": "7:00pm",
+						"count": 1,
+						"limit": 150
+					},
+										{
+						"value": "7:30pm",
+						"count": 1,
+						"limit": 150
+					},
+					{
+						"value": "8:00pm",
+						"count": 1,
+						"limit": 150
+					}
+				],	
+				"required": true,
+				"conditional": [
+					{
+						"field": "1231venue",
+						"value": "Surf & Turf Buffet - Event Center"
+					},
+					{
+						"field": "guest",
+						"value": "No"
+					}
+				]
+			},
+			{
+				"id": "buffet_time",
+				"label": "Select a dinner reservation time:",
+				"type": "select",
+				"limit": 999,
+				"range": [
+					{
+						"value": "4:00pm",
+						"count": 2,
+						"limit": 150
+					},
+					{
+						"value": "4:30pm",
+						"count": 2,
+						"limit": 150
+					},
+					{
+						"value": "5:00pm",
+						"count": 2,
+						"limit": 150
+					},
+					{
+						"value": "5:30pm",
+						"count": 2,
+						"limit": 150
+					},
+					{
+						"value": "6:00pm",
+						"count": 2,
+						"limit": 150
+					},
+										{
+						"value": "6:30pm",
+						"count": 2,
+						"limit": 150
+					},
+										{
+						"value": "7:00pm",
+						"count": 2,
+						"limit": 150
+					},
+										{
+						"value": "7:30pm",
+						"count": 2,
+						"limit": 150
+					},
+					{
+						"value": "8:00pm",
+						"count": 2,
+						"limit": 150
+					}
+				],	
+				"required": true,
+				"conditional": [
+					{
+						"field": "1231venue",
+						"value": "Surf & Turf Buffet - Event Center"
+					},
+					{
+						"field": "guest",
+						"value": "Yes"
+					}
+				]
+			},
+
+			{
+				"id": "0101venue",
+				"label": "Will you be joining us for New Year's Day Brunch?",
 				"type": "select",
 				"range": ["Yes","No"],
 				"required": true,
@@ -97,11 +210,6 @@
 					{
 						"field": "attend",
 						"value": "Yes"
-					},
-					{
-						"field": "Hotel",
-						"values": ["Y"]
-
 					}
 				]
 			},
