@@ -1,6 +1,6 @@
 {
 	"biz_id": "grandlake",
-	"deal_tokens": [ "glc-honeybaked" ],
+	"deal_tokens": [ "glc-ariat" ],
 	"most_recent_only": true, # omit or set to false for all rows
 	"most_recent_key": "Player ID", # needs to be the column_name
 	
@@ -45,6 +45,10 @@
 		{
 			"column_name": "Attend",
 			"attrib": "attend"
+		},
+		{
+			"column_name": "Time",
+			"attrib": "time"
 		}
 	]
 }
