@@ -53,7 +53,7 @@
 				"id": "time",
 				"label": "Select a fitting appointment time:",
 				"type": "select",
-				"limit": 184,
+				"limit": 207,
 				"range": [
 					{
 						"value": "Noon",
