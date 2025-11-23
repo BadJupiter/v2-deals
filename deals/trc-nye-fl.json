@@ -126,6 +126,10 @@
 				"required": true,
 				"conditional": [
 					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
 						"field": "1231venue",
 						"value": "Surf & Turf Buffet - Event Center"
 					},
@@ -189,6 +193,10 @@
 				],	
 				"required": true,
 				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
 					{
 						"field": "1231venue",
 						"value": "Surf & Turf Buffet - Event Center"
