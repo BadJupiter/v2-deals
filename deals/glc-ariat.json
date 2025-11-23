@@ -56,6 +56,11 @@
 				"limit": 184,
 				"range": [
 					{
+						"value": "Noon",
+						"count": 1,
+						"limit": 23
+					},
+					{
 						"value": "12:30pm",
 						"count": 1,
 						"limit": 23
