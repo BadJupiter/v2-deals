@@ -25,7 +25,7 @@
 				"type": "info",
 				"markdown": "## **December 31st & January 1st**"	
 			},
-						{
+			{
 				"type": "info",
 				"markdown": "---"
 			},
@@ -47,6 +47,11 @@
 				"type": "select",
 				"range": ["Yes","No"],
 				"required": true,
+				"global": true,
+  				"capacity_map": {
+  					"Yes": 2,
+    				"No": 1
+  				},
 				"conditional": [
 					{
 						"field": "attend",
@@ -72,55 +77,47 @@
 				]
 			},
 			{
-				"id": "buffetpartyof1count",
+				"id": "buffettime",
 				"label": "Select a dinner reservation time:",
 				"type": "select",
+				"count_from": "guest",
 				"limit": 999,
 				"range": [
 					{
 						"value": "4:00pm",
-						"count": 1,
-						"limit": 10
+						"limit": 150
 					},
 					{
 						"value": "4:30pm",
-						"count": 1,
-						"limit": 10
+						"limit": 150
 					},
 					{
 						"value": "5:00pm",
-						"count": 1,
-						"limit": 10
+						"limit": 150
 					},
 					{
 						"value": "5:30pm",
-						"count": 1,
-						"limit": 10
+						"limit": 150
 					},
 					{
 						"value": "6:00pm",
-						"count": 1,
-						"limit": 10
+						"limit": 150
 					},
 					{
 						"value": "6:30pm",
-						"count": 1,
-						"limit": 10
+						"limit": 150
 					},
 					{
 						"value": "7:00pm",
-						"count": 1,
-						"limit": 10
+						"limit": 150
 					},
 					{
 						"value": "7:30pm",
-						"count": 1,
-						"limit": 10
+						"limit": 150
 					},
 					{
 						"value": "8:00pm",
-						"count": 1,
-						"limit": 10
+						"limit": 150
 					}
 				],	
 				"required": true,
@@ -132,131 +129,51 @@
 					{
 						"field": "1231venue",
 						"value": "Surf & Turf Buffet - Event Center"
-					},
-					{
-						"field": "guest",
-						"value": "No"
 					}
 				]
 			},
 			{
-				"id": "buffetpartyof2count",
+				"id": "billstime",
 				"label": "Select a dinner reservation time:",
 				"type": "select",
+				"count_from": "guest",
 				"limit": 999,
 				"range": [
 					{
 						"value": "4:00pm",
-						"count": 2,
-						"limit": 10
+						"limit": 35
 					},
 					{
 						"value": "4:30pm",
-						"count": 2,
-						"limit": 10
+						"limit": 35
 					},
 					{
 						"value": "5:00pm",
-						"count": 2,
-						"limit": 10
+						"limit": 35
 					},
 					{
 						"value": "5:30pm",
-						"count": 2,
-						"limit": 10
+						"limit": 35
 					},
 					{
 						"value": "6:00pm",
-						"count": 2,
-						"limit": 10
+						"limit": 35
 					},
 					{
 						"value": "6:30pm",
-						"count": 2,
-						"limit": 10
+						"limit": 35
 					},
 					{
 						"value": "7:00pm",
-						"count": 2,
-						"limit": 10
+						"limit": 35
 					},
 					{
 						"value": "7:30pm",
-						"count": 2,
-						"limit": 10
+						"limit": 35
 					},
 					{
 						"value": "8:00pm",
-						"count": 2,
-						"limit": 10
-					}
-				],	
-				"required": true,
-				"conditional": [
-					{
-						"field": "attend",
-						"value": "Yes"
-					},
-					{
-						"field": "1231venue",
-						"value": "Surf & Turf Buffet - Event Center"
-					},
-					{
-						"field": "guest",
-						"value": "Yes"
-					}
-				]
-			},
-			{
-				"id": "billspartyof1count",
-				"label": "Select a dinner reservation time:",
-				"type": "select",
-				"limit": 999,
-				"range": [
-					{
-						"value": "4:00pm",
-						"count": 1,
-						"limit": 10
-					},
-					{
-						"value": "4:30pm",
-						"count": 1,
-						"limit": 10
-					},
-					{
-						"value": "5:00pm",
-						"count": 1,
-						"limit": 10
-					},
-					{
-						"value": "5:30pm",
-						"count": 1,
-						"limit": 10
-					},
-					{
-						"value": "6:00pm",
-						"count": 1,
-						"limit": 10
-					},
-					{
-						"value": "6:30pm",
-						"count": 1,
-						"limit": 10
-					},
-					{
-						"value": "7:00pm",
-						"count": 1,
-						"limit": 10
-					},
-					{
-						"value": "7:30pm",
-						"count": 1,
-						"limit": 10
-					},
-					{
-						"value": "8:00pm",
-						"count": 1,
-						"limit": 10
+						"limit": 35
 					}
 				],	
 				"required": true,
@@ -268,78 +185,6 @@
 					{
 						"field": "1231venue",
 						"value": "NYE Special Menu - Blue Bills"
-					},
-					{
-						"field": "guest",
-						"value": "No"
-					}
-				]
-			},
-			{
-				"id": "billspartyof2count",
-				"label": "Select a dinner reservation time:",
-				"type": "select",
-				"limit": 999,
-				"range": [
-					{
-						"value": "4:00pm",
-						"count": 2,
-						"limit": 10
-					},
-					{
-						"value": "4:30pm",
-						"count": 2,
-						"limit": 15
-					},
-					{
-						"value": "5:00pm",
-						"count": 2,
-						"limit": 10
-					},
-					{
-						"value": "5:30pm",
-						"count": 2,
-						"limit": 10
-					},
-					{
-						"value": "6:00pm",
-						"count": 2,
-						"limit": 10
-					},
-					{
-						"value": "6:30pm",
-						"count": 2,
-						"limit": 10
-					},
-					{
-						"value": "7:00pm",
-						"count": 2,
-						"limit": 10
-					},
-					{
-						"value": "7:30pm",
-						"count": 2,
-						"limit": 10
-					},
-					{
-						"value": "8:00pm",
-						"count": 2,
-						"limit": 10
-					}
-				],	
-				"required": true,
-				"conditional": [
-					{
-						"field": "attend",
-						"value": "Yes"
-					},
-					{
-						"field": "1231venue",
-						"value": "NYE Special Menu - Blue Bills"
-					},
-					{
-						"field": "guest",
-						"value": "Yes"
 					}
 				]
 			},
@@ -361,50 +206,43 @@
 				]
 			},
 			{
-				"id": "brunchpartyof1count",
+				"id": "brunchtime",
 				"label": "Select a brunch reservation time:",
 				"type": "select",
+				"count_from": "guest",
 				"limit": 999,
 				"range": [
 					{
 						"value": "11:00am",
-						"count": 1,
-						"limit": 10
+						"limit": 150
 					},
 					{
 						"value": "11:30am",
-						"count": 1,
-						"limit": 10
+						"limit": 150
 					},
 					{
 						"value": "Noon",
-						"count": 1,
-						"limit": 10
+						"limit": 150
 					},
 					{
 						"value": "12:30pm",
-						"count": 1,
-						"limit": 10
+						"limit": 150
 					},
 					{
 						"value": "1:00pm",
-						"count": 1,
-						"limit": 10
+						"limit": 150
 					},
 					{
 						"value": "1:30pm",
-						"count": 1,
-						"limit": 10
+						"limit": 150
 					},
 					{
 						"value": "2:00pm",
-						"count": 1,
-						"limit": 10
+						"limit": 150
 					},
 					{
 						"value": "2:30pm",
-						"count": 1,
-						"limit": 10
+						"limit": 150
 					}
 				],	
 				"required": true,
@@ -416,77 +254,9 @@
 					{
 						"field": "0101brunch",
 						"value": "Yes"
-					},
-					{
-						"field": "guest",
-						"value": "No"
 					}
 				]
 			},
-			{
-				"id": "brunchpartyof2count",
-				"label": "Select a brunch reservation time:",
-				"type": "select",
-				"limit": 999,
-				"range": [
-					{
-						"value": "11:00am",
-						"count": 2,
-						"limit": 10
-					},
-					{
-						"value": "11:30am",
-						"count": 2,
-						"limit": 10
-					},
-					{
-						"value": "Noon",
-						"count": 2,
-						"limit": 10
-					},
-					{
-						"value": "12:30pm",
-						"count": 2,
-						"limit": 10
-					},
-					{
-						"value": "1:00pm",
-						"count": 2,
-						"limit": 10
-					},
-					{
-						"value": "1:30pm",
-						"count": 2,
-						"limit": 10
-					},
-					{
-						"value": "2:00pm",
-						"count": 2,
-						"limit": 10
-					},
-					{
-						"value": "2:30pm",
-						"count": 2,
-						"limit": 10
-					}
-				],	
-				"required": true,
-				"conditional": [
-					{
-						"field": "attend",
-						"value": "Yes"
-					},
-					{
-						"field": "0101brunch",
-						"value": "Yes"
-					},
-					{
-						"field": "guest",
-						"value": "Yes"
-					}
-				]
-			},
-						
 			{
 				"type": "info",
 				"markdown": "---"
