@@ -56,7 +56,7 @@
 			},
 			{
 				"id": "1231venue",
-				"label": "Which dining option would you prefer?",
+				"label": "Which New Year's Eve dining option would you prefer?",
 				"type": "select",
 				"range": ["Surf & Turf Buffet - Event Center","NYE Special Menu - Blue Bills"],
 				"required": true,
@@ -64,7 +64,11 @@
 					{
 						"field": "attend",
 						"value": "Yes"
-					}
+					},
+					{
+						"field": "guest",
+						"values": ["Yes","No"]
+				   	}
 				]
 			},
 			{
@@ -349,7 +353,11 @@
 					{
 						"field": "attend",
 						"value": "Yes"
-					}
+					},
+					{
+						"field": "guest",
+						"values": ["Yes","No"]
+				   	}
 				]
 			},
 			{
