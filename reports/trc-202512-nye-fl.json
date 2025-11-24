@@ -1,6 +1,6 @@
 {
 	"biz_id": "threerivers",
-	"deal_tokens": [ "trc-speakeasy" ],
+	"deal_tokens": [ "trc-nye-fl2" ],
 	"most_recent_only": true, # omit or set to false for all rows
 	"most_recent_key": "PlayerID", # needs to be the column_name
 	
@@ -51,8 +51,24 @@
 			"attrib": "guest"
 		},
 		{
-			"column_name": "Room",
-			"attrib": "room"
+			"column_name": "1231Venue",
+			"attrib": "1231venue"
+		},
+		{
+			"column_name": "BuffetTime",
+			"attrib": "buffettime"
+		},
+		{
+			"column_name": "BillsTime",
+			"attrib": "billstime"
+		},
+		{
+			"column_name": "0101Brunch",
+			"attrib": "0101brunch"
+		},
+		{
+			"column_name": "BrunchTime",
+			"attrib": "brunchtime"
 		}
 	]
 }
