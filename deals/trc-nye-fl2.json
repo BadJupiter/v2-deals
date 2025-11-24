@@ -68,55 +68,55 @@
 				]
 			},
 			{
-				"id": "buffet_time",
-				"label": "Select something, anything:",
+				"id": "buffetpartyof1count",
+				"label": "Select a dinner reservation time:",
 				"type": "select",
 				"limit": 999,
 				"range": [
 					{
 						"value": "4:00pm",
 						"count": 1,
-						"limit": 150
+						"limit": 10
 					},
 					{
 						"value": "4:30pm",
 						"count": 1,
-						"limit": 150
+						"limit": 10
 					},
 					{
 						"value": "5:00pm",
 						"count": 1,
-						"limit": 150
+						"limit": 10
 					},
 					{
 						"value": "5:30pm",
 						"count": 1,
-						"limit": 150
+						"limit": 10
 					},
 					{
 						"value": "6:00pm",
 						"count": 1,
-						"limit": 150
+						"limit": 10
 					},
-										{
+					{
 						"value": "6:30pm",
 						"count": 1,
-						"limit": 150
+						"limit": 10
 					},
-										{
+					{
 						"value": "7:00pm",
 						"count": 1,
-						"limit": 150
+						"limit": 10
 					},
-										{
+					{
 						"value": "7:30pm",
 						"count": 1,
-						"limit": 150
+						"limit": 10
 					},
 					{
 						"value": "8:00pm",
 						"count": 1,
-						"limit": 150
+						"limit": 10
 					}
 				],	
 				"required": true,
@@ -136,7 +136,7 @@
 				]
 			},
 			{
-				"id": "buffet_time",
+				"id": "buffetpartyof2count",
 				"label": "Select a dinner reservation time:",
 				"type": "select",
 				"limit": 999,
@@ -144,47 +144,47 @@
 					{
 						"value": "4:00pm",
 						"count": 2,
-						"limit": 150
+						"limit": 10
 					},
 					{
 						"value": "4:30pm",
 						"count": 2,
-						"limit": 150
+						"limit": 10
 					},
 					{
 						"value": "5:00pm",
 						"count": 2,
-						"limit": 150
+						"limit": 10
 					},
 					{
 						"value": "5:30pm",
 						"count": 2,
-						"limit": 150
+						"limit": 10
 					},
 					{
 						"value": "6:00pm",
 						"count": 2,
-						"limit": 150
+						"limit": 10
 					},
-										{
+					{
 						"value": "6:30pm",
 						"count": 2,
-						"limit": 150
+						"limit": 10
 					},
-										{
+					{
 						"value": "7:00pm",
 						"count": 2,
-						"limit": 150
+						"limit": 10
 					},
-										{
+					{
 						"value": "7:30pm",
 						"count": 2,
-						"limit": 150
+						"limit": 10
 					},
 					{
 						"value": "8:00pm",
 						"count": 2,
-						"limit": 150
+						"limit": 10
 					}
 				],	
 				"required": true,
@@ -203,9 +203,144 @@
 					}
 				]
 			},
-
 			{
-				"id": "0101venue",
+				"id": "billspartyof1count",
+				"label": "Select a dinner reservation time:",
+				"type": "select",
+				"limit": 999,
+				"range": [
+					{
+						"value": "4:00pm",
+						"count": 1,
+						"limit": 10
+					},
+					{
+						"value": "4:30pm",
+						"count": 1,
+						"limit": 10
+					},
+					{
+						"value": "5:00pm",
+						"count": 1,
+						"limit": 10
+					},
+					{
+						"value": "5:30pm",
+						"count": 1,
+						"limit": 10
+					},
+					{
+						"value": "6:00pm",
+						"count": 1,
+						"limit": 10
+					},
+					{
+						"value": "6:30pm",
+						"count": 1,
+						"limit": 10
+					},
+					{
+						"value": "7:00pm",
+						"count": 1,
+						"limit": 10
+					},
+					{
+						"value": "7:30pm",
+						"count": 1,
+						"limit": 10
+					},
+					{
+						"value": "8:00pm",
+						"count": 1,
+						"limit": 10
+					}
+				],	
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "1231venue",
+						"value": "NYE Special Menu - Blue Bills"
+					},
+					{
+						"field": "guest",
+						"value": "No"
+					}
+				]
+			},
+			{
+				"id": "billspartyof2count",
+				"label": "Select a dinner reservation time:",
+				"type": "select",
+				"limit": 999,
+				"range": [
+					{
+						"value": "4:00pm",
+						"count": 2,
+						"limit": 10
+					},
+					{
+						"value": "4:30pm",
+						"count": 2,
+						"limit": 15
+					},
+					{
+						"value": "5:00pm",
+						"count": 2,
+						"limit": 10
+					},
+					{
+						"value": "5:30pm",
+						"count": 2,
+						"limit": 10
+					},
+					{
+						"value": "6:00pm",
+						"count": 2,
+						"limit": 10
+					},
+					{
+						"value": "6:30pm",
+						"count": 2,
+						"limit": 10
+					},
+					{
+						"value": "7:00pm",
+						"count": 2,
+						"limit": 10
+					},
+					{
+						"value": "7:30pm",
+						"count": 2,
+						"limit": 10
+					},
+					{
+						"value": "8:00pm",
+						"count": 2,
+						"limit": 10
+					}
+				],	
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "1231venue",
+						"value": "NYE Special Menu - Blue Bills"
+					},
+					{
+						"field": "guest",
+						"value": "Yes"
+					}
+				]
+			},
+			{
+				"id": "0101brunch",
 				"label": "Will you be joining us for New Year's Day Brunch?",
 				"type": "select",
 				"range": ["Yes","No"],
@@ -217,6 +352,133 @@
 					}
 				]
 			},
+			{
+				"id": "brunchpartyof1count",
+				"label": "Select a brunch reservation time:",
+				"type": "select",
+				"limit": 999,
+				"range": [
+					{
+						"value": "11:00am",
+						"count": 1,
+						"limit": 10
+					},
+					{
+						"value": "11:30am",
+						"count": 1,
+						"limit": 10
+					},
+					{
+						"value": "Noon",
+						"count": 1,
+						"limit": 10
+					},
+					{
+						"value": "12:30pm",
+						"count": 1,
+						"limit": 10
+					},
+					{
+						"value": "1:00pm",
+						"count": 1,
+						"limit": 10
+					},
+					{
+						"value": "1:30pm",
+						"count": 1,
+						"limit": 10
+					},
+					{
+						"value": "2:00pm",
+						"count": 1,
+						"limit": 10
+					},
+					{
+						"value": "2:30pm",
+						"count": 1,
+						"limit": 10
+					}
+				],	
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "0101brunch",
+						"value": "Yes"
+					},
+					{
+						"field": "guest",
+						"value": "No"
+					}
+				]
+			},
+			{
+				"id": "brunchpartyof2count",
+				"label": "Select a brunch reservation time:",
+				"type": "select",
+				"limit": 999,
+				"range": [
+					{
+						"value": "11:00am",
+						"count": 2,
+						"limit": 10
+					},
+					{
+						"value": "11:30am",
+						"count": 2,
+						"limit": 10
+					},
+					{
+						"value": "Noon",
+						"count": 2,
+						"limit": 10
+					},
+					{
+						"value": "12:30pm",
+						"count": 2,
+						"limit": 10
+					},
+					{
+						"value": "1:00pm",
+						"count": 2,
+						"limit": 10
+					},
+					{
+						"value": "1:30pm",
+						"count": 2,
+						"limit": 10
+					},
+					{
+						"value": "2:00pm",
+						"count": 2,
+						"limit": 10
+					},
+					{
+						"value": "2:30pm",
+						"count": 2,
+						"limit": 10
+					}
+				],	
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "0101brunch",
+						"value": "Yes"
+					},
+					{
+						"field": "guest",
+						"value": "Yes"
+					}
+				]
+			},
+						
 			{
 				"type": "info",
 				"markdown": "---"
