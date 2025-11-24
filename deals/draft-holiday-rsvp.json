@@ -1,0 +1,177 @@
+{
+	"biz_id": "example_business",
+	"check_in": true,
+	"auth_required": true,
+	"error_auth": {
+		"title": "Authentication Required",
+		"content": "You must be authenticated to access this RSVP."
+	},
+	"FORM": {
+		"title": "Holiday Event RSVP",
+		"fields": [
+			{
+				"type": "info",
+				"markdown": "# Holiday Event RSVP"
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "info",
+				"justify": "center",
+				"markdown": "Please let us know if you'll be joining us for our holiday event!"
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"id": "coming",
+				"label": "Are you coming?",
+				"type": "select",
+				"range": [
+					"Yes",
+					"No"
+				],
+				"required": true
+			},
+			{
+				"id": "guest",
+				"label": "Are you bringing a guest?",
+				"type": "select",
+				"range": [
+					"Yes",
+					"No"
+				],
+				"required": true,
+				"global": true,
+				"capacity_map": {
+					"Yes": 2,
+					"No": 1
+				},
+				"conditional": {
+					"field": "coming",
+					"value": "Yes"
+				}
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "info",
+				"markdown": "## Day 1"
+			},
+			{
+				"id": "day1_time",
+				"label": "Pick a time slot for Day 1:",
+				"type": "select",
+				"count_from": "guest",
+				"range": [
+					{
+						"value": "10:00 AM",
+						"limit": 50
+					},
+					{
+						"value": "12:00 PM",
+						"limit": 50
+					},
+					{
+						"value": "2:00 PM",
+						"limit": 50
+					},
+					{
+						"value": "4:00 PM",
+						"limit": 50
+					}
+				],
+				"required": true,
+				"conditional": {
+					"field": "coming",
+					"value": "Yes"
+				}
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "info",
+				"markdown": "## Day 2"
+			},
+			{
+				"id": "day2_time",
+				"label": "Pick a time slot for Day 2:",
+				"type": "select",
+				"count_from": "guest",
+				"range": [
+					{
+						"value": "11:00 AM",
+						"limit": 50
+					},
+					{
+						"value": "1:00 PM",
+						"limit": 50
+					},
+					{
+						"value": "3:00 PM",
+						"limit": 50
+					},
+					{
+						"value": "5:00 PM",
+						"limit": 50
+					}
+				],
+				"required": true,
+				"conditional": {
+					"field": "coming",
+					"value": "Yes"
+				}
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "fields_group",
+				"bgcolor": "#c8f0fc",
+				"fields": [
+					{
+						"id": "z_FIRSTNAME",
+						"label": "First Name:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					},
+					{
+						"id": "z_LASTNAME",
+						"label": "Last Name:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					},
+					{
+						"id": "PlayerID",
+						"label": "Rewards #:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					}
+				]
+			}
+		],
+		"limits": {
+			"most_recent_only": true,
+			"most_recent_key": "PlayerID"
+		},
+		"submit": {
+			"label": "Submit RSVP",
+			"color": "#20363d"
+		}
+	},
+	"MAIN": {
+		"title": "Thank You!",
+		"body_md": "# RSVP Confirmed!\n\nWe've received your RSVP. If you need to make any changes, just scan your invitation again.\n\nWe look forward to seeing you at the event!"
+	}
+}
