@@ -73,7 +73,7 @@
 			},
 			{
 				"id": "buffet_time",
-				"label": "Select a dinner reservation time:",
+				"label": "Select something, anything:",
 				"type": "select",
 				"limit": 999,
 				"range": [
