@@ -239,10 +239,6 @@
 					{
 						"value": "2:00pm",
 						"limit": 150
-					},
-					{
-						"value": "2:30pm",
-						"limit": 150
 					}
 				],	
 				"required": true,
