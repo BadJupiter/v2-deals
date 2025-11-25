@@ -25,7 +25,7 @@
 				"type": "info",
 				"markdown": "## **December 31st & January 1st**"	
 			},
-						{
+			{
 				"type": "info",
 				"markdown": "---"
 			},
@@ -36,7 +36,7 @@
 			},
 			{
 				"id": "attend",
-				"label": "Will you attend?",
+				"label": "Will you be attending?",
 				"type": "select",
 				"range": ["Yes","No"],
 				"required": true
@@ -47,6 +47,11 @@
 				"type": "select",
 				"range": ["Yes","No"],
 				"required": true,
+				"global": true,
+  				"capacity_map": {
+  					"Yes": 2,
+    				"No": 1
+  				},
 				"conditional": [
 					{
 						"field": "attend",
@@ -56,7 +61,7 @@
 			},
 			{
 				"id": "1231venue",
-				"label": "Which dining option would you prefer?",
+				"label": "Which New Year's Eve dining option would you prefer?",
 				"type": "select",
 				"range": ["Surf & Turf Buffet - Event Center","NYE Special Menu - Blue Bills"],
 				"required": true,
@@ -64,126 +69,54 @@
 					{
 						"field": "attend",
 						"value": "Yes"
-					}
-				]
-			},
-			{
-				"id": "buffet_time",
-				"label": "Select something, anything:",
-				"type": "select",
-				"limit": 999,
-				"range": [
-					{
-						"value": "4:00pm",
-						"count": 1,
-						"limit": 150
-					},
-					{
-						"value": "4:30pm",
-						"count": 1,
-						"limit": 150
-					},
-					{
-						"value": "5:00pm",
-						"count": 1,
-						"limit": 150
-					},
-					{
-						"value": "5:30pm",
-						"count": 1,
-						"limit": 150
-					},
-					{
-						"value": "6:00pm",
-						"count": 1,
-						"limit": 150
-					},
-										{
-						"value": "6:30pm",
-						"count": 1,
-						"limit": 150
-					},
-										{
-						"value": "7:00pm",
-						"count": 1,
-						"limit": 150
-					},
-										{
-						"value": "7:30pm",
-						"count": 1,
-						"limit": 150
-					},
-					{
-						"value": "8:00pm",
-						"count": 1,
-						"limit": 150
-					}
-				],	
-				"required": true,
-				"conditional": [
-					{
-						"field": "attend",
-						"value": "Yes"
-					},
-					{
-						"field": "1231venue",
-						"value": "Surf & Turf Buffet - Event Center"
 					},
 					{
 						"field": "guest",
-						"value": "No"
-					}
+						"values": ["Yes","No"]
+				   	}
 				]
 			},
 			{
-				"id": "buffet_time",
+				"id": "buffettime",
 				"label": "Select a dinner reservation time:",
 				"type": "select",
+				"count_from": "guest",
 				"limit": 999,
 				"range": [
 					{
 						"value": "4:00pm",
-						"count": 2,
 						"limit": 150
 					},
 					{
 						"value": "4:30pm",
-						"count": 2,
 						"limit": 150
 					},
 					{
 						"value": "5:00pm",
-						"count": 2,
 						"limit": 150
 					},
 					{
 						"value": "5:30pm",
-						"count": 2,
 						"limit": 150
 					},
 					{
 						"value": "6:00pm",
-						"count": 2,
 						"limit": 150
 					},
-										{
+					{
 						"value": "6:30pm",
-						"count": 2,
 						"limit": 150
 					},
-										{
+					{
 						"value": "7:00pm",
-						"count": 2,
 						"limit": 150
 					},
-										{
+					{
 						"value": "7:30pm",
-						"count": 2,
 						"limit": 150
 					},
 					{
 						"value": "8:00pm",
-						"count": 2,
 						"limit": 150
 					}
 				],	
@@ -196,16 +129,67 @@
 					{
 						"field": "1231venue",
 						"value": "Surf & Turf Buffet - Event Center"
-					},
-					{
-						"field": "guest",
-						"value": "Yes"
 					}
 				]
 			},
-
 			{
-				"id": "0101venue",
+				"id": "billstime",
+				"label": "Select a dinner reservation time:",
+				"type": "select",
+				"count_from": "guest",
+				"limit": 999,
+				"range": [
+					{
+						"value": "4:00pm",
+						"limit": 35
+					},
+					{
+						"value": "4:30pm",
+						"limit": 35
+					},
+					{
+						"value": "5:00pm",
+						"limit": 35
+					},
+					{
+						"value": "5:30pm",
+						"limit": 35
+					},
+					{
+						"value": "6:00pm",
+						"limit": 35
+					},
+					{
+						"value": "6:30pm",
+						"limit": 35
+					},
+					{
+						"value": "7:00pm",
+						"limit": 35
+					},
+					{
+						"value": "7:30pm",
+						"limit": 35
+					},
+					{
+						"value": "8:00pm",
+						"limit": 35
+					}
+				],	
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "1231venue",
+						"value": "NYE Special Menu - Blue Bills"
+					}
+				]
+			},
+			{
+				"id": "0101brunch",
 				"label": "Will you be joining us for New Year's Day Brunch?",
 				"type": "select",
 				"range": ["Yes","No"],
@@ -213,6 +197,58 @@
 				"conditional": [
 					{
 						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "guest",
+						"values": ["Yes","No"]
+				   	}
+				]
+			},
+			{
+				"id": "brunchtime",
+				"label": "Select a brunch reservation time:",
+				"type": "select",
+				"count_from": "guest",
+				"limit": 999,
+				"range": [
+					{
+						"value": "11:00am",
+						"limit": 150
+					},
+					{
+						"value": "11:30am",
+						"limit": 150
+					},
+					{
+						"value": "Noon",
+						"limit": 150
+					},
+					{
+						"value": "12:30pm",
+						"limit": 150
+					},
+					{
+						"value": "1:00pm",
+						"limit": 150
+					},
+					{
+						"value": "1:30pm",
+						"limit": 150
+					},
+					{
+						"value": "2:00pm",
+						"limit": 150
+					}
+				],	
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "0101brunch",
 						"value": "Yes"
 					}
 				]
@@ -223,7 +259,7 @@
 			},
 			{
 				"type": "fields_group",
-				"bgcolor": "#BFA46F",
+				"bgcolor": "#dbc8b5",
 				"fields": [
 					{
 						"id": "z_FIRSTNAME",
