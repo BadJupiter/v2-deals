@@ -8,14 +8,14 @@
 	},
 
 	"active": {
-		"start": "2025-11- 10:00AM CDT",
-		"end": "2025-12-30 11:59PM CDT"
+		"start": "2025-12-16 10:00AM CDT",
+		"end": "2025-12-26 11:59PM CDT"
 	},
 
 	"META": {
 		"name": "Loteria Bingo",
 		"description": "Fun bingo session filed with laughs, excitement and luck!",
-		"dt": "December 30th"
+		"dt": "December 26th"
 	},
 
 
@@ -28,7 +28,7 @@
 			},
 			{
 				"type": "info",
-				"markdown": "## **December 30, 2025**"
+				"markdown": "## **December 26, 2025**"
 			},
 			{
 				"type": "info",
