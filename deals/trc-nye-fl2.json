@@ -36,7 +36,7 @@
 			},
 			{
 				"id": "attend",
-				"label": "Will you attend?",
+				"label": "Will you be attending?",
 				"type": "select",
 				"range": ["Yes","No"],
 				"required": true
