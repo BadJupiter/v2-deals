@@ -103,7 +103,13 @@
 						"type": "text",
 						"sticky": true,
 						"disabled": true
-					}
+					},
+					{
+						"id": "PlayerID",
+						"label": "Club #:",
+						"type": "text",
+						"sticky": true,
+						"hidden": true}
 				]
 			}
 		],
