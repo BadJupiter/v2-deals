@@ -63,7 +63,7 @@
 				"id": "1231venue",
 				"label": "Which New Year's Eve dining option would you prefer?",
 				"type": "select",
-				"range": ["Surf & Turf Buffet - Event Center","NYE Special Menu - Blue Bills"],
+				"range": ["Surf & Turf Buffet - Event Center","Surf & Turf Prix Fixe Dinner - Blue Bills"],
 				"required": true,
 				"conditional": [
 					{
@@ -81,7 +81,7 @@
 				"label": "Select a dinner reservation time:",
 				"type": "select",
 				"count_from": "guest",
-				"limit": 999,
+				"limit": 1350,
 				"range": [
 					{
 						"value": "4:00pm",
@@ -137,7 +137,7 @@
 				"label": "Select a dinner reservation time:",
 				"type": "select",
 				"count_from": "guest",
-				"limit": 999,
+				"limit": 315,
 				"range": [
 					{
 						"value": "4:00pm",
@@ -184,7 +184,7 @@
 					},
 					{
 						"field": "1231venue",
-						"value": "NYE Special Menu - Blue Bills"
+						"value": "Surf & Turf Prix Fixe Dinner - Blue Bills"
 					}
 				]
 			},
@@ -210,7 +210,7 @@
 				"label": "Select a brunch reservation time:",
 				"type": "select",
 				"count_from": "guest",
-				"limit": 999,
+				"limit": 1050,
 				"range": [
 					{
 						"value": "11:00am",
