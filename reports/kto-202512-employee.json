@@ -1,6 +1,6 @@
 {
 	"biz_id": "kickapoo",
-	"deal_tokens": [ "kto-carhartt" ],
+	"deal_tokens": [ "kto-employee" ],
 	"most_recent_only": true, # omit or set to false for all rows
 	"most_recent_key": "Player ID", # needs to be the column_name
 	
@@ -47,8 +47,12 @@
 			"attrib": "attend"
 		},
 		{
-			"column_name": "Time",
-			"attrib": "time"
+			"column_name": "Guest",
+			"attrib": "guest"
+		},
+		{
+			"column_name": "Day",
+			"attrib": "day"
 		}
 	]
 }
