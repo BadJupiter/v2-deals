@@ -51,11 +51,6 @@
 				"type": "select",
 				"range": ["Yes","No"],
 				"required": true,
-				"global": true,
-  				"capacity_map": {
-  					"Yes": 2,
-    				"No": 1
-  				},
 				"conditional": [
 					{
 						"field": "attend",
