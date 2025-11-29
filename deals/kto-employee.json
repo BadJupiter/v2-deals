@@ -109,7 +109,7 @@
 						"label": "Club #:",
 						"type": "text",
 						"sticky": true,
-						"hidden": true}
+						"disabled": true}
 				]
 			}
 		],
