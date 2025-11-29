@@ -1,0 +1,301 @@
+{
+	"biz_id": "threerivers",
+	"check_in": true,
+	"auth_required": true,
+	"error_auth": {
+		"title": "Woops!",
+		"content": "Can't play if you ain't authenticated!"
+	},
+
+	"active": {
+		"start": "2025-10-21 10:00AM CDT",
+		"end": "2025-11-29 11:59PM CDT"
+	},
+	
+	"summary_info": "NYE Bash",
+	
+	"FORM": {
+		"title": "Three Rivers Casino Resort",
+		"fields": [
+			{
+				"type": "info",
+				"markdown": "# New Year's Bash"
+			},
+			{
+				"type": "info",
+				"markdown": "## **December 31st & January 1st**"	
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "info",
+				"justify": "center",
+				"markdown": " \n\nIt’s our pleasure to offer our valued Three Rivers guests an invitation to our **New Year's Celebration!**"
+			},
+			{
+				"id": "attend",
+				"label": "Will you be attending?",
+				"type": "select",
+				"range": ["Yes","No"],
+				"required": true
+			},
+			{
+				"id": "guest",
+				"label": "Will you be bringing a guest?",
+				"type": "select",
+				"range": ["Yes","No"],
+				"required": true,
+				"global": true,
+  				"capacity_map": {
+  					"Yes": 2,
+    				"No": 1
+  				},
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					}
+				]				
+			},
+			{
+				"id": "1231venue",
+				"label": "Which New Year's Eve dining option would you prefer?",
+				"type": "select",
+				"range": ["Surf & Turf Buffet - Event Center","Surf & Turf Prix Fixe Dinner - Blue Bills"],
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "guest",
+						"values": ["Yes","No"]
+				   	}
+				]
+			},
+			{
+				"id": "buffettime",
+				"label": "Select a dinner reservation time:",
+				"type": "select",
+				"count_from": "guest",
+				"limit": 1350,
+				"range": [
+					{
+						"value": "4:00pm",
+						"limit": 150
+					},
+					{
+						"value": "4:30pm",
+						"limit": 150
+					},
+					{
+						"value": "5:00pm",
+						"limit": 150
+					},
+					{
+						"value": "5:30pm",
+						"limit": 150
+					},
+					{
+						"value": "6:00pm",
+						"limit": 150
+					},
+					{
+						"value": "6:30pm",
+						"limit": 150
+					},
+					{
+						"value": "7:00pm",
+						"limit": 150
+					},
+					{
+						"value": "7:30pm",
+						"limit": 150
+					},
+					{
+						"value": "8:00pm",
+						"limit": 150
+					}
+				],	
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "1231venue",
+						"value": "Surf & Turf Buffet - Event Center"
+					}
+				]
+			},
+			{
+				"id": "billstime",
+				"label": "Select a dinner reservation time:",
+				"type": "select",
+				"count_from": "guest",
+				"limit": 315,
+				"range": [
+					{
+						"value": "4:00pm",
+						"limit": 35
+					},
+					{
+						"value": "4:30pm",
+						"limit": 35
+					},
+					{
+						"value": "5:00pm",
+						"limit": 35
+					},
+					{
+						"value": "5:30pm",
+						"limit": 35
+					},
+					{
+						"value": "6:00pm",
+						"limit": 35
+					},
+					{
+						"value": "6:30pm",
+						"limit": 35
+					},
+					{
+						"value": "7:00pm",
+						"limit": 35
+					},
+					{
+						"value": "7:30pm",
+						"limit": 35
+					},
+					{
+						"value": "8:00pm",
+						"limit": 35
+					}
+				],	
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "1231venue",
+						"value": "Surf & Turf Prix Fixe Dinner - Blue Bills"
+					}
+				]
+			},
+			{
+				"id": "0101brunch",
+				"label": "Will you be joining us for New Year's Day Brunch?",
+				"type": "select",
+				"range": ["Yes","No"],
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "guest",
+						"values": ["Yes","No"]
+				   	}
+				]
+			},
+			{
+				"id": "brunchtime",
+				"label": "Select a brunch reservation time:",
+				"type": "select",
+				"count_from": "guest",
+				"limit": 1050,
+				"range": [
+					{
+						"value": "11:00am",
+						"limit": 150
+					},
+					{
+						"value": "11:30am",
+						"limit": 150
+					},
+					{
+						"value": "Noon",
+						"limit": 150
+					},
+					{
+						"value": "12:30pm",
+						"limit": 150
+					},
+					{
+						"value": "1:00pm",
+						"limit": 150
+					},
+					{
+						"value": "1:30pm",
+						"limit": 150
+					},
+					{
+						"value": "2:00pm",
+						"limit": 150
+					}
+				],	
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "0101brunch",
+						"value": "Yes"
+					}
+				]
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "fields_group",
+				"bgcolor": "#dbc8b5",
+				"fields": [
+					{
+						"id": "z_FIRSTNAME",
+						"label": "First Name:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					},
+					{
+						"id": "z_LASTNAME",
+						"label": "Last Name:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					},
+					{
+						"id": "PlayerID",
+						"label": "Club #:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					}
+				]
+			}
+		],
+	"limits": {
+			"most_recent_only": true,
+			"most_recent_key": "PlayerID"
+		},		
+	"submit": {
+			"label": "Submit RSVP",
+			"color": "#20363d"
+		
+		}
+	},
+	"MAIN": {
+		"body_md": "# Your reservation is confirmed \n\nIf you need to make any changes to your RSVP just scan your invitation again. If you need any help please get in touch. We hope to see you soon at **Three Rivers Casino Resort - Florence**."
+	}
+}
