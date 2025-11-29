@@ -19,11 +19,15 @@
 		"fields": [
 			{
 				"type": "info",
-				"markdown": "# New Year's Bash"
+				"markdown": "# New Year's Eve Bash"
 			},
 			{
 				"type": "info",
-				"markdown": "## **December 31st & January 1st**"	
+				"markdown": "# Coos Bay"
+			},
+			{
+				"type": "info",
+				"markdown": "## **Wednesday, December 31st**"	
 			},
 			{
 				"type": "info",
@@ -58,200 +62,6 @@
 						"value": "Yes"
 					}
 				]				
-			},
-			{
-				"id": "1231venue",
-				"label": "Which New Year's Eve dining option would you prefer?",
-				"type": "select",
-				"range": ["Surf & Turf Buffet - Event Center","Surf & Turf Prix Fixe Dinner - Blue Bills"],
-				"required": true,
-				"conditional": [
-					{
-						"field": "attend",
-						"value": "Yes"
-					},
-					{
-						"field": "guest",
-						"values": ["Yes","No"]
-				   	}
-				]
-			},
-			{
-				"id": "buffettime",
-				"label": "Select a dinner reservation time:",
-				"type": "select",
-				"count_from": "guest",
-				"limit": 1350,
-				"range": [
-					{
-						"value": "4:00pm",
-						"limit": 150
-					},
-					{
-						"value": "4:30pm",
-						"limit": 150
-					},
-					{
-						"value": "5:00pm",
-						"limit": 150
-					},
-					{
-						"value": "5:30pm",
-						"limit": 150
-					},
-					{
-						"value": "6:00pm",
-						"limit": 150
-					},
-					{
-						"value": "6:30pm",
-						"limit": 150
-					},
-					{
-						"value": "7:00pm",
-						"limit": 150
-					},
-					{
-						"value": "7:30pm",
-						"limit": 150
-					},
-					{
-						"value": "8:00pm",
-						"limit": 150
-					}
-				],	
-				"required": true,
-				"conditional": [
-					{
-						"field": "attend",
-						"value": "Yes"
-					},
-					{
-						"field": "1231venue",
-						"value": "Surf & Turf Buffet - Event Center"
-					}
-				]
-			},
-			{
-				"id": "billstime",
-				"label": "Select a dinner reservation time:",
-				"type": "select",
-				"count_from": "guest",
-				"limit": 315,
-				"range": [
-					{
-						"value": "4:00pm",
-						"limit": 35
-					},
-					{
-						"value": "4:30pm",
-						"limit": 35
-					},
-					{
-						"value": "5:00pm",
-						"limit": 35
-					},
-					{
-						"value": "5:30pm",
-						"limit": 35
-					},
-					{
-						"value": "6:00pm",
-						"limit": 35
-					},
-					{
-						"value": "6:30pm",
-						"limit": 35
-					},
-					{
-						"value": "7:00pm",
-						"limit": 35
-					},
-					{
-						"value": "7:30pm",
-						"limit": 35
-					},
-					{
-						"value": "8:00pm",
-						"limit": 35
-					}
-				],	
-				"required": true,
-				"conditional": [
-					{
-						"field": "attend",
-						"value": "Yes"
-					},
-					{
-						"field": "1231venue",
-						"value": "Surf & Turf Prix Fixe Dinner - Blue Bills"
-					}
-				]
-			},
-			{
-				"id": "0101brunch",
-				"label": "Will you be joining us for New Year's Day Brunch?",
-				"type": "select",
-				"range": ["Yes","No"],
-				"required": true,
-				"conditional": [
-					{
-						"field": "attend",
-						"value": "Yes"
-					},
-					{
-						"field": "guest",
-						"values": ["Yes","No"]
-				   	}
-				]
-			},
-			{
-				"id": "brunchtime",
-				"label": "Select a brunch reservation time:",
-				"type": "select",
-				"count_from": "guest",
-				"limit": 1050,
-				"range": [
-					{
-						"value": "11:00am",
-						"limit": 150
-					},
-					{
-						"value": "11:30am",
-						"limit": 150
-					},
-					{
-						"value": "Noon",
-						"limit": 150
-					},
-					{
-						"value": "12:30pm",
-						"limit": 150
-					},
-					{
-						"value": "1:00pm",
-						"limit": 150
-					},
-					{
-						"value": "1:30pm",
-						"limit": 150
-					},
-					{
-						"value": "2:00pm",
-						"limit": 150
-					}
-				],	
-				"required": true,
-				"conditional": [
-					{
-						"field": "attend",
-						"value": "Yes"
-					},
-					{
-						"field": "0101brunch",
-						"value": "Yes"
-					}
-				]
 			},
 			{
 				"type": "info",
@@ -296,6 +106,6 @@
 		}
 	},
 	"MAIN": {
-		"body_md": "# Your reservation is confirmed \n\nIf you need to make any changes to your RSVP just scan your invitation again. If you need any help please get in touch. We hope to see you soon at **Three Rivers Casino Resort - Florence**."
+		"body_md": "# Your reservation is confirmed \n\nIf you need to make any changes to your RSVP just scan your invitation again. If you need any help please get in touch. We hope to see you soon at **Three Rivers Casino Resort - Coos Bay**."
 	}
 }
