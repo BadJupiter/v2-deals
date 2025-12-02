@@ -1,6 +1,6 @@
 {
 	"biz_id": "threerivers",
-	"deal_tokens": [ "trc-5kbingo" ],
+	"deal_tokens": [ "trc-nye-cb" ],
 	"most_recent_only": true, # omit or set to false for all rows
 	"most_recent_key": "PlayerID", # needs to be the column_name
 	
@@ -47,8 +47,8 @@
 			"attrib": "attend"
 		},
 		{
-			"column_name": "Count",
-			"attrib": "day1count"
+			"column_name": "Guest",
+			"attrib": "guest"
 		}
 	]
 }
