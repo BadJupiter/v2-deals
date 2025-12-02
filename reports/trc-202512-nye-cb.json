@@ -43,7 +43,7 @@
 			"attrib": "z_FIRSTNAME"
 		},
 		{
-			"column_name": "Attending",
+			"column_name": "Attend",
 			"attrib": "attend"
 		},
 		{
