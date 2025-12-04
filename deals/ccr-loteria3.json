@@ -8,13 +8,13 @@
 	},
 
 	"active": {
-		"start": "2025-11-01 10:00AM CDT",
-		"end": "2025-12-30 11:59PM CDT"
+		"start": "2025-12-12 6:00AM PDT",
+		"end": "2025-12-30 11:59PM PDT"
 	},
 
 	"META": {
-		"name": "Loteria Bingo",
-		"description": "Fun bingo session filed with laughs, excitement and luck!",
+		"name": "Loteria",
+		"description": "Like traditional Bingo, but even more fun! Each game has its own winning pattern. Once you’ve completed it, shout “Lotería!",
 		"dt": "December 30th"
 	},
 
