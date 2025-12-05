@@ -1,0 +1,105 @@
+{
+	"biz_id": "colusacasino",
+	"check_in": true,
+	"auth_required": true,
+	"error_auth": {
+		"title": "Woops!",
+		"content": "Can't play if you ain't authenticated!"
+	},
+
+	"active": {
+		"start": "2025-12-12 6:00AM PDT",
+		"end": "2025-12-26 11:59PM PDT"
+	},
+
+	"META": {
+		"name": "$60,000 Deal or No Deal",
+		"description": "You’ve Seen the Show, You’ve Felt the Tension, Now it’s Your Turn to Play! Two Lucky Contestants Will Play Everyone’s Favorite TV Game Show with a Top Prize of $25,000.",
+		"dt": "December 26th"
+	},
+
+
+	
+	"FORM": {
+		"fields": [
+			{
+				"type": "info",
+				"markdown": "# Deal or No Deal RSVP"
+			},
+			{
+				"type": "info",
+				"markdown": "## **December 26, 2025**"
+			},
+			{
+				"type": "info",
+				"justify": "center",
+				"markdown": "ONSITE CHECK-IN BEGINS AT 6:00 PM"
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "info",
+				"justify": "center",
+				"markdown": " \n\nYou and a guest are invited to the Deal or No Deal Event at Colusa Casino!"
+			},
+			{
+				"id": "attend",
+				"label": "Are you able to attend?",
+				"type": "select",
+				"range": ["Yes","No"],
+				"required": true
+			},
+			{
+				"id": "guests",
+				"label": "I am confirming for:",
+				"type": "select",
+				"range": ["Myself","Me and a guest"],
+				"required": true,
+				"conditional": {
+					"field": "attend",
+					"value": "Yes"
+				}
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "fields_group",
+				"bgcolor": "#E8C97B",
+				"fields": [
+					{
+						"id": "z_FIRSTNAME",
+						"label": "First Name:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					},
+					{
+						"id": "z_LASTNAME",
+						"label": "Last Name:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					},
+					{
+						"id": "PlayerID",
+						"label": "Rewards #:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					}
+				]
+			}
+		],
+		"submit": {
+			"label": "Submit RSVP",
+			"color": "#20363d"
+		}
+	},
+	"MAIN": {
+		"body_md": "# Thank you for your response! \n\nIf you need to make any changes to your RSVP just scan your invitation again. If you need any help please get in touch. We hope to see you soon at **Colusa Casino Resort**."
+	}
+}

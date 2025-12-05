@@ -1,0 +1,144 @@
+{
+	"biz_id": "colusacasino",
+	"check_in": true,
+	"auth_required": true,
+	"error_auth": {
+		"title": "Woops!",
+		"content": "Can't play if you ain't authenticated!"
+	},
+
+	"active": {
+		"start": "2025-10-01 10:00AM CDT",
+		"end": "2025-11-07 11:59PM CDT"
+	},
+	
+	"summary_info": "Ariat Boot Event",
+	
+	"FORM": {
+			"fields": [
+			{
+				"type": "info",
+				"markdown": "# Colusa Casino Resort"
+			},
+			{
+				"type": "info",
+				"markdown": "# Ariat Boot Event"
+			},
+			{
+				"type": "info",
+				"markdown": "## **Friday, November 7th**"	
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "info",
+				"justify": "center",
+				"markdown": " \n\nYou are invited to our exclusive **Ariat Boot Event**."
+			},
+			{
+				"id": "attend",
+				"label": "Will you be attending?",
+				"type": "select",
+				"range": ["Yes","No"],
+				"required": true
+			},
+			{
+				"id": "time",
+				"label": "Choose your Time to Shop",
+				"type": "select",
+				"limit": 420,
+				"range": [
+					{
+						"value": "2pm",
+						"count": 1,
+						"limit": 60
+					},
+					{
+						"value": "3pm",
+						"count": 1,
+						"limit": 60
+					},
+					{
+						"value": "4pm",
+						"count": 1,
+						"limit": 60
+					},
+										{
+						"value": "5pm",
+						"count": 1,
+						"limit": 60
+					},
+										{
+						"value": "6pm",
+						"count": 1,
+						"limit": 60
+					},
+										{
+						"value": "7pm",
+						"count": 1,
+						"limit": 60
+					},
+					{
+						"value": "8pm",
+						"count": 1,
+						"limit": 60
+					}
+				],	
+				
+				
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					}
+				]
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "fields_group",
+				"bgcolor": "#E8C97B",
+				"fields": [
+					{
+						"id": "z_FIRSTNAME",
+						"label": "First Name:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					},
+					{
+						"id": "z_LASTNAME",
+						"label": "Last Name:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					},
+					{
+						"id": "PlayerID",
+						"label": "Club #:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					}
+				]
+			}
+		],
+		"limits": {
+			"most_recent_only": true,
+			"most_recent_key": "PlayerID"
+		},
+		"submit": {
+			"label": "Submit RSVP",
+			"color": "#20363d"
+		
+		}
+	},
+	"MAIN": {
+		"body_md": "# We've received your request \n\nIf you need to make any changes to your RSVP just scan your invitation again. If you need any help please get in touch. We hope to see you soon at **Colusa Casino**."
+	}
+}
