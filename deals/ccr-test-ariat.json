@@ -7,14 +7,14 @@
 		"content": "Can't play if you ain't authenticated!"
 	},
 
-		"active": {
-		"start": "2025-12-12 6:00AM PDT",
+	"active": {
+		"start": "2025-12-01 6:00AM PDT",
 		"end": "2025-12-30 11:59PM PDT"
 	},
 
 	"META": {
-		"name": "Loteria",
-		"description": "Like traditional Bingo, but even more fun! Each game has its own winning pattern. Once you’ve completed it, shout “Lotería!",
+		"name": "Ariat Boot Boutique",
+		"description": "Boots, boots, boots. Like shoes but taller!",
 		"dt": "December 30th"
 	},
 	
