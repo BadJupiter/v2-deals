@@ -63,7 +63,7 @@
 				"id": "1231venue",
 				"label": "Which New Year's Eve dining option would you prefer?",
 				"type": "select",
-				"range": ["Surf & Turf Buffet - Event Center","Surf & Turf Prix Fixe Dinner - Blue Bills"],
+				"range": ["Surf & Turf Buffet - Event Center","Surf & Turf Prix Fixe Dinner - Blue Bills", "I won't be joining for dinner"],
 				"required": true,
 				"conditional": [
 					{
