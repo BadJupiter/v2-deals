@@ -15,7 +15,8 @@
 	"META": {
 		"name": "Loteria",
 		"description": "Like traditional Bingo, but even more fun! Each game has its own winning pattern. Once you’ve completed it, shout “Lotería!",
-		"dt": "December 30th"
+		"dt": "December 30th",
+		"event_start_dt": "2025-12-30 6:00PM CDT"
 	},
 
 
