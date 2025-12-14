@@ -15,7 +15,8 @@
 	"META": {
 		"name": "Ariat Boot Boutique",
 		"description": "Boots, boots, boots. Like shoes but taller!",
-		"dt": "December 30th"
+		"dt": "December 30th",
+		"event_start_dt": "2025-12-30 10:00AM CDT"
 	},
 	
 	"FORM": {
