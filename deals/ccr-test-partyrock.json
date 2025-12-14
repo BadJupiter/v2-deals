@@ -18,7 +18,7 @@
 		"name": "BINGO night!",
 		"description": "Test your skills against some of the world's most fearsome bingo competitors",
 		"dt": "Dec 16th, 8pm",
-		"sort_dt": "2025-08-01 10:00AM CDT"
+		"event_start_dt": "2025-08-01 10:00AM CDT"
 	},
 		
 	"FORM": {
