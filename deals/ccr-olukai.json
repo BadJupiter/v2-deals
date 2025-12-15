@@ -8,14 +8,15 @@
 	},
 
 	"active": {
-		"start": "2025-10-01 10:00AM CDT",
-		"end": "2025-11-30 11:59PM CDT"
+		"start": "2026-01-01 06:00AM PDT",
+		"end": "2026-01-10 06:00PM PDT"
 	},
 
 	"META": {
-		"name": "Clayton & Crume Event",
-		"description": "VIP Exclusive -  Leather Giveaway!",
-		"dt": "November 30th"
+		"name": "Olukai",
+		"description": "Come in and walk away with a new pair of Olukai Slippers or Boots ABSOLUTELY FREE!",
+		"dt": "January 10th",
+		"event_start_dt": "2026-01-10 12:00PM PDT"
 	},
 
 	
@@ -27,11 +28,11 @@
 			},
 			{
 				"type": "info",
-				"markdown": "# Clayton & Crume Event"
+				"markdown": "# Olukai VIP Event"
 			},
 			{
 				"type": "info",
-				"markdown": "## **Sunday, November 30th**"	
+				"markdown": "## **Saturday, January 10th**"	
 			},
 			{
 				"type": "info",
@@ -40,55 +41,49 @@
 			{
 				"type": "info",
 				"justify": "center",
-				"markdown": " \n\nYou are invited to our exclusive **Clayton & Crume Event**."
+				"markdown": " \n\nYou are invited to our exclusive **Olukai Event**."
 			},
 			{
 				"id": "attend",
 				"label": "Will you be attending?",
 				"type": "select",
 				"range": ["Yes","No"],
+				"global": true,
+  				"capacity_map": {
+  					"Yes": 1
+  				},
 				"required": true
 			},
 			{
 				"id": "time",
-				"label": "Choose your Time to Shop",
+				"label": "Please choose a reservation time",
 				"type": "select",
-				"limit": 420,
+				"count_from": "attend",
+				"limit": 300,
 				"range": [
 					{
+						"value": "Noon",
+						"limit": 50
+					},
+					{
+						"value": "1pm",
+						"limit": 50
+					},				
+					{
 						"value": "2pm",
-						"count": 1,
-						"limit": 60
+						"limit": 50
 					},
 					{
 						"value": "3pm",
-						"count": 1,
-						"limit": 60
+						"limit": 50
 					},
 					{
 						"value": "4pm",
-						"count": 1,
-						"limit": 60
-					},
-										{
-						"value": "5pm",
-						"count": 1,
-						"limit": 60
-					},
-										{
-						"value": "6pm",
-						"count": 1,
-						"limit": 60
-					},
-										{
-						"value": "7pm",
-						"count": 1,
-						"limit": 60
+						"limit": 50
 					},
 					{
-						"value": "8pm",
-						"count": 1,
-						"limit": 60
+						"value": "5pm",
+						"limit": 50
 					}
 				],	
 				
@@ -144,6 +139,6 @@
 		}
 	},
 	"MAIN": {
-		"body_md": "# We've received your request \n\nIf you need to make any changes to your RSVP just scan your invitation again. If you need any help please get in touch. We hope to see you soon at **Colusa Casino**."
+		"body_md": "# Your reservation is confirmed \n\nIf you need to make any changes just scan your invitation again. If you need any help please get in touch. We hope to see you soon at **Colusa Casino**."
 	}
 }
