@@ -15,11 +15,10 @@
 	"META": {
 		"name": "$60,000 Deal or No Deal",
 		"description": "You’ve Seen the Show, You’ve Felt the Tension, Now it’s Your Turn to Play! Two Lucky Contestants Will Play Everyone’s Favorite TV Game Show with a Top Prize of $25,000.",
-		"dt": "December 26th"
+		"dt": "December 26th",
+		"event_start_dt": "2025-12-26 10:00AM PDT"
 	},
 
-
-	
 	"FORM": {
 		"fields": [
 			{
