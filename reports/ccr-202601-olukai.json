@@ -1,18 +1,9 @@
 {
 	"biz_id": "colusacasino",
-	"deal_tokens": [ "ccr-cc" ],
-	"most_recent_only": true, # omit or set to false for all rows
-	"most_recent_key": "Player ID", # needs to be the column_name
+	"deal_tokens": [ "ccr-olukai" ],
+	"most_recent_only": true, 
+	"most_recent_key": "Player ID", 
 	
-	"as_xlsx": false, # omit or set to false for default (CSV)
-
-#	The following column values are always available (attrib):
-#	
-#	_when		grab timestamp (Unix -- for now)
-#	_mobile		User mobile number
-#	_deal		Deal token
-#	_rowid		unique row (grab) identifier
-
 	"COLUMNS": [
 		{
 			"column_name": "Row ID",
