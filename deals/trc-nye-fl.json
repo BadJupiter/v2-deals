@@ -212,10 +212,10 @@
 				"count_from": "guest",
 				"limit": 1050,
 				"range": [
-					{
-						"value": "11:00am",
-						"limit": 150
-					},
+#					{
+#						"value": "11:00am",
+#						"limit": 150
+#					},
 					{
 						"value": "11:30am",
 						"limit": 150
