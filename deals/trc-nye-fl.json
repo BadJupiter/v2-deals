@@ -155,10 +155,10 @@
 						"value": "5:30pm",
 						"limit": 35
 					},
-#					{
-#						"value": "6:00pm",
-#						"limit": 35
-#					},
+					{
+						"value": "6:00pm",
+						"limit": 35
+					},
 					{
 						"value": "6:30pm",
 						"limit": 35
