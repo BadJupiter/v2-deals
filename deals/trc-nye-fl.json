@@ -163,10 +163,10 @@
 						"value": "6:30pm",
 						"limit": 35
 					},
-#					{
-#						"value": "7:00pm",
-#						"limit": 35
-#					},
+					{
+						"value": "7:00pm",
+						"limit": 35
+					},
 					{
 						"value": "7:30pm",
 						"limit": 35
@@ -212,18 +212,18 @@
 				"count_from": "guest",
 				"limit": 1050,
 				"range": [
-#					{
-#						"value": "11:00am",
-#						"limit": 150
-#					},
+					{
+						"value": "11:00am",
+						"limit": 150
+					},
 					{
 						"value": "11:30am",
 						"limit": 150
 					},
-#					{
-#						"value": "Noon",
-#						"limit": 150
-#					},
+					{
+						"value": "Noon",
+						"limit": 150
+					},
 					{
 						"value": "12:30pm",
 						"limit": 150
