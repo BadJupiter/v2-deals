@@ -12,27 +12,11 @@
 		"end": "2025-10-04 11:59PM CDT"
 	},
 	
-	"summary_info": "Patagonia Boutique",
+	"summary_info": "Carhartt Boutique",
 	
 	"FORM": {
 #		"title": "Three Rivers Casino Resort",
 		"fields": [
-			{
-				"id": "Hotel",
-				"label": "Hotel",
-				"type": "text",
-				"sticky": true,
-				"disabled": true,
-				"hidden": true
-			},
-			{
-				"id": "Group",
-				"label": "Group",
-				"type": "text",
-				"sticky": true,
-				"disabled": true,
-				"hidden": true
-			},
 			{
 				"type": "info",
 				"markdown": "# Three Rivers Casino Resort"
@@ -48,11 +32,11 @@
 			
 			{
 				"type": "info",
-				"markdown": "# Patagonia Boutique"
+				"markdown": "# Carhartt Boutique"
 			},
 			{
 				"type": "info",
-				"markdown": "## **October 3rd & 4th**"	
+				"markdown": "## **January 16th & 17th**"	
 			},
 			{
 				"type": "info",
@@ -61,20 +45,25 @@
 			{
 				"type": "info",
 				"justify": "center",
-				"markdown": " \n\nIt’s our pleasure to offer our valued Three Rivers guests an invitation to our **Patagonia Boutique** event!"
+				"markdown": " \n\nIt’s our pleasure to offer our valued Three Rivers guests an invitation to our **Carhartt Boutique** event!"
 			},
-			{
+						{
 				"id": "attend",
-				"label": "Will you attend the Patagonia Event?",
+				"label": "Will you attend the Carhartt Boutique?",
 				"type": "select",
 				"range": ["Yes","No"],
-				"required": true
+				"required": true,
+				"global": true,
+  				"capacity_map": {
+  					"Yes": 1,
+    				"No": 0
+				}
 			},
 			{
 				"id": "day",
 				"label": "What day would you like to attend?",
 				"type": "select",
-				"range": ["Friday, October 3rd","Saturday, October 4th"],
+				"range": ["Friday, January 16th","Saturday, January 17th"],
 				"required": true,
 				"conditional": {
 					"field": "attend",
@@ -83,29 +72,34 @@
 			},
 			{
 				"id": "day1time",
-				"label": "What time would you like to visit the Boutique?",
+				"label": "What time would you like to attend?",
 				"type": "select",
-				"limit": 200,
+				"count_from": "attend",
+				"limit": 2000,
 				"range": [
 					{
 						"value": "4pm",
-						"count": 1,
-						"limit": 50
+						"limit": 250
 					},
 					{
 						"value": "5pm",
-						"count": 1,
-						"limit": 50
+						"limit": 250
 					},
 					{
 						"value": "6pm",
-						"count": 1,
-						"limit": 50
+						"limit": 250
 					},
 					{
 						"value": "7pm",
-						"count": 1,
-						"limit": 50
+						"limit": 250			
+					},
+					{
+						"value": "8pm",
+						"limit": 250
+					},
+					{
+						"value": "9pm",
+						"limit": 250
 					}
 				],	
 				"required": true,
@@ -116,35 +110,40 @@
 					},
 					{
 						"field": "day",
-						"value": "Friday, October 3rd"
+						"value": "Friday, January 16th"
 					}
 				]
 			},
 		{
 				"id": "day2time",
-				"label": "What time would you like to visit the Boutique?",
+				"label": "What time would you like to attend?",
 				"type": "select",
-				"limit": 200,
+				"count_from": "attend",
+				"limit": 2000,
 				"range": [
 					{
 						"value": "4pm",
-						"count": 1,
-						"limit": 50
+						"limit": 250
 					},
 					{
 						"value": "5pm",
-						"count": 1,
-						"limit": 50
+						"limit": 250
 					},
 					{
 						"value": "6pm",
-						"count": 1,
-						"limit": 50
+						"limit": 250
 					},
 					{
 						"value": "7pm",
-						"count": 1,
-						"limit": 50
+						"limit": 250			
+					},
+					{
+						"value": "8pm",
+						"limit": 250
+					},
+					{
+						"value": "9pm",
+						"limit": 250
 					}
 				],	
 				"required": true,
@@ -155,29 +154,7 @@
 					},
 					{
 						"field": "day",
-						"value": "Saturday, October 4th"
-					}
-				]
-			},
-			{
-				"id": "room",
-				"label": "Would you like a host to contact you about hotel accommodations?",
-				"type": "select",
-				"range": ["Yes","No"],
-				"required": true,
-				"conditional": [
-					{
-						"field": "attend",
-						"value": "Yes"
-					},
-					{
-						"field": "day",
-						"values": ["Friday, October 3rd","Saturday, October 4th"]
-					},
-					{
-						"field": "Hotel",
-						"values": ["Y"]
-
+						"value": "Saturday, January 17th"
 					}
 				]
 			},
@@ -209,6 +186,13 @@
 						"type": "text",
 						"sticky": true,
 						"disabled": true
+					},
+					{
+						"id": "z_EMAIL",
+						"label": "Email:",
+						"type": "text",
+						"sticky": true,
+						"disabled": false
 					}
 				]
 			}
@@ -224,6 +208,6 @@
 		}
 	},
 	"MAIN": {
-		"body_md": "# We've received your request \n\nIf you need to make any changes to your RSVP just scan your invitation again. If you need any help please get in touch. We hope to see you soon at **Three Rivers Casino - Coos Bay**."
+		"body_md": "# We've reservation is confirmed \n\nIf you need to make any changes to your RSVP just scan your invitation again. If you need any help please get in touch. We hope to see you soon at **Three Rivers Casino - Coos Bay**."
 	}
 }
