@@ -6,18 +6,6 @@
 		"title": "Woops!",
 		"content": "Can't play if you ain't authenticated!"
 	},
-
-	"active": {
-		"start": "2025-11-22 10:00AM CDT",
-		"end": "2025-12-20 11:59PM CDT"
-	},
-
-	"META": {
-		"name": "Ariat Boot Fitting",
-		"description": "VIP Exclusive -  Boot Fitting!",
-		"dt": "December 20th"
-	},
-
 	
 	"FORM": {
 			"fields": [
@@ -27,11 +15,11 @@
 			},
 			{
 				"type": "info",
-				"markdown": "# Ariat Boot Boutique"
+				"markdown": "# Cruise Giveaway"
 			},
 			{
 				"type": "info",
-				"markdown": "## **Saturday, December 20th**"	
+				"markdown": "## **Friday, January 9th**"	
 			},
 			{
 				"type": "info",
@@ -40,69 +28,44 @@
 			{
 				"type": "info",
 				"justify": "center",
-				"markdown": " \n\nYou are invited to our exclusive **Ariat Boot Boutique**."
+				"markdown": " \n\nYou are invited to our exclusive **Cruise Giveaway**."
 			},
 			{
 				"id": "attend",
-				"label": "Will you be attending the Ariat Boot Boutique?",
+				"label": "Will you pick up an NCL Cruise Certificate?",
 				"type": "select",
 				"range": ["Yes","No"],
-				"required": true
+				"required": true,
+				"global": true,
+  				"capacity_map": {
+  					"Yes": 1,
+    				"No": 0
+				}
 			},
 			{
 				"id": "time",
-				"label": "Select a fitting appointment time:",
+				"label": "What time would you like to pick up?",
 				"type": "select",
-				"limit": 207,
+				"count_from": "attend",
+				"limit": 1000,
 				"range": [
 					{
-						"value": "Noon",
-						"count": 1,
-						"limit": 23
+						"value": "4pm",
+						"limit": 250
 					},
 					{
-						"value": "12:30pm",
-						"count": 1,
-						"limit": 23
+						"value": "5pm",
+						"limit": 250
 					},
 					{
-						"value": "1:00pm",
-						"count": 1,
-						"limit": 23
+						"value": "6pm",
+						"limit": 250			
 					},
 					{
-						"value": "1:30pm",
-						"count": 1,
-						"limit": 23
-					},
-					{
-						"value": "2:00pm",
-						"count": 1,
-						"limit": 23
-					},
-										{
-						"value": "2:30pm",
-						"count": 1,
-						"limit": 23
-					},
-										{
-						"value": "3:00pm",
-						"count": 1,
-						"limit": 23
-					},
-										{
-						"value": "3:30pm",
-						"count": 1,
-						"limit": 23
-					},
-					{
-						"value": "4:00pm",
-						"count": 1,
-						"limit": 23
+						"value": "7pm",
+						"limit": 250
 					}
-				],	
-				
-				
+				],				
 				"required": true,
 				"conditional": [
 					{
