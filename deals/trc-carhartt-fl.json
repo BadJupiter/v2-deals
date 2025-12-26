@@ -225,7 +225,7 @@
 						"disabled": true
 					},
 					{
-						"id": "Email",
+						"id": "z_EMAIL",
 						"label": "Email:",
 						"type": "text",
 						"sticky": true,
