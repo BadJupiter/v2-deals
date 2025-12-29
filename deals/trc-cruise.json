@@ -12,7 +12,7 @@
 		"end": "2025-10-04 11:59PM CDT"
 	},
 	
-	"summary_info": "Carhartt Boutique",
+	"summary_info": "Cruise Certificate Pick-up",
 	
 	"FORM": {
 #		"title": "Three Rivers Casino Resort",
@@ -31,7 +31,7 @@
 			},
 			{
 				"type": "info",
-				"markdown": "# Florence"
+				"markdown": "# Florence & Coos Bay"
 			},			
 			{
 				"type": "info",
@@ -39,32 +39,32 @@
 			},	
 			{
 				"type": "info",
-				"markdown": "# Carhartt Boutique"
+				"markdown": "# Norwegian Cruise Line Certificate Pick-up"
 			},
 			{
 				"type": "info",
-				"markdown": "## **January 16th & 17th**"	
-			},
-			{
-				"type": "info",
-				"markdown": "---"
-			},
-			{
-				"type": "info",
-				"markdown": "## **Casino Event Center, Florence**"	
+				"markdown": "## **January 23rd & 24th**"	
 			},
 			{
 				"type": "info",
 				"markdown": "---"
 			},
+#			{
+#				"type": "info",
+#				"markdown": "## **Casino Event Center, Florence**"	
+#			},
+#			{
+#				"type": "info",
+#				"markdown": "---"
+#			},
 			{
 				"type": "info",
 				"justify": "center",
-				"markdown": " \n\nIt’s our pleasure to offer our valued Three Rivers guests an invitation to our **Patagonia Carhartt** event!"
+				"markdown": " \n\nIt’s our pleasure to offer our valued Three Rivers guests an invitation to pick up a **Norwegian Cruise Line Certificate**!"
 			},
 			{
 				"id": "attend",
-				"label": "Will you attend the Carhartt Boutique?",
+				"label": "Would you like to pick up a certificate for a Norwegian Cruise Line cruise?",
 				"type": "select",
 				"range": ["Yes","No"],
 				"required": true,
@@ -75,10 +75,10 @@
 				}
 			},
 			{
-				"id": "day",
-				"label": "What day would you like to attend?",
+				"id": "flcb",
+				"label": "Where would you like to pick up?",
 				"type": "select",
-				"range": ["Friday, January 16th","Saturday, January 17th"],
+				"range": ["Florence","Coos Bay"],
 				"required": true,
 				"conditional": {
 					"field": "attend",
@@ -86,52 +86,19 @@
 				}
 			},
 			{
-				"id": "day1time",
-				"label": "What time would you like to attend?",
+				"id": "day",
+				"label": "What day would you like to pick up?",
 				"type": "select",
-				"count_from": "attend",
-				"limit": 2000,
-				"range": [
-					{
-						"value": "4pm",
-						"limit": 250
-					},
-					{
-						"value": "5pm",
-						"limit": 250
-					},
-					{
-						"value": "6pm",
-						"limit": 250
-					},
-					{
-						"value": "7pm",
-						"limit": 250			
-					},
-					{
-						"value": "8pm",
-						"limit": 250
-					},
-					{
-						"value": "9pm",
-						"limit": 250
-					}
-				],	
+				"range": ["Friday, January 23rd","Saturday, January 24th"],
 				"required": true,
-				"conditional": [
-					{
-						"field": "attend",
-						"value": "Yes"
-					},
-					{
-						"field": "day",
-						"value": "Friday, January 16th"
-					}
-				]
+				"conditional": {
+					"field": "attend",
+					"value": "Yes"
+				}
 			},
-		{
-				"id": "day2time",
-				"label": "What time would you like to attend?",
+			{
+				"id": "FLday1time",
+				"label": "What time would you like to pick up?",
 				"type": "select",
 				"count_from": "attend",
 				"limit": 2000,
@@ -151,14 +118,6 @@
 					{
 						"value": "7pm",
 						"limit": 250			
-					},
-					{
-						"value": "8pm",
-						"limit": 250
-					},
-					{
-						"value": "9pm",
-						"limit": 250
 					}
 				],	
 				"required": true,
@@ -169,11 +128,134 @@
 					},
 					{
 						"field": "day",
-						"value": "Saturday, January 17th"
+						"value": "Friday, January 23rd"
+					},
+					{
+						"field": "flcb",
+						"value": "Florence"
 					}
 				]
 			},
 			{
+				"id": "FLday2time",
+				"label": "What time would you like to pick up?",
+				"type": "select",
+				"count_from": "attend",
+				"limit": 2000,
+				"range": [
+					{
+						"value": "4pm",
+						"limit": 250
+					},
+					{
+						"value": "5pm",
+						"limit": 250
+					},
+					{
+						"value": "6pm",
+						"limit": 250
+					},
+					{
+						"value": "7pm",
+						"limit": 250			
+					}
+				],	
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "day",
+						"value": "Saturday, January 24th"
+					},
+					{
+						"field": "flcb",
+						"value": "Florence"
+					}
+				]
+			},
+			{
+				"id": "CBday1time",
+				"label": "What time would you like to pick up?",
+				"type": "select",
+				"count_from": "attend",
+				"limit": 2000,
+				"range": [
+					{
+						"value": "4pm",
+						"limit": 250
+					},
+					{
+						"value": "5pm",
+						"limit": 250
+					},
+					{
+						"value": "6pm",
+						"limit": 250
+					},
+					{
+						"value": "7pm",
+						"limit": 250			
+					}
+				],	
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "day",
+						"value": "Friday, January 23rd"
+					},
+					{
+						"field": "flcb",
+						"value": "Coos Bay"
+					}
+				]
+			},
+			{
+				"id": "CBday2time",
+				"label": "What time would you like to pick up?",
+				"type": "select",
+				"count_from": "attend",
+				"limit": 2000,
+				"range": [
+					{
+						"value": "4pm",
+						"limit": 250
+					},
+					{
+						"value": "5pm",
+						"limit": 250
+					},
+					{
+						"value": "6pm",
+						"limit": 250
+					},
+					{
+						"value": "7pm",
+						"limit": 250			
+					}
+				],	
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "day",
+						"value": "Saturday, January 24th"
+					},
+					{
+						"field": "flcb",
+						"value": "Coos Bay"
+					}
+				]
+			},{
 				"id": "room",
 				"label": "Would you like to be contacted for a room reservation?",
 				"type": "select",
@@ -186,11 +268,16 @@
 					},
 					{
 						"field": "day",
-						"values": ["Friday, January 16th","Saturday, January 17th"]
+						"values": ["Friday, January 23rd","Saturday, January 24th"]
 					},
 					{
 						"field": "Hotel",
 						"values": ["Y"]
+
+					},
+					{
+						"field": "flcb",
+						"values": ["Florence"]
 
 					}
 				]
@@ -245,6 +332,6 @@
 		}
 	},
 	"MAIN": {
-		"body_md": "# Your reservation is confirmed \n\nIf you need to make any changes to your RSVP just scan your invitation again. If you need any help please get in touch. We hope to see you soon at **Three Rivers Casino Resort - Florence**."
+		"body_md": "# Your reservation is confirmed \n\nIf you need to make any changes to your RSVP just scan your invitation again. If you need any help please get in touch. We hope to see you soon at **Three Rivers Casino Resort**."
 	}
 }
