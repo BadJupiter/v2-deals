@@ -1,6 +1,6 @@
 {
 	"biz_id": "threerivers",
-	"deal_tokens": [ "trc-nye-fl" ],
+	"deal_tokens": [ "trc-nye-fl","trc-nye-fl-host" ],
 	"most_recent_only": true, # omit or set to false for all rows
 	"most_recent_key": "PlayerID", # needs to be the column_name
 	
