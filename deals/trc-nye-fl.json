@@ -218,27 +218,27 @@
 					},
 					{
 						"value": "11:30am",
-						"limit": 149
+						"limit": 140
 					},
 					{
 						"value": "Noon",
-						"limit": 150
+						"limit": 140
 					},
 					{
 						"value": "12:30pm",
-						"limit": 150
+						"limit": 140
 					},
 					{
 						"value": "1:00pm",
-						"limit": 150
+						"limit": 120
 					},
 					{
 						"value": "1:30pm",
-						"limit": 150
+						"limit": 30
 					},
 					{
 						"value": "2:00pm",
-						"limit": 150
+						"limit": 40
 					}
 				],	
 				"required": true,
