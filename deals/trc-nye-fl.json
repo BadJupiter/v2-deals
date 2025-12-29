@@ -210,7 +210,7 @@
 				"label": "Select a brunch reservation time:",
 				"type": "select",
 				"count_from": "guest",
-				"limit": 1050,
+				"limit": 750,
 				"range": [
 					{
 						"value": "11:00am",
