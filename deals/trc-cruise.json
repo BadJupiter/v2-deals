@@ -15,7 +15,7 @@
 	"summary_info": "Cruise Certificate Pick-up",
 	
 	"FORM": {
-#		"title": "Three Rivers Casino Resort",
+		"title": "Three Rivers Casino Resort",
 		"fields": [
 			{
 				"id": "Hotel",
@@ -27,20 +27,12 @@
 			},
 			{
 				"type": "info",
-				"markdown": "# Three Rivers Casino Resort"
-			},
-			{
-				"type": "info",
-				"markdown": "# Florence & Coos Bay"
-			},			
-			{
-				"type": "info",
-				"markdown": "---"
-			},	
-			{
-				"type": "info",
 				"markdown": "# Norwegian Cruise Line Certificate Pick-up"
 			},
+			{
+				"type": "info",
+				"markdown": "## Florence & Coos Bay"
+			},			
 			{
 				"type": "info",
 				"markdown": "## **January 23rd & 24th**"	
@@ -61,6 +53,10 @@
 				"type": "info",
 				"justify": "center",
 				"markdown": " \n\nIt’s our pleasure to offer our valued Three Rivers guests an invitation to pick up a **Norwegian Cruise Line Certificate**!"
+			},
+			{
+				"type": "info",
+				"markdown": "---"
 			},
 			{
 				"id": "attend",
