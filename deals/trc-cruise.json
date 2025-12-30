@@ -15,7 +15,7 @@
 	"summary_info": "Cruise Certificate Pick-up",
 	
 	"FORM": {
-#		"title": "Three Rivers Casino Resort",
+		"title": "Three Rivers Casino Resort",
 		"fields": [
 			{
 				"id": "Hotel",
@@ -27,23 +27,15 @@
 			},
 			{
 				"type": "info",
-				"markdown": "# Three Rivers Casino Resort"
-			},
-			{
-				"type": "info",
-				"markdown": "# Florence & Coos Bay"
-			},			
-			{
-				"type": "info",
-				"markdown": "---"
-			},	
-			{
-				"type": "info",
 				"markdown": "# Norwegian Cruise Line Certificate Pick-up"
 			},
 			{
 				"type": "info",
-				"markdown": "## **January 23rd & 24th**"	
+				"markdown": "## Florence & Coos Bay"
+			},			
+			{
+				"type": "info",
+				"markdown": "## **January 25th**"	
 			},
 			{
 				"type": "info",
@@ -86,17 +78,6 @@
 				}
 			},
 			{
-				"id": "day",
-				"label": "What day would you like to pick up?",
-				"type": "select",
-				"range": ["Friday, January 23rd","Saturday, January 24th"],
-				"required": true,
-				"conditional": {
-					"field": "attend",
-					"value": "Yes"
-				}
-			},
-			{
 				"id": "FLday1time",
 				"label": "What time would you like to pick up?",
 				"type": "select",
@@ -104,19 +85,19 @@
 				"limit": 400,
 				"range": [
 					{
+						"value": "2pm",
+						"limit": 100
+					},
+					{
+						"value": "3pm",
+						"limit": 100
+					},
+					{
 						"value": "4pm",
 						"limit": 100
 					},
 					{
 						"value": "5pm",
-						"limit": 100
-					},
-					{
-						"value": "6pm",
-						"limit": 100
-					},
-					{
-						"value": "7pm",
 						"limit": 100			
 					}
 				],	
@@ -125,50 +106,6 @@
 					{
 						"field": "attend",
 						"value": "Yes"
-					},
-					{
-						"field": "day",
-						"value": "Friday, January 23rd"
-					},
-					{
-						"field": "flcb",
-						"value": "Florence"
-					}
-				]
-			},
-			{
-				"id": "FLday2time",
-				"label": "What time would you like to pick up?",
-				"type": "select",
-				"count_from": "attend",
-				"limit": 400,
-				"range": [
-					{
-						"value": "4pm",
-						"limit": 100
-					},
-					{
-						"value": "5pm",
-						"limit": 100
-					},
-					{
-						"value": "6pm",
-						"limit": 100
-					},
-					{
-						"value": "7pm",
-						"limit": 100			
-					}
-				],	
-				"required": true,
-				"conditional": [
-					{
-						"field": "attend",
-						"value": "Yes"
-					},
-					{
-						"field": "day",
-						"value": "Saturday, January 24th"
 					},
 					{
 						"field": "flcb",
@@ -184,19 +121,19 @@
 				"limit": 400,
 				"range": [
 					{
+						"value": "2pm",
+						"limit": 100
+					},
+					{
+						"value": "3pm",
+						"limit": 100
+					},
+					{
 						"value": "4pm",
 						"limit": 100
 					},
 					{
 						"value": "5pm",
-						"limit": 100
-					},
-					{
-						"value": "6pm",
-						"limit": 100
-					},
-					{
-						"value": "7pm",
 						"limit": 100			
 					}
 				],	
@@ -207,78 +144,8 @@
 						"value": "Yes"
 					},
 					{
-						"field": "day",
-						"value": "Friday, January 23rd"
-					},
-					{
 						"field": "flcb",
 						"value": "Coos Bay"
-					}
-				]
-			},
-			{
-				"id": "CBday2time",
-				"label": "What time would you like to pick up?",
-				"type": "select",
-				"count_from": "attend",
-				"limit": 400,
-				"range": [
-					{
-						"value": "4pm",
-						"limit": 100
-					},
-					{
-						"value": "5pm",
-						"limit": 100
-					},
-					{
-						"value": "6pm",
-						"limit": 100
-					},
-					{
-						"value": "7pm",
-						"limit": 100			
-					}
-				],	
-				"required": true,
-				"conditional": [
-					{
-						"field": "attend",
-						"value": "Yes"
-					},
-					{
-						"field": "day",
-						"value": "Saturday, January 24th"
-					},
-					{
-						"field": "flcb",
-						"value": "Coos Bay"
-					}
-				]
-			},{
-				"id": "room",
-				"label": "Would you like to be contacted for a room reservation?",
-				"type": "select",
-				"range": ["Yes","No"],
-				"required": true,
-				"conditional": [
-					{
-						"field": "attend",
-						"value": "Yes"
-					},
-					{
-						"field": "day",
-						"values": ["Friday, January 23rd","Saturday, January 24th"]
-					},
-					{
-						"field": "Hotel",
-						"values": ["Y"]
-
-					},
-					{
-						"field": "flcb",
-						"values": ["Florence"]
-
 					}
 				]
 			},
