@@ -55,6 +55,10 @@
 				"markdown": " \n\nIt’s our pleasure to offer our valued Three Rivers guests an invitation to pick up a **Norwegian Cruise Line Certificate**!"
 			},
 			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
 				"id": "attend",
 				"label": "Would you like to pick up a certificate for a Norwegian Cruise Line cruise?",
 				"type": "select",
