@@ -101,23 +101,23 @@
 				"label": "What time would you like to pick up?",
 				"type": "select",
 				"count_from": "attend",
-				"limit": 2000,
+				"limit": 400,
 				"range": [
 					{
 						"value": "4pm",
-						"limit": 250
+						"limit": 100
 					},
 					{
 						"value": "5pm",
-						"limit": 250
+						"limit": 100
 					},
 					{
 						"value": "6pm",
-						"limit": 250
+						"limit": 100
 					},
 					{
 						"value": "7pm",
-						"limit": 250			
+						"limit": 100			
 					}
 				],	
 				"required": true,
@@ -141,23 +141,23 @@
 				"label": "What time would you like to pick up?",
 				"type": "select",
 				"count_from": "attend",
-				"limit": 2000,
+				"limit": 400,
 				"range": [
 					{
 						"value": "4pm",
-						"limit": 250
+						"limit": 100
 					},
 					{
 						"value": "5pm",
-						"limit": 250
+						"limit": 100
 					},
 					{
 						"value": "6pm",
-						"limit": 250
+						"limit": 100
 					},
 					{
 						"value": "7pm",
-						"limit": 250			
+						"limit": 100			
 					}
 				],	
 				"required": true,
@@ -181,23 +181,23 @@
 				"label": "What time would you like to pick up?",
 				"type": "select",
 				"count_from": "attend",
-				"limit": 2000,
+				"limit": 400,
 				"range": [
 					{
 						"value": "4pm",
-						"limit": 250
+						"limit": 100
 					},
 					{
 						"value": "5pm",
-						"limit": 250
+						"limit": 100
 					},
 					{
 						"value": "6pm",
-						"limit": 250
+						"limit": 100
 					},
 					{
 						"value": "7pm",
-						"limit": 250			
+						"limit": 100			
 					}
 				],	
 				"required": true,
@@ -221,23 +221,23 @@
 				"label": "What time would you like to pick up?",
 				"type": "select",
 				"count_from": "attend",
-				"limit": 2000,
+				"limit": 400,
 				"range": [
 					{
 						"value": "4pm",
-						"limit": 250
+						"limit": 100
 					},
 					{
 						"value": "5pm",
-						"limit": 250
+						"limit": 100
 					},
 					{
 						"value": "6pm",
-						"limit": 250
+						"limit": 100
 					},
 					{
 						"value": "7pm",
-						"limit": 250			
+						"limit": 100			
 					}
 				],	
 				"required": true,
