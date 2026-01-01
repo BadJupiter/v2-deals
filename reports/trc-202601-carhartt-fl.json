@@ -1,6 +1,6 @@
 {
 	"biz_id": "threerivers",
-	"deal_tokens": [ "trc-patagonia-fl","trc-patagonia-cb", "trc-patagonia-fl-host" ],
+	"deal_tokens": [ "trc-carhartt-fl"],
 	"most_recent_only": true, # omit or set to false for all rows
 	"most_recent_key": "Player ID", # needs to be the column_name
 	
@@ -41,6 +41,10 @@
 		{
 			"column_name": "First Name",
 			"attrib": "z_FIRSTNAME"
+		},
+		{
+			"column_name": "Email",
+			"attrib": "z_EMAIL"
 		},
 		{
 			"column_name": "Attend",
