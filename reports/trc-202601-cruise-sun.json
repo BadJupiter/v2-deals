@@ -1,6 +1,6 @@
 {
 	"biz_id": "threerivers",
-	"deal_tokens": [ "trc-cruise"],
+	"deal_tokens": [ "trc-cruise-sun"],
 	"most_recent_only": true, # omit or set to false for all rows
 	"most_recent_key": "Player ID", # needs to be the column_name
 	
@@ -59,24 +59,16 @@
 			"attrib": "day"
 		},
 		{
-			"column_name": "FLFriTime",
+			"column_name": "FLSunTime",
 			"attrib": "FLday1time"
 		},
 		{
-			"column_name": "FLSatTime",
-			"attrib": "FLday2time"
-		},
-		{
-			"column_name": "CBFriTime",
+			"column_name": "CBSunTime",
 			"attrib": "CBday1time"
 		},
 		{
 			"column_name": "CBSatTime",
 			"attrib": "CBday2time"
-		},
-		{
-			"column_name": "Room",
-			"attrib": "room"
 		}
 	]
 }
