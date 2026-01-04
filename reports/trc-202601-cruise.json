@@ -77,6 +77,10 @@
 		{
 			"column_name": "Room",
 			"attrib": "room"
-		}
+		},
+		{
+			"column_name": "HomeProperty",
+			"attrib": "HomeProperty"
+		},
 	]
 }
