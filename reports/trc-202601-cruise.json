@@ -80,7 +80,7 @@
 		},
 		{
 			"column_name": "HomeProperty",
-			"attrib": "HomeProperty"
+			"attrib": "Location"
 		}
 	]
 }
