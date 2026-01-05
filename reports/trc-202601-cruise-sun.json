@@ -69,6 +69,10 @@
 		{
 			"column_name": "CBSatTime",
 			"attrib": "CBday2time"
+		},
+		{
+			"column_name": "HomeProperty",
+			"attrib": "Location"
 		}
 	]
 }
