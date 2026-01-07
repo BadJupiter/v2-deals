@@ -75,31 +75,31 @@
 				"label": "What time would you like to attend?",
 				"type": "select",
 				"count_from": "attend",
-				"limit": 2000,
+				"limit": 300,
 				"range": [
 					{
 						"value": "3pm",
-						"limit": 250
+						"limit": 50
 					},
 					{
 						"value": "4pm",
-						"limit": 250
+						"limit": 50
 					},
 					{
 						"value": "5pm",
-						"limit": 250
+						"limit": 50
 					},
 					{
 						"value": "6pm",
-						"limit": 250
+						"limit": 50
 					},
 					{
 						"value": "7pm",
-						"limit": 250			
+						"limit": 50			
 					},
 					{
 						"value": "8pm",
-						"limit": 250
+						"limit": 50
 					}
 				],	
 				"required": true,
@@ -119,31 +119,31 @@
 				"label": "What time would you like to attend?",
 				"type": "select",
 				"count_from": "attend",
-				"limit": 2000,
+				"limit": 300,
 				"range": [
 					{
 						"value": "3pm",
-						"limit": 250
+						"limit": 50
 					},
 					{
 						"value": "4pm",
-						"limit": 250
+						"limit": 50
 					},
 					{
 						"value": "5pm",
-						"limit": 250
+						"limit": 50
 					},
 					{
 						"value": "6pm",
-						"limit": 250
+						"limit": 50
 					},
 					{
 						"value": "7pm",
-						"limit": 250			
+						"limit": 50			
 					},
 					{
 						"value": "8pm",
-						"limit": 250
+						"limit": 50
 					}
 				],	
 				"required": true,
