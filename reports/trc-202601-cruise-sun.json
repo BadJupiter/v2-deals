@@ -55,10 +55,6 @@
 			"attrib": "flcb"
 		},
 		{
-			"column_name": "Day",
-			"attrib": "day"
-		},
-		{
 			"column_name": "FLSunTime",
 			"attrib": "FLday1time"
 		},
