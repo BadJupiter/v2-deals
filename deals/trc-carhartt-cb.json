@@ -126,6 +126,10 @@
 				"limit": 2000,
 				"range": [
 					{
+						"value": "3pm",
+						"limit": 250
+					},
+					{
 						"value": "4pm",
 						"limit": 250
 					},
