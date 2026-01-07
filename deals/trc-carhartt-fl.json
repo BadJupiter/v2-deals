@@ -115,10 +115,6 @@
 					{
 						"value": "8pm",
 						"limit": 250
-					},
-					{
-						"value": "9pm",
-						"limit": 250
 					}
 				],	
 				"required": true,
@@ -162,10 +158,6 @@
 					},
 					{
 						"value": "8pm",
-						"limit": 250
-					},
-					{
-						"value": "9pm",
 						"limit": 250
 					}
 				],	
