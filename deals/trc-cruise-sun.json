@@ -26,6 +26,14 @@
 				"hidden": true
 			},
 			{
+				"id": "Location",
+				"label": "HomeProperty",
+				"type": "text",
+				"sticky": true,
+				"disabled": true,
+				"hidden": true
+			},
+			{
 				"type": "info",
 				"markdown": "# Norwegian Cruise Line Certificate Pick-up"
 			},
