@@ -6,50 +6,19 @@
 		"title": "Woops!",
 		"content": "Cain't play if you ain't authenticated!"
 	},
-	"limit": {
-		"type": "onetime",
-		"message": "From now on, be sure to scan the QR on your receipt with each delivery to keep stacking punches on your card. Thanks for being part of **BUD MONEY!**"
-	},
-
-#	the 'sticky' parameter is optional. 
-#	If present and true, the field will be saved on the User object associated with the Business
-#	and can be referenced in the future by other deals, rewards, etc.
 	
 	"FORM": {
-		"title": "WANT SOME BUD MONEY?",
+		"title": "Bud Man Orange County",
 		"fields": [
 			{
 				"type": "info",
-				"markdown": "Unleash the power of the Bud Man OC **Electronic Punch Card!**  \n\nProvide your email and brace for a monetary infusion!"
-			},
-			{
-				"id": "email",
-				"type": "email",
-				"required": true,
-				"sticky": true,
-				"placeholder": "enter email"
+				"markdown": "# Temporarily Closed"
 			},
 			{
 				"type": "info",
-				"markdown": "We deliver cannabis products to any location in Orange County, California. \n**10am - 10pm, 365 Days a Year!**"
-			}
-		],
-		"submit": {
-			"label": "I'm in!"
-		}
-	},
-	
-	"MAIN": {
-		"title": "Thank you!",
-		"body_md": "We appreciate you beyond measure! Keep coming back and we'll keep showing you the love!"
-	},
-	
-	"PUNCHCARDS": [
-		{
-			"template": "budman_v2-launch.json"
-		},
-		{
-			"template": "budman_loyalty.json"
-		}
-	]
-}
+				"markdown": "## We hope to serve you again soon."
+			},			
+			{
+				"type": "info",
+				"markdown": "---"
+			},
