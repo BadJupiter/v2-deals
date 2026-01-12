@@ -1,0 +1,144 @@
+{
+	"biz_id": "colusacasino",
+	"check_in": true,
+	"auth_required": true,
+	"error_auth": {
+		"title": "Woops!",
+		"content": "Can't play if you ain't authenticated!"
+	},
+
+	"active": {
+		"start": "2026-01-01 06:00AM PDT",
+		"end": "2026-01-10 06:00PM PDT"
+	},
+
+	"META": {
+		"name": "Olukai",
+		"description": "Come in and walk away with a new pair of Olukai Slippers or Boots ABSOLUTELY FREE!",
+		"dt": "January 10th",
+		"event_start_dt": "2026-01-10 12:00PM PDT"
+	},
+
+	
+	"FORM": {
+			"fields": [
+			{
+				"type": "info",
+				"markdown": "# Colusa Casino Resort"
+			},
+			{
+				"type": "info",
+				"markdown": "# Olukai VIP Event"
+			},
+			{
+				"type": "info",
+				"markdown": "## **Saturday, January 10th**"	
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "info",
+				"justify": "center",
+				"markdown": " \n\nYou are invited to our exclusive **Olukai Event**."
+			},
+			{
+				"id": "attend",
+				"label": "Will you be attending?",
+				"type": "select",
+				"range": ["Yes","No"],
+				"global": true,
+  				"capacity_map": {
+  					"Yes": 1
+  				},
+				"required": true
+			},
+			{
+				"id": "time",
+				"label": "Please choose a reservation time",
+				"type": "select",
+				"count_from": "attend",
+				"limit": 300,
+				"range": [
+					{
+						"value": "Noon",
+						"limit": 50
+					},
+					{
+						"value": "1pm",
+						"limit": 50
+					},				
+					{
+						"value": "2pm",
+						"limit": 50
+					},
+					{
+						"value": "3pm",
+						"limit": 50
+					},
+					{
+						"value": "4pm",
+						"limit": 50
+					},
+					{
+						"value": "5pm",
+						"limit": 50
+					}
+				],	
+				
+				
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					}
+				]
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "fields_group",
+				"bgcolor": "#E8C97B",
+				"fields": [
+					{
+						"id": "z_FIRSTNAME",
+						"label": "First Name:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					},
+					{
+						"id": "z_LASTNAME",
+						"label": "Last Name:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					},
+					{
+						"id": "PlayerID",
+						"label": "Club #:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					}
+				]
+			}
+		],
+		"limits": {
+			"most_recent_only": true,
+			"most_recent_key": "PlayerID"
+		},
+		"submit": {
+			"label": "Submit RSVP",
+			"color": "#20363d"
+		
+		}
+	},
+	"MAIN": {
+		"body_md": "# Your reservation is confirmed \n\nIf you need to make any changes just scan your invitation again. If you need any help please get in touch. We hope to see you soon at **Colusa Casino**."
+	}
+}
