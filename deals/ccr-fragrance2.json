@@ -8,15 +8,15 @@
 	},
 
 	"active": {
-		"start": "2026-01-01 06:00AM PDT",
-		"end": "2026-01-10 06:00PM PDT"
+		"start": "2026-02-15 06:00AM PDT",
+		"end": "2026-02-28 06:00PM PDT"
 	},
 
 	"META": {
-		"name": "Olukai",
-		"description": "Come in and walk away with a new pair of Olukai Slippers or Boots ABSOLUTELY FREE!",
-		"dt": "January 10th",
-		"event_start_dt": "2026-01-10 12:00PM PDT"
+		"name": "Exclusive Fragrance Event",
+		"description": "Try out exclusive, luxury fragrance and take home your favorite as a gift from us!",
+		"dt": "February 28th",
+		"event_start_dt": "2026-02-28 12:00PM PDT"
 	},
 
 	
@@ -28,11 +28,11 @@
 			},
 			{
 				"type": "info",
-				"markdown": "# Olukai VIP Event"
+				"markdown": "# Exclusive Fragrance Event"
 			},
 			{
 				"type": "info",
-				"markdown": "## **Saturday, January 10th**"	
+				"markdown": "## **Saturday, February 28th**"	
 			},
 			{
 				"type": "info",
@@ -41,60 +41,24 @@
 			{
 				"type": "info",
 				"justify": "center",
-				"markdown": " \n\nYou are invited to our exclusive **Olukai Event**."
+				"markdown": " \n\nYou are invited to our exclusive **Fragrance Event**."
 			},
 			{
 				"id": "attend",
 				"label": "Will you be attending?",
 				"type": "select",
-				"range": ["Yes","No"],
-				"global": true,
-  				"capacity_map": {
-  					"Yes": 1
-  				},
-				"required": true
-			},
-			{
-				"id": "time",
-				"label": "Please choose a reservation time",
-				"type": "select",
-				"count_from": "attend",
-				"limit": 300,
+				"limit": 500,
 				"range": [
 					{
-						"value": "Noon",
-						"limit": 50
+						"value": "Yes",
+						"count": 1
 					},
 					{
-						"value": "1pm",
-						"limit": 50
-					},				
-					{
-						"value": "2pm",
-						"limit": 50
-					},
-					{
-						"value": "3pm",
-						"limit": 50
-					},
-					{
-						"value": "4pm",
-						"limit": 50
-					},
-					{
-						"value": "5pm",
-						"limit": 50
+						"value": "No",
+						"count": 0
 					}
-				],	
-				
-				
-				"required": true,
-				"conditional": [
-					{
-						"field": "attend",
-						"value": "Yes"
-					}
-				]
+				],
+				"required": true
 			},
 			{
 				"type": "info",
