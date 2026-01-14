@@ -16,8 +16,9 @@
 			},
 			{
 				"type": "info",
-				"markdown": "## We hope to serve you again soon."
-			},			
+				"justify": "center",
+				"markdown": " \n\nWe hope to serve you again soon."
+			},
 			{
 				"type": "info",
 				"markdown": "---"
