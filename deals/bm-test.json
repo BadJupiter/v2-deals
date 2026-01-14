@@ -7,7 +7,7 @@
 		"content": "Cain't play if you ain't authenticated!"
 	},
 	
-	"FORM": {
+	"FORM": {	
 		"title": "Bud Man Orange County",
 		"fields": [
 			{
@@ -22,4 +22,6 @@
 				"type": "info",
 				"markdown": "---"
 			}
-		[
+		]
+	}
+}
