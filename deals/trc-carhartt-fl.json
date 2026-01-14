@@ -134,7 +134,7 @@
 				"label": "What time would you like to attend?",
 				"type": "select",
 				"count_from": "attend",
-				"limit": 300,
+				"limit": 301,
 				"range": [
 					{
 						"value": "3pm",
