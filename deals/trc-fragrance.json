@@ -12,7 +12,7 @@
 		"end": "2025-10-04 11:59PM CDT"
 	},
 	
-	"summary_info": "Carhartt Boutique",
+	"summary_info": "Fragrance Boutique",
 	
 	"FORM": {
 #		"title": "Three Rivers Casino Resort",
@@ -31,19 +31,11 @@
 			},
 			{
 				"type": "info",
-				"markdown": "# Florence"
-			},			
-			{
-				"type": "info",
-				"markdown": "---"
-			},	
-			{
-				"type": "info",
-				"markdown": "# Carhartt Boutique"
+				"markdown": "# Fragrance Boutique"
 			},
 			{
 				"type": "info",
-				"markdown": "## **January 16th & 17th**"	
+				"markdown": "## **February 6th & 7th**"	
 			},
 			{
 				"type": "info",
@@ -60,11 +52,11 @@
 			{
 				"type": "info",
 				"justify": "center",
-				"markdown": " \n\nIt’s our pleasure to offer our valued Three Rivers guests an invitation to our **Carhartt** event!"
+				"markdown": " \n\nIt’s our pleasure to offer our valued Three Rivers guests an invitation to our **Fragrance Boutique**!"
 			},
 			{
 				"id": "attend",
-				"label": "Will you attend the Carhartt Boutique?",
+				"label": "Will you attend the Fragrance Boutique?",
 				"type": "select",
 				"range": ["Yes","No"],
 				"required": true,
@@ -78,7 +70,7 @@
 				"id": "day",
 				"label": "What day would you like to attend?",
 				"type": "select",
-				"range": ["Friday, January 16th","Saturday, January 17th"],
+				"range": ["Friday, February 6th","Saturday, February 7th"],
 				"required": true,
 				"conditional": {
 					"field": "attend",
@@ -90,31 +82,27 @@
 				"label": "What time would you like to attend?",
 				"type": "select",
 				"count_from": "attend",
-				"limit": 300,
+				"limit": 1250,
 				"range": [
 					{
-						"value": "3pm",
-						"limit": 50
-					},
-					{
 						"value": "4pm",
-						"limit": 50
+						"limit": 250
 					},
 					{
 						"value": "5pm",
-						"limit": 50
+						"limit": 250
 					},
 					{
 						"value": "6pm",
-						"limit": 50
+						"limit": 250
 					},
 					{
 						"value": "7pm",
-						"limit": 50			
+						"limit": 250			
 					},
 					{
 						"value": "8pm",
-						"limit": 50
+						"limit": 250
 					}
 				],					
 				"required": true,
@@ -125,7 +113,7 @@
 					},
 					{
 						"field": "day",
-						"value": "Friday, January 16th"
+						"value": "Friday, February 6th"
 					}
 				]
 			},
@@ -134,33 +122,29 @@
 				"label": "What time would you like to attend?",
 				"type": "select",
 				"count_from": "attend",
-				"limit": 301,
+					"limit": 1250,
 				"range": [
 					{
-						"value": "3pm",
-						"limit": 50
-					},
-					{
 						"value": "4pm",
-						"limit": 50
+						"limit": 250
 					},
 					{
 						"value": "5pm",
-						"limit": 50
+						"limit": 250
 					},
 					{
 						"value": "6pm",
-						"limit": 50
+						"limit": 250
 					},
 					{
 						"value": "7pm",
-						"limit": 50			
+						"limit": 250			
 					},
 					{
 						"value": "8pm",
-						"limit": 50
+						"limit": 250
 					}
-				],	
+				],
 				"required": true,
 				"conditional": [
 					{
@@ -169,7 +153,7 @@
 					},
 					{
 						"field": "day",
-						"value": "Saturday, January 17th"
+						"value": "Saturday, February 7th"
 					}
 				]
 			},
@@ -186,7 +170,7 @@
 					},
 					{
 						"field": "day",
-						"values": ["Friday, January 16th","Saturday, January 17th"]
+						"values": ["Friday, February 6th","Saturday, February 7th"]
 					},
 					{
 						"field": "Hotel",
