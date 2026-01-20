@@ -13,9 +13,9 @@
 	},
 
 	"META": {
-		"name": "Ariat Boot Fitting",
-		"description": "VIP Exclusive -  Boot Fitting!",
-		"dt": "December 20th"
+		"name": "Fragrance Boutique",
+		"description": "VIP Exclusive -  Fragrances!",
+		"dt": "February 6th"
 	},
 
 	
@@ -27,11 +27,11 @@
 			},
 			{
 				"type": "info",
-				"markdown": "# Ariat Boot Boutique"
+				"markdown": "# Fragrance Boutique"
 			},
 			{
 				"type": "info",
-				"markdown": "## **Saturday, December 20th**"	
+				"markdown": "## **Friday, February 6th**"	
 			},
 			{
 				"type": "info",
@@ -40,65 +40,75 @@
 			{
 				"type": "info",
 				"justify": "center",
-				"markdown": " \n\nYou are invited to our exclusive **Ariat Boot Boutique**."
+				"markdown": " \n\nYou are invited to our exclusive **Fragrance Boutique**."
 			},
 			{
 				"id": "attend",
-				"label": "Will you be attending the Ariat Boot Boutique?",
+				"label": "Will you be attending the Grand Lake Casino Fragrance Boutique?",
 				"type": "select",
 				"range": ["Yes","No"],
 				"required": true
 			},
 			{
 				"id": "time",
-				"label": "Select a fitting appointment time:",
+				"label": "What time would you like to visit the Boutique?",
 				"type": "select",
-				"limit": 207,
+				"limit": 1100,
 				"range": [
 					{
-						"value": "Noon",
-						"count": 1,
-						"limit": 23
-					},
-					{
-						"value": "12:30pm",
-						"count": 1,
-						"limit": 23
-					},
-					{
-						"value": "1:00pm",
-						"count": 1,
-						"limit": 23
-					},
-					{
-						"value": "1:30pm",
-						"count": 1,
-						"limit": 23
-					},
-					{
-						"value": "2:00pm",
-						"count": 1,
-						"limit": 23
-					},
-										{
-						"value": "2:30pm",
-						"count": 1,
-						"limit": 23
-					},
-										{
 						"value": "3:00pm",
 						"count": 1,
-						"limit": 23
+						"limit": 100
 					},
-										{
+					{
 						"value": "3:30pm",
 						"count": 1,
-						"limit": 23
+						"limit": 100
 					},
 					{
 						"value": "4:00pm",
 						"count": 1,
-						"limit": 23
+						"limit": 100
+					},
+					{
+						"value": "4:30pm",
+						"count": 1,
+						"limit": 100
+					},
+					{
+						"value": "5:00pm",
+						"count": 1,
+						"limit": 100
+					},
+					{
+						"value": "5:30pm",
+						"count": 1,
+						"limit": 100
+					},
+					{
+						"value": "6:00pm",
+						"count": 1,
+						"limit": 100
+					},
+					{
+						"value": "6:30pm",
+						"count": 1,
+						"limit": 100
+					},
+					{
+						"value": "7:00pm",
+						"count": 1,
+						"limit": 100
+					},
+					{
+						"value": "7:30pm",
+						"count": 1,
+						"limit": 100
+					},
+					{
+						"value": "8:00pm",
+						"count": 1,
+						"limit": 100
 					}
 				],	
 				
@@ -154,6 +164,6 @@
 		}
 	},
 	"MAIN": {
-		"body_md": "# Your reservation is confirmed. \n\nIf you need to make any changes to your reservation, just scan the QR code on your invitation again. If you need any help, please stop by the Players Club at the casino on your next visit. We look forward to seeing you soon!"
+		"body_md": "# Your reservation is confirmed. \n\nRemember to swipe at the kiosk when you arrive at the Casino for your entry ticket. Then present your ticket at Venue 655 at your reserved time. \n\nIf you need to make any changes to your reservation, just scan the QR code on your invitation again. If you need any help, please stop by the Players Club at the casino on your next visit. We look forward to seeing you soon!"
 	}
 }
