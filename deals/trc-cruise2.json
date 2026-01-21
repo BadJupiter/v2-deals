@@ -43,7 +43,7 @@
 			},			
 			{
 				"type": "info",
-				"markdown": "## **January 23rd & 24th**"	
+				"markdown": "## **January 23rd - 25th**"	
 			},
 			{
 				"type": "info",
@@ -93,7 +93,7 @@
 				"id": "day",
 				"label": "What day would you like to pick up?",
 				"type": "select",
-				"range": ["Friday, January 23rd","Saturday, January 24th"],
+				"range": ["Friday, January 23rd","Saturday, January 24th","Sunday, January 25th"],
 				"required": true,
 				"conditional": {
 					"field": "attend",
@@ -181,6 +181,46 @@
 				]
 			},
 			{
+				"id": "FLday3time",
+				"label": "What time would you like to pick up on Sunday, January 25th?",
+				"type": "select",
+				"count_from": "attend",
+				"limit": 400,
+				"range": [
+					{
+						"value": "2pm",
+						"limit": 100
+					},
+					{
+						"value": "3pm",
+						"limit": 100
+					},
+					{
+						"value": "4pm",
+						"limit": 100
+					},
+					{
+						"value": "5pm",
+						"limit": 100			
+					}
+				],	
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "day",
+						"value": "Sunday, January 25th"
+					},
+					{
+						"field": "flcb",
+						"value": "Florence"
+					}
+				]
+			},
+			{
 				"id": "CBday1time",
 				"label": "What time would you like to pick up?",
 				"type": "select",
@@ -253,6 +293,46 @@
 					{
 						"field": "day",
 						"value": "Saturday, January 24th"
+					},
+					{
+						"field": "flcb",
+						"value": "Coos Bay"
+					}
+				]
+			},
+				{
+				"id": "CBday3time",
+				"label": "What time would you like to pick up?",
+				"type": "select",
+				"count_from": "attend",
+				"limit": 400,
+				"range": [
+					{
+						"value": "2pm",
+						"limit": 100
+					},
+					{
+						"value": "3pm",
+						"limit": 100
+					},
+					{
+						"value": "4pm",
+						"limit": 100
+					},
+					{
+						"value": "5pm",
+						"limit": 100			
+					}
+				],	
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+						{
+						"field": "day",
+						"value": "Sunday, January 25th"
 					},
 					{
 						"field": "flcb",
