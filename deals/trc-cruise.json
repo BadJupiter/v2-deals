@@ -259,7 +259,8 @@
 						"value": "Coos Bay"
 					}
 				]
-			},{
+			},
+			{
 				"id": "room",
 				"label": "Would you like a host to contact you about accommodations?",
 				"type": "select",
