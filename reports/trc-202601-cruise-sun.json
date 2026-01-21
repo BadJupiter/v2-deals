@@ -55,8 +55,24 @@
 			"attrib": "flcb"
 		},
 		{
+			"column_name": "FLFriTime",
+			"attrib": "FLday4time"
+		},
+		{
+			"column_name": "FLSatTime",
+			"attrib": "FLday5time"
+		},
+		{
 			"column_name": "FLSunTime",
 			"attrib": "FLday1time"
+		},
+		{
+			"column_name": "CBFriTime",
+			"attrib": "CBday4time"
+		},
+		{
+			"column_name": "CBSatTime",
+			"attrib": "CBday5time"
 		},
 		{
 			"column_name": "CBSunTime",
