@@ -54,6 +54,10 @@
 			"column_name": "Location",
 			"attrib": "flcb"
 		},
+				{
+			"column_name": "Day",
+			"attrib": "day"
+		},
 		{
 			"column_name": "FLFriTime",
 			"attrib": "FLday4time"
