@@ -90,6 +90,97 @@
 				}
 			},
 			{
+				"id": "day",
+				"label": "What day would you like to pick up?",
+				"type": "select",
+				"range": ["Friday, January 23rd","Saturday, January 24th","Sunday, January 25th"],
+				"required": true,
+				"conditional": {
+					"field": "attend",
+					"value": "Yes"
+				}
+			},
+			{
+				"id": "FLday4time",
+				"label": "What time would you like to pick up?",
+				"type": "select",
+				"count_from": "attend",
+				"limit": 400,
+				"range": [
+					{
+						"value": "4pm",
+						"limit": 100
+					},
+					{
+						"value": "5pm",
+						"limit": 100
+					},
+					{
+						"value": "6pm",
+						"limit": 100
+					},
+					{
+						"value": "7pm",
+						"limit": 100			
+					}
+				],	
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "day",
+						"value": "Friday, January 23rd"
+					},
+					{
+						"field": "flcb",
+						"value": "Florence"
+					}
+				]
+			},
+			{
+				"id": "FLday5time",
+				"label": "What time would you like to pick up?",
+				"type": "select",
+				"count_from": "attend",
+				"limit": 400,
+				"range": [
+					{
+						"value": "4pm",
+						"limit": 100
+					},
+					{
+						"value": "5pm",
+						"limit": 100
+					},
+					{
+						"value": "6pm",
+						"limit": 100
+					},
+					{
+						"value": "7pm",
+						"limit": 100			
+					}
+				],	
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "day",
+						"value": "Saturday, January 24th"
+					},
+					{
+						"field": "flcb",
+						"value": "Florence"
+					}
+				]
+			},
+			{
 				"id": "FLday1time",
 				"label": "What time would you like to pick up on Sunday, January 25th?",
 				"type": "select",
@@ -120,8 +211,92 @@
 						"value": "Yes"
 					},
 					{
+						"field": "day",
+						"value": "Sunday, January 25th"
+					},
+					{
 						"field": "flcb",
 						"value": "Florence"
+					}
+				]
+			},
+			{
+				"id": "CBday4time",
+				"label": "What time would you like to pick up?",
+				"type": "select",
+				"count_from": "attend",
+				"limit": 400,
+				"range": [
+					{
+						"value": "4pm",
+						"limit": 100
+					},
+					{
+						"value": "5pm",
+						"limit": 100
+					},
+					{
+						"value": "6pm",
+						"limit": 100
+					},
+					{
+						"value": "7pm",
+						"limit": 100			
+					}
+				],	
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "day",
+						"value": "Friday, January 23rd"
+					},
+					{
+						"field": "flcb",
+						"value": "Coos Bay"
+					}
+				]
+			},
+			{
+				"id": "CBday5time",
+				"label": "What time would you like to pick up?",
+				"type": "select",
+				"count_from": "attend",
+				"limit": 400,
+				"range": [
+					{
+						"value": "4pm",
+						"limit": 100
+					},
+					{
+						"value": "5pm",
+						"limit": 100
+					},
+					{
+						"value": "6pm",
+						"limit": 100
+					},
+					{
+						"value": "7pm",
+						"limit": 100			
+					}
+				],	
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "day",
+						"value": "Saturday, January 24th"
+					},
+					{
+						"field": "flcb",
+						"value": "Coos Bay"
 					}
 				]
 			},
@@ -154,6 +329,10 @@
 					{
 						"field": "attend",
 						"value": "Yes"
+					},
+					{
+						"field": "day",
+						"value": "Sunday, January 25th"
 					},
 					{
 						"field": "flcb",
