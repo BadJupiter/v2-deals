@@ -70,7 +70,7 @@
 				"id": "attend",
 				"label": "Would you like to pick up a certificate for a Norwegian Cruise Line cruise?",
 				"type": "select",
-				"range": ["Yes","No"],
+				"range": ["Yes, I'll come in this weekend","Yes, "I'll pick it up on a future date", "No"],
 				"required": true,
 				"global": true,
   				"capacity_map": {
@@ -86,7 +86,7 @@
 				"required": true,
 				"conditional": {
 					"field": "attend",
-					"value": "Yes"
+					"values": "Yes, I'll come in this weekend","Yes, "I'll pick it up on a future date"]
 				}
 			},
 			{
