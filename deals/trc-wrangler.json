@@ -1,0 +1,234 @@
+{
+	"biz_id": "threerivers",
+	"check_in": true,
+	"auth_required": true,
+	"error_auth": {
+		"title": "Woops!",
+		"content": "Can't play if you ain't authenticated!"
+	},
+
+	"active": {
+		"start": "2025-09-13 10:00AM CDT",
+		"end": "2025-10-04 11:59PM CDT"
+	},
+	
+	"summary_info": "Fragrance Boutique",
+	
+	"FORM": {
+#		"title": "Three Rivers Casino Resort",
+		"fields": [
+			{
+				"id": "Hotel",
+				"label": "Hotel",
+				"type": "text",
+				"sticky": true,
+				"disabled": true,
+				"hidden": true
+			},
+			{
+				"type": "info",
+				"markdown": "# Three Rivers Casino Resort"
+			},
+			{
+				"type": "info",
+				"markdown": "# Fragrance Boutique"
+			},
+			{
+				"type": "info",
+				"markdown": "## **February 6th & 7th**"	
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "info",
+				"markdown": "## **Casino Event Center, Florence**"	
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "info",
+				"justify": "center",
+				"markdown": " \n\nIt’s our pleasure to offer our valued Three Rivers guests an invitation to our **Fragrance Boutique**!"
+			},
+			{
+				"id": "attend",
+				"label": "Will you attend the Fragrance Boutique?",
+				"type": "select",
+				"range": ["Yes","No"],
+				"required": true,
+				"global": true,
+  				"capacity_map": {
+  					"Yes": 1,
+    				"No": 0
+				}
+			},
+			{
+				"id": "day",
+				"label": "What day would you like to attend?",
+				"type": "select",
+				"range": ["Friday, February 6th","Saturday, February 7th"],
+				"required": true,
+				"conditional": {
+					"field": "attend",
+					"value": "Yes"
+				}
+			},
+			{
+				"id": "day1time",
+				"label": "What time would you like to attend?",
+				"type": "select",
+				"count_from": "attend",
+				"limit": 1250,
+				"range": [
+					{
+						"value": "4pm",
+						"limit": 250
+					},
+					{
+						"value": "5pm",
+						"limit": 250
+					},
+					{
+						"value": "6pm",
+						"limit": 250
+					},
+					{
+						"value": "7pm",
+						"limit": 250			
+					},
+					{
+						"value": "8pm",
+						"limit": 250
+					}
+				],					
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "day",
+						"value": "Friday, February 6th"
+					}
+				]
+			},
+		{
+				"id": "day2time",
+				"label": "What time would you like to attend?",
+				"type": "select",
+				"count_from": "attend",
+					"limit": 1250,
+				"range": [
+					{
+						"value": "4pm",
+						"limit": 250
+					},
+					{
+						"value": "5pm",
+						"limit": 250
+					},
+					{
+						"value": "6pm",
+						"limit": 250
+					},
+					{
+						"value": "7pm",
+						"limit": 250			
+					},
+					{
+						"value": "8pm",
+						"limit": 250
+					}
+				],
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "day",
+						"value": "Saturday, February 7th"
+					}
+				]
+			},
+			{
+				"id": "room",
+				"label": "Would you like to be contacted for a room reservation?",
+				"type": "select",
+				"range": ["Yes","No"],
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "day",
+						"values": ["Friday, February 6th","Saturday, February 7th"]
+					},
+					{
+						"field": "Hotel",
+						"values": ["Y"]
+
+					}
+				]
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "fields_group",
+				"bgcolor": "#E4DBC6",
+				"fields": [
+					{
+						"id": "z_FIRSTNAME",
+						"label": "First Name:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					},
+					{
+						"id": "z_LASTNAME",
+						"label": "Last Name:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					},
+					{
+						"id": "PlayerID",
+						"label": "Club #:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					},
+					{
+						"id": "z_EMAIL",
+						"label": "Email:",
+						"type": "text",
+						"sticky": true,
+						"disabled": false
+					}
+				]
+			}
+		],
+	"limits": {
+			"most_recent_only": true,
+			"most_recent_key": "PlayerID"
+		},		
+	"submit": {
+			"label": "Submit RSVP",
+			"color": "#20363d"
+		
+		}
+	},
+	"MAIN": {
+		"body_md": "# Your reservation is confirmed \n\nIf you need to make any changes to your RSVP just scan your invitation again. If you need any help please get in touch. We hope to see you soon at **Three Rivers Casino Resort - Florence**."
+	}
+}
