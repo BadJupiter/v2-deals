@@ -82,6 +82,11 @@
 			"column_name": "CBSunTime",
 			"attrib": "CBday1time"
 		},
+		
+		{
+			"column_name": "PickupDay",
+			"attrib": "pickupday"
+		},
 		{
 			"column_name": "HomeProperty",
 			"attrib": "Location"
