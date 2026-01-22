@@ -83,6 +83,10 @@
 			"attrib": "CBday3time"
 		},
 		{
+			"column_name": "PickupDay",
+			"attrib": "pickupday"
+		},
+		{
 			"column_name": "Room",
 			"attrib": "room"
 		},
