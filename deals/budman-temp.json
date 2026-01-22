@@ -1,0 +1,9 @@
+{
+	"biz_id": "budman",
+	"auth_required": false,
+	
+	"MAIN": {
+		"title": "Temporarily Closed",
+		"body_md": "We hope to serve you again soon."
+	}
+}
