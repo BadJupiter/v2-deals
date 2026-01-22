@@ -70,11 +70,12 @@
 				"id": "attend",
 				"label": "Would you like to pick up a certificate for a Norwegian Cruise Line cruise?",
 				"type": "select",
-				"range": ["Yes, I'll come in this weekend","Yes, "I'll pick it up on a future date", "No"],
+				"range": ["Yes, I'll come in this weekend","Yes, I'll pick it up on a future date", "No"],
 				"required": true,
 				"global": true,
   				"capacity_map": {
-  					"Yes": 1,
+  					"Yes, I'll come in this weekend": 1,
+					"Yes, I'll pick it up on a future date": 1,
     				"No": 0
 				}
 			},
@@ -86,7 +87,7 @@
 				"required": true,
 				"conditional": {
 					"field": "attend",
-					"values": "Yes, I'll come in this weekend","Yes, "I'll pick it up on a future date"]
+					"values": ["Yes, I'll come in this weekend","Yes, I'll pick it up on a future date"]
 				}
 			},
 			{
@@ -97,7 +98,7 @@
 				"required": true,
 				"conditional": {
 					"field": "attend",
-					"value": "Yes"
+					"value": "Yes, I'll come in this weekend"
 				}
 			},
 			{
@@ -128,7 +129,7 @@
 				"conditional": [
 					{
 						"field": "attend",
-						"value": "Yes"
+						"value": "Yes, I'll come in this weekend"
 					},
 					{
 						"field": "day",
@@ -168,7 +169,7 @@
 				"conditional": [
 					{
 						"field": "attend",
-						"value": "Yes"
+						"value": "Yes, I'll come in this weekend"
 					},
 					{
 						"field": "day",
@@ -208,7 +209,7 @@
 				"conditional": [
 					{
 						"field": "attend",
-						"value": "Yes"
+						"value": "Yes, I'll come in this weekend"
 					},
 					{
 						"field": "day",
@@ -248,7 +249,7 @@
 				"conditional": [
 					{
 						"field": "attend",
-						"value": "Yes"
+						"value": "Yes, I'll come in this weekend"
 					},
 					{
 						"field": "day",
@@ -288,7 +289,7 @@
 				"conditional": [
 					{
 						"field": "attend",
-						"value": "Yes"
+						"value": "Yes, I'll come in this weekend"
 					},
 					{
 						"field": "day",
@@ -328,7 +329,7 @@
 				"conditional": [
 					{
 						"field": "attend",
-						"value": "Yes"
+						"value": "Yes, I'll come in this weekend"
 					},
 						{
 						"field": "day",
@@ -339,7 +340,19 @@
 						"value": "Coos Bay"
 					}
 				]
-			},{
+			},
+			{
+				"id": "pickupday",
+				"label": "What day would you like to pick up?",
+				"type": "select",
+				"range": ["Mon, Jan 26","Tue, Jan 27","Wed, Jan 28","Thu, Jan 29","Fri, Jan 30","Sat, Jan 31","Sun, Feb 1","Mon, Feb 2","Tue, Feb 3","Wed, Feb 4","Thu, Feb 5","Fri, Feb 6"],
+				"required": true,
+				"conditional": {
+					"field": "attend",
+					"value": "Yes, I'll pick it up on a future date"
+				}
+			},			
+			{
 				"id": "room",
 				"label": "Would you like a host to contact you about accommodations?",
 				"type": "select",
@@ -348,7 +361,7 @@
 				"conditional": [
 					{
 						"field": "attend",
-						"value": "Yes"
+						"value": "Yes, I'll come in this weekend"
 					},
 					{
 						"field": "day",
