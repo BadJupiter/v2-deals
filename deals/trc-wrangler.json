@@ -12,10 +12,10 @@
 		"end": "2025-10-04 11:59PM CDT"
 	},
 	
-	"summary_info": "Fragrance Boutique",
+	"summary_info": "Wrangler Luggage Boutique",
 	
 	"FORM": {
-#		"title": "Three Rivers Casino Resort",
+		"title": "Three Rivers Casino Resort",
 		"fields": [
 			{
 				"id": "Hotel",
@@ -31,11 +31,11 @@
 			},
 			{
 				"type": "info",
-				"markdown": "# Fragrance Boutique"
+				"markdown": "# Wrangler Luggage Boutique"
 			},
 			{
 				"type": "info",
-				"markdown": "## **February 6th & 7th**"	
+				"markdown": "## **February 20th & 21st**"	
 			},
 			{
 				"type": "info",
@@ -43,7 +43,7 @@
 			},
 			{
 				"type": "info",
-				"markdown": "## **Casino Event Center, Florence**"	
+				"markdown": "## **Florence & Coos Bay**"	
 			},
 			{
 				"type": "info",
@@ -52,11 +52,11 @@
 			{
 				"type": "info",
 				"justify": "center",
-				"markdown": " \n\nIt’s our pleasure to offer our valued Three Rivers guests an invitation to our **Fragrance Boutique**!"
+				"markdown": " \n\nIt’s our pleasure to offer our valued Three Rivers guests an invitation to our **Wrangler Luggage Boutique**!"
 			},
 			{
 				"id": "attend",
-				"label": "Will you attend the Fragrance Boutique?",
+				"label": "Will you attend the Wrangler Luggage Boutique?",
 				"type": "select",
 				"range": ["Yes","No"],
 				"required": true,
@@ -67,10 +67,10 @@
 				}
 			},
 			{
-				"id": "day",
-				"label": "What day would you like to attend?",
+				"id": "location",
+				"label": "Which location would you like to attend?",
 				"type": "select",
-				"range": ["Friday, February 6th","Saturday, February 7th"],
+				"range": ["Florence","Coos Bay"],
 				"required": true,
 				"conditional": {
 					"field": "attend",
@@ -78,33 +78,44 @@
 				}
 			},
 			{
-				"id": "day1time",
-				"label": "What time would you like to attend?",
+				"id": "day",
+				"label": "What day would you like to attend?",
+				"type": "select",
+				"range": ["Friday, February 20th","Saturday, February 21st"],
+				"required": true,
+				"conditional": {
+					"field": "attend",
+					"value": "Yes"
+				}
+			},
+			{
+				"id": "FLday1time",
+				"label": "What time would you like to pick up?",
 				"type": "select",
 				"count_from": "attend",
-				"limit": 1250,
+				"limit": 500,
 				"range": [
 					{
 						"value": "4pm",
-						"limit": 250
+						"limit": 100
 					},
 					{
 						"value": "5pm",
-						"limit": 250
+						"limit": 100
 					},
 					{
 						"value": "6pm",
-						"limit": 250
+						"limit": 100
 					},
 					{
 						"value": "7pm",
-						"limit": 250			
+						"limit": 100			
 					},
 					{
 						"value": "8pm",
-						"limit": 250
+						"limit": 100			
 					}
-				],					
+				],	
 				"required": true,
 				"conditional": [
 					{
@@ -113,38 +124,42 @@
 					},
 					{
 						"field": "day",
-						"value": "Friday, February 6th"
+						"value": "Friday, February 20th"
+					},
+					{
+						"field": "location",
+						"value": "Florence"
 					}
 				]
 			},
-		{
-				"id": "day2time",
-				"label": "What time would you like to attend?",
+			{
+				"id": "FLday2time",
+				"label": "What time would you like to pick up?",
 				"type": "select",
 				"count_from": "attend",
-					"limit": 1250,
+				"limit": 500,
 				"range": [
 					{
 						"value": "4pm",
-						"limit": 250
+						"limit": 100
 					},
 					{
 						"value": "5pm",
-						"limit": 250
+						"limit": 100
 					},
 					{
 						"value": "6pm",
-						"limit": 250
+						"limit": 100
 					},
 					{
 						"value": "7pm",
-						"limit": 250			
+						"limit": 100			
 					},
 					{
 						"value": "8pm",
-						"limit": 250
+						"limit": 100		
 					}
-				],
+				],	
 				"required": true,
 				"conditional": [
 					{
@@ -153,10 +168,102 @@
 					},
 					{
 						"field": "day",
-						"value": "Saturday, February 7th"
+						"value": "Saturday, February 21st"
+					},
+					{
+						"field": "location",
+						"value": "Florence"
 					}
 				]
 			},
+			{
+				"id": "CBday1time",
+				"label": "What time would you like to pick up?",
+				"type": "select",
+				"count_from": "attend",
+				"limit": 500,
+				"range": [
+					{
+						"value": "4pm",
+						"limit": 100
+					},
+					{
+						"value": "5pm",
+						"limit": 100
+					},
+					{
+						"value": "6pm",
+						"limit": 100
+					},
+					{
+						"value": "7pm",
+						"limit": 100			
+					},
+					{
+						"value": "8pm",
+						"limit": 100		
+					}
+				],	
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "day",
+						"value": "Friday, February 20th"
+					},
+					{
+						"field": "location",
+						"value": "Coos Bay"
+					}
+				]
+			},
+			{
+				"id": "CBday2time",
+				"label": "What time would you like to pick up?",
+				"type": "select",
+				"count_from": "attend",
+				"limit": 500,
+				"range": [
+					{
+						"value": "4pm",
+						"limit": 100
+					},
+					{
+						"value": "5pm",
+						"limit": 100
+					},
+					{
+						"value": "6pm",
+						"limit": 100
+					},
+					{
+						"value": "7pm",
+						"limit": 100			
+					},
+					{
+						"value": "8pm",
+						"limit": 100				
+					}
+				],	
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "day",
+						"value": "Saturday, February 21st"
+					},
+					{
+						"field": "location",
+						"value": "Coos Bay"
+					}
+				]
+			},			
 			{
 				"id": "room",
 				"label": "Would you like to be contacted for a room reservation?",
@@ -170,7 +277,7 @@
 					},
 					{
 						"field": "day",
-						"values": ["Friday, February 6th","Saturday, February 7th"]
+						"values": ["Friday, February 20th","Saturday, February 21st"]
 					},
 					{
 						"field": "Hotel",
