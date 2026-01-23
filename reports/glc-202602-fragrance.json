@@ -1,6 +1,6 @@
 {
 	"biz_id": "grandlake",
-	"deal_tokens": [ "glc-ariat" ],
+	"deal_tokens": [ "glc-fragrance" ],
 	"most_recent_only": true, # omit or set to false for all rows
 	"most_recent_key": "Player ID", # needs to be the column_name
 	
