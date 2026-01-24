@@ -12,7 +12,7 @@
 		"end": "2025-10-04 11:59PM CDT"
 	},
 	
-	"summary_info": "Carhartt Boutique",
+	"summary_info": "Deal or No Deal",
 	
 	"FORM": {
 #		"title": "Three Rivers Casino Resort",
@@ -31,7 +31,7 @@
 			},
 			{
 				"type": "info",
-				"markdown": "# Florence"
+				"markdown": "# Casino Event Center, Florence"
 			},			
 			{
 				"type": "info",
@@ -39,11 +39,11 @@
 			},	
 			{
 				"type": "info",
-				"markdown": "# Carhartt Boutique"
+				"markdown": "# Deal or No Deal"
 			},
 			{
 				"type": "info",
-				"markdown": "## **January 16th & 17th**"	
+				"markdown": "## **February 13th & 14th**"	
 			},
 			{
 				"type": "info",
@@ -60,119 +60,93 @@
 			{
 				"type": "info",
 				"justify": "center",
-				"markdown": " \n\nIt’s our pleasure to offer our valued Three Rivers guests an invitation to our **Carhartt** event!"
+				"markdown": " \n\nIt’s our pleasure to offer our valued Three Rivers guests an invitation to our **Deal or No Deal** show!"
 			},
 			{
 				"id": "attend",
-				"label": "Will you attend the Carhartt Boutique?",
+				"label": "Would you like to attend the Deal or No Deal Show?",
+				"type": "select",
+				"range": ["Yes","No"],
+				"required": true
+			},
+			{
+				"id": "guest",
+				"label": "Will you be bringing a guest?",
 				"type": "select",
 				"range": ["Yes","No"],
 				"required": true,
 				"global": true,
   				"capacity_map": {
-  					"Yes": 1,
-    				"No": 0
-				}
+  					"Yes": 2,
+    				"No": 1
+  					},
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					}
+				]				
 			},
+			{
+				"id": "guestname",
+				"label": "Guest's Name:",
+				"type": "text",
+				"required": true,
+				"sticky": false,
+				"disabled": false,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "guest",
+						"value": "Yes"
+					}
+				]
+			},
+			{
+				"id": "guestplayerid",
+				"label": "Guest's Players Club #:",
+				"type": "text",
+				"required": true,
+				"sticky": false,
+				"disabled": false,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "guest",
+						"value": "Yes"
+					}
+				]
+			},
+			{
+				"type": "info",
+				"justify": "left",
+				"markdown": " \n\n Please note, all show attendees must have a Players Club account in order to attend the Deal or No Deal show."
+			},	
 			{
 				"id": "day",
 				"label": "What day would you like to attend?",
 				"type": "select",
-				"range": ["Friday, January 16th","Saturday, January 17th"],
 				"required": true,
-				"conditional": {
-					"field": "attend",
-					"value": "Yes"
-				}
-			},
-			{
-				"id": "day1time",
-				"label": "What time would you like to attend?",
-				"type": "select",
-				"count_from": "attend",
-				"limit": 300,
+				"count_from": "guest",
+				"limit": 1000,
 				"range": [
 					{
-						"value": "3pm",
-						"limit": 50
+						"value": "Friday at 7pm",
+						"limit": 500
 					},
 					{
-						"value": "4pm",
-						"limit": 50
-					},
-					{
-						"value": "5pm",
-						"limit": 50
-					},
-					{
-						"value": "6pm",
-						"limit": 50
-					},
-					{
-						"value": "7pm",
-						"limit": 50			
-					},
-					{
-						"value": "8pm",
-						"limit": 50
-					}
-				],					
-				"required": true,
-				"conditional": [
-					{
-						"field": "attend",
-						"value": "Yes"
-					},
-					{
-						"field": "day",
-						"value": "Friday, January 16th"
+						"value": "Saturday at 7pm",
+						"limit": 500
 					}
 				]
 			},
-		{
-				"id": "day2time",
-				"label": "What time would you like to attend?",
-				"type": "select",
-				"count_from": "attend",
-				"limit": 301,
-				"range": [
-					{
-						"value": "3pm",
-						"limit": 50
-					},
-					{
-						"value": "4pm",
-						"limit": 50
-					},
-					{
-						"value": "5pm",
-						"limit": 50
-					},
-					{
-						"value": "6pm",
-						"limit": 50
-					},
-					{
-						"value": "7pm",
-						"limit": 50			
-					},
-					{
-						"value": "8pm",
-						"limit": 50
-					}
-				],	
-				"required": true,
-				"conditional": [
-					{
-						"field": "attend",
-						"value": "Yes"
-					},
-					{
-						"field": "day",
-						"value": "Saturday, January 17th"
-					}
-				]
-			},
+			
 			{
 				"id": "room",
 				"label": "Would you like to be contacted for a room reservation?",
@@ -186,12 +160,11 @@
 					},
 					{
 						"field": "day",
-						"values": ["Friday, January 16th","Saturday, January 17th"]
+						"values": ["Friday at 7pm","Saturday at 7pm"]
 					},
 					{
 						"field": "Hotel",
 						"values": ["Y"]
-
 					}
 				]
 			},
