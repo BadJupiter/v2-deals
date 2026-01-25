@@ -55,6 +55,14 @@
 			},
 			{
 				"type": "info",
+				"markdown": "Registration: 4:00pm - 6:30pm"	
+			},
+			{
+				"type": "info",
+				"markdown": "## Showtime: 7:00pm"	
+			},
+			{
+				"type": "info",
 				"markdown": "---"
 			},
 			{
