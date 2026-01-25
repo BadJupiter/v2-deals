@@ -88,6 +88,17 @@
 				]				
 			},
 			{
+				"type": "info",
+				"justify": "left",
+				"markdown": " \n\n Please note, all show attendees must have a Players Club account in order to attend the Deal or No Deal show.",
+				"conditional": [
+					{
+						"field": "guest",
+						"value": "Yes"
+					}
+				]
+			},	
+			{
 				"id": "guestname",
 				"label": "Guest's Name:",
 				"type": "text",
@@ -95,10 +106,6 @@
 				"sticky": false,
 				"disabled": false,
 				"conditional": [
-					{
-						"field": "attend",
-						"value": "Yes"
-					},
 					{
 						"field": "guest",
 						"value": "Yes"
@@ -113,10 +120,6 @@
 				"sticky": false,
 				"disabled": false,
 				"conditional": [
-					{
-						"field": "attend",
-						"value": "Yes"
-					},
 					{
 						"field": "guest",
 						"value": "Yes"
@@ -144,7 +147,13 @@
 						"value": "Saturday at 7pm",
 						"limit": 500
 					}
-				]
+				],
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					}
+				]				
 			},
 			
 			{
