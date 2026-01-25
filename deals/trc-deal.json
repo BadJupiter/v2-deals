@@ -91,17 +91,7 @@
 					}
 				]				
 			},
-			{
-				"type": "info",
-				"justify": "left",
-				"markdown": " \n\n Please note, all show attendees must have a Players Club account in order to attend the Deal or No Deal show.",
-				"conditional": [
-					{
-						"field": "guest",
-						"value": "Yes"
-					}
-				]
-			},	
+			
 			{
 				"id": "guestname",
 				"label": "Guest's Name:",
@@ -176,6 +166,17 @@
 					}
 				]
 			},
+			{
+				"type": "info",
+				"justify": "left",
+				"markdown": " \n\n Please note, all show attendees must have a Players Club account in order to attend the Deal or No Deal show.",
+				"conditional": [
+					{
+						"field": "guest",
+						"value": "Yes"
+					}
+				]
+			},	
 			{
 				"type": "info",
 				"markdown": "---"
