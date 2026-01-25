@@ -51,7 +51,7 @@
 			},
 			{
 				"type": "info",
-				"markdown": "Registration: 11:00am - 1:30pm"	
+				"markdown": "## Registration: 11:00am - 1:30pm"	
 			},
 			{
 				"type": "info",
@@ -96,17 +96,6 @@
 				]				
 			},
 			{
-				"type": "info",
-				"justify": "left",
-				"markdown": " \n\n Please note, all show attendees must have a Players Club account in order to attend the Deal or No Deal show.",
-				"conditional": [
-					{
-						"field": "guest",
-						"value": "Yes"
-					}
-				]
-			},	
-			{
 				"id": "guestname",
 				"label": "Guest's Name:",
 				"type": "text",
@@ -134,6 +123,16 @@
 					}
 				]
 			},		
+			{
+				"type": "fields_group",
+				"bgcolor": "#F2EEE3",
+				"fields": [
+					{
+						"type": "info",
+						"markdown": "ℹ  Please note, all show attendees must have a **Players Club account** in order to attend the Deal or No Deal show."
+					}
+				]
+			},
 			{
 				"type": "info",
 				"markdown": "---"
