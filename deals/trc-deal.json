@@ -127,11 +127,6 @@
 				]
 			},
 			{
-				"type": "info",
-				"justify": "left",
-				"markdown": " \n\n Please note, all show attendees must have a Players Club account in order to attend the Deal or No Deal show."
-			},	
-			{
 				"id": "day",
 				"label": "What day would you like to attend?",
 				"type": "select",
