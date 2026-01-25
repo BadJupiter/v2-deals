@@ -43,7 +43,7 @@
 			},
 			{
 				"type": "info",
-				"markdown": "## **February 13th & 14th**"	
+				"markdown": "## **February 15th**"	
 			},
 			{
 				"type": "info",
@@ -51,9 +51,12 @@
 			},
 			{
 				"type": "info",
-				"markdown": "## **Casino Event Center, Florence**"	
+				"markdown": "Registration: 11:00am - 1:30pm"	
 			},
 			{
+				"type": "info",
+				"markdown": "## Showtime: 2:00pm"	
+			},{
 				"type": "info",
 				"markdown": "---"
 			},
@@ -73,13 +76,18 @@
 				"id": "guest",
 				"label": "Will you be bringing a guest?",
 				"type": "select",
-				"range": ["Yes","No"],
+				"limit": 1000,
+				"range": [
+					{
+						"value": "No",
+						"count": 1
+					},
+					{
+						"value": "Yes",
+						"count": 2
+					}
+				],
 				"required": true,
-				"global": true,
-  				"capacity_map": {
-  					"Yes": 2,
-    				"No": 1
-  					},
 				"conditional": [
 					{
 						"field": "attend",
@@ -125,53 +133,7 @@
 						"value": "Yes"
 					}
 				]
-			},
-			{
-				"id": "day",
-				"label": "What day would you like to attend?",
-				"type": "select",
-				"required": true,
-				"count_from": "guest",
-				"limit": 1000,
-				"range": [
-					{
-						"value": "Friday at 7pm",
-						"limit": 500
-					},
-					{
-						"value": "Saturday at 7pm",
-						"limit": 500
-					}
-				],
-				"conditional": [
-					{
-						"field": "attend",
-						"value": "Yes"
-					}
-				]				
-			},
-			
-			{
-				"id": "room",
-				"label": "Would you like to be contacted for a room reservation?",
-				"type": "select",
-				"range": ["Yes","No"],
-				"required": true,
-				"conditional": [
-					{
-						"field": "attend",
-						"value": "Yes"
-					},
-					{
-						"field": "day",
-						"values": ["Friday at 7pm","Saturday at 7pm"]
-					},
-					{
-						"field": "Hotel",
-						"values": ["Y"]
-					}
-				]
-			},
+			},		
 			{
 				"type": "info",
 				"markdown": "---"
