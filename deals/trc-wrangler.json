@@ -26,10 +26,13 @@
 				"hidden": true
 			},
 			{
-				"id": "HomeProperty",
- 			 	"type": "text",
-  				"hidden": true,
-  				"value": "Florence"
+  				"id": "HomeProperty",
+  				"label": "HomeProperty",
+  				"type": "text",
+  				"value": "Florence",
+  				"sticky": true,
+  				"disabled": true,
+  				"hidden": true
 			},
 			{
 				"type": "info",
