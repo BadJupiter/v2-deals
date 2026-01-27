@@ -52,7 +52,7 @@
 		},
 		{
 			"column_name": "Location",
-			"attrib": "flcb"
+			"attrib": "location"
 		},
 		{
 			"column_name": "Day",
