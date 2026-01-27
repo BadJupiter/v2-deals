@@ -95,7 +95,7 @@
 			},
 			{
 				"id": "FLday1time",
-				"label": "What time would you like to pick up?",
+				"label": "What time would you like to attend?",
 				"type": "select",
 				"count_from": "attend",
 				"limit": 500,
