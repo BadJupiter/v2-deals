@@ -67,10 +67,6 @@
 			"attrib": "FLday2time"
 		},
 		{
-			"column_name": "FLSunTime",
-			"attrib": "FLday3time"
-		},
-		{
 			"column_name": "CBFriTime",
 			"attrib": "CBday1time"
 		},
@@ -79,20 +75,8 @@
 			"attrib": "CBday2time"
 		},
 		{
-			"column_name": "CBSunTime",
-			"attrib": "CBday3time"
-		},
-		{
-			"column_name": "PickupDay",
-			"attrib": "pickupday"
-		},
-		{
 			"column_name": "Room",
 			"attrib": "room"
-		},
-		{
-			"column_name": "HomeProperty",
-			"attrib": "Location"
 		}
 	]
 }
