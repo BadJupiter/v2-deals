@@ -278,6 +278,10 @@
 						"value": "Yes"
 					},
 					{
+						"field": "location",
+						"value": "Florence"
+					},
+					{
 						"field": "day",
 						"values": ["Friday, February 20th","Saturday, February 21st"]
 					},
