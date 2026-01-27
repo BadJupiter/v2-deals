@@ -26,6 +26,12 @@
 				"hidden": true
 			},
 			{
+				"id": "HomeProperty",
+ 			 	"type": "text",
+  				"hidden": true,
+  				"value": "Florence"
+			},
+			{
 				"type": "info",
 				"markdown": "# Wrangler Luggage Boutique"
 			},
