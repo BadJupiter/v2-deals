@@ -70,7 +70,7 @@
 				"id": "attend",
 				"label": "Would you like to pick up a certificate for a Norwegian Cruise Line cruise?",
 				"type": "select",
-				"range": ["Yes, I'll come in this weekend","Yes, I'll pick it up on a future date", "No"],
+				"range": ["Yes, I'll pick it up on a future date", "No"],
 				"required": true,
 				"global": true,
   				"capacity_map": {
@@ -345,7 +345,7 @@
 				"id": "pickupday",
 				"label": "What day would you like to pick up?",
 				"type": "select",
-				"range": ["Mon, Jan 26","Tue, Jan 27","Wed, Jan 28","Thu, Jan 29","Fri, Jan 30","Sat, Jan 31","Sun, Feb 1","Mon, Feb 2","Tue, Feb 3","Wed, Feb 4","Thu, Feb 5","Fri, Feb 6"],
+				"range": ["Wed, Jan 28","Thu, Jan 29","Fri, Jan 30","Sat, Jan 31","Sun, Feb 1","Mon, Feb 2","Tue, Feb 3","Wed, Feb 4","Thu, Feb 5","Fri, Feb 6"],
 				"required": true,
 				"conditional": {
 					"field": "attend",
