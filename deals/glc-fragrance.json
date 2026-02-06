@@ -56,16 +56,6 @@
 				"limit": 1100,
 				"range": [
 					{
-						"value": "3:00pm",
-						"count": 1,
-						"limit": 100
-					},
-					{
-						"value": "3:30pm",
-						"count": 1,
-						"limit": 100
-					},
-					{
 						"value": "4:00pm",
 						"count": 1,
 						"limit": 100
