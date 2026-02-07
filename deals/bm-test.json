@@ -1,0 +1,28 @@
+{
+	"biz_id": "budman",
+	"check_in": true,
+	"auth_required": true,
+	"error_auth": {
+		"title": "Woops!",
+		"content": "Cain't play if you ain't authenticated!"
+	},
+	
+	"FORM": {	
+		"title": "Bud Man Orange County",
+		"fields": [
+			{
+				"type": "info",
+				"markdown": "# Temporarily Closed"
+			},
+			{
+				"type": "info",
+				"justify": "center",
+				"markdown": " \n\nWe hope to serve you again soon."
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			}
+		]
+	}
+}

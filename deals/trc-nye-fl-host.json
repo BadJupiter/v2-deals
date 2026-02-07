@@ -189,6 +189,71 @@
 				]
 			},
 			{
+				"id": "0101brunch",
+				"label": "Will you be joining us for New Year's Day Brunch?",
+				"type": "select",
+				"range": ["Yes","No"],
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "guest",
+						"values": ["Yes","No"]
+				   	}
+				]
+			},
+			{
+				"id": "brunchtime",
+				"label": "Select a brunch reservation time:",
+				"type": "select",
+				"count_from": "guest",
+				"limit": 1050,
+				"range": [
+					{
+						"value": "11:00am",
+						"limit": 150
+					},
+					{
+						"value": "11:30am",
+						"limit": 150
+					},
+					{
+						"value": "Noon",
+						"limit": 150
+					},
+					{
+						"value": "12:30pm",
+						"limit": 150
+					},
+					{
+						"value": "1:00pm",
+						"limit": 150
+					},
+					{
+						"value": "1:30pm",
+						"limit": 150
+					},
+					{
+						"value": "2:00pm",
+						"limit": 150
+					}
+				],	
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "0101brunch",
+						"value": "Yes"
+					}
+				]
+			},
+			{
 				"type": "info",
 				"markdown": "---"
 			},

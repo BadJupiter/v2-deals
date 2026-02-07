@@ -1,0 +1,341 @@
+{
+	"biz_id": "threerivers",
+	"check_in": true,
+	"auth_required": true,
+	"error_auth": {
+		"title": "Woops!",
+		"content": "Can't play if you ain't authenticated!"
+	},
+
+	"active": {
+		"start": "2025-09-13 10:00AM CDT",
+		"end": "2025-10-04 11:59PM CDT"
+	},
+	
+	"summary_info": "Wrangler Luggage Boutique",
+	
+	"FORM": {
+		"title": "Three Rivers Casino Resort",
+		"fields": [
+			{
+				"id": "Hotel",
+				"label": "Hotel",
+				"type": "text",
+				"sticky": true,
+				"disabled": true,
+				"hidden": true
+			},
+			{
+				"type": "info",
+				"markdown": "# Wrangler Luggage Boutique"
+			},
+			{
+				"type": "info",
+				"markdown": "## **February 20th & 21st**"	
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "info",
+				"markdown": "## **Florence & Coos Bay**"	
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "info",
+				"justify": "center",
+				"markdown": " \n\nIt’s our pleasure to offer our valued Three Rivers guests an invitation to our **Wrangler Luggage Boutique**!"
+			},
+			{
+				"id": "attend",
+				"label": "Will you attend the Wrangler Luggage Boutique?",
+				"type": "select",
+				"range": ["Yes","No"],
+				"required": true,
+				"global": true,
+  				"capacity_map": {
+  					"Yes": 1,
+    				"No": 0
+				}
+			},
+			{
+				"id": "location",
+				"label": "Which location would you like to attend?",
+				"type": "select",
+				"range": ["Florence","Coos Bay"],
+				"required": true,
+				"conditional": {
+					"field": "attend",
+					"value": "Yes"
+				}
+			},
+			{
+				"id": "day",
+				"label": "What day would you like to attend?",
+				"type": "select",
+				"range": ["Friday, February 20th","Saturday, February 21st"],
+				"required": true,
+				"conditional": {
+					"field": "attend",
+					"value": "Yes"
+				}
+			},
+			{
+				"id": "FLday1time",
+				"label": "What time would you like to attend?",
+				"type": "select",
+				"count_from": "attend",
+				"limit": 500,
+				"range": [
+					{
+						"value": "4pm",
+						"limit": 100
+					},
+					{
+						"value": "5pm",
+						"limit": 100
+					},
+					{
+						"value": "6pm",
+						"limit": 100
+					},
+					{
+						"value": "7pm",
+						"limit": 100			
+					},
+					{
+						"value": "8pm",
+						"limit": 100			
+					}
+				],	
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "day",
+						"value": "Friday, February 20th"
+					},
+					{
+						"field": "location",
+						"value": "Florence"
+					}
+				]
+			},
+			{
+				"id": "FLday2time",
+				"label": "What time would you like to attend?",
+				"type": "select",
+				"count_from": "attend",
+				"limit": 500,
+				"range": [
+					{
+						"value": "4pm",
+						"limit": 100
+					},
+					{
+						"value": "5pm",
+						"limit": 100
+					},
+					{
+						"value": "6pm",
+						"limit": 100
+					},
+					{
+						"value": "7pm",
+						"limit": 100			
+					},
+					{
+						"value": "8pm",
+						"limit": 100		
+					}
+				],	
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "day",
+						"value": "Saturday, February 21st"
+					},
+					{
+						"field": "location",
+						"value": "Florence"
+					}
+				]
+			},
+			{
+				"id": "CBday1time",
+				"label": "What time would you like to attend?",
+				"type": "select",
+				"count_from": "attend",
+				"limit": 500,
+				"range": [
+					{
+						"value": "4pm",
+						"limit": 100
+					},
+					{
+						"value": "5pm",
+						"limit": 100
+					},
+					{
+						"value": "6pm",
+						"limit": 100
+					},
+					{
+						"value": "7pm",
+						"limit": 100			
+					},
+					{
+						"value": "8pm",
+						"limit": 100		
+					}
+				],	
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "day",
+						"value": "Friday, February 20th"
+					},
+					{
+						"field": "location",
+						"value": "Coos Bay"
+					}
+				]
+			},
+			{
+				"id": "CBday2time",
+				"label": "What time would you like to attend?",
+				"type": "select",
+				"count_from": "attend",
+				"limit": 500,
+				"range": [
+					{
+						"value": "4pm",
+						"limit": 100
+					},
+					{
+						"value": "5pm",
+						"limit": 100
+					},
+					{
+						"value": "6pm",
+						"limit": 100
+					},
+					{
+						"value": "7pm",
+						"limit": 100			
+					},
+					{
+						"value": "8pm",
+						"limit": 100				
+					}
+				],	
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "day",
+						"value": "Saturday, February 21st"
+					},
+					{
+						"field": "location",
+						"value": "Coos Bay"
+					}
+				]
+			},			
+			{
+				"id": "room",
+				"label": "Would you like to be contacted for a room reservation?",
+				"type": "select",
+				"range": ["Yes","No"],
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "location",
+						"value": "Florence"
+					},
+					{
+						"field": "day",
+						"values": ["Friday, February 20th","Saturday, February 21st"]
+					},
+					{
+						"field": "Hotel",
+						"values": ["Y"]
+
+					}
+				]
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "fields_group",
+				"bgcolor": "#E9E1CF",
+				"fields": [
+					{
+						"id": "z_FIRSTNAME",
+						"label": "First Name:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					},
+					{
+						"id": "z_LASTNAME",
+						"label": "Last Name:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					},
+					{
+						"id": "PlayerID",
+						"label": "Club #:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					},
+					{
+						"id": "z_EMAIL",
+						"label": "Email:",
+						"type": "text",
+						"sticky": true,
+						"disabled": false
+					}
+				]
+			}
+		],
+	"limits": {
+			"most_recent_only": true,
+			"most_recent_key": "PlayerID"
+		},		
+	"submit": {
+			"label": "Submit RSVP",
+			"color": "#20363d"
+		
+		}
+	},
+	"MAIN": {
+		"body_md": "# Your reservation is confirmed \n\nIf you need to make any changes to your RSVP just scan your invitation again. If you need any help please get in touch. We hope to see you soon at **Three Rivers Casino Resort**."
+	}
+}

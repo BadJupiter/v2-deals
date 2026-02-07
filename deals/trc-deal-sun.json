@@ -1,0 +1,194 @@
+{
+	"biz_id": "threerivers",
+	"check_in": true,
+	"auth_required": true,
+	"error_auth": {
+		"title": "Woops!",
+		"content": "Can't play if you ain't authenticated!"
+	},
+
+	"active": {
+		"start": "2025-09-13 10:00AM CDT",
+		"end": "2025-10-04 11:59PM CDT"
+	},
+	
+	"summary_info": "Deal or No Deal",
+	
+	"FORM": {
+#		"title": "Three Rivers Casino Resort",
+		"fields": [
+			{
+				"id": "Hotel",
+				"label": "Hotel",
+				"type": "text",
+				"sticky": true,
+				"disabled": true,
+				"hidden": true
+			},
+			{
+				"type": "info",
+				"markdown": "# Three Rivers Casino Resort"
+			},
+			{
+				"type": "info",
+				"markdown": "# Casino Event Center, Florence"
+			},			
+			{
+				"type": "info",
+				"markdown": "---"
+			},	
+			{
+				"type": "info",
+				"markdown": "# Deal or No Deal"
+			},
+			{
+				"type": "info",
+				"markdown": "## **February 15th**"	
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "info",
+				"markdown": "## Registration: 11:00am - 1:30pm"	
+			},
+			{
+				"type": "info",
+				"markdown": "## Showtime: 2:00pm"	
+			},{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "info",
+				"justify": "center",
+				"markdown": " \n\nIt’s our pleasure to offer our valued Three Rivers guests an invitation to our **Deal or No Deal** show!"
+			},
+			{
+				"id": "attend",
+				"label": "Would you like to attend the Deal or No Deal Show?",
+				"type": "select",
+				"range": ["Yes","No"],
+				"required": true
+			},
+			{
+				"id": "guest",
+				"label": "Will you be bringing a guest?",
+				"type": "select",
+				"limit": 1000,
+				"range": [
+					{
+						"value": "No",
+						"count": 1
+					},
+					{
+						"value": "Yes",
+						"count": 2
+					}
+				],
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					}
+				]				
+			},
+			{
+				"id": "guestname",
+				"label": "Guest's Name:",
+				"type": "text",
+				"required": true,
+				"sticky": false,
+				"disabled": false,
+				"conditional": [
+					{
+						"field": "guest",
+						"value": "Yes"
+					}
+				]
+			},
+			{
+				"id": "guestplayerid",
+				"label": "Guest's Players Club #:",
+				"type": "text",
+				"required": true,
+				"sticky": false,
+				"disabled": false,
+				"conditional": [
+					{
+						"field": "guest",
+						"value": "Yes"
+					}
+				]
+			},		
+			{
+				"type": "fields_group",
+				"bgcolor": "#F2EEE3",
+				"fields": [
+					{
+						"type": "info",
+						"markdown": "**\u2139**  \nPlease note, all show attendees must have a **Players Club account** in order to attend the Deal or No Deal show."
+					}
+				],
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					}
+				]
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "fields_group",
+				"bgcolor": "#E4DBC6",
+				"fields": [
+					{
+						"id": "z_FIRSTNAME",
+						"label": "First Name:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					},
+					{
+						"id": "z_LASTNAME",
+						"label": "Last Name:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					},
+					{
+						"id": "PlayerID",
+						"label": "Club #:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					},
+					{
+						"id": "z_EMAIL",
+						"label": "Email:",
+						"type": "text",
+						"sticky": true,
+						"disabled": false
+					}
+				]
+			}
+		],
+	"limits": {
+			"most_recent_only": true,
+			"most_recent_key": "PlayerID"
+		},		
+	"submit": {
+			"label": "Submit RSVP",
+			"color": "#20363d"
+		
+		}
+	},
+	"MAIN": {
+		"body_md": "# Your reservation is confirmed \n\nIf you need to make any changes to your RSVP just scan your invitation again. If you need any help please get in touch. We hope to see you soon at **Three Rivers Casino Resort - Florence**."
+	}
+}

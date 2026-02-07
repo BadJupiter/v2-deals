@@ -1,0 +1,41 @@
+{
+	"biz_id": "colusacasino",
+	"deal_tokens": [ "ccr-fragrance2" ],
+	"most_recent_only": true, 
+	"most_recent_key": "Player ID", 
+	
+	"COLUMNS": [
+		{
+			"column_name": "Row ID",
+			"attrib": "_rowid"
+		},
+		{
+			"column_name": "Timestamp",
+			"attrib": "_when"
+		},
+		{
+			"column_name": "Mobile",
+			"attrib": "_mobile"
+		},
+		{
+			"column_name": "Deal ID",
+			"attrib": "_deal"
+		},
+		{
+			"column_name": "Player ID",
+			"attrib": "PlayerID"
+		},
+		{
+			"column_name": "Last Name",
+			"attrib": "z_LASTNAME"
+		},
+		{
+			"column_name": "First Name",
+			"attrib": "z_FIRSTNAME"
+		},
+		{
+			"column_name": "Attend",
+			"attrib": "attend"
+		}
+	]
+}

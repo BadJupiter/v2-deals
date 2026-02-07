@@ -1,8 +1,8 @@
 {
 	"biz_id": "threerivers",
-	"deal_tokens": [ "trc-nye-fl","trc-nye-fl-host" ],
+	"deal_tokens": [ "trc-deal","trc-deal-sun"],
 	"most_recent_only": true, # omit or set to false for all rows
-	"most_recent_key": "PlayerID", # needs to be the column_name
+	"most_recent_key": "Player ID", # needs to be the column_name
 	
 	"as_xlsx": false, # omit or set to false for default (CSV)
 
@@ -15,7 +15,7 @@
 
 	"COLUMNS": [
 		{
-			"column_name": "RowID",
+			"column_name": "Row ID",
 			"attrib": "_rowid"
 		},
 		{
@@ -27,20 +27,24 @@
 			"attrib": "_mobile"
 		},
 		{
-			"column_name": "DealID",
+			"column_name": "Deal ID",
 			"attrib": "_deal"
 		},
 		{
-			"column_name": "PlayerID",
+			"column_name": "Player ID",
 			"attrib": "PlayerID"
 		},
 		{
-			"column_name": "LastName",
+			"column_name": "Last Name",
 			"attrib": "z_LASTNAME"
 		},
 		{
-			"column_name": "FirstName",
+			"column_name": "First Name",
 			"attrib": "z_FIRSTNAME"
+		},
+		{
+			"column_name": "Email",
+			"attrib": "z_EMAIL"
 		},
 		{
 			"column_name": "Attend",
@@ -51,24 +55,20 @@
 			"attrib": "guest"
 		},
 		{
-			"column_name": "1231Venue",
-			"attrib": "1231venue"
+			"column_name": "Guest Name",
+			"attrib": "guestname"
 		},
 		{
-			"column_name": "BuffetTime",
-			"attrib": "buffettime"
+			"column_name": "Guest PlayerID",
+			"attrib": "guestplayerid"
 		},
 		{
-			"column_name": "BillsTime",
-			"attrib": "billstime"
+			"column_name": "Day",
+			"attrib": "day"
 		},
 		{
-			"column_name": "0101Brunch",
-			"attrib": "0101brunch"
-		},
-		{
-			"column_name": "BrunchTime",
-			"attrib": "brunchtime"
+			"column_name": "Room",
+			"attrib": "room"
 		}
 	]
 }

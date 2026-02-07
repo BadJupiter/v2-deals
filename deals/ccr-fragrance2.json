@@ -1,0 +1,108 @@
+{
+	"biz_id": "colusacasino",
+	"check_in": true,
+	"auth_required": true,
+	"error_auth": {
+		"title": "Woops!",
+		"content": "Can't play if you ain't authenticated!"
+	},
+
+	"active": {
+		"start": "2026-02-15 06:00AM PDT",
+		"end": "2026-02-28 06:00PM PDT"
+	},
+
+	"META": {
+		"name": "Exclusive Fragrance Event",
+		"description": "Try out exclusive, luxury fragrance and take home your favorite as a gift from us!",
+		"dt": "February 28th",
+		"event_start_dt": "2026-02-28 12:00PM PDT"
+	},
+
+	
+	"FORM": {
+			"fields": [
+			{
+				"type": "info",
+				"markdown": "# Colusa Casino Resort"
+			},
+			{
+				"type": "info",
+				"markdown": "# Exclusive Fragrance Event"
+			},
+			{
+				"type": "info",
+				"markdown": "## **Saturday, February 28th**"	
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "info",
+				"justify": "center",
+				"markdown": " \n\nYou are invited to our exclusive **Fragrance Event**."
+			},
+			{
+				"id": "attend",
+				"label": "Will you be attending?",
+				"type": "select",
+				"limit": 500,
+				"range": [
+					{
+						"value": "Yes",
+						"count": 1
+					},
+					{
+						"value": "No",
+						"count": 0
+					}
+				],
+				"required": true
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "fields_group",
+				"bgcolor": "#E8C97B",
+				"fields": [
+					{
+						"id": "z_FIRSTNAME",
+						"label": "First Name:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					},
+					{
+						"id": "z_LASTNAME",
+						"label": "Last Name:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					},
+					{
+						"id": "PlayerID",
+						"label": "Club #:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					}
+				]
+			}
+		],
+		"limits": {
+			"most_recent_only": true,
+			"most_recent_key": "PlayerID"
+		},
+		"submit": {
+			"label": "Submit RSVP",
+			"color": "#20363d"
+		
+		}
+	},
+	"MAIN": {
+		"body_md": "# Your reservation is confirmed \n\nIf you need to make any changes just scan your invitation again. If you need any help please get in touch. We hope to see you soon at **Colusa Casino**."
+	}
+}

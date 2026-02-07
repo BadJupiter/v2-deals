@@ -1,8 +1,8 @@
 {
-	"biz_id": "threerivers",
-	"deal_tokens": [ "trc-nye-fl","trc-nye-fl-host" ],
+	"biz_id": "grandlake",
+	"deal_tokens": [ "glc-fragrance" ],
 	"most_recent_only": true, # omit or set to false for all rows
-	"most_recent_key": "PlayerID", # needs to be the column_name
+	"most_recent_key": "Player ID", # needs to be the column_name
 	
 	"as_xlsx": false, # omit or set to false for default (CSV)
 
@@ -31,44 +31,24 @@
 			"attrib": "_deal"
 		},
 		{
-			"column_name": "PlayerID",
+			"column_name": "Player ID",
 			"attrib": "PlayerID"
 		},
 		{
-			"column_name": "LastName",
-			"attrib": "z_LASTNAME"
+			"column_name": "Name",
+			"attrib": "z_NAME"
 		},
 		{
-			"column_name": "FirstName",
-			"attrib": "z_FIRSTNAME"
+			"column_name": "Email",
+			"attrib": "z_EMAIL"
 		},
 		{
 			"column_name": "Attend",
 			"attrib": "attend"
 		},
 		{
-			"column_name": "Guest",
-			"attrib": "guest"
-		},
-		{
-			"column_name": "1231Venue",
-			"attrib": "1231venue"
-		},
-		{
-			"column_name": "BuffetTime",
-			"attrib": "buffettime"
-		},
-		{
-			"column_name": "BillsTime",
-			"attrib": "billstime"
-		},
-		{
-			"column_name": "0101Brunch",
-			"attrib": "0101brunch"
-		},
-		{
-			"column_name": "BrunchTime",
-			"attrib": "brunchtime"
+			"column_name": "Time",
+			"attrib": "time"
 		}
 	]
 }
