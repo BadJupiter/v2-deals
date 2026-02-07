@@ -1,0 +1,85 @@
+{
+	"biz_id": "ips",
+	"check_in": false,
+	"auth_required": true,
+	"error_auth": {
+		"title": "Authentication Required",
+		"content": "You must be authenticated as an IPS administrator to initialize a unit."
+	},
+	
+	"FORM": {
+		"title": "Initialize New Unit",
+		"fields": [
+			{
+				"type": "info",
+				"markdown": "Please provide the following information to register this QR code to a new unit. **All fields are required** except where noted."
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"id": "qr",
+				"type": "text",
+				"hidden": true,
+				"required": false
+			},
+			{
+				"id": "name",
+				"label": "Unit Name/Description:",
+				"type": "text",
+				"placeholder": "e.g., Generator Unit #1, Main Building Backup",
+				"required": true
+			},
+			{
+				"id": "location",
+				"label": "Location:",
+				"type": "text",
+				"placeholder": "e.g., 123 Main St, Building A, Room 101",
+				"required": true
+			},
+			{
+				"id": "model",
+				"label": "Unit Model:",
+				"type": "text",
+				"placeholder": "e.g., CUMMINS QSK60-G8",
+				"required": true
+			},
+			{
+				"id": "serial_number",
+				"label": "Serial Number:",
+				"type": "text",
+				"placeholder": "e.g., 12345678",
+				"required": true
+			},
+			{
+				"id": "customer_id",
+				"label": "Customer:",
+				"type": "text",
+				"placeholder": "Customer ID or name",
+				"required": true
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "info",
+				"markdown": "**Please take a photo of the unit's serial number tag** for verification:"
+			},
+			{
+				"id": "serial_tag_image",
+				"type": "image",
+				"required": true
+			}
+		],
+		"submit": {
+			"label": "Register Unit"
+		}
+	},
+	
+	"MAIN": {
+		"title": "Unit Registered Successfully",
+		"body_md": "# Thank you!\n\nThe unit has been successfully registered and associated with this QR code. You can now use this QR code to track service history and manage the unit."
+	}
+}
