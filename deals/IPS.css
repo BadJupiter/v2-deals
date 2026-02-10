@@ -1,26 +1,62 @@
-.hero-header {
-	font-family: "Raleway", sans-serif;
+/* ============================================
+   IPS - Shared Branding Styles
+   Used by both the IPS app and template-based forms
+   Contains only CSS variables and shared typography/colors
+   ============================================ */
+
+:root {
+	/* Brand Colors - Professional Industrial Theme */
+	--ips-primary: #1a3a5f;        /* Deep Navy Blue - Professional, Industrial */
+	--ips-primary-dark: #0f2538;   /* Darker Navy for headers */
+	--ips-accent: #d4af37;          /* Gold accent - Premium, Professional */
+	--ips-accent-light: #e8d5a3;   /* Light gold for highlights */
+	--ips-success: #28a745;         /* Green for operational status */
+	--ips-warning: #ffc107;         /* Amber for maintenance needed */
+	--ips-danger: #dc3545;          /* Red for repair needed */
+	--ips-gray-light: #f8f9fa;      /* Light gray backgrounds */
+	--ips-gray: #6c757d;            /* Medium gray text */
+	--ips-gray-dark: #343a40;       /* Dark gray text */
+	--ips-border: #dee2e6;           /* Border color */
+	
+	/* Typography */
+	--ips-font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+	--ips-font-family-headers: 'Raleway', sans-serif;  /* For template forms */
+	--ips-font-size-base: 16px;
+	--ips-line-height: 1.5;
+	
+	/* Spacing */
+	--ips-spacing-xs: 0.25rem;
+	--ips-spacing-sm: 0.5rem;
+	--ips-spacing-md: 1rem;
+	--ips-spacing-lg: 1.5rem;
+	--ips-spacing-xl: 2rem;
+	
+	/* Border Radius */
+	--ips-radius: 0.5rem;
+	--ips-radius-sm: 0.25rem;
+	
+	/* Shadows */
+	--ips-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+	--ips-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+	--ips-shadow-lg: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* ============================================
+   Template Form Styles (only applied when using template)
+   These styles are scoped to template-specific classes
+   ============================================ */
+
+/* Styles for template-based forms (badjupiter.cloud?IPS) */
+/* Only apply when inside the template form container */
+.content .hero-header {
+	font-family: var(--ips-font-family-headers);
 	font-optical-sizing: auto;
 	font-weight: 600;
 	font-style: normal;
 	font-size: 2rem;
 }
-body, html {
-	height: 100%;
-	margin: 0;
-	padding: 0;
 
-	font-family: "Raleway", sans-serif;
-	font-weight: 400;
-	font-style: normal;
-	
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: #f9f9f4;
-}
-h1 {
-	font-family: 'Raleway', sans-serif;
-	text-align: center;
-	margin-bottom: 15px;
+/* Template form typography - only applies to main client app template forms */
+.content h1 {
+	font-family: var(--ips-font-family-headers);
 }

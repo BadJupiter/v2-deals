@@ -8,8 +8,14 @@
 	},
 	
 	"FORM": {
-		"title": "Initialize New Unit",
+		"title": "Assign Unit QR",
 		"fields": [
+			{
+				"id": "qr",
+				"type": "text",
+				"hidden": true,
+				"required": false
+			},
 			{
 				"type": "info",
 				"markdown": "Please provide the following information to register this QR code to a new unit. **All fields are required** except where noted."
@@ -19,10 +25,17 @@
 				"markdown": "---"
 			},
 			{
-				"id": "qr",
-				"type": "text",
-				"hidden": true,
-				"required": false
+				"type": "info",
+				"markdown": "**Please take a photo of the unit's serial number tag** for verification:"
+			},
+			{
+				"id": "serial_tag_image",
+				"type": "image",
+				"required": true
+			},
+			{
+				"type": "info",
+				"markdown": "---"
 			},
 			{
 				"id": "name",
@@ -57,19 +70,6 @@
 				"label": "Customer:",
 				"type": "text",
 				"placeholder": "Customer ID or name",
-				"required": true
-			},
-			{
-				"type": "info",
-				"markdown": "---"
-			},
-			{
-				"type": "info",
-				"markdown": "**Please take a photo of the unit's serial number tag** for verification:"
-			},
-			{
-				"id": "serial_tag_image",
-				"type": "image",
 				"required": true
 			}
 		],
