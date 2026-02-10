@@ -52,25 +52,25 @@
 				"required": true
 			},
 			{
+				"id": "location",
+				"label": "Location:",
+				"type": "text",
+				"placeholder": "e.g., 123 Main St, Building A, Room 101",
+				"required": true
+			},
+			{
 				"id": "model",
 				"label": "Unit Model:",
 				"type": "text",
 				"placeholder": "e.g., CUMMINS QSK60-G8",
-				"required": true
+				"required": false
 			},
 			{
 				"id": "serial_number",
 				"label": "Serial Number:",
 				"type": "text",
 				"placeholder": "e.g., 12345678",
-				"required": true
-			},
-			{
-				"id": "location",
-				"label": "Location:",
-				"type": "text",
-				"placeholder": "e.g., 123 Main St, Building A, Room 101",
-				"required": true
+				"required": false
 			}
 		],
 		"submit": {
