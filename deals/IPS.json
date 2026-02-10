@@ -18,7 +18,7 @@
 			},
 			{
 				"type": "info",
-				"markdown": "Please provide the following information to register this QR code to a new unit. **All fields are required** except where noted."
+				"markdown": "Initialize and assign a new QR to a unit by providing a photo and as much supplemental info as possible:"
 			},
 			{
 				"type": "info",
@@ -79,7 +79,7 @@
 	},
 	
 	"MAIN": {
-		"title": "Unit Registered Successfully",
-		"body_md": "# Thank you!\n\nThe unit has been successfully registered and associated with this QR code. You can now use this QR code to track service history and manage the unit."
+		"title": "Unit QR Assigned",
+		"body_md": "# Thank you!\n\nThe QR has been successfully registered to the unit. Attach the QR to the unit in a protected but visible place for tracking service history and recording updates."
 	}
 }
