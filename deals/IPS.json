@@ -38,17 +38,17 @@
 				"markdown": "---"
 			},
 			{
+				"id": "customer_id",
+				"label": "Customer:",
+				"type": "text",
+				"placeholder": "Customer ID or name",
+				"required": true
+			},
+			{
 				"id": "name",
 				"label": "Unit Name/Description:",
 				"type": "text",
 				"placeholder": "e.g., Generator Unit #1, Main Building Backup",
-				"required": true
-			},
-			{
-				"id": "location",
-				"label": "Location:",
-				"type": "text",
-				"placeholder": "e.g., 123 Main St, Building A, Room 101",
 				"required": true
 			},
 			{
@@ -66,10 +66,10 @@
 				"required": true
 			},
 			{
-				"id": "customer_id",
-				"label": "Customer:",
+				"id": "location",
+				"label": "Location:",
 				"type": "text",
-				"placeholder": "Customer ID or name",
+				"placeholder": "e.g., 123 Main St, Building A, Room 101",
 				"required": true
 			}
 		],
