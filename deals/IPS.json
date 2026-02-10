@@ -80,6 +80,6 @@
 	
 	"MAIN": {
 		"title": "Unit QR Assigned",
-		"body_md": "# Thank you!\n\nThe QR has been successfully registered to the unit. Attach the QR to the unit in a protected but visible place for tracking service history and recording updates."
+		"body_md": "The QR has been successfully registered to the unit. Attach the QR to the unit in a protected but visible place for tracking service history and recording updates."
 	}
 }
