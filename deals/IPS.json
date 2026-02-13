@@ -17,8 +17,15 @@
 				"required": false
 			},
 			{
+				"id": "customer_id",
+				"label": "Customer/Location ID:",
+				"type": "text",
+				"placeholder": "Customer ID or name",
+				"required": true
+			},
+			{
 				"type": "info",
-				"markdown": "Initialize and assign a new QR to a unit by providing a photo and as much supplemental info as possible:"
+				"markdown": "Initialize and assign this QR to a unit by providing the following information:"
 			},
 			{
 				"type": "info",
@@ -26,7 +33,7 @@
 			},
 			{
 				"type": "info",
-				"markdown": "**Please take a photo of the unit's serial number tag** for verification:"
+				"markdown": "**Please take a photo of the unit's serial number tag** (make it as clear as possible)"
 			},
 			{
 				"id": "serial_tag_image",
@@ -35,42 +42,23 @@
 			},
 			{
 				"type": "info",
+				"markdown": "**Please take a photo of the unit's motor identification tag** (make it as clear as possible)"
+			},
+			{
+				"id": "motor_tag_image",
+				"type": "image",
+				"required": true
+			},
+			{
+				"type": "info",
 				"markdown": "---"
 			},
 			{
-				"id": "customer_id",
-				"label": "Customer:",
+				"id": "description",
+				"label": "Unit Description:",
 				"type": "text",
-				"placeholder": "Customer ID or name",
+				"placeholder": "any identifying notes: model, make, etc.",
 				"required": true
-			},
-			{
-				"id": "name",
-				"label": "Unit Name/Description:",
-				"type": "text",
-				"placeholder": "e.g., Generator Unit #1, Main Building Backup",
-				"required": true
-			},
-			{
-				"id": "location",
-				"label": "Location:",
-				"type": "text",
-				"placeholder": "e.g., 123 Main St, Building A, Room 101",
-				"required": true
-			},
-			{
-				"id": "model",
-				"label": "Unit Model:",
-				"type": "text",
-				"placeholder": "e.g., CUMMINS QSK60-G8",
-				"required": false
-			},
-			{
-				"id": "serial_number",
-				"label": "Serial Number:",
-				"type": "text",
-				"placeholder": "e.g., 12345678",
-				"required": false
 			}
 		],
 		"submit": {
