@@ -20,8 +20,7 @@
 				"id": "customer_id",
 				"label": "Customer/Location ID:",
 				"type": "text",
-				"placeholder": "Customer ID or name",
-				"required": true
+				"disabled": true
 			},
 			{
 				"type": "info",
