@@ -17,12 +17,6 @@
 				"required": false
 			},
 			{
-				"id": "customer_id",
-				"label": "Customer/Location ID:",
-				"type": "text",
-				"disabled": true
-			},
-			{
 				"type": "info",
 				"markdown": "Initialize and assign this QR to a unit by providing the following information:"
 			},
