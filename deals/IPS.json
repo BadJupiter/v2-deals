@@ -30,7 +30,7 @@
 			},
 			{
 				"id": "serial_tag_image",
-				"type": "image",
+				"type": "image-button",
 				"required": true
 			},
 			{
@@ -39,7 +39,7 @@
 			},
 			{
 				"id": "motor_tag_image",
-				"type": "image",
+				"type": "image-button",
 				"required": true
 			},
 			{
