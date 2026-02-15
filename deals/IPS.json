@@ -31,6 +31,7 @@
 			{
 				"id": "serial_tag_image",
 				"type": "image-button",
+				"upload-image": false,
 				"required": true
 			},
 			{
