@@ -41,6 +41,7 @@
 			{
 				"id": "motor_tag_image",
 				"type": "image-button",
+				"upload-image": false,
 				"required": true
 			},
 			{
