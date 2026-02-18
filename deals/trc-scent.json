@@ -12,7 +12,7 @@
 		"end": "2025-10-04 11:59PM CDT"
 	},
 	
-	"summary_info": "Carhartt Boutique",
+	"summary_info": "Scent Library Boutique",
 	
 	"FORM": {
 #		"title": "Three Rivers Casino Resort",
@@ -31,19 +31,15 @@
 			},
 			{
 				"type": "info",
-				"markdown": "# Florence"
-			},			
-			{
-				"type": "info",
 				"markdown": "---"
 			},	
 			{
 				"type": "info",
-				"markdown": "# Carhartt Boutique"
+				"markdown": "# Scent Library Boutique"
 			},
 			{
 				"type": "info",
-				"markdown": "## **January 16th & 17th**"	
+				"markdown": "## **March 27th & 28th**"	
 			},
 			{
 				"type": "info",
@@ -60,11 +56,11 @@
 			{
 				"type": "info",
 				"justify": "center",
-				"markdown": " \n\nIt’s our pleasure to offer our valued Three Rivers guests an invitation to our **Carhartt** event!"
+				"markdown": " \n\nIt’s our pleasure to offer our valued Three Rivers guests an invitation to our **Scent Library Boutique**!"
 			},
 			{
 				"id": "attend",
-				"label": "Will you attend the Carhartt Boutique?",
+				"label": "Will you attend the Scent Library Boutique?",
 				"type": "select",
 				"range": ["Yes","No"],
 				"required": true,
@@ -78,7 +74,7 @@
 				"id": "day",
 				"label": "What day would you like to attend?",
 				"type": "select",
-				"range": ["Friday, January 16th","Saturday, January 17th"],
+				"range": ["Friday, March 27th","Saturday, March 28th"],
 				"required": true,
 				"conditional": {
 					"field": "attend",
@@ -93,28 +89,44 @@
 				"limit": 300,
 				"range": [
 					{
-						"value": "3pm",
-						"limit": 50
+						"value": "3:00pm",
+						"limit": 30
 					},
 					{
-						"value": "4pm",
-						"limit": 50
+						"value": "3:30pm",
+						"limit": 30
 					},
 					{
-						"value": "5pm",
-						"limit": 50
+						"value": "4:00pm",
+						"limit": 30
 					},
 					{
-						"value": "6pm",
-						"limit": 50
+						"value": "4:30pm",
+						"limit": 30
 					},
 					{
-						"value": "7pm",
-						"limit": 50			
+						"value": "5:00pm",
+						"limit": 30			
 					},
 					{
-						"value": "8pm",
-						"limit": 50
+						"value": "5:30pm",
+						"limit": 30
+					},
+					{
+						"value": "6:00pm",
+						"limit": 30
+					},
+					{
+						"value": "6:30pm",
+						"limit": 30
+					},
+					{
+						"value": "7:00pm",
+						"limit": 30			
+					},
+					{
+						"value": "7:30pm",
+						"limit": 30
 					}
 				],					
 				"required": true,
@@ -125,7 +137,7 @@
 					},
 					{
 						"field": "day",
-						"value": "Friday, January 16th"
+						"value": "Friday, March 27th"
 					}
 				]
 			},
@@ -134,31 +146,47 @@
 				"label": "What time would you like to attend?",
 				"type": "select",
 				"count_from": "attend",
-				"limit": 301,
+				"limit": 300,
 				"range": [
 					{
-						"value": "3pm",
-						"limit": 50
+						"value": "3:00pm",
+						"limit": 30
 					},
 					{
-						"value": "4pm",
-						"limit": 50
+						"value": "3:30pm",
+						"limit": 30
 					},
 					{
-						"value": "5pm",
-						"limit": 50
+						"value": "4:00pm",
+						"limit": 30
 					},
 					{
-						"value": "6pm",
-						"limit": 50
+						"value": "4:30pm",
+						"limit": 30
 					},
 					{
-						"value": "7pm",
-						"limit": 50			
+						"value": "5:00pm",
+						"limit": 30			
 					},
 					{
-						"value": "8pm",
-						"limit": 50
+						"value": "5:30pm",
+						"limit": 30
+					},
+					{
+						"value": "6:00pm",
+						"limit": 30
+					},
+					{
+						"value": "6:30pm",
+						"limit": 30
+					},
+					{
+						"value": "7:00pm",
+						"limit": 30			
+					},
+					{
+						"value": "7:30pm",
+						"limit": 30
 					}
 				],	
 				"required": true,
@@ -169,13 +197,13 @@
 					},
 					{
 						"field": "day",
-						"value": "Saturday, January 17th"
+						"value": "Saturday, March 28th"
 					}
 				]
 			},
 			{
 				"id": "room",
-				"label": "Would you like to be contacted for a room reservation?",
+				"label": "Would you like your host to contact you about accommodations?",
 				"type": "select",
 				"range": ["Yes","No"],
 				"required": true,
@@ -186,7 +214,7 @@
 					},
 					{
 						"field": "day",
-						"values": ["Friday, January 16th","Saturday, January 17th"]
+						"values": ["Friday, March 27th","Saturday, March 28th"]
 					},
 					{
 						"field": "Hotel",
