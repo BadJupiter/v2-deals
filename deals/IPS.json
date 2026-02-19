@@ -26,20 +26,30 @@
 			},
 			{
 				"type": "info",
-				"markdown": "**Please take a photo of the unit's serial number tag** (make it as clear as possible)"
+				"markdown": "Please take a photo of the unit's **gen set tag** (make it as clear as possible)"
 			},
 			{
-				"id": "serial_tag_image",
+				"id": "genset_tag_image",
 				"type": "image-button",
 				"upload-image": false,
 				"required": true
 			},
 			{
 				"type": "info",
-				"markdown": "**Please take a photo of the unit's motor identification tag** (make it as clear as possible)"
+				"markdown": "Please take a photo of the unit's **engine serial no. tag** (make it as clear as possible)"
 			},
 			{
 				"id": "motor_tag_image",
+				"type": "image-button",
+				"upload-image": false,
+				"required": true
+			},
+			{
+				"type": "info",
+				"markdown": "Please take a photo of the unit's **battery** (make it as clear as possible)"
+			},
+			{
+				"id": "battery_image",
 				"type": "image-button",
 				"upload-image": false,
 				"required": true
