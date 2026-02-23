@@ -1,0 +1,78 @@
+{
+	"biz_id": "ips",
+	"check_in": false,
+	"auth_required": true,
+	"error_auth": {
+		"title": "Authentication Required",
+		"content": "You must be authenticated as an IPS administrator to initialize a unit."
+	},
+	
+	"FORM": {
+		"title": "Assign Unit QR",
+		"fields": [
+			{
+				"id": "qr",
+				"type": "text",
+				"hidden": true,
+				"required": false
+			},
+			{
+				"type": "info",
+				"markdown": "Initialize and assign this QR to a unit by providing the following information:"
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "info",
+				"markdown": "Please take a photo of the unit's **gen set tag** (make it as clear as possible)"
+			},
+			{
+				"id": "genset_tag_image",
+				"type": "image-button",
+				"upload-image": false,
+				"required": true
+			},
+			{
+				"type": "info",
+				"markdown": "Please take a photo of the unit's **engine serial no. tag** (make it as clear as possible)"
+			},
+			{
+				"id": "motor_tag_image",
+				"type": "image-button",
+				"upload-image": false,
+				"required": true
+			},
+			{
+				"type": "info",
+				"markdown": "Please take a photo of the unit's **battery** (make it as clear as possible)"
+			},
+			{
+				"id": "battery_image",
+				"type": "image-button",
+				"upload-image": false,
+				"required": true
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"id": "description",
+				"label": "Unit Description:",
+				"type": "text",
+				"placeholder": "any identifying notes: model, make, etc.",
+				"required": true
+			}
+		],
+		"submit": {
+			"label": "Register Unit"
+		}
+	},
+	
+	"MAIN": {
+		"title": "Unit Info Sent",
+		"body_md": "Thank you! We've received your submission and will complete setup for this QR typically within a day. If you'd like to resubmit you can do so now; otherwise the QR will be active shortly for tracking service history and recording updates."
+	}
+}
