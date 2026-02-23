@@ -8,13 +8,17 @@
 	},
 	
 	"FORM": {
-		"title": "Assign Unit QR",
+#		"title": "Assign Unit QR",
 		"fields": [
 			{
 				"id": "qr",
 				"type": "text",
 				"hidden": true,
 				"required": false
+			},
+			{
+				"type": "info",
+				"markdown": "# Assign Unit QR"
 			},
 			{
 				"type": "info",
