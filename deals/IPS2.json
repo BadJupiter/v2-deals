@@ -25,22 +25,24 @@
 				"markdown": "---"
 			},
 			{
-				"type": "info",
-				"markdown": "Please take a photo of the unit's **gen set tag** (make it as clear as possible)"
-			},
-			{
-				"id": "genset_tag_image",
-				"type": "image-button",
-				"upload-image": false,
-				"required": true
-			},
-			{
-				"type": "info",
-				"markdown": "---"
+				"type": "fields_group",
+				"bgcolor": "#F2F5F9",
+				"fields": [
+					{
+						"type": "info",
+						"markdown": "Please take a photo of the unit's **gen set tag** (make it as clear as possible)"
+					},
+					{
+						"id": "genset_tag_image",
+						"type": "image-button",
+						"upload-image": false,
+						"required": true
+					}
+				]
 			},
 			{
 				"type": "fields_group",
-				"bgcolor": "#E9E1CF",
+				"bgcolor": "#F2F5F9",
 				"fields": [
 					{
 						"type": "info",
@@ -56,7 +58,7 @@
 			},
 			{
 				"type": "fields_group",
-				"bgcolor": "#E9E1CF",
+				"bgcolor": "#F2F5F9",
 				"fields": [
 					{
 						"type": "info",
