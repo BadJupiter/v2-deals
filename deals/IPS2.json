@@ -30,7 +30,7 @@
 				"fields": [
 					{
 						"type": "info",
-						"markdown": "Please take a photo of the unit's **gen set tag** (make it as clear as possible)"
+						"markdown": "Please take a photo of the unit's **gen set tag** (make sure the tag text is readable)"
 					},
 					{
 						"id": "genset_tag_image",
@@ -46,7 +46,7 @@
 				"fields": [
 					{
 						"type": "info",
-						"markdown": "Please take a photo of the unit's **engine serial no. tag** (make it as clear as possible)"
+						"markdown": "Please take a photo of the unit's **engine serial no. tag** (make sure the tag text is readable)"
 					},
 					{
 						"id": "motor_tag_image",
@@ -76,7 +76,7 @@
 				"id": "description",
 				"label": "Unit Description:",
 				"type": "text",
-				"placeholder": "any identifying notes: model, make, etc.",
+				"placeholder": "model, make, or other identifying notes",
 				"required": true
 			}
 		],
