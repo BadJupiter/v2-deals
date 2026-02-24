@@ -30,7 +30,7 @@
 			},
 			{
 				"type": "fields_group",
-				"bgcolor": "#EDF1F6",
+				"bgcolor": "#E9EEF3",
 				"fields": [
 					{
 						"type": "info",
@@ -46,7 +46,7 @@
 			},
 			{
 				"type": "fields_group",
-				"bgcolor": "#EDF1F6",
+				"bgcolor": "#E9EEF3",
 				"fields": [
 					{
 						"type": "info",
@@ -62,7 +62,7 @@
 			},
 			{
 				"type": "fields_group",
-				"bgcolor": "#EDF1F6",
+				"bgcolor": "#E9EEF3",
 				"fields": [
 					{
 						"type": "info",
