@@ -8,7 +8,6 @@
 	},
 	
 	"FORM": {
-#		"title": "Assign Unit QR",
 		"fields": [
 			{
 				"id": "qr",
@@ -22,7 +21,7 @@
 			},
 			{
 				"type": "info",
-				"markdown": "Initialize and assign this QR to a unit by providing the following information:"
+				"markdown": "Please take the following photos to register this unit.  \nMake sure each photo is clear, in focus, and label text is readable."
 			},
 			{
 				"type": "info",
@@ -34,7 +33,7 @@
 				"fields": [
 					{
 						"type": "info",
-						"markdown": "Please take a photo of the unit's **gen set tag** (make sure the tag text is readable)"
+						"markdown": "**1. Gen set tag**  \nPhoto of the generator nameplate/ID tag"
 					},
 					{
 						"id": "genset_tag_image",
@@ -50,7 +49,7 @@
 				"fields": [
 					{
 						"type": "info",
-						"markdown": "Please take a photo of the unit's **engine serial no. tag** (make sure the tag text is readable)"
+						"markdown": "**2. Engine serial no. tag**  \nPhoto of the engine serial number label"
 					},
 					{
 						"id": "motor_tag_image",
@@ -66,7 +65,7 @@
 				"fields": [
 					{
 						"type": "info",
-						"markdown": "Please take a photo of the unit's **battery** (make it as clear as possible)"
+						"markdown": "**3. Battery**  \nPhoto showing battery and connections"
 					},
 					{
 						"id": "battery_image",
