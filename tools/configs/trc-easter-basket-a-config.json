@@ -1,0 +1,110 @@
+{
+	"_comment": "Deal config for Three Rivers Casino Resort - Easter Basket Reveal, Group A",
+
+	"deal_id": "trc-easter2",
+	"biz_id": "threerivers",
+	"check_in": true,
+	"auth_required": true,
+	"error_auth": {
+		"title": "Woops!",
+		"content": "Can't play if you ain't authenticated!"
+	},
+
+	"active": {
+		"start": "2026-04-03 3:00PM PDT",
+		"end": "2026-04-04 8:00PM PDT"
+	},
+
+	"summary_info": "Easter Basket Reveal – Group A",
+
+	"context_vars": [
+		{ "id": "Hotel", "label": "Hotel" }
+	],
+
+	"form_title": "Three Rivers Casino Resort",
+
+	"header_blocks": [
+		{ "markdown": "# Easter Basket Reveal" },
+		{ "markdown": "## **April 3rd & 4th, 2026**" },
+		{ "markdown": "---" },
+		{ "markdown": "## **Florence & Coos Bay**" },
+		{ "markdown": "---" },
+		{
+			"_PLACEHOLDER": "Replace the markdown below with the actual invitation copy for this event",
+			"markdown": "It's our pleasure to invite our valued Three Rivers guests to our **Easter Basket Reveal**!\n\nAll invited players will receive **$75 in Free Play** valid April 3rd and 4th.",
+			"justify": "center"
+		}
+	],
+
+	"attend": {
+		"label": "Would you like to reserve an Easter Basket?",
+		"use_capacity_map": true
+	},
+
+	"locations": [
+		{
+			"id": "Florence",
+			"abbrev": "FL",
+			"hotel_eligible": true,
+			"day_capacity": 275
+		},
+		{
+			"id": "Coos Bay",
+			"abbrev": "CB",
+			"hotel_eligible": false,
+			"day_capacity": 55
+		}
+	],
+
+	"days": [
+		{ "label": "Friday, April 3rd" },
+		{ "label": "Saturday, April 4th" }
+	],
+
+	"time_slots": null,
+
+	"hotel_room": {
+		"enabled": true,
+		"label": "Would you like your host to contact you about accommodations?",
+		"eligible_locations": ["Florence"],
+		"eligible_days": null
+	},
+
+	"custom_questions": [],
+
+	"footer": {
+		"_PLACEHOLDER": "Confirm bgcolor matches the Easter event color palette",
+		"bgcolor": "#E9E1CF",
+		"fields": [
+			{ "id": "z_FIRSTNAME", "label": "First Name:", "disabled": true },
+			{ "id": "z_LASTNAME",  "label": "Last Name:",  "disabled": true },
+			{ "id": "PlayerID",    "label": "Player ID:",  "disabled": true },
+			{ "id": "z_EMAIL",     "label": "Email:",      "disabled": false }
+		]
+	},
+
+	"limits": {
+		"most_recent_only": true,
+		"most_recent_key": "PlayerID"
+	},
+
+	"submit": {
+		"label": "Submit RSVP",
+		"_PLACEHOLDER": "Confirm submit button color matches event branding",
+		"color": "#20363d"
+	},
+
+	"main": {
+		"_PLACEHOLDER": "Replace with actual confirmation message for this event",
+		"body_md": "# Your Easter Basket is reserved! \n\nThank you for your RSVP. If you need to make any changes just scan your invitation again. We look forward to seeing you at **Three Rivers Casino Resort**!\n\n*Remember: $75 in Free Play is valid April 3rd and 4th.*"
+	},
+
+	"css": {
+		"_PLACEHOLDER": "Set background_color to complement the Easter event header image",
+		"background_color": "#ffffff",
+		"fonts": {
+			"headers": { "family": "Raleway", "weight": 700, "style": "normal" },
+			"body":    { "family": "Raleway", "weight": "normal" }
+		}
+	}
+}

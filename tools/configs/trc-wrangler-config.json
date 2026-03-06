@@ -1,0 +1,102 @@
+{
+	"_comment": "Deal config for Three Rivers Casino Resort - Wrangler Luggage Boutique event",
+
+	"deal_id": "trc-wrangler-generated",
+	"biz_id": "threerivers",
+	"check_in": true,
+	"auth_required": true,
+	"error_auth": {
+		"title": "Woops!",
+		"content": "Can't play if you ain't authenticated!"
+	},
+
+	"active": {
+		"start": "2025-09-13 10:00AM CDT",
+		"end": "2025-10-04 11:59PM CDT"
+	},
+
+	"summary_info": "Wrangler Luggage Boutique",
+
+	"context_vars": [
+		{ "id": "Hotel", "label": "Hotel" }
+	],
+
+	"form_title": "Three Rivers Casino Resort",
+
+	"header_blocks": [
+		{ "markdown": "# Wrangler Luggage Boutique" },
+		{ "markdown": "## **February 20th & 21st**" },
+		{ "markdown": "---" },
+		{ "markdown": "## **Florence & Coos Bay**" },
+		{ "markdown": "---" },
+		{
+			"markdown": " \n\nIt's our pleasure to offer our valued Three Rivers guests an invitation to our **Wrangler Luggage Boutique**!",
+			"justify": "center"
+		}
+	],
+
+	"attend": {
+		"label": "Will you attend the Wrangler Luggage Boutique?",
+		"use_capacity_map": true
+	},
+
+	"locations": [
+		{ "id": "Florence", "abbrev": "FL", "hotel_eligible": true },
+		{ "id": "Coos Bay", "abbrev": "CB", "hotel_eligible": false }
+	],
+
+	"days": [
+		{ "label": "Friday, February 20th" },
+		{ "label": "Saturday, February 21st" }
+	],
+
+	"time_slots": {
+		"count_from": "attend",
+		"values": ["4pm", "5pm", "6pm", "7pm", "8pm"],
+		"capacity": {
+			"total_per_slot_field": 500,
+			"per_option": 100
+		}
+	},
+
+	"hotel_room": {
+		"enabled": true,
+		"label": "Would you like to be contacted for a room reservation?",
+		"eligible_locations": ["Florence"],
+		"eligible_days": null
+	},
+
+	"custom_questions": [],
+
+	"footer": {
+		"bgcolor": "#E9E1CF",
+		"fields": [
+			{ "id": "z_FIRSTNAME", "label": "First Name:", "disabled": true },
+			{ "id": "z_LASTNAME",  "label": "Last Name:",  "disabled": true },
+			{ "id": "PlayerID",    "label": "Club #:",     "disabled": true },
+			{ "id": "z_EMAIL",     "label": "Email:",      "disabled": false }
+		]
+	},
+
+	"limits": {
+		"most_recent_only": true,
+		"most_recent_key": "PlayerID"
+	},
+
+	"submit": {
+		"label": "Submit RSVP",
+		"color": "#20363d"
+	},
+
+	"main": {
+		"body_md": "# Your reservation is confirmed \n\nIf you need to make any changes to your RSVP just scan your invitation again. If you need any help please get in touch. We hope to see you soon at **Three Rivers Casino Resort**."
+	},
+
+	"css": {
+		"background_color": "#ffffff",
+		"fonts": {
+			"headers": { "family": "Raleway", "weight": 700, "style": "normal" },
+			"body":    { "family": "Raleway", "weight": "normal" }
+		}
+	}
+}

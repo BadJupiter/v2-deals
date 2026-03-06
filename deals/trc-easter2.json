@@ -1,0 +1,217 @@
+{
+	"biz_id": "threerivers",
+	"check_in": true,
+	"auth_required": true,
+	"error_auth": {
+		"title": "Woops!",
+		"content": "Can't play if you ain't authenticated!"
+	},
+	"active": {
+		"start": "2026-04-03 3:00PM PDT",
+		"end": "2026-04-04 8:00PM PDT"
+	},
+	"summary_info": "Easter Basket Reveal \u2013 Group A",
+	"FORM": {
+		"fields": [
+			{
+				"id": "Hotel",
+				"label": "Hotel",
+				"type": "text",
+				"sticky": true,
+				"disabled": true,
+				"hidden": true
+			},
+			{
+				"type": "info",
+				"markdown": "# Easter Basket Reveal"
+			},
+			{
+				"type": "info",
+				"markdown": "## **April 3rd & 4th, 2026**"
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "info",
+				"markdown": "## **Florence & Coos Bay**"
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "info",
+				"markdown": "It's our pleasure to invite our valued Three Rivers guests to our **Easter Basket Reveal**!\n\nAll invited players will receive **$75 in Free Play** valid April 3rd and 4th.",
+				"justify": "center"
+			},
+			{
+				"id": "attend",
+				"label": "Would you like to reserve an Easter Basket?",
+				"type": "select",
+				"range": [
+					"Yes",
+					"No"
+				],
+				"required": true,
+				"global": true,
+				"capacity_map": {
+					"Yes": 1,
+					"No": 0
+				}
+			},
+			{
+				"id": "location",
+				"label": "Which location would you like to attend?",
+				"type": "select",
+				"range": [
+					"Florence",
+					"Coos Bay"
+				],
+				"required": true,
+				"conditional": {
+					"field": "attend",
+					"value": "Yes"
+				}
+			},
+			{
+				"id": "FLday",
+				"label": "What day would you like to attend?",
+				"type": "select",
+				"count_from": "attend",
+				"range": [
+					{
+						"value": "Friday, April 3rd",
+						"limit": 275
+					},
+					{
+						"value": "Saturday, April 4th",
+						"limit": 275
+					}
+				],
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "location",
+						"value": "Florence"
+					}
+				]
+			},
+			{
+				"id": "CBday",
+				"label": "What day would you like to attend?",
+				"type": "select",
+				"count_from": "attend",
+				"range": [
+					{
+						"value": "Friday, April 3rd",
+						"limit": 55
+					},
+					{
+						"value": "Saturday, April 4th",
+						"limit": 55
+					}
+				],
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "location",
+						"value": "Coos Bay"
+					}
+				]
+			},
+			{
+				"id": "room",
+				"label": "Would you like your host to contact you about accommodations?",
+				"type": "select",
+				"range": [
+					"Yes",
+					"No"
+				],
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "location",
+						"value": "Florence"
+					},
+					{
+						"field": "FLday",
+						"values": [
+							"Friday, April 3rd",
+							"Saturday, April 4th"
+						]
+					},
+					{
+						"field": "Hotel",
+						"values": [
+							"Y"
+						]
+					}
+				]
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "fields_group",
+				"bgcolor": "#E9E1CF",
+				"fields": [
+					{
+						"id": "z_FIRSTNAME",
+						"label": "First Name:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					},
+					{
+						"id": "z_LASTNAME",
+						"label": "Last Name:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					},
+					{
+						"id": "PlayerID",
+						"label": "Player ID:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					},
+					{
+						"id": "z_EMAIL",
+						"label": "Email:",
+						"type": "text",
+						"sticky": true,
+						"disabled": false
+					}
+				]
+			}
+		],
+		"title": "Three Rivers Casino Resort",
+		"limits": {
+			"most_recent_only": true,
+			"most_recent_key": "PlayerID"
+		},
+		"submit": {
+			"label": "Submit RSVP",
+			"color": "#20363d"
+		}
+	},
+	"MAIN": {
+		"body_md": "# Your Easter Basket is reserved! \n\nThank you for your RSVP. If you need to make any changes just scan your invitation again. We look forward to seeing you at **Three Rivers Casino Resort**!\n\n*Remember: $75 in Free Play is valid April 3rd and 4th.*"
+	}
+}
