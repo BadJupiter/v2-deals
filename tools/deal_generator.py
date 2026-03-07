@@ -127,18 +127,24 @@ def build_time_slot_fields(config):
             return [{"value": v, "limit": per_option_cap} for v in values]
         return list(values)
 
-    def make_field(field_id, conditions):
+    def make_field(field_id, conditions, total_cap_override=None, per_option_override=None):
+        """
+        Build a time slot field. Per-location capacity overrides global settings
+        when total_cap_override or per_option_override are provided.
+        """
+        effective_total = total_cap_override if total_cap_override is not None else total_cap
+        effective_per_option = per_option_override if per_option_override is not None else per_option_cap
         f = {
             "id": field_id,
             "label": "What time would you like to attend?",
             "type": "select",
             "count_from": count_from,
-            "range": make_range(values, per_option_cap),
+            "range": make_range(values, effective_per_option),
             "required": True,
             "conditional": conditions
         }
-        if total_cap is not None:
-            f["limit"] = total_cap
+        if effective_total is not None:
+            f["limit"] = effective_total
         return f
 
     fields = []
@@ -154,7 +160,11 @@ def build_time_slot_fields(config):
                     {"field": "day", "value": day["label"]},
                     {"field": "location", "value": loc["id"]}
                 ]
-                fields.append(make_field(field_id, conditions))
+                fields.append(make_field(
+                    field_id, conditions,
+                    total_cap_override=loc.get("time_slot_capacity"),
+                    per_option_override=loc.get("time_slot_per_option")
+                ))
 
     elif days:
         # One field per day, no location dimension
@@ -167,7 +177,7 @@ def build_time_slot_fields(config):
             fields.append(make_field(field_id, conditions))
 
     elif locations:
-        # One field per location, no day dimension
+        # One field per location, no day dimension — per-location capacity supported
         for loc in locations:
             loc_abbrev = loc.get("abbrev") or make_location_abbrev(loc["id"])
             field_id = f"{loc_abbrev}time"
@@ -175,7 +185,11 @@ def build_time_slot_fields(config):
                 {"field": "attend", "value": "Yes"},
                 {"field": "location", "value": loc["id"]}
             ]
-            fields.append(make_field(field_id, conditions))
+            fields.append(make_field(
+                field_id, conditions,
+                total_cap_override=loc.get("time_slot_capacity"),
+                per_option_override=loc.get("time_slot_per_option")
+            ))
 
     else:
         # Simple: single time slot field, conditional only on attend

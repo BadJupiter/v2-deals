@@ -1,0 +1,107 @@
+{
+	"_comment": "Deal config for Three Rivers Casino Resort - Easter Egg Gift, Group B",
+
+	"deal_id": "trc-easter2-thu",
+	"biz_id": "threerivers",
+	"check_in": true,
+	"auth_required": true,
+	"error_auth": {
+		"title": "Woops!",
+		"content": "Can't play if you ain't authenticated!"
+	},
+
+	"active": {
+		"start": "2026-04-02 3:00PM PDT",
+		"end": "2026-04-02 8:00PM PDT"
+	},
+
+	"summary_info": "Easter Egg Gift – Group B",
+
+	"context_vars": [],
+
+	"form_title": "Three Rivers Casino Resort",
+
+	"header_blocks": [
+		{ "markdown": "# Easter Egg Gift" },
+		{ "markdown": "## **Thursday, April 2nd, 2026**" },
+		{ "markdown": "---" },
+		{ "markdown": "## **Florence & Coos Bay**" },
+		{ "markdown": "---" },
+		{
+			"_PLACEHOLDER": "Replace with actual invitation copy for this event",
+			"markdown": "It's our pleasure to invite our valued Three Rivers guests to our **Easter Egg Gift** event!",
+			"justify": "center"
+		}
+	],
+
+	"attend": {
+		"label": "Would you like to reserve an Easter Egg Gift?",
+		"use_capacity_map": true
+	},
+
+	"locations": [
+		{ "id": "Florence", "abbrev": "FL", "day_capacity": 286 },
+		{ "id": "Coos Bay", "abbrev": "CB", "day_capacity": 154 }
+	],
+
+	"days": [
+		{ "label": "Thursday, April 2nd" }
+	],
+
+	"time_slots": null,
+
+	"hotel_room": {
+		"enabled": false
+	},
+
+	"custom_questions": [],
+
+	"footer": {
+		"_PLACEHOLDER": "Confirm bgcolor matches the Easter event color palette",
+		"bgcolor": "#E9E1CF",
+		"fields": [
+			{ "id": "z_FIRSTNAME", "label": "First Name:", "disabled": true },
+			{ "id": "z_LASTNAME",  "label": "Last Name:",  "disabled": true },
+			{ "id": "PlayerID",    "label": "Player ID:",  "disabled": true },
+			{ "id": "z_EMAIL",     "label": "Email:",      "disabled": false }
+		]
+	},
+
+	"limits": {
+		"most_recent_only": true,
+		"most_recent_key": "PlayerID"
+	},
+
+	"submit": {
+		"label": "Submit RSVP",
+		"color": "#20363d"
+	},
+
+	"main": {
+		"_PLACEHOLDER": "Replace with actual confirmation message for this event",
+		"body_md": "# Your Easter Egg Gift is reserved! \n\nThank you for your RSVP. If you need to make any changes just scan your invitation again. We look forward to seeing you at **Three Rivers Casino Resort**!"
+	},
+
+	"soldout": {
+		"message": "Thank you for your interest in our Easter Egg Gift event! Registration has reached capacity and is now closed.\n\nWe hope to see you soon at **Three Rivers Casino Resort**!"
+	},
+
+	"report": {
+		"report_id": "trc-202604-easter2-thu",
+		"as_xlsx": false,
+		"columns": [
+			{ "column_name": "Location", "attrib": "location" },
+			{ "column_name": "FL Day",   "attrib": "FLday" },
+			{ "column_name": "CB Day",   "attrib": "CBday" }
+		]
+	},
+
+	"css": {
+		"_PLACEHOLDER": "Set background_color to complement the Easter event header image",
+		"background_color": "#ffffff",
+		"fonts": {
+			"headers": { "family": "Raleway", "weight": 700, "style": "normal" },
+			"body":    { "family": "Raleway", "weight": "normal" }
+		}
+	}
+}
