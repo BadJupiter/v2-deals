@@ -99,6 +99,17 @@
 		"body_md": "# Your Easter Basket is reserved! \n\nThank you for your RSVP. If you need to make any changes just scan your invitation again. We look forward to seeing you at **Three Rivers Casino Resort**!\n\n*Remember: $75 in Free Play is valid April 3rd and 4th.*"
 	},
 
+	"report": {
+		"report_id": "trc-202604-easter2",
+		"as_xlsx": false,
+		"columns": [
+			{ "column_name": "Location", "attrib": "location" },
+			{ "column_name": "FL Day",   "attrib": "FLday" },
+			{ "column_name": "CB Day",   "attrib": "CBday" },
+			{ "column_name": "Room",     "attrib": "room" }
+		]
+	},
+
 	"css": {
 		"_PLACEHOLDER": "Set background_color to complement the Easter event header image",
 		"background_color": "#ffffff",

@@ -446,6 +446,63 @@ def build_deal(config):
 
 
 # ---------------------------------------------------------------------------
+# Report generator
+# ---------------------------------------------------------------------------
+
+def build_report(config):
+    """
+    Generate the report JSON from the deal config.
+
+    Standard columns (Row ID, Timestamp, Mobile, Deal ID, Player ID, Last/First Name,
+    Email if present, Attend) are prepended automatically. Event-specific columns
+    come from report.columns in the config.
+    """
+    report_cfg = config.get("report")
+    if not report_cfg:
+        return None
+
+    limits_cfg = config.get("limits", {})
+    most_recent_only = limits_cfg.get("most_recent_only", False)
+
+    # Determine which standard footer fields are present
+    footer_field_ids = [
+        f["id"] for f in config.get("footer", {}).get("fields", [])
+    ]
+
+    # Standard columns — always in this order
+    standard_columns = [
+        {"column_name": "Row ID",    "attrib": "_rowid"},
+        {"column_name": "Timestamp", "attrib": "_when"},
+        {"column_name": "Mobile",    "attrib": "_mobile"},
+        {"column_name": "Deal ID",   "attrib": "_deal"},
+        {"column_name": "Player ID", "attrib": "PlayerID"},
+        {"column_name": "Last Name", "attrib": "z_LASTNAME"},
+        {"column_name": "First Name","attrib": "z_FIRSTNAME"},
+    ]
+
+    # Include Email only when it's in the deal's footer
+    if "z_EMAIL" in footer_field_ids:
+        standard_columns.append({"column_name": "Email", "attrib": "z_EMAIL"})
+
+    # Attend is always the last standard column before event-specific ones
+    standard_columns.append({"column_name": "Attend", "attrib": "attend"})
+
+    # Event-specific columns defined in the report config
+    event_columns = report_cfg.get("columns", [])
+
+    report = {
+        "biz_id": config["biz_id"],
+        "deal_tokens": [config["deal_id"]],
+        "most_recent_only": most_recent_only,
+        "most_recent_key": "Player ID",
+        "as_xlsx": report_cfg.get("as_xlsx", False),
+        "COLUMNS": standard_columns + event_columns
+    }
+
+    return report
+
+
+# ---------------------------------------------------------------------------
 # CSS generator
 # ---------------------------------------------------------------------------
 
@@ -506,17 +563,19 @@ def main():
         print("Error: config must include a 'deal_id' field.")
         sys.exit(1)
 
-    # Output goes into ../deals/ relative to the tools/ folder
+    # Output paths relative to the tools/ folder
     tools_dir = os.path.dirname(os.path.abspath(__file__))
-    deals_dir = os.path.join(tools_dir, "..", "deals")
+    deals_dir   = os.path.join(tools_dir, "..", "deals")
+    reports_dir = os.path.join(tools_dir, "..", "reports")
     os.makedirs(deals_dir, exist_ok=True)
+    os.makedirs(reports_dir, exist_ok=True)
 
     # Generate deal JSON
     deal = build_deal(config)
     out_json = os.path.join(deals_dir, f"{deal_id}.json")
     with open(out_json, "w") as f:
         json.dump(deal, f, indent="\t")
-    print(f"✓ Deal JSON written to: {out_json}")
+    print(f"✓ Deal JSON written to:   {out_json}")
 
     # Generate CSS (if configured)
     css_content = build_css(config, deal_id)
@@ -524,7 +583,17 @@ def main():
         out_css = os.path.join(deals_dir, f"{deal_id}.css")
         with open(out_css, "w") as f:
             f.write(css_content)
-        print(f"✓ CSS written to:      {out_css}")
+        print(f"✓ CSS written to:         {out_css}")
+
+    # Generate report JSON (if report section present in config)
+    report = build_report(config)
+    if report:
+        report_cfg = config.get("report", {})
+        report_id = report_cfg.get("report_id", f"{deal_id}-report")
+        out_report = os.path.join(reports_dir, f"{report_id}.json")
+        with open(out_report, "w") as f:
+            json.dump(report, f, indent="\t")
+        print(f"✓ Report JSON written to: {out_report}")
 
     print("\nDone.")
 

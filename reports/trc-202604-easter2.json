@@ -1,0 +1,63 @@
+{
+	"biz_id": "threerivers",
+	"deal_tokens": [
+		"trc-easter2"
+	],
+	"most_recent_only": true,
+	"most_recent_key": "Player ID",
+	"as_xlsx": false,
+	"COLUMNS": [
+		{
+			"column_name": "Row ID",
+			"attrib": "_rowid"
+		},
+		{
+			"column_name": "Timestamp",
+			"attrib": "_when"
+		},
+		{
+			"column_name": "Mobile",
+			"attrib": "_mobile"
+		},
+		{
+			"column_name": "Deal ID",
+			"attrib": "_deal"
+		},
+		{
+			"column_name": "Player ID",
+			"attrib": "PlayerID"
+		},
+		{
+			"column_name": "Last Name",
+			"attrib": "z_LASTNAME"
+		},
+		{
+			"column_name": "First Name",
+			"attrib": "z_FIRSTNAME"
+		},
+		{
+			"column_name": "Email",
+			"attrib": "z_EMAIL"
+		},
+		{
+			"column_name": "Attend",
+			"attrib": "attend"
+		},
+		{
+			"column_name": "Location",
+			"attrib": "location"
+		},
+		{
+			"column_name": "FL Day",
+			"attrib": "FLday"
+		},
+		{
+			"column_name": "CB Day",
+			"attrib": "CBday"
+		},
+		{
+			"column_name": "Room",
+			"attrib": "room"
+		}
+	]
+}
