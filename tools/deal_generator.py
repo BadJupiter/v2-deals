@@ -618,12 +618,17 @@ def main():
     print(f"✓ Deal JSON written to:   {out_json}")
 
     # Generate CSS (if configured)
+    # Only writes if the file does not already exist — preserves any manual edits.
+    # Delete the .css file and re-run to regenerate from scratch.
     css_content = build_css(config, deal_id)
     if css_content:
         out_css = os.path.join(deals_dir, f"{deal_id}.css")
-        with open(out_css, "w") as f:
-            f.write(css_content)
-        print(f"✓ CSS written to:         {out_css}")
+        if os.path.exists(out_css):
+            print(f"⚠ CSS already exists, skipping: {out_css}")
+        else:
+            with open(out_css, "w") as f:
+                f.write(css_content)
+            print(f"✓ CSS written to:         {out_css}")
 
     # Generate report JSON (if report section present in config)
     report = build_report(config)
