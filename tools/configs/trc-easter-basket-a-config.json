@@ -41,6 +41,8 @@
 		"use_capacity_map": true
 	},
 
+	"location_label": "Where would you like to pick up your Easter Basket?",
+
 	"locations": [
 		{
 			"id": "Florence",

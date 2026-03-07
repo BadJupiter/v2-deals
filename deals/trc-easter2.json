@@ -63,7 +63,7 @@
 			},
 			{
 				"id": "location",
-				"label": "Which location would you like to attend?",
+				"label": "Where would you like to pick up your Easter Basket?",
 				"type": "select",
 				"range": [
 					"Florence",

@@ -55,63 +55,24 @@
 			},
 			{
 				"id": "location",
-				"label": "Which location would you like to attend?",
+				"label": "Where would you like to pick up your Easter Egg Gift?",
 				"type": "select",
+				"count_from": "attend",
 				"range": [
-					"Florence",
-					"Coos Bay"
+					{
+						"value": "Florence",
+						"limit": 286
+					},
+					{
+						"value": "Coos Bay",
+						"limit": 154
+					}
 				],
 				"required": true,
 				"conditional": {
 					"field": "attend",
 					"value": "Yes"
 				}
-			},
-			{
-				"id": "FLday",
-				"label": "What day would you like to attend?",
-				"type": "select",
-				"count_from": "attend",
-				"range": [
-					{
-						"value": "Thursday, April 2nd",
-						"limit": 286
-					}
-				],
-				"required": true,
-				"conditional": [
-					{
-						"field": "attend",
-						"value": "Yes"
-					},
-					{
-						"field": "location",
-						"value": "Florence"
-					}
-				]
-			},
-			{
-				"id": "CBday",
-				"label": "What day would you like to attend?",
-				"type": "select",
-				"count_from": "attend",
-				"range": [
-					{
-						"value": "Thursday, April 2nd",
-						"limit": 154
-					}
-				],
-				"required": true,
-				"conditional": [
-					{
-						"field": "attend",
-						"value": "Yes"
-					},
-					{
-						"field": "location",
-						"value": "Coos Bay"
-					}
-				]
 			},
 			{
 				"type": "info",

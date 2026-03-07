@@ -71,19 +71,41 @@ def build_attend_field(attend_cfg):
     return f
 
 
-def build_location_field(locations, attend_field_id="attend"):
-    """Location selector, shown only when attend = Yes."""
-    return {
+def build_location_field(locations, attend_field_id="attend", label=None):
+    """
+    Location selector, shown only when attend = Yes.
+
+    If any location defines location_capacity, per-option capacity limits are added
+    and the field tracks capacity via count_from=attend. This is used for single-day
+    events where per-location capacity is enforced at the location-selection step
+    rather than via separate per-location day fields.
+    """
+    use_capacity = any(loc.get("location_capacity") is not None for loc in locations)
+
+    if use_capacity:
+        range_options = [
+            {"value": loc["id"], "limit": loc["location_capacity"]}
+            if loc.get("location_capacity") is not None
+            else loc["id"]
+            for loc in locations
+        ]
+    else:
+        range_options = [loc["id"] for loc in locations]
+
+    field = {
         "id": "location",
-        "label": "Which location would you like to attend?",
+        "label": label or "Which location would you like to attend?",
         "type": "select",
-        "range": [loc["id"] for loc in locations],
-        "required": True,
-        "conditional": {
-            "field": attend_field_id,
-            "value": "Yes"
-        }
     }
+    if use_capacity:
+        field["count_from"] = attend_field_id
+    field["range"] = range_options
+    field["required"] = True
+    field["conditional"] = {
+        "field": attend_field_id,
+        "value": "Yes"
+    }
+    return field
 
 
 def build_day_field(days, attend_field_id="attend"):
@@ -119,8 +141,8 @@ def build_time_slot_fields(config):
     per_option_cap = cap.get("per_option")
     count_from = ts_cfg.get("count_from", "attend")
 
-    locations = config.get("locations", [])
-    days = config.get("days", [])
+    locations = config.get("locations") or []
+    days = config.get("days") or []
 
     def make_range(values, per_option_cap):
         if per_option_cap is not None:
@@ -209,8 +231,8 @@ def build_per_location_day_fields(config):
     Returns (fields, loc_to_day_field_id) where loc_to_day_field_id maps
     location id -> field id  (e.g. {"Florence": "FLday", "Coos Bay": "CBday"})
     """
-    locations = config.get("locations", [])
-    days = config.get("days", [])
+    locations = config.get("locations") or []
+    days = config.get("days") or []
 
     # Only activate this path when at least one location has day_capacity defined
     if not any(loc.get("day_capacity") is not None for loc in locations):
@@ -284,7 +306,7 @@ def build_hotel_room_field(hotel_cfg, locations, config=None, loc_to_day_field=N
     ]
 
     # Resolve which day field to reference for the day condition
-    all_days = [d["label"] for d in (config or {}).get("days", [])]
+    all_days = [d["label"] for d in ((config or {}).get("days") or [])]
     days_to_check = eligible_days or all_days
 
     if days_to_check:
@@ -378,12 +400,12 @@ def build_deal(config):
     # 4. Location question (only if multiple locations defined)
     locations = config.get("locations", [])
     if len(locations) > 1:
-        fields.append(build_location_field(locations))
+        fields.append(build_location_field(locations, label=config.get("location_label")))
 
     # 5. Day question — two modes:
     #    a) Per-location day fields with capacity tracking (when locations have day_capacity)
     #    b) Single shared day field (standard case)
-    days = config.get("days", [])
+    days = config.get("days") or []
     per_loc_day_fields, loc_to_day_field = build_per_location_day_fields(config)
 
     if per_loc_day_fields:
