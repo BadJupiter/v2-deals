@@ -99,6 +99,10 @@
 		"body_md": "# Your Easter Basket is reserved! \n\nThank you for your RSVP. If you need to make any changes just scan your invitation again. We look forward to seeing you at **Three Rivers Casino Resort**!\n\n*Remember: $75 in Free Play is valid April 3rd and 4th.*"
 	},
 
+	"soldout": {
+		"message": "Thank you for your interest in our Easter Basket Reveal! Registration has reached capacity and is now closed.\n\nWe hope to see you soon at **Three Rivers Casino Resort**!"
+	},
+
 	"report": {
 		"report_id": "trc-202604-easter2",
 		"as_xlsx": false,

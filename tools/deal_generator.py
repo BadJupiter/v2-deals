@@ -503,6 +503,32 @@ def build_report(config):
 
 
 # ---------------------------------------------------------------------------
+# Sold-out temp file generator
+# ---------------------------------------------------------------------------
+
+def build_soldout(config):
+    """
+    Generate the sold-out temp JSON.
+    Saved as {deal_id}-temp.hide — rename to {deal_id}-temp.json and push to activate.
+    Message can be customized via soldout.message in config; falls back to a sensible default.
+    """
+    soldout_cfg = config.get("soldout", {})
+
+    default_message = (
+        "This event is sold out and registration is now closed. "
+        "We hope to see you again soon!"
+    )
+
+    return {
+        "biz_id": config["biz_id"],
+        "auth_required": False,
+        "MAIN": {
+            "body_md": soldout_cfg.get("message", default_message)
+        }
+    }
+
+
+# ---------------------------------------------------------------------------
 # CSS generator
 # ---------------------------------------------------------------------------
 
@@ -594,6 +620,13 @@ def main():
         with open(out_report, "w") as f:
             json.dump(report, f, indent="\t")
         print(f"✓ Report JSON written to: {out_report}")
+
+    # Generate sold-out temp file (saved as .hide — rename to .json to activate)
+    soldout = build_soldout(config)
+    out_soldout = os.path.join(deals_dir, f"{deal_id}-temp.hide")
+    with open(out_soldout, "w") as f:
+        json.dump(soldout, f, indent="\t")
+    print(f"✓ Sold-out temp written:  {out_soldout}  (rename to .json to activate)")
 
     print("\nDone.")
 
