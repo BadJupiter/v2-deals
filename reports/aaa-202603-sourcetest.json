@@ -22,6 +22,10 @@
 			"attrib": "_deal"
 		},
 		{
+			"column_name": "Source",
+			"attrib": "source"
+		},
+		{
 			"column_name": "Player ID",
 			"attrib": "PlayerID"
 		},
