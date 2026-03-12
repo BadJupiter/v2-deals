@@ -76,6 +76,14 @@
 			},
 			{
 				"type": "info",
+				"markdown": "**NOTE:** If you pick up at Coos Bay, there will be no additional prizes available. You can contact your host about transportation if you would prefer to pick up in Florence.",
+				"conditional": {
+					"field": "location",
+					"value": "Coos Bay"
+				}
+			},
+			{
+				"type": "info",
 				"markdown": "---"
 			},
 			{

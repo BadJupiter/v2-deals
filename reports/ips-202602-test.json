@@ -15,7 +15,7 @@
 
 	"COLUMNS": [
 		{
-			"column_name": "Row ID",
+			"column_name": "RowID",
 			"attrib": "_rowid"
 		},
 		{
@@ -27,16 +27,20 @@
 			"attrib": "_mobile"
 		},
 		{
-			"column_name": "Deal ID",
+			"column_name": "DealID",
 			"attrib": "_deal"
 		},
 		{
-			"column_name": "SerialTagImage",
-			"attrib": "serial_tag_image"
+			"column_name": "GensetTagImage",
+			"attrib": "genset_tag_image"
 		},
 		{
 			"column_name": "MotorTagImage",
 			"attrib": "motor_tag_image"
+		},
+		{
+			"column_name": "BatteryImage",
+			"attrib": "battery_image"
 		},
 		{
 			"column_name": "Description",
