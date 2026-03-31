@@ -39,12 +39,12 @@
 			},
 			{
 				"type": "info",
-				"markdown": "---"
+				"markdown": "It's our pleasure to invite our valued Three Rivers guests to our **Scotsman Boutique**!",
+				"justify": "center"
 			},
 			{
 				"type": "info",
-				"markdown": "It's our pleasure to invite our valued Three Rivers guests to our **Scotsman Boutique**!",
-				"justify": "center"
+				"markdown": "---"
 			},
 			{
 				"id": "attend",
