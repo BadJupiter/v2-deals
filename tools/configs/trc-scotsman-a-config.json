@@ -1,0 +1,123 @@
+{
+	"_comment": "Deal config for Three Rivers Casino Resort - Scotsman Boutique, Group A",
+
+	"deal_id": "trc-scotsman-a",
+	"biz_id": "threerivers",
+	"check_in": true,
+	"auth_required": true,
+	"error_auth": {
+		"title": "Woops!",
+		"content": "Can't play if you ain't authenticated!"
+	},
+
+	"active": {
+		"start": "2026-04-24 3:00PM PDT",
+		"end": "2026-04-25 8:00PM PDT"
+	},
+
+	"summary_info": "Scotsman Boutique – Group A",
+
+	"context_vars": [
+		{ "id": "Hotel", "label": "Hotel" }
+	],
+
+	"form_title": "Three Rivers Casino Resort",
+
+	"header_blocks": [
+		{ "markdown": "# Scotsman Boutique" },
+		{ "markdown": "## **April 24th & 25th, 2026**" },
+		{ "markdown": "---" },
+		{ "markdown": "## **Florence & Coos Bay**" },
+		{ "markdown": "---" },
+		{
+			"_PLACEHOLDER": "Replace the markdown below with the actual invitation copy for this event",
+			"markdown": "It's our pleasure to invite our valued Three Rivers guests to our **Scotsman Boutique**!",
+			"justify": "center"
+		}
+	],
+
+	"attend": {
+		"label": "Will you attend the Scotsman Boutique?",
+		"use_capacity_map": true
+	},
+
+	"location_label": "Which location would you like to attend?",
+
+	"locations": [
+		{ "id": "Florence", "abbrev": "FL" },
+		{ "id": "Coos Bay", "abbrev": "CB" }
+	],
+
+	"days": [
+		{ "label": "Friday, April 24th" },
+		{ "label": "Saturday, April 25th" }
+	],
+
+	"time_slots": {
+		"count_from": "attend",
+		"values": ["3:00pm", "3:30pm", "4:00pm", "4:30pm", "5:00pm", "5:30pm", "6:00pm", "6:30pm", "7:00pm", "7:30pm"]
+	},
+
+	"hotel_room": {
+		"enabled": true,
+		"label": "Would you like your host to contact you about accommodations?",
+		"eligible_locations": ["Florence"],
+		"eligible_days": null
+	},
+
+	"custom_questions": [],
+
+	"footer": {
+		"_PLACEHOLDER": "Confirm bgcolor matches Scotsman event color palette",
+		"bgcolor": "#E9E1CF",
+		"fields": [
+			{ "id": "z_FIRSTNAME", "label": "First Name:", "disabled": true },
+			{ "id": "z_LASTNAME",  "label": "Last Name:",  "disabled": true },
+			{ "id": "PlayerID",    "label": "Player ID:",  "disabled": true },
+			{ "id": "z_EMAIL",     "label": "Email:",      "disabled": false }
+		]
+	},
+
+	"limits": {
+		"most_recent_only": true,
+		"most_recent_key": "PlayerID"
+	},
+
+	"submit": {
+		"label": "Submit RSVP",
+		"_PLACEHOLDER": "Confirm submit button color matches Scotsman event branding",
+		"color": "#20363d"
+	},
+
+	"main": {
+		"_PLACEHOLDER": "Replace with actual confirmation message for this event",
+		"body_md": "# Your reservation is confirmed!\n\nThank you for your RSVP. If you need to make any changes just scan your invitation again. We look forward to seeing you at **Three Rivers Casino Resort**!"
+	},
+
+	"soldout": {
+		"message": "Thank you for your interest in the Scotsman Boutique! Registration has reached capacity and is now closed.\n\nWe hope to see you soon at **Three Rivers Casino Resort**!"
+	},
+
+	"report": {
+		"report_id": "trc-202604-scotsman-a",
+		"as_xlsx": false,
+		"columns": [
+			{ "column_name": "Location",    "attrib": "location" },
+			{ "column_name": "Day",         "attrib": "day" },
+			{ "column_name": "FL Fri Time", "attrib": "FLday1time" },
+			{ "column_name": "FL Sat Time", "attrib": "FLday2time" },
+			{ "column_name": "CB Fri Time", "attrib": "CBday1time" },
+			{ "column_name": "CB Sat Time", "attrib": "CBday2time" },
+			{ "column_name": "Room",        "attrib": "room" }
+		]
+	},
+
+	"css": {
+		"_PLACEHOLDER": "Set background_color and fonts to match Scotsman event branding",
+		"background_color": "#ffffff",
+		"fonts": {
+			"headers": { "family": "Raleway", "weight": 700, "style": "normal" },
+			"body":    { "family": "Raleway", "weight": "normal" }
+		}
+	}
+}
