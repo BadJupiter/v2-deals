@@ -1,7 +1,7 @@
 {
 	"biz_id": "threerivers",
 	"deal_tokens": [
-		"trc-scotsman-a"
+		"trc-scotsman"
 	],
 	"most_recent_only": true,
 	"most_recent_key": "Player ID",
