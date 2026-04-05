@@ -8,15 +8,15 @@
 	},
 
 	"active": {
-		"start": "2026-02-15 06:00AM PDT",
-		"end": "2026-02-28 06:00PM PDT"
+		"start": "2026-05-18 06:00AM PDT",
+		"end": "2026-05-29 11:59PM PDT"
 	},
 
 	"META": {
-		"name": "Exclusive Fragrance Event",
-		"description": "Try out exclusive, luxury fragrance and take home your favorite as a gift from us!",
-		"dt": "February 28th",
-		"event_start_dt": "2026-02-28 12:00PM PDT"
+		"name": "High Stakes Bingo",
+		"description": "15 games for a total of $15,000! Free for you and a guest!",
+		"dt": "May 29th",
+		"event_start_dt": "2026-05-29 12:00PM PDT"
 	},
 
 	
@@ -28,11 +28,16 @@
 			},
 			{
 				"type": "info",
-				"markdown": "# Exclusive Fragrance Event"
+				"markdown": "# High Stakes Bingo"
 			},
 			{
 				"type": "info",
-				"markdown": "## **Saturday, February 28th**"	
+				"markdown": "## **Friday, May 29th**"	
+			},
+			{
+				"type": "info",
+				"justify": "center",
+				"markdown": "Onsite check-in begins at 6:00 PM"
 			},
 			{
 				"type": "info",
@@ -41,24 +46,25 @@
 			{
 				"type": "info",
 				"justify": "center",
-				"markdown": " \n\nYou are invited to our exclusive **Fragrance Event**."
+				"markdown": " \n\nYou are invited to our exclusive **High Stakes Bingo Event**."
 			},
 			{
 				"id": "attend",
-				"label": "Will you be attending?",
+				"label": "Are you able to attend?",
 				"type": "select",
-				"limit": 500,
-				"range": [
-					{
-						"value": "Yes",
-						"count": 1
-					},
-					{
-						"value": "No",
-						"count": 0
-					}
-				],
+				"range": ["Yes","No"],
 				"required": true
+			},
+			{
+				"id": "guests",
+				"label": "I am confirming:",
+				"type": "select",
+				"range": ["Myself","Me and a guest"],
+				"required": true,
+				"conditional": {
+					"field": "attend",
+					"value": "Yes"
+				}
 			},
 			{
 				"type": "info",
