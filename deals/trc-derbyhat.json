@@ -13,7 +13,15 @@
 	"summary_info": "Derby Hat Party",
 	"FORM": {
 		"fields": [
-						{
+			{
+				"id": "Hotel",
+				"label": "Hotel",
+				"type": "text",
+				"sticky": true,
+				"disabled": true,
+				"hidden": true
+			},
+			{
 				"type": "info",
 				"markdown": "# Derby Hat Party"
 			},
