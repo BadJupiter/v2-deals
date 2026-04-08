@@ -7,10 +7,10 @@
 		"content": "Can't play if you ain't authenticated!"
 	},
 	"active": {
-		"start": "2026-05-01 3:00PM PDT",
-		"end": "2026-05-01 8:00PM PDT"
+		"start": "2026-05-02 3:00PM PDT",
+		"end": "2026-05-02 8:00PM PDT"
 	},
-	"summary_info": "Derby Hat Party",
+	"summary_info": "Derby Party",
 	"FORM": {
 		"fields": [
 			{
@@ -23,11 +23,11 @@
 			},
 			{
 				"type": "info",
-				"markdown": "# Derby Hat Party"
+				"markdown": "# Derby Party"
 			},
 			{
 				"type": "info",
-				"markdown": "## **May 1st, 2026**"
+				"markdown": "## **May 2nd, 2026**"
 			},
 			{
 				"type": "info",
@@ -35,7 +35,7 @@
 			},
 			{
 				"type": "info",
-				"markdown": "It's our pleasure to invite our valued Three Rivers guests to our **Derby Hat Party**!",
+				"markdown": "It's our pleasure to invite our valued Three Rivers guests to our **Derby Party**!",
 				"justify": "center"
 			},
 			{
@@ -44,18 +44,31 @@
 			},
 			{
 				"id": "attend",
-				"label": "Will you attend the Derby Hat Event?",
+				"label": "Will you attend the Derby Party?",
 				"type": "select",
 				"range": [
 					"Yes",
 					"No"
 				],
 				"required": true,
+			},
+			{
+				"id": "guest",
+				"label": "Will you be bringing a guest?",
+				"type": "select",
+				"range": ["Yes","No"],
+				"required": true,
 				"global": true,
 				"capacity_map": {
-					"Yes": 1,
-					"No": 0
+					"Yes": 2,
+					"No": 1
 				}
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					}
+				]
 			},
 			{
 				"id": "room",
