@@ -10,24 +10,16 @@
 		"start": "2026-04-24 3:00PM PDT",
 		"end": "2026-04-25 8:00PM PDT"
 	},
-	"summary_info": "Scotsman Boutique \u2013 Group A",
+	"summary_info": "Derby Hat Party",
 	"FORM": {
 		"fields": [
-			{
-				"id": "Hotel",
-				"label": "Hotel",
-				"type": "text",
-				"sticky": true,
-				"disabled": true,
-				"hidden": true
+						{
+				"type": "info",
+				"markdown": "# Derby Hat Party"
 			},
 			{
 				"type": "info",
-				"markdown": "# Scotsman Boutique"
-			},
-			{
-				"type": "info",
-				"markdown": "## **April 24th & 25th, 2026**"
+				"markdown": "## **May 1st, 2026**"
 			},
 			{
 				"type": "info",
@@ -35,11 +27,7 @@
 			},
 			{
 				"type": "info",
-				"markdown": "## **Florence & Coos Bay**"
-			},
-			{
-				"type": "info",
-				"markdown": "It's our pleasure to invite our valued Three Rivers guests to our **Scotsman Boutique**!",
+				"markdown": "It's our pleasure to invite our valued Three Rivers guests to our **Derby Hat Party**!",
 				"justify": "center"
 			},
 			{
@@ -48,7 +36,7 @@
 			},
 			{
 				"id": "attend",
-				"label": "Will you attend the Scotsman Boutique?",
+				"label": "Will you attend the Derby Hat Event?",
 				"type": "select",
 				"range": [
 					"Yes",
@@ -60,166 +48,6 @@
 					"Yes": 1,
 					"No": 0
 				}
-			},
-			{
-				"id": "location",
-				"label": "Which location would you like to attend?",
-				"type": "select",
-				"range": [
-					"Florence",
-					"Coos Bay"
-				],
-				"required": true,
-				"conditional": {
-					"field": "attend",
-					"value": "Yes"
-				}
-			},
-			{
-				"id": "day",
-				"label": "What day would you like to attend?",
-				"type": "select",
-				"range": [
-					"Friday, April 24th",
-					"Saturday, April 25th"
-				],
-				"required": true,
-				"conditional": {
-					"field": "attend",
-					"value": "Yes"
-				}
-			},
-			{
-				"id": "FLday1time",
-				"label": "What time would you like to attend?",
-				"type": "select",
-				"count_from": "attend",
-				"range": [
-					"3:00pm",
-					"3:30pm",
-					"4:00pm",
-					"4:30pm",
-					"5:00pm",
-					"5:30pm",
-					"6:00pm",
-					"6:30pm",
-					"7:00pm",
-					"7:30pm"
-				],
-				"required": true,
-				"conditional": [
-					{
-						"field": "attend",
-						"value": "Yes"
-					},
-					{
-						"field": "day",
-						"value": "Friday, April 24th"
-					},
-					{
-						"field": "location",
-						"value": "Florence"
-					}
-				]
-			},
-			{
-				"id": "FLday2time",
-				"label": "What time would you like to attend?",
-				"type": "select",
-				"count_from": "attend",
-				"range": [
-					"3:00pm",
-					"3:30pm",
-					"4:00pm",
-					"4:30pm",
-					"5:00pm",
-					"5:30pm",
-					"6:00pm",
-					"6:30pm",
-					"7:00pm",
-					"7:30pm"
-				],
-				"required": true,
-				"conditional": [
-					{
-						"field": "attend",
-						"value": "Yes"
-					},
-					{
-						"field": "day",
-						"value": "Saturday, April 25th"
-					},
-					{
-						"field": "location",
-						"value": "Florence"
-					}
-				]
-			},
-			{
-				"id": "CBday1time",
-				"label": "What time would you like to attend?",
-				"type": "select",
-				"count_from": "attend",
-				"range": [
-					"3:00pm",
-					"3:30pm",
-					"4:00pm",
-					"4:30pm",
-					"5:00pm",
-					"5:30pm",
-					"6:00pm",
-					"6:30pm",
-					"7:00pm",
-					"7:30pm"
-				],
-				"required": true,
-				"conditional": [
-					{
-						"field": "attend",
-						"value": "Yes"
-					},
-					{
-						"field": "day",
-						"value": "Friday, April 24th"
-					},
-					{
-						"field": "location",
-						"value": "Coos Bay"
-					}
-				]
-			},
-			{
-				"id": "CBday2time",
-				"label": "What time would you like to attend?",
-				"type": "select",
-				"count_from": "attend",
-				"range": [
-					"3:00pm",
-					"3:30pm",
-					"4:00pm",
-					"4:30pm",
-					"5:00pm",
-					"5:30pm",
-					"6:00pm",
-					"6:30pm",
-					"7:00pm",
-					"7:30pm"
-				],
-				"required": true,
-				"conditional": [
-					{
-						"field": "attend",
-						"value": "Yes"
-					},
-					{
-						"field": "day",
-						"value": "Saturday, April 25th"
-					},
-					{
-						"field": "location",
-						"value": "Coos Bay"
-					}
-				]
 			},
 			{
 				"id": "room",
@@ -234,17 +62,6 @@
 					{
 						"field": "attend",
 						"value": "Yes"
-					},
-					{
-						"field": "location",
-						"value": "Florence"
-					},
-					{
-						"field": "day",
-						"values": [
-							"Friday, April 24th",
-							"Saturday, April 25th"
-						]
 					},
 					{
 						"field": "Hotel",
