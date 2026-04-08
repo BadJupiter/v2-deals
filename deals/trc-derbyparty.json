@@ -59,6 +59,7 @@
 				"range": ["Yes","No"],
 				"required": true,
 				"global": true,
+				"limit": 300,
 				"capacity_map": {
 					"Yes": 2,
 					"No": 1
