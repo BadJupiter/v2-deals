@@ -50,7 +50,7 @@
 					"Yes",
 					"No"
 				],
-				"required": true,
+				"required": true
 			},
 			{
 				"id": "guest",
@@ -62,7 +62,7 @@
 				"capacity_map": {
 					"Yes": 2,
 					"No": 1
-				}
+				},
 				"conditional": [
 					{
 						"field": "attend",
