@@ -10,7 +10,7 @@
 		"start": "2026-04-24 3:00PM PDT",
 		"end": "2026-04-25 8:00PM PDT"
 	},
-	"summary_info": "Scotsman Boutique \u2013 Group A",
+	"summary_info": "Scotsman Boutique",
 	"FORM": {
 		"fields": [
 			{
@@ -94,17 +94,48 @@
 				"label": "What time would you like to attend?",
 				"type": "select",
 				"count_from": "attend",
+				"limit": 250,
 				"range": [
-					"3:00pm",
-					"3:30pm",
-					"4:00pm",
-					"4:30pm",
-					"5:00pm",
-					"5:30pm",
-					"6:00pm",
-					"6:30pm",
-					"7:00pm",
-					"7:30pm"
+					{
+						"value": "3:00pm",
+						"limit": 25
+					},
+					{
+						"value": "3:30pm",
+						"limit": 25
+					},
+					{
+						"value": "4:00pm",
+						"limit": 2
+					},
+					{
+						"value": "4:30pm",
+						"limit": 25
+					},
+					{
+						"value": "5:00pm",
+						"limit": 25
+					},
+					{
+						"value": "5:30pm",
+						"limit": 25
+					},
+					{
+						"value": "6:00pm",
+						"limit": 25
+					},
+					{
+						"value": "6:30pm",
+						"limit": 25
+					},
+					{
+						"value": "7:00pm",
+						"limit": 25
+					},
+					{
+						"value": "7:30pm",
+						"limit": 25
+					}
 				],
 				"required": true,
 				"conditional": [
@@ -126,18 +157,49 @@
 				"id": "FLday2time",
 				"label": "What time would you like to attend?",
 				"type": "select",
-				"count_from": "attend",
+"count_from": "attend",
+				"limit": 250,
 				"range": [
-					"3:00pm",
-					"3:30pm",
-					"4:00pm",
-					"4:30pm",
-					"5:00pm",
-					"5:30pm",
-					"6:00pm",
-					"6:30pm",
-					"7:00pm",
-					"7:30pm"
+					{
+						"value": "3:00pm",
+						"limit": 25
+					},
+					{
+						"value": "3:30pm",
+						"limit": 25
+					},
+					{
+						"value": "4:00pm",
+						"limit": 2
+					},
+					{
+						"value": "4:30pm",
+						"limit": 25
+					},
+					{
+						"value": "5:00pm",
+						"limit": 25
+					},
+					{
+						"value": "5:30pm",
+						"limit": 25
+					},
+					{
+						"value": "6:00pm",
+						"limit": 25
+					},
+					{
+						"value": "6:30pm",
+						"limit": 25
+					},
+					{
+						"value": "7:00pm",
+						"limit": 25
+					},
+					{
+						"value": "7:30pm",
+						"limit": 25
+					}
 				],
 				"required": true,
 				"conditional": [
@@ -160,17 +222,48 @@
 				"label": "What time would you like to attend?",
 				"type": "select",
 				"count_from": "attend",
+				"limit": 250,
 				"range": [
-					"3:00pm",
-					"3:30pm",
-					"4:00pm",
-					"4:30pm",
-					"5:00pm",
-					"5:30pm",
-					"6:00pm",
-					"6:30pm",
-					"7:00pm",
-					"7:30pm"
+					{
+						"value": "3:00pm",
+						"limit": 25
+					},
+					{
+						"value": "3:30pm",
+						"limit": 25
+					},
+					{
+						"value": "4:00pm",
+						"limit": 2
+					},
+					{
+						"value": "4:30pm",
+						"limit": 25
+					},
+					{
+						"value": "5:00pm",
+						"limit": 25
+					},
+					{
+						"value": "5:30pm",
+						"limit": 25
+					},
+					{
+						"value": "6:00pm",
+						"limit": 25
+					},
+					{
+						"value": "6:30pm",
+						"limit": 25
+					},
+					{
+						"value": "7:00pm",
+						"limit": 25
+					},
+					{
+						"value": "7:30pm",
+						"limit": 25
+					}
 				],
 				"required": true,
 				"conditional": [
@@ -193,17 +286,48 @@
 				"label": "What time would you like to attend?",
 				"type": "select",
 				"count_from": "attend",
+				"limit": 250,
 				"range": [
-					"3:00pm",
-					"3:30pm",
-					"4:00pm",
-					"4:30pm",
-					"5:00pm",
-					"5:30pm",
-					"6:00pm",
-					"6:30pm",
-					"7:00pm",
-					"7:30pm"
+					{
+						"value": "3:00pm",
+						"limit": 25
+					},
+					{
+						"value": "3:30pm",
+						"limit": 25
+					},
+					{
+						"value": "4:00pm",
+						"limit": 2
+					},
+					{
+						"value": "4:30pm",
+						"limit": 25
+					},
+					{
+						"value": "5:00pm",
+						"limit": 25
+					},
+					{
+						"value": "5:30pm",
+						"limit": 25
+					},
+					{
+						"value": "6:00pm",
+						"limit": 25
+					},
+					{
+						"value": "6:30pm",
+						"limit": 25
+					},
+					{
+						"value": "7:00pm",
+						"limit": 25
+					},
+					{
+						"value": "7:30pm",
+						"limit": 25
+					}
 				],
 				"required": true,
 				"conditional": [
