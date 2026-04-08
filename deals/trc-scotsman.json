@@ -106,7 +106,7 @@
 					},
 					{
 						"value": "4:00pm",
-						"limit": 2
+						"limit": 25
 					},
 					{
 						"value": "4:30pm",
@@ -170,7 +170,7 @@
 					},
 					{
 						"value": "4:00pm",
-						"limit": 2
+						"limit": 25
 					},
 					{
 						"value": "4:30pm",
@@ -234,7 +234,7 @@
 					},
 					{
 						"value": "4:00pm",
-						"limit": 2
+						"limit": 25
 					},
 					{
 						"value": "4:30pm",
@@ -298,7 +298,7 @@
 					},
 					{
 						"value": "4:00pm",
-						"limit": 2
+						"limit": 25
 					},
 					{
 						"value": "4:30pm",
