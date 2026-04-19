@@ -1,0 +1,64 @@
+{
+	"biz_id": "ips",
+	"check_in": true,
+	"auth_required": true,
+
+	"FORM": {
+		"fields": [
+			{
+				"id": "qr",
+				"type": "text",
+				"hidden": true,
+				"required": false
+			},
+			{
+				"type": "info",
+				"markdown": "# Service Check-In"
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"id": "service_reason",
+				"label": "Service Reason:",
+				"type": "select",
+				"required": true,
+				"range": [
+					"Scheduled Maintenance",
+					"Emergency Repair",
+					"Inspection",
+					"Load Test",
+					"Other"
+				]
+			},
+			{
+				"id": "unit_condition",
+				"label": "Unit Condition:",
+				"type": "select",
+				"required": true,
+				"range": [
+					"Operational",
+					"Maintenance Needed",
+					"Repair Needed",
+					"In Service"
+				]
+			},
+			{
+				"id": "notes",
+				"label": "Notes:",
+				"type": "textarea",
+				"placeholder": "Any additional observations or details...",
+				"required": false
+			}
+		],
+		"submit": {
+			"label": "Submit Check-In"
+		}
+	},
+
+	"MAIN": {
+		"title": "Check-In Recorded",
+		"body_md": "Thank you! Your check-in has been submitted successfully."
+	}
+}
