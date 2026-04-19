@@ -1,28 +1,33 @@
 {
-	"biz_id": "kickapoo",
+	"biz_id": "threerivers",
 	"check_in": true,
 	"auth_required": true,
 	"error_auth": {
 		"title": "Woops!",
 		"content": "Can't play if you ain't authenticated!"
 	},
-
 	"active": {
-		"start": "2025-11-26 10:00AM CDT",
-		"end": "2025-12-23 11:59PM CDT"
+		"start": "2026-05-01 3:00PM PDT",
+		"end": "2026-05-01 8:00PM PDT"
 	},
-	
-	"summary_info": "Employee Party",
-	
+	"summary_info": "Derby Party",
 	"FORM": {
 		"fields": [
 			{
-				"type": "info",
-				"markdown": "# Employee End of Year Party"
+				"id": "Hotel",
+				"label": "Hotel",
+				"type": "text",
+				"sticky": true,
+				"disabled": true,
+				"hidden": true
 			},
 			{
 				"type": "info",
-				"markdown": "## **December 22nd or 23rd**"	
+				"markdown": "# Derby Party"
+			},
+			{
+				"type": "info",
+				"markdown": "## **May 2nd, 2026**"
 			},
 			{
 				"type": "info",
@@ -30,14 +35,21 @@
 			},
 			{
 				"type": "info",
-				"justify": "center",
-				"markdown": " \n\nWe appreciate you! You and a guest are invited to our **Employee End of Year Party**."
+				"markdown": "It's our pleasure to invite our valued Three Rivers guests to our **Derby Party**!",
+				"justify": "center"
+			},
+			{
+				"type": "info",
+				"markdown": "---"
 			},
 			{
 				"id": "attend",
-				"label": "Will you be attending?",
+				"label": "Will you attend the Derby Party?",
 				"type": "select",
-				"range": ["Yes","No"],
+				"range": [
+					"Yes",
+					"No"
+				],
 				"required": true
 			},
 			{
@@ -47,38 +59,37 @@
 				"range": ["Yes","No"],
 				"required": true,
 				"global": true,
-  				"capacity_map": {
-  					"Yes": 2,
-    				"No": 1
-  				},
+				"limit": 300,
+				"capacity_map": {
+					"Yes": 2,
+					"No": 1
+				},
 				"conditional": [
 					{
 						"field": "attend",
 						"value": "Yes"
 					}
-				]				
+				]
 			},
 			{
-				"id": "day",
-				"label": "Select which day you'd like to attend:",
+				"id": "room",
+				"label": "Would you like your host to contact you about accommodations?",
 				"type": "select",
-				"count_from": "guest",
-				"limit": 920,
 				"range": [
-					{
-						"value": "Monday, December 22",
-						"limit": 460
-					},
-					{
-						"value": "Tuesday, December 23",
-						"limit": 460
-					}
-				],	
+					"Yes",
+					"No"
+				],
 				"required": true,
 				"conditional": [
 					{
 						"field": "attend",
 						"value": "Yes"
+					},
+					{
+						"field": "Hotel",
+						"values": [
+							"Y"
+						]
 					}
 				]
 			},
@@ -88,7 +99,7 @@
 			},
 			{
 				"type": "fields_group",
-				"bgcolor": "#E3D7B7",
+				"bgcolor": "#E6DCCB",
 				"fields": [
 					{
 						"id": "z_FIRSTNAME",
@@ -106,13 +117,22 @@
 					},
 					{
 						"id": "PlayerID",
-						"label": "Club #:",
+						"label": "Player ID:",
 						"type": "text",
 						"sticky": true,
-						"hidden": true}
+						"disabled": true
+					},
+					{
+						"id": "z_EMAIL",
+						"label": "Email:",
+						"type": "text",
+						"sticky": true,
+						"disabled": false
+					}
 				]
 			}
 		],
+		"title": "Three Rivers Casino Resort",
 		"limits": {
 			"most_recent_only": true,
 			"most_recent_key": "PlayerID"
@@ -120,10 +140,9 @@
 		"submit": {
 			"label": "Submit RSVP",
 			"color": "#20363d"
-		
 		}
 	},
 	"MAIN": {
-		"body_md": "# We've received your request \n\nIf you need to make any changes to your RSVP just scan your invitation again. If you need any help please get in touch. We hope to see you soon at **Kickapoo Casino**."
+		"body_md": "# Your reservation is confirmed!\n\nThank you for your RSVP. If you need to make any changes just scan your invitation again. We look forward to seeing you at **Three Rivers Casino Resort**!"
 	}
 }

@@ -1,0 +1,114 @@
+{
+	"biz_id": "colusacasino",
+	"check_in": true,
+	"auth_required": true,
+	"error_auth": {
+		"title": "Woops!",
+		"content": "Can't play if you ain't authenticated!"
+	},
+
+	"active": {
+		"start": "2026-05-18 06:00AM PDT",
+		"end": "2026-05-29 11:59PM PDT"
+	},
+
+	"META": {
+		"name": "High Stakes Bingo",
+		"description": "15 games for a total of $15,000! Free for you and a guest!",
+		"dt": "May 29th",
+		"event_start_dt": "2026-05-29 12:00PM PDT"
+	},
+
+	
+	"FORM": {
+			"fields": [
+			{
+				"type": "info",
+				"markdown": "# Colusa Casino Resort"
+			},
+			{
+				"type": "info",
+				"markdown": "# High Stakes Bingo"
+			},
+			{
+				"type": "info",
+				"markdown": "## **Friday, May 29th**"	
+			},
+			{
+				"type": "info",
+				"justify": "center",
+				"markdown": "Onsite check-in begins at 6:00 PM"
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "info",
+				"justify": "center",
+				"markdown": " \n\nYou are invited to our exclusive **High Stakes Bingo Event**."
+			},
+			{
+				"id": "attend",
+				"label": "Are you able to attend?",
+				"type": "select",
+				"range": ["Yes","No"],
+				"required": true
+			},
+			{
+				"id": "guests",
+				"label": "I am confirming:",
+				"type": "select",
+				"range": ["Myself","Me and a guest"],
+				"required": true,
+				"conditional": {
+					"field": "attend",
+					"value": "Yes"
+				}
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "fields_group",
+				"bgcolor": "#E8C97B",
+				"fields": [
+					{
+						"id": "z_FIRSTNAME",
+						"label": "First Name:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					},
+					{
+						"id": "z_LASTNAME",
+						"label": "Last Name:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					},
+					{
+						"id": "PlayerID",
+						"label": "Club #:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					}
+				]
+			}
+		],
+		"limits": {
+			"most_recent_only": true,
+			"most_recent_key": "PlayerID"
+		},
+		"submit": {
+			"label": "Submit RSVP",
+			"color": "#20363d"
+		
+		}
+	},
+	"MAIN": {
+		"body_md": "# Your reservation is confirmed \n\nIf you need to make any changes just scan your invitation again. If you need any help please get in touch. We hope to see you soon at **Colusa Casino**."
+	}
+}

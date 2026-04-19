@@ -1,11 +1,9 @@
 {
-	"biz_id": "threerivers",
-	"deal_tokens": [
-		"trc-easter2", "trc-easter2-thu"
-	],
-	"most_recent_only": true,
-	"most_recent_key": "Player ID",
-	"as_xlsx": false,
+	"biz_id": "colusacasino",
+	"deal_tokens": [ "aaa-sourcetest" ],
+	"most_recent_only": false, 
+	"most_recent_key": "Player ID", 
+	
 	"COLUMNS": [
 		{
 			"column_name": "Row ID",
@@ -24,6 +22,10 @@
 			"attrib": "_deal"
 		},
 		{
+			"column_name": "Source",
+			"attrib": "source"
+		},
+		{
 			"column_name": "Player ID",
 			"attrib": "PlayerID"
 		},
@@ -36,28 +38,8 @@
 			"attrib": "z_FIRSTNAME"
 		},
 		{
-			"column_name": "Email",
-			"attrib": "z_EMAIL"
-		},
-		{
 			"column_name": "Attend",
 			"attrib": "attend"
-		},
-		{
-			"column_name": "Location",
-			"attrib": "location"
-		},
-		{
-			"column_name": "FL Day",
-			"attrib": "FLday"
-		},
-		{
-			"column_name": "CB Day",
-			"attrib": "CBday"
-		},
-		{
-			"column_name": "Room",
-			"attrib": "room"
 		}
 	]
 }

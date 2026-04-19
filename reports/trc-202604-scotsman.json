@@ -1,7 +1,7 @@
 {
 	"biz_id": "threerivers",
 	"deal_tokens": [
-		"trc-easter2", "trc-easter2-thu"
+		"trc-scotsman"
 	],
 	"most_recent_only": true,
 	"most_recent_key": "Player ID",
@@ -48,12 +48,24 @@
 			"attrib": "location"
 		},
 		{
-			"column_name": "FL Day",
-			"attrib": "FLday"
+			"column_name": "Day",
+			"attrib": "day"
 		},
 		{
-			"column_name": "CB Day",
-			"attrib": "CBday"
+			"column_name": "FL Fri Time",
+			"attrib": "FLday1time"
+		},
+		{
+			"column_name": "FL Sat Time",
+			"attrib": "FLday2time"
+		},
+		{
+			"column_name": "CB Fri Time",
+			"attrib": "CBday1time"
+		},
+		{
+			"column_name": "CB Sat Time",
+			"attrib": "CBday2time"
 		},
 		{
 			"column_name": "Room",

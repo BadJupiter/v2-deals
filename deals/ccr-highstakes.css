@@ -13,11 +13,11 @@ body, html {
 	font-family: "Raleway", sans-serif;
 	font-weight: 400;
 	font-style: normal;
-
+	
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: #F2F7F5;
+	background-color: #F5EFE3;
 }
 h1 {
 	font-family: 'Raleway', sans-serif;

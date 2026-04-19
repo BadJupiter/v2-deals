@@ -1,11 +1,11 @@
 {
-	"biz_id": "threerivers",
-	"deal_tokens": [
-		"trc-easter2", "trc-easter2-thu"
-	],
-	"most_recent_only": true,
-	"most_recent_key": "Player ID",
-	"as_xlsx": false,
+	"biz_id": "colusacasino",
+	"deal_tokens": [ "ccr-highstakes" ],
+	"most_recent_only": true, # omit or set to false for all rows
+	"most_recent_key": "Player ID", # needs to be the column_name
+	
+	"as_xlsx": false, # omit or set to false for default (CSV)
+
 	"COLUMNS": [
 		{
 			"column_name": "Row ID",
@@ -24,6 +24,10 @@
 			"attrib": "_deal"
 		},
 		{
+			"column_name": "Source",
+			"attrib": "source"
+		},
+		{
 			"column_name": "Player ID",
 			"attrib": "PlayerID"
 		},
@@ -36,28 +40,12 @@
 			"attrib": "z_FIRSTNAME"
 		},
 		{
-			"column_name": "Email",
-			"attrib": "z_EMAIL"
-		},
-		{
 			"column_name": "Attend",
 			"attrib": "attend"
 		},
 		{
-			"column_name": "Location",
-			"attrib": "location"
-		},
-		{
-			"column_name": "FL Day",
-			"attrib": "FLday"
-		},
-		{
-			"column_name": "CB Day",
-			"attrib": "CBday"
-		},
-		{
-			"column_name": "Room",
-			"attrib": "room"
+			"column_name": "Guests",
+			"attrib": "guests"
 		}
 	]
 }

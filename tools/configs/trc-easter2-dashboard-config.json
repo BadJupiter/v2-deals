@@ -1,0 +1,138 @@
+{
+  "_comment": "Dashboard config for Three Rivers Casino Resort – Easter 2026 (Groups A & B combined)",
+
+  "report_id": "trc-202604-easter2",
+  "event_name": "Easter Basket Reveal",
+  "timezone": "America/Los_Angeles",
+
+  "output_sheet_name": "RSVPs",
+  "output_header_row": 9,
+  "output_data_start_row": 10,
+  "last_updated_cell": "N2",
+  "last_updated_format": "MMM d, yyyy h:mm a",
+  "last_updated_prefix": "Last updated:",
+
+  "sort_field": "LastName",
+  "sort_direction": "ASC",
+  "test_prod": "test",
+
+  "locations": [
+    {
+      "location_id": "Florence",
+      "settings_sheet_name": "Settings",
+      "raw_sheet_name": "Raw_Florence",
+      "location_filter": "Florence",
+      "invite_num": 0
+    },
+    {
+      "location_id": "Coos Bay",
+      "settings_sheet_name": "Settings",
+      "raw_sheet_name": "Raw_CoosBy",
+      "location_filter": "Coos Bay",
+      "invite_num": 0
+    }
+  ],
+
+  "display_map": [
+    {
+      "field": "RowID",
+      "csv_pos": 0,
+      "data_type": "text",
+      "display": "A",
+      "header": "RowID"
+    },
+    {
+      "field": "Timestamp",
+      "csv_pos": 1,
+      "data_type": "epoch",
+      "display": "B",
+      "header": "Date",
+      "format": "MM/dd/yy"
+    },
+    {
+      "field": "Mobile",
+      "csv_pos": 2,
+      "data_type": "phone",
+      "display": "C",
+      "header": "Mobile",
+      "format": "999-999-9999"
+    },
+    {
+      "field": "DealID",
+      "csv_pos": 3,
+      "data_type": "text",
+      "display": "not used"
+    },
+    {
+      "field": "PlayerID",
+      "csv_pos": 4,
+      "data_type": "text",
+      "display": "D",
+      "header": "Player ID"
+    },
+    {
+      "field": "LastName",
+      "csv_pos": 5,
+      "data_type": "text",
+      "display": "E",
+      "header": "Last Name"
+    },
+    {
+      "field": "FirstName",
+      "csv_pos": 6,
+      "data_type": "text",
+      "display": "F",
+      "header": "First Name"
+    },
+    {
+      "field": "Attend",
+      "csv_pos": 8,
+      "data_type": "text",
+      "display": "G",
+      "header": "Attend"
+    },
+    {
+      "field": "Location",
+      "csv_pos": 9,
+      "data_type": "text",
+      "display": "H",
+      "header": "Location"
+    },
+    {
+      "_comment": "FLDay: shown as Day for Florence dashboard; not used for Coos Bay",
+      "field": "FLDay",
+      "csv_pos": 10,
+      "data_type": "text",
+      "display": { "Florence": "I", "Coos Bay": "not used" },
+      "header": "Day",
+      "transform": "Friday, April 3rd=Fri||Saturday, April 4th=Sat",
+      "default": "--"
+    },
+    {
+      "_comment": "CBDay: shown as Day for Coos Bay dashboard; not used for Florence",
+      "field": "CBDay",
+      "csv_pos": 11,
+      "data_type": "text",
+      "display": { "Florence": "not used", "Coos Bay": "I" },
+      "header": "Day",
+      "transform": "Friday, April 3rd=Fri||Saturday, April 4th=Sat",
+      "default": "--"
+    },
+    {
+      "_comment": "Room: hotel question answered by Florence-eligible guests only",
+      "field": "Room",
+      "csv_pos": 12,
+      "data_type": "text",
+      "display": { "Florence": "J", "Coos Bay": "not used" },
+      "header": "Room",
+      "default": "--"
+    },
+    {
+      "field": "Email",
+      "csv_pos": 7,
+      "data_type": "text",
+      "display": "K",
+      "header": "Email"
+    }
+  ]
+}
