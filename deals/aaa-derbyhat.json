@@ -46,17 +46,17 @@
 				"id": "attend",
 				"label": "Will you attend the Derby Hat Event?",
 				"type": "select",
-				"range": [
-					"Yes",
-					"No"
-				],
-				"required": true,
-				"global": true,
 				"limit": 300,
-				"capacity_map": {
-					"Yes": 1,
-					"No": 0
-				}
+				"range": [
+					{
+						"value": "No",
+						"count": 0
+					},
+					{
+						"value": "Yes",
+						"count": 1
+					}
+				]
 			},
 			{
 				"id": "room",
