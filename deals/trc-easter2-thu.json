@@ -7,19 +7,19 @@
 		"content": "Can't play if you ain't authenticated!"
 	},
 	"active": {
-		"start": "2026-04-02 3:00PM PDT",
-		"end": "2026-04-02 8:00PM PDT"
+		"start": "2026-05-25 3:00PM PDT",
+		"end": "2026-05-25 8:00PM PDT"
 	},
-	"summary_info": "Easter Egg Gift \u2013 Group B",
+	"summary_info": "Ninja Slushi Giveaway",
 	"FORM": {
 		"fields": [
 			{
 				"type": "info",
-				"markdown": "# Easter Egg Gift"
+				"markdown": "# Ninja Slushi Giveaway"
 			},
 			{
 				"type": "info",
-				"markdown": "## **Thursday, April 2nd, 2026**"
+				"markdown": "## **Monday, May 25th, 2026**"
 			},
 			{
 				"type": "info",
@@ -35,12 +35,12 @@
 			},
 			{
 				"type": "info",
-				"markdown": "It's our pleasure to invite our valued Three Rivers guests to our **Easter Egg Gift** event!",
+				"markdown": "It's our pleasure to invite our valued Three Rivers guests to our **Ninja Slushi Giveaway** event!",
 				"justify": "center"
 			},
 			{
 				"id": "attend",
-				"label": "Would you like to reserve an Easter Egg Gift?",
+				"label": "Would you like to reserve a Ninja Slushi for pickup on Monday, May 25th?",
 				"type": "select",
 				"range": [
 					"Yes",
@@ -55,31 +55,23 @@
 			},
 			{
 				"id": "location",
-				"label": "Where would you like to pick up your Easter Egg Gift?",
+				"label": "Where would you like to pick-up?",
 				"type": "select",
 				"count_from": "attend",
 				"range": [
 					{
 						"value": "Florence",
-						"limit": 286
+						"limit": 175
 					},
 					{
 						"value": "Coos Bay",
-						"limit": 154
+						"limit": 25
 					}
 				],
 				"required": true,
 				"conditional": {
 					"field": "attend",
 					"value": "Yes"
-				}
-			},
-			{
-				"type": "info",
-				"markdown": "**NOTE:** If you pick up at Coos Bay, there will be no additional prizes available. You can contact your host about transportation if you would prefer to pick up in Florence.",
-				"conditional": {
-					"field": "location",
-					"value": "Coos Bay"
 				}
 			},
 			{
@@ -132,6 +124,6 @@
 		}
 	},
 	"MAIN": {
-		"body_md": "# Your Easter Egg Gift is reserved! \n\nThank you for your RSVP. If you need to make any changes just scan your invitation again. We look forward to seeing you at **Three Rivers Casino Resort**!"
+		"body_md": "# Your Ninja Slushi is reserved! \n\nThank you for your RSVP. If you need to make any changes just scan your invitation again. We look forward to seeing you at **Three Rivers Casino Resort**!"
 	}
 }
