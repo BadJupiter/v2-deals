@@ -46,30 +46,31 @@
 				"id": "attend",
 				"label": "Will you attend the Derby Party?",
 				"type": "select",
-				"range": [
-					"Yes",
-					"No"
-				],
+				"range": ["Yes","No"],
 				"required": true
 			},
 			{
 				"id": "guest",
 				"label": "Will you be bringing a guest?",
 				"type": "select",
-				"range": ["Yes","No"],
-				"required": true,
-				"global": true,
 				"limit": 300,
-				"capacity_map": {
-					"Yes": 2,
-					"No": 1
-				},
+				"range": [
+					{
+						"value": "No",
+						"count": 1
+					},
+					{
+						"value": "Yes",
+						"count": 2
+					}
+				],
+				"required": true,
 				"conditional": [
 					{
 						"field": "attend",
 						"value": "Yes"
 					}
-				]
+				]				
 			},
 			{
 				"id": "room",
