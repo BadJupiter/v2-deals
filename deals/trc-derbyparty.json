@@ -53,7 +53,7 @@
 				"id": "guest",
 				"label": "Will you be bringing a guest?",
 				"type": "select",
-				"limit": 400,
+				"limit": 450,
 				"range": [
 					{
 						"value": "No",
