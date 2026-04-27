@@ -68,47 +68,47 @@
 				"label": "What time would you like to attend?",
 				"type": "select",
 				"count_from": "attend",
-				"limit": 1250,
+				"limit": 250,
 				"range": [
 					{
 						"value": "3:00pm",
-						"limit": 250
+						"limit": 25
 					},
 					{
 						"value": "3:30pm",
-						"limit": 250
+						"limit": 25
 					},
 					{
 						"value": "4:00pm",
-						"limit": 250
+						"limit": 25
 					},
 					{
 						"value": "4:30pm",
-						"limit": 250
+						"limit": 25
 					},
 					{
 						"value": "5:00pm",
-						"limit": 250
+						"limit": 25
 					},
 					{
 						"value": "5:30pm",
-						"limit": 250
+						"limit": 25
 					},
 					{
 						"value": "6:00pm",
-						"limit": 250
+						"limit": 25
 					},
 					{
 						"value": "6:30pm",
-						"limit": 250
+						"limit": 25
 					},
 					{
 						"value": "7:00pm",
-						"limit": 250
+						"limit": 25
 					},
 					{
 						"value": "7:30pm",
-						"limit": 250
+						"limit": 25
 					}
 				],
 				"required": true,
@@ -128,47 +128,47 @@
 				"label": "What time would you like to attend?",
 				"type": "select",
 				"count_from": "attend",
-				"limit": 1250,
+				"limit": 250,
 				"range": [
 					{
 						"value": "3:00pm",
-						"limit": 250
+						"limit": 25
 					},
 					{
 						"value": "3:30pm",
-						"limit": 250
+						"limit": 25
 					},
 					{
 						"value": "4:00pm",
-						"limit": 250
+						"limit": 25
 					},
 					{
 						"value": "4:30pm",
-						"limit": 250
+						"limit": 25
 					},
 					{
 						"value": "5:00pm",
-						"limit": 250
+						"limit": 25
 					},
 					{
 						"value": "5:30pm",
-						"limit": 250
+						"limit": 25
 					},
 					{
 						"value": "6:00pm",
-						"limit": 250
+						"limit": 25
 					},
 					{
 						"value": "6:30pm",
-						"limit": 250
+						"limit": 25
 					},
 					{
 						"value": "7:00pm",
-						"limit": 250
+						"limit": 25
 					},
 					{
 						"value": "7:30pm",
-						"limit": 250
+						"limit": 25
 					}
 				],
 				"required": true,
