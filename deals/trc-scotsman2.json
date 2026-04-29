@@ -7,8 +7,8 @@
 		"content": "Can't play if you ain't authenticated!"
 	},
 	"active": {
-		"start": "2026-04-24 3:00PM PDT",
-		"end": "2026-04-25 8:00PM PDT"
+		"start": "2026-05-29 3:00PM PDT",
+		"end": "2026-05-30 8:00PM PDT"
 	},
 	"summary_info": "Scotsman Boutique",
 	"FORM": {
@@ -27,7 +27,7 @@
 			},
 			{
 				"type": "info",
-				"markdown": "## **April 24th & 25th, 2026**"
+				"markdown": "## **May 29th & 30th, 2026**"
 			},
 			{
 				"type": "info",
@@ -80,8 +80,8 @@
 				"label": "What day would you like to attend?",
 				"type": "select",
 				"range": [
-					"Friday, April 24th",
-					"Saturday, April 25th"
+					"Friday, May 29th",
+					"Saturday, May 30th"
 				],
 				"required": true,
 				"conditional": {
@@ -145,7 +145,7 @@
 					},
 					{
 						"field": "day",
-						"value": "Friday, April 24th"
+						"value": "Friday, May 29th"
 					},
 					{
 						"field": "location",
@@ -209,7 +209,7 @@
 					},
 					{
 						"field": "day",
-						"value": "Saturday, April 25th"
+						"value": "Saturday, May 30th"
 					},
 					{
 						"field": "location",
@@ -273,7 +273,7 @@
 					},
 					{
 						"field": "day",
-						"value": "Friday, April 24th"
+						"value": "Friday, May 29th"
 					},
 					{
 						"field": "location",
@@ -337,7 +337,7 @@
 					},
 					{
 						"field": "day",
-						"value": "Saturday, April 25th"
+						"value": "Saturday, May 30th"
 					},
 					{
 						"field": "location",
@@ -366,8 +366,8 @@
 					{
 						"field": "day",
 						"values": [
-							"Friday, April 24th",
-							"Saturday, April 25th"
+							"Friday, May 29th",
+							"Saturday, May 30th"
 						]
 					},
 					{
