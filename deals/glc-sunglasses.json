@@ -14,7 +14,7 @@
 
 	"META": {
 		"name": "Sunglasses Gift Event",
-		"description": "VIP Exclusive -  Sunglasses!",
+		"description": "VIP Exclusive - Sunglasses!",
 		"dt": "May 25th"
 	},
 
@@ -117,7 +117,7 @@
 			},
 			{
 				"type": "fields_group",
-				"bgcolor": "#dbc8b5",
+				"bgcolor": "#DCE7EC",
 				"fields": [
 					{
 						"id": "PlayerID",
