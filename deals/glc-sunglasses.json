@@ -8,14 +8,14 @@
 	},
 
 	"active": {
-		"start": "2025-11-22 10:00AM CDT",
-		"end": "2025-12-20 11:59PM CDT"
+		"start": "2025-05-25 10:00AM CDT",
+		"end": "2025-05-25 11:59PM CDT"
 	},
 
 	"META": {
-		"name": "Fragrance Boutique",
-		"description": "VIP Exclusive -  Fragrances!",
-		"dt": "February 6th"
+		"name": "Sunglasses Gift Event",
+		"description": "VIP Exclusive -  Sunglasses!",
+		"dt": "May 25th"
 	},
 
 	
@@ -27,11 +27,11 @@
 			},
 			{
 				"type": "info",
-				"markdown": "# Fragrance Boutique"
+				"markdown": "# Sunglasses Gift Event"
 			},
 			{
 				"type": "info",
-				"markdown": "## **Friday, February 6th**"	
+				"markdown": "## **Monday, May 25th**"	
 			},
 			{
 				"type": "info",
@@ -40,65 +40,65 @@
 			{
 				"type": "info",
 				"justify": "center",
-				"markdown": " \n\nYou are invited to our exclusive **Fragrance Boutique**."
+				"markdown": " \n\nYou are invited to our exclusive **Sunglasses Gift Event**."
 			},
 			{
 				"id": "attend",
-				"label": "Will you be attending the Grand Lake Casino Fragrance Boutique?",
+				"label": "Will you be attending the Sunglasses Gift Event on Monday, May 25th?",
 				"type": "select",
 				"range": ["Yes","No"],
 				"required": true
 			},
 			{
 				"id": "time",
-				"label": "What time would you like to visit the Boutique?",
+				"label": "What time would you like to attend?",
 				"type": "select",
-				"limit": 1100,
+				"limit": 225,
 				"range": [
+					{
+						"value": "Noon",
+						"count": 1,
+						"limit": 25
+					},
+					{
+						"value": "12:30pm",
+						"count": 1,
+						"limit": 25
+					},
+					{
+						"value": "1:00pm",
+						"count": 1,
+						"limit": 25
+					},
+					{
+						"value": "1:30pm",
+						"count": 1,
+						"limit": 25
+					},
+					{
+						"value": "2:00pm",
+						"count": 1,
+						"limit": 25
+					},
+										{
+						"value": "2:30pm",
+						"count": 1,
+						"limit": 25
+					},
+					{
+						"value": "3:00pm",
+						"count": 1,
+						"limit": 25
+					},
+					{
+						"value": "3:30pm",
+						"count": 1,
+						"limit": 25
+					},
 					{
 						"value": "4:00pm",
 						"count": 1,
-						"limit": 100
-					},
-					{
-						"value": "4:30pm",
-						"count": 1,
-						"limit": 100
-					},
-					{
-						"value": "5:00pm",
-						"count": 1,
-						"limit": 100
-					},
-					{
-						"value": "5:30pm",
-						"count": 1,
-						"limit": 100
-					},
-					{
-						"value": "6:00pm",
-						"count": 1,
-						"limit": 100
-					},
-					{
-						"value": "6:30pm",
-						"count": 1,
-						"limit": 100
-					},
-					{
-						"value": "7:00pm",
-						"count": 1,
-						"limit": 100
-					},
-					{
-						"value": "7:30pm",
-						"count": 1,
-						"limit": 100
-					},
-					{
-						"value": "8:00pm",
-						"count": 1,
-						"limit": 100
+						"limit": 25
 					}
 				],	
 				
@@ -154,6 +154,6 @@
 		}
 	},
 	"MAIN": {
-		"body_md": "# Your reservation is confirmed. \n\nRemember to swipe at the kiosk when you arrive at the Casino for your entry ticket. Then present your ticket at Venue 655 at your reserved time. \n\nIf you need to make any changes to your reservation, just scan the QR code on your invitation again. If you need any help, please stop by the Players Club at the casino on your next visit. We look forward to seeing you soon!"
+		"body_md": "# Your reservation is confirmed. \n\nIf you need to make any changes to your reservation, just scan the QR code on your invitation again. If you need any help, please stop by the Players Club at the casino on your next visit. We look forward to seeing you soon!"
 	}
 }
