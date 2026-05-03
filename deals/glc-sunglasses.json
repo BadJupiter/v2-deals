@@ -1,0 +1,159 @@
+{
+	"biz_id": "grandlake",
+	"check_in": true,
+	"auth_required": true,
+	"error_auth": {
+		"title": "Woops!",
+		"content": "Can't play if you ain't authenticated!"
+	},
+
+	"active": {
+		"start": "2025-11-22 10:00AM CDT",
+		"end": "2025-12-20 11:59PM CDT"
+	},
+
+	"META": {
+		"name": "Fragrance Boutique",
+		"description": "VIP Exclusive -  Fragrances!",
+		"dt": "February 6th"
+	},
+
+	
+	"FORM": {
+			"fields": [
+			{
+				"type": "info",
+				"markdown": "# Grand Lake Casino"
+			},
+			{
+				"type": "info",
+				"markdown": "# Fragrance Boutique"
+			},
+			{
+				"type": "info",
+				"markdown": "## **Friday, February 6th**"	
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "info",
+				"justify": "center",
+				"markdown": " \n\nYou are invited to our exclusive **Fragrance Boutique**."
+			},
+			{
+				"id": "attend",
+				"label": "Will you be attending the Grand Lake Casino Fragrance Boutique?",
+				"type": "select",
+				"range": ["Yes","No"],
+				"required": true
+			},
+			{
+				"id": "time",
+				"label": "What time would you like to visit the Boutique?",
+				"type": "select",
+				"limit": 1100,
+				"range": [
+					{
+						"value": "4:00pm",
+						"count": 1,
+						"limit": 100
+					},
+					{
+						"value": "4:30pm",
+						"count": 1,
+						"limit": 100
+					},
+					{
+						"value": "5:00pm",
+						"count": 1,
+						"limit": 100
+					},
+					{
+						"value": "5:30pm",
+						"count": 1,
+						"limit": 100
+					},
+					{
+						"value": "6:00pm",
+						"count": 1,
+						"limit": 100
+					},
+					{
+						"value": "6:30pm",
+						"count": 1,
+						"limit": 100
+					},
+					{
+						"value": "7:00pm",
+						"count": 1,
+						"limit": 100
+					},
+					{
+						"value": "7:30pm",
+						"count": 1,
+						"limit": 100
+					},
+					{
+						"value": "8:00pm",
+						"count": 1,
+						"limit": 100
+					}
+				],	
+				
+				
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					}
+				]
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "fields_group",
+				"bgcolor": "#dbc8b5",
+				"fields": [
+					{
+						"id": "PlayerID",
+						"label": "Account Number:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					},
+					{
+						"id": "z_NAME",
+						"label": "Name:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					},
+					{
+						"id": "z_EMAIL",
+						"label": "Email:",
+						"type": "text",
+						"sticky": true,
+						"disabled": false
+					}
+				]
+			}
+		],
+		"limits": {
+			"most_recent_only": true,
+			"most_recent_key": "PlayerID"
+		},
+		"submit": {
+			"label": "Submit RSVP",
+			"color": "#20363d"
+		
+		}
+	},
+	"MAIN": {
+		"body_md": "# Your reservation is confirmed. \n\nRemember to swipe at the kiosk when you arrive at the Casino for your entry ticket. Then present your ticket at Venue 655 at your reserved time. \n\nIf you need to make any changes to your reservation, just scan the QR code on your invitation again. If you need any help, please stop by the Players Club at the casino on your next visit. We look forward to seeing you soon!"
+	}
+}
