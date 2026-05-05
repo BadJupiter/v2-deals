@@ -47,6 +47,10 @@
 			"attrib": "day"
 		},
 		{
+			"column_name": "Time",
+			"attrib": "time"
+		},
+		{
 			"column_name": "Last Name",
 			"attrib": "z_LASTNAME"
 		},
