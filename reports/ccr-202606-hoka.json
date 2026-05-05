@@ -1,6 +1,6 @@
 {
 	"biz_id": "colusacasino",
-	"deal_tokens": [ "ccr-fragrance" ],
+	"deal_tokens": [ "ccr-hoka" ],
 	"most_recent_only": true, # omit or set to false for all rows
 	"most_recent_key": "Player ID", # needs to be the column_name
 	
@@ -29,6 +29,10 @@
 		{
 			"column_name": "Deal ID",
 			"attrib": "_deal"
+		},
+		{
+			"column_name": "Source",
+			"attrib": "source"
 		},
 		{
 			"column_name": "Player ID",
