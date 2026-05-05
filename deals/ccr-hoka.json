@@ -8,15 +8,15 @@
 	},
 
 	"active": {
-		"start": "2026-02-15 06:00AM PDT",
-		"end": "2026-02-28 06:00PM PDT"
+		"start": "2026-06-01 06:00AM PDT",
+		"end": "2026-06-12 06:00PM PDT"
 	},
 
 	"META": {
-		"name": "Exclusive Fragrance Event",
-		"description": "Try out exclusive, luxury fragrance and take home your favorite as a gift from us!",
-		"dt": "February 28th",
-		"event_start_dt": "2026-02-28 12:00PM PDT"
+		"name": "Hoka",
+		"description": "Come in and walk away with a new pair of Hoka Shoes, ABSOLUTELY FREE!",
+		"dt": "June 13th",
+		"event_start_dt": "2026-06-01 12:00PM PDT"
 	},
 
 	
@@ -28,11 +28,11 @@
 			},
 			{
 				"type": "info",
-				"markdown": "# Exclusive Fragrance Event"
+				"markdown": "# Exclusive Hoka Event"
 			},
 			{
 				"type": "info",
-				"markdown": "## **Saturday, February 28th**"	
+				"markdown": "## **Saturday, June 13th**"	
 			},
 			{
 				"type": "info",
@@ -41,24 +41,42 @@
 			{
 				"type": "info",
 				"justify": "center",
-				"markdown": " \n\nYou are invited to our exclusive **Fragrance Event**."
+				"markdown": " \n\nYou are invited to our exclusive **Hoka Event**."
 			},
 			{
 				"id": "attend",
-				"label": "Will you be attending?",
+				"label": "Will you be attending the Hoka Event?",
 				"type": "select",
-				"limit": 500,
+				"range": ["Yes","No"],
+				"required": true
+			},
+			{
+				"id": "time",
+				"label": "What time would you like to attend?",
+				"type": "select",
+				"limit": 200,
 				"range": [
 					{
-						"value": "Yes",
-						"count": 1
+						"value": "12:00pm",
+						"count": 1,
+						"limit": 50
 					},
 					{
-						"value": "No",
-						"count": 0
+						"value": "1:00pm",
+						"count": 1,
+						"limit": 50
+					},
+					{
+						"value": "2:00pm",
+						"count": 1,
+						"limit": 50
+					},
+					{
+						"value": "3:00pm",
+						"count": 1,
+						"limit": 50
 					}
-				],
-				"required": true
+				]
 			},
 			{
 				"type": "info",
