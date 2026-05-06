@@ -40,19 +40,47 @@
 				"markdown": "---"
 			},
 			{
+				"id": "rating",
+				"label": "How was your visit to Saddle West?",
+				"type": "select",
+				"range": ["⭑⭑⭑⭑⭑","⭑⭑⭑⭑","⭑⭑⭑","⭑⭑","⭑"],
+				"required": false
+			},
+			{
+				"id": "highlight",
+				"label": "What made your visit great?",
+				"type": "multi-select",
+				"range": ["Casino floor experience","Hotel room","Food & dining","Staff & service","Overall Atmosphere", "Something else"],
+				"required": false
+				"conditional": {
+					"field": "rating",
+					"values": ["⭑⭑⭑⭑⭑","⭑⭑⭑⭑"]
+				}
+			},		
+			{
+				"id": "fellshort",
+				"label": "What fell short of your expectations?",
+				"type": "multi-select",
+				"range": ["Casino floor experience","Hotel room","Food & dining","Staff & service","Overall Atmosphere", "Something else"],
+				"required": false
+				"conditional": {
+					"field": "rating",
+					"values": ["⭑⭑⭑","⭑⭑","⭑"]
+				}
+			},			
+			
+			
+			
+			
+			
+			{
 				"id": "games",
 				"label": "What games did you play?",
 				"type": "multi-select",
 				"range": ["Slot Machines","Table Games","Video Poker","Bingo","Keno"],
 				"required": false
 			},
-			{
-				"id": "rating",
-				"label": "How was your overall experience?",
-				"type": "select",
-				"range": ["⭑⭑⭑⭑⭑","⭑⭑⭑⭑","⭑⭑⭑","⭑⭑","⭑"],
-				"required": false
-			},
+
 			{
 				"id": "comments",
 				"label": "What would you like us to know?",
