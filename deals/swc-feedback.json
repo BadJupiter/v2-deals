@@ -1,0 +1,128 @@
+{
+	"biz_id": "jupiter",
+	"check_in": true,
+	"auth_required": true,
+	"error_auth": {
+		"title": "Woops!",
+		"content": "Can't play if you ain't authenticated!"
+	},
+	"styling": {
+		"fonts": {
+			"headers": {
+				"family": "Raleway",
+				"weight": 700,
+				"style": "italic"
+			},
+			"body": {
+				"family": "Raleway",
+				"weight": "normal"
+			},
+			"formlabels": {
+				"family": "Raleway",
+				"weight": "bold"
+			}
+		}
+	},
+	"FORM": {
+		"fields": [
+			{
+				"type": "info",
+				"justify": "center",
+				"markdown": "# Your Voice Matters"
+			},
+			{
+				"type": "info",
+				"justify": "center",
+				"markdown": "## Thanks for spending time with us! We'd love to hear about your visit."
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"id": "games",
+				"label": "What games did you play?",
+				"type": "multi-select",
+				"range": ["Slot Machines","Table Games","Video Poker","Bingo","Keno"],
+				"required": false
+			},
+			{
+				"id": "rating",
+				"label": "How was your overall experience?",
+				"type": "select",
+				"range": ["⭑⭑⭑⭑⭑","⭑⭑⭑⭑","⭑⭑⭑","⭑⭑","⭑"],
+				"required": false
+			},
+			{
+				"id": "comments",
+				"label": "What would you like us to know?",
+				"type": "textarea",
+				"rows": 2,
+				"required": false
+			},
+			{
+				"id": "dining",
+				"label": "Where did you dine?",
+				"type": "multi-select",
+				"range": ["Sterling & Slate","The Terrace Eatery","Pronto Provisions", "Perch & Perk Cafe"],
+				"required": false
+			},
+			{
+				"id": "amenities",
+				"label": "Are there any amenities we should offer?",
+				"type": "textarea",
+				"rows": 2,
+				"required": false
+			},
+			{
+				"id": "team",
+				"label": "Does anyone on our team deserve a shout-out?",
+				"type": "textarea",
+				"rows": 2,
+				"required": false
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "fields_group",
+				"bgcolor": "#dfe1fa",
+				"fields": [
+					{
+						"id": "firstname",
+						"label": "First Name:",
+						"type": "text",
+						"required": true
+					},
+					{
+						"id": "lastname",
+						"label": "Last Name:",
+						"type": "text",
+						"required": true
+					},
+					{
+						"id": "email",
+						"label": "Email:",
+						"type": "email",
+						"required": true
+					}
+				]
+			}
+		],
+		"submit": {
+			"label": "Submit Feedback",
+			"color": "#20363d"
+		},
+		"notify": {
+			"opt_in": "contact",
+			"message": "(from {_mob}) {name} submitted a Celesta Grand feedback survey: {comments}",
+			"mobiles": [
+				"+15039533423"
+			]
+		}
+	},
+	"MAIN": {
+		"body_md": "# Thank You!\n\nWe appreciate your feedback, and thank you for visiting Celesta Grand Casino & Hotel."
+	}
+}
