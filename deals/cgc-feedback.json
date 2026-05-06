@@ -51,7 +51,7 @@
 				"label": "What made your visit great?",
 				"type": "multi-select",
 				"range": ["Casino floor experience","Hotel room","Food & dining","Staff & service","Overall Atmosphere", "Something else"],
-				"required": false
+				"required": false,
 				"conditional": {
 					"field": "rating",
 					"values": ["⭑⭑⭑⭑⭑","⭑⭑⭑⭑"]
@@ -62,7 +62,7 @@
 				"label": "What fell short of your expectations?",
 				"type": "multi-select",
 				"range": ["Casino floor experience","Hotel room","Food & dining","Staff & service","Overall Atmosphere", "Something else"],
-				"required": false
+				"required": false,
 				"conditional": {
 					"field": "rating",
 					"values": ["⭑⭑⭑","⭑⭑","⭑"]
