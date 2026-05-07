@@ -7,15 +7,22 @@
 		"content": "Can't play if you ain't authenticated!"
 	},
 	"active": {
-		"start": "2026-05-25 3:00PM PDT",
+		"start": "2026-05-05 3:00PM PDT",
 		"end": "2026-05-25 8:00PM PDT"
 	},
-	"summary_info": "Ninja Slushi Giveaway",
+
+	"META": {
+		"name": "Ninja Slushi Giveaway - Test",
+		"description": "Frozen drink dreams start here!",
+		"dt": "May 25th",
+		"event_start_dt": "2026-05-25 12:00PM PDT"
+	},
+	
 	"FORM": {
 		"fields": [
 			{
 				"type": "info",
-				"markdown": "# Ninja Slushi Giveaway"
+				"markdown": "# Ninja Slushi Giveaway - Test"
 			},
 			{
 				"type": "info",
