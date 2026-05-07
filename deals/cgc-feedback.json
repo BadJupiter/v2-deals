@@ -73,7 +73,7 @@
 				"label": "Anything you'd like to share about what stood out?",
 				"type": "textarea",
 				"rows": 2,
-				"required": false
+				"required": false,
 				"conditional": {
 					"field": "rating",
 					"values": ["⭑⭑⭑⭑⭑","⭑⭑⭑⭑"]
@@ -84,7 +84,7 @@
 				"label": "We want to make this right. What can we do better?",
 				"type": "textarea",
 				"rows": 2,
-				"required": false
+				"required": false,
 				"conditional": {
 					"field": "rating",
 					"values": ["⭑⭑⭑","⭑⭑","⭑"]
