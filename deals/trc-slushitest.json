@@ -1,0 +1,129 @@
+{
+	"biz_id": "threerivers",
+	"check_in": true,
+	"auth_required": true,
+	"error_auth": {
+		"title": "Woops!",
+		"content": "Can't play if you ain't authenticated!"
+	},
+	"active": {
+		"start": "2026-05-25 3:00PM PDT",
+		"end": "2026-05-25 8:00PM PDT"
+	},
+	"summary_info": "Ninja Slushi Giveaway",
+	"FORM": {
+		"fields": [
+			{
+				"type": "info",
+				"markdown": "# Ninja Slushi Giveaway"
+			},
+			{
+				"type": "info",
+				"markdown": "## **Monday, May 25th, 2026**"
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "info",
+				"markdown": "## **Florence & Coos Bay**"
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "info",
+				"markdown": "It's our pleasure to invite our valued Three Rivers guests to our **Ninja Slushi Giveaway** event!",
+				"justify": "center"
+			},
+			{
+				"id": "attend",
+				"label": "Would you like to reserve a Ninja Slushi for pickup on Monday, May 25th?",
+				"type": "select",
+				"range": [
+					"Yes",
+					"No"
+				],
+				"required": true,
+				"global": true,
+				"capacity_map": {
+					"Yes": 1,
+					"No": 0
+				}
+			},
+			{
+				"id": "location",
+				"label": "Where would you like to pick-up?",
+				"type": "select",
+				"count_from": "attend",
+				"range": [
+					{
+						"value": "Florence",
+						"limit": 175
+					},
+					{
+						"value": "Coos Bay",
+						"limit": 25
+					}
+				],
+				"required": true,
+				"conditional": {
+					"field": "attend",
+					"value": "Yes"
+				}
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "fields_group",
+				"bgcolor": "#E9E1CF",
+				"fields": [
+					{
+						"id": "z_FIRSTNAME",
+						"label": "First Name:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					},
+					{
+						"id": "z_LASTNAME",
+						"label": "Last Name:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					},
+					{
+						"id": "PlayerID",
+						"label": "Player ID:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					},
+					{
+						"id": "z_EMAIL",
+						"label": "Email:",
+						"type": "text",
+						"sticky": true,
+						"disabled": false
+					}
+				]
+			}
+		],
+		"title": "Three Rivers Casino Resort",
+		"limits": {
+			"most_recent_only": true,
+			"most_recent_key": "PlayerID"
+		},
+		"submit": {
+			"label": "Submit RSVP",
+			"color": "#20363d"
+		}
+	},
+	"MAIN": {
+		"body_md": "# Your Ninja Slushi is reserved! \n\nThank you for your RSVP. If you need to make any changes just scan your invitation again. We look forward to seeing you at **Three Rivers Casino Resort**!"
+	}
+}
