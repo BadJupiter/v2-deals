@@ -41,7 +41,7 @@
 			},
 			{
 				"id": "rating",
-				"label": "How was your visit to Saddle West?",
+				"label": "How was your visit to Celesta Grand?",
 				"type": "select",
 				"range": ["⭑⭑⭑⭑⭑","⭑⭑⭑⭑","⭑⭑⭑","⭑⭑","⭑"],
 				"required": false
@@ -68,45 +68,40 @@
 					"values": ["⭑⭑⭑","⭑⭑","⭑"]
 				}
 			},			
-			
-			
-			
-			
-			
 			{
-				"id": "games",
-				"label": "What games did you play?",
-				"type": "multi-select",
-				"range": ["Slot Machines","Table Games","Video Poker","Bingo","Keno"],
-				"required": false
-			},
-
-			{
-				"id": "comments",
-				"label": "What would you like us to know?",
+				"id": "positivecomments",
+				"label": "Anything you'd like to share about what stood out?",
 				"type": "textarea",
 				"rows": 2,
 				"required": false
-			},
+				"conditional": {
+					"field": "rating",
+					"values": ["⭑⭑⭑⭑⭑","⭑⭑⭑⭑"]
+				}
+			},		
 			{
-				"id": "dining",
-				"label": "Where did you dine?",
-				"type": "multi-select",
-				"range": ["Sterling & Slate","The Terrace Eatery","Pronto Provisions", "Perch & Perk Cafe"],
-				"required": false
-			},
-			{
-				"id": "amenities",
-				"label": "Are there any amenities we should offer?",
+				"id": "negativecomments",
+				"label": "We want to make this right. What can we do better?",
 				"type": "textarea",
 				"rows": 2,
 				"required": false
-			},
+				"conditional": {
+					"field": "rating",
+					"values": ["⭑⭑⭑","⭑⭑","⭑"]
+				}
+			},						
 			{
 				"id": "team",
-				"label": "Does anyone on our team deserve a shout-out?",
+				"label": "Did anyone on our team provide exceptional service?",
 				"type": "textarea",
 				"rows": 2,
+				"required": false
+			},
+			{
+				"id": "recommend",
+				"label": "How likely are you to recommend us to friends and family?",
+				"type": "select",
+				"range": ["definitely will","very likely","maybe","not likely","will not"],
 				"required": false
 			},
 			{
