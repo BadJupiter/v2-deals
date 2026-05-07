@@ -1,5 +1,5 @@
 {
-	"biz_id": "threerivers",
+	"biz_id": "trc-qa",
 	"check_in": true,
 	"auth_required": true,
 	"error_auth": {
@@ -7,10 +7,16 @@
 		"content": "Can't play if you ain't authenticated!"
 	},
 	"active": {
-		"start": "2026-05-29 3:00PM PDT",
-		"end": "2026-05-30 8:00PM PDT"
+		"start": "2026-05-05 3:00PM PDT",
+		"end": "2026-05-25 8:00PM PDT"
 	},
-	"summary_info": "Scotsman Boutique",
+		
+	"META": {
+		"name": "Scotsman - Test",
+		"description": "Handcrafted hardwood gifts designed to last generations!",
+		"dt": "May 25th",
+		"event_start_dt": "2026-05-25 12:00PM PDT"
+	},
 	"FORM": {
 		"fields": [
 			{
