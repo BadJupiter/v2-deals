@@ -1,44 +1,7 @@
 /* ============================================
    IPS - Invicta Power Services
-   Brand Colors: Orange (#ff6600), Black (#000000), White (#ffffff)
+   Deal form styles only — orange/black/white palette
    ============================================ */
-
-:root {
-	/* Brand Colors */
-	--ips-primary: #ff6600;
-	--ips-primary-dark: #cc5200;
-	--ips-accent: #000000;
-	--ips-accent-light: #333333;
-	--ips-success: #ff6600;
-	--ips-warning: #ffc107;
-	--ips-danger: #dc3545;
-	--ips-gray-light: #f8f9fa;
-	--ips-gray: #6c757d;
-	--ips-gray-dark: #343a40;
-	--ips-border: #dee2e6;
-
-	/* Typography */
-	--ips-font-family: 'Raleway', sans-serif;
-	--ips-font-family-headers: 'Raleway', sans-serif;
-	--ips-font-size-base: 16px;
-	--ips-line-height: 1.5;
-
-	/* Spacing */
-	--ips-spacing-xs: 0.25rem;
-	--ips-spacing-sm: 0.5rem;
-	--ips-spacing-md: 1rem;
-	--ips-spacing-lg: 1.5rem;
-	--ips-spacing-xl: 2rem;
-
-	/* Border Radius */
-	--ips-radius: 0.5rem;
-	--ips-radius-sm: 0.25rem;
-
-	/* Shadows */
-	--ips-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
-	--ips-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-	--ips-shadow-lg: 0 4px 16px rgba(0, 0, 0, 0.2);
-}
 
 body, html {
 	height: 100%;
