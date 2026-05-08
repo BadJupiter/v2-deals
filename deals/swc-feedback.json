@@ -40,68 +40,45 @@
 				"markdown": "---"
 			},
 			{
+				"id": "games",
+				"label": "What games did you play?",
+				"type": "multi-select",
+				"range": ["Slot Machines","Table Games","Video Poker","Bingo","Keno"],
+				"required": false
+			},
+			{
 				"id": "rating",
-				"label": "How was your visit to Celesta Grand?",
+				"label": "How was your overall experience?",
 				"type": "select",
 				"range": ["⭑⭑⭑⭑⭑","⭑⭑⭑⭑","⭑⭑⭑","⭑⭑","⭑"],
 				"required": false
 			},
 			{
-				"id": "highlight",
-				"label": "What made your visit great?",
-				"type": "multi-select",
-				"range": ["Casino floor experience","Hotel room","Food & dining","Staff & service","Overall Atmosphere", "Something else"],
-				"required": false,
-				"conditional": {
-					"field": "rating",
-					"values": ["⭑⭑⭑⭑⭑","⭑⭑⭑⭑"]
-				}
-			},		
-			{
-				"id": "fellshort",
-				"label": "What fell short of your expectations?",
-				"type": "multi-select",
-				"range": ["Casino floor experience","Hotel room","Food & dining","Staff & service","Overall Atmosphere", "Something else"],
-				"required": false,
-				"conditional": {
-					"field": "rating",
-					"values": ["⭑⭑⭑","⭑⭑","⭑"]
-				}
-			},			
-			{
-				"id": "positivecomments",
-				"label": "Anything you'd like to share about what stood out?",
-				"type": "textarea",
-				"rows": 2,
-				"required": false,
-				"conditional": {
-					"field": "rating",
-					"values": ["⭑⭑⭑⭑⭑","⭑⭑⭑⭑"]
-				}
-			},		
-			{
-				"id": "negativecomments",
-				"label": "We want to make this right. What can we do better?",
-				"type": "textarea",
-				"rows": 2,
-				"required": false,
-				"conditional": {
-					"field": "rating",
-					"values": ["⭑⭑⭑","⭑⭑","⭑"]
-				}
-			},						
-			{
-				"id": "team",
-				"label": "Did anyone on our team provide exceptional service?",
+				"id": "comments",
+				"label": "What would you like us to know?",
 				"type": "textarea",
 				"rows": 2,
 				"required": false
 			},
 			{
-				"id": "recommend",
-				"label": "How likely are you to recommend us to friends and family?",
-				"type": "select",
-				"range": ["definitely will","very likely","maybe","not likely","will not"],
+				"id": "dining",
+				"label": "Where did you dine?",
+				"type": "multi-select",
+				"range": ["Sterling & Slate","The Terrace Eatery","Pronto Provisions", "Perch & Perk Cafe"],
+				"required": false
+			},
+			{
+				"id": "amenities",
+				"label": "Are there any amenities we should offer?",
+				"type": "textarea",
+				"rows": 2,
+				"required": false
+			},
+			{
+				"id": "team",
+				"label": "Does anyone on our team deserve a shout-out?",
+				"type": "textarea",
+				"rows": 2,
 				"required": false
 			},
 			{

@@ -53,7 +53,7 @@
 				"id": "guest",
 				"label": "Will you be bringing a guest?",
 				"type": "select",
-				"limit": 450,
+				"limit": 300,
 				"range": [
 					{
 						"value": "No",
@@ -72,6 +72,7 @@
 					}
 				]				
 			},
+
 			{
 				"id": "room",
 				"label": "Would you like your host to contact you about accommodations?",

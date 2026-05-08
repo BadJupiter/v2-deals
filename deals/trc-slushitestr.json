@@ -1,5 +1,5 @@
 {
-	"biz_id": "threerivers",
+	"biz_id": "trc-qa",
 	"check_in": true,
 	"auth_required": true,
 	"error_auth": {
@@ -7,27 +7,26 @@
 		"content": "Can't play if you ain't authenticated!"
 	},
 	"active": {
-		"start": "2026-05-01 3:00PM PDT",
-		"end": "2026-05-01 8:00PM PDT"
+		"start": "2026-05-05 3:00PM PDT",
+		"end": "2026-05-25 8:00PM PDT"
 	},
-	"summary_info": "Derby Party",
+
+	"META": {
+		"name": "Ninja Slushi Giveaway - Test",
+		"description": "Frozen drink dreams start here!",
+		"dt": "May 25th",
+		"event_start_dt": "2026-05-25 12:00PM PDT"
+	},
+	
 	"FORM": {
 		"fields": [
 			{
-				"id": "Hotel",
-				"label": "Hotel",
-				"type": "text",
-				"sticky": true,
-				"disabled": true,
-				"hidden": true
+				"type": "info",
+				"markdown": "# Ninja Slushi Giveaway - TEST"
 			},
 			{
 				"type": "info",
-				"markdown": "# Derby Party"
-			},
-			{
-				"type": "info",
-				"markdown": "## **May 2nd, 2026**"
+				"markdown": "## **Monday, May 25th, 2026**"
 			},
 			{
 				"type": "info",
@@ -35,64 +34,52 @@
 			},
 			{
 				"type": "info",
-				"markdown": "It's our pleasure to invite our valued Three Rivers guests to our **Derby Party**!",
+				"markdown": "## **Florence & Coos Bay**"
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "info",
+				"markdown": "It's our pleasure to invite our valued Three Rivers guests to our **Ninja Slushi Giveaway** event!",
 				"justify": "center"
 			},
 			{
-				"type": "info",
-				"markdown": "---"
-			},
-			{
 				"id": "attend",
-				"label": "Will you attend the Derby Party?",
-				"type": "select",
-				"range": ["Yes","No"],
-				"required": true
-			},
-			{
-				"id": "guest",
-				"label": "Will you be bringing a guest?",
-				"type": "select",
-				"limit": 450,
-				"range": [
-					{
-						"value": "No",
-						"count": 1
-					},
-					{
-						"value": "Yes",
-						"count": 2
-					}
-				],
-				"required": true,
-				"conditional": [
-					{
-						"field": "attend",
-						"value": "Yes"
-					}
-				]				
-			},
-			{
-				"id": "room",
-				"label": "Would you like your host to contact you about accommodations?",
+				"label": "Would you like to reserve a Ninja Slushi for pickup on Monday, May 25th?",
 				"type": "select",
 				"range": [
 					"Yes",
 					"No"
 				],
 				"required": true,
-				"conditional": [
+				"global": true,
+				"capacity_map": {
+					"Yes": 1,
+					"No": 0
+				}
+			},
+			{
+				"id": "location",
+				"label": "Where would you like to pick-up?",
+				"type": "select",
+				"count_from": "attend",
+				"range": [
 					{
-						"field": "attend",
-						"value": "Yes"
+						"value": "Florence",
+						"limit": 175
 					},
 					{
-						"field": "Hotel",
-						"values": [
-							"Y"
-						]
+						"value": "Coos Bay",
+						"limit": 25
 					}
-				]
+				],
+				"required": true,
+				"conditional": {
+					"field": "attend",
+					"value": "Yes"
+				}
 			},
 			{
 				"type": "info",
@@ -100,7 +87,7 @@
 			},
 			{
 				"type": "fields_group",
-				"bgcolor": "#F9F6F7",
+				"bgcolor": "#E9E1CF",
 				"fields": [
 					{
 						"id": "z_FIRSTNAME",
@@ -144,6 +131,6 @@
 		}
 	},
 	"MAIN": {
-		"body_md": "# Your reservation is confirmed!\n\nThank you for your RSVP. If you need to make any changes just scan your invitation again. We look forward to seeing you at **Three Rivers Casino Resort**!"
+		"body_md": "# Your Ninja Slushi is reserved! \n\nThank you for your RSVP. If you need to make any changes just scan your invitation again. We look forward to seeing you at **Three Rivers Casino Resort**!"
 	}
 }

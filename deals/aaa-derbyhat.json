@@ -10,7 +10,7 @@
 		"start": "2026-05-01 3:00PM PDT",
 		"end": "2026-05-01 8:00PM PDT"
 	},
-	"summary_info": "Derby Party",
+	"summary_info": "Derby Hat Party",
 	"FORM": {
 		"fields": [
 			{
@@ -23,11 +23,11 @@
 			},
 			{
 				"type": "info",
-				"markdown": "# Derby Party"
+				"markdown": "# Derby Hat Party"
 			},
 			{
 				"type": "info",
-				"markdown": "## **May 2nd, 2026**"
+				"markdown": "## **May 1st, 2026**"
 			},
 			{
 				"type": "info",
@@ -35,7 +35,7 @@
 			},
 			{
 				"type": "info",
-				"markdown": "It's our pleasure to invite our valued Three Rivers guests to our **Derby Party**!",
+				"markdown": "It's our pleasure to invite our valued Three Rivers guests to our **Derby Hat Party**!",
 				"justify": "center"
 			},
 			{
@@ -44,33 +44,19 @@
 			},
 			{
 				"id": "attend",
-				"label": "Will you attend the Derby Party?",
+				"label": "Will you attend the Derby Hat Event?",
 				"type": "select",
-				"range": ["Yes","No"],
-				"required": true
-			},
-			{
-				"id": "guest",
-				"label": "Will you be bringing a guest?",
-				"type": "select",
-				"limit": 450,
+				"limit": 300,
 				"range": [
 					{
 						"value": "No",
-						"count": 1
+						"count": 0
 					},
 					{
 						"value": "Yes",
-						"count": 2
+						"count": 1
 					}
-				],
-				"required": true,
-				"conditional": [
-					{
-						"field": "attend",
-						"value": "Yes"
-					}
-				]				
+				]
 			},
 			{
 				"id": "room",
