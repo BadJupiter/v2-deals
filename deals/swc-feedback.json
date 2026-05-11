@@ -50,7 +50,7 @@
 				"id": "highlight",
 				"label": "What made your visit great?",
 				"type": "multi-select",
-				"range": ["Casino floor experience","Hotel room","RV resort","Food & dining","Staff & service","Overall Atmosphere", "Something else"],
+				"range": ["Casino floor experience","Hotel room","RV resort","Food & dining","Staff & service","Overall atmosphere", "Something else"],
 				"required": false,
 				"conditional": {
 					"field": "rating",
@@ -61,7 +61,7 @@
 				"id": "fellshort",
 				"label": "What fell short of your expectations?",
 				"type": "multi-select",
-				"range": ["Casino Floor Experience","Hotel Room","RV Resort","Food & dining","Staff & service","Overall Atmosphere","Something else"],
+				"range": ["Casino floor experience","Hotel room","RV resort","Food & dining","Staff & service","Overall atmosphere", "Something else"],
 				"required": false,
 				"conditional": {
 					"field": "rating",
