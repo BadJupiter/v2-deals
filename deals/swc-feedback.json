@@ -129,6 +129,13 @@
 						"label": "Email:",
 						"type": "email",
 						"required": true
+					},
+					{
+						"id": "address",
+						"label": "Address:",
+						"type": "textarea",
+						"rows": 3,
+						"required": false
 					}
 				]
 			}
