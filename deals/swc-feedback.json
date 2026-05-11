@@ -116,19 +116,19 @@
 						"id": "firstname",
 						"label": "First Name:",
 						"type": "text",
-						"required": true
+						"required": false
 					},
 					{
 						"id": "lastname",
 						"label": "Last Name:",
 						"type": "text",
-						"required": true
+						"required": false
 					},
 					{
 						"id": "email",
 						"label": "Email:",
 						"type": "email",
-						"required": true
+						"required": false
 					},
 					{
 						"id": "address",
