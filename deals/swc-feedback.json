@@ -1,5 +1,5 @@
 {
-	"biz_id": "jupiter",
+	"biz_id": "saddlewest",
 	"check_in": true,
 	"auth_required": true,
 	"error_auth": {
@@ -41,7 +41,7 @@
 			},
 			{
 				"id": "rating",
-				"label": "How was your visit to Celesta Grand?",
+				"label": "How was your visit to Saddle West?",
 				"type": "select",
 				"range": ["⭑⭑⭑⭑⭑","⭑⭑⭑⭑","⭑⭑⭑","⭑⭑","⭑"],
 				"required": false
@@ -50,7 +50,7 @@
 				"id": "highlight",
 				"label": "What made your visit great?",
 				"type": "multi-select",
-				"range": ["Casino floor experience","Hotel room","Food & dining","Staff & service","Overall Atmosphere", "Something else"],
+				"range": ["Casino floor experience","Hotel room","RV resort","Food & dining","Staff & service","Overall Atmosphere", "Something else"],
 				"required": false,
 				"conditional": {
 					"field": "rating",
@@ -61,7 +61,7 @@
 				"id": "fellshort",
 				"label": "What fell short of your expectations?",
 				"type": "multi-select",
-				"range": ["Casino floor experience","Hotel room","Food & dining","Staff & service","Overall Atmosphere", "Something else"],
+				"range": ["Casino Floor Experience","Hotel Room","RV Resort","Food & dining","Staff & service","Overall Atmosphere","Something else"],
 				"required": false,
 				"conditional": {
 					"field": "rating",
@@ -135,17 +135,17 @@
 		],
 		"submit": {
 			"label": "Submit Feedback",
-			"color": "#20363d"
+			"color": "#D8CDBF"
 		},
 		"notify": {
 			"opt_in": "contact",
-			"message": "(from {_mob}) {name} submitted a Celesta Grand feedback survey: {comments}",
+			"message": "(from {_mob}) {name} submitted a Saddle West feedback survey: {comments}",
 			"mobiles": [
 				"+15039533423"
 			]
 		}
 	},
 	"MAIN": {
-		"body_md": "# Thank You!\n\nWe appreciate your feedback, and thank you for visiting Celesta Grand Casino & Hotel."
+		"body_md": "# Thank You!\n\nWe appreciate your feedback, and thank you for visiting Saddle West Hotel, Casino & RV Resort."
 	}
 }
