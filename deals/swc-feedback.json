@@ -110,7 +110,7 @@
 			},
 			{
 				"type": "fields_group",
-				"bgcolor": "#dfe1fa",
+				"bgcolor": "#D8CDBF",
 				"fields": [
 					{
 						"id": "firstname",
@@ -135,7 +135,7 @@
 		],
 		"submit": {
 			"label": "Submit Feedback",
-			"color": "#D8CDBF"
+			"color": "#20363d"
 		},
 		"notify": {
 			"opt_in": "contact",
