@@ -50,24 +50,6 @@
 				"required": true
 			},
 			{
-				"id": "guest",
-				"label": "Will you be bringing a guest?",
-				"type": "select",
-				"range": ["Yes","No"],
-				"required": true,
-				"global": true,
-  				"capacity_map": {
-  					"Yes": 2,
-    				"No": 1
-  				},
-				"conditional": [
-					{
-						"field": "attend",
-						"value": "Yes"
-					}
-				]				
-			},
-			{
 				"id": "time",
 				"label": "What time would you like to attend?",
 				"type": "select",
@@ -76,38 +58,47 @@
 				"range": [
 					{
 						"value": "4:00pm",
+						"count": 1,
 						"limit": 25
 					},
 					{
 						"value": "4:30pm",
+						"count": 1,
 						"limit": 25
 					},
 					{
 						"value": "5:00pm",
+						"count": 1,
 						"limit": 25
 					},
-										{
+					{
 						"value": "5:30pm",
+						"count": 1,
 						"limit": 25
 					},
 					{
 						"value": "6:00pm",
+						"count": 1,
 						"limit": 25
 					},
 					{
 						"value": "6:30pm",
+						"count": 1,
 						"limit": 25
 					},
 					{
 						"value": "7:00pm",
+						"count": 1,
 						"limit": 25
 					},
 					{
 						"value": "7:30pm",
+						"count": 1,
 						"limit": 25
 					},
 					{
 						"value": "8:00pm",
+						"count": 1,
 						"limit": 25
 					}
 				],	
