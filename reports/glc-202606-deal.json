@@ -1,6 +1,6 @@
 {
-	"biz_id": "threerivers",
-	"deal_tokens": [ "trc-deal","trc-deal-sun"],
+	"biz_id": "grandlake",
+	"deal_tokens": [ "glc-deal"],
 	"most_recent_only": true, # omit or set to false for all rows
 	"most_recent_key": "Player ID", # needs to be the column_name
 	
@@ -35,12 +35,8 @@
 			"attrib": "PlayerID"
 		},
 		{
-			"column_name": "Last Name",
-			"attrib": "z_LASTNAME"
-		},
-		{
-			"column_name": "First Name",
-			"attrib": "z_FIRSTNAME"
+			"column_name": "Name",
+			"attrib": "z_NAME"
 		},
 		{
 			"column_name": "Email",
@@ -63,12 +59,8 @@
 			"attrib": "guestplayerid"
 		},
 		{
-			"column_name": "Day",
-			"attrib": "day"
-		},
-		{
-			"column_name": "Room",
-			"attrib": "room"
+			"column_name": "Time",
+			"attrib": "time"
 		}
 	]
 }
