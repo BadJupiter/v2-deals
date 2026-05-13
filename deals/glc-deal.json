@@ -8,14 +8,14 @@
 	},
 
 	"active": {
-		"start": "2025-05-25 10:00AM CDT",
-		"end": "2025-05-25 11:59PM CDT"
+		"start": "2026-06-13 10:00AM CDT",
+		"end": "2026-06-13 11:59PM CDT"
 	},
 
 	"META": {
-		"name": "Sunglasses Gift Event",
-		"description": "VIP Exclusive - Sunglasses!",
-		"dt": "May 25th"
+		"name": "Deal or No Deal",
+		"description": "VIP Exclusive - Deal or No Deal!",
+		"dt": "June 13th"
 	},
 
 	
@@ -27,11 +27,11 @@
 			},
 			{
 				"type": "info",
-				"markdown": "# Sunglasses Gift Event"
+				"markdown": "# Deal or No Deal Show"
 			},
 			{
 				"type": "info",
-				"markdown": "## **Monday, May 25th**"	
+				"markdown": "## **Saturday, June 13th**"	
 			},
 			{
 				"type": "info",
@@ -40,69 +40,53 @@
 			{
 				"type": "info",
 				"justify": "center",
-				"markdown": " \n\nYou are invited to our exclusive **Sunglasses Gift Event**."
+				"markdown": " \n\nYou are invited to our exclusive **Deal or No Deal Show**."
 			},
 			{
 				"id": "attend",
-				"label": "Will you be attending the Sunglasses Gift Event on Monday, May 25th?",
+				"label": "Would you like to attend the Deal or No Deal Show?",
 				"type": "select",
 				"range": ["Yes","No"],
 				"required": true
 			},
 			{
+				"id": "guest",
+				"label": "Will you be bringing a guest?",
+				"type": "select",
+				"range": ["Yes","No"],
+				"required": true,
+				"global": true,
+  				"capacity_map": {
+  					"Yes": 2,
+    				"No": 1
+  				},
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					}
+				]				
+			},
+			{
 				"id": "time",
 				"label": "What time would you like to attend?",
 				"type": "select",
-				"limit": 225,
+				"count_from": "guest",
+				"limit": 1500,
 				"range": [
 					{
-						"value": "Noon",
-						"count": 1,
-						"limit": 25
+						"value": "5:00pm",
+						"limit": 500
 					},
 					{
-						"value": "12:30pm",
-						"count": 1,
-						"limit": 25
+						"value": "7:00pm",
+						"limit": 500
 					},
 					{
-						"value": "1:00pm",
-						"count": 1,
-						"limit": 25
-					},
-					{
-						"value": "1:30pm",
-						"count": 1,
-						"limit": 25
-					},
-					{
-						"value": "2:00pm",
-						"count": 1,
-						"limit": 25
-					},
-										{
-						"value": "2:30pm",
-						"count": 1,
-						"limit": 25
-					},
-					{
-						"value": "3:00pm",
-						"count": 1,
-						"limit": 25
-					},
-					{
-						"value": "3:30pm",
-						"count": 1,
-						"limit": 25
-					},
-					{
-						"value": "4:00pm",
-						"count": 1,
-						"limit": 25
+						"value": "9:00pm",
+						"limit": 500
 					}
 				],	
-				
-				
 				"required": true,
 				"conditional": [
 					{
