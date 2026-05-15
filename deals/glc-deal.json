@@ -20,7 +20,8 @@
 
 	
 	"FORM": {
-			"fields": [
+		"title": "Grand Lake Casino"
+		"fields": [
 			{
 				"type": "info",
 				"markdown": "# Grand Lake Casino"
