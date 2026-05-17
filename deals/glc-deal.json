@@ -97,19 +97,19 @@
 				"label": "What time would you like to attend?",
 				"type": "select",
 				"count_from": "guest",
-				"limit": 1500,
+				"limit": 600,
 				"range": [
 					{
-						"value": "5:00pm",
-						"limit": 500
+						"value": "6:00pm",
+						"limit": 200
 					},
 					{
-						"value": "7:00pm",
-						"limit": 500
+						"value": "6:00pm",
+						"limit": 200
 					},
 					{
 						"value": "9:00pm",
-						"limit": 500
+						"limit": 200
 					}
 				],	
 				"required": true,
