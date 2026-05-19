@@ -63,7 +63,7 @@
 			},
 			{
 				"id": "location",
-				"label": "Which location would you like to attend?",
+				"label": "Which property would you like to visit?",
 				"type": "select",
 				"range": [
 					"Florence",
@@ -86,7 +86,7 @@
 						"value": "Noon",
 						"limit": 25
 					},
-										{
+					{
 						"value": "12:30pm",
 						"limit": 25
 					},
