@@ -60,12 +60,20 @@
 			"attrib": "FLday2time"
 		},
 		{
+			"column_name": "FL Sun Time",
+			"attrib": "FLday3time"
+		},
+		{
 			"column_name": "CB Fri Time",
 			"attrib": "CBday1time"
 		},
 		{
 			"column_name": "CB Sat Time",
 			"attrib": "CBday2time"
+		},
+		{
+			"column_name": "CB Sun Time",
+			"attrib": "CBday3time"
 		},
 		{
 			"column_name": "Room",
