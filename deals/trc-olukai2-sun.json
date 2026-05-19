@@ -7,8 +7,8 @@
 		"content": "Can't play if you ain't authenticated!"
 	},
 	"active": {
-		"start": "2026-06-19 3:00PM PDT",
-		"end": "2026-06-20 8:00PM PDT"
+		"start": "2026-06-07 3:00PM PDT",
+		"end": "2026-06-07 8:00PM PDT"
 	},
 	"summary_info": "Olukai Boutique",
 	"FORM": {
@@ -27,7 +27,7 @@
 			},
 			{
 				"type": "info",
-				"markdown": "## **June 19th & 20th, 2026**"
+				"markdown": "## **June 7th, 2026**"
 			},
 			{
 				"type": "info",
@@ -68,20 +68,6 @@
 				"range": [
 					"Florence",
 					"Coos Bay"
-				],
-				"required": true,
-				"conditional": {
-					"field": "attend",
-					"value": "Yes"
-				}
-			},
-			{
-				"id": "day",
-				"label": "What day would you like to attend?",
-				"type": "select",
-				"range": [
-					"Friday, June 19th",
-					"Saturday, June 20th"
 				],
 				"required": true,
 				"conditional": {
@@ -144,74 +130,6 @@
 						"value": "Yes"
 					},
 					{
-						"field": "day",
-						"value": "Friday, June 19th"
-					},
-					{
-						"field": "location",
-						"value": "Florence"
-					}
-				]
-			},
-			{
-				"id": "FLday2time",
-				"label": "What time would you like to attend?",
-				"type": "select",
-"count_from": "attend",
-				"limit": 2500,
-				"range": [
-					{
-						"value": "3:00pm",
-						"limit": 250
-					},
-					{
-						"value": "3:30pm",
-						"limit": 250
-					},
-					{
-						"value": "4:00pm",
-						"limit": 250
-					},
-					{
-						"value": "4:30pm",
-						"limit": 250
-					},
-					{
-						"value": "5:00pm",
-						"limit": 250
-					},
-					{
-						"value": "5:30pm",
-						"limit": 250
-					},
-					{
-						"value": "6:00pm",
-						"limit": 250
-					},
-					{
-						"value": "6:30pm",
-						"limit": 250
-					},
-					{
-						"value": "7:00pm",
-						"limit": 250
-					},
-					{
-						"value": "7:30pm",
-						"limit": 250
-					}
-				],
-				"required": true,
-				"conditional": [
-					{
-						"field": "attend",
-						"value": "Yes"
-					},
-					{
-						"field": "day",
-						"value": "Saturday, June 20th"
-					},
-					{
 						"field": "location",
 						"value": "Florence"
 					}
@@ -272,109 +190,8 @@
 						"value": "Yes"
 					},
 					{
-						"field": "day",
-						"value": "Friday, June 19th"
-					},
-					{
 						"field": "location",
 						"value": "Coos Bay"
-					}
-				]
-			},
-			{
-				"id": "CBday2time",
-				"label": "What time would you like to attend?",
-				"type": "select",
-				"count_from": "attend",
-				"limit": 2500,
-				"range": [
-					{
-						"value": "3:00pm",
-						"limit": 250
-					},
-					{
-						"value": "3:30pm",
-						"limit": 250
-					},
-					{
-						"value": "4:00pm",
-						"limit": 250
-					},
-					{
-						"value": "4:30pm",
-						"limit": 250
-					},
-					{
-						"value": "5:00pm",
-						"limit": 250
-					},
-					{
-						"value": "5:30pm",
-						"limit": 250
-					},
-					{
-						"value": "6:00pm",
-						"limit": 250
-					},
-					{
-						"value": "6:30pm",
-						"limit": 250
-					},
-					{
-						"value": "7:00pm",
-						"limit": 250
-					},
-					{
-						"value": "7:30pm",
-						"limit": 250
-					}
-				],
-				"required": true,
-				"conditional": [
-					{
-						"field": "attend",
-						"value": "Yes"
-					},
-					{
-						"field": "day",
-						"value": "Saturday, June 20th"
-					},
-					{
-						"field": "location",
-						"value": "Coos Bay"
-					}
-				]
-			},
-			{
-				"id": "room",
-				"label": "Would you like your host to contact you about accommodations?",
-				"type": "select",
-				"range": [
-					"Yes",
-					"No"
-				],
-				"required": true,
-				"conditional": [
-					{
-						"field": "attend",
-						"value": "Yes"
-					},
-					{
-						"field": "location",
-						"value": "Florence"
-					},
-					{
-						"field": "day",
-						"values": [
-							"Friday, June 19th",
-							"Saturday, June 20th"
-						]
-					},
-					{
-						"field": "Hotel",
-						"values": [
-							"Y"
-						]
 					}
 				]
 			},
