@@ -44,28 +44,16 @@
 			"attrib": "attend"
 		},
 		{
-			"column_name": "Location",
-			"attrib": "location"
-		},
-		{
 			"column_name": "Day",
 			"attrib": "day"
 		},
 		{
-			"column_name": "FL Fri Time",
-			"attrib": "FLday1time"
+			"column_name": "Fri Time",
+			"attrib": "day1time"
 		},
 		{
-			"column_name": "FL Sat Time",
-			"attrib": "FLday2time"
-		},
-		{
-			"column_name": "CB Fri Time",
-			"attrib": "CBday1time"
-		},
-		{
-			"column_name": "CB Sat Time",
-			"attrib": "CBday2time"
+			"column_name": "Sat Time",
+			"attrib": "day2time"
 		},
 		{
 			"column_name": "Room",
