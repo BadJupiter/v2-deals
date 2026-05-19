@@ -3,14 +3,14 @@
 	"check_in": true,
 	"auth_required": true,
 	"error_auth": {
-		"title": "Woops!",
+		"title": "Oops!",
 		"content": "Can't play if you ain't authenticated!"
 	},
 	"active": {
-		"start": "2026-05-29 3:00PM PDT",
-		"end": "2026-05-30 8:00PM PDT"
+		"start": "2026-06-19 3:00PM PDT",
+		"end": "2026-06-20 8:00PM PDT"
 	},
-	"summary_info": "Scotsman Boutique",
+	"summary_info": "Olukai Boutique",
 	"FORM": {
 		"fields": [
 			{
@@ -23,11 +23,11 @@
 			},
 			{
 				"type": "info",
-				"markdown": "# Scotsman Boutique"
+				"markdown": "# Olukai Boutique"
 			},
 			{
 				"type": "info",
-				"markdown": "## **May 29th & 30th, 2026**"
+				"markdown": "## **June 19th & 20th, 2026**"
 			},
 			{
 				"type": "info",
@@ -39,7 +39,7 @@
 			},
 			{
 				"type": "info",
-				"markdown": "It's our pleasure to invite our valued Three Rivers guests to our **Scotsman Boutique**!",
+				"markdown": "It's our pleasure to invite our valued Three Rivers guests to our **Olukai Boutique**!",
 				"justify": "center"
 			},
 			{
@@ -48,7 +48,7 @@
 			},
 			{
 				"id": "attend",
-				"label": "Will you attend the Scotsman Boutique?",
+				"label": "Will you attend the Olukai Boutique?",
 				"type": "select",
 				"range": [
 					"Yes",
@@ -80,8 +80,8 @@
 				"label": "What day would you like to attend?",
 				"type": "select",
 				"range": [
-					"Friday, May 29th",
-					"Saturday, May 30th"
+					"Friday, June 19th",
+					"Saturday, June 20th"
 				],
 				"required": true,
 				"conditional": {
@@ -94,47 +94,47 @@
 				"label": "What time would you like to attend?",
 				"type": "select",
 				"count_from": "attend",
-				"limit": 250,
+				"limit": 2500,
 				"range": [
 					{
 						"value": "3:00pm",
-						"limit": 25
+						"limit": 250
 					},
 					{
 						"value": "3:30pm",
-						"limit": 25
+						"limit": 250
 					},
 					{
 						"value": "4:00pm",
-						"limit": 25
+						"limit": 250
 					},
 					{
 						"value": "4:30pm",
-						"limit": 25
+						"limit": 250
 					},
 					{
 						"value": "5:00pm",
-						"limit": 25
+						"limit": 250
 					},
 					{
 						"value": "5:30pm",
-						"limit": 25
+						"limit": 250
 					},
 					{
 						"value": "6:00pm",
-						"limit": 25
+						"limit": 250
 					},
 					{
 						"value": "6:30pm",
-						"limit": 25
+						"limit": 250
 					},
 					{
 						"value": "7:00pm",
-						"limit": 25
+						"limit": 250
 					},
 					{
 						"value": "7:30pm",
-						"limit": 25
+						"limit": 250
 					}
 				],
 				"required": true,
@@ -145,7 +145,7 @@
 					},
 					{
 						"field": "day",
-						"value": "Friday, May 29th"
+						"value": "Friday, June 19th"
 					},
 					{
 						"field": "location",
@@ -158,47 +158,47 @@
 				"label": "What time would you like to attend?",
 				"type": "select",
 "count_from": "attend",
-				"limit": 250,
+				"limit": 2500,
 				"range": [
 					{
 						"value": "3:00pm",
-						"limit": 25
+						"limit": 250
 					},
 					{
 						"value": "3:30pm",
-						"limit": 25
+						"limit": 250
 					},
 					{
 						"value": "4:00pm",
-						"limit": 25
+						"limit": 250
 					},
 					{
 						"value": "4:30pm",
-						"limit": 25
+						"limit": 250
 					},
 					{
 						"value": "5:00pm",
-						"limit": 25
+						"limit": 250
 					},
 					{
 						"value": "5:30pm",
-						"limit": 25
+						"limit": 250
 					},
 					{
 						"value": "6:00pm",
-						"limit": 25
+						"limit": 250
 					},
 					{
 						"value": "6:30pm",
-						"limit": 25
+						"limit": 250
 					},
 					{
 						"value": "7:00pm",
-						"limit": 25
+						"limit": 250
 					},
 					{
 						"value": "7:30pm",
-						"limit": 25
+						"limit": 250
 					}
 				],
 				"required": true,
@@ -209,7 +209,7 @@
 					},
 					{
 						"field": "day",
-						"value": "Saturday, May 30th"
+						"value": "Saturday, June 20th"
 					},
 					{
 						"field": "location",
@@ -222,47 +222,47 @@
 				"label": "What time would you like to attend?",
 				"type": "select",
 				"count_from": "attend",
-				"limit": 250,
+				"limit": 2500,
 				"range": [
 					{
 						"value": "3:00pm",
-						"limit": 25
+						"limit": 250
 					},
 					{
 						"value": "3:30pm",
-						"limit": 25
+						"limit": 250
 					},
 					{
 						"value": "4:00pm",
-						"limit": 25
+						"limit": 250
 					},
 					{
 						"value": "4:30pm",
-						"limit": 25
+						"limit": 250
 					},
 					{
 						"value": "5:00pm",
-						"limit": 25
+						"limit": 250
 					},
 					{
 						"value": "5:30pm",
-						"limit": 25
+						"limit": 250
 					},
 					{
 						"value": "6:00pm",
-						"limit": 25
+						"limit": 250
 					},
 					{
 						"value": "6:30pm",
-						"limit": 25
+						"limit": 250
 					},
 					{
 						"value": "7:00pm",
-						"limit": 25
+						"limit": 250
 					},
 					{
 						"value": "7:30pm",
-						"limit": 25
+						"limit": 250
 					}
 				],
 				"required": true,
@@ -273,7 +273,7 @@
 					},
 					{
 						"field": "day",
-						"value": "Friday, May 29th"
+						"value": "Friday, June 19th"
 					},
 					{
 						"field": "location",
@@ -286,47 +286,47 @@
 				"label": "What time would you like to attend?",
 				"type": "select",
 				"count_from": "attend",
-				"limit": 250,
+				"limit": 2500,
 				"range": [
 					{
 						"value": "3:00pm",
-						"limit": 25
+						"limit": 250
 					},
 					{
 						"value": "3:30pm",
-						"limit": 25
+						"limit": 250
 					},
 					{
 						"value": "4:00pm",
-						"limit": 25
+						"limit": 250
 					},
 					{
 						"value": "4:30pm",
-						"limit": 25
+						"limit": 250
 					},
 					{
 						"value": "5:00pm",
-						"limit": 25
+						"limit": 250
 					},
 					{
 						"value": "5:30pm",
-						"limit": 25
+						"limit": 250
 					},
 					{
 						"value": "6:00pm",
-						"limit": 25
+						"limit": 250
 					},
 					{
 						"value": "6:30pm",
-						"limit": 25
+						"limit": 250
 					},
 					{
 						"value": "7:00pm",
-						"limit": 25
+						"limit": 250
 					},
 					{
 						"value": "7:30pm",
-						"limit": 25
+						"limit": 250
 					}
 				],
 				"required": true,
@@ -337,7 +337,7 @@
 					},
 					{
 						"field": "day",
-						"value": "Saturday, May 30th"
+						"value": "Saturday, June 20th"
 					},
 					{
 						"field": "location",
@@ -366,8 +366,8 @@
 					{
 						"field": "day",
 						"values": [
-							"Friday, May 29th",
-							"Saturday, May 30th"
+							"Friday, June 19th",
+							"Saturday, June 20th"
 						]
 					},
 					{
