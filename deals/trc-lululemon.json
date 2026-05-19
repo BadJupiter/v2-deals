@@ -3,14 +3,14 @@
 	"check_in": true,
 	"auth_required": true,
 	"error_auth": {
-		"title": "Woops!",
+		"title": "Oops!",
 		"content": "Can't play if you ain't authenticated!"
 	},
 	"active": {
-		"start": "2026-05-29 3:00PM PDT",
-		"end": "2026-05-30 8:00PM PDT"
+		"start": "2026-06-05 3:00PM PDT",
+		"end": "2026-06-06 8:00PM PDT"
 	},
-	"summary_info": "Scotsman Boutique",
+	"summary_info": "Lululemon Boutique",
 	"FORM": {
 		"fields": [
 			{
@@ -23,11 +23,11 @@
 			},
 			{
 				"type": "info",
-				"markdown": "# Scotsman Boutique"
+				"markdown": "# Lululemon Boutique"
 			},
 			{
 				"type": "info",
-				"markdown": "## **May 29th & 30th, 2026**"
+				"markdown": "## **June 5th & 6th, 2026**"
 			},
 			{
 				"type": "info",
@@ -35,11 +35,11 @@
 			},
 			{
 				"type": "info",
-				"markdown": "## **Florence & Coos Bay**"
+				"markdown": "## **Florence**"
 			},
 			{
 				"type": "info",
-				"markdown": "It's our pleasure to invite our valued Three Rivers guests to our **Scotsman Boutique**!",
+				"markdown": "It's our pleasure to invite our valued Three Rivers guests to our **Lululemon Boutique**!",
 				"justify": "center"
 			},
 			{
@@ -48,7 +48,7 @@
 			},
 			{
 				"id": "attend",
-				"label": "Will you attend the Scotsman Boutique?",
+				"label": "Will you attend the Lululemon Boutique?",
 				"type": "select",
 				"range": [
 					"Yes",
@@ -62,26 +62,12 @@
 				}
 			},
 			{
-				"id": "location",
-				"label": "Which location would you like to attend?",
-				"type": "select",
-				"range": [
-					"Florence",
-					"Coos Bay"
-				],
-				"required": true,
-				"conditional": {
-					"field": "attend",
-					"value": "Yes"
-				}
-			},
-			{
 				"id": "day",
 				"label": "What day would you like to attend?",
 				"type": "select",
 				"range": [
-					"Friday, May 29th",
-					"Saturday, May 30th"
+					"Friday, June 5th",
+					"Saturday, June 6th"
 				],
 				"required": true,
 				"conditional": {
@@ -90,7 +76,7 @@
 				}
 			},
 			{
-				"id": "FLday1time",
+				"id": "day1time",
 				"label": "What time would you like to attend?",
 				"type": "select",
 				"count_from": "attend",
@@ -145,80 +131,12 @@
 					},
 					{
 						"field": "day",
-						"value": "Friday, May 29th"
-					},
-					{
-						"field": "location",
-						"value": "Florence"
+						"value": "Friday, June 5th"
 					}
 				]
 			},
 			{
-				"id": "FLday2time",
-				"label": "What time would you like to attend?",
-				"type": "select",
-"count_from": "attend",
-				"limit": 250,
-				"range": [
-					{
-						"value": "3:00pm",
-						"limit": 25
-					},
-					{
-						"value": "3:30pm",
-						"limit": 25
-					},
-					{
-						"value": "4:00pm",
-						"limit": 25
-					},
-					{
-						"value": "4:30pm",
-						"limit": 25
-					},
-					{
-						"value": "5:00pm",
-						"limit": 25
-					},
-					{
-						"value": "5:30pm",
-						"limit": 25
-					},
-					{
-						"value": "6:00pm",
-						"limit": 25
-					},
-					{
-						"value": "6:30pm",
-						"limit": 25
-					},
-					{
-						"value": "7:00pm",
-						"limit": 25
-					},
-					{
-						"value": "7:30pm",
-						"limit": 25
-					}
-				],
-				"required": true,
-				"conditional": [
-					{
-						"field": "attend",
-						"value": "Yes"
-					},
-					{
-						"field": "day",
-						"value": "Saturday, May 30th"
-					},
-					{
-						"field": "location",
-						"value": "Florence"
-					}
-				]
-			},
-			{
-				"id": "CBday1time",
+				"id": "day2time",
 				"label": "What time would you like to attend?",
 				"type": "select",
 				"count_from": "attend",
@@ -273,75 +191,7 @@
 					},
 					{
 						"field": "day",
-						"value": "Friday, May 29th"
-					},
-					{
-						"field": "location",
-						"value": "Coos Bay"
-					}
-				]
-			},
-			{
-				"id": "CBday2time",
-				"label": "What time would you like to attend?",
-				"type": "select",
-				"count_from": "attend",
-				"limit": 250,
-				"range": [
-					{
-						"value": "3:00pm",
-						"limit": 25
-					},
-					{
-						"value": "3:30pm",
-						"limit": 25
-					},
-					{
-						"value": "4:00pm",
-						"limit": 25
-					},
-					{
-						"value": "4:30pm",
-						"limit": 25
-					},
-					{
-						"value": "5:00pm",
-						"limit": 25
-					},
-					{
-						"value": "5:30pm",
-						"limit": 25
-					},
-					{
-						"value": "6:00pm",
-						"limit": 25
-					},
-					{
-						"value": "6:30pm",
-						"limit": 25
-					},
-					{
-						"value": "7:00pm",
-						"limit": 25
-					},
-					{
-						"value": "7:30pm",
-						"limit": 25
-					}
-				],
-				"required": true,
-				"conditional": [
-					{
-						"field": "attend",
-						"value": "Yes"
-					},
-					{
-						"field": "day",
-						"value": "Saturday, May 30th"
-					},
-					{
-						"field": "location",
-						"value": "Coos Bay"
+						"value": "Saturday, June 6th"
 					}
 				]
 			},
@@ -360,14 +210,10 @@
 						"value": "Yes"
 					},
 					{
-						"field": "location",
-						"value": "Florence"
-					},
-					{
 						"field": "day",
 						"values": [
-							"Friday, May 29th",
-							"Saturday, May 30th"
+							"Friday, June 5th",
+							"Saturday, June 6th"
 						]
 					},
 					{
