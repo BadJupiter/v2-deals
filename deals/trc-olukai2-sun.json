@@ -76,7 +76,7 @@
 				}
 			},
 			{
-				"id": "FLday1time",
+				"id": "FLday3time",
 				"label": "What time would you like to attend?",
 				"type": "select",
 				"count_from": "attend",
@@ -144,7 +144,7 @@
 				]
 			},
 			{
-				"id": "CBday1time",
+				"id": "CBday3time",
 				"label": "What time would you like to attend?",
 				"type": "select",
 				"count_from": "attend",
