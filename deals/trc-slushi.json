@@ -61,11 +61,11 @@
 				"range": [
 					{
 						"value": "Florence",
-						"limit": 175
+						"limit": 300
 					},
 					{
 						"value": "Coos Bay",
-						"limit": 25
+						"limit": 100
 					}
 				],
 				"required": true,
