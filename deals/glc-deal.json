@@ -65,34 +65,6 @@
 				]				
 			},
 			{
-				"id": "guestname",
-				"label": "Guest's Name:",
-				"type": "text",
-				"required": true,
-				"sticky": false,
-				"disabled": false,
-				"conditional": [
-					{
-						"field": "guest",
-						"value": "Yes"
-					}
-				]
-			},
-			{
-				"id": "guestplayerid",
-				"label": "Guest's Players Club #:",
-				"type": "text",
-				"required": true,
-				"sticky": false,
-				"disabled": false,
-				"conditional": [
-					{
-						"field": "guest",
-						"value": "Yes"
-					}
-				]
-			},		
-			{
 				"id": "time",
 				"label": "What time would you like to attend?",
 				"type": "select",
@@ -100,7 +72,7 @@
 				"limit": 600,
 				"range": [
 					{
-						"value": "6:00pm",
+						"value": "3:00pm",
 						"limit": 200
 					},
 					{
@@ -113,22 +85,6 @@
 					}
 				],	
 				"required": true,
-				"conditional": [
-					{
-						"field": "attend",
-						"value": "Yes"
-					}
-				]
-			},
-			{
-				"type": "fields_group",
-				"bgcolor": "#F2EEE3",
-				"fields": [
-					{
-						"type": "info",
-						"markdown": "**\u2139**  \nPlease note, all show attendees must have a **Players Club account** in order to attend the Deal or No Deal show."
-					}
-				],
 				"conditional": [
 					{
 						"field": "attend",
