@@ -157,7 +157,7 @@
 				"id": "FLday2time",
 				"label": "What time would you like to attend?",
 				"type": "select",
-"count_from": "attend",
+				"count_from": "attend",
 				"limit": 250,
 				"range": [
 					{
@@ -222,47 +222,47 @@
 				"label": "What time would you like to attend?",
 				"type": "select",
 				"count_from": "attend",
-				"limit": 250,
+				"limit": 100,
 				"range": [
 					{
 						"value": "3:00pm",
-						"limit": 25
+						"limit": 10
 					},
 					{
 						"value": "3:30pm",
-						"limit": 25
+						"limit": 10
 					},
 					{
 						"value": "4:00pm",
-						"limit": 25
+						"limit": 10
 					},
 					{
 						"value": "4:30pm",
-						"limit": 25
+						"limit": 10
 					},
 					{
 						"value": "5:00pm",
-						"limit": 25
+						"limit": 10
 					},
 					{
 						"value": "5:30pm",
-						"limit": 25
+						"limit": 10
 					},
 					{
 						"value": "6:00pm",
-						"limit": 25
+						"limit": 10
 					},
 					{
 						"value": "6:30pm",
-						"limit": 25
+						"limit": 10
 					},
 					{
 						"value": "7:00pm",
-						"limit": 25
+						"limit": 10
 					},
 					{
 						"value": "7:30pm",
-						"limit": 25
+						"limit": 10
 					}
 				],
 				"required": true,
@@ -286,47 +286,47 @@
 				"label": "What time would you like to attend?",
 				"type": "select",
 				"count_from": "attend",
-				"limit": 250,
+				"limit": 100,
 				"range": [
 					{
 						"value": "3:00pm",
-						"limit": 25
+						"limit": 10
 					},
 					{
 						"value": "3:30pm",
-						"limit": 25
+						"limit": 10
 					},
 					{
 						"value": "4:00pm",
-						"limit": 25
+						"limit": 10
 					},
 					{
 						"value": "4:30pm",
-						"limit": 25
+						"limit": 10
 					},
 					{
 						"value": "5:00pm",
-						"limit": 25
+						"limit": 10
 					},
 					{
 						"value": "5:30pm",
-						"limit": 25
+						"limit": 10
 					},
 					{
 						"value": "6:00pm",
-						"limit": 25
+						"limit": 10
 					},
 					{
 						"value": "6:30pm",
-						"limit": 25
+						"limit": 10
 					},
 					{
 						"value": "7:00pm",
-						"limit": 25
+						"limit": 10
 					},
 					{
 						"value": "7:30pm",
-						"limit": 25
+						"limit": 10
 					}
 				],
 				"required": true,
