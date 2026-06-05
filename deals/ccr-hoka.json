@@ -54,27 +54,27 @@
 				"id": "time",
 				"label": "What time would you like to attend?",
 				"type": "select",
-				"limit": 200,
+				"limit": 240,
 				"range": [
 					{
 						"value": "12:00pm",
 						"count": 1,
-						"limit": 50
+						"limit": 60
 					},
 					{
 						"value": "1:00pm",
 						"count": 1,
-						"limit": 50
+						"limit": 60
 					},
 					{
 						"value": "2:00pm",
 						"count": 1,
-						"limit": 50
+						"limit": 60
 					},
 					{
 						"value": "3:00pm",
 						"count": 1,
-						"limit": 50
+						"limit": 60
 					}
 				],
 				"required": true,
