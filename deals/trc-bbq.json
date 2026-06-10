@@ -1,0 +1,266 @@
+{
+	"biz_id": "threerivers",
+	"check_in": true,
+	"auth_required": true,
+	"error_auth": {
+		"title": "Oops!",
+		"content": "Can't play if you ain't authenticated!"
+	},
+	"active": {
+		"start": "2026-06-07 3:00PM PDT",
+		"end": "2026-06-07 8:00PM PDT"
+	},
+	"summary_info": "Olukai Boutique",
+	"FORM": {
+		"fields": [
+			{
+				"id": "Hotel",
+				"label": "Hotel",
+				"type": "text",
+				"sticky": true,
+				"disabled": true,
+				"hidden": true
+			},
+			{
+				"type": "info",
+				"markdown": "# Olukai Boutique"
+			},
+			{
+				"type": "info",
+				"markdown": "## **June 7th, 2026**"
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "info",
+				"markdown": "## **Florence & Coos Bay**"
+			},
+			{
+				"type": "info",
+				"markdown": "It's our pleasure to invite our valued Three Rivers guests to our **Olukai Boutique**!",
+				"justify": "center"
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"id": "attend",
+				"label": "Will you attend the Olukai Boutique?",
+				"type": "select",
+				"range": [
+					"Yes",
+					"No"
+				],
+				"required": true,
+				"global": true,
+				"capacity_map": {
+					"Yes": 1,
+					"No": 0
+				}
+			},
+			{
+				"id": "location",
+				"label": "Which property would you like to visit?",
+				"type": "select",
+				"range": [
+					"Florence",
+					"Coos Bay"
+				],
+				"required": true,
+				"conditional": {
+					"field": "attend",
+					"value": "Yes"
+				}
+			},
+			{
+				"id": "FLday3time",
+				"label": "What time would you like to attend?",
+				"type": "select",
+				"count_from": "attend",
+				"limit": 300,
+				"range": [
+					{
+						"value": "Noon",
+						"limit": 25
+					},
+					{
+						"value": "12:30pm",
+						"limit": 25
+					},
+					{
+						"value": "1:00pm",
+						"limit": 25
+					},
+					{
+						"value": "1:30pm",
+						"limit": 25
+					},
+					{
+						"value": "2:00pm",
+						"limit": 25
+					},
+					{
+						"value": "2:30pm",
+						"limit": 25
+					},
+					{
+						"value": "3:00pm",
+						"limit": 25
+					},
+					{
+						"value": "3:30pm",
+						"limit": 25
+					},
+					{
+						"value": "4:00pm",
+						"limit": 25
+					},
+					{
+						"value": "4:30pm",
+						"limit": 25
+					},
+					{
+						"value": "5:00pm",
+						"limit": 25
+					},
+					{
+						"value": "5:30pm",
+						"limit": 25
+					}
+				],
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "location",
+						"value": "Florence"
+					}
+				]
+			},
+			{
+				"id": "CBday3time",
+				"label": "What time would you like to attend?",
+				"type": "select",
+				"count_from": "attend",
+				"limit": 300,
+				"range": [
+										{
+						"value": "Noon",
+						"limit": 25
+					},
+										{
+						"value": "12:30pm",
+						"limit": 25
+					},
+					{
+						"value": "1:00pm",
+						"limit": 25
+					},
+					{
+						"value": "1:30pm",
+						"limit": 25
+					},
+					{
+						"value": "2:00pm",
+						"limit": 25
+					},
+					{
+						"value": "2:30pm",
+						"limit": 25
+					},
+					{
+						"value": "3:00pm",
+						"limit": 25
+					},
+					{
+						"value": "3:30pm",
+						"limit": 25
+					},
+					{
+						"value": "4:00pm",
+						"limit": 25
+					},
+					{
+						"value": "4:30pm",
+						"limit": 25
+					},
+					{
+						"value": "5:00pm",
+						"limit": 25
+					},
+					{
+						"value": "5:30pm",
+						"limit": 25
+					}
+				],
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "location",
+						"value": "Coos Bay"
+					}
+				]
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "fields_group",
+				"bgcolor": "#D8CFBF",
+				"fields": [
+					{
+						"id": "z_FIRSTNAME",
+						"label": "First Name:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					},
+					{
+						"id": "z_LASTNAME",
+						"label": "Last Name:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					},
+					{
+						"id": "PlayerID",
+						"label": "Player ID:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					},
+					{
+						"id": "z_EMAIL",
+						"label": "Email:",
+						"type": "text",
+						"sticky": true,
+						"disabled": false
+					}
+				]
+			}
+		],
+		"title": "Three Rivers Casino Resort",
+		"limits": {
+			"most_recent_only": true,
+			"most_recent_key": "PlayerID"
+		},
+		"submit": {
+			"label": "Submit RSVP",
+			"color": "#20363d"
+		}
+	},
+	"MAIN": {
+		"body_md": "# Your reservation is confirmed!\n\nThank you for your RSVP. If you need to make any changes just scan your invitation again. We look forward to seeing you at **Three Rivers Casino Resort**!"
+	}
+}
