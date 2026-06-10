@@ -119,6 +119,28 @@
 					}
 				]
 			},
+						{
+				"id": "room",
+				"label": "Would you like your host to contact you about accommodations?",
+				"type": "select",
+				"range": [
+					"Yes",
+					"No"
+				],
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "Hotel",
+						"values": [
+							"Y"
+						]
+					}
+				]
+			},
 			{
 				"type": "info",
 				"markdown": "---"
