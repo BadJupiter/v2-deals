@@ -7,10 +7,10 @@
 		"content": "Can't play if you ain't authenticated!"
 	},
 	"active": {
-		"start": "2026-07-01 8:00AM PDT",
-		"end": "2026-07-03 10:00PM PDT"
+		"start": "2026-07-28 8:00AM PDT",
+		"end": "2026-07-31 10:00PM PDT"
 	},
-	"summary_info": "Feel the Heat Summer BBQ",
+	"summary_info": "Permanent Jewelry Boutique",
 	"FORM": {
 		"fields": [
 			{
@@ -23,11 +23,11 @@
 			},
 			{
 				"type": "info",
-				"markdown": "# Feel the Heat Summer BBQ"
+				"markdown": "# Permanent Jewelry Boutique"
 			},
 			{
 				"type": "info",
-				"markdown": "## **Friday, July 3rd, 2026**"
+				"markdown": "## **Friday, July 31st, 2026**"
 			},
 			{
 				"type": "info",
@@ -39,7 +39,7 @@
 			},
 			{
 				"type": "info",
-				"markdown": "It's our pleasure to invite our valued Three Rivers guests to our **Feel the Heat Summer BBQ Event**!",
+				"markdown": "It's our pleasure to invite our valued Three Rivers guests to our **Permanent Jewelry Boutique**!",
 				"justify": "center"
 			},
 			{
@@ -48,17 +48,7 @@
 			},
 			{
 				"id": "attend",
-				"label": "Will you attend the Feel the Heat Summer BBQ?",
-				"type": "select",
-				"range": [
-					"Yes",
-					"No"
-				],
-				"required": true
-			},
-			{
-				"id": "guest",
-				"label": "Will you be bringing a guest?",
+				"label": "Will you be attending the Jewelry Boutique?",
 				"type": "select",
 				"range": [
 					"Yes",
@@ -67,48 +57,56 @@
 				"required": true,
 				"global": true,
 				"capacity_map": {
-					"Yes": 2,
-					"No": 1
-				},
-				"conditional": {
-					"field": "attend",
-					"value": "Yes"
+					"Yes": 1,
+					"No": 0
 				}
 			},
 			{
 				"id": "time",
 				"label": "What time would you like to attend?",
 				"type": "select",
-				"count_from": "guest",
-				"limit": 350,
+				"count_from": "attend",
+				"limit": 250,
 				"range": [
 					{
-						"value": "Noon",
-						"limit": 50
-					},
-					{
-						"value": "12:30pm",
-						"limit": 50
-					},
-					{
-						"value": "1:00pm",
-						"limit": 50
-					},
-					{
-						"value": "1:30pm",
-						"limit": 50
-					},
-					{
-						"value": "2:00pm",
-						"limit": 50
-					},
-					{
-						"value": "2:30pm",
-						"limit": 50
-					},
-					{
 						"value": "3:00pm",
-						"limit": 50
+						"limit": 25
+					},
+					{
+						"value": "3:30pm",
+						"limit": 25
+					},
+					{
+						"value": "4:00pm",
+						"limit": 25
+					},
+					{
+						"value": "4:30pm",
+						"limit": 25
+					},
+					{
+						"value": "5:00pm",
+						"limit": 25
+					},
+					{
+						"value": "5:30pm",
+						"limit": 25
+					},
+					{
+						"value": "6:00pm",
+						"limit": 25
+					},
+					{
+						"value": "6:30pm",
+						"limit": 25
+					},
+					{
+						"value": "7:00pm",
+						"limit": 25
+					},
+					{
+						"value": "7:30pm",
+						"limit": 25
 					}
 				],
 				"required": true,
