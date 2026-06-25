@@ -9,16 +9,16 @@
 	"styling": {
 		"fonts": {
 			"headers": {
-				"family": "Raleway",
+				"family": "Montserrat",
 				"weight": 700,
 				"style": "italic"
 			},
 			"body": {
-				"family": "Raleway",
+				"family": "Montserrat",
 				"weight": "normal"
 			},
 			"formlabels": {
-				"family": "Raleway",
+				"family": "Montserrat",
 				"weight": "bold"
 			}
 		}
