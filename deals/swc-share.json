@@ -106,7 +106,7 @@
 			},
 			{
 				"type": "info",
-				"markdown": "---"
+				"markdown": "   "
 			},
 			{
 				"type": "fields_group",
