@@ -157,7 +157,7 @@
 		"notify": {
 			"opt_in": "rating",
 			"trigger_values": ["⭑⭑", "⭑"],
-			"message": "**Guest Feedback Notification**\n\nFrom: {firstname} {lastname} - {_mob}\nRating: {rating}\n\nComments: {negativecomments}",
+			"message": "**Guest Feedback Notification\n\nFrom: {firstname} {lastname} - ({_mob})\nRating: {rating}\n\nComments: {negativecomments}",
 			"mobiles": [
 				"+15039533423",
 				"+16462474444"
