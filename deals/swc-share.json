@@ -145,10 +145,12 @@
 			"color": "#20363d"
 		},
 		"notify": {
-			"opt_in": "contact",
-			"message": "(from {_mob}) {name} submitted a Saddle West feedback survey: {comments}",
+			"opt_in": "rating",
+			"trigger_values": ["⭑⭑", "⭑"],
+			"message": "Low rating at SWC\nFrom: {firstname} {lastname} ({_mob})\nRating: {rating}\nComments: {negativecomments}",
 			"mobiles": [
-				"+15039533423"
+				"+15039533423",
+				"+16462474444"
 			]
 		}
 	},
