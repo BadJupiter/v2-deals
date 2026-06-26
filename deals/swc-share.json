@@ -138,7 +138,14 @@
 						"required": false
 					}
 				]
+			},
+			{
+				"id": "optin",
+				"label": "By checking this box, I agree to receive promotional emails from Saddle West, including exclusive offers, promotions, dining specials, and casino event updates. I understand I can unsubscribe at any time.",
+				"type": "checkbox"
+				"required": false
 			}
+			
 		],
 		"submit": {
 			"label": "Submit Feedback",
