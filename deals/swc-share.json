@@ -148,7 +148,7 @@
 			{
 				"type": "info",
 				"markdown": "---"
-			},
+			}
 		],
 		"submit": {
 			"label": "Submit Feedback",
