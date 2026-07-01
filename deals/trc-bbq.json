@@ -80,35 +80,35 @@
 				"label": "What time would you like to attend?",
 				"type": "select",
 				"count_from": "guest",
-				"limit": 350,
+				"limit": 420,
 				"range": [
 					{
 						"value": "Noon",
-						"limit": 50
+						"limit": 60
 					},
 					{
 						"value": "12:30pm",
-						"limit": 50
+						"limit": 60
 					},
 					{
 						"value": "1:00pm",
-						"limit": 50
+						"limit": 60
 					},
 					{
 						"value": "1:30pm",
-						"limit": 50
+						"limit": 60
 					},
 					{
 						"value": "2:00pm",
-						"limit": 50
+						"limit": 60
 					},
 					{
 						"value": "2:30pm",
-						"limit": 50
+						"limit": 60
 					},
 					{
 						"value": "3:00pm",
-						"limit": 50
+						"limit": 60
 					}
 				],
 				"required": true,
