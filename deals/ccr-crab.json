@@ -8,21 +8,26 @@
 	},
 
 	"active": {
-		"start": "2025-08-01 10:00AM CDT",
-		"end": "2025-08-30 11:59PM CDT"
+		"start": "2026-08-01 10:00AM PDT",
+		"end": "2026-08-21 11:59PM PDT"
 	},
 	
-	"summary_info": "Dinner and a personalized gift",
+	"META": {
+		"name": "Crab Boil",
+		"description": "Join us for a classic seafood boil, and a personalized gift ABSOLUTELY FREE!",
+		"dt": "August 21st",
+		"event_start_dt": "2026-08-21 12:00PM PDT"
+	},
 			
 	"FORM": {
 		"fields": [
 			{
 				"type": "info",
-				"markdown": "# Creekstone Dinner"
+				"markdown": "# Crab Boil"
 			},
 			{
 				"type": "info",
-				"markdown": "## **August 29th - 30th**"
+				"markdown": "## **August 21st, 2026**"
 			},
 			{
 				"type": "info",
@@ -31,7 +36,7 @@
 			{
 				"type": "info",
 				"justify": "center",
-				"markdown": " \n\nYou are invited to the Creekstone Dinner at Colusa Casino Resort!"
+				"markdown": " \n\nYou are invited to the Crab Boil at Colusa Casino Resort!"
 			},
 			{
 				"id": "attend",
@@ -41,21 +46,10 @@
 				"required": true
 			},
 			{
-				"id": "day",
-				"label": "Which date will you be attending?",
-				"type": "select",
-				"range": ["Friday, August 29th","Saturday, August 30th"],
-				"required": true,
-				"conditional": {
-					"field": "attend",
-					"value": "Yes"
-				}
-			},
-			{
 				"id": "time",
 				"label": "Preferred dinner time:",
 				"type": "select",
-				"range": ["5:00 PM","6:30 PM","8:00 PM"],
+				"range": ["5:30 PM","7:00 PM"],
 				"required": true,
 				"conditional": {
 					"field": "attend",
@@ -66,7 +60,7 @@
 				"id": "time1count",
 				"label": "How many in your party?",
 				"type": "select",
-				"limit": 100,
+				"limit": 1000,
 				"range": [
 					{
 						"value": "Myself",
@@ -84,12 +78,8 @@
 						"value": "Yes"
 					},
 					{
-						"field": "day",
-						"value": "Friday, August 29th"
-					},
-					{
 						"field": "time",
-						"value": "5:00 PM"
+						"value": "5:30 PM"
 					}
 				]				
 			},
@@ -97,7 +87,7 @@
 				"id": "time2count",
 				"label": "How many in your party?",
 				"type": "select",
-				"limit": 98,
+				"limit": 1000,
 				"range": [
 					{
 						"value": "Myself",
@@ -115,145 +105,17 @@
 						"value": "Yes"
 					},
 					{
-						"field": "day",
-						"value": "Friday, August 29th"
-					},
-					{
 						"field": "time",
-						"value": "6:30 PM"
+						"value": "7:00 PM"
 					}
 				]				
 
 			},			
 			{
-				"id": "time3count",
-				"label": "How many in your party?",
-				"type": "select",
-				"limit": 93,
-				"range": [
-					{
-						"value": "Myself",
-						"count": 1
-					},
-					{
-						"value": "Myself plus a Guest",
-						"count": 2
-					}
-				],
-				"required": true,
-				"conditional": [
-					{
-						"field": "attend",
-						"value": "Yes"
-					},
-					{
-						"field": "day",
-						"value": "Friday, August 29th"
-					},
-					{
-						"field": "time",
-						"value": "8:00 PM"
-					}
-				]				
-			},			
-			{
-				"id": "time4count",
-				"label": "How many in your party?",
-				"type": "select",
-				"limit": 100,
-				"range": [
-					{
-						"value": "Myself",
-						"count": 1
-					},
-					{
-						"value": "Myself plus a Guest",
-						"count": 2
-					}
-				],
-				"required": true,
-				"conditional": [
-					{
-						"field": "attend",
-						"value": "Yes"
-					},
-					{
-						"field": "day",
-						"value": "Saturday, August 30th"
-					},
-					{
-						"field": "time",
-						"value": "5:00 PM"
-					}
-				]				
-			},
-			{
-				"id": "time5count",
-				"label": "How many in your party?",
-				"type": "select",
-				"limit": 100,
-				"range": [
-					{
-						"value": "Myself",
-						"count": 1
-					},
-					{
-						"value": "Myself plus a Guest",
-						"count": 2
-					}
-				],
-				"required": true,
-				"conditional": [
-					{
-						"field": "attend",
-						"value": "Yes"
-					},
-					{
-						"field": "day",
-						"value": "Saturday, August 30th"
-					},
-					{
-						"field": "time",
-						"value": "6:30 PM"
-					}
-				]				
-			},
-			{
-				"id": "time6count",
-				"label": "How many in your party?",
-				"type": "select",
-				"limit": 100,
-				"range": [
-					{
-						"value": "Myself",
-						"count": 1
-					},
-					{
-						"value": "Myself plus a Guest",
-						"count": 2
-					}
-				],
-				"required": true,
-				"conditional": [
-					
-					{
-						"field": "attend",
-						"value": "Yes"
-					},{
-						"field": "day",
-						"value": "Saturday, August 30th"
-					},
-					{
-						"field": "time",
-						"value": "8:00 PM"
-					}
-				]				
-			},
-			{
 				"id": "time1meal1",
 				"label": "What would you like for dinner?",
 				"type": "select",
-				"range": ["Prime Creekstone Filet","Prime Creekstone Ribeye","Chilean Seabass"],
+				"range": ["Crab Boil","Creamy Vegetable Pasta"],
 				"required": true,
 				"conditional": [
 				  	{
@@ -270,7 +132,7 @@
 				"id": "time1meal2",
 				"label": "What would your guest like?",
 				"type": "select",
-				"range": ["Prime Creekstone Filet","Prime Creekstone Ribeye","Chilean Seabass"],
+				"range": ["Crab Boil","Creamy Vegetable Pasta"],
 				"required": true,
 				"conditional": [
 				  	{
@@ -287,7 +149,7 @@
 				"id": "time2meal1",
 				"label": "What would you like for dinner?",
 				"type": "select",
-				"range": ["Prime Creekstone Filet","Prime Creekstone Ribeye","Chilean Seabass"],
+				"range": ["Crab Boil","Creamy Vegetable Pasta"],
 				"required": true,
 				"conditional": [
 					{
@@ -304,7 +166,7 @@
 				"id": "time2meal2",
 				"label": "What would your guest like?",
 				"type": "select",
-				"range": ["Prime Creekstone Filet","Prime Creekstone Ribeye","Chilean Seabass"],
+				"range": ["Crab Boil","Creamy Vegetable Pasta"],
 				"required": true,
 				"conditional": [
 					{
@@ -318,146 +180,10 @@
 			  	]
 			},
 			{
-				"id": "time3meal1",
-				"label": "What would you like for dinner?",
-				"type": "select",
-				"range": ["Prime Creekstone Filet","Prime Creekstone Ribeye","Chilean Seabass"],
-				"required": true,
-				"conditional": [
-					{
-						"field": "attend",
-						"value": "Yes"
-					},
-					{
-						"field": "time3count",
-						"values": ["Myself","Myself plus a Guest"]
-				   	}
-			  	]
-			},
-			{
-				"id": "time3meal2",
-				"label": "What would your guest like?",
-				"type": "select",
-				"range": ["Prime Creekstone Filet","Prime Creekstone Ribeye","Chilean Seabass"],
-				"required": true,
-				"conditional": [
-					{
-						"field": "attend",
-						"value": "Yes"
-					},
-					{
-						"field": "time3count",
-						"values": ["Myself plus a Guest"]
-				   	}
-			  	]
-			},
-			{
-				"id": "time4meal1",
-				"label": "What would you like for dinner?",
-				"type": "select",
-				"range": ["Prime Creekstone Filet","Prime Creekstone Ribeye","Chilean Seabass"],
-				"required": true,
-				"conditional": [
-					{
-						"field": "attend",
-						"value": "Yes"
-					},
-					{
-						"field": "time4count",
-						"values": ["Myself","Myself plus a Guest"]
-				   	}
-			  	]
-			},
-			{
-				"id": "time4meal2",
-				"label": "What would your guest like for dinner?",
-				"type": "select",
-				"range": ["Prime Creekstone Filet","Prime Creekstone Ribeye","Chilean Seabass"],
-				"required": true,
-				"conditional": [
-					{
-						"field": "attend",
-						"value": "Yes"
-					},
-					{
-						"field": "time4count",
-						"values": ["Myself plus a Guest"]
-				   	}
-			  	]
-			},
-			{
-				"id": "time5meal1",
-				"label": "What would you like for dinner?",
-				"type": "select",
-				"range": ["Prime Creekstone Filet","Prime Creekstone Ribeye","Chilean Seabass"],
-				"required": true,
-				"conditional": [
-					{
-						"field": "attend",
-						"value": "Yes"
-					},
-					{
-						"field": "time5count",
-						"values": ["Myself","Myself plus a Guest"]
-				   	}
-			  	]
-			},
-			{
-				"id": "time5meal2",
-				"label": "What would your guest like for dinner?",
-				"type": "select",
-				"range": ["Prime Creekstone Filet","Prime Creekstone Ribeye","Chilean Seabass"],
-				"required": true,
-				"conditional": [
-					{
-						"field": "attend",
-						"value": "Yes"
-					},
-					{
-						"field": "time5count",
-						"values": ["Myself plus a Guest"]
-				   	}
-			  	]
-			},
-			{
-				"id": "time6meal1",
-				"label": "What would you like for dinner?",
-				"type": "select",
-				"range": ["Prime Creekstone Filet","Prime Creekstone Ribeye","Chilean Seabass"],
-				"required": true,
-				"conditional": [
-					{
-						"field": "attend",
-						"value": "Yes"
-					},
-					{
-						"field": "time6count",
-						"values": ["Myself","Myself plus a Guest"]
-				   	}
-			  	]
-			},
-			{
-				"id": "time6meal2",
-				"label": "What would your guest like for dinner?",
-				"type": "select",
-				"range": ["Prime Creekstone Filet","Prime Creekstone Ribeye","Chilean Seabass"],
-				"required": true,
-				"conditional": [
-					{
-						"field": "attend",
-						"value": "Yes"
-					},
-					{
-						"field": "time6count",
-						"values": ["Myself plus a Guest"]
-				   	}
-			  	]
-			},
-			{
 				"id": "gift",
-				"label": "Choose your personalized gift?",
+				"label": "Choose your personalized gift:",
 				"type": "select",
-				"range": ["Petite Carver","Santoku Trimmer"],
+				"range": ["Kitchen Shears","Petite Santoku Chef Knife"],
 				"required": true,
 				"conditional": [
 					{
@@ -473,7 +199,7 @@
 				"conditional": [
 				   {
 					   "field": "gift",
-					   "values": ["Petite Carver","Santoku Trimmer"]
+					   "values": ["Kitchen Shears","Petite Santoku Chef Knife"]
 				   }
 			   ]
 			},
@@ -503,7 +229,7 @@
 					},
 					{
 						"id": "PlayerID",
-						"label": "Rewards #:",
+						"label": "Club #:",
 						"type": "text",
 						"sticky": true,
 						"required": true,
@@ -522,6 +248,6 @@
 		}
 	},
 	"MAIN": {
-		"body_md": "# We've received your request \n\nIf you need to make any changes to your RSVP just scan your invitation again. If you need any help please call the number on your invitation. We hope to see you soon at **Colusa Casino Resort**."
+		"body_md": "# Your reservation is confirmed \n\nIf you need to make any changes just scan your invitation again. If you need any help please get in touch. We hope to see you soon at **Colusa Casino**."
 	}
 }
