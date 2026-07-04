@@ -46,71 +46,45 @@
 				"required": true
 			},
 			{
+				"id": "guest",
+				"label": "How many in your party?",
+				"type": "select",
+				"range": ["Myself","Myself plus a Guest"],
+				"required": true,
+				"global": true,
+  				"capacity_map": {
+  					"Myself plus a Guest": 2,
+    				"Myself": 1
+  				},
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					}
+				]				
+			},
+			{
 				"id": "time",
 				"label": "Preferred dinner time:",
 				"type": "select",
-				"range": ["5:30 PM","7:00 PM"],
+				"count_from": "guest",
+				"limit": 2000,
+				"range": [
+					{
+						"value": "5:30pm",
+						"limit": 1000
+					},
+					{
+						"value": "7:00pm",
+						"limit": 1000
+					}
+				],	
 				"required": true,
 				"conditional": {
 					"field": "attend",
 					"value": "Yes"
 				}
 			},
-			{
-				"id": "time1count",
-				"label": "How many in your party?",
-				"type": "select",
-				"limit": 10000,
-				"range": [
-					{
-						"value": "Myself",
-						"count": 1
-					},
-					{
-						"value": "Myself plus a Guest",
-						"count": 2
-					}
-				],
-				"required": true,
-				"conditional": [
-					{
-						"field": "attend",
-						"value": "Yes"
-					},
-					{
-						"field": "time",
-						"value": "5:30 PM"
-					}
-				]				
-			},
-			{
-				"id": "time2count",
-				"label": "How many in your party?",
-				"type": "select",
-				"limit": 10000,
-				"range": [
-					{
-						"value": "Myself",
-						"count": 1
-					},
-					{
-						"value": "Myself plus a Guest",
-						"count": 2
-					}
-				],
-				"required": true,
-				"conditional": [
-					{
-						"field": "attend",
-						"value": "Yes"
-					},
-					{
-						"field": "time",
-						"value": "7:00 PM"
-					}
-				]				
-
-			},			
 			{
 				"id": "time1meal1",
 				"label": "What would you like for dinner?",
@@ -123,7 +97,11 @@
 						"value": "Yes"
 					},
 					{
-					  	"field": "time1count",
+						"field": "time",
+						"value": "5:30pm"
+					},
+					{
+					  	"field": "guest",
 					  	"values": ["Myself","Myself plus a Guest"]
 				  	 }
 				]		
@@ -140,7 +118,11 @@
 						"value": "Yes"
 					},
 					{
-					   	"field": "time1count",
+						"field": "time",
+						"value": "5:30pm"
+					},
+					{
+					   	"field": "guest",
 					  	"values": ["Myself plus a Guest"]
 				  	}
 				]		
@@ -157,7 +139,11 @@
 						"value": "Yes"
 					},
 					{
-						"field": "time2count",
+						"field": "time",
+						"value": "7:00pm"
+					},
+					{
+						"field": "guest",
 						"values": ["Myself","Myself plus a Guest"]
 				   	}
 			  	]
@@ -174,7 +160,11 @@
 						"value": "Yes"
 					},
 					{
-						"field": "time2count",
+						"field": "time",
+						"value": "7:00pm"
+					},
+					{
+						"field": "guest",
 						"values": ["Myself plus a Guest"]
 				   	}
 			  	]
