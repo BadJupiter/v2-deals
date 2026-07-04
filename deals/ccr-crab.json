@@ -87,7 +87,7 @@
 				"id": "time2count",
 				"label": "How many in your party?",
 				"type": "select",
-				"limit": 1000,
+				"limit": 10000,
 				"range": [
 					{
 						"value": "Myself",
