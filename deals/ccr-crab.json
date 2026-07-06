@@ -8,13 +8,13 @@
 	},
 
 	"active": {
-		"start": "2026-08-01 10:00AM PDT",
+		"start": "2026-08-01 6:00AM PDT",
 		"end": "2026-08-21 11:59PM PDT"
 	},
 	
 	"META": {
-		"name": "Crab Boil",
-		"description": "Join us for a classic seafood boil, and a personalized gift ABSOLUTELY FREE!",
+		"name": "Crab Boil Hosted Dinner",
+		"description": "Exclusive dinner for you and a guest",
 		"dt": "August 21st",
 		"event_start_dt": "2026-08-21 12:00PM PDT"
 	},
@@ -23,7 +23,7 @@
 		"fields": [
 			{
 				"type": "info",
-				"markdown": "# Crab Boil"
+				"markdown": "# Crab Boil Hosted Dinner"
 			},
 			{
 				"type": "info",
@@ -36,7 +36,7 @@
 			{
 				"type": "info",
 				"justify": "center",
-				"markdown": " \n\nYou are invited to the Crab Boil at Colusa Casino Resort!"
+				"markdown": " \n\nYou are invited to a **Crab Boil** at Colusa Casino Resort!"
 			},
 			{
 				"id": "attend",
@@ -64,29 +64,7 @@
 				]				
 			},
 			{
-				"id": "time",
-				"label": "Preferred dinner time:",
-				"type": "select",
-				"count_from": "guest",
-				"limit": 2000,
-				"range": [
-					{
-						"value": "5:30pm",
-						"limit": 1000
-					},
-					{
-						"value": "7:00pm",
-						"limit": 1000
-					}
-				],	
-				"required": true,
-				"conditional": {
-					"field": "attend",
-					"value": "Yes"
-				}
-			},
-			{
-				"id": "time1meal1",
+				"id": "meal1",
 				"label": "What would you like for dinner?",
 				"type": "select",
 				"range": ["Crab Boil","Creamy Vegetable Pasta"],
@@ -95,10 +73,6 @@
 				  	{
 						"field": "attend",
 						"value": "Yes"
-					},
-					{
-						"field": "time",
-						"value": "5:30pm"
 					},
 					{
 					  	"field": "guest",
@@ -107,7 +81,7 @@
 				]		
 			},
 			{
-				"id": "time1meal2",
+				"id": "meal2",
 				"label": "What would your guest like?",
 				"type": "select",
 				"range": ["Crab Boil","Creamy Vegetable Pasta"],
@@ -118,56 +92,10 @@
 						"value": "Yes"
 					},
 					{
-						"field": "time",
-						"value": "5:30pm"
-					},
-					{
 					   	"field": "guest",
 					  	"values": ["Myself plus a Guest"]
 				  	}
 				]		
-			},
-			{
-				"id": "time2meal1",
-				"label": "What would you like for dinner?",
-				"type": "select",
-				"range": ["Crab Boil","Creamy Vegetable Pasta"],
-				"required": true,
-				"conditional": [
-					{
-						"field": "attend",
-						"value": "Yes"
-					},
-					{
-						"field": "time",
-						"value": "7:00pm"
-					},
-					{
-						"field": "guest",
-						"values": ["Myself","Myself plus a Guest"]
-				   	}
-			  	]
-			},
-			{
-				"id": "time2meal2",
-				"label": "What would your guest like?",
-				"type": "select",
-				"range": ["Crab Boil","Creamy Vegetable Pasta"],
-				"required": true,
-				"conditional": [
-					{
-						"field": "attend",
-						"value": "Yes"
-					},
-					{
-						"field": "time",
-						"value": "7:00pm"
-					},
-					{
-						"field": "guest",
-						"values": ["Myself plus a Guest"]
-				   	}
-			  	]
 			},
 			{
 				"id": "gift",
