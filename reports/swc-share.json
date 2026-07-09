@@ -1,6 +1,6 @@
 {
-	"biz_id": "colusacasino",
-	"deal_tokens": [ "colusa" ],
+	"biz_id": "saddlewest",
+	"deal_tokens": [ "swc-share" ],
 	"most_recent_only": false, # omit or set to false for all rows
 
 #	The following column values are always available (attrib):
@@ -24,76 +24,108 @@
 			"attrib": "_deal"
 		},
 		{
-			"column_name": "Slots",
-			"attrib": "games-Slot Machines"
+			"column_name": "Rating",
+			"attrib": "rating"
 		},
 		{
-			"column_name": "Table Games",
-			"attrib": "games-Table Games"
-		},		
-		{
-			"column_name": "Video Poker",
-			"attrib": "games-Video Poker"
-		},		
-		{
-			"column_name": "Keno",
-			"attrib": "games-Keno"
-		},		
-		{
-			"column_name": "Bingo",
-			"attrib": "games-Bingo"
+			"column_name": "Pos Casino floor experience",
+			"attrib": "highlight-Casino floor experience"
 		},
 		{
-			"column_name": "Jack's Place",
-			"attrib": "dining-Jack's Place"
+			"column_name": "Pos Hotel room",
+			"attrib": "highlight-Hotel room"
+		},		
+		{
+			"column_name": "Pos RV resort",
+			"attrib": "highlight-RV resort"
+		},		
+		{
+			"column_name": "Pos Food & dining",
+			"attrib": "highlight-Food & dining"
+		},		
+		{
+			"column_name": "Pos Staff & service",
+			"attrib": "highlight-Staff & service"
+		},
+		{
+			"column_name": "Pos Overall atmosphere",
+			"attrib": "highlight-Overall atmosphere"
+		},		
+		{
+			"column_name": "Pos Something else",
+			"attrib": "highlight-Something else"
+		},		
+		{
+			"column_name": "Neg Casino floor experience",
+			"attrib": "fellshort-Casino floor experience"
+		},
+		{
+			"column_name": "Neg Hotel room",
+			"attrib": "fellshort-Hotel room"
+		},		
+		{
+			"column_name": "Neg RV resort",
+			"attrib": "fellshort-RV resort"
+		},		
+		{
+			"column_name": "Neg Food & dining",
+			"attrib": "fellshort-Food & dining"
+		},		
+		{
+			"column_name": "Neg Staff & service",
+			"attrib": "fellshort-Staff & service"
+		},
+		{
+			"column_name": "Neg Overall atmosphere",
+			"attrib": "fellshort-Overall atmosphere"
+		},		
+		{
+			"column_name": "Neg Something else",
+			"attrib": "fellshort-Something else"
+		},		
+		{
+			"column_name": "Pos Comments",
+			"attrib": "positivecomments"
+		},
+		{
+			"column_name": "Neg Comments",
+			"attrib": "negativecomments"
 		},
 		{
 			"column_name": "Cafe Ole",
 			"attrib": "dining-Cafe Ole"
 		},
 		{
-			"column_name": "Snack Bar (bingo)",
-			"attrib": "dining-Snack Bar (bingo)"
-		},
-		{
-			"column_name": "Rating",
-			"attrib": "rating"
-		},
-		{
-			"column_name": "Comments",
-			"attrib": "comments"
+			"column_name": "Team",
+			"attrib": "team"
 		},
 		{
 			"column_name": "Return",
 			"attrib": "return"
 		},
 		{
-			"column_name": "Recommend",
-			"attrib": "recommend"
-		},
-		{
 			"column_name": "Amenities",
 			"attrib": "amenities"
 		},
 		{
-			"column_name": "Team",
-			"attrib": "team"
+			"column_name": "First Name",
+			"attrib": "firstname"
 		},
 		{
-			"column_name": "Name",
-			"attrib": "name"
+			"column_name": "Last Name",
+			"attrib": "lastname"
 		},
 		{
-			"column_name": "Player ID",
-			"attrib": "rewards"
+			"column_name": "Email",
+			"attrib": "email"
 		},
 		{
 			"column_name": "Address",
 			"attrib": "address"
 		},
 		{
-			"column_name": "Email",
-			"attrib": "email"
+			"column_name": "Optin",
+			"attrib": "optin"
 		}
 	]
 }
