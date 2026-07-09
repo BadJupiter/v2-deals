@@ -1,0 +1,99 @@
+{
+	"biz_id": "colusacasino",
+	"deal_tokens": [ "colusa" ],
+	"most_recent_only": false, # omit or set to false for all rows
+
+#	The following column values are always available (attrib):
+#	
+#	_when		grab timestamp (Unix -- for now)
+#	_mobile		User mobile number
+#	_deal		Deal token
+#	_rowid		unique row (grab) identifier
+
+	"COLUMNS": [
+		{
+			"column_name": "Timestamp",
+			"attrib": "_when"
+		},
+		{
+			"column_name": "Mobile",
+			"attrib": "_mobile"
+		},
+		{
+			"column_name": "Deal ID",
+			"attrib": "_deal"
+		},
+		{
+			"column_name": "Slots",
+			"attrib": "games-Slot Machines"
+		},
+		{
+			"column_name": "Table Games",
+			"attrib": "games-Table Games"
+		},		
+		{
+			"column_name": "Video Poker",
+			"attrib": "games-Video Poker"
+		},		
+		{
+			"column_name": "Keno",
+			"attrib": "games-Keno"
+		},		
+		{
+			"column_name": "Bingo",
+			"attrib": "games-Bingo"
+		},
+		{
+			"column_name": "Jack's Place",
+			"attrib": "dining-Jack's Place"
+		},
+		{
+			"column_name": "Cafe Ole",
+			"attrib": "dining-Cafe Ole"
+		},
+		{
+			"column_name": "Snack Bar (bingo)",
+			"attrib": "dining-Snack Bar (bingo)"
+		},
+		{
+			"column_name": "Rating",
+			"attrib": "rating"
+		},
+		{
+			"column_name": "Comments",
+			"attrib": "comments"
+		},
+		{
+			"column_name": "Return",
+			"attrib": "return"
+		},
+		{
+			"column_name": "Recommend",
+			"attrib": "recommend"
+		},
+		{
+			"column_name": "Amenities",
+			"attrib": "amenities"
+		},
+		{
+			"column_name": "Team",
+			"attrib": "team"
+		},
+		{
+			"column_name": "Name",
+			"attrib": "name"
+		},
+		{
+			"column_name": "Player ID",
+			"attrib": "rewards"
+		},
+		{
+			"column_name": "Address",
+			"attrib": "address"
+		},
+		{
+			"column_name": "Email",
+			"attrib": "email"
+		}
+	]
+}
