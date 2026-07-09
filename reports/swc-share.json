@@ -92,20 +92,12 @@
 			"attrib": "negativecomments"
 		},
 		{
-			"column_name": "Cafe Ole",
-			"attrib": "dining-Cafe Ole"
-		},
-		{
 			"column_name": "Team",
 			"attrib": "team"
 		},
 		{
-			"column_name": "Return",
-			"attrib": "return"
-		},
-		{
-			"column_name": "Amenities",
-			"attrib": "amenities"
+			"column_name": "Recommend",
+			"attrib": "recommend"
 		},
 		{
 			"column_name": "First Name",
