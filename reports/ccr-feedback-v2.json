@@ -1,5 +1,11 @@
 {
 	"biz_id": "colusacasino",
+
+#	Guest PII — only REGISTERED_FOR roles listed here may fetch this report.
+#	The server enforces it (POST /report/... with a usertoken); a plain GET
+#	gets 401. Do NOT remove without a reason.
+	"require_roles": [ "admin" ],
+
 	"deal_tokens": [ "colusa" ],
 	"most_recent_only": false, # omit or set to false for all rows
 	

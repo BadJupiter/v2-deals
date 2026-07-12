@@ -184,7 +184,7 @@ Character-by-character input (e.g., for monograms).
 - `count`: Required - Number of character inputs
 
 #### 9. `image` - Image Upload
-Photo capture or image upload.
+Photo capture or image upload. Always visible with live camera preview.
 
 ```json
 {
@@ -194,7 +194,24 @@ Photo capture or image upload.
 }
 ```
 
-#### 10. `fields_group` - Field Container
+#### 10. `image-button` - Compact Image Capture
+Collapsible button that expands to camera capture. Ideal for forms with multiple image fields.
+- Collapsed: "tap to capture" (or ✓ "tap to re-take" when already captured)
+- Expanded: same capture UI as `image` type
+- Camera is requested upfront only when any image/image-button field is required
+
+```json
+{
+  "id": "serial_tag_image",
+  "type": "image-button",
+  "required": true
+}
+```
+
+**Properties:**
+- `upload-image`: Optional. Set to `false` to hide the "or upload image" link (camera capture only). Default: `true`.
+
+#### 11. `fields_group` - Field Container
 Groups fields with optional background color.
 
 ```json
