@@ -1,10 +1,9 @@
 {
 	"biz_id": "colusacasino",
 
-#	Guest PII — only REGISTERED_FOR roles listed here may fetch this report.
-#	The server enforces it (POST /report/... with a usertoken); a plain GET
-#	gets 401. Do NOT remove without a reason.
-	"require_roles": [ "admin" ],
+#	Guest PII — access control does NOT live here: this report is permanently
+#	role-protected server-side (ALWAYS_REQUIRE_ROLES in v2-server core.py).
+#	Fetching it requires a POST with the usertoken of a business admin.
 
 	"deal_tokens": [ "colusa" ],
 	"most_recent_only": false, # omit or set to false for all rows
