@@ -7,7 +7,7 @@
 		"content": "Can't play if you ain't authenticated!"
 	},
 	"active": {
-		"start": "2026-08-14 8:00AM PDT",
+		"start": "2026-08-15 8:00AM PDT",
 		"end": "2026-08-15 10:00PM PDT"
 	},
 	"summary_info": "Martinis & Mercedes",
@@ -27,7 +27,7 @@
 			},
 			{
 				"type": "info",
-				"markdown": "## **August 14th - 15th, 2026**"
+				"markdown": "## **August 15th, 2026**"
 			},
 			{
 				"type": "info",
@@ -48,7 +48,7 @@
 			},
 			{
 				"id": "attend",
-				"label": "Will you be attending the Martinis & Mercedes event?",
+				"label": "Will you be attending the Martinis & Mercedes event on Saturday, August 15?",
 				"type": "select",
 				"range": [
 					"Yes",
