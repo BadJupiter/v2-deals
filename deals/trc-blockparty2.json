@@ -7,27 +7,19 @@
 		"content": "Can't play if you ain't authenticated!"
 	},
 	"active": {
-		"start": "2026-07-28 8:00AM PDT",
-		"end": "2026-07-31 10:00PM PDT"
+		"start": "2026-08-30 8:00AM PDT",
+		"end": "2026-08-30 10:00PM PDT"
 	},
-	"summary_info": "Permanent Jewelry Boutique",
+	"summary_info": "Coos Bay Block Party",
 	"FORM": {
 		"fields": [
-			{
-				"id": "Hotel",
-				"label": "Hotel",
-				"type": "text",
-				"sticky": true,
-				"disabled": true,
-				"hidden": true
+						{
+				"type": "info",
+				"markdown": "# Coos Bay Block Party"
 			},
 			{
 				"type": "info",
-				"markdown": "# Permanent Jewelry Boutique"
-			},
-			{
-				"type": "info",
-				"markdown": "## **Friday, July 31st, 2026**"
+				"markdown": "## **Sunday, August 30th, 2026**"
 			},
 			{
 				"type": "info",
@@ -35,11 +27,7 @@
 			},
 			{
 				"type": "info",
-				"markdown": "## **Florence Event Center**"
-			},
-			{
-				"type": "info",
-				"markdown": "It's our pleasure to invite our valued Three Rivers guests to our **Permanent Jewelry Boutique**!",
+				"markdown": "It's our pleasure to invite our valued Three Rivers guests to our **Coos Bay Block Party**!",
 				"justify": "center"
 			},
 			{
@@ -48,7 +36,17 @@
 			},
 			{
 				"id": "attend",
-				"label": "Will you be attending the Jewelry Boutique?",
+				"label": "Will you attend the Coos Bay Block Party on Sunday, August 30?",
+				"type": "select",
+				"range": [
+					"Yes",
+					"No"
+				],
+				"required": true
+			},
+				{
+				"id": "guest",
+				"label": "Will you be bringing a guest?",
 				"type": "select",
 				"range": [
 					"Yes",
@@ -57,17 +55,47 @@
 				"required": true,
 				"global": true,
 				"capacity_map": {
-					"Yes": 1,
-					"No": 0
-				}
+					"Yes": 2,
+					"No": 1
+				},
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					}
+				]
 			},
 			{
 				"id": "time",
 				"label": "What time would you like to attend?",
 				"type": "select",
-				"count_from": "attend",
+				"count_from": "guest",
 				"limit": 250,
 				"range": [
+					{
+						"value": "Noon",
+						"limit": 25
+					},
+					{
+						"value": "12:30pm",
+						"limit": 25
+					},
+					{
+						"value": "1:00pm",
+						"limit": 25
+					},
+					{
+						"value": "1:30pm",
+						"limit": 25
+					},
+					{
+						"value": "2:00pm",
+						"limit": 25
+					},
+					{
+						"value": "2:30pm",
+						"limit": 25
+					},
 					{
 						"value": "3:00pm",
 						"limit": 25
@@ -83,30 +111,6 @@
 					{
 						"value": "4:30pm",
 						"limit": 25
-					},
-					{
-						"value": "5:00pm",
-						"limit": 25
-					},
-					{
-						"value": "5:30pm",
-						"limit": 25
-					},
-					{
-						"value": "6:00pm",
-						"limit": 25
-					},
-					{
-						"value": "6:30pm",
-						"limit": 25
-					},
-					{
-						"value": "7:00pm",
-						"limit": 25
-					},
-					{
-						"value": "7:30pm",
-						"limit": 25
 					}
 				],
 				"required": true,
@@ -114,28 +118,6 @@
 					{
 						"field": "attend",
 						"value": "Yes"
-					}
-				]
-			},
-						{
-				"id": "room",
-				"label": "Would you like your host to contact you about accommodations?",
-				"type": "select",
-				"range": [
-					"Yes",
-					"No"
-				],
-				"required": true,
-				"conditional": [
-					{
-						"field": "attend",
-						"value": "Yes"
-					},
-					{
-						"field": "Hotel",
-						"values": [
-							"Y"
-						]
 					}
 				]
 			},
