@@ -7,10 +7,10 @@
 		"content": "Can't play if you ain't authenticated!"
 	},
 	"active": {
-		"start": "2026-07-28 8:00AM PDT",
-		"end": "2026-07-31 10:00PM PDT"
+		"start": "2026-08-14 8:00AM PDT",
+		"end": "2026-08-15 10:00PM PDT"
 	},
-	"summary_info": "Permanent Jewelry Boutique",
+	"summary_info": "Martinis & Mercedes",
 	"FORM": {
 		"fields": [
 			{
@@ -23,11 +23,11 @@
 			},
 			{
 				"type": "info",
-				"markdown": "# Permanent Jewelry Boutique"
+				"markdown": "# Martinis & Mercedes"
 			},
 			{
 				"type": "info",
-				"markdown": "## **Friday, July 31st, 2026**"
+				"markdown": "## **August 14th - 15th, 2026**"
 			},
 			{
 				"type": "info",
@@ -39,7 +39,7 @@
 			},
 			{
 				"type": "info",
-				"markdown": "It's our pleasure to invite our valued Three Rivers guests to our **Permanent Jewelry Boutique**!",
+				"markdown": "It's our pleasure to invite our valued Three Rivers guests to our **Martinis & Mercedes** event!",
 				"justify": "center"
 			},
 			{
@@ -48,76 +48,15 @@
 			},
 			{
 				"id": "attend",
-				"label": "Will you be attending the Jewelry Boutique?",
+				"label": "Will you be attending the Martinis & Mercedes event?",
 				"type": "select",
 				"range": [
 					"Yes",
 					"No"
 				],
-				"required": true,
-				"global": true,
-				"capacity_map": {
-					"Yes": 1,
-					"No": 0
-				}
+				"required": true
 			},
 			{
-				"id": "time",
-				"label": "What time would you like to attend?",
-				"type": "select",
-				"count_from": "attend",
-				"limit": 250,
-				"range": [
-					{
-						"value": "3:00pm",
-						"limit": 25
-					},
-					{
-						"value": "3:30pm",
-						"limit": 25
-					},
-					{
-						"value": "4:00pm",
-						"limit": 25
-					},
-					{
-						"value": "4:30pm",
-						"limit": 25
-					},
-					{
-						"value": "5:00pm",
-						"limit": 25
-					},
-					{
-						"value": "5:30pm",
-						"limit": 25
-					},
-					{
-						"value": "6:00pm",
-						"limit": 25
-					},
-					{
-						"value": "6:30pm",
-						"limit": 25
-					},
-					{
-						"value": "7:00pm",
-						"limit": 25
-					},
-					{
-						"value": "7:30pm",
-						"limit": 25
-					}
-				],
-				"required": true,
-				"conditional": [
-					{
-						"field": "attend",
-						"value": "Yes"
-					}
-				]
-			},
-						{
 				"id": "room",
 				"label": "Would you like your host to contact you about accommodations?",
 				"type": "select",
@@ -145,7 +84,7 @@
 			},
 			{
 				"type": "fields_group",
-				"bgcolor": "#D8CFBF",
+				"bgcolor": "#E8DDCC",
 				"fields": [
 					{
 						"id": "z_FIRSTNAME",
