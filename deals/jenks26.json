@@ -15,11 +15,11 @@
 	},
 	
 	"FORM": {
-		"title": "Jupiter 2 Test Deal",
+		"title": "Jenks 2026",
 		"fields": [
 			{
 				"type": "info",
-				"markdown": "# Hey this is just a test"
+				"markdown": "Hey this is just a test"
 			}
 		],
 		"limits": {
@@ -27,7 +27,7 @@
 			"most_recent_key": "PlayerID"
 		},
 		"submit": {
-			"label": "Submit RSVP",
+			"label": "Let's go!",
 			"color": "#20363d"
 		
 		}
