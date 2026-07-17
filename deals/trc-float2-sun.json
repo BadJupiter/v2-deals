@@ -7,35 +7,27 @@
 		"content": "Can't play if you ain't authenticated!"
 	},
 	"active": {
-		"start": "2026-08-01 8:00AM PDT",
-		"end": "2026-08-08 10:00PM PDT"
+		"start": "2026-08-15 8:00AM PDT",
+		"end": "2026-08-30 11:59PM PDT"
 	},
 
 	"META": {
 		"name": "Float Reveal",
 		"description": "Pick up one of our Hand-Made Glass Floats",
-		"dt": "August 7th-8th",
-		"event_start_dt": "2026-08-07 12:00PM PDT"
+		"dt": "August 30th",
+		"event_start_dt": "2026-08-30 12:00PM PDT"
 	},
 	
 	"summary_info": "Glass Float Reveal",
 	"FORM": {
 		"fields": [
 			{
-				"id": "Hotel",
-				"label": "Hotel",
-				"type": "text",
-				"sticky": true,
-				"disabled": true,
-				"hidden": true
-			},
-			{
 				"type": "info",
 				"markdown": "# Glass Float Reveal"
 			},
 			{
 				"type": "info",
-				"markdown": "## **August 7th-8th, 2026**"
+				"markdown": "## **August 30th, 2026**"
 			},
 			{
 				"type": "info",
@@ -43,7 +35,7 @@
 			},
 			{
 				"type": "info",
-				"markdown": "## **Florence & Coos Bay**"
+				"markdown": "## **Florence**"
 			},
 			{
 				"type": "info",
@@ -56,80 +48,19 @@
 			},
 			{
 				"id": "attend",
-				"label": "Will you attend the Float Reveal?",
+				"label": "Will you attend the Float Reveal on Sunday, August 30?",
 				"type": "select",
+				"limit": 400,
 				"range": [
-					"Yes",
-					"No"
+					"No",
+					"Yes"
 				],
 				"required": true,
 				"global": true,
 				"capacity_map": {
-					"Yes": 1,
-					"No": 0
+					"No": 0,
+					"Yes": 1
 				}
-			},
-			{
-				"id": "location",
-				"label": "Which property would you like to visit?",
-				"type": "select",
-				"range": [
-					"Florence",
-					"Coos Bay"
-				],
-				"required": true,
-				"conditional": {
-					"field": "attend",
-					"value": "Yes"
-				}
-			},
-			{
-				"id": "day",
-				"label": "Which day would you like to attend?",
-				"type": "select",
-				"count_from": "attend",
-				"limit": 800,
-				"range": [
-					{
-						"value": "Friday, August 7th",
-						"limit": 400
-					},
-					{
-						"value": "Saturday, August 8th",
-						"limit": 400
-					}
-				],
-				"required": true,
-				"conditional": {
-					"field": "attend",
-					"value": "Yes"
-				}
-			},
-			{
-				"id": "room",
-				"label": "Would you like your host to contact you about accommodations?",
-				"type": "select",
-				"range": [
-					"Yes",
-					"No"
-				],
-				"required": true,
-				"conditional": [
-					{
-						"field": "attend",
-						"value": "Yes"
-					},
-					{
-						"field": "location",
-						"value": "Florence"
-					},
-					{
-						"field": "Hotel",
-						"values": [
-							"Y"
-						]
-					}
-				]
 			},
 			{
 				"type": "info",
