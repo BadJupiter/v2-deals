@@ -160,7 +160,8 @@
 			"message": "**Guest Feedback Notification\n\nFrom: {firstname} {lastname} - ({_mob})\nRating: {rating}\n\nComments: {negativecomments}",
 			"mobiles": [
 				"+15039533423",
-				"+16462474444"
+				"+16462474444",
+				"+17755137133"
 			]
 		}
 	},
