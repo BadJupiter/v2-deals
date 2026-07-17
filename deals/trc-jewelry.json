@@ -69,6 +69,14 @@
 				"limit": 250,
 				"range": [
 					{
+						"value": "2:00pm",
+						"limit": 25
+					},
+					{
+						"value": "2:30pm",
+						"limit": 25
+					},
+					{
 						"value": "3:00pm",
 						"limit": 25
 					},
