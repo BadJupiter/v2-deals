@@ -3,6 +3,6 @@
 	"auth_required": false,
 
 	"MAIN": {
-		"body_md": "<div class=\"jx-splash\"><span class=\"jx-spark jx-s1\">✦</span><span class=\"jx-spark jx-s2\">★</span><span class=\"jx-spark jx-s3\">✦</span><span class=\"jx-spark jx-s4\">★</span><div class=\"jx-eyebrow\">HEY FANS — YOU FOUND IT!</div><div class=\"jx-headline\">WATCH<br>THIS<br>SPACE!</div><div class=\"jx-pennant-row\"><span class=\"jx-ball\">🏈</span><span class=\"jx-pennant\">GAME DAY!</span><span class=\"jx-mega\">📣</span></div><p class=\"jx-copy\">The Jenks game-day experience is warming up. Hang on to your program and scan again on game night — you'll want in on this.</p><div class=\"jx-ribbon\">Cheer louder. Play along. See what happens.</div><div class=\"jx-foot\">★ SPONSORED BY JUPITER ★<span class=\"jx-foot-sub\">Interactive mobile experiences for customer engagement · badjupiter.com</span></div></div>"
+		"body_md": "<div class=\"jx-soon\">See you soon!</div>"
 	}
 }
