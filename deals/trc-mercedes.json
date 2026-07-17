@@ -7,9 +7,17 @@
 		"content": "Can't play if you ain't authenticated!"
 	},
 	"active": {
-		"start": "2026-08-15 8:00AM PDT",
+		"start": "2026-08-01 8:00AM PDT",
 		"end": "2026-08-15 10:00PM PDT"
 	},
+	
+	"META": {
+		"name": "Martinis & Mercedes",
+		"description": "Compete for your chance to win a stunning 2026 Mercedes-AMG CLE 53",
+		"dt": "August 15th",
+		"event_start_dt": "2026-08-15 12:00PM PDT"
+	},
+	
 	"summary_info": "Martinis & Mercedes",
 	"FORM": {
 		"fields": [
