@@ -1,38 +1,8 @@
 {
 	"biz_id": "jupiter",
-	"check_in": true,
-	"auth_required": true,
-	"error_auth": {
-		"title": "Woops!",
-		"content": "Can't play if you ain't authenticated!"
-	},
-	
-	"active": {
-		"start": "2025-04-01 10:00AM CDT",
-		"end": "2025-04-11 06:59PM CDT",
-		"pre_md": "Not started yet...",
-		"post_md": "You missed it! It's over!"
-	},
-	
-	"FORM": {
-		"title": "Jenks 2026",
-		"fields": [
-			{
-				"type": "info",
-				"markdown": "Hey this is just a test"
-			}
-		],
-		"limits": {
-			"most_recent_only": true,
-			"most_recent_key": "PlayerID"
-		},
-		"submit": {
-			"label": "Let's go!",
-			"color": "#20363d"
-		
-		}
-	},
+	"auth_required": false,
+
 	"MAIN": {
-		"body_md": "# We've received your request \n\nIf you need to make any changes to your RSVP just scan your invitation again. If you need any help please get in touch with your host. We hope to see you soon at **Three Rivers Casino Resort - Florence**."
+		"body_md": "<div class=\"jx-splash\"><span class=\"jx-spark jx-s1\">✦</span><span class=\"jx-spark jx-s2\">★</span><span class=\"jx-spark jx-s3\">✦</span><span class=\"jx-spark jx-s4\">★</span><div class=\"jx-eyebrow\">HEY FANS — YOU FOUND IT!</div><div class=\"jx-headline\">WATCH<br>THIS<br>SPACE!</div><div class=\"jx-pennant-row\"><span class=\"jx-ball\">🏈</span><span class=\"jx-pennant\">GAME DAY!</span><span class=\"jx-mega\">📣</span></div><p class=\"jx-copy\">The Jenks game-day experience is warming up. Hang on to your program and scan again on game night — you'll want in on this.</p><div class=\"jx-ribbon\">Cheer louder. Play along. See what happens.</div><div class=\"jx-foot\">★ SPONSORED BY JUPITER ★<span class=\"jx-foot-sub\">Interactive mobile experiences for customer engagement · badjupiter.com</span></div></div>"
 	}
 }
