@@ -23,6 +23,11 @@ body {
 	margin: 0 auto;
 }
 
+/* Base style draws a divider above the (empty) button section - hide it */
+#buttonSection {
+	border-top: none;
+}
+
 /* Flatten the content card into the maroon page */
 #mainContent .canvas {
 	background-color: transparent;
