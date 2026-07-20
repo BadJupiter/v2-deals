@@ -1,0 +1,132 @@
+{
+	"biz_id": "saddlewest",
+
+#	Guest PII — access control does NOT live here: this report is permanently
+#	role-protected server-side (ALWAYS_REQUIRE_ROLES in v2-server core.py).
+#	Fetching it requires a POST with the usertoken of a business admin.
+
+	"deal_tokens": [ "swc-share" ],
+	"most_recent_only": false, # omit or set to false for all rows
+
+#	The following column values are always available (attrib):
+#	
+#	_when		grab timestamp (Unix -- for now)
+#	_mobile		User mobile number
+#	_deal		Deal token
+#	_rowid		unique row (grab) identifier
+
+	"COLUMNS": [
+		{
+			"column_name": "Row ID",
+			"attrib": "_rowid"
+		},
+		{
+			"column_name": "Timestamp",
+			"attrib": "_when"
+		},
+		{
+			"column_name": "Mobile",
+			"attrib": "_mobile"
+		},
+		{
+			"column_name": "Deal ID",
+			"attrib": "_deal"
+		},
+		{
+			"column_name": "Rating",
+			"attrib": "rating"
+		},
+		{
+			"column_name": "Pos Casino floor experience",
+			"attrib": "highlight-Casino floor experience"
+		},
+		{
+			"column_name": "Pos Hotel room",
+			"attrib": "highlight-Hotel room"
+		},		
+		{
+			"column_name": "Pos RV resort",
+			"attrib": "highlight-RV resort"
+		},		
+		{
+			"column_name": "Pos Food & dining",
+			"attrib": "highlight-Food & dining"
+		},		
+		{
+			"column_name": "Pos Staff & service",
+			"attrib": "highlight-Staff & service"
+		},
+		{
+			"column_name": "Pos Overall atmosphere",
+			"attrib": "highlight-Overall atmosphere"
+		},		
+		{
+			"column_name": "Pos Something else",
+			"attrib": "highlight-Something else"
+		},		
+		{
+			"column_name": "Neg Casino floor experience",
+			"attrib": "fellshort-Casino floor experience"
+		},
+		{
+			"column_name": "Neg Hotel room",
+			"attrib": "fellshort-Hotel room"
+		},		
+		{
+			"column_name": "Neg RV resort",
+			"attrib": "fellshort-RV resort"
+		},		
+		{
+			"column_name": "Neg Food & dining",
+			"attrib": "fellshort-Food & dining"
+		},		
+		{
+			"column_name": "Neg Staff & service",
+			"attrib": "fellshort-Staff & service"
+		},
+		{
+			"column_name": "Neg Overall atmosphere",
+			"attrib": "fellshort-Overall atmosphere"
+		},		
+		{
+			"column_name": "Neg Something else",
+			"attrib": "fellshort-Something else"
+		},		
+		{
+			"column_name": "Pos Comments",
+			"attrib": "positivecomments"
+		},
+		{
+			"column_name": "Neg Comments",
+			"attrib": "negativecomments"
+		},
+		{
+			"column_name": "Team",
+			"attrib": "team"
+		},
+		{
+			"column_name": "Recommend",
+			"attrib": "recommend"
+		},
+		{
+			"column_name": "First Name",
+			"attrib": "firstname"
+		},
+		{
+			"column_name": "Last Name",
+			"attrib": "lastname"
+		},
+		{
+			"column_name": "Email",
+			"attrib": "email"
+		},
+		{
+			"column_name": "Address",
+			"attrib": "address"
+		},
+		{
+			"column_name": "Optin",
+			"attrib": "optin"
+		}
+	]
+}
