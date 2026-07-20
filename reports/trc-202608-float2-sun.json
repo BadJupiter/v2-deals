@@ -48,8 +48,8 @@
 			"attrib": "location"
 		},
 		{
-			"column_name": "Location",
-			"attrib": "location"
+			"column_name": "date",
+			"attrib": "date"
 		},
 		{
 			"column_name": "Attend",
