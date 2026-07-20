@@ -28,7 +28,7 @@
 				"hidden": true
 			},
 			{
-				"id": "date",
+				"id": "day",
 				"type": "text",
 				"value": "Sunday, August 30th",
 				"hidden": true
