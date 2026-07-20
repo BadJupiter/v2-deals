@@ -28,6 +28,12 @@
 				"hidden": false
 			},
 			{
+				"id": "date",
+				"type": "text",
+				"value": "Sunday, August 30th",
+				"hidden": false
+			},
+			{
 				"type": "info",
 				"markdown": "# Glass Float Reveal"
 			},
