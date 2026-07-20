@@ -44,6 +44,10 @@
 			"attrib": "z_EMAIL"
 		},
 		{
+			"column_name": "Location",
+			"attrib": "location"
+		},
+		{
 			"column_name": "Attend",
 			"attrib": "attend"
 		}
