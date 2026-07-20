@@ -67,7 +67,7 @@
 				"id": "meal1",
 				"label": "What would you like for dinner?",
 				"type": "select",
-				"range": ["Crab Boil","Creamy Vegetable Pasta"],
+				"range": ["Crab Boil feat. Dungeness Crab, Shrimp, Red Potatoes, Corn on the Cob, and Andouille Sausage in a house-made Cajun Butter Citrus Sauce","Vegetable Cajun Pasta with a blend of Seasonal Vegetables in a Creamy Cajun Sauce"],
 				"required": true,
 				"conditional": [
 				  	{
