@@ -25,13 +25,13 @@
 				"id": "location",
 				"type": "text",
 				"value": "Florence",
-				"hidden": false
+				"hidden": true
 			},
 			{
 				"id": "date",
 				"type": "text",
 				"value": "Sunday, August 30th",
-				"hidden": false
+				"hidden": true
 			},
 			{
 				"type": "info",
