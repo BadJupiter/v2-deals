@@ -22,6 +22,11 @@
 	"FORM": {
 		"fields": [
 			{
+				"id": "location",
+				"type": "text",
+				"value": "Florence"
+			},
+			{
 				"type": "info",
 				"markdown": "# Glass Float Reveal"
 			},
