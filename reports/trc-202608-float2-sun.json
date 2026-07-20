@@ -48,7 +48,7 @@
 			"attrib": "location"
 		},
 		{
-			"column_name": "date",
+			"column_name": "Date",
 			"attrib": "date"
 		},
 		{
