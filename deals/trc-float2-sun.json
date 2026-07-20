@@ -25,7 +25,7 @@
 				"id": "location",
 				"type": "text",
 				"value": "Florence",
-				"hidden": true
+				"hidden": false
 			},
 			{
 				"type": "info",
