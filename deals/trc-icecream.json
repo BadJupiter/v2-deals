@@ -7,35 +7,27 @@
 		"content": "Can't play if you ain't authenticated!"
 	},
 	"active": {
-		"start": "2026-08-01 8:00AM PDT",
-		"end": "2026-08-15 10:00PM PDT"
+		"start": "2026-08-10 4:00AM PDT",
+		"end": "2026-09-07 10:00PM PDT"
 	},
 	
 	"META": {
-		"name": "Martinis & Mercedes",
-		"description": "Compete for your chance to win a stunning 2026 Mercedes-AMG CLE 53",
-		"dt": "August 15th",
-		"event_start_dt": "2026-08-15 12:00PM PDT"
+		"name": "Ice Cream Social",
+		"description": "Join us on Labor Day for an Ice Cream Social! Pick up your FREE Cuisinart Ice Cream Maker.",
+		"dt": "September 7th",
+		"event_start_dt": "2026-09-07 12:00PM PDT"
 	},
 	
-	"summary_info": "Martinis & Mercedes",
+	"summary_info": "Ice Cream Social",
 	"FORM": {
 		"fields": [
 			{
-				"id": "Hotel",
-				"label": "Hotel",
-				"type": "text",
-				"sticky": true,
-				"disabled": true,
-				"hidden": true
+				"type": "info",
+				"markdown": "# Ice Cream Social"
 			},
 			{
 				"type": "info",
-				"markdown": "# Martinis & Mercedes"
-			},
-			{
-				"type": "info",
-				"markdown": "## **August 15th, 2026**"
+				"markdown": "## **September 7th, 2026**"
 			},
 			{
 				"type": "info",
@@ -47,7 +39,7 @@
 			},
 			{
 				"type": "info",
-				"markdown": "It's our pleasure to invite our valued Three Rivers guests to our **Martinis & Mercedes** event!",
+				"markdown": "It's our pleasure to invite our valued Three Rivers guests to our **Labor Day Ice Cream Social!**",
 				"justify": "center"
 			},
 			{
@@ -56,35 +48,19 @@
 			},
 			{
 				"id": "attend",
-				"label": "Will you be attending the Martinis & Mercedes event on Saturday, August 15?",
+				"label": "Will you attend the Labor Day VIP Ice Cream Social on Monday, September 7th?",
 				"type": "select",
+				"limit": 330,
 				"range": [
-					"Yes",
-					"No"
-				],
-				"required": true
-			},
-			{
-				"id": "room",
-				"label": "Would you like your host to contact you about accommodations?",
-				"type": "select",
-				"range": [
-					"Yes",
-					"No"
+					"No",
+					"Yes"
 				],
 				"required": true,
-				"conditional": [
-					{
-						"field": "attend",
-						"value": "Yes"
-					},
-					{
-						"field": "Hotel",
-						"values": [
-							"Y"
-						]
-					}
-				]
+				"global": true,
+				"capacity_map": {
+					"No": 0,
+					"Yes": 1
+				}
 			},
 			{
 				"type": "info",
