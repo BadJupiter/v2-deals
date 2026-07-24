@@ -55,11 +55,11 @@
 				"range": [
 					{
 						"value": "Yes",
-						"count": 1,
+						"count": 1
 					},
 					{
 						"value": "No",
-						"count": 0,
+						"count": 0
 					}
 				]
 			},
