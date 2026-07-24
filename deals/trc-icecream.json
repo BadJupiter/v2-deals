@@ -51,7 +51,7 @@
 				"label": "Will you attend the Labor Day VIP Ice Cream Social on Monday, September 7th?",
 				"type": "select",
 				"required": true,
-				"limit": 2,
+				"limit": 330,
 				"range": [
 					{
 						"value": "Yes",
