@@ -50,17 +50,18 @@
 				"id": "attend",
 				"label": "Will you attend the Labor Day VIP Ice Cream Social on Monday, September 7th?",
 				"type": "select",
+				"required": true,
 				"limit": 2,
 				"range": [
-					"No",
-					"Yes"
-				],
-				"required": true,
-				"global": true,
-				"capacity_map": {
-					"No": 0,
-					"Yes": 1
-				}
+					{
+						"value": "Yes",
+						"count": 1,
+					},
+					{
+						"value": "No",
+						"count": 0,
+					}
+				]
 			},
 			{
 				"type": "info",
