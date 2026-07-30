@@ -56,6 +56,14 @@
 			"attrib": "day"
 		},
 		{
+			"column_name": "FLDay",
+			"attrib": "FLday"
+		},
+		{
+			"column_name": "CBDay",
+			"attrib": "CBday"
+		},
+		{
 			"column_name": "Room",
 			"attrib": "room"
 		}
