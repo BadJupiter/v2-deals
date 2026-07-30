@@ -84,7 +84,7 @@
 				}
 			},
 			{
-				"id": "day",
+				"id": "FLday",
 				"label": "Which day would you like to attend?",
 				"type": "select",
 				"count_from": "attend",
@@ -100,10 +100,44 @@
 					}
 				],
 				"required": true,
-				"conditional": {
-					"field": "attend",
-					"value": "Yes"
-				}
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "location",
+						"value": "Florence"
+					}
+				]
+			},
+			{
+				"id": "CBday",
+				"label": "Which day would you like to attend?",
+				"type": "select",
+				"count_from": "attend",
+				"limit": 800,
+				"range": [
+					{
+						"value": "Friday, August 7th",
+						"limit": 400
+					},
+					{
+						"value": "Saturday, August 8th",
+						"limit": 400
+					}
+				],
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "location",
+						"value": "Coos Bay"
+					}
+				]
 			},
 			{
 				"id": "room",
