@@ -193,6 +193,6 @@
 		}
 	},
 	"MAIN": {
-		"body_md": "# You're in! \n\nIf you need to make any changes to your RSVP just scan your invitation again.  All pets must be taken home at the end of the night. NO RETURNS!."
+		"body_md": "# You're in! \n\nIf you need to make any changes to your RSVP just scan your invitation again.  All pets must be taken home at the end of the night. **NO RETURNS!**."
 	}
 }
