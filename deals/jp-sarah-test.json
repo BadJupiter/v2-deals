@@ -1,0 +1,130 @@
+{
+	"biz_id": "threerivers",
+	"check_in": true,
+	"auth_required": true,
+	"error_auth": {
+		"title": "Oops!",
+		"content": "Can't play if you ain't authenticated!"
+	},
+	"active": {
+		"start": "2026-08-10 4:00AM PDT",
+		"end": "2026-09-07 10:00PM PDT"
+	},
+	
+	"META": {
+		"name": "Ice Cream Social",
+		"description": "Join us on Labor Day for an Ice Cream Social! Pick up your FREE Cuisinart Ice Cream Maker.",
+		"dt": "September 7th",
+		"event_start_dt": "2026-09-07 12:00PM PDT"
+	},
+	
+	"summary_info": "Ice Cream Social",
+	"FORM": {
+		"fields": [
+			{
+				"type": "info",
+				"markdown": "# Three Rivers Casino Resort"
+			},
+			{
+				"type": "info",
+				"markdown": "# Florence"
+			},			
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "info",
+				"markdown": "# Ice Cream Social"
+			},
+			{
+				"type": "info",
+				"markdown": "## **September 7th, 2026**"
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "info",
+				"markdown": "## **Event Center**"
+			},
+			{
+				"type": "info",
+				"markdown": "It's our pleasure to invite our valued Three Rivers guests to our **Labor Day Ice Cream Social!**",
+				"justify": "center"
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"id": "attend",
+				"label": "Will you attend the Labor Day VIP Ice Cream Social on Monday, September 7th?",
+				"type": "select",
+				"required": true,
+				"limit": 330,
+				"range": [
+					{
+						"value": "Yes",
+						"count": 1
+					},
+					{
+						"value": "No",
+						"count": 0
+					}
+				]
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "fields_group",
+				"bgcolor": "#DDE9E6",
+				"fields": [
+					{
+						"id": "z_FIRSTNAME",
+						"label": "First Name:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					},
+					{
+						"id": "z_LASTNAME",
+						"label": "Last Name:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					},
+					{
+						"id": "PlayerID",
+						"label": "Player ID:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					},
+					{
+						"id": "z_EMAIL",
+						"label": "Email:",
+						"type": "text",
+						"sticky": true,
+						"disabled": false
+					}
+				]
+			}
+		],
+#		"title": "Three Rivers Casino Resort",
+		"limits": {
+			"most_recent_only": true,
+			"most_recent_key": "PlayerID"
+		},
+		"submit": {
+			"label": "Submit RSVP",
+			"color": "#587873"
+		}
+	},
+	"MAIN": {
+		"body_md": "# Your reservation is confirmed!\n\nThank you for your RSVP. If you need to make any changes just submit an updated response. We look forward to seeing you at **Three Rivers Casino Resort**!"
+	}
+}
