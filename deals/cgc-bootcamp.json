@@ -1,5 +1,5 @@
 {
-	"biz_id": "threerivers",
+	"biz_id": "jupiter",
 	"check_in": true,
 	"auth_required": true,
 	"error_auth": {
@@ -12,10 +12,10 @@
 		"end": "2025-10-04 11:59PM CDT"
 	},
 	
-	"summary_info": "Carhartt Boutique",
+	"summary_info": "Fix this Boutique",
 	
 	"FORM": {
-#		"title": "Three Rivers Casino Resort",
+#		"title": "Celesta Grand Casino Resort",
 		"fields": [
 			{
 				"id": "Hotel",
