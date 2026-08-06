@@ -12,46 +12,25 @@
 		"end": "2025-10-04 11:59PM CDT"
 	},
 	
-	"summary_info": "Fix this Boutique",
+	"summary_info": "Puppy Giveaway",
 	
 	"FORM": {
-#		"title": "Celesta Grand Casino Resort",
 		"fields": [
 			{
-				"id": "Hotel",
-				"label": "Hotel",
-				"type": "text",
-				"sticky": true,
-				"disabled": true,
-				"hidden": true
+				"type": "info",
+				"markdown": "# Celesta Grand Casino & Hotel"
 			},
 			{
 				"type": "info",
-				"markdown": "# Three Rivers Casino Resort"
+				"markdown": "# Puppy Giveaway"
 			},
 			{
 				"type": "info",
-				"markdown": "# Florence"
-			},			
-			{
-				"type": "info",
-				"markdown": "---"
-			},	
-			{
-				"type": "info",
-				"markdown": "# Carhartt Boutique"
+				"markdown": "## **September 7th & 8th**"	
 			},
 			{
 				"type": "info",
-				"markdown": "## **January 16th & 17th**"	
-			},
-			{
-				"type": "info",
-				"markdown": "---"
-			},
-			{
-				"type": "info",
-				"markdown": "## **Casino Event Center, Florence**"	
+				"markdown": "## **Life is better with a good dog!**"	
 			},
 			{
 				"type": "info",
@@ -60,11 +39,11 @@
 			{
 				"type": "info",
 				"justify": "center",
-				"markdown": " \n\nIt’s our pleasure to offer our valued Three Rivers guests an invitation to our **Carhartt** event!"
+				"markdown": " \n\n We're excited to offer you an invitation to our exclusive **Puppy Giveaway!**"
 			},
 			{
 				"id": "attend",
-				"label": "Will you attend the Carhartt Boutique?",
+				"label": "Will you attend the Puppy Giveaway?",
 				"type": "select",
 				"range": ["Yes","No"],
 				"required": true,
@@ -78,7 +57,7 @@
 				"id": "day",
 				"label": "What day would you like to attend?",
 				"type": "select",
-				"range": ["Friday, January 16th","Saturday, January 17th"],
+				"range": ["Friday, September 7th","Saturday, September 8th"],
 				"required": true,
 				"conditional": {
 					"field": "attend",
@@ -87,34 +66,26 @@
 			},
 			{
 				"id": "day1time",
-				"label": "What time would you like to attend?",
+				"label": "What time would you like to pick up your dog?",
 				"type": "select",
 				"count_from": "attend",
-				"limit": 300,
+				"limit": 100,
 				"range": [
 					{
-						"value": "3pm",
-						"limit": 50
-					},
-					{
-						"value": "4pm",
-						"limit": 50
-					},
-					{
 						"value": "5pm",
-						"limit": 50
+						"limit": 25
 					},
 					{
 						"value": "6pm",
-						"limit": 50
+						"limit": 0
 					},
 					{
 						"value": "7pm",
-						"limit": 50			
+						"limit": 25			
 					},
 					{
 						"value": "8pm",
-						"limit": 50
+						"limit": 25
 					}
 				],					
 				"required": true,
@@ -125,40 +96,32 @@
 					},
 					{
 						"field": "day",
-						"value": "Friday, January 16th"
+						"value": "Friday, September 7th"
 					}
 				]
 			},
-		{
+			{
 				"id": "day2time",
 				"label": "What time would you like to attend?",
 				"type": "select",
 				"count_from": "attend",
-				"limit": 301,
+				"limit": 100,
 				"range": [
 					{
-						"value": "3pm",
-						"limit": 50
-					},
-					{
-						"value": "4pm",
-						"limit": 50
-					},
-					{
 						"value": "5pm",
-						"limit": 50
+						"limit": 25
 					},
 					{
 						"value": "6pm",
-						"limit": 50
+						"limit": 25
 					},
 					{
 						"value": "7pm",
-						"limit": 50			
+						"limit": 0			
 					},
 					{
 						"value": "8pm",
-						"limit": 50
+						"limit": 25
 					}
 				],	
 				"required": true,
@@ -169,9 +132,20 @@
 					},
 					{
 						"field": "day",
-						"value": "Saturday, January 17th"
+						"value": "Saturday, September 8th"
 					}
 				]
+			},
+			{
+				"id": "breed",
+				"label": "What kind of puppy would you like?",
+				"type": "select",
+				"range": ["Chihuahua","Saint Bernard","English Bulldog", "Cat. Don't judge me."],
+				"required": true,
+				"conditional": {
+					"field": "attend",
+					"value": "Yes"
+				}
 			},
 			{
 				"id": "room",
@@ -186,12 +160,7 @@
 					},
 					{
 						"field": "day",
-						"values": ["Friday, January 16th","Saturday, January 17th"]
-					},
-					{
-						"field": "Hotel",
-						"values": ["Y"]
-
+						"values": ["Friday, September 7th","Saturday, September 8th"]
 					}
 				]
 			},
@@ -204,28 +173,28 @@
 				"bgcolor": "#E4DBC6",
 				"fields": [
 					{
-						"id": "z_FIRSTNAME",
+						"id": "firstname",
 						"label": "First Name:",
 						"type": "text",
 						"sticky": true,
-						"disabled": true
+						"disabled": false
 					},
 					{
-						"id": "z_LASTNAME",
+						"id": "lastname",
 						"label": "Last Name:",
 						"type": "text",
 						"sticky": true,
-						"disabled": true
+						"disabled": false
 					},
 					{
-						"id": "PlayerID",
-						"label": "Club #:",
+						"id": "playerid",
+						"label": "Player #:",
 						"type": "text",
 						"sticky": true,
-						"disabled": true
+						"disabled": false
 					},
 					{
-						"id": "z_EMAIL",
+						"id": "email",
 						"label": "Email:",
 						"type": "text",
 						"sticky": true,
@@ -245,6 +214,6 @@
 		}
 	},
 	"MAIN": {
-		"body_md": "# Your reservation is confirmed \n\nIf you need to make any changes to your RSVP just scan your invitation again. If you need any help please get in touch. We hope to see you soon at **Three Rivers Casino Resort - Florence**."
+		"body_md": "# You're in! \n\nIf you need to make any changes to your RSVP just scan your invitation again. If you need any help please get in touch. We hope to see you soon at **Celesta Grand Casino & Hotel**."
 	}
 }
