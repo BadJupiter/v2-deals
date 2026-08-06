@@ -65,11 +65,11 @@
 				"label": "What time would you like to pick up your pet?",
 				"type": "select",
 				"count_from": "attend",
-				"limit": 100,
+				"limit": 20,
 				"range": [
 					{
 						"value": "5pm",
-						"limit": 25
+						"limit": 5
 					},
 					{
 						"value": "6pm",
@@ -77,11 +77,11 @@
 					},
 					{
 						"value": "7pm",
-						"limit": 25			
+						"limit": 5			
 					},
 					{
 						"value": "8pm",
-						"limit": 25
+						"limit": 5
 					}
 				],					
 				"required": true,
@@ -101,15 +101,15 @@
 				"label": "What time would you like to attend?",
 				"type": "select",
 				"count_from": "attend",
-				"limit": 100,
+				"limit": 20,
 				"range": [
 					{
 						"value": "5pm",
-						"limit": 25
+						"limit": 5
 					},
 					{
 						"value": "6pm",
-						"limit": 25
+						"limit": 5
 					},
 					{
 						"value": "7pm",
@@ -117,7 +117,7 @@
 					},
 					{
 						"value": "8pm",
-						"limit": 25
+						"limit": 5
 					}
 				],	
 				"required": true,
