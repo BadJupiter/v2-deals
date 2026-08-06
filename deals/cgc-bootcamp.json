@@ -1,108 +1,199 @@
 {
-	"biz_id": "jupiter",
+	"biz_id": "threerivers",
 	"check_in": true,
 	"auth_required": true,
 	"error_auth": {
 		"title": "Woops!",
 		"content": "Can't play if you ain't authenticated!"
 	},
-	"styling": {
-		"fonts": {
-			"headers": {
-				"family": "Raleway",
-				"weight": 700,
-				"style": "italic"
-			},
-			"body": {
-				"family": "Raleway",
-				"weight": "normal"
-			},
-			"formlabels": {
-				"family": "Raleway",
-				"weight": "bold"
-			}
-		}
+
+	"active": {
+		"start": "2025-09-13 10:00AM CDT",
+		"end": "2025-10-04 11:59PM CDT"
 	},
+	
+	"summary_info": "Carhartt Boutique",
+	
 	"FORM": {
+#		"title": "Three Rivers Casino Resort",
 		"fields": [
 			{
-				"type": "info",
-				"justify": "center",
-				"markdown": "# Your Voice Matters"
+				"id": "Hotel",
+				"label": "Hotel",
+				"type": "text",
+				"sticky": true,
+				"disabled": true,
+				"hidden": true
 			},
 			{
 				"type": "info",
-				"justify": "center",
-				"markdown": "## Thanks for spending time with us! We'd love to hear about your visit."
+				"markdown": "# Three Rivers Casino Resort"
+			},
+			{
+				"type": "info",
+				"markdown": "# Florence"
+			},			
+			{
+				"type": "info",
+				"markdown": "---"
+			},	
+			{
+				"type": "info",
+				"markdown": "# Carhartt Boutique"
+			},
+			{
+				"type": "info",
+				"markdown": "## **January 16th & 17th**"	
 			},
 			{
 				"type": "info",
 				"markdown": "---"
 			},
 			{
-				"id": "rating",
-				"label": "How was your visit to Celesta Grand?",
-				"type": "select",
-				"range": ["⭑⭑⭑⭑⭑","⭑⭑⭑⭑","⭑⭑⭑","⭑⭑","⭑"],
-				"required": false
+				"type": "info",
+				"markdown": "## **Casino Event Center, Florence**"	
 			},
 			{
-				"id": "highlight",
-				"label": "What made your visit great?",
-				"type": "multi-select",
-				"range": ["Casino floor experience","Hotel room","Food & dining","Staff & service","Overall Atmosphere", "Something else"],
-				"required": false,
-				"conditional": {
-					"field": "rating",
-					"values": ["⭑⭑⭑⭑⭑","⭑⭑⭑⭑"]
-				}
-			},		
-			{
-				"id": "fellshort",
-				"label": "What fell short of your expectations?",
-				"type": "multi-select",
-				"range": ["Casino floor experience","Hotel room","Food & dining","Staff & service","Overall Atmosphere", "Something else"],
-				"required": false,
-				"conditional": {
-					"field": "rating",
-					"values": ["⭑⭑⭑","⭑⭑","⭑"]
-				}
-			},			
-			{
-				"id": "positivecomments",
-				"label": "Anything you'd like to share about what stood out?",
-				"type": "textarea",
-				"rows": 2,
-				"required": false,
-				"conditional": {
-					"field": "rating",
-					"values": ["⭑⭑⭑⭑⭑","⭑⭑⭑⭑"]
-				}
-			},		
-			{
-				"id": "negativecomments",
-				"label": "We want to make this right. What can we do better?",
-				"type": "textarea",
-				"rows": 2,
-				"required": false,
-				"conditional": {
-					"field": "rating",
-					"values": ["⭑⭑⭑","⭑⭑","⭑"]
-				}
-			},						
-			{
-				"id": "team",
-				"label": "Did anyone on our team provide exceptional service?",
-				"type": "textarea",
-				"rows": 2,
-				"required": false
+				"type": "info",
+				"markdown": "---"
 			},
 			{
-				"id": "recommend",
-				"label": "How likely are you to recommend us to friends and family?",
+				"type": "info",
+				"justify": "center",
+				"markdown": " \n\nIt’s our pleasure to offer our valued Three Rivers guests an invitation to our **Carhartt** event!"
+			},
+			{
+				"id": "attend",
+				"label": "Will you attend the Carhartt Boutique?",
 				"type": "select",
-				"range": ["definitely will","very likely","maybe","not likely","will not"],
-				"required": false
+				"range": ["Yes","No"],
+				"required": true,
+				"global": true,
+  				"capacity_map": {
+  					"Yes": 1,
+    				"No": 0
+				}
+			},
+			{
+				"id": "day",
+				"label": "What day would you like to attend?",
+				"type": "select",
+				"range": ["Friday, January 16th","Saturday, January 17th"],
+				"required": true,
+				"conditional": {
+					"field": "attend",
+					"value": "Yes"
+				}
+			},
+			{
+				"id": "day1time",
+				"label": "What time would you like to attend?",
+				"type": "select",
+				"count_from": "attend",
+				"limit": 300,
+				"range": [
+					{
+						"value": "3pm",
+						"limit": 50
+					},
+					{
+						"value": "4pm",
+						"limit": 50
+					},
+					{
+						"value": "5pm",
+						"limit": 50
+					},
+					{
+						"value": "6pm",
+						"limit": 50
+					},
+					{
+						"value": "7pm",
+						"limit": 50			
+					},
+					{
+						"value": "8pm",
+						"limit": 50
+					}
+				],					
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "day",
+						"value": "Friday, January 16th"
+					}
+				]
+			},
+		{
+				"id": "day2time",
+				"label": "What time would you like to attend?",
+				"type": "select",
+				"count_from": "attend",
+				"limit": 301,
+				"range": [
+					{
+						"value": "3pm",
+						"limit": 50
+					},
+					{
+						"value": "4pm",
+						"limit": 50
+					},
+					{
+						"value": "5pm",
+						"limit": 50
+					},
+					{
+						"value": "6pm",
+						"limit": 50
+					},
+					{
+						"value": "7pm",
+						"limit": 50			
+					},
+					{
+						"value": "8pm",
+						"limit": 50
+					}
+				],	
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "day",
+						"value": "Saturday, January 17th"
+					}
+				]
+			},
+			{
+				"id": "room",
+				"label": "Would you like to be contacted for a room reservation?",
+				"type": "select",
+				"range": ["Yes","No"],
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "day",
+						"values": ["Friday, January 16th","Saturday, January 17th"]
+					},
+					{
+						"field": "Hotel",
+						"values": ["Y"]
+
+					}
+				]
 			},
 			{
 				"type": "info",
@@ -110,42 +201,50 @@
 			},
 			{
 				"type": "fields_group",
-				"bgcolor": "#dfe1fa",
+				"bgcolor": "#E4DBC6",
 				"fields": [
 					{
-						"id": "firstname",
+						"id": "z_FIRSTNAME",
 						"label": "First Name:",
 						"type": "text",
-						"required": true
+						"sticky": true,
+						"disabled": true
 					},
 					{
-						"id": "lastname",
+						"id": "z_LASTNAME",
 						"label": "Last Name:",
 						"type": "text",
-						"required": true
+						"sticky": true,
+						"disabled": true
 					},
 					{
-						"id": "email",
+						"id": "PlayerID",
+						"label": "Club #:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					},
+					{
+						"id": "z_EMAIL",
 						"label": "Email:",
-						"type": "email",
-						"required": true
+						"type": "text",
+						"sticky": true,
+						"disabled": false
 					}
 				]
 			}
 		],
-		"submit": {
-			"label": "Submit Feedback",
+	"limits": {
+			"most_recent_only": true,
+			"most_recent_key": "PlayerID"
+		},		
+	"submit": {
+			"label": "Submit RSVP",
 			"color": "#20363d"
-		},
-		"notify": {
-			"opt_in": "contact",
-			"message": "(from {_mob}) {name} submitted a Celesta Grand feedback survey: {comments}",
-			"mobiles": [
-				"+15039533423"
-			]
+		
 		}
 	},
 	"MAIN": {
-		"body_md": "# Thank You!\n\nWe appreciate your feedback, and thank you for visiting Celesta Grand Casino & Hotel."
+		"body_md": "# Your reservation is confirmed \n\nIf you need to make any changes to your RSVP just scan your invitation again. If you need any help please get in touch. We hope to see you soon at **Three Rivers Casino Resort - Florence**."
 	}
 }
