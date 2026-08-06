@@ -156,28 +156,28 @@
 						"label": "First Name:",
 						"type": "text",
 						"sticky": true,
-						"disabled": false
+						"required": true
 					},
 					{
 						"id": "lastname",
 						"label": "Last Name:",
 						"type": "text",
 						"sticky": true,
-						"disabled": false
+						"required": true
 					},
 					{
 						"id": "PlayerID",
 						"label": "Player #:",
 						"type": "text",
 						"sticky": true,
-						"disabled": false
+						"required": true
 					},
 					{
 						"id": "email",
 						"label": "Email:",
 						"type": "text",
 						"sticky": true,
-						"disabled": false
+						"required": true
 					}
 				]
 			}
