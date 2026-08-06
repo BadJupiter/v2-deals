@@ -12,7 +12,7 @@
 		"end": "2025-10-04 11:59PM CDT"
 	},
 	
-	"summary_info": "Puppy Giveaway",
+	"summary_info": "Exotic Pet Spectacular",
 	
 	"FORM": {
 		"fields": [
@@ -22,15 +22,11 @@
 			},
 			{
 				"type": "info",
-				"markdown": "# Puppy Giveaway"
+				"markdown": "# Exotic Pet Spectacular"
 			},
 			{
 				"type": "info",
 				"markdown": "## **September 7th & 8th**"	
-			},
-			{
-				"type": "info",
-				"markdown": "## **Life is better with a good dog!**"	
 			},
 			{
 				"type": "info",
@@ -39,11 +35,11 @@
 			{
 				"type": "info",
 				"justify": "center",
-				"markdown": " \n\n We're excited to offer you an invitation to our exclusive **Puppy Giveaway!**"
+				"markdown": " \n\n We're excited to offer you an invitation to our exclusive **Exotic Pet Spectacular!**"
 			},
 			{
 				"id": "attend",
-				"label": "Will you attend the Puppy Giveaway?",
+				"label": "Will you be attending?",
 				"type": "select",
 				"range": ["Yes","No"],
 				"required": true,
@@ -66,7 +62,7 @@
 			},
 			{
 				"id": "day1time",
-				"label": "What time would you like to pick up your dog?",
+				"label": "What time would you like to pick up your pet?",
 				"type": "select",
 				"count_from": "attend",
 				"limit": 100,
@@ -137,32 +133,15 @@
 				]
 			},
 			{
-				"id": "breed",
-				"label": "What kind of puppy would you like?",
+				"id": "pet",
+				"label": "Select your improbable new companion:",
 				"type": "select",
-				"range": ["Chihuahua","Saint Bernard","English Bulldog", "Cat. Don't judge me."],
+				"range": ["Penguin with a Law Degree","Dragon & S'more Stuff","Telepathic Armadillo", "Standard Brown Hamster"],
 				"required": true,
 				"conditional": {
 					"field": "attend",
 					"value": "Yes"
 				}
-			},
-			{
-				"id": "room",
-				"label": "Would you like to be contacted for a room reservation?",
-				"type": "select",
-				"range": ["Yes","No"],
-				"required": true,
-				"conditional": [
-					{
-						"field": "attend",
-						"value": "Yes"
-					},
-					{
-						"field": "day",
-						"values": ["Friday, September 7th","Saturday, September 8th"]
-					}
-				]
 			},
 			{
 				"type": "info",
@@ -187,7 +166,7 @@
 						"disabled": false
 					},
 					{
-						"id": "playerid",
+						"id": "PlayerID",
 						"label": "Player #:",
 						"type": "text",
 						"sticky": true,
@@ -214,6 +193,6 @@
 		}
 	},
 	"MAIN": {
-		"body_md": "# You're in! \n\nIf you need to make any changes to your RSVP just scan your invitation again. If you need any help please get in touch. We hope to see you soon at **Celesta Grand Casino & Hotel**."
+		"body_md": "# You're in! \n\nIf you need to make any changes to your RSVP just scan your invitation again.  All pets must be taken home on the night of the event. NO EXCEPTIONS!."
 	}
 }
