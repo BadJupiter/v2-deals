@@ -1,7 +1,7 @@
 {
-	"biz_id": "threerivers",
+	"biz_id": "jupiter",
 	"deal_tokens": [
-		"trc-float2"
+		"cgc-bootcamp"
 	],
 	"most_recent_only": true,
 	"most_recent_key": "Player ID",
@@ -24,48 +24,40 @@
 			"attrib": "_deal"
 		},
 		{
-			"column_name": "Source",
-			"attrib": "source"
-		},
-		{
 			"column_name": "Player ID",
 			"attrib": "PlayerID"
 		},
 		{
 			"column_name": "Last Name",
-			"attrib": "z_LASTNAME"
+			"attrib": "lastname"
 		},
 		{
 			"column_name": "First Name",
-			"attrib": "z_FIRSTNAME"
+			"attrib": "firstname"
 		},
 		{
 			"column_name": "Email",
-			"attrib": "z_EMAIL"
+			"attrib": "email"
 		},
 		{
 			"column_name": "Attend",
 			"attrib": "attend"
 		},
 		{
-			"column_name": "Location",
-			"attrib": "location"
-		},
-		{
 			"column_name": "Day",
 			"attrib": "day"
 		},
 		{
-			"column_name": "FLDay",
-			"attrib": "FLday"
+			"column_name": "FriTime",
+			"attrib": "day1time"
 		},
 		{
-			"column_name": "CBDay",
-			"attrib": "CBday"
+			"column_name": "SatTime",
+			"attrib": "day2time"
 		},
 		{
-			"column_name": "Room",
-			"attrib": "room"
+			"column_name": "Pet",
+			"attrib": "pet"
 		}
 	]
 }
