@@ -1,12 +1,22 @@
-.hero-header {
-	font-family: "Raleway", sans-serif;
-	font-optical-sizing: auto;
-	font-weight: 600;
-	font-style: normal;
-	font-size: 2rem;
+/* ==========================================================
+   GLOBAL BOX SIZING
+   ========================================================== */
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
 }
-body, html {
-	height: 100%;
+
+
+/* ==========================================================
+   PAGE LAYOUT
+   ========================================================== */
+
+html {
+	width: 100%;
+	min-width: 0;
+	min-height: 100%;
 	margin: 0;
 	padding: 0;
 
@@ -14,20 +24,128 @@ body, html {
 	font-weight: 400;
 	font-style: normal;
 
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: #FFF8F3;
+	background-color: #f7f8fe;
 }
+
+body {
+	display: block;
+
+	width: 100%;
+	max-width: 100%;
+	min-width: 0;
+	min-height: 100%;
+	margin: 0;
+	padding: 0;
+
+	font-family: "Raleway", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+
+	background-color: #f7f8fe;
+
+	/*
+	 * Keep the page usable if any form element is unexpectedly
+	 * wider than the screen.
+	 */
+	overflow-x: auto;
+
+	/*
+	 * Prevent automatic iPhone text enlargement from changing
+	 * the overall layout unpredictably.
+	 */
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+}
+
+/*
+ * Center the main form/page container when it fits.
+ * Unlike flex centering on html/body, this will not position
+ * the left side of an oversized container off-screen.
+ */
+body > * {
+	max-width: 100%;
+	min-width: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+/* ==========================================================
+   RESPONSIVE CONTENT
+   ========================================================== */
+
+form,
+fieldset {
+	max-width: 100%;
+	min-width: 0;
+}
+
+img,
+svg,
+video,
+canvas,
+iframe {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+input,
+select,
+textarea,
+button {
+	max-width: 100%;
+	min-width: 0;
+	font: inherit;
+}
+
+
+/* ==========================================================
+   HEADINGS
+   ========================================================== */
+
+.hero-header {
+	font-family: "Raleway", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 2rem;
+}
+
 h1 {
-	font-family: 'Raleway', sans-serif;
+	font-family: "Raleway", sans-serif;
 	font-weight: 600;
 	text-align: center;
+	margin-top: 0;
 	margin-bottom: 15px;
 }
+
 h2 {
-	font-family: 'Raleway', sans-serif;
+	font-family: "Raleway", sans-serif;
 	font-weight: 300;
 	text-align: center;
+	margin-top: 0;
 	margin-bottom: 15px;
+}
+
+
+/* ==========================================================
+   MULTI-SELECT LABEL
+   ========================================================== */
+
+.multi-select-label {
+	display: block;
+	width: auto;
+	height: auto;
+	min-width: 0;
+	min-height: 0;
+	margin: 0;
+	padding: 0;
+
+	font-family: "Raleway", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	text-align: left;
+
+	background: transparent;
 }
