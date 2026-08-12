@@ -7,18 +7,18 @@
 		"content": "Can't play if you ain't authenticated!"
 	},
 	"active": {
-		"start": "2026-08-01 8:00AM PDT",
-		"end": "2026-08-08 10:00PM PDT"
+		"start": "2026-09-01 5:00AM PDT",
+		"end": "2026-09-26 11:59PM PDT"
 	},
 
 	"META": {
-		"name": "Float Reveal",
-		"description": "Pick up one of our Hand-Made Glass Floats",
-		"dt": "August 7th-8th",
-		"event_start_dt": "2026-08-07 12:00PM PDT"
+		"name": "Patagonia Duffel Reveal",
+		"description": "Pick up a FREE Patagonia Duffel Bag and you could win a $5,000 or $2,500 Cash Prize (in Florence Only)",
+		"dt": "September 25th-26th",
+		"event_start_dt": "2026-09-25 12:00PM PDT"
 	},
 	
-	"summary_info": "Glass Float Reveal",
+	"summary_info": "Patagonia Duffel Reveal",
 	"FORM": {
 		"fields": [
 			{
@@ -31,11 +31,11 @@
 			},
 			{
 				"type": "info",
-				"markdown": "# Glass Float Reveal"
+				"markdown": "# Patagonia Duffel Reveal"
 			},
 			{
 				"type": "info",
-				"markdown": "## **August 7th-8th, 2026**"
+				"markdown": "## **September 25th-26th, 2026**"
 			},
 			{
 				"type": "info",
@@ -47,7 +47,7 @@
 			},
 			{
 				"type": "info",
-				"markdown": "It's our pleasure to invite our valued Three Rivers guests to our **Hand-Made Glass Float Reveal**!",
+				"markdown": "It's our pleasure to invite our valued Three Rivers guests to our **Patagonia Duffel Reveal**!",
 				"justify": "center"
 			},
 			{
@@ -56,7 +56,7 @@
 			},
 			{
 				"id": "attend",
-				"label": "Will you attend the Float Reveal?",
+				"label": "Will you attend the Patagonia Event?",
 				"type": "select",
 				"range": [
 					"Yes",
@@ -74,8 +74,8 @@
 				"label": "Which property would you like to visit?",
 				"type": "select",
 				"range": [
-					"Florence",
-					"Coos Bay"
+					"Florence (with cash prizes)",
+					"Coos Bay (duffel only)"
 				],
 				"required": true,
 				"conditional": {
@@ -88,15 +88,15 @@
 				"label": "Which day would you like to attend?",
 				"type": "select",
 				"count_from": "attend",
-				"limit": 800,
+				"limit": 400,
 				"range": [
 					{
-						"value": "Friday, August 7th",
-						"limit": 324
+						"value": "Friday, September 25th",
+						"limit": 200
 					},
 					{
-						"value": "Saturday, August 8th",
-						"limit": 400
+						"value": "Saturday, September 26th",
+						"limit": 200
 					}
 				],
 				"required": true,
@@ -107,7 +107,7 @@
 					},
 					{
 						"field": "location",
-						"value": "Florence"
+						"value": "Florence (with cash prizes)"
 					}
 				]
 			},
@@ -116,15 +116,15 @@
 				"label": "Which day would you like to attend?",
 				"type": "select",
 				"count_from": "attend",
-				"limit": 105,
+				"limit": 150,
 				"range": [
 					{
-						"value": "Friday, August 7th",
-						"limit": 70
+						"value": "Friday, September 25th",
+						"limit": 75
 					},
 					{
-						"value": "Saturday, August 8th",
-						"limit": 35
+						"value": "Saturday, September 26th",
+						"limit": 75
 					}
 				],
 				"required": true,
@@ -135,7 +135,7 @@
 					},
 					{
 						"field": "location",
-						"value": "Coos Bay"
+						"value": "Coos Bay (duffel only)"
 					}
 				]
 			},
@@ -155,7 +155,7 @@
 					},
 					{
 						"field": "location",
-						"value": "Florence"
+						"value": "Florence (with cash prizes)"
 					},
 					{
 						"field": "Hotel",
