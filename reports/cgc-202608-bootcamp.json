@@ -1,0 +1,63 @@
+{
+	"biz_id": "jupiter",
+	"deal_tokens": [
+		"cgc-bootcamp"
+	],
+	"most_recent_only": true,
+	"most_recent_key": "Player ID",
+	"as_xlsx": false,
+	"COLUMNS": [
+		{
+			"column_name": "Row ID",
+			"attrib": "_rowid"
+		},
+		{
+			"column_name": "Timestamp",
+			"attrib": "_when"
+		},
+		{
+			"column_name": "Mobile",
+			"attrib": "_mobile"
+		},
+		{
+			"column_name": "Deal ID",
+			"attrib": "_deal"
+		},
+		{
+			"column_name": "Player ID",
+			"attrib": "PlayerID"
+		},
+		{
+			"column_name": "Last Name",
+			"attrib": "lastname"
+		},
+		{
+			"column_name": "First Name",
+			"attrib": "firstname"
+		},
+		{
+			"column_name": "Email",
+			"attrib": "email"
+		},
+		{
+			"column_name": "Attend",
+			"attrib": "attend"
+		},
+		{
+			"column_name": "Day",
+			"attrib": "day"
+		},
+		{
+			"column_name": "FriTime",
+			"attrib": "day1time"
+		},
+		{
+			"column_name": "SatTime",
+			"attrib": "day2time"
+		},
+		{
+			"column_name": "Pet",
+			"attrib": "pet"
+		}
+	]
+}

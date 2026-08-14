@@ -1,0 +1,198 @@
+{
+	"biz_id": "jupiter",
+	"check_in": true,
+	"auth_required": true,
+	"error_auth": {
+		"title": "Woops!",
+		"content": "Can't play if you ain't authenticated!"
+	},
+
+	"active": {
+		"start": "2025-09-13 10:00AM CDT",
+		"end": "2025-10-04 11:59PM CDT"
+	},
+	
+	"summary_info": "Exotic Pet Spectacular",
+	
+	"FORM": {
+		"fields": [
+			{
+				"type": "info",
+				"markdown": "# Celesta Grand Casino & Hotel"
+			},
+			{
+				"type": "info",
+				"markdown": "# Exotic Pet Spectacular"
+			},
+			{
+				"type": "info",
+				"markdown": "## **September 7th & 8th**"	
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "info",
+				"justify": "center",
+				"markdown": " \n\n We're excited to offer you an invitation to our exclusive **Exotic Pet Spectacular!**"
+			},
+			{
+				"id": "attend",
+				"label": "Will you be attending?",
+				"type": "select",
+				"range": ["Yes","No"],
+				"required": true,
+				"global": true,
+  				"capacity_map": {
+  					"Yes": 1,
+    				"No": 0
+				}
+			},
+			{
+				"id": "day",
+				"label": "What day would you like to attend?",
+				"type": "select",
+				"range": ["Friday, September 7th","Saturday, September 8th"],
+				"required": true,
+				"conditional": {
+					"field": "attend",
+					"value": "Yes"
+				}
+			},
+			{
+				"id": "day1time",
+				"label": "What time would you like to pick up your pet?",
+				"type": "select",
+				"count_from": "attend",
+				"limit": 20,
+				"range": [
+					{
+						"value": "5pm",
+						"limit": 5
+					},
+					{
+						"value": "6pm",
+						"limit": 0
+					},
+					{
+						"value": "7pm",
+						"limit": 5			
+					},
+					{
+						"value": "8pm",
+						"limit": 5
+					}
+				],					
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "day",
+						"value": "Friday, September 7th"
+					}
+				]
+			},
+			{
+				"id": "day2time",
+				"label": "What time would you like to attend?",
+				"type": "select",
+				"count_from": "attend",
+				"limit": 20,
+				"range": [
+					{
+						"value": "5pm",
+						"limit": 5
+					},
+					{
+						"value": "6pm",
+						"limit": 5
+					},
+					{
+						"value": "7pm",
+						"limit": 0			
+					},
+					{
+						"value": "8pm",
+						"limit": 5
+					}
+				],	
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "day",
+						"value": "Saturday, September 8th"
+					}
+				]
+			},
+			{
+				"id": "pet",
+				"label": "Select your improbable new companion:",
+				"type": "select",
+				"range": ["Penguin with a Law Degree","Dragon & S'more Stuff","Telepathic Armadillo", "Standard Brown Hamster"],
+				"required": true,
+				"conditional": {
+					"field": "attend",
+					"value": "Yes"
+				}
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "fields_group",
+				"bgcolor": "#E4DBC6",
+				"fields": [
+					{
+						"id": "firstname",
+						"label": "First Name:",
+						"type": "text",
+						"sticky": true,
+						"required": true
+					},
+					{
+						"id": "lastname",
+						"label": "Last Name:",
+						"type": "text",
+						"sticky": true,
+						"required": true
+					},
+					{
+						"id": "PlayerID",
+						"label": "Player #:",
+						"type": "text",
+						"sticky": true,
+						"required": true
+					},
+					{
+						"id": "email",
+						"label": "Email:",
+						"type": "text",
+						"sticky": true,
+						"required": true
+					}
+				]
+			}
+		],
+	"limits": {
+			"most_recent_only": true,
+			"most_recent_key": "PlayerID"
+		},		
+	"submit": {
+			"label": "Submit RSVP",
+			"color": "#20363d"
+		
+		}
+	},
+	"MAIN": {
+		"body_md": "# You're in! \n\nIf you need to make any changes to your RSVP just scan your invitation again.  All pets must be taken home at the end of the night. **NO RETURNS!**."
+	}
+}
