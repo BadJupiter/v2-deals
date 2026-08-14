@@ -20,6 +20,8 @@
 	},
 			
 	"FORM": {
+			
+		"headcount": { "from": "guest", "map": {"Myself plus a Guest": 2, "Myself": 1}, "default": 1 },
 		"fields": [
 			{
 				"type": "info",

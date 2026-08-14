@@ -8,6 +8,8 @@
 	},
 
 	"FORM": {
+
+		"headcount": { "from": "guest", "map": {"Yes": 2, "No": 1}, "default": 1 },
 		"title": "Three Rivers Casino Resort",
 		"fields": [
 			{

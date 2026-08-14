@@ -20,6 +20,7 @@
 	
 	"summary_info": "Glass Float Reveal",
 	"FORM": {
+		"headcount": { "from": "attend", "map": {"Yes": 1, "No": 0}, "default": 1 },
 		"fields": [
 			{
 				"id": "location",
