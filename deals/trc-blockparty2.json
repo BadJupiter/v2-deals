@@ -7,16 +7,16 @@
 		"content": "Can't play if you ain't authenticated!"
 	},
 	
-	"active": {
-		"start": "2026-08-15 8:00AM PDT",
-		"end": "2026-08-30 10:00PM PDT"
-	},
-	
 	"META": {
 		"name": "Coos Bay Block Party",
-		"description": "Food Trucks, Music, Fun...Oh My!",
-		"dt": "August 30th",
-		"event_start_dt": "2026-08-30 12:00PM PDT"
+		"description": "Food Trucks, Music, Fun...Oh My!"
+	},
+	
+	"SCHEDULE": {
+	  "tz": "America/Los_Angeles",
+	  "tpi-app": { "start": "2026-08-15 0:00AM", "end": "2026-08-30 8:00PM" },
+	  "events":  [ { "start": "2026-08-30 12:00PM" } ],
+	  "label": "August 30 at noon"
 	},
 	
 	"summary_info": "Coos Bay Block Party",
