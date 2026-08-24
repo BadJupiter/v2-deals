@@ -79,7 +79,7 @@
 				"label": "What time would you like to attend?",
 				"type": "select",
 				"count_from": "guest",
-				"limit": 250,
+				"limit": 300,
 				"range": [
 					{
 						"value": "Noon",
