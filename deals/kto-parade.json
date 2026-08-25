@@ -16,7 +16,7 @@
 			{
 				"type": "info",
 				"justify": "center",
-				"markdown": "## Let's celebrate the parade in style with $50 of Free Play! Register below to get yours!"
+				"markdown": "## Let's celebrate the parade in style with $50 of Free Play!\n\nRegister below to get yours!"
 			},
 			{
 				"type": "info",
@@ -28,7 +28,7 @@
 			},
 			{
 				"type": "fields_group",
-				"bgcolor": "#D8B48A",
+				"bgcolor": "#D8B6DE",
 				"fields": [
 					{
 						"id": "firstname",
