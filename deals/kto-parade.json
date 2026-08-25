@@ -1,109 +1,28 @@
 {
-	"biz_id": "saddlewest",
+	"biz_id": "kickapoo",
 	"check_in": true,
 	"auth_required": true,
 	"error_auth": {
 		"title": "Woops!",
 		"content": "Can't play if you ain't authenticated!"
 	},
-	"styling": {
-		"fonts": {
-			"headers": {
-				"family": "Montserrat",
-				"weight": 700,
-				"style": "italic"
-			},
-			"body": {
-				"family": "Montserrat",
-				"weight": "normal"
-			},
-			"formlabels": {
-				"family": "Montserrat",
-				"weight": "bold"
-			}
-		}
-	},
 	"FORM": {
 		"fields": [
 			{
 				"type": "info",
 				"justify": "center",
-				"markdown": "# Your Voice Matters"
+				"markdown": "# Harrah Day Parade"
 			},
 			{
 				"type": "info",
 				"justify": "center",
-				"markdown": "## Thanks for spending time with us! We'd love to hear about your visit."
+				"markdown": "## Let's celebrate the parade in style with $50 of Free Play! Register below to get yours!"
 			},
 			{
 				"type": "info",
 				"markdown": "---"
 			},
-			{
-				"id": "rating",
-				"label": "How was your visit to Saddle West?",
-				"type": "select",
-				"range": ["⭑⭑⭑⭑⭑","⭑⭑⭑⭑","⭑⭑⭑","⭑⭑","⭑"],
-				"required": false
-			},
-			{
-				"id": "highlight",
-				"label": "What made your visit great?",
-				"type": "multi-select",
-				"range": ["Casino floor experience","Hotel room","RV resort","Food & dining","Staff & service","Overall atmosphere", "Something else"],
-				"required": false,
-				"conditional": {
-					"field": "rating",
-					"values": ["⭑⭑⭑⭑⭑","⭑⭑⭑⭑"]
-				}
-			},		
-			{
-				"id": "fellshort",
-				"label": "What fell short of your expectations?",
-				"type": "multi-select",
-				"range": ["Casino floor experience","Hotel room","RV resort","Food & dining","Staff & service","Overall atmosphere", "Something else"],
-				"required": false,
-				"conditional": {
-					"field": "rating",
-					"values": ["⭑⭑⭑","⭑⭑","⭑"]
-				}
-			},			
-			{
-				"id": "positivecomments",
-				"label": "Anything you'd like to share about what stood out?",
-				"type": "textarea",
-				"rows": 2,
-				"required": false,
-				"conditional": {
-					"field": "rating",
-					"values": ["⭑⭑⭑⭑⭑","⭑⭑⭑⭑"]
-				}
-			},		
-			{
-				"id": "negativecomments",
-				"label": "We want to make this right. What can we do better?",
-				"type": "textarea",
-				"rows": 2,
-				"required": false,
-				"conditional": {
-					"field": "rating",
-					"values": ["⭑⭑⭑","⭑⭑","⭑"]
-				}
-			},						
-			{
-				"id": "team",
-				"label": "Did anyone on our team provide exceptional service?",
-				"type": "textarea",
-				"rows": 2,
-				"required": false
-			},
-			{
-				"id": "recommend",
-				"label": "How likely are you to recommend us to friends and family?",
-				"type": "select",
-				"range": ["definitely will","very likely","maybe","not likely","will not"],
-				"required": false
-			},
+			
 			{
 				"type": "info",
 				"markdown": "   "
@@ -116,34 +35,21 @@
 						"id": "firstname",
 						"label": "First Name:",
 						"type": "text",
-						"required": false
+						"required": true
 					},
 					{
 						"id": "lastname",
 						"label": "Last Name:",
 						"type": "text",
-						"required": false
+						"required": true
 					},
 					{
 						"id": "email",
 						"label": "Email:",
 						"type": "email",
-						"required": false
-					},
-					{
-						"id": "address",
-						"label": "Address:",
-						"type": "textarea",
-						"rows": 3,
-						"required": false
+						"required": true
 					}
 				]
-			},
-			{
-				"id": "optin",
-				"label": "By checking this box, I agree to receive promotional emails from Saddle West, including exclusive offers, promotions, dining specials, and casino event updates. I understand I can unsubscribe at any time.\n\n",
-				"type": "checkbox",
-				"required": false
 			},
 			{
 				"type": "info",
@@ -154,18 +60,8 @@
 			"label": "Submit Feedback",
 			"color": "#20363d"
 		},
-		"notify": {
-			"opt_in": "rating",
-			"trigger_values": ["⭑⭑", "⭑"],
-			"message": "**Guest Feedback Notification\n\nFrom: {firstname} {lastname} - ({_mob})\nRating: {rating}\n\nComments: {negativecomments}",
-			"mobiles": [
-				"+15039533423",
-				"+16462474444",
-				"+17755137133"
-			]
-		}
 	},
 	"MAIN": {
-		"body_md": "# Thank You!\n\nWe appreciate your feedback, and thank you for visiting Saddle West Hotel, Casino & RV Resort."
+		"body_md": "# Thank You!\n\nPut instructions here to inform the guest what you want them to do."
 	}
 }
