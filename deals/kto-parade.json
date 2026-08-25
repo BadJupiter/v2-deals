@@ -59,7 +59,7 @@
 		"submit": {
 			"label": "Submit Feedback",
 			"color": "#20363d"
-		},
+		}
 	},
 	"MAIN": {
 		"body_md": "# Thank You!\n\nPut instructions here to inform the guest what you want them to do."
