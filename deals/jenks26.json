@@ -5,6 +5,6 @@
 	"redirect": "/jenks/",
 
 	"MAIN": {
-		"body_md": "<div class=\"jx-soon\"><a href=\"/jenks/\" style=\"color:#ffffff\">Tap here to play!</a></div>"
+		"body_md": "<div class='jx-soon'><a href='/jenks/' style='color:white'>Tap here to play!</a></div>"
 	}
 }
