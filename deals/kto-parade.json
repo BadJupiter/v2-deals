@@ -1,0 +1,66 @@
+{
+	"biz_id": "kickapoo",
+	"check_in": true,
+	"auth_required": true,
+	"error_auth": {
+		"title": "Woops!",
+		"content": "Can't play if you ain't authenticated!"
+	},
+	"FORM": {
+		"fields": [
+			{
+				"type": "info",
+				"justify": "center",
+				"markdown": "# Harrah Day Parade"
+			},
+			{
+				"type": "info",
+				"justify": "center",
+				"markdown": "## Let's celebrate the parade in style with $50 of Free Play!\n\nRegister below to get yours!"
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "info",
+				"markdown": "   "
+			},
+			{
+				"type": "fields_group",
+				"bgcolor": "#D8B6DE",
+				"fields": [
+					{
+						"id": "firstname",
+						"label": "First Name:",
+						"type": "text",
+						"required": true
+					},
+					{
+						"id": "lastname",
+						"label": "Last Name:",
+						"type": "text",
+						"required": true
+					},
+					{
+						"id": "email",
+						"label": "Email:",
+						"type": "email",
+						"required": true
+					}
+				]
+			},
+			{
+				"type": "info",
+				"markdown": "   "
+			}
+		],
+		"submit": {
+			"label": "Submit",
+			"color": "#20363d"
+		}
+	},
+	"MAIN": {
+		"body_md": "# Thank You!\n\nPut instructions here to inform the guest what you want them to do."
+	}
+}

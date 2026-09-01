@@ -1,5 +1,5 @@
 {
-	"biz_id": "jupiter",
+	"biz_id": "colusacasino",
 	"check_in": true,
 	"auth_required": true,
 	"error_auth": {
@@ -27,13 +27,12 @@
 		"fields": [
 			{
 				"type": "info",
-				"justify": "center",
-				"markdown": "# Casino QR: Guest feedback, reimagined"
+				"markdown": "# Your Voice Matters"
 			},
 			{
 				"type": "info",
 				"justify": "center",
-				"markdown": "## This digital comment card is just a glimpse of what we can do.  \n\n[Contact Michael Grim](mailto:Michael%20Grim<mgrim@playerperformancegroup.com>?subject=Casino%20QR%20Inquiry) to explore options for your casino or hospitality property."
+				"markdown": "Thank you for visiting Colusa Casino Resort! Please let us know how we did on your visit."
 			},
 			{
 				"type": "info",
@@ -41,16 +40,16 @@
 			},
 			{
 				"id": "games",
-				"label": "What games did you play during your visit?",
+				"label": "What games did you play during your visit? (You can pick more than one)",
 				"type": "multi-select",
 				"range": ["Slot Machines","Table Games","Video Poker","Keno","Bingo"],
 				"required": false
 			},
 			{
 				"id": "dining",
-				"label": "What food outlets did you dine in during your visit?",
+				"label": "What food outlets did you dine in during your visit? (You can pick more than one)",
 				"type": "multi-select",
-				"range": ["Jackpot Prime","The Daily Deal","Quick Draw Cafe"],
+				"range": ["Jack's Place","Cafe (food court)","Flame-N-Fry (food court)","Forno Italiano (food court)","Snack Bar"],
 				"required": false
 			},
 			{
@@ -61,11 +60,26 @@
 				"required": false
 			},
 			{
-				"id": "comments",
-				"label": "Tell us how we could improve your experience:",
+				"id": "positivecomments",
+				"label": "Anything you'd like to share about what stood out?",
 				"type": "textarea",
-				"rows": 3,
-				"required": false
+				"rows": 2,
+				"required": false,
+				"conditional": {
+					"field": "rating",
+					"values": ["⭑⭑⭑⭑⭑","⭑⭑⭑⭑"]
+				}
+			},		
+			{
+				"id": "negativecomments",
+				"label": "We want to make this right. What can we do better?",
+				"type": "textarea",
+				"rows": 2,
+				"required": false,
+				"conditional": {
+					"field": "rating",
+					"values": ["⭑⭑⭑","⭑⭑","⭑"]
+				}
 			},
 			{
 				"id": "return",
@@ -90,7 +104,7 @@
 			},
 			{
 				"id": "team",
-				"label": "Are there any team members you would like to recognize?",
+				"label": "Are there any Colusa Casino Resort team members you would like to recognize for exceptional service?",
 				"type": "textarea",
 				"rows": 3,
 				"required": false
@@ -101,43 +115,42 @@
 			},
 			{
 				"type": "fields_group",
-				"bgcolor": "#dfe1fa",
+				"bgcolor": "#EEDCCF",
 				"fields": [
 					{
-						"id": "firstname",
-						"label": "First Name:",
+						"id": "name",
+						"label": "Name:",
 						"type": "text",
-						"required": true
+						"required": false
 					},
 					{
-						"id": "lastname",
-						"label": "Last Name:",
+						"id": "rewards",
+						"label": "Rewards #:",
 						"type": "text",
-						"required": true
+						"required": false
+					},
+					{
+						"id": "address",
+						"label": "Address:",
+						"type": "textarea",
+						"rows": 3,
+						"required": false
 					},
 					{
 						"id": "email",
 						"label": "Email:",
 						"type": "email",
-						"required": true
+						"required": false
 					}
 				]
 			}
 		],
 		"submit": {
 			"label": "Submit Feedback",
-			"color": "#20363d"
-		},
-		"notify": {
-			"opt_in": "contact",
-			"message": "(from {_mob}) {name} requested contact: {comments}",
-			"mobiles": [
-				"+16462474444",
-				"+15039533423"
-			]
+			"color": "#1D2A2F"
 		}
 	},
 	"MAIN": {
-		"body_md": "# Thank You!\n\nWe appreciate your feedback, and thank you for visiting 777 Casino & Hotel."
+		"body_md": "# Thank You!\n\nWe appreciate your feedback, and thank you for visiting Colusa Casino Resort."
 	}
 }
