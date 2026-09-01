@@ -2,7 +2,9 @@
 	"biz_id": "jupiter",
 	"auth_required": false,
 
+	"redirect": "/jenks/",
+
 	"MAIN": {
-		"body_md": "<div class=\"jx-soon\">See you soon!</div>"
+		"body_md": "<div class=\"jx-soon\"><a href=\"/jenks/\" style=\"color:#ffffff\">Tap here to play!</a></div>"
 	}
 }

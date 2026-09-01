@@ -1,0 +1,21 @@
+{
+	"biz_id": "jupiter",
+	"deal_tokens": [ "jenks26-owasso" ],
+	"most_recent_only": true,
+	"most_recent_key": "Mobile",
+
+	"COLUMNS": [
+		{
+			"column_name": "Timestamp",
+			"attrib": "_when"
+		},
+		{
+			"column_name": "Mobile",
+			"attrib": "_mobile"
+		},
+		{
+			"column_name": "Points",
+			"attrib": "points"
+		}
+	]
+}
