@@ -97,9 +97,23 @@
 			},
 			{
 				"id": "amenities",
-				"label": "Is there anything we don't currently offer that we should?",
+				"label": "Is there anything you would like to see us offer that would make your experience even better?",
 				"type": "textarea",
 				"rows": 3,
+				"required": false
+			},
+			{
+				"id": "cleanliness",
+				"label": "How would you rate the cleanliness of Colusa Casino Resort during your visit?",
+				"type": "select",
+				"range": ["⭑⭑⭑⭑⭑","⭑⭑⭑⭑","⭑⭑⭑","⭑⭑","⭑"],
+				"required": false
+			},
+			{
+				"id": "service",
+				"label": "How would you rate the service you received from our team members during your visit?",
+				"type": "select",
+				"range": ["⭑⭑⭑⭑⭑","⭑⭑⭑⭑","⭑⭑⭑","⭑⭑","⭑"],
 				"required": false
 			},
 			{
