@@ -1,5 +1,6 @@
-/* jenks26 — "see you soon" placeholder splash
-   Maroon page, ad artwork centered, one line of text. */
+/* jenks26 — redirect stub styling.
+   The deal template hands off to /jenks/; this CSS only shows if the redirect
+   can't happen (stale client) or something fails. Keep every path readable. */
 
 :root {
 	--jx-maroon: #6F1D33;
@@ -7,7 +8,7 @@
 
 body {
 	background-color: var(--jx-maroon);
-	font-family: 'Anton', sans-serif;
+	font-family: 'Barlow', sans-serif;
 }
 
 /* Hero image: centered and scaled, never cropped */
@@ -37,12 +38,27 @@ body {
 	padding: 0;
 }
 
+/* Fallback "tap here to play" (clients that predate template redirects) */
 .jx-soon {
 	font-family: 'Anton', sans-serif;
-	font-size: 3rem;
+	font-size: 2.4rem;
 	letter-spacing: 0.03em;
 	color: #ffffff;
 	text-align: center;
 	transform: rotate(-2deg);
 	margin: 24px 0 40px;
+}
+
+/* Fatal-error page: white bubble, plain type — must stay legible on maroon */
+#errorFatal {
+	background-color: transparent;
+	box-shadow: none;
+	border: none;
+}
+#errorFatal .rounded {
+	background-color: #ffffff;
+	color: #212529;
+	font-family: 'Barlow', sans-serif;
+	font-size: 1.05rem;
+	max-width: 420px;
 }
