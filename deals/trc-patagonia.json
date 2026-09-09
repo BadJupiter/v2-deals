@@ -88,15 +88,15 @@
 				"label": "Which day would you like to attend?",
 				"type": "select",
 				"count_from": "attend",
-				"limit": 400,
+				"limit": 450,
 				"range": [
 					{
 						"value": "Friday, September 25th",
-						"limit": 200
+						"limit": 225
 					},
 					{
 						"value": "Saturday, September 26th",
-						"limit": 200
+						"limit": 225
 					}
 				],
 				"required": true,
