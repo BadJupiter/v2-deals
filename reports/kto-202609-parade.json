@@ -1,6 +1,6 @@
 {
 	"biz_id": "kickapoo",
-	"deal_tokens": [ "kto-employee" ],
+	"deal_tokens": [ "kto-parade" ],
 	"most_recent_only": true, # omit or set to false for all rows
 	"most_recent_key": "Player ID", # needs to be the column_name
 	
@@ -36,23 +36,15 @@
 		},
 		{
 			"column_name": "Last Name",
-			"attrib": "z_LASTNAME"
+			"attrib": "lastname"
 		},
 		{
 			"column_name": "First Name",
-			"attrib": "z_FIRSTNAME"
+			"attrib": "firstname"
 		},
 		{
-			"column_name": "Attend",
-			"attrib": "attend"
-		},
-		{
-			"column_name": "Guest",
-			"attrib": "guest"
-		},
-		{
-			"column_name": "Day",
-			"attrib": "day"
+			"column_name": "Email",
+			"attrib": "email"
 		}
 	]
 }
