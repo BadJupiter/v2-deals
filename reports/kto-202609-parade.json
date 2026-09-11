@@ -2,7 +2,6 @@
 	"biz_id": "kickapoo",
 	"deal_tokens": [ "kto-parade" ],
 	"most_recent_only": true, # omit or set to false for all rows
-	"most_recent_key": "Player ID", # needs to be the column_name
 	
 	"as_xlsx": false, # omit or set to false for default (CSV)
 
