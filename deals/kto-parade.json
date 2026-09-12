@@ -6,6 +6,11 @@
 		"title": "Woops!",
 		"content": "Can't play if you ain't authenticated!"
 	},
+		"active": {
+		"start": "2026-09-01 5:00AM PDT",
+		"end": "2026-09-12 11:59PM PDT"
+	},
+	
 	"FORM": {
 		"fields": [
 			{
