@@ -16,7 +16,7 @@
 			{
 				"type": "info",
 				"justify": "center",
-				"markdown": "## Let's celebrate the parade in style with $50 of Free Play!\n\nRegister below to get yours!"
+				"markdown": "## Let's celebrate Harrah Day in style with $50 of Free Play at the Kickapoo Casino Harrah!\n\nRegister below to get yours!"
 			},
 			{
 				"type": "info",
@@ -61,6 +61,6 @@
 		}
 	},
 	"MAIN": {
-		"body_md": "# Thank You!\n\nStop by the casino to recieve your Free Play."
+		"body_md": "# Thank You!\n\nStop by the Kickapoo Casino Harrah to recieve your Free Play."
 	}
 }
