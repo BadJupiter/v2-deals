@@ -6,10 +6,19 @@
 		"title": "Woops!",
 		"content": "Can't play if you ain't authenticated!"
 	},
-		"active": {
+	"active": {
 		"start": "2026-09-01 5:00AM PDT",
 		"end": "2026-09-12 11:59PM PDT"
 	},
+	
+	"META": {
+		"name": "Harrah Day Parade",
+		"description": "Register for some Free Play on us and stop by for some fun!",
+		"dt": "September 12th",
+		"event_start_dt": "2026-09-12 1:00AM PDT"
+	},
+	
+	"summary_info": "Harrah Day Parade",
 	
 	"FORM": {
 		"fields": [
