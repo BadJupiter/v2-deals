@@ -12,107 +12,111 @@
 
 	"COLUMNS": [
 		{
-			"column_name": "Timestamp",
+			"column_name": "rowid",
+			"attrib": "_rowid"
+		},
+		{
+			"column_name": "timestamp",
 			"attrib": "_when"
 		},
 		{
-			"column_name": "Mobile",
+			"column_name": "mobile",
 			"attrib": "_mobile"
 		},
 		{
-			"column_name": "Deal ID",
+			"column_name": "dealid",
 			"attrib": "_deal"
 		},
 		{
-			"column_name": "Slots",
+			"column_name": "slots",
 			"attrib": "games-Slot Machines"
 		},
 		{
-			"column_name": "Table Games",
+			"column_name": "tableGames",
 			"attrib": "games-Table Games"
-		},		
+		},
 		{
-			"column_name": "Video Poker",
+			"column_name": "videoPoker",
 			"attrib": "games-Video Poker"
-		},		
+		},
 		{
-			"column_name": "Keno",
+			"column_name": "keno",
 			"attrib": "games-Keno"
-		},		
+		},
 		{
-			"column_name": "Bingo",
+			"column_name": "bingo",
 			"attrib": "games-Bingo"
 		},
 		{
-			"column_name": "Jack's Place",
+			"column_name": "jacksPlace",
 			"attrib": "dining-Jack's Place"
 		},
 		{
-			"column_name": "Cafe (food court)",
+			"column_name": "cafeOle",
 			"attrib": "dining-Cafe (food court)"
 		},
 		{
-			"column_name": "Flame-N-Fry (food court)",
+			"column_name": "flameFry",
 			"attrib": "dining-Flame-N-Fry (food court)"
 		},
 		{
-			"column_name": "Forno Italiano (food court)",
+			"column_name": "fornoItaliano",
 			"attrib": "dining-Forno Italiano (food court)"
 		},
 		{
-			"column_name": "Snack Bar",
+			"column_name": "snackBar",
 			"attrib": "dining-Snack Bar"
 		},
 		{
-			"column_name": "Rating",
+			"column_name": "rating",
 			"attrib": "rating"
 		},
 		{
-			"column_name": "PositiveComments",
+			"column_name": "positiveComments",
 			"attrib": "positivecomments"
 		},
 		{
-			"column_name": "NegativeComments",
+			"column_name": "negativeComments",
 			"attrib": "negativecomments"
 		},
 		{
-			"column_name": "Return",
+			"column_name": "return",
 			"attrib": "return"
 		},
 		{
-			"column_name": "Recommend",
+			"column_name": "recommend",
 			"attrib": "recommend"
 		},
 		{
-			"column_name": "Amenities",
+			"column_name": "amenities",
 			"attrib": "amenities"
 		},
 		{
-			"column_name": "Cleanliness",
+			"column_name": "cleanliness",
 			"attrib": "cleanliness"
 		},
 		{
-			"column_name": "Service",
+			"column_name": "service",
 			"attrib": "service"
 		},
 		{
-			"column_name": "Team",
+			"column_name": "team",
 			"attrib": "team"
 		},
 		{
-			"column_name": "Name",
+			"column_name": "name",
 			"attrib": "name"
 		},
 		{
-			"column_name": "Player ID",
+			"column_name": "playerid",
 			"attrib": "rewards"
 		},
 		{
-			"column_name": "Address",
+			"column_name": "address",
 			"attrib": "address"
 		},
 		{
-			"column_name": "Email",
+			"column_name": "email",
 			"attrib": "email"
 		}
 	]
