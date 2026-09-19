@@ -68,6 +68,14 @@
 			"attrib": "dining-Snack Bar"
 		},
 		{
+			"column_name": "cafeOleLegacy",
+			"attrib": "dining-Cafe Ole"
+		},
+		{
+			"column_name": "snackBarLegacy",
+			"attrib": "dining-Snack Bar (bingo)"
+		},
+		{
 			"column_name": "rating",
 			"attrib": "rating"
 		},
@@ -78,6 +86,10 @@
 		{
 			"column_name": "negativeComments",
 			"attrib": "negativecomments"
+		},
+		{
+			"column_name": "comments",
+			"attrib": "comments"
 		},
 		{
 			"column_name": "return",
