@@ -48,20 +48,32 @@
 			"attrib": "dining-Jack's Place"
 		},
 		{
-			"column_name": "Cafe Ole",
-			"attrib": "dining-Cafe Ole"
+			"column_name": "Cafe (food court)",
+			"attrib": "dining-Cafe (food court)"
 		},
 		{
-			"column_name": "Snack Bar (bingo)",
-			"attrib": "dining-Snack Bar (bingo)"
+			"column_name": "Flame-N-Fry (food court)",
+			"attrib": "dining-Flame-N-Fry (food court)"
+		},
+		{
+			"column_name": "Forno Italiano (food court)",
+			"attrib": "dining-Forno Italiano (food court)"
+		},
+		{
+			"column_name": "Snack Bar",
+			"attrib": "dining-Snack Bar"
 		},
 		{
 			"column_name": "Rating",
 			"attrib": "rating"
 		},
 		{
-			"column_name": "Comments",
-			"attrib": "comments"
+			"column_name": "PositiveComments",
+			"attrib": "positivecomments"
+		},
+		{
+			"column_name": "NegativeComments",
+			"attrib": "negativecomments"
 		},
 		{
 			"column_name": "Return",
@@ -74,6 +86,14 @@
 		{
 			"column_name": "Amenities",
 			"attrib": "amenities"
+		},
+		{
+			"column_name": "Cleanliness",
+			"attrib": "cleanliness"
+		},
+		{
+			"column_name": "Service",
+			"attrib": "service"
 		},
 		{
 			"column_name": "Team",
