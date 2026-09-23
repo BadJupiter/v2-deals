@@ -7,18 +7,18 @@
 		"content": "Can't play if you ain't authenticated!"
 	},
 	"active": {
-		"start": "2026-08-01 8:00AM PDT",
-		"end": "2026-08-08 10:00PM PDT"
+		"start": "2026-10-01 5:00AM PDT",
+		"end": "2026-10-08 11:59PM PDT"
 	},
 
 	"META": {
-		"name": "Float Reveal",
-		"description": "Pick up one of our Hand-Made Glass Floats",
-		"dt": "August 7th-8th",
-		"event_start_dt": "2026-08-07 12:00PM PDT"
+		"name": "NCL Alaska Cruise Experience",
+		"description": "Pickup your FREE Norwegian Cruise Line Certificate",
+		"dt": "October 16th-17th",
+		"event_start_dt": "2026-10-16 12:00PM PDT"
 	},
 	
-	"summary_info": "Glass Float Reveal",
+	"summary_info": "NCL Alaska Cruise Experience",
 	"FORM": {
 		"fields": [
 			{
@@ -31,11 +31,11 @@
 			},
 			{
 				"type": "info",
-				"markdown": "# Glass Float Reveal"
+				"markdown": "# NCL Alaska Cruise Experience"
 			},
 			{
 				"type": "info",
-				"markdown": "## **August 7th-8th, 2026**"
+				"markdown": "## **October 16th-17th, 2026**"
 			},
 			{
 				"type": "info",
@@ -47,7 +47,7 @@
 			},
 			{
 				"type": "info",
-				"markdown": "It's our pleasure to invite our valued Three Rivers guests to our **Hand-Made Glass Float Reveal**!",
+				"markdown": "It's our pleasure to invite our valued Three Rivers guests to our **NCL Alaska Cruise Experience**!",
 				"justify": "center"
 			},
 			{
@@ -56,7 +56,7 @@
 			},
 			{
 				"id": "attend",
-				"label": "Will you attend the Float Reveal?",
+				"label": "Will you attend the Norwegian Cruise Line Event?",
 				"type": "select",
 				"range": [
 					"Yes",
@@ -84,19 +84,69 @@
 				}
 			},
 			{
-				"id": "FLday",
-				"label": "Which day would you like to attend?",
+				"id": "day",
+				"label": "What day would you like to attend?",
+				"type": "select",
+				"range": [
+					"Friday, October 16th",
+					"Saturday, October 17th"
+				],
+				"required": true,
+				"conditional": {
+					"field": "attend",
+					"value": "Yes"
+				}
+			},
+			{
+				"id": "FLday1time",
+				"label": "What time would you like to attend?",
 				"type": "select",
 				"count_from": "attend",
-				"limit": 800,
+				"limit": 550,
 				"range": [
 					{
-						"value": "Friday, August 7th",
-						"limit": 324
+						"value": "3:00pm",
+						"limit": 50
 					},
 					{
-						"value": "Saturday, August 8th",
-						"limit": 400
+						"value": "3:30pm",
+						"limit": 50
+					},
+					{
+						"value": "4:00pm",
+						"limit": 50
+					},
+					{
+						"value": "4:30pm",
+						"limit": 50
+					},
+					{
+						"value": "5:00pm",
+						"limit": 50
+					},
+					{
+						"value": "5:30pm",
+						"limit": 50
+					},
+					{
+						"value": "6:00pm",
+						"limit": 50
+					},
+					{
+						"value": "6:30pm",
+						"limit": 50
+					},
+					{
+						"value": "7:00pm",
+						"limit": 50
+					},
+					{
+						"value": "7:30pm",
+						"limit": 50
+					},
+					{
+						"value": "8:00pm",
+						"limit": 50
 					}
 				],
 				"required": true,
@@ -104,6 +154,10 @@
 					{
 						"field": "attend",
 						"value": "Yes"
+					},
+					{
+						"field": "day",
+						"value": "Friday, October 16th"
 					},
 					{
 						"field": "location",
@@ -112,19 +166,55 @@
 				]
 			},
 			{
-				"id": "CBday",
-				"label": "Which day would you like to attend?",
+				"id": "FLday2time",
+				"label": "What time would you like to attend?",
 				"type": "select",
 				"count_from": "attend",
-				"limit": 105,
+					"limit": 550,
 				"range": [
 					{
-						"value": "Friday, August 7th",
-						"limit": 70
+						"value": "3:00pm",
+						"limit": 50
 					},
 					{
-						"value": "Saturday, August 8th",
-						"limit": 35
+						"value": "3:30pm",
+						"limit": 50
+					},
+					{
+						"value": "4:00pm",
+						"limit": 50
+					},
+					{
+						"value": "4:30pm",
+						"limit": 50
+					},
+					{
+						"value": "5:00pm",
+						"limit": 50
+					},
+					{
+						"value": "5:30pm",
+						"limit": 50
+					},
+					{
+						"value": "6:00pm",
+						"limit": 50
+					},
+					{
+						"value": "6:30pm",
+						"limit": 50
+					},
+					{
+						"value": "7:00pm",
+						"limit": 50
+					},
+					{
+						"value": "7:30pm",
+						"limit": 50
+					},
+					{
+						"value": "8:00pm",
+						"limit": 50
 					}
 				],
 				"required": true,
@@ -132,6 +222,146 @@
 					{
 						"field": "attend",
 						"value": "Yes"
+					},
+					{
+						"field": "day",
+						"value": "Saturday, October 17th"
+					},
+					{
+						"field": "location",
+						"value": "Florence"
+					}
+				]
+			},
+			{
+				"id": "CBday1time",
+				"label": "What time would you like to attend?",
+				"type": "select",
+				"count_from": "attend",
+			"limit": 550,
+				"range": [
+					{
+						"value": "3:00pm",
+						"limit": 50
+					},
+					{
+						"value": "3:30pm",
+						"limit": 50
+					},
+					{
+						"value": "4:00pm",
+						"limit": 50
+					},
+					{
+						"value": "4:30pm",
+						"limit": 50
+					},
+					{
+						"value": "5:00pm",
+						"limit": 50
+					},
+					{
+						"value": "5:30pm",
+						"limit": 50
+					},
+					{
+						"value": "6:00pm",
+						"limit": 50
+					},
+					{
+						"value": "6:30pm",
+						"limit": 50
+					},
+					{
+						"value": "7:00pm",
+						"limit": 50
+					},
+					{
+						"value": "7:30pm",
+						"limit": 50
+					},
+					{
+						"value": "8:00pm",
+						"limit": 50
+					}
+				],
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "day",
+						"value": "Friday, October 16th"
+					},
+					{
+						"field": "location",
+						"value": "Coos Bay"
+					}
+				]
+			},
+			{
+				"id": "CBday2time",
+				"label": "What time would you like to attend?",
+				"type": "select",
+				"count_from": "attend",
+				"limit": 550,
+				"range": [
+					{
+						"value": "3:00pm",
+						"limit": 50
+					},
+					{
+						"value": "3:30pm",
+						"limit": 50
+					},
+					{
+						"value": "4:00pm",
+						"limit": 50
+					},
+					{
+						"value": "4:30pm",
+						"limit": 50
+					},
+					{
+						"value": "5:00pm",
+						"limit": 50
+					},
+					{
+						"value": "5:30pm",
+						"limit": 50
+					},
+					{
+						"value": "6:00pm",
+						"limit": 50
+					},
+					{
+						"value": "6:30pm",
+						"limit": 50
+					},
+					{
+						"value": "7:00pm",
+						"limit": 50
+					},
+					{
+						"value": "7:30pm",
+						"limit": 50
+					},
+					{
+						"value": "8:00pm",
+						"limit": 50
+					}
+				],
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "day",
+						"value": "Saturday, October 17th"
 					},
 					{
 						"field": "location",
