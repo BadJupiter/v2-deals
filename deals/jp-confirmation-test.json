@@ -18,7 +18,7 @@
 		"event_start_dt": "2026-10-16 12:00PM PDT"
 	},
 	
-	"summary_info": "NCL Alaska Cruise Experience",
+	"summary_info": "Confirmation Test Deal",
 	"FORM": {
 		"fields": [
 			{
@@ -31,7 +31,7 @@
 			},
 			{
 				"type": "info",
-				"markdown": "# NCL Alaska Cruise Experience"
+				"markdown": "# Confirmation Test Deal"
 			},
 			{
 				"type": "info",
