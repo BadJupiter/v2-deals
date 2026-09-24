@@ -3,7 +3,7 @@
 	"deal_tokens": [
 		"trc-icecream"
 	],
-	"most_recent_only": false,
+	"most_recent_only": true,
 	"most_recent_key": "Player ID",
 	"as_xlsx": false,
 	"COLUMNS": [
