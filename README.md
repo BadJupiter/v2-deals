@@ -69,6 +69,7 @@ Each **deal** template is a JSON text document with a name corresponding to a un
 |--------------|--------------------------------------------------------------------|
 |biz_id        |Business - must exist in graph                                      |
 |check_in      |if present and *true* grab flow kicks off immediately               |
+|qr_confirm    |RSVP deals: if *true*, guests get a check-in QR pass + confirmation text |
 |auth_required |if present and *true* user will be authenticated prior to grab      |
 |error_auth    |if present and *auth_required*, overrides defaults for error dialog |
 |FORM          |if present defines user interactions prior to grab                  |

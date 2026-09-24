@@ -9,6 +9,9 @@
 	
 	"auth_required": true,
 	"_auth_required_note": "If true, user must be authenticated before accessing the deal",
+
+	"qr_confirm": false,
+	"_qr_confirm_note": "RSVP deals only. If true, a guest who answers gets a check-in QR on the confirm page and a text with the deal link; reopening the link (even after the deal closes with a -temp page) shows their pass, or their decline, with a link to change it while the deal is open. The answer is read from FORM.attend_field (default 'attend'); only 'No' counts as declined. Requires a signed-in guest: the server refuses unauthenticated grabs on these deals.",
 	
 	"error_auth": {
 		"title": "Authentication Required",

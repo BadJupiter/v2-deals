@@ -467,6 +467,9 @@ def build_deal(config):
     if "error_auth" in config:
         deal["error_auth"] = config["error_auth"]
 
+    if config.get("qr_confirm"):
+        deal["qr_confirm"] = True
+
     if "active" in config:
         deal["active"] = config["active"]
 
