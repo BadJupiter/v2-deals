@@ -1,7 +1,7 @@
 {
 	"biz_id": "threerivers",
 	"deal_tokens": [
-		"trc-patagonia"
+		"trc-ncl"
 	],
 	"most_recent_only": true,
 	"most_recent_key": "Player ID",
@@ -56,12 +56,20 @@
 			"attrib": "day"
 		},
 		{
-			"column_name": "FLDay",
-			"attrib": "FLday"
+			"column_name": "FLDay1Time",
+			"attrib": "FLday1time"
 		},
 		{
-			"column_name": "CBDay",
-			"attrib": "CBday"
+			"column_name": "FLDay2Time",
+			"attrib": "FLday2time"
+		},
+		{
+			"column_name": "CBDay1Time",
+			"attrib": "CBday1time"
+		},
+		{
+			"column_name": "CBDay2Time",
+			"attrib": "CBday2time"
 		},
 		{
 			"column_name": "Room",
