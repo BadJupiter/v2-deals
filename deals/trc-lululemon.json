@@ -10,6 +10,14 @@
 		"start": "2026-06-05 3:00PM PDT",
 		"end": "2026-06-06 8:00PM PDT"
 	},
+
+	"META": {
+		"name": "Lululemon Boutique",
+		"description": "Pick up your choice of Lululemon athletic wear",
+		"dt": "June 5th-6th",
+		"event_start_dt": "2026-06-05 12:00PM PDT"
+	},
+	
 	"summary_info": "Lululemon Boutique",
 	"FORM": {
 		"fields": [
