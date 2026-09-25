@@ -7,18 +7,18 @@
 		"content": "Can't play if you ain't authenticated!"
 	},
 	"active": {
-		"start": "2026-10-01 5:00AM PDT",
-		"end": "2026-10-17 11:59PM PDT"
+		"start": "2026-10-16 5:00AM PDT",
+		"end": "2026-10-31 11:59PM PDT"
 	},
 
 	"META": {
-		"name": "NCL Alaska Cruise Experience",
-		"description": "Pickup your FREE Norwegian Cruise Line Certificate",
-		"dt": "October 16th-17th",
-		"event_start_dt": "2026-10-16 12:00PM PDT"
+		"name": "Ariat Boot Boutique",
+		"description": "Pick up your free pair of Ariat Boots",
+		"dt": "October 30th-31st",
+		"event_start_dt": "2026-10-30 12:00PM PDT"
 	},
 	
-	"summary_info": "NCL Alaska Cruise Experience",
+	"summary_info": "Ariat Boot Boutique",
 	"FORM": {
 		"fields": [
 			{
@@ -31,11 +31,11 @@
 			},
 			{
 				"type": "info",
-				"markdown": "# NCL Alaska Cruise Experience"
+				"markdown": "# Ariat Boot Boutique"
 			},
 			{
 				"type": "info",
-				"markdown": "## **October 16th-17th, 2026**"
+				"markdown": "## **October 30th-31st, 2026**"
 			},
 			{
 				"type": "info",
@@ -47,7 +47,7 @@
 			},
 			{
 				"type": "info",
-				"markdown": "It's our pleasure to invite our valued Three Rivers guests to our **NCL Alaska Cruise Experience**!",
+				"markdown": "It's our pleasure to invite our valued Three Rivers guests to our **Ariat Boot Boutique**!",
 				"justify": "center"
 			},
 			{
@@ -56,7 +56,7 @@
 			},
 			{
 				"id": "attend",
-				"label": "Will you attend the Norwegian Cruise Line Event?",
+				"label": "Will you attend the Ariat Boot Boutique?",
 				"type": "select",
 				"range": [
 					"Yes",
@@ -88,8 +88,8 @@
 				"label": "What day would you like to attend?",
 				"type": "select",
 				"range": [
-					"Friday, October 16th",
-					"Saturday, October 17th"
+					"Friday, October 30th",
+					"Saturday, October 31st"
 				],
 				"required": true,
 				"conditional": {
@@ -102,51 +102,51 @@
 				"label": "What time would you like to attend?",
 				"type": "select",
 				"count_from": "attend",
-				"limit": 550,
+				"limit": 330,
 				"range": [
 					{
 						"value": "3:00pm",
-						"limit": 50
+						"limit": 30
 					},
 					{
 						"value": "3:30pm",
-						"limit": 50
+						"limit": 30
 					},
 					{
 						"value": "4:00pm",
-						"limit": 50
+						"limit": 30
 					},
 					{
 						"value": "4:30pm",
-						"limit": 50
+						"limit": 30
 					},
 					{
 						"value": "5:00pm",
-						"limit": 50
+						"limit": 30
 					},
 					{
 						"value": "5:30pm",
-						"limit": 50
+						"limit": 30
 					},
 					{
 						"value": "6:00pm",
-						"limit": 50
+						"limit": 30
 					},
 					{
 						"value": "6:30pm",
-						"limit": 50
+						"limit": 30
 					},
 					{
 						"value": "7:00pm",
-						"limit": 50
+						"limit": 30
 					},
 					{
 						"value": "7:30pm",
-						"limit": 50
+						"limit": 30
 					},
 					{
 						"value": "8:00pm",
-						"limit": 50
+						"limit": 30
 					}
 				],
 				"required": true,
@@ -157,7 +157,7 @@
 					},
 					{
 						"field": "day",
-						"value": "Friday, October 16th"
+						"value": "Friday, October 30th"
 					},
 					{
 						"field": "location",
@@ -170,51 +170,51 @@
 				"label": "What time would you like to attend?",
 				"type": "select",
 				"count_from": "attend",
-					"limit": 550,
+					"limit": 330,
 				"range": [
 					{
 						"value": "3:00pm",
-						"limit": 50
+						"limit": 30
 					},
 					{
 						"value": "3:30pm",
-						"limit": 50
+						"limit": 30
 					},
 					{
 						"value": "4:00pm",
-						"limit": 50
+						"limit": 30
 					},
 					{
 						"value": "4:30pm",
-						"limit": 50
+						"limit": 30
 					},
 					{
 						"value": "5:00pm",
-						"limit": 50
+						"limit": 30
 					},
 					{
 						"value": "5:30pm",
-						"limit": 50
+						"limit": 30
 					},
 					{
 						"value": "6:00pm",
-						"limit": 50
+						"limit": 30
 					},
 					{
 						"value": "6:30pm",
-						"limit": 50
+						"limit": 30
 					},
 					{
 						"value": "7:00pm",
-						"limit": 50
+						"limit": 30
 					},
 					{
 						"value": "7:30pm",
-						"limit": 50
+						"limit": 30
 					},
 					{
 						"value": "8:00pm",
-						"limit": 50
+						"limit": 30
 					}
 				],
 				"required": true,
@@ -225,7 +225,7 @@
 					},
 					{
 						"field": "day",
-						"value": "Saturday, October 17th"
+						"value": "Saturday, October 31st"
 					},
 					{
 						"field": "location",
@@ -238,51 +238,51 @@
 				"label": "What time would you like to attend?",
 				"type": "select",
 				"count_from": "attend",
-			"limit": 550,
+				"limit": 330,
 				"range": [
 					{
 						"value": "3:00pm",
-						"limit": 50
+						"limit": 30
 					},
 					{
 						"value": "3:30pm",
-						"limit": 50
+						"limit": 30
 					},
 					{
 						"value": "4:00pm",
-						"limit": 50
+						"limit": 30
 					},
 					{
 						"value": "4:30pm",
-						"limit": 50
+						"limit": 30
 					},
 					{
 						"value": "5:00pm",
-						"limit": 50
+						"limit": 30
 					},
 					{
 						"value": "5:30pm",
-						"limit": 50
+						"limit": 30
 					},
 					{
 						"value": "6:00pm",
-						"limit": 50
+						"limit": 30
 					},
 					{
 						"value": "6:30pm",
-						"limit": 50
+						"limit": 30
 					},
 					{
 						"value": "7:00pm",
-						"limit": 50
+						"limit": 30
 					},
 					{
 						"value": "7:30pm",
-						"limit": 50
+						"limit": 30
 					},
 					{
 						"value": "8:00pm",
-						"limit": 50
+						"limit": 30
 					}
 				],
 				"required": true,
@@ -293,7 +293,7 @@
 					},
 					{
 						"field": "day",
-						"value": "Friday, October 16th"
+						"value": "Friday, October 30th"
 					},
 					{
 						"field": "location",
@@ -306,51 +306,51 @@
 				"label": "What time would you like to attend?",
 				"type": "select",
 				"count_from": "attend",
-				"limit": 550,
+				"limit": 330,
 				"range": [
 					{
 						"value": "3:00pm",
-						"limit": 50
+						"limit": 30
 					},
 					{
 						"value": "3:30pm",
-						"limit": 50
+						"limit": 30
 					},
 					{
 						"value": "4:00pm",
-						"limit": 50
+						"limit": 30
 					},
 					{
 						"value": "4:30pm",
-						"limit": 50
+						"limit": 30
 					},
 					{
 						"value": "5:00pm",
-						"limit": 50
+						"limit": 30
 					},
 					{
 						"value": "5:30pm",
-						"limit": 50
+						"limit": 30
 					},
 					{
 						"value": "6:00pm",
-						"limit": 50
+						"limit": 30
 					},
 					{
 						"value": "6:30pm",
-						"limit": 50
+						"limit": 30
 					},
 					{
 						"value": "7:00pm",
-						"limit": 50
+						"limit": 30
 					},
 					{
 						"value": "7:30pm",
-						"limit": 50
+						"limit": 30
 					},
 					{
 						"value": "8:00pm",
-						"limit": 50
+						"limit": 30
 					}
 				],
 				"required": true,
@@ -361,7 +361,7 @@
 					},
 					{
 						"field": "day",
-						"value": "Saturday, October 17th"
+						"value": "Saturday, October 31st"
 					},
 					{
 						"field": "location",
@@ -401,7 +401,7 @@
 			},
 			{
 				"type": "fields_group",
-				"bgcolor": "#D8E4E7",
+				"bgcolor": "#dbc8b5",
 				"fields": [
 					{
 						"id": "z_FIRSTNAME",
