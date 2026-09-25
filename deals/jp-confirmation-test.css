@@ -31,3 +31,33 @@ h2 {
 	text-align: center;
 	margin-bottom: 15px;
 }
+
+/* RSVP pass card (qr_confirm): Three Rivers look, after Bryan's mockup.
+   Optional -- without these the card uses the client's neutral defaults.
+   Copy this block into another deal's .css to give it the same card. */
+.rsvp-card {
+	background: #FBF8F1;
+	border: 2px solid #C9A55C;
+	border-radius: 6px;
+	box-shadow: inset 0 0 0 6px #FBF8F1, inset 0 0 0 7px #E6D3A3;
+	color: #2B2B2B;
+}
+.rsvp-card-headline {
+	color: #8B1A2B;
+	font-weight: 400;
+}
+.rsvp-card-qr {
+	border-color: #E6D3A3;
+}
+.rsvp-card-save {
+	color: #8B1A2B;
+	border-color: #8B1A2B;
+}
+.rsvp-card-save:hover {
+	color: #FFFFFF;
+	background-color: #8B1A2B;
+	border-color: #8B1A2B;
+}
+.rsvp-card-change a {
+	color: #8B1A2B;
+}

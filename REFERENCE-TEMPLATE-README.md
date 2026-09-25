@@ -21,6 +21,7 @@ Deal templates are JSON files that define user interactions including:
 | `biz_id` | Yes | string | Business identifier (must exist in graph) |
 | `check_in` | No | boolean | If `true`, deal auto-grabs without confirmation |
 | `qr_confirm` | No | boolean | RSVP deals: guest gets a check-in QR pass and a confirmation text; reopening the link shows the pass. Answer read from `FORM.attend_field` (default `attend`) |
+| `PASS` | No | object | `qr_confirm` deals: `{"fields": [...]}` picks which answers the pass card lists (default: visible choices except the RSVP and yes/no questions). Style the card from `<deal>.css` via the `.rsvp-card*` classes |
 | `auth_required` | No | boolean | If `true`, user must authenticate before access |
 | `error_auth` | No | object | Custom error message when auth fails |
 | `styling` | No | object | Custom fonts for branding |

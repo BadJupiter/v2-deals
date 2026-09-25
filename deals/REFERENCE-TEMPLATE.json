@@ -12,6 +12,9 @@
 
 	"qr_confirm": false,
 	"_qr_confirm_note": "RSVP deals only. If true, a guest who answers gets a check-in QR on the confirm page and a text with the deal link; reopening the link (even after the deal closes with a -temp page) shows their pass, or their decline, with a link to change it while the deal is open. The answer is read from FORM.attend_field (default 'attend'); only 'No' counts as declined. Requires a signed-in guest: the server refuses unauthenticated grabs on these deals.",
+
+	"PASS": { "fields": [] },
+	"_PASS_note": "Optional, qr_confirm deals only. By default the pass card lists every visible select the guest answered except the RSVP question and yes/no questions (e.g. location, day, time). PASS.fields lists field ids to show instead, in order. The card's look comes from <deal>.css like the form: target .rsvp-card, .rsvp-card-headline, .rsvp-card-choice, .rsvp-card-guest, .rsvp-card-qr, .rsvp-card-save, .rsvp-card-change, .rsvp-card-footer (see jp-confirmation-test.css for a worked example). The deal's MAIN.body_md is shown as the card's footer.",
 	
 	"error_auth": {
 		"title": "Authentication Required",
