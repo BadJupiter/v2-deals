@@ -7,6 +7,10 @@
 	"most_recent_key": "Mobile",
 	"COLUMNS": [
 		{
+			"column_name": "Row ID",
+			"attrib": "_rowid"
+		},
+		{
 			"column_name": "Timestamp",
 			"attrib": "_when"
 		},
