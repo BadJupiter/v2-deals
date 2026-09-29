@@ -1,0 +1,450 @@
+{
+	"biz_id": "threerivers",
+	"check_in": true,
+	"auth_required": true,
+	"error_auth": {
+		"title": "Oops!",
+		"content": "Can't play if you ain't authenticated!"
+	},
+	"active": {
+		"start": "2026-10-10 5:00AM PDT",
+		"end": "2026-10-24 11:59PM PDT"
+	},
+
+	"META": {
+		"name": "Rancher Hat Boutique",
+		"description": "Design your custom western hat at the Rancher Hat Boutique",
+		"dt": "October 23rd-24th",
+		"event_start_dt": "2026-10-23 12:00PM PDT"
+	},
+	
+	"summary_info": "Rancher Hat Boutique",
+	"FORM": {
+		"fields": [
+			{
+				"id": "Hotel",
+				"label": "Hotel",
+				"type": "text",
+				"sticky": true,
+				"disabled": true,
+				"hidden": true
+			},
+			{
+				"type": "info",
+				"markdown": "# Rancher Hat Boutique"
+			},
+			{
+				"type": "info",
+				"markdown": "## **October 23rd-24th, 2026**"
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "info",
+				"markdown": "## **Florence & Coos Bay**"
+			},
+			{
+				"type": "info",
+				"markdown": "It's our pleasure to invite our valued Three Rivers guests to our **Rancher Hat Boutique**!",
+				"justify": "center"
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"id": "attend",
+				"label": "Will you attend the Rancher Hat Boutique?",
+				"type": "select",
+				"range": [
+					"Yes",
+					"No"
+				],
+				"required": true,
+				"global": true,
+				"capacity_map": {
+					"Yes": 1,
+					"No": 0
+				}
+			},
+			{
+				"id": "location",
+				"label": "Which property would you like to visit?",
+				"type": "select",
+				"range": [
+					"Florence",
+					"Coos Bay"
+				],
+				"required": true,
+				"conditional": {
+					"field": "attend",
+					"value": "Yes"
+				}
+			},
+			{
+				"id": "day",
+				"label": "What day would you like to attend?",
+				"type": "select",
+				"range": [
+					"Friday, October 23rd",
+					"Saturday, October 24th"
+				],
+				"required": true,
+				"conditional": {
+					"field": "attend",
+					"value": "Yes"
+				}
+			},
+			{
+				"id": "FLday1time",
+				"label": "What time would you like to attend?",
+				"type": "select",
+				"count_from": "attend",
+				"limit": 165,
+				"range": [
+					{
+						"value": "3:00pm",
+						"limit": 15
+					},
+					{
+						"value": "3:30pm",
+						"limit": 15
+					},
+					{
+						"value": "4:00pm",
+						"limit": 15
+					},
+					{
+						"value": "4:30pm",
+						"limit": 15
+					},
+					{
+						"value": "5:00pm",
+						"limit": 15
+					},
+					{
+						"value": "5:30pm",
+						"limit": 15
+					},
+					{
+						"value": "6:00pm",
+						"limit": 15
+					},
+					{
+						"value": "6:30pm",
+						"limit": 15
+					},
+					{
+						"value": "7:00pm",
+						"limit": 15
+					},
+					{
+						"value": "7:30pm",
+						"limit": 15
+					},
+					{
+						"value": "8:00pm",
+						"limit": 15
+					}
+				],
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "day",
+						"value": "Friday, October 23rd"
+					},
+					{
+						"field": "location",
+						"value": "Florence"
+					}
+				]
+			},
+			{
+				"id": "FLday2time",
+				"label": "What time would you like to attend?",
+				"type": "select",
+				"count_from": "attend",
+				"limit": 165,
+				"range": [
+					{
+						"value": "3:00pm",
+						"limit": 15
+					},
+					{
+						"value": "3:30pm",
+						"limit": 15
+					},
+					{
+						"value": "4:00pm",
+						"limit": 15
+					},
+					{
+						"value": "4:30pm",
+						"limit": 15
+					},
+					{
+						"value": "5:00pm",
+						"limit": 15
+					},
+					{
+						"value": "5:30pm",
+						"limit": 15
+					},
+					{
+						"value": "6:00pm",
+						"limit": 15
+					},
+					{
+						"value": "6:30pm",
+						"limit": 15
+					},
+					{
+						"value": "7:00pm",
+						"limit": 15
+					},
+					{
+						"value": "7:30pm",
+						"limit": 15
+					},
+					{
+						"value": "8:00pm",
+						"limit": 15
+					}
+				],
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "day",
+						"value": "Saturday, October 24th"
+					},
+					{
+						"field": "location",
+						"value": "Florence"
+					}
+				]
+			},
+			{
+				"id": "CBday1time",
+				"label": "What time would you like to attend?",
+				"type": "select",
+				"count_from": "attend",
+				"limit": 165,
+				"range": [
+					{
+						"value": "3:00pm",
+						"limit": 15
+					},
+					{
+						"value": "3:30pm",
+						"limit": 15
+					},
+					{
+						"value": "4:00pm",
+						"limit": 15
+					},
+					{
+						"value": "4:30pm",
+						"limit": 15
+					},
+					{
+						"value": "5:00pm",
+						"limit": 15
+					},
+					{
+						"value": "5:30pm",
+						"limit": 15
+					},
+					{
+						"value": "6:00pm",
+						"limit": 15
+					},
+					{
+						"value": "6:30pm",
+						"limit": 15
+					},
+					{
+						"value": "7:00pm",
+						"limit": 15
+					},
+					{
+						"value": "7:30pm",
+						"limit": 15
+					},
+					{
+						"value": "8:00pm",
+						"limit": 15
+					}
+				],
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "day",
+						"value": "Friday, October 23rd"
+					},
+					{
+						"field": "location",
+						"value": "Coos Bay"
+					}
+				]
+			},
+			{
+				"id": "CBday2time",
+				"label": "What time would you like to attend?",
+				"type": "select",
+				"count_from": "attend",
+				"limit": 165,
+				"range": [
+					{
+						"value": "3:00pm",
+						"limit": 15
+					},
+					{
+						"value": "3:30pm",
+						"limit": 15
+					},
+					{
+						"value": "4:00pm",
+						"limit": 15
+					},
+					{
+						"value": "4:30pm",
+						"limit": 15
+					},
+					{
+						"value": "5:00pm",
+						"limit": 15
+					},
+					{
+						"value": "5:30pm",
+						"limit": 15
+					},
+					{
+						"value": "6:00pm",
+						"limit": 15
+					},
+					{
+						"value": "6:30pm",
+						"limit": 15
+					},
+					{
+						"value": "7:00pm",
+						"limit": 15
+					},
+					{
+						"value": "7:30pm",
+						"limit": 15
+					},
+					{
+						"value": "8:00pm",
+						"limit": 15
+					}
+				],
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "day",
+						"value": "Saturday, October 24th"
+					},
+					{
+						"field": "location",
+						"value": "Coos Bay"
+					}
+				]
+			},
+			{
+				"id": "room",
+				"label": "Would you like your host to contact you about accommodations?",
+				"type": "select",
+				"range": [
+					"Yes",
+					"No"
+				],
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "location",
+						"value": "Florence"
+					},
+					{
+						"field": "Hotel",
+						"values": [
+							"Y"
+						]
+					}
+				]
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "fields_group",
+				"bgcolor": "#D5E2E5",
+				"fields": [
+					{
+						"id": "z_FIRSTNAME",
+						"label": "First Name:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					},
+					{
+						"id": "z_LASTNAME",
+						"label": "Last Name:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					},
+					{
+						"id": "PlayerID",
+						"label": "Player ID:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					},
+					{
+						"id": "z_EMAIL",
+						"label": "Email:",
+						"type": "text",
+						"sticky": true,
+						"disabled": false
+					}
+				]
+			}
+		],
+	#	"title": "Three Rivers Casino Resort",
+		"limits": {
+			"most_recent_only": true,
+			"most_recent_key": "PlayerID"
+		},
+		"submit": {
+			"label": "Submit RSVP",
+			"color": "#20363d"
+		}
+	},
+	"MAIN": {
+		"body_md": "# Your reservation is confirmed!\n\nThank you for your RSVP. If you need to make any changes just submit an updated response. We look forward to seeing you at **Three Rivers Casino Resort**!"
+	}
+}
