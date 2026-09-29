@@ -401,7 +401,7 @@
 			},
 			{
 				"type": "fields_group",
-				"bgcolor": "#dbc8b5",
+				"bgcolor": "#D5E2E5",
 				"fields": [
 					{
 						"id": "z_FIRSTNAME",
