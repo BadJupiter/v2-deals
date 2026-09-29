@@ -2,29 +2,28 @@
 	"biz_id": "jupiter",
 	"app_title": "Jenks Game Night",
 	"team": "Jenks",
-
 	"colors": {
 		"primary": "#6F1D33",
 		"text": "#FFFFFF"
 	},
 	"artwork": "https://badjupiter.github.io/v2-deals/deals/jenks26.png",
-
 	"question": "How many total points will be scored in the 4th quarter tonight?",
 	"hint": "Both teams combined. Lock it in before the 4th quarter starts!",
 	"rules_note": "One guess per player. Closest wins; earliest guess breaks ties. Entries after the start of the 4th quarter aren't eligible.",
 	"sms_note": "We'll text the winner after the game. Good luck!",
+	"closed_wait_note": "Guessing is closed for tonight - watch that 4th quarter! Winner announcement coming soon.",
+	"winner_note": "Closest guess on the 4th-quarter points. Thanks for playing - see you next game!",
 	"already_note": "Looks like you already made your guess for this game. Good luck!",
 	"countdown_note": "Come back on game day to make your guess!",
 	"closed_md": "That's a wrap on the season — thanks for playing along with Jenks football! **Go Trojans!**",
-
 	"games": [
 		{
 			"dealtoken": "jenks26-owasso",
 			"opponent": "Owasso",
 			"tagline": "HOMECOMING",
 			"kickoff": "2026-10-02T19:00:00-05:00",
-			"opens":   "2026-10-02T07:00:00-05:00",
-			"closes":  "2026-10-02T20:45:00-05:00",
+			"opens": "2026-10-02T07:00:00-05:00",
+			"closes": "2026-10-02T23:00:00-05:00",
 			"prize": "$50 Elgin Park gift card + swag",
 			"sponsor": {
 				"name": "Elgin Park Brewing Co.",
@@ -36,8 +35,8 @@
 			"opponent": "Edmond Santa Fe",
 			"tagline": "",
 			"kickoff": "2026-10-15T19:00:00-05:00",
-			"opens":   "2026-10-15T07:00:00-05:00",
-			"closes":  "2026-10-15T20:45:00-05:00",
+			"opens": "2026-10-15T07:00:00-05:00",
+			"closes": "2026-10-15T23:00:00-05:00",
 			"prize": ""
 		},
 		{
@@ -45,8 +44,8 @@
 			"opponent": "Moore",
 			"tagline": "HOMETOWN HUDDLE",
 			"kickoff": "2026-10-30T19:00:00-05:00",
-			"opens":   "2026-10-30T07:00:00-05:00",
-			"closes":  "2026-10-30T20:45:00-05:00",
+			"opens": "2026-10-30T07:00:00-05:00",
+			"closes": "2026-10-30T23:00:00-05:00",
 			"prize": ""
 		}
 	]
