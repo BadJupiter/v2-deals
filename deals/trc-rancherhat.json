@@ -12,13 +12,13 @@
 	},
 
 	"META": {
-		"name": "Rancher Hat Boutique",
-		"description": "Design your custom western hat at the Rancher Hat Boutique",
+		"name": "Hat Bar Boutique",
+		"description": "Design your custom western hat at the Hat Bar Boutique",
 		"dt": "October 23rd-24th",
 		"event_start_dt": "2026-10-23 12:00PM PDT"
 	},
 	
-	"summary_info": "Rancher Hat Boutique",
+	"summary_info": "Hat Bar Boutique",
 	"FORM": {
 		"fields": [
 			{
@@ -31,7 +31,7 @@
 			},
 			{
 				"type": "info",
-				"markdown": "# Rancher Hat Boutique"
+				"markdown": "# Hat Bar Boutique"
 			},
 			{
 				"type": "info",
@@ -47,7 +47,7 @@
 			},
 			{
 				"type": "info",
-				"markdown": "It's our pleasure to invite our valued Three Rivers guests to our **Rancher Hat Boutique**!",
+				"markdown": "It's our pleasure to invite our valued Three Rivers guests to our **Hat Bar Boutique**!",
 				"justify": "center"
 			},
 			{
@@ -56,7 +56,7 @@
 			},
 			{
 				"id": "attend",
-				"label": "Will you attend the Rancher Hat Boutique?",
+				"label": "Will you attend the Hat Bar Boutique?",
 				"type": "select",
 				"range": [
 					"Yes",
