@@ -7,18 +7,18 @@
 		"content": "Can't play if you ain't authenticated!"
 	},
 	"active": {
-		"start": "2026-10-10 5:00AM PDT",
-		"end": "2026-10-24 11:59PM PDT"
+		"start": "2026-12-15 5:00AM PDT",
+		"end": "2026-12-31 11:59PM PDT"
 	},
 
 	"META": {
-		"name": "Hat Bar Boutique",
-		"description": "Design your custom western hat at the Hat Bar Boutique",
-		"dt": "October 23rd-24th",
-		"event_start_dt": "2026-10-23 12:00PM PDT"
+		"name": "New Year's Celebration",
+		"description": "Ring in the New Year with us!",
+		"dt": "December 31st",
+		"event_start_dt": "2026-12-31 12:00PM PDT"
 	},
 	
-	"summary_info": "Hat Bar Boutique",
+	"summary_info": "New Year's Celebration",
 	"FORM": {
 		"fields": [
 			{
@@ -31,11 +31,11 @@
 			},
 			{
 				"type": "info",
-				"markdown": "# Hat Bar Boutique"
+				"markdown": "# New Year's Celebration"
 			},
 			{
 				"type": "info",
-				"markdown": "## **October 23rd-24th, 2026**"
+				"markdown": "## **December 31st, 2026**"
 			},
 			{
 				"type": "info",
@@ -43,11 +43,11 @@
 			},
 			{
 				"type": "info",
-				"markdown": "## **Florence & Coos Bay**"
+				"markdown": "## **Coos Bay**"
 			},
 			{
 				"type": "info",
-				"markdown": "It's our pleasure to invite our valued Three Rivers guests to our **Hat Bar Boutique**!",
+				"markdown": "It's our pleasure to invite our valued Three Rivers guests to our **New Year's Celebration**!",
 				"justify": "center"
 			},
 			{
@@ -56,7 +56,7 @@
 			},
 			{
 				"id": "attend",
-				"label": "Will you attend the Hat Bar Boutique?",
+				"label": "Will you attend the New Year's Celebration?",
 				"type": "select",
 				"range": [
 					"Yes",
@@ -68,306 +68,6 @@
 					"Yes": 1,
 					"No": 0
 				}
-			},
-			{
-				"id": "location",
-				"label": "Which property would you like to visit?",
-				"type": "select",
-				"range": [
-					"Florence",
-					"Coos Bay"
-				],
-				"required": true,
-				"conditional": {
-					"field": "attend",
-					"value": "Yes"
-				}
-			},
-			{
-				"id": "day",
-				"label": "What day would you like to attend?",
-				"type": "select",
-				"range": [
-					"Friday, October 23rd",
-					"Saturday, October 24th"
-				],
-				"required": true,
-				"conditional": {
-					"field": "attend",
-					"value": "Yes"
-				}
-			},
-			{
-				"id": "FLday1time",
-				"label": "What time would you like to attend?",
-				"type": "select",
-				"count_from": "attend",
-				"limit": 165,
-				"range": [
-					{
-						"value": "3:00pm",
-						"limit": 15
-					},
-					{
-						"value": "3:30pm",
-						"limit": 15
-					},
-					{
-						"value": "4:00pm",
-						"limit": 15
-					},
-					{
-						"value": "4:30pm",
-						"limit": 15
-					},
-					{
-						"value": "5:00pm",
-						"limit": 15
-					},
-					{
-						"value": "5:30pm",
-						"limit": 15
-					},
-					{
-						"value": "6:00pm",
-						"limit": 15
-					},
-					{
-						"value": "6:30pm",
-						"limit": 15
-					},
-					{
-						"value": "7:00pm",
-						"limit": 15
-					},
-					{
-						"value": "7:30pm",
-						"limit": 15
-					},
-					{
-						"value": "8:00pm",
-						"limit": 15
-					}
-				],
-				"required": true,
-				"conditional": [
-					{
-						"field": "attend",
-						"value": "Yes"
-					},
-					{
-						"field": "day",
-						"value": "Friday, October 23rd"
-					},
-					{
-						"field": "location",
-						"value": "Florence"
-					}
-				]
-			},
-			{
-				"id": "FLday2time",
-				"label": "What time would you like to attend?",
-				"type": "select",
-				"count_from": "attend",
-				"limit": 165,
-				"range": [
-					{
-						"value": "3:00pm",
-						"limit": 15
-					},
-					{
-						"value": "3:30pm",
-						"limit": 15
-					},
-					{
-						"value": "4:00pm",
-						"limit": 15
-					},
-					{
-						"value": "4:30pm",
-						"limit": 15
-					},
-					{
-						"value": "5:00pm",
-						"limit": 15
-					},
-					{
-						"value": "5:30pm",
-						"limit": 15
-					},
-					{
-						"value": "6:00pm",
-						"limit": 15
-					},
-					{
-						"value": "6:30pm",
-						"limit": 15
-					},
-					{
-						"value": "7:00pm",
-						"limit": 15
-					},
-					{
-						"value": "7:30pm",
-						"limit": 15
-					},
-					{
-						"value": "8:00pm",
-						"limit": 15
-					}
-				],
-				"required": true,
-				"conditional": [
-					{
-						"field": "attend",
-						"value": "Yes"
-					},
-					{
-						"field": "day",
-						"value": "Saturday, October 24th"
-					},
-					{
-						"field": "location",
-						"value": "Florence"
-					}
-				]
-			},
-			{
-				"id": "CBday1time",
-				"label": "What time would you like to attend?",
-				"type": "select",
-				"count_from": "attend",
-				"limit": 165,
-				"range": [
-					{
-						"value": "3:00pm",
-						"limit": 15
-					},
-					{
-						"value": "3:30pm",
-						"limit": 15
-					},
-					{
-						"value": "4:00pm",
-						"limit": 15
-					},
-					{
-						"value": "4:30pm",
-						"limit": 15
-					},
-					{
-						"value": "5:00pm",
-						"limit": 15
-					},
-					{
-						"value": "5:30pm",
-						"limit": 15
-					},
-					{
-						"value": "6:00pm",
-						"limit": 15
-					},
-					{
-						"value": "6:30pm",
-						"limit": 15
-					},
-					{
-						"value": "7:00pm",
-						"limit": 15
-					},
-					{
-						"value": "7:30pm",
-						"limit": 15
-					},
-					{
-						"value": "8:00pm",
-						"limit": 15
-					}
-				],
-				"required": true,
-				"conditional": [
-					{
-						"field": "attend",
-						"value": "Yes"
-					},
-					{
-						"field": "day",
-						"value": "Friday, October 23rd"
-					},
-					{
-						"field": "location",
-						"value": "Coos Bay"
-					}
-				]
-			},
-			{
-				"id": "CBday2time",
-				"label": "What time would you like to attend?",
-				"type": "select",
-				"count_from": "attend",
-				"limit": 165,
-				"range": [
-					{
-						"value": "3:00pm",
-						"limit": 15
-					},
-					{
-						"value": "3:30pm",
-						"limit": 15
-					},
-					{
-						"value": "4:00pm",
-						"limit": 15
-					},
-					{
-						"value": "4:30pm",
-						"limit": 15
-					},
-					{
-						"value": "5:00pm",
-						"limit": 15
-					},
-					{
-						"value": "5:30pm",
-						"limit": 15
-					},
-					{
-						"value": "6:00pm",
-						"limit": 15
-					},
-					{
-						"value": "6:30pm",
-						"limit": 15
-					},
-					{
-						"value": "7:00pm",
-						"limit": 15
-					},
-					{
-						"value": "7:30pm",
-						"limit": 15
-					},
-					{
-						"value": "8:00pm",
-						"limit": 15
-					}
-				],
-				"required": true,
-				"conditional": [
-					{
-						"field": "attend",
-						"value": "Yes"
-					},
-					{
-						"field": "day",
-						"value": "Saturday, October 24th"
-					},
-					{
-						"field": "location",
-						"value": "Coos Bay"
-					}
-				]
 			},
 			{
 				"id": "room",
@@ -382,10 +82,6 @@
 					{
 						"field": "attend",
 						"value": "Yes"
-					},
-					{
-						"field": "location",
-						"value": "Florence"
 					},
 					{
 						"field": "Hotel",
@@ -434,7 +130,7 @@
 				]
 			}
 		],
-	#	"title": "Three Rivers Casino Resort",
+		"title": "Three Rivers Casino Resort",
 		"limits": {
 			"most_recent_only": true,
 			"most_recent_key": "PlayerID"
