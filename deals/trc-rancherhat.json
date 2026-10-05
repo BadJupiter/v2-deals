@@ -43,7 +43,7 @@
 			},
 			{
 				"type": "info",
-				"markdown": "## **Florence & Coos Bay**"
+				"markdown": "## **Florence**"
 			},
 			{
 				"type": "info",
@@ -67,20 +67,6 @@
 				"capacity_map": {
 					"Yes": 1,
 					"No": 0
-				}
-			},
-			{
-				"id": "location",
-				"label": "Which property would you like to visit?",
-				"type": "select",
-				"range": [
-					"Florence",
-					"Coos Bay"
-				],
-				"required": true,
-				"conditional": {
-					"field": "attend",
-					"value": "Yes"
 				}
 			},
 			{
@@ -158,10 +144,6 @@
 					{
 						"field": "day",
 						"value": "Friday, October 23rd"
-					},
-					{
-						"field": "location",
-						"value": "Florence"
 					}
 				]
 			},
@@ -226,146 +208,6 @@
 					{
 						"field": "day",
 						"value": "Saturday, October 24th"
-					},
-					{
-						"field": "location",
-						"value": "Florence"
-					}
-				]
-			},
-			{
-				"id": "CBday1time",
-				"label": "What time would you like to attend?",
-				"type": "select",
-				"count_from": "attend",
-				"limit": 165,
-				"range": [
-					{
-						"value": "3:00pm",
-						"limit": 15
-					},
-					{
-						"value": "3:30pm",
-						"limit": 15
-					},
-					{
-						"value": "4:00pm",
-						"limit": 15
-					},
-					{
-						"value": "4:30pm",
-						"limit": 15
-					},
-					{
-						"value": "5:00pm",
-						"limit": 15
-					},
-					{
-						"value": "5:30pm",
-						"limit": 15
-					},
-					{
-						"value": "6:00pm",
-						"limit": 15
-					},
-					{
-						"value": "6:30pm",
-						"limit": 15
-					},
-					{
-						"value": "7:00pm",
-						"limit": 15
-					},
-					{
-						"value": "7:30pm",
-						"limit": 15
-					},
-					{
-						"value": "8:00pm",
-						"limit": 15
-					}
-				],
-				"required": true,
-				"conditional": [
-					{
-						"field": "attend",
-						"value": "Yes"
-					},
-					{
-						"field": "day",
-						"value": "Friday, October 23rd"
-					},
-					{
-						"field": "location",
-						"value": "Coos Bay"
-					}
-				]
-			},
-			{
-				"id": "CBday2time",
-				"label": "What time would you like to attend?",
-				"type": "select",
-				"count_from": "attend",
-				"limit": 165,
-				"range": [
-					{
-						"value": "3:00pm",
-						"limit": 15
-					},
-					{
-						"value": "3:30pm",
-						"limit": 15
-					},
-					{
-						"value": "4:00pm",
-						"limit": 15
-					},
-					{
-						"value": "4:30pm",
-						"limit": 15
-					},
-					{
-						"value": "5:00pm",
-						"limit": 15
-					},
-					{
-						"value": "5:30pm",
-						"limit": 15
-					},
-					{
-						"value": "6:00pm",
-						"limit": 15
-					},
-					{
-						"value": "6:30pm",
-						"limit": 15
-					},
-					{
-						"value": "7:00pm",
-						"limit": 15
-					},
-					{
-						"value": "7:30pm",
-						"limit": 15
-					},
-					{
-						"value": "8:00pm",
-						"limit": 15
-					}
-				],
-				"required": true,
-				"conditional": [
-					{
-						"field": "attend",
-						"value": "Yes"
-					},
-					{
-						"field": "day",
-						"value": "Saturday, October 24th"
-					},
-					{
-						"field": "location",
-						"value": "Coos Bay"
 					}
 				]
 			},
@@ -382,10 +224,6 @@
 					{
 						"field": "attend",
 						"value": "Yes"
-					},
-					{
-						"field": "location",
-						"value": "Florence"
 					},
 					{
 						"field": "Hotel",
