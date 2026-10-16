@@ -88,7 +88,7 @@
 				"label": "What time would you like to attend?",
 				"type": "select",
 				"count_from": "attend",
-				"limit": 165,
+				"limit": 195,
 				"range": [
 					{
 						"value": "3:00pm",
@@ -132,6 +132,14 @@
 					},
 					{
 						"value": "8:00pm",
+						"limit": 15
+					},
+					{
+						"value": "8:30pm",
+						"limit": 15
+					},
+					{
+						"value": "9:00pm",
 						"limit": 15
 					}
 				],
