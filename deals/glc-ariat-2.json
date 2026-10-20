@@ -129,7 +129,7 @@
 						"disabled": true
 					},
 					{
-						"id": "z_NAME",
+						"id": "Player",
 						"label": "Name:",
 						"type": "text",
 						"sticky": true,
