@@ -1,5 +1,5 @@
 {
-	"biz_id": "threerivers",
+	"biz_id": "kickapoo",
 	"check_in": true,
 	"auth_required": true,
 	"error_auth": {
@@ -7,47 +7,35 @@
 		"content": "Can't play if you ain't authenticated!"
 	},
 	"active": {
-		"start": "2026-10-10 5:00AM PDT",
-		"end": "2026-10-24 11:59PM PDT"
+		"start": "2026-10-20 5:00AM CST",
+		"end": "2026-12-19 11:59PM CST"
 	},
 
 	"META": {
-		"name": "Hat Bar Boutique",
-		"description": "Design your custom western hat at the Hat Bar Boutique",
-		"dt": "October 23rd-24th",
-		"event_start_dt": "2026-10-23 12:00PM PDT"
+		"name": "Employee Winter Gala",
+		"description": "Employee Winter Gala",
+		"dt": "December 18th-19th",
+		"event_start_dt": "2026-12-18 12:00PM CST"
 	},
 	
-	"summary_info": "Hat Bar Boutique",
+	"summary_info": "Employee Winter Gala",
 	"FORM": {
 		"fields": [
-			{
-				"id": "Hotel",
-				"label": "Hotel",
-				"type": "text",
-				"sticky": true,
-				"disabled": true,
-				"hidden": true
+						{
+				"type": "info",
+				"markdown": "# Employee Winter Gala"
 			},
 			{
 				"type": "info",
-				"markdown": "# Hat Bar Boutique"
-			},
-			{
-				"type": "info",
-				"markdown": "## **October 23rd-24th, 2026**"
+				"markdown": "## **December 18th-19th, 2026**"
 			},
 			{
 				"type": "info",
 				"markdown": "---"
 			},
-			{
+						{
 				"type": "info",
-				"markdown": "## **Florence**"
-			},
-			{
-				"type": "info",
-				"markdown": "It's our pleasure to invite our valued Three Rivers guests to our **Hat Bar Boutique**!",
+				"markdown": " \n\nWe appreciate you! You and a guest are invited to our **Employee Winter Gala**.",
 				"justify": "center"
 			},
 			{
@@ -56,188 +44,50 @@
 			},
 			{
 				"id": "attend",
-				"label": "Will you attend the Hat Bar Boutique?",
+				"label": "Will you be attending?",
 				"type": "select",
-				"range": [
-					"Yes",
-					"No"
-				],
+				"range": ["Yes","No"],
+				"required": true
+			},
+			{
+				"id": "guest",
+				"label": "Will you be bringing a guest?",
+				"type": "select",
+				"range": ["Yes","No"],
 				"required": true,
 				"global": true,
-				"capacity_map": {
-					"Yes": 1,
-					"No": 0
-				}
+  				"capacity_map": {
+  					"Yes": 2,
+    				"No": 1
+  				},
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					}
+				]				
 			},
 			{
 				"id": "day",
-				"label": "What day would you like to attend?",
+				"label": "Select which day you'd like to attend:",
 				"type": "select",
-				"range": [
-					"Friday, October 23rd",
-					"Saturday, October 24th"
-				],
-				"required": true,
-				"conditional": {
-					"field": "attend",
-					"value": "Yes"
-				}
-			},
-			{
-				"id": "FLday1time",
-				"label": "What time would you like to attend?",
-				"type": "select",
-				"count_from": "attend",
-				"limit": 195,
+				"count_from": "guest",
+				"limit": 920,
 				"range": [
 					{
-						"value": "3:00pm",
-						"limit": 15
+						"value": "Friday, December 18",
+						"limit": 460
 					},
 					{
-						"value": "3:30pm",
-						"limit": 15
-					},
-					{
-						"value": "4:00pm",
-						"limit": 15
-					},
-					{
-						"value": "4:30pm",
-						"limit": 15
-					},
-					{
-						"value": "5:00pm",
-						"limit": 15
-					},
-					{
-						"value": "5:30pm",
-						"limit": 15
-					},
-					{
-						"value": "6:00pm",
-						"limit": 15
-					},
-					{
-						"value": "6:30pm",
-						"limit": 15
-					},
-					{
-						"value": "7:00pm",
-						"limit": 15
-					},
-					{
-						"value": "7:30pm",
-						"limit": 15
-					},
-					{
-						"value": "8:00pm",
-						"limit": 15
-					},
-					{
-						"value": "8:30pm",
-						"limit": 15
-					},
-					{
-						"value": "9:00pm",
-						"limit": 15
+						"value": "Saturday, December 19",
+						"limit": 460
 					}
-				],
+				],	
 				"required": true,
 				"conditional": [
 					{
 						"field": "attend",
 						"value": "Yes"
-					},
-					{
-						"field": "day",
-						"value": "Friday, October 23rd"
-					}
-				]
-			},
-			{
-				"id": "FLday2time",
-				"label": "What time would you like to attend?",
-				"type": "select",
-				"count_from": "attend",
-				"limit": 165,
-				"range": [
-					{
-						"value": "3:00pm",
-						"limit": 15
-					},
-					{
-						"value": "3:30pm",
-						"limit": 15
-					},
-					{
-						"value": "4:00pm",
-						"limit": 15
-					},
-					{
-						"value": "4:30pm",
-						"limit": 15
-					},
-					{
-						"value": "5:00pm",
-						"limit": 15
-					},
-					{
-						"value": "5:30pm",
-						"limit": 15
-					},
-					{
-						"value": "6:00pm",
-						"limit": 15
-					},
-					{
-						"value": "6:30pm",
-						"limit": 15
-					},
-					{
-						"value": "7:00pm",
-						"limit": 15
-					},
-					{
-						"value": "7:30pm",
-						"limit": 15
-					},
-					{
-						"value": "8:00pm",
-						"limit": 15
-					}
-				],
-				"required": true,
-				"conditional": [
-					{
-						"field": "attend",
-						"value": "Yes"
-					},
-					{
-						"field": "day",
-						"value": "Saturday, October 24th"
-					}
-				]
-			},
-			{
-				"id": "room",
-				"label": "Would you like your host to contact you about accommodations?",
-				"type": "select",
-				"range": [
-					"Yes",
-					"No"
-				],
-				"required": true,
-				"conditional": [
-					{
-						"field": "attend",
-						"value": "Yes"
-					},
-					{
-						"field": "Hotel",
-						"values": [
-							"Y"
-						]
 					}
 				]
 			},
@@ -269,18 +119,11 @@
 						"type": "text",
 						"sticky": true,
 						"disabled": true
-					},
-					{
-						"id": "z_EMAIL",
-						"label": "Email:",
-						"type": "text",
-						"sticky": true,
-						"disabled": false
 					}
 				]
 			}
 		],
-	#	"title": "Three Rivers Casino Resort",
+	#	"title": "Kickapoo Casinos",
 		"limits": {
 			"most_recent_only": true,
 			"most_recent_key": "PlayerID"
@@ -291,6 +134,6 @@
 		}
 	},
 	"MAIN": {
-		"body_md": "# Your reservation is confirmed!\n\nThank you for your RSVP. If you need to make any changes just submit an updated response. We look forward to seeing you at **Three Rivers Casino Resort**!"
+		"body_md": "# Your reservation is confirmed!\n\nThank you for your RSVP. If you need to make any changes just submit an updated response."
 	}
 }
