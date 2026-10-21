@@ -75,11 +75,11 @@
 				"limit": 920,
 				"range": [
 					{
-						"value": "Friday, December 18",
+						"value": "Friday, December 18th",
 						"limit": 460
 					},
 					{
-						"value": "Saturday, December 19",
+						"value": "Saturday, December 19th",
 						"limit": 460
 					}
 				],	
