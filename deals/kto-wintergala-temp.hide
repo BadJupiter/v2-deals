@@ -2,6 +2,6 @@
 	"biz_id": "kickapoo",
 	"auth_required": false,
 	"MAIN": {
-		"body_md": "Our Employee Winter Gala is fully booked, and registration is now closed."
+		"body_md": "Our **Employee Winter Gala** is fully booked, and registration is now closed."
 	}
 }
