@@ -32,10 +32,6 @@
 			"attrib": "Player"
 		},
 		{
-			"column_name": "First Name",
-			"attrib": "z_FIRSTNAME"
-		},
-		{
 			"column_name": "Email",
 			"attrib": "z_EMAIL"
 		},
