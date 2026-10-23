@@ -24,16 +24,12 @@
 			"attrib": "_deal"
 		},
 		{
-			"column_name": "Source",
-			"attrib": "source"
-		},
-		{
 			"column_name": "Player ID",
 			"attrib": "PlayerID"
 		},
 		{
-			"column_name": "Last Name",
-			"attrib": "z_LASTNAME"
+			"column_name": "Name",
+			"attrib": "Player"
 		},
 		{
 			"column_name": "First Name",
@@ -48,32 +44,8 @@
 			"attrib": "attend"
 		},
 		{
-			"column_name": "Location",
-			"attrib": "location"
-		},
-		{
-			"column_name": "Day",
-			"attrib": "day"
-		},
-		{
-			"column_name": "FLDay1Time",
-			"attrib": "FLday1time"
-		},
-		{
-			"column_name": "FLDay2Time",
-			"attrib": "FLday2time"
-		},
-		{
-			"column_name": "CBDay1Time",
-			"attrib": "CBday1time"
-		},
-		{
-			"column_name": "CBDay2Time",
-			"attrib": "CBday2time"
-		},
-		{
-			"column_name": "Room",
-			"attrib": "room"
+			"column_name": "Time",
+			"attrib": "time"
 		}
 	]
 }
