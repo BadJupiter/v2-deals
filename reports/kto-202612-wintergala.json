@@ -1,17 +1,8 @@
 {
 	"biz_id": "kickapoo",
-	"deal_tokens": [ "kto-employee" ],
-	"most_recent_only": true, # omit or set to false for all rows
-	"most_recent_key": "Player ID", # needs to be the column_name
-	
-	"as_xlsx": false, # omit or set to false for default (CSV)
-
-#	The following column values are always available (attrib):
-#	
-#	_when		grab timestamp (Unix -- for now)
-#	_mobile		User mobile number
-#	_deal		Deal token
-#	_rowid		unique row (grab) identifier
+	"deal_tokens": [ "kto-wintergala" ],
+	"most_recent_only": true, 
+	"most_recent_key": "Player ID", 
 
 	"COLUMNS": [
 		{
