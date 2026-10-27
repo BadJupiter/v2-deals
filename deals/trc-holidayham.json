@@ -7,18 +7,18 @@
 		"content": "Can't play if you ain't authenticated!"
 	},
 	"active": {
-		"start": "2026-10-16 5:00AM PDT",
-		"end": "2026-10-31 11:59PM PDT"
+		"start": "2026-11-01 5:00AM PDT",
+		"end": "2026-11-21 11:59PM PDT"
 	},
 
 	"META": {
-		"name": "Ariat Boot Boutique",
-		"description": "Pick up your free pair of Ariat Boots",
-		"dt": "October 30th-31st",
-		"event_start_dt": "2026-10-30 12:00PM PDT"
+		"name": "Holiday Ham Giveaway",
+		"description": "Pick up your free Holiday Ham",
+		"dt": "November 20th-21st",
+		"event_start_dt": "2026-11-20 12:00PM PDT"
 	},
 	
-	"summary_info": "Ariat Boot Boutique",
+	"summary_info": "Holiday Ham Giveaway",
 	"FORM": {
 		"fields": [
 			{
@@ -31,11 +31,11 @@
 			},
 			{
 				"type": "info",
-				"markdown": "# Ariat Boot Boutique"
+				"markdown": "# Holiday Ham Giveaway"
 			},
 			{
 				"type": "info",
-				"markdown": "## **October 30th-31st, 2026**"
+				"markdown": "## **November 20th-21st, 2026**"
 			},
 			{
 				"type": "info",
@@ -47,7 +47,7 @@
 			},
 			{
 				"type": "info",
-				"markdown": "It's our pleasure to invite our valued Three Rivers guests to our **Ariat Boot Boutique**!",
+				"markdown": "It's our pleasure to offer our valued Three Rivers guests a **Free Holiday Ham**!",
 				"justify": "center"
 			},
 			{
@@ -56,7 +56,7 @@
 			},
 			{
 				"id": "attend",
-				"label": "Will you attend the Ariat Boot Boutique?",
+				"label": "Would you like to reserve a Holiday Ham?",
 				"type": "select",
 				"range": [
 					"Yes",
@@ -71,7 +71,7 @@
 			},
 			{
 				"id": "location",
-				"label": "Which property would you like to visit?",
+				"label": "At which property would you like to pick up your ham?",
 				"type": "select",
 				"range": [
 					"Florence",
@@ -85,11 +85,11 @@
 			},
 			{
 				"id": "day",
-				"label": "What day would you like to attend?",
+				"label": "What day would you like to pickup your ham?",
 				"type": "select",
 				"range": [
-					"Friday, October 30th",
-					"Saturday, October 31st"
+					"Friday, November 20th",
+					"Saturday, November 21st"
 				],
 				"required": true,
 				"conditional": {
@@ -99,54 +99,62 @@
 			},
 			{
 				"id": "FLday1time",
-				"label": "What time would you like to attend?",
+				"label": "What time would you like to pickup your ham?",
 				"type": "select",
 				"count_from": "attend",
-				"limit": 331,
+				"limit": 325,
 				"range": [
 					{
 						"value": "3:00pm",
-						"limit": 30
+						"limit": 25
 					},
 					{
 						"value": "3:30pm",
-						"limit": 30
+						"limit": 25
 					},
 					{
 						"value": "4:00pm",
-						"limit": 30
+						"limit": 25
 					},
 					{
 						"value": "4:30pm",
-						"limit": 30
+						"limit": 25
 					},
 					{
 						"value": "5:00pm",
-						"limit": 30
+						"limit": 25
 					},
 					{
 						"value": "5:30pm",
-						"limit": 30
+						"limit": 25
 					},
 					{
 						"value": "6:00pm",
-						"limit": 30
+						"limit": 25
 					},
 					{
 						"value": "6:30pm",
-						"limit": 30
+						"limit": 25
 					},
 					{
 						"value": "7:00pm",
-						"limit": 30
+						"limit": 25
 					},
 					{
 						"value": "7:30pm",
-						"limit": 30
+						"limit": 25
 					},
 					{
 						"value": "8:00pm",
-						"limit": 30
+						"limit": 25
+					},
+					{
+						"value": "8:30pm",
+						"limit": 25
+					},
+					{
+						"value": "9:00pm",
+						"limit": 25
 					}
 				],
 				"required": true,
@@ -157,7 +165,7 @@
 					},
 					{
 						"field": "day",
-						"value": "Friday, October 30th"
+						"value": "Friday, November 20th"
 					},
 					{
 						"field": "location",
@@ -167,54 +175,62 @@
 			},
 			{
 				"id": "FLday2time",
-				"label": "What time would you like to attend?",
+				"label": "What time would you like to pickup your ham?",
 				"type": "select",
 				"count_from": "attend",
-					"limit": 330,
+				"limit": 325,
 				"range": [
 					{
 						"value": "3:00pm",
-						"limit": 30
+						"limit": 25
 					},
 					{
 						"value": "3:30pm",
-						"limit": 30
+						"limit": 25
 					},
 					{
 						"value": "4:00pm",
-						"limit": 30
+						"limit": 25
 					},
 					{
 						"value": "4:30pm",
-						"limit": 30
+						"limit": 25
 					},
 					{
 						"value": "5:00pm",
-						"limit": 30
+						"limit": 25
 					},
 					{
 						"value": "5:30pm",
-						"limit": 30
+						"limit": 25
 					},
 					{
 						"value": "6:00pm",
-						"limit": 30
+						"limit": 25
 					},
 					{
 						"value": "6:30pm",
-						"limit": 30
+						"limit": 25
 					},
 					{
 						"value": "7:00pm",
-						"limit": 30
+						"limit": 25
 					},
 					{
 						"value": "7:30pm",
-						"limit": 30
+						"limit": 25
 					},
 					{
 						"value": "8:00pm",
-						"limit": 30
+						"limit": 25
+					},
+					{
+						"value": "8:30pm",
+						"limit": 25
+					},
+					{
+						"value": "9:00pm",
+						"limit": 25
 					}
 				],
 				"required": true,
@@ -225,7 +241,7 @@
 					},
 					{
 						"field": "day",
-						"value": "Saturday, October 31st"
+						"value": "Saturday, November 21st"
 					},
 					{
 						"field": "location",
@@ -235,54 +251,62 @@
 			},
 			{
 				"id": "CBday1time",
-				"label": "What time would you like to attend?",
+				"label": "What time would you like to pickup your ham?",
 				"type": "select",
 				"count_from": "attend",
-				"limit": 330,
+				"limit": 325,
 				"range": [
 					{
 						"value": "3:00pm",
-						"limit": 30
+						"limit": 25
 					},
 					{
 						"value": "3:30pm",
-						"limit": 30
+						"limit": 25
 					},
 					{
 						"value": "4:00pm",
-						"limit": 30
+						"limit": 25
 					},
 					{
 						"value": "4:30pm",
-						"limit": 30
+						"limit": 25
 					},
 					{
 						"value": "5:00pm",
-						"limit": 30
+						"limit": 25
 					},
 					{
 						"value": "5:30pm",
-						"limit": 30
+						"limit": 25
 					},
 					{
 						"value": "6:00pm",
-						"limit": 30
+						"limit": 25
 					},
 					{
 						"value": "6:30pm",
-						"limit": 30
+						"limit": 25
 					},
 					{
 						"value": "7:00pm",
-						"limit": 30
+						"limit": 25
 					},
 					{
 						"value": "7:30pm",
-						"limit": 30
+						"limit": 25
 					},
 					{
 						"value": "8:00pm",
-						"limit": 30
+						"limit": 25
+					},
+					{
+						"value": "8:30pm",
+						"limit": 25
+					},
+					{
+						"value": "9:00pm",
+						"limit": 25
 					}
 				],
 				"required": true,
@@ -293,7 +317,7 @@
 					},
 					{
 						"field": "day",
-						"value": "Friday, October 30th"
+						"value": "Friday, November 20th"
 					},
 					{
 						"field": "location",
@@ -303,54 +327,62 @@
 			},
 			{
 				"id": "CBday2time",
-				"label": "What time would you like to attend?",
+				"label": "What time would you like to pickup your ham?",
 				"type": "select",
 				"count_from": "attend",
-				"limit": 330,
+				"limit": 325,
 				"range": [
 					{
 						"value": "3:00pm",
-						"limit": 30
+						"limit": 25
 					},
 					{
 						"value": "3:30pm",
-						"limit": 30
+						"limit": 25
 					},
 					{
 						"value": "4:00pm",
-						"limit": 30
+						"limit": 25
 					},
 					{
 						"value": "4:30pm",
-						"limit": 30
+						"limit": 25
 					},
 					{
 						"value": "5:00pm",
-						"limit": 30
+						"limit": 25
 					},
 					{
 						"value": "5:30pm",
-						"limit": 30
+						"limit": 25
 					},
 					{
 						"value": "6:00pm",
-						"limit": 30
+						"limit": 25
 					},
 					{
 						"value": "6:30pm",
-						"limit": 30
+						"limit": 25
 					},
 					{
 						"value": "7:00pm",
-						"limit": 30
+						"limit": 25
 					},
 					{
 						"value": "7:30pm",
-						"limit": 30
+						"limit": 25
 					},
 					{
 						"value": "8:00pm",
-						"limit": 30
+						"limit": 25
+					},
+					{
+						"value": "8:30pm",
+						"limit": 25
+					},
+					{
+						"value": "9:00pm",
+						"limit": 25
 					}
 				],
 				"required": true,
@@ -361,7 +393,7 @@
 					},
 					{
 						"field": "day",
-						"value": "Saturday, October 31st"
+						"value": "Saturday, November 21st"
 					},
 					{
 						"field": "location",
