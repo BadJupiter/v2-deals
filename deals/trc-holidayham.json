@@ -102,7 +102,7 @@
 				"label": "What time would you like to pickup your ham?",
 				"type": "select",
 				"count_from": "attend",
-				"limit": 325,
+				"limit": 275,
 				"range": [
 					{
 						"value": "3:00pm",
@@ -146,14 +146,6 @@
 					},
 					{
 						"value": "8:00pm",
-						"limit": 25
-					},
-					{
-						"value": "8:30pm",
-						"limit": 25
-					},
-					{
-						"value": "9:00pm",
 						"limit": 25
 					}
 				],
@@ -178,7 +170,7 @@
 				"label": "What time would you like to pickup your ham?",
 				"type": "select",
 				"count_from": "attend",
-				"limit": 325,
+				"limit": 275,
 				"range": [
 					{
 						"value": "3:00pm",
@@ -222,14 +214,6 @@
 					},
 					{
 						"value": "8:00pm",
-						"limit": 25
-					},
-					{
-						"value": "8:30pm",
-						"limit": 25
-					},
-					{
-						"value": "9:00pm",
 						"limit": 25
 					}
 				],
@@ -254,7 +238,7 @@
 				"label": "What time would you like to pickup your ham?",
 				"type": "select",
 				"count_from": "attend",
-				"limit": 325,
+				"limit": 275,
 				"range": [
 					{
 						"value": "3:00pm",
@@ -298,14 +282,6 @@
 					},
 					{
 						"value": "8:00pm",
-						"limit": 25
-					},
-					{
-						"value": "8:30pm",
-						"limit": 25
-					},
-					{
-						"value": "9:00pm",
 						"limit": 25
 					}
 				],
@@ -330,7 +306,7 @@
 				"label": "What time would you like to pickup your ham?",
 				"type": "select",
 				"count_from": "attend",
-				"limit": 325,
+				"limit": 275,
 				"range": [
 					{
 						"value": "3:00pm",
@@ -374,14 +350,6 @@
 					},
 					{
 						"value": "8:00pm",
-						"limit": 25
-					},
-					{
-						"value": "8:30pm",
-						"limit": 25
-					},
-					{
-						"value": "9:00pm",
 						"limit": 25
 					}
 				],
