@@ -12,13 +12,13 @@
 	},
 
 	"META": {
-		"name": "Rancher Hat Boutique",
-		"description": "Design your custom western hat at the Rancher Hat Boutique",
+		"name": "Hat Bar Boutique",
+		"description": "Design your custom western hat at the Hat Bar Boutique",
 		"dt": "October 23rd-24th",
 		"event_start_dt": "2026-10-23 12:00PM PDT"
 	},
 	
-	"summary_info": "Rancher Hat Boutique",
+	"summary_info": "Hat Bar Boutique",
 	"FORM": {
 		"fields": [
 			{
@@ -31,7 +31,7 @@
 			},
 			{
 				"type": "info",
-				"markdown": "# Rancher Hat Boutique"
+				"markdown": "# Hat Bar Boutique"
 			},
 			{
 				"type": "info",
@@ -43,11 +43,11 @@
 			},
 			{
 				"type": "info",
-				"markdown": "## **Florence & Coos Bay**"
+				"markdown": "## **Florence**"
 			},
 			{
 				"type": "info",
-				"markdown": "It's our pleasure to invite our valued Three Rivers guests to our **Rancher Hat Boutique**!",
+				"markdown": "It's our pleasure to invite our valued Three Rivers guests to our **Hat Bar Boutique**!",
 				"justify": "center"
 			},
 			{
@@ -56,7 +56,7 @@
 			},
 			{
 				"id": "attend",
-				"label": "Will you attend the Rancher Hat Boutique?",
+				"label": "Will you attend the Hat Bar Boutique?",
 				"type": "select",
 				"range": [
 					"Yes",
@@ -67,20 +67,6 @@
 				"capacity_map": {
 					"Yes": 1,
 					"No": 0
-				}
-			},
-			{
-				"id": "location",
-				"label": "Which property would you like to visit?",
-				"type": "select",
-				"range": [
-					"Florence",
-					"Coos Bay"
-				],
-				"required": true,
-				"conditional": {
-					"field": "attend",
-					"value": "Yes"
 				}
 			},
 			{
@@ -102,7 +88,7 @@
 				"label": "What time would you like to attend?",
 				"type": "select",
 				"count_from": "attend",
-				"limit": 165,
+				"limit": 195,
 				"range": [
 					{
 						"value": "3:00pm",
@@ -147,6 +133,14 @@
 					{
 						"value": "8:00pm",
 						"limit": 15
+					},
+					{
+						"value": "8:30pm",
+						"limit": 15
+					},
+					{
+						"value": "9:00pm",
+						"limit": 15
 					}
 				],
 				"required": true,
@@ -158,10 +152,6 @@
 					{
 						"field": "day",
 						"value": "Friday, October 23rd"
-					},
-					{
-						"field": "location",
-						"value": "Florence"
 					}
 				]
 			},
@@ -226,146 +216,6 @@
 					{
 						"field": "day",
 						"value": "Saturday, October 24th"
-					},
-					{
-						"field": "location",
-						"value": "Florence"
-					}
-				]
-			},
-			{
-				"id": "CBday1time",
-				"label": "What time would you like to attend?",
-				"type": "select",
-				"count_from": "attend",
-				"limit": 165,
-				"range": [
-					{
-						"value": "3:00pm",
-						"limit": 15
-					},
-					{
-						"value": "3:30pm",
-						"limit": 15
-					},
-					{
-						"value": "4:00pm",
-						"limit": 15
-					},
-					{
-						"value": "4:30pm",
-						"limit": 15
-					},
-					{
-						"value": "5:00pm",
-						"limit": 15
-					},
-					{
-						"value": "5:30pm",
-						"limit": 15
-					},
-					{
-						"value": "6:00pm",
-						"limit": 15
-					},
-					{
-						"value": "6:30pm",
-						"limit": 15
-					},
-					{
-						"value": "7:00pm",
-						"limit": 15
-					},
-					{
-						"value": "7:30pm",
-						"limit": 15
-					},
-					{
-						"value": "8:00pm",
-						"limit": 15
-					}
-				],
-				"required": true,
-				"conditional": [
-					{
-						"field": "attend",
-						"value": "Yes"
-					},
-					{
-						"field": "day",
-						"value": "Friday, October 23rd"
-					},
-					{
-						"field": "location",
-						"value": "Coos Bay"
-					}
-				]
-			},
-			{
-				"id": "CBday2time",
-				"label": "What time would you like to attend?",
-				"type": "select",
-				"count_from": "attend",
-				"limit": 165,
-				"range": [
-					{
-						"value": "3:00pm",
-						"limit": 15
-					},
-					{
-						"value": "3:30pm",
-						"limit": 15
-					},
-					{
-						"value": "4:00pm",
-						"limit": 15
-					},
-					{
-						"value": "4:30pm",
-						"limit": 15
-					},
-					{
-						"value": "5:00pm",
-						"limit": 15
-					},
-					{
-						"value": "5:30pm",
-						"limit": 15
-					},
-					{
-						"value": "6:00pm",
-						"limit": 15
-					},
-					{
-						"value": "6:30pm",
-						"limit": 15
-					},
-					{
-						"value": "7:00pm",
-						"limit": 15
-					},
-					{
-						"value": "7:30pm",
-						"limit": 15
-					},
-					{
-						"value": "8:00pm",
-						"limit": 15
-					}
-				],
-				"required": true,
-				"conditional": [
-					{
-						"field": "attend",
-						"value": "Yes"
-					},
-					{
-						"field": "day",
-						"value": "Saturday, October 24th"
-					},
-					{
-						"field": "location",
-						"value": "Coos Bay"
 					}
 				]
 			},
@@ -382,10 +232,6 @@
 					{
 						"field": "attend",
 						"value": "Yes"
-					},
-					{
-						"field": "location",
-						"value": "Florence"
 					},
 					{
 						"field": "Hotel",

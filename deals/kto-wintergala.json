@@ -1,0 +1,139 @@
+{
+	"biz_id": "kickapoo",
+	"check_in": true,
+	"auth_required": true,
+	"error_auth": {
+		"title": "Oops!",
+		"content": "Can't play if you ain't authenticated!"
+	},
+	"active": {
+		"start": "2026-10-20 5:00AM CST",
+		"end": "2026-12-18 11:59PM CST"
+	},
+
+	"META": {
+		"name": "Employee Winter Gala",
+		"description": "Employee Winter Gala",
+		"dt": "December 17th-18th",
+		"event_start_dt": "2026-12-17 12:00PM CST"
+	},
+	
+	"summary_info": "Employee Winter Gala",
+	"FORM": {
+		"fields": [
+						{
+				"type": "info",
+				"markdown": "# Employee Winter Gala"
+			},
+			{
+				"type": "info",
+				"markdown": "## **December 17th-18th, 2026**"
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+						{
+				"type": "info",
+				"markdown": " \n\nWe appreciate you! You and a guest are invited to our **Employee Winter Gala**.",
+				"justify": "center"
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"id": "attend",
+				"label": "Will you be attending?",
+				"type": "select",
+				"range": ["Yes","No"],
+				"required": true
+			},
+			{
+				"id": "guest",
+				"label": "Will you be bringing a guest?",
+				"type": "select",
+				"range": ["Yes","No"],
+				"required": true,
+				"global": true,
+  				"capacity_map": {
+  					"Yes": 2,
+    				"No": 1
+  				},
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					}
+				]				
+			},
+			{
+				"id": "day",
+				"label": "Select which day you'd like to attend:",
+				"type": "select",
+				"count_from": "guest",
+				"limit": 920,
+				"range": [
+					{
+						"value": "Thursday, December 17th",
+						"limit": 460
+					},
+					{
+						"value": "Friday, December 18th",
+						"limit": 460
+					}
+				],	
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					}
+				]
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "fields_group",
+				"bgcolor": "#D4DFCF",
+				"fields": [
+					{
+						"id": "z_FIRSTNAME",
+						"label": "First Name:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					},
+					{
+						"id": "z_LASTNAME",
+						"label": "Last Name:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					},
+					{
+						"id": "PlayerID",
+						"label": "Player ID:",
+						"type": "text",
+						"sticky": true,
+						"hidden": true
+					}
+				]
+			}
+		],
+	#	"title": "Kickapoo Casinos",
+		"limits": {
+			"most_recent_only": true,
+			"most_recent_key": "PlayerID"
+		},
+		"submit": {
+			"label": "Submit RSVP",
+			"color": "#20363d"
+		}
+	},
+	"MAIN": {
+		"body_md": "# Your reservation is confirmed!\n\nThank you for your RSVP. If you need to make any changes just submit an updated response."
+	}
+}
