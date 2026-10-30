@@ -46,7 +46,11 @@
 			"kickoff": "2026-10-30T19:00:00-05:00",
 			"opens": "2026-10-30T07:00:00-05:00",
 			"closes": "2026-10-30T23:00:00-05:00",
-			"prize": ""
+			"prize": "$50 Elgin Park gift card + swag",
+			"sponsor": {
+				"name": "Elgin Park Brewing Co.",
+				"url": "https://www.elginparkbrewery.com"
+			}
 		}
 	]
 }
