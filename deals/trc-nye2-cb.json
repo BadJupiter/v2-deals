@@ -2,7 +2,7 @@
 	"biz_id": "threerivers",
 	"check_in": true,
 	"auth_required": true,
-	"qr_confirm": true,
+	"qr_confirm": false,
 	"error_auth": {
 		"title": "Oops!",
 		"content": "Can't play if you ain't authenticated!"
