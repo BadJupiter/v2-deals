@@ -9,7 +9,7 @@
 	},
 	"active": {
 		"start": "2026-11-08 5:00AM PST",
-		"end": "2027-01-01 11:59PM PST"
+		"end": "2027-01-01 1:59PM PST"
 	},
 
 	"META": {
@@ -64,7 +64,7 @@
 			},
 			{
 				"id": "guest",
-				"label": "Will you be bringing a guest?",
+				"label": "Will you be bringing a guest for dinner?",
 				"type": "select",
 				"range": ["Yes","No"],
 				"required": true,
@@ -80,6 +80,38 @@
 					}
 				]				
 			},
+			{
+			    "id": "guestname",
+			    "label": "Guest's Name:",
+			    "type": "text",
+			    "required": true,
+		  	    "conditional": [
+			        {
+			      		"field": "attend",
+			     		"value": "Yes"
+			        },
+			        {
+			      		"field": "guest",
+			      		"value": "Yes"
+			        }
+			    ]
+			},
+			{
+			  "id": "guestplayerid",
+			  "label": "Guest's Player's Club Number:",
+			  "type": "text",
+			  "required": false,
+			  "conditional": [
+			    {
+			      "field": "attend",
+			      "value": "Yes"
+			    },
+			    {
+			      "field": "guest",
+			      "value": "Yes"
+			    }
+			  ]
+			},			
 			{
 				"id": "1231venue",
 				"label": "Would you like to dine with us on New Year’s Eve?",
@@ -273,7 +305,7 @@
 					}
 				]
 			},
-						{
+			{
 				"id": "0101brunch",
 				"label": "Would you like to attend the New Year's Day Brunch?",
 				"type": "select",
@@ -291,10 +323,76 @@
 				]
 			},
 			{
+			  "id": "guest2",
+			  "label": "Will you be bringing a guest to New Year's Day brunch?",
+			  "type": "select",
+			  "range": [
+			    "Yes, the same guest as above",
+			    "Yes, a different guest",
+			    "No guest"
+			  ],
+			  "required": true,
+			  "capacity_map": {
+			    "Yes, the same guest as above": 2,
+			    "Yes, a different guest": 2,
+			    "No guest": 1
+			  },
+			  "conditional": [
+			    {
+			      "field": "attend",
+			      "value": "Yes"
+			    },
+			    {
+			      "field": "0101brunch",
+			      "value": "Yes"
+			    }
+			  ]
+			},
+			{
+			  "id": "guest2_name",
+			  "label": "Brunch guest's name:",
+			  "type": "text",
+			  "required": true,
+			  "conditional": [
+			    {
+			      "field": "attend",
+			      "value": "Yes"
+			    },
+			    {
+			      "field": "0101brunch",
+			      "value": "Yes"
+			    },
+			    {
+			      "field": "guest2",
+			      "value": "Yes, a different guest"
+			    }
+			  ]
+			},
+			{
+			  "id": "guest2_player_id",
+			  "label": "Brunch guest's Player's Club number:",
+			  "type": "text",
+			  "required": false,
+			  "conditional": [
+			    {
+			      "field": "attend",
+			      "value": "Yes"
+			    },
+			    {
+			      "field": "0101brunch",
+			      "value": "Yes"
+			    },
+			    {
+			      "field": "guest2",
+			      "value": "Yes, a different guest"
+			    }
+			  ]
+			},
+			{
 				"id": "brunchtime",
 				"label": "Select a brunch reservation time:",
 				"type": "select",
-				"count_from": "guest",
+				"count_from": "guest2",
 				"limit": 900,
 				"range": [
 					{
@@ -343,7 +441,15 @@
 					{
 						"field": "0101brunch",
 						"value": "Yes"
-					}
+					},
+					{
+		    			  "field": "guest2",
+						  "values": [
+						    "Yes, the same guest as above",
+						    "Yes, a different guest",
+						    "No guest"
+						  ]
+						}
 				]
 			},
 
