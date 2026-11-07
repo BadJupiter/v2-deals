@@ -2,34 +2,27 @@
 	"biz_id": "threerivers",
 	"check_in": true,
 	"auth_required": true,
+	"qr_confirm": true,
 	"error_auth": {
 		"title": "Oops!",
 		"content": "Can't play if you ain't authenticated!"
 	},
 	"active": {
-		"start": "2026-12-15 5:00AM PDT",
-		"end": "2026-12-31 11:59PM PDT"
+		"start": "2026-11-08 5:00AM PST",
+		"end": "2026-12-31 11:59PM PST"
 	},
 
 	"META": {
 		"name": "New Year's Celebration",
 		"description": "Ring in the New Year with us!",
 		"dt": "December 31st",
-		"event_start_dt": "2026-12-31 12:00PM PDT"
+		"event_start_dt": "2026-12-31 12:00PM PST"
 	},
 	
 	"summary_info": "New Year's Celebration",
 	"FORM": {
 		"fields": [
-			{
-				"id": "Hotel",
-				"label": "Hotel",
-				"type": "text",
-				"sticky": true,
-				"disabled": true,
-				"hidden": true
-			},
-			{
+						{
 				"type": "info",
 				"markdown": "# New Year's Celebration"
 			},
@@ -56,41 +49,138 @@
 			},
 			{
 				"id": "attend",
-				"label": "Will you attend the New Year's Celebration?",
+				"label": "Will you be attending?",
 				"type": "select",
-				"range": [
-					"Yes",
-					"No"
-				],
-				"required": true,
-				"global": true,
-				"capacity_map": {
-					"Yes": 1,
-					"No": 0
-				}
+				"range": ["Yes","No"],
+				"required": true
 			},
 			{
-				"id": "room",
-				"label": "Would you like your host to contact you about accommodations?",
+				"id": "guest",
+				"label": "Will you be bringing a guest?",
 				"type": "select",
-				"range": [
-					"Yes",
-					"No"
-				],
+				"range": ["Yes","No"],
 				"required": true,
+				"global": true,
+  				"capacity_map": {
+  					"Yes": 2,
+    				"No": 1
+  				},
 				"conditional": [
 					{
 						"field": "attend",
 						"value": "Yes"
+					}
+				]				
+			},
+			{
+			    "id": "guestname",
+			    "label": "Guest's Name:",
+			    "type": "text",
+			    "required": true,
+		  	    "conditional": [
+			        {
+			      		"field": "attend",
+			     		"value": "Yes"
+			        },
+			        {
+			      		"field": "guest",
+			      		"value": "Yes"
+			        }
+			    ]
+			},
+			{
+			  "id": "guestplayerid",
+			  "label": "Guest's Player's Club Number:",
+			  "type": "text",
+			  "required": false,
+			  "conditional": [
+			    {
+			      "field": "attend",
+			      "value": "Yes"
+			    },
+			    {
+			      "field": "guest",
+			      "value": "Yes"
+			    }
+			  ]
+			},	
+						{
+				"id": "time",
+				"label": "Select a dinner reservation time:",
+				"type": "select",
+				"count_from": "guest",
+				"limit": 700,
+				"range": [
+					{
+						"value": "5:00pm",
+						"limit": 50
 					},
 					{
-						"field": "Hotel",
-						"values": [
-							"Y"
-						]
+						"value": "5:30pm",
+						"limit": 50
+					},
+					{
+						"value": "6:00pm",
+						"limit": 50
+					},
+					{
+						"value": "6:30pm",
+						"limit": 50
+					},
+					{
+						"value": "7:00pm",
+						"limit": 50
+					},
+					{
+						"value": "7:30pm",
+						"limit": 50
+					},
+					{
+						"value": "8:00pm",
+						"limit": 50
+					},
+					{
+						"value": "8:30pm",
+						"limit": 50
+					},
+					{
+						"value": "9:00pm",
+						"limit": 50
+					},
+					{
+						"value": "9:30pm",
+						"limit": 50
+					},
+					{
+						"value": "10:00pm",
+						"limit": 50
+					},
+					{
+						"value": "10:30pm",
+						"limit": 50
+					},
+										{
+						"value": "11:00pm",
+						"limit": 50
+					},
+					{
+						"value": "11:30pm",
+						"limit": 50
 					}
+				],	
+				"required": true,
+				"conditional": [
+				  {
+				    "field": "attend",
+				    "value": "Yes"
+				  },
+				  {
+				    "field": "guest",
+				    "values": ["Yes", "No"]
+				  }
 				]
 			},
+
 			{
 				"type": "info",
 				"markdown": "---"
