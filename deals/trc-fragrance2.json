@@ -8,18 +8,18 @@
 		"content": "Can't play if you ain't authenticated!"
 	},
 	"active": {
-		"start": "2026-12-08 5:00AM PST",
-		"end": "2027-01-01 1:59PM PST"
+		"start": "2026-11-15 5:00AM PST",
+		"end": "2026-12-05 7:59PM PST"
 	},
 
 	"META": {
-		"name": "New Year's Celebration",
-		"description": "Join us on Planet Moolah for a New Year’s Eve Celebration!",
-		"dt": "December 31st",
-		"event_start_dt": "2026-12-31 12:00PM PST"
+		"name": "Fragrance Boutique",
+		"description": "You are invited to select a free fragrance at the Fragrance Boutique!",
+		"dt": "December 4th-5th",
+		"event_start_dt": "2026-12-04 12:00PM PST"
 	},
 	
-	"summary_info": "New Year's Celebration",
+	"summary_info": "Fragrance Boutique",
 	"FORM": {
 		"fields": [
 			{
@@ -32,11 +32,11 @@
 			},
 			{
 				"type": "info",
-				"markdown": "# New Year's Celebration"
+				"markdown": "# Fragrance Boutique"
 			},
 			{
 				"type": "info",
-				"markdown": "## **December 31st & January 1st**"
+				"markdown": "## **December 4th-5th, 2026**"
 			},
 			{
 				"type": "info",
@@ -48,7 +48,7 @@
 			},
 			{
 				"type": "info",
-				"markdown": "It's our pleasure to invite our valued Three Rivers guests to our **New Year's Celebration**!",
+				"markdown": "It's our pleasure to invite our valued Three Rivers guests to our **Fragrance Boutique**!",
 				"justify": "center"
 			},
 			{
@@ -57,7 +57,7 @@
 			},
 			{
 				"id": "attend",
-				"label": "Will you be attending?",
+				"label": "Will you attend the Fragrance Boutique in Florence?",
 				"type": "select",
 				"range": ["Yes","No"],
 				"required": true
