@@ -60,119 +60,68 @@
 				"label": "Will you attend the Fragrance Boutique in Florence?",
 				"type": "select",
 				"range": ["Yes","No"],
-				"required": true
-			},
-			{
-				"id": "guest",
-				"label": "Will you be bringing a guest?",
-				"type": "select",
-				"range": ["Yes","No"],
 				"required": true,
 				"global": true,
   				"capacity_map": {
-  					"Yes": 2,
-    				"No": 1
-  				},
-				"conditional": [
-					{
-						"field": "attend",
-						"value": "Yes"
-					}
-				]				
+  					"Yes": 1,
+    				"No": 0
+				}
 			},
 			{
-			    "id": "guestname",
-			    "label": "Guest's Name:",
-			    "type": "text",
-			    "required": true,
-		  	    "conditional": [
-			        {
-			      		"field": "attend",
-			     		"value": "Yes"
-			        },
-			        {
-			      		"field": "guest",
-			      		"value": "Yes"
-			        }
-			    ]
-			},
-			{
-			  "id": "guestplayerid",
-			  "label": "Guest's Player's Club Number:",
-			  "type": "text",
-			  "required": false,
-			  "conditional": [
-			    {
-			      "field": "attend",
-			      "value": "Yes"
-			    },
-			    {
-			      "field": "guest",
-			      "value": "Yes"
-			    }
-			  ]
-			},			
-			{
-				"id": "1231venue",
-				"label": "Would you like to dine with us on New Year’s Eve?",
+				"id": "day",
+				"label": "What day would you like to attend?",
 				"type": "select",
-				"range": ["Yes, at the Event Center","Yes, at Blue Bills", "I won't be joining for dinner"],
+				"range": ["Friday, December 4th","Saturday, December 5th"],
 				"required": true,
-				"conditional": [
-					{
-						"field": "attend",
-						"value": "Yes"
-					},
-					{
-						"field": "guest",
-						"values": ["Yes","No"]
-				   	}
-				]
+				"conditional": {
+					"field": "attend",
+					"value": "Yes"
+				}
 			},
 			{
-				"id": "eventcentertime",
-				"label": "Select a dinner reservation time:",
+				"id": "day1time",
+				"label": "What time would you like to attend?",
 				"type": "select",
-				"count_from": "guest",
-				"limit": 900,
+				"count_from": "attend",
+				"limit": 225,
 				"range": [
 					{
 						"value": "4:00pm",
-						"limit": 100
+						"limit": 25
 					},
 					{
 						"value": "4:30pm",
-						"limit": 100
+						"limit": 25
 					},
 					{
 						"value": "5:00pm",
-						"limit": 100
+						"limit": 25
 					},
 					{
 						"value": "5:30pm",
-						"limit": 100
+						"limit": 25
 					},
 					{
 						"value": "6:00pm",
-						"limit": 100
+						"limit": 25
 					},
 					{
 						"value": "6:30pm",
-						"limit": 100
+						"limit": 25
 					},
 					{
 						"value": "7:00pm",
-						"limit": 100
+						"limit": 25
 					},
 					{
 						"value": "7:30pm",
-						"limit": 100
+						"limit": 25
 					},
 					{
 						"value": "8:00pm",
-						"limit": 100
+						"limit": 25
 					}
-				],	
+				],					
 				"required": true,
 				"conditional": [
 					{
@@ -180,119 +129,55 @@
 						"value": "Yes"
 					},
 					{
-						"field": "1231venue",
-						"value": "Yes, at the Event Center"
+						"field": "day",
+						"value": "Friday, December 4th"
 					}
 				]
 			},
-			{
-				"id": "billstime",
-				"label": "Select a dinner reservation time:",
+		{
+				"id": "day2time",
+				"label": "What time would you like to attend?",
 				"type": "select",
-				"count_from": "guest",
-				"limit": 625,
+				"count_from": "attend",
+"limit": 225,
 				"range": [
 					{
 						"value": "4:00pm",
-						"limit": 50
-					},
-					{
-						"value": "4:15pm",
-						"limit": 50
+						"limit": 25
 					},
 					{
 						"value": "4:30pm",
-						"limit": 50
-					},
-					{
-						"value": "4:45pm",
-						"limit": 50
+						"limit": 25
 					},
 					{
 						"value": "5:00pm",
-						"limit": 50
-					},
-					{
-						"value": "5:15pm",
-						"limit": 50
+						"limit": 25
 					},
 					{
 						"value": "5:30pm",
-						"limit": 50
-					},
-					{
-						"value": "5:45pm",
-						"limit": 50
+						"limit": 25
 					},
 					{
 						"value": "6:00pm",
-						"limit": 50
-					},
-					{
-						"value": "6:15pm",
-						"limit": 50
+						"limit": 25
 					},
 					{
 						"value": "6:30pm",
-						"limit": 50
-					},
-					{
-						"value": "6:45pm",
-						"limit": 50
+						"limit": 25
 					},
 					{
 						"value": "7:00pm",
-						"limit": 50
-					},
-					{
-						"value": "7:15pm",
-						"limit": 50
+						"limit": 25
 					},
 					{
 						"value": "7:30pm",
-						"limit": 50
-					},
-					{
-						"value": "7:45pm",
-						"limit": 50
+						"limit": 25
 					},
 					{
 						"value": "8:00pm",
-						"limit": 50
-					},
-					{
-						"value": "8:15pm",
-						"limit": 50
-					},
-					{
-						"value": "8:30pm",
-						"limit": 50
-					},
-					{
-						"value": "8:45pm",
-						"limit": 50
-					},
-					{
-						"value": "9:00pm",
-						"limit": 50
-					},
-					{
-						"value": "9:15pm",
-						"limit": 50
-					},
-					{
-						"value": "9:30pm",
-						"limit": 50
-					},
-					{
-						"value": "9:45pm",
-						"limit": 50
-					},
-					{
-						"value": "10:00pm",
-						"limit": 50
+						"limit": 25
 					}
-				],	
+				],
 				"required": true,
 				"conditional": [
 					{
@@ -300,14 +185,14 @@
 						"value": "Yes"
 					},
 					{
-						"field": "1231venue",
-						"value": "Yes, at Blue Bills"
+						"field": "day",
+						"value": "Saturday, December 5th"
 					}
 				]
 			},
 			{
-				"id": "0101brunch",
-				"label": "Would you like to attend the New Year's Day Brunch?",
+				"id": "room",
+				"label": "Would you like to be contacted for a room reservation?",
 				"type": "select",
 				"range": ["Yes","No"],
 				"required": true,
@@ -317,139 +202,14 @@
 						"value": "Yes"
 					},
 					{
-						"field": "guest",
-						"values": ["Yes","No"]
-				   	}
-				]
-			},
-			{
-			  "id": "guest2",
-			  "label": "Will you be bringing a guest to New Year's Day brunch?",
-			  "type": "select",
-			  "range": [
-			    "Yes, the same guest as above",
-			    "Yes, a different guest",
-			    "No guest"
-			  ],
-			  "required": true,
-			  "capacity_map": {
-			    "Yes, the same guest as above": 2,
-			    "Yes, a different guest": 2,
-			    "No guest": 1
-			  },
-			  "conditional": [
-			    {
-			      "field": "attend",
-			      "value": "Yes"
-			    },
-			    {
-			      "field": "0101brunch",
-			      "value": "Yes"
-			    }
-			  ]
-			},
-			{
-			  "id": "guest2_name",
-			  "label": "Brunch guest's name:",
-			  "type": "text",
-			  "required": true,
-			  "conditional": [
-			    {
-			      "field": "attend",
-			      "value": "Yes"
-			    },
-			    {
-			      "field": "0101brunch",
-			      "value": "Yes"
-			    },
-			    {
-			      "field": "guest2",
-			      "value": "Yes, a different guest"
-			    }
-			  ]
-			},
-			{
-			  "id": "guest2_player_id",
-			  "label": "Brunch guest's Player's Club number:",
-			  "type": "text",
-			  "required": false,
-			  "conditional": [
-			    {
-			      "field": "attend",
-			      "value": "Yes"
-			    },
-			    {
-			      "field": "0101brunch",
-			      "value": "Yes"
-			    },
-			    {
-			      "field": "guest2",
-			      "value": "Yes, a different guest"
-			    }
-			  ]
-			},
-			{
-				"id": "brunchtime",
-				"label": "Select a brunch reservation time:",
-				"type": "select",
-				"count_from": "guest2",
-				"limit": 900,
-				"range": [
-					{
-						"value": "10:00am",
-						"limit": 100
+						"field": "day",
+						"values": ["Friday, December 4th","Saturday, December 5th"]
 					},
 					{
-						"value": "10:30am",
-						"limit": 100
-					},
-					{
-						"value": "11:00am",
-						"limit": 100
-					},
-					{
-						"value": "11:30am",
-						"limit": 100
-					},
-					{
-						"value": "Noon",
-						"limit": 100
-					},
-					{
-						"value": "12:30pm",
-						"limit": 100
-					},
-					{
-						"value": "1:00pm",
-						"limit": 100
-					},
-					{
-						"value": "1:30pm",
-						"limit": 100
-					},
-					{
-						"value": "2:00pm",
-						"limit": 100
+						"field": "Hotel",
+						"values": ["Y"]
+
 					}
-				],	
-				"required": true,
-				"conditional": [
-					{
-						"field": "attend",
-						"value": "Yes"
-					},
-					{
-						"field": "0101brunch",
-						"value": "Yes"
-					},
-					{
-		    			  "field": "guest2",
-						  "values": [
-						    "Yes, the same guest as above",
-						    "Yes, a different guest",
-						    "No guest"
-						  ]
-						}
 				]
 			},
 			{
