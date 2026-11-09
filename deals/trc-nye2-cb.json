@@ -8,13 +8,13 @@
 		"content": "Can't play if you ain't authenticated!"
 	},
 	"active": {
-		"start": "2026-11-08 5:00AM PST",
+		"start": "2026-11-12 5:00AM PST",
 		"end": "2026-12-31 11:59PM PST"
 	},
 
 	"META": {
 		"name": "New Year's Celebration",
-		"description": "Ring in the New Year with us!",
+		"description": "Join us on Planet Moolah for a New Year’s Eve Celebration!",
 		"dt": "December 31st",
 		"event_start_dt": "2026-12-31 12:00PM PST"
 	},
