@@ -1,0 +1,507 @@
+{
+	"biz_id": "threerivers",
+	"check_in": true,
+	"auth_required": true,
+	"qr_confirm": false,
+	"error_auth": {
+		"title": "Oops!",
+		"content": "Can't play if you ain't authenticated!"
+	},
+	"active": {
+		"start": "2026-12-08 5:00AM PST",
+		"end": "2027-01-01 1:59PM PST"
+	},
+
+	"META": {
+		"name": "New Year's Celebration",
+		"description": "Join us on Planet Moolah for a New Year’s Eve Celebration!",
+		"dt": "December 31st",
+		"event_start_dt": "2026-12-31 12:00PM PST"
+	},
+	
+	"summary_info": "New Year's Celebration",
+	"FORM": {
+		"fields": [
+			{
+				"id": "Hotel",
+				"label": "Hotel",
+				"type": "text",
+				"sticky": true,
+				"disabled": true,
+				"hidden": true
+			},
+			{
+				"type": "info",
+				"markdown": "# New Year's Celebration"
+			},
+			{
+				"type": "info",
+				"markdown": "## **December 31st & January 1st**"
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "info",
+				"markdown": "## **Florence**"
+			},
+			{
+				"type": "info",
+				"markdown": "It's our pleasure to invite our valued Three Rivers guests to our **New Year's Celebration**!",
+				"justify": "center"
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"id": "attend",
+				"label": "Will you be attending?",
+				"type": "select",
+				"range": ["Yes","No"],
+				"required": true
+			},
+			{
+				"id": "guest",
+				"label": "Will you be bringing a guest?",
+				"type": "select",
+				"range": ["Yes","No"],
+				"required": true,
+				"global": true,
+  				"capacity_map": {
+  					"Yes": 2,
+    				"No": 1
+  				},
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					}
+				]				
+			},
+			{
+			    "id": "guestname",
+			    "label": "Guest's Name:",
+			    "type": "text",
+			    "required": true,
+		  	    "conditional": [
+			        {
+			      		"field": "attend",
+			     		"value": "Yes"
+			        },
+			        {
+			      		"field": "guest",
+			      		"value": "Yes"
+			        }
+			    ]
+			},
+			{
+			  "id": "guestplayerid",
+			  "label": "Guest's Player's Club Number:",
+			  "type": "text",
+			  "required": false,
+			  "conditional": [
+			    {
+			      "field": "attend",
+			      "value": "Yes"
+			    },
+			    {
+			      "field": "guest",
+			      "value": "Yes"
+			    }
+			  ]
+			},			
+			{
+				"id": "1231venue",
+				"label": "Would you like to dine with us on New Year’s Eve?",
+				"type": "select",
+				"range": ["Yes, at the Event Center","Yes, at Blue Bills", "I won't be joining for dinner"],
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "guest",
+						"values": ["Yes","No"]
+				   	}
+				]
+			},
+			{
+				"id": "eventcentertime",
+				"label": "Select a dinner reservation time:",
+				"type": "select",
+				"count_from": "guest",
+				"limit": 900,
+				"range": [
+					{
+						"value": "4:00pm",
+						"limit": 100
+					},
+					{
+						"value": "4:30pm",
+						"limit": 100
+					},
+					{
+						"value": "5:00pm",
+						"limit": 100
+					},
+					{
+						"value": "5:30pm",
+						"limit": 100
+					},
+					{
+						"value": "6:00pm",
+						"limit": 100
+					},
+					{
+						"value": "6:30pm",
+						"limit": 100
+					},
+					{
+						"value": "7:00pm",
+						"limit": 100
+					},
+					{
+						"value": "7:30pm",
+						"limit": 100
+					},
+					{
+						"value": "8:00pm",
+						"limit": 100
+					}
+				],	
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "1231venue",
+						"value": "Yes, at the Event Center"
+					}
+				]
+			},
+			{
+				"id": "billstime",
+				"label": "Select a dinner reservation time:",
+				"type": "select",
+				"count_from": "guest",
+				"limit": 625,
+				"range": [
+					{
+						"value": "4:00pm",
+						"limit": 50
+					},
+					{
+						"value": "4:15pm",
+						"limit": 50
+					},
+					{
+						"value": "4:30pm",
+						"limit": 50
+					},
+					{
+						"value": "4:45pm",
+						"limit": 50
+					},
+					{
+						"value": "5:00pm",
+						"limit": 50
+					},
+					{
+						"value": "5:15pm",
+						"limit": 50
+					},
+					{
+						"value": "5:30pm",
+						"limit": 50
+					},
+					{
+						"value": "5:45pm",
+						"limit": 50
+					},
+					{
+						"value": "6:00pm",
+						"limit": 50
+					},
+					{
+						"value": "6:15pm",
+						"limit": 50
+					},
+					{
+						"value": "6:30pm",
+						"limit": 50
+					},
+					{
+						"value": "6:45pm",
+						"limit": 50
+					},
+					{
+						"value": "7:00pm",
+						"limit": 50
+					},
+					{
+						"value": "7:15pm",
+						"limit": 50
+					},
+					{
+						"value": "7:30pm",
+						"limit": 50
+					},
+					{
+						"value": "7:45pm",
+						"limit": 50
+					},
+					{
+						"value": "8:00pm",
+						"limit": 50
+					},
+					{
+						"value": "8:15pm",
+						"limit": 50
+					},
+					{
+						"value": "8:30pm",
+						"limit": 50
+					},
+					{
+						"value": "8:45pm",
+						"limit": 50
+					},
+					{
+						"value": "9:00pm",
+						"limit": 50
+					},
+					{
+						"value": "9:15pm",
+						"limit": 50
+					},
+					{
+						"value": "9:30pm",
+						"limit": 50
+					},
+					{
+						"value": "9:45pm",
+						"limit": 50
+					},
+					{
+						"value": "10:00pm",
+						"limit": 50
+					}
+				],	
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "1231venue",
+						"value": "Yes, at Blue Bills"
+					}
+				]
+			},
+			{
+				"id": "0101brunch",
+				"label": "Would you like to attend the New Year's Day Brunch?",
+				"type": "select",
+				"range": ["Yes","No"],
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "guest",
+						"values": ["Yes","No"]
+				   	}
+				]
+			},
+			{
+			  "id": "guest2",
+			  "label": "Will you be bringing a guest to New Year's Day brunch?",
+			  "type": "select",
+			  "range": [
+			    "Yes, the same guest as above",
+			    "Yes, a different guest",
+			    "No guest"
+			  ],
+			  "required": true,
+			  "capacity_map": {
+			    "Yes, the same guest as above": 2,
+			    "Yes, a different guest": 2,
+			    "No guest": 1
+			  },
+			  "conditional": [
+			    {
+			      "field": "attend",
+			      "value": "Yes"
+			    },
+			    {
+			      "field": "0101brunch",
+			      "value": "Yes"
+			    }
+			  ]
+			},
+			{
+			  "id": "guest2_name",
+			  "label": "Brunch guest's name:",
+			  "type": "text",
+			  "required": true,
+			  "conditional": [
+			    {
+			      "field": "attend",
+			      "value": "Yes"
+			    },
+			    {
+			      "field": "0101brunch",
+			      "value": "Yes"
+			    },
+			    {
+			      "field": "guest2",
+			      "value": "Yes, a different guest"
+			    }
+			  ]
+			},
+			{
+			  "id": "guest2_player_id",
+			  "label": "Brunch guest's Player's Club number:",
+			  "type": "text",
+			  "required": false,
+			  "conditional": [
+			    {
+			      "field": "attend",
+			      "value": "Yes"
+			    },
+			    {
+			      "field": "0101brunch",
+			      "value": "Yes"
+			    },
+			    {
+			      "field": "guest2",
+			      "value": "Yes, a different guest"
+			    }
+			  ]
+			},
+			{
+				"id": "brunchtime",
+				"label": "Select a brunch reservation time:",
+				"type": "select",
+				"count_from": "guest2",
+				"limit": 900,
+				"range": [
+					{
+						"value": "10:00am",
+						"limit": 100
+					},
+					{
+						"value": "10:30am",
+						"limit": 100
+					},
+					{
+						"value": "11:00am",
+						"limit": 100
+					},
+					{
+						"value": "11:30am",
+						"limit": 100
+					},
+					{
+						"value": "Noon",
+						"limit": 100
+					},
+					{
+						"value": "12:30pm",
+						"limit": 100
+					},
+					{
+						"value": "1:00pm",
+						"limit": 100
+					},
+					{
+						"value": "1:30pm",
+						"limit": 100
+					},
+					{
+						"value": "2:00pm",
+						"limit": 100
+					}
+				],	
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "0101brunch",
+						"value": "Yes"
+					},
+					{
+		    			  "field": "guest2",
+						  "values": [
+						    "Yes, the same guest as above",
+						    "Yes, a different guest",
+						    "No guest"
+						  ]
+						}
+				]
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "fields_group",
+				"bgcolor": "#D5E2E5",
+				"fields": [
+					{
+						"id": "z_FIRSTNAME",
+						"label": "First Name:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					},
+					{
+						"id": "z_LASTNAME",
+						"label": "Last Name:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					},
+					{
+						"id": "PlayerID",
+						"label": "Player ID:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					},
+					{
+						"id": "z_EMAIL",
+						"label": "Email:",
+						"type": "text",
+						"sticky": true,
+						"disabled": false
+					}
+				]
+			}
+		],
+		"title": "Three Rivers Casino Resort",
+		"limits": {
+			"most_recent_only": true,
+			"most_recent_key": "PlayerID"
+		},
+		"submit": {
+			"label": "Submit RSVP",
+			"color": "#20363d"
+		}
+	},
+	"MAIN": {
+		"body_md": "# Your reservation is confirmed!\n\nThank you for your RSVP. If you need to make any changes just submit an updated response. We look forward to seeing you at **Three Rivers Casino Resort**!"
+	}
+}
