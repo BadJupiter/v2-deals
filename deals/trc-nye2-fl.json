@@ -8,13 +8,13 @@
 		"content": "Can't play if you ain't authenticated!"
 	},
 	"active": {
-		"start": "2026-11-08 5:00AM PST",
+		"start": "2026-12-08 5:00AM PST",
 		"end": "2027-01-01 1:59PM PST"
 	},
 
 	"META": {
 		"name": "New Year's Celebration",
-		"description": "Ring in the New Year with us!",
+		"description": "Join us on Planet Moolah for a New Year’s Eve Celebration!",
 		"dt": "December 31st",
 		"event_start_dt": "2026-12-31 12:00PM PST"
 	},
@@ -194,103 +194,103 @@
 				"range": [
 					{
 						"value": "4:00pm",
-						"limit": 25
+						"limit": 50
 					},
 					{
 						"value": "4:15pm",
-						"limit": 25
+						"limit": 50
 					},
 					{
 						"value": "4:30pm",
-						"limit": 25
+						"limit": 50
 					},
 					{
 						"value": "4:45pm",
-						"limit": 25
+						"limit": 50
 					},
 					{
 						"value": "5:00pm",
-						"limit": 25
+						"limit": 50
 					},
 					{
 						"value": "5:15pm",
-						"limit": 25
+						"limit": 50
 					},
 					{
 						"value": "5:30pm",
-						"limit": 25
+						"limit": 50
 					},
 					{
 						"value": "5:45pm",
-						"limit": 25
+						"limit": 50
 					},
 					{
 						"value": "6:00pm",
-						"limit": 25
+						"limit": 50
 					},
 					{
 						"value": "6:15pm",
-						"limit": 25
+						"limit": 50
 					},
 					{
 						"value": "6:30pm",
-						"limit": 25
+						"limit": 50
 					},
 					{
 						"value": "6:45pm",
-						"limit": 25
+						"limit": 50
 					},
 					{
 						"value": "7:00pm",
-						"limit": 25
+						"limit": 50
 					},
 					{
 						"value": "7:15pm",
-						"limit": 25
+						"limit": 50
 					},
 					{
 						"value": "7:30pm",
-						"limit": 25
+						"limit": 50
 					},
 					{
 						"value": "7:45pm",
-						"limit": 25
+						"limit": 50
 					},
 					{
 						"value": "8:00pm",
-						"limit": 25
+						"limit": 50
 					},
 					{
 						"value": "8:15pm",
-						"limit": 25
+						"limit": 50
 					},
 					{
 						"value": "8:30pm",
-						"limit": 25
+						"limit": 50
 					},
 					{
 						"value": "8:45pm",
-						"limit": 25
+						"limit": 50
 					},
 					{
 						"value": "9:00pm",
-						"limit": 25
+						"limit": 50
 					},
 					{
 						"value": "9:15pm",
-						"limit": 25
+						"limit": 50
 					},
 					{
 						"value": "9:30pm",
-						"limit": 25
+						"limit": 50
 					},
 					{
 						"value": "9:45pm",
-						"limit": 25
+						"limit": 50
 					},
 					{
 						"value": "10:00pm",
-						"limit": 25
+						"limit": 50
 					}
 				],	
 				"required": true,
@@ -450,29 +450,6 @@
 						    "No guest"
 						  ]
 						}
-				]
-			},
-
-			{
-				"id": "room",
-				"label": "Would you like your host to contact you about accommodations?",
-				"type": "select",
-				"range": [
-					"Yes",
-					"No"
-				],
-				"required": true,
-				"conditional": [
-					{
-						"field": "attend",
-						"value": "Yes"
-					},
-					{
-						"field": "Hotel",
-						"values": [
-							"Y"
-						]
-					}
 				]
 			},
 			{
