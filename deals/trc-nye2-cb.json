@@ -22,7 +22,7 @@
 	"summary_info": "New Year's Celebration",
 	"FORM": {
 		"fields": [
-						{
+			{
 				"type": "info",
 				"markdown": "# New Year's Celebration"
 			},
@@ -104,7 +104,24 @@
 			    }
 			  ]
 			},	
-						{
+			{
+				"id": "1231venue",
+				"label": "Would you like to dine with us on New Year’s Eve?",
+				"type": "select",
+				"range": ["Yes","No"],
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "guest",
+						"values": ["Yes","No"]
+				   	}
+				]
+			},
+			{
 				"id": "time",
 				"label": "Select a dinner reservation time:",
 				"type": "select",
@@ -159,7 +176,7 @@
 						"value": "10:30pm",
 						"limit": 50
 					},
-										{
+					{
 						"value": "11:00pm",
 						"limit": 50
 					},
@@ -170,14 +187,14 @@
 				],	
 				"required": true,
 				"conditional": [
-				  {
-				    "field": "attend",
-				    "value": "Yes"
-				  },
-				  {
-				    "field": "guest",
-				    "values": ["Yes", "No"]
-				  }
+				 	{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "1231venue",
+						"value": "Yes"
+					}
 				]
 			},
 
