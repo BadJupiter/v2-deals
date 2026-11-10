@@ -1,7 +1,7 @@
 {
 	"biz_id": "threerivers",
 	"deal_tokens": [
-		"trc-holidayham"
+		"trc-fragrance2"
 	],
 	"most_recent_only": true,
 	"most_recent_key": "Player ID",
@@ -48,28 +48,16 @@
 			"attrib": "attend"
 		},
 		{
-			"column_name": "Location",
-			"attrib": "location"
-		},
-		{
 			"column_name": "Day",
 			"attrib": "day"
 		},
 		{
-			"column_name": "FLDay1Time",
-			"attrib": "FLday1time"
+			"column_name": "Day1Time",
+			"attrib": "day1time"
 		},
 		{
-			"column_name": "FLDay2Time",
-			"attrib": "FLday2time"
-		},
-		{
-			"column_name": "CBDay1Time",
-			"attrib": "CBday1time"
-		},
-		{
-			"column_name": "CBDay2Time",
-			"attrib": "CBday2time"
+			"column_name": "Day2Time",
+			"attrib": "day2time"
 		},
 		{
 			"column_name": "Room",
