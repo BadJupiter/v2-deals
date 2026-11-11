@@ -1,7 +1,7 @@
 {
 	"biz_id": "threerivers",
 	"deal_tokens": [
-		"trc-fragrance2"
+		"trc-ny2-fl"
 	],
 	"most_recent_only": true,
 	"most_recent_key": "Player ID",
@@ -48,20 +48,48 @@
 			"attrib": "attend"
 		},
 		{
-			"column_name": "Day",
-			"attrib": "day"
+			"column_name": "Guest",
+			"attrib": "guest"
 		},
 		{
-			"column_name": "Day1Time",
-			"attrib": "day1time"
+			"column_name": "GuestName",
+			"attrib": "guestname"
 		},
 		{
-			"column_name": "Day2Time",
-			"attrib": "day2time"
+			"column_name": "GuestPlayerID",
+			"attrib": "guestplayerid"
 		},
 		{
-			"column_name": "Room",
-			"attrib": "room"
+			"column_name": "Dinner",
+			"attrib": "1231venue"
+		},
+		{
+			"column_name": "EventCenterTime",
+			"attrib": "eventcentertime"
+		},
+		{
+			"column_name": "BillsTime",
+			"attrib": "billstime"
+		},
+		{
+			"column_name": "Brunch",
+			"attrib": "0101brunch"
+		},
+		{
+			"column_name": "Guest2",
+			"attrib": "guest2"
+		},
+		{
+			"column_name": "Guest2Name",
+			"attrib": "guest2_name"
+		},
+		{
+			"column_name": "Guest2PlayerID",
+			"attrib": "guest2_player_id"
+		},
+		{
+			"column_name": "BrunchTime",
+			"attrib": "brunchtime"
 		}
 	]
 }
