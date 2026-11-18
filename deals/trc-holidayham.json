@@ -238,7 +238,7 @@
 				"label": "What time would you like to pickup your ham?",
 				"type": "select",
 				"count_from": "attend",
-				"limit": 275,
+				"limit": 159,
 				"range": [
 					{
 						"value": "3:00pm",
@@ -306,7 +306,7 @@
 				"label": "What time would you like to pickup your ham?",
 				"type": "select",
 				"count_from": "attend",
-				"limit": 275,
+				"limit": 48,
 				"range": [
 					{
 						"value": "3:00pm",
