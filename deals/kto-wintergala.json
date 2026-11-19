@@ -72,11 +72,11 @@
 				"label": "Select which day you'd like to attend:",
 				"type": "select",
 				"count_from": "guest",
-				"limit": 950,
+				"limit": 910,
 				"range": [
 					{
 						"value": "Thursday, December 17th",
-						"limit": 475
+						"limit": 435
 					},
 					{
 						"value": "Friday, December 18th",
