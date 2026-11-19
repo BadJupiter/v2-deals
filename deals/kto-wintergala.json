@@ -76,11 +76,11 @@
 				"range": [
 					{
 						"value": "Thursday, December 17th",
-						"limit": 435
+						"limit": 475
 					},
 					{
 						"value": "Friday, December 18th",
-						"limit": 475
+						"limit": 435
 					}
 				],	
 				"required": true,
