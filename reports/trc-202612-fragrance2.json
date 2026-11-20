@@ -59,6 +59,10 @@
 			"column_name": "Day2Time",
 			"attrib": "day2time"
 		},
+				{
+			"column_name": "Day3Time",
+			"attrib": "day3time"
+		},
 		{
 			"column_name": "Room",
 			"attrib": "room"
