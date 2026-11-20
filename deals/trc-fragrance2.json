@@ -9,13 +9,13 @@
 	},
 	"active": {
 		"start": "2026-11-15 5:00AM PST",
-		"end": "2026-12-05 7:59PM PST"
+		"end": "2026-12-06 7:59PM PST"
 	},
 
 	"META": {
 		"name": "Fragrance Boutique",
 		"description": "You are invited to select a free fragrance at the Fragrance Boutique!",
-		"dt": "December 4th-5th",
+		"dt": "December 4th & 6th",
 		"event_start_dt": "2026-12-04 12:00PM PST"
 	},
 	
@@ -36,7 +36,7 @@
 			},
 			{
 				"type": "info",
-				"markdown": "## **December 4th-5th, 2026**"
+				"markdown": "## **December 4th & 6th, 2026**"
 			},
 			{
 				"type": "info",
@@ -71,7 +71,7 @@
 				"id": "day",
 				"label": "What day would you like to attend?",
 				"type": "select",
-				"range": ["Friday, December 4th","Saturday, December 5th"],
+				"range": ["Friday, December 4th","Sunday, December 6th"],
 				"required": true,
 				"conditional": {
 					"field": "attend",
@@ -147,9 +147,33 @@
 				"label": "What time would you like to attend?",
 				"type": "select",
 				"count_from": "attend",
-				"limit": 275,
+				"limit": 325,
 				"range": [
 					{
+						"value": "Noon",
+						"limit": 25
+					},
+					{
+						"value": "12:30pm",
+						"limit": 25
+					},
+					{
+						"value": "1:00pm",
+						"limit": 25
+					},
+					{
+						"value": "1:30pm",
+						"limit": 25
+					},
+					{
+						"value": "2:00pm",
+						"limit": 25
+					},
+					{
+						"value": "2:30pm",
+						"limit": 25
+					},
+						{
 						"value": "3:00pm",
 						"limit": 25
 					},
@@ -176,22 +200,6 @@
 					{
 						"value": "6:00pm",
 						"limit": 25
-					},
-					{
-						"value": "6:30pm",
-						"limit": 25
-					},
-					{
-						"value": "7:00pm",
-						"limit": 25
-					},
-					{
-						"value": "7:30pm",
-						"limit": 25
-					},
-					{
-						"value": "8:00pm",
-						"limit": 25
 					}
 				],
 				"required": true,
@@ -202,7 +210,7 @@
 					},
 					{
 						"field": "day",
-						"value": "Saturday, December 5th"
+						"value": "Sunday, December 6th"
 					}
 				]
 			},
@@ -219,7 +227,7 @@
 					},
 					{
 						"field": "day",
-						"values": ["Friday, December 4th","Saturday, December 5th"]
+						"values": ["Friday, December 4th","Sunday, December 6th"]
 					},
 					{
 						"field": "Hotel",
