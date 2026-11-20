@@ -143,7 +143,7 @@
 				]
 			},
 		{
-				"id": "day2time",
+				"id": "day3time",
 				"label": "What time would you like to attend?",
 				"type": "select",
 				"count_from": "attend",
