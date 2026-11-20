@@ -1,0 +1,283 @@
+{
+	"biz_id": "threerivers",
+	"check_in": true,
+	"auth_required": true,
+	"qr_confirm": false,
+	"error_auth": {
+		"title": "Oops!",
+		"content": "Can't play if you ain't authenticated!"
+	},
+	"active": {
+		"start": "2026-11-15 5:00AM PST",
+		"end": "2026-12-05 7:59PM PST"
+	},
+
+	"META": {
+		"name": "Fragrance Boutique",
+		"description": "You are invited to select a free fragrance at the Fragrance Boutique!",
+		"dt": "December 4th-5th",
+		"event_start_dt": "2026-12-04 12:00PM PST"
+	},
+	
+	"summary_info": "Fragrance Boutique",
+	"FORM": {
+		"fields": [
+			{
+				"id": "Hotel",
+				"label": "Hotel",
+				"type": "text",
+				"sticky": true,
+				"disabled": true,
+				"hidden": true
+			},
+			{
+				"type": "info",
+				"markdown": "# Fragrance Boutique"
+			},
+			{
+				"type": "info",
+				"markdown": "## **December 4th-5th, 2026**"
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "info",
+				"markdown": "## **Florence**"
+			},
+			{
+				"type": "info",
+				"markdown": "It's our pleasure to invite our valued Three Rivers guests to our **Fragrance Boutique**!",
+				"justify": "center"
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"id": "attend",
+				"label": "Will you attend the Fragrance Boutique in Florence?",
+				"type": "select",
+				"range": ["Yes","No"],
+				"required": true,
+				"global": true,
+  				"capacity_map": {
+  					"Yes": 1,
+    				"No": 0
+				}
+			},
+			{
+				"id": "day",
+				"label": "What day would you like to attend?",
+				"type": "select",
+				"range": ["Friday, December 4th","Saturday, December 5th"],
+				"required": true,
+				"conditional": {
+					"field": "attend",
+					"value": "Yes"
+				}
+			},
+			{
+				"id": "day1time",
+				"label": "What time would you like to attend?",
+				"type": "select",
+				"count_from": "attend",
+				"limit": 275,
+				"range": [
+					{
+						"value": "3:00pm",
+						"limit": 25
+					},
+					{
+						"value": "3:30pm",
+						"limit": 25
+					},
+					{
+						"value": "4:00pm",
+						"limit": 25
+					},
+					{
+						"value": "4:30pm",
+						"limit": 25
+					},
+					{
+						"value": "5:00pm",
+						"limit": 25
+					},
+					{
+						"value": "5:30pm",
+						"limit": 25
+					},
+					{
+						"value": "6:00pm",
+						"limit": 25
+					},
+					{
+						"value": "6:30pm",
+						"limit": 25
+					},
+					{
+						"value": "7:00pm",
+						"limit": 25
+					},
+					{
+						"value": "7:30pm",
+						"limit": 25
+					},
+					{
+						"value": "8:00pm",
+						"limit": 25
+					}
+				],					
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "day",
+						"value": "Friday, December 4th"
+					}
+				]
+			},
+		{
+				"id": "day2time",
+				"label": "What time would you like to attend?",
+				"type": "select",
+				"count_from": "attend",
+				"limit": 275,
+				"range": [
+					{
+						"value": "3:00pm",
+						"limit": 25
+					},
+					{
+						"value": "3:30pm",
+						"limit": 25
+					},
+					{
+						"value": "4:00pm",
+						"limit": 25
+					},
+					{
+						"value": "4:30pm",
+						"limit": 25
+					},
+					{
+						"value": "5:00pm",
+						"limit": 25
+					},
+					{
+						"value": "5:30pm",
+						"limit": 25
+					},
+					{
+						"value": "6:00pm",
+						"limit": 25
+					},
+					{
+						"value": "6:30pm",
+						"limit": 25
+					},
+					{
+						"value": "7:00pm",
+						"limit": 25
+					},
+					{
+						"value": "7:30pm",
+						"limit": 25
+					},
+					{
+						"value": "8:00pm",
+						"limit": 25
+					}
+				],
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "day",
+						"value": "Saturday, December 5th"
+					}
+				]
+			},
+			{
+				"id": "room",
+				"label": "Would you like to be contacted for a room reservation?",
+				"type": "select",
+				"range": ["Yes","No"],
+				"required": true,
+				"conditional": [
+					{
+						"field": "attend",
+						"value": "Yes"
+					},
+					{
+						"field": "day",
+						"values": ["Friday, December 4th","Saturday, December 5th"]
+					},
+					{
+						"field": "Hotel",
+						"values": ["Y"]
+
+					}
+				]
+			},
+			{
+				"type": "info",
+				"markdown": "---"
+			},
+			{
+				"type": "fields_group",
+				"bgcolor": "#D5E2E5",
+				"fields": [
+					{
+						"id": "z_FIRSTNAME",
+						"label": "First Name:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					},
+					{
+						"id": "z_LASTNAME",
+						"label": "Last Name:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					},
+					{
+						"id": "PlayerID",
+						"label": "Player ID:",
+						"type": "text",
+						"sticky": true,
+						"disabled": true
+					},
+					{
+						"id": "z_EMAIL",
+						"label": "Email:",
+						"type": "text",
+						"sticky": true,
+						"disabled": false
+					}
+				]
+			}
+		],
+		"title": "Three Rivers Casino Resort",
+		"limits": {
+			"most_recent_only": true,
+			"most_recent_key": "PlayerID"
+		},
+		"submit": {
+			"label": "Submit RSVP",
+			"color": "#20363d"
+		}
+	},
+	"MAIN": {
+		"body_md": "# Your reservation is confirmed!\n\nThank you for your RSVP. If you need to make any changes just submit an updated response. We look forward to seeing you at **Three Rivers Casino Resort**!"
+	}
+}
