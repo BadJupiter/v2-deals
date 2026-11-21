@@ -8,14 +8,14 @@
 	},
 
 	"active": {
-		"start": "2026-06-13 10:00AM CDT",
-		"end": "2026-06-13 11:59PM CDT"
+		"start": "2026-12-31 10:00AM CST",
+		"end": "2026-12-31 11:59PM CST"
 	},
 
 	"META": {
-		"name": "Deal or No Deal",
-		"description": "VIP Exclusive - Deal or No Deal!",
-		"dt": "June 13th"
+		"name": "New Year's Eve - BINGLO",
+		"description": "VIP Exclusive - NYE Binglo!",
+		"dt": "Decemberf 31st"
 	},
 
 	
@@ -24,11 +24,11 @@
 		"fields": [
 			{
 				"type": "info",
-				"markdown": "# Deal or No Deal Show"
+				"markdown": "# New Year's Eve - BINGLO"
 			},
 			{
 				"type": "info",
-				"markdown": "## **Saturday, June 13th**"	
+				"markdown": "## **Thursday, December 31st**"	
 			},
 			{
 				"type": "info",
@@ -37,11 +37,11 @@
 			{
 				"type": "info",
 				"justify": "center",
-				"markdown": " \n\nYou are invited to our exclusive **Deal or No Deal Show**."
+				"markdown": " \n\nYou are invited to our exclusive **New Year's Eve Binglo Event**."
 			},
 			{
 				"id": "attend",
-				"label": "Would you like to attend the Deal or No Deal Show?",
+				"label": "Will you attend the Binglo Event on New Year’s Eve (Thursday, December 31)?",
 				"type": "select",
 				"range": ["Yes","No"],
 				"required": true
@@ -72,15 +72,15 @@
 				"limit": 600,
 				"range": [
 					{
-						"value": "3:00pm",
+						"value": "Noon",
 						"limit": 200
 					},
 					{
-						"value": "6:00pm",
+						"value": "4:00pm",
 						"limit": 200
 					},
 					{
-						"value": "9:00pm",
+						"value": "7:00pm",
 						"limit": 200
 					}
 				],	
