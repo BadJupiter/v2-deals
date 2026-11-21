@@ -98,7 +98,7 @@
 			},
 			{
 				"type": "fields_group",
-				"bgcolor": "#E4DBC6",
+				"bgcolor": "#EADFF2",
 				"fields": [
 					{
 						"id": "PlayerID",
