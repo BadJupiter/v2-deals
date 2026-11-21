@@ -31,7 +31,7 @@
 			},
 			{
 				"type": "info",
-				"markdown": "## **December 1th, 2026**"
+				"markdown": "## **December 19th, 2026**"
 			},
 			{
 				"type": "info",
@@ -48,7 +48,7 @@
 			},
 			{	
 				"id": "attend",
-				"label": "Would you like to attend the Deal or No Deal Show?",
+				"label": "Will you attend the VIP Holiday Market on Saturday, December 19?",
 				"type": "select",
 				"range": ["Yes","No"],
 				"required": true
