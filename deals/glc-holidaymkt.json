@@ -46,7 +46,8 @@
 				"type": "info",
 				"markdown": "---"
 			},
-							"id": "attend",
+			{	
+				"id": "attend",
 				"label": "Would you like to attend the Deal or No Deal Show?",
 				"type": "select",
 				"range": ["Yes","No"],
