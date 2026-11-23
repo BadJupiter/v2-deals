@@ -1,6 +1,6 @@
 {
 	"biz_id": "grandlake",
-	"deal_tokens": [ "glc-deal"],
+	"deal_tokens": [ "glc-holidaymkt"],
 	"most_recent_only": true, # omit or set to false for all rows
 	"most_recent_key": "Player ID", # needs to be the column_name
 	
@@ -36,7 +36,7 @@
 		},
 		{
 			"column_name": "Name",
-			"attrib": "z_NAME"
+			"attrib": "Player"
 		},
 		{
 			"column_name": "Email",
