@@ -51,6 +51,14 @@
 			"attrib": "guest"
 		},
 		{
+			"column_name": "Guest Name",
+			"attrib": "guestname"
+		},
+		{
+			"column_name": "Guest Player ID",
+			"attrib": "guestplayerid"
+		},
+		{
 			"column_name": "Time",
 			"attrib": "time"
 		}
