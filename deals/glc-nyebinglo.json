@@ -65,6 +65,38 @@
 				]				
 			},
 			{
+			    "id": "guestname",
+			    "label": "Guest's Name:",
+			    "type": "text",
+			    "required": true,
+		  	    "conditional": [
+			        {
+			      		"field": "attend",
+			     		"value": "Yes"
+			        },
+			        {
+			      		"field": "guest",
+			      		"value": "Yes"
+			        }
+			    ]
+			},
+			{
+			  "id": "guestplayerid",
+			  "label": "Guest's Account Number:",
+			  "type": "text",
+			  "required": false,
+			  "conditional": [
+			    {
+			      "field": "attend",
+			      "value": "Yes"
+			    },
+			    {
+			      "field": "guest",
+			      "value": "Yes"
+			    }
+			  ]
+			},		
+			{
 				"id": "time",
 				"label": "What time would you like to attend?",
 				"type": "select",
